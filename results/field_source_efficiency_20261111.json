@@ -1,0 +1,515 @@
+{
+ "attraction": {
+  "records": 757,
+  "fields": {
+   "endtime": {
+    "present": 613,
+    "channels": {
+     "官方/文旅": 21,
+     "百度": 96,
+     "高德": 493,
+     "Trip.com": 3
+    },
+    "status": {
+     "source_value": 613
+    }
+   },
+   "id": {
+    "present": 86,
+    "channels": {
+     "其他": 64,
+     "本地代理/派生": 22
+    },
+    "status": {
+     "derived": 24,
+     "unknown": 62
+    }
+   },
+   "lat": {
+    "present": 691,
+    "channels": {
+     "其他": 8,
+     "本地代理/派生": 1,
+     "Wikidata": 11,
+     "官方/文旅": 3,
+     "OSM": 1,
+     "高德": 667
+    },
+    "status": {
+     "source_value": 687,
+     "derived": 4
+    }
+   },
+   "lon": {
+    "present": 691,
+    "channels": {
+     "其他": 8,
+     "本地代理/派生": 1,
+     "Wikidata": 11,
+     "官方/文旅": 3,
+     "OSM": 1,
+     "高德": 667
+    },
+    "status": {
+     "source_value": 687,
+     "derived": 4
+    }
+   },
+   "name": {
+    "present": 757,
+    "channels": {
+     "其他": 3,
+     "本地代理/派生": 1,
+     "官方/文旅": 86,
+     "高德": 667
+    },
+    "status": {
+     "source_value": 756,
+     "derived": 1
+    }
+   },
+   "opentime": {
+    "present": 615,
+    "channels": {
+     "官方/文旅": 24,
+     "百度": 95,
+     "高德": 493,
+     "Trip.com": 3
+    },
+    "status": {
+     "source_value": 615
+    }
+   },
+   "price": {
+    "present": 24,
+    "channels": {
+     "官方/文旅": 23,
+     "其他": 1
+    },
+    "status": {
+     "source_value": 24
+    }
+   },
+   "recommendmaxtime": {
+    "present": 24,
+    "channels": {
+     "官方/文旅": 23,
+     "去哪儿": 1
+    },
+    "status": {
+     "source_value": 24
+    }
+   },
+   "recommendmintime": {
+    "present": 24,
+    "channels": {
+     "官方/文旅": 23,
+     "去哪儿": 1
+    },
+    "status": {
+     "source_value": 24
+    }
+   },
+   "type": {
+    "present": 754,
+    "channels": {
+     "其他": 2,
+     "官方/文旅": 84,
+     "百度": 1,
+     "高德": 667
+    },
+    "status": {
+     "source_value": 732,
+     "derived": 22
+    }
+   },
+   "entrance_hours_references": {
+    "present": 1,
+    "channels": {
+     "其他": 1
+    },
+    "status": {
+     "unqualified_reference": 1
+    }
+   },
+   "ticket_offers": {
+    "present": 7,
+    "channels": {
+     "其他": 7
+    },
+    "status": {
+     "unqualified_reference": 7
+    }
+   },
+   "opening_hours_intervals": {
+    "present": 6,
+    "channels": {
+     "其他": 6
+    },
+    "status": {
+     "unqualified_reference": 6
+    }
+   },
+   "address": {
+    "present": 62,
+    "channels": {
+     "官方/文旅": 61,
+     "其他": 1
+    },
+    "status": {
+     "source_value": 62
+    }
+   },
+   "theme_reference": {
+    "present": 1,
+    "channels": {
+     "其他": 1
+    },
+    "status": {
+     "source_value": 1
+    }
+   }
+  }
+ },
+ "restaurant": {
+  "records": 560,
+  "fields": {
+   "cuisine": {
+    "present": 396,
+    "channels": {
+     "官方/文旅": 10,
+     "高德": 329,
+     "百度": 33,
+     "Trip.com": 15,
+     "其他": 9
+    },
+    "status": {
+     "derived": 16,
+     "source_value": 380
+    }
+   },
+   "endtime": {
+    "present": 499,
+    "channels": {
+     "官方/文旅": 10,
+     "高德": 437,
+     "百度": 41,
+     "Trip.com": 8,
+     "其他": 3
+    },
+    "status": {
+     "source_value": 499
+    }
+   },
+   "id": {
+    "present": 33,
+    "channels": {
+     "本地代理/派生": 16,
+     "其他": 5,
+     "高德": 12
+    },
+    "status": {
+     "derived": 28,
+     "unknown": 5
+    }
+   },
+   "lat": {
+    "present": 541,
+    "channels": {
+     "OSM": 4,
+     "其他": 1,
+     "高德": 524,
+     "本地代理/派生": 12
+    },
+    "status": {
+     "derived": 21,
+     "source_value": 520
+    }
+   },
+   "lon": {
+    "present": 541,
+    "channels": {
+     "OSM": 4,
+     "其他": 1,
+     "高德": 524,
+     "本地代理/派生": 12
+    },
+    "status": {
+     "derived": 21,
+     "source_value": 520
+    }
+   },
+   "name": {
+    "present": 560,
+    "channels": {
+     "官方/文旅": 10,
+     "高德": 536,
+     "其他": 14
+    },
+    "status": {
+     "source_value": 560
+    }
+   },
+   "opentime": {
+    "present": 508,
+    "channels": {
+     "官方/文旅": 10,
+     "高德": 447,
+     "百度": 40,
+     "Trip.com": 8,
+     "其他": 3
+    },
+    "status": {
+     "source_value": 508
+    }
+   },
+   "price": {
+    "present": 499,
+    "channels": {
+     "高德": 487,
+     "官方/文旅": 3,
+     "其他": 9
+    },
+    "status": {
+     "source_value": 499
+    }
+   },
+   "recommendedfood": {
+    "present": 76,
+    "channels": {
+     "官方/文旅": 10,
+     "高德": 66
+    },
+    "status": {
+     "source_value": 76
+    }
+   },
+   "address": {
+    "present": 5,
+    "channels": {
+     "其他": 5
+    },
+    "status": {
+     "source_value": 5
+    }
+   },
+   "source_reference_opening_hours": {
+    "present": 5,
+    "channels": {
+     "其他": 5
+    },
+    "status": {
+     "source_value": 5
+    }
+   },
+   "source_reference_price_per_person": {
+    "present": 5,
+    "channels": {
+     "其他": 5
+    },
+    "status": {
+     "source_value": 5
+    }
+   },
+   "source_reference_recommendedfood": {
+    "present": 4,
+    "channels": {
+     "其他": 4
+    },
+    "status": {
+     "source_value": 4
+    }
+   },
+   "source_reference_cuisine": {
+    "present": 1,
+    "channels": {
+     "其他": 1
+    },
+    "status": {
+     "source_value": 1
+    }
+   }
+  }
+ },
+ "accommodation": {
+  "records": 761,
+  "fields": {
+   "featurehoteltype": {
+    "present": 361,
+    "channels": {
+     "官方/文旅": 7,
+     "百度": 5,
+     "高德": 348,
+     "其他": 1
+    },
+    "status": {
+     "derived": 7,
+     "source_value": 354
+    }
+   },
+   "hotelname_en": {
+    "present": 10,
+    "channels": {
+     "其他": 9,
+     "官方/文旅": 1
+    },
+    "status": {
+     "source_value": 10
+    }
+   },
+   "id": {
+    "present": 64,
+    "channels": {
+     "本地代理/派生": 9,
+     "其他": 55
+    },
+    "status": {
+     "derived": 10,
+     "unknown": 54
+    }
+   },
+   "lat": {
+    "present": 706,
+    "channels": {
+     "OSM": 5,
+     "其他": 3,
+     "高德": 698
+    },
+    "status": {
+     "derived": 7,
+     "source_value": 699
+    }
+   },
+   "lon": {
+    "present": 706,
+    "channels": {
+     "OSM": 5,
+     "其他": 3,
+     "高德": 698
+    },
+    "status": {
+     "derived": 7,
+     "source_value": 699
+    }
+   },
+   "name": {
+    "present": 761,
+    "channels": {
+     "官方/文旅": 57,
+     "高德": 698,
+     "其他": 6
+    },
+    "status": {
+     "source_value": 759,
+     "derived": 2
+    }
+   },
+   "numbed": {
+    "present": 761,
+    "channels": {
+     "其他": 638,
+     "Trip.com": 123
+    },
+    "status": {
+     "estimated": 634,
+     "source_value": 127
+    }
+   },
+   "price": {
+    "present": 345,
+    "channels": {
+     "Trip.com": 207,
+     "其他": 80,
+     "美团/点评": 58
+    },
+    "status": {
+     "source_value": 267,
+     "estimated": 78
+    }
+   },
+   "address": {
+    "present": 53,
+    "channels": {
+     "官方/文旅": 49,
+     "其他": 4
+    },
+    "status": {
+     "source_value": 53
+    }
+   },
+   "hotelstar": {
+    "present": 49,
+    "channels": {
+     "官方/文旅": 49
+    },
+    "status": {
+     "source_value": 49
+    }
+   },
+   "historical_address_reference": {
+    "present": 2,
+    "channels": {
+     "其他": 2
+    },
+    "status": {
+     "unqualified_reference": 2
+    }
+   },
+   "historical_dining_reference": {
+    "present": 2,
+    "channels": {
+     "其他": 2
+    },
+    "status": {
+     "unqualified_reference": 2
+    }
+   },
+   "historical_room_count_reference": {
+    "present": 2,
+    "channels": {
+     "其他": 2
+    },
+    "status": {
+     "unqualified_reference": 2
+    }
+   },
+   "historical_opening_reference": {
+    "present": 1,
+    "channels": {
+     "其他": 1
+    },
+    "status": {
+     "unqualified_reference": 1
+    }
+   },
+   "historical_room_facilities_reference": {
+    "present": 1,
+    "channels": {
+     "其他": 1
+    },
+    "status": {
+     "unqualified_reference": 1
+    }
+   },
+   "access_route_references": {
+    "present": 4,
+    "channels": {
+     "其他": 4
+    },
+    "status": {
+     "unqualified_reference": 4
+    }
+   },
+   "room_rate_offers": {
+    "present": 5,
+    "channels": {
+     "其他": 5
+    },
+    "status": {
+     "unqualified_reference": 4,
+     "source_value": 1
+    }
+   }
+  }
+ }
+}
