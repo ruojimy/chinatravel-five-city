@@ -1,0 +1,921 @@
+{
+  "queries": {
+    "query/easy.csv": {
+      "rows": 300,
+      "columns": [
+        "uid",
+        "tag",
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "limit_rooms",
+        "limits_room_type",
+        "hard_logic_py",
+        "nature_language",
+        "nature_language_en"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "tag": "object",
+        "start_city": "object",
+        "target_city": "object",
+        "days": "int64",
+        "people_number": "int64",
+        "limit_rooms": "bool",
+        "limits_room_type": "bool",
+        "hard_logic_py": "object",
+        "nature_language": "object",
+        "nature_language_en": "object"
+      },
+      "start_city_counts": {
+        "北京": 37,
+        "南京": 37,
+        "成都": 35,
+        "广州": 35,
+        "杭州": 33,
+        "重庆": 33,
+        "武汉": 33,
+        "深圳": 30,
+        "上海": 22,
+        "苏州": 5
+      },
+      "target_city_counts": {
+        "上海": 37,
+        "成都": 36,
+        "重庆": 36,
+        "深圳": 35,
+        "杭州": 33,
+        "南京": 30,
+        "武汉": 30,
+        "北京": 30,
+        "广州": 24,
+        "苏州": 9
+      },
+      "days_range": [
+        1,
+        3
+      ],
+      "days_counts": {
+        "1": 60,
+        "2": 118,
+        "3": 122
+      },
+      "people_number_range": [
+        1,
+        4
+      ],
+      "people_number_counts": {
+        "1": 120,
+        "2": 70,
+        "3": 60,
+        "4": 50
+      },
+      "hard_logic_py_count": {
+        "min": 5,
+        "max": 7,
+        "mean": 5.26,
+        "bad": 0
+      }
+    },
+    "query/medium.csv": {
+      "rows": 150,
+      "columns": [
+        "uid",
+        "tag",
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "limit_rooms",
+        "limits_room_type",
+        "hard_logic_py",
+        "nature_language",
+        "nature_language_en"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "tag": "object",
+        "start_city": "object",
+        "target_city": "object",
+        "days": "int64",
+        "people_number": "int64",
+        "limit_rooms": "bool",
+        "limits_room_type": "bool",
+        "hard_logic_py": "object",
+        "nature_language": "object",
+        "nature_language_en": "object"
+      },
+      "start_city_counts": {
+        "深圳": 22,
+        "广州": 18,
+        "重庆": 18,
+        "杭州": 16,
+        "南京": 16,
+        "上海": 15,
+        "武汉": 14,
+        "北京": 14,
+        "苏州": 9,
+        "成都": 8
+      },
+      "target_city_counts": {
+        "苏州": 18,
+        "南京": 18,
+        "广州": 15,
+        "北京": 15,
+        "深圳": 15,
+        "成都": 15,
+        "重庆": 14,
+        "杭州": 14,
+        "武汉": 14,
+        "上海": 12
+      },
+      "days_range": [
+        2,
+        4
+      ],
+      "days_counts": {
+        "2": 94,
+        "3": 43,
+        "4": 13
+      },
+      "people_number_range": [
+        1,
+        4
+      ],
+      "people_number_counts": {
+        "1": 35,
+        "2": 63,
+        "3": 32,
+        "4": 20
+      },
+      "hard_logic_py_count": {
+        "min": 7,
+        "max": 12,
+        "mean": 8.43,
+        "bad": 0
+      }
+    },
+    "query/human.csv": {
+      "rows": 154,
+      "columns": [
+        "uid",
+        "tag",
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "limit_rooms",
+        "limits_room_type",
+        "hard_logic_py",
+        "nature_language",
+        "nature_language_en"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "tag": "object",
+        "start_city": "object",
+        "target_city": "object",
+        "days": "int64",
+        "people_number": "int64",
+        "limit_rooms": "bool",
+        "limits_room_type": "bool",
+        "hard_logic_py": "object",
+        "nature_language": "object",
+        "nature_language_en": "object"
+      },
+      "start_city_counts": {
+        "南京": 49,
+        "苏州": 23,
+        "北京": 17,
+        "上海": 14,
+        "杭州": 11,
+        "武汉": 11,
+        "成都": 8,
+        "深圳": 8,
+        "重庆": 8,
+        "广州": 5
+      },
+      "target_city_counts": {
+        "北京": 28,
+        "上海": 26,
+        "南京": 17,
+        "重庆": 16,
+        "成都": 15,
+        "广州": 14,
+        "苏州": 12,
+        "杭州": 10,
+        "武汉": 9,
+        "深圳": 7
+      },
+      "days_range": [
+        1,
+        6
+      ],
+      "days_counts": {
+        "1": 13,
+        "2": 28,
+        "3": 54,
+        "4": 28,
+        "5": 30,
+        "6": 1
+      },
+      "people_number_range": [
+        1,
+        7
+      ],
+      "people_number_counts": {
+        "1": 42,
+        "2": 62,
+        "3": 33,
+        "4": 10,
+        "5": 6,
+        "7": 1
+      },
+      "hard_logic_py_count": {
+        "min": 3,
+        "max": 9,
+        "mean": 4.44,
+        "bad": 0
+      }
+    },
+    "query/human1000.csv": {
+      "rows": 1000,
+      "columns": [
+        "uid",
+        "nature_language"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "nature_language": "object"
+      }
+    },
+    "query/preference_base50.csv": {
+      "rows": 50,
+      "columns": [
+        "uid",
+        "tag",
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "limit_rooms",
+        "limits_room_type",
+        "hard_logic_py",
+        "nature_language",
+        "nature_language_en"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "tag": "object",
+        "start_city": "object",
+        "target_city": "object",
+        "days": "int64",
+        "people_number": "int64",
+        "limit_rooms": "bool",
+        "limits_room_type": "bool",
+        "hard_logic_py": "object",
+        "nature_language": "object",
+        "nature_language_en": "object"
+      },
+      "start_city_counts": {
+        "武汉": 11,
+        "广州": 7,
+        "北京": 6,
+        "南京": 5,
+        "上海": 5,
+        "成都": 5,
+        "杭州": 4,
+        "重庆": 3,
+        "深圳": 3,
+        "苏州": 1
+      },
+      "target_city_counts": {
+        "重庆": 9,
+        "成都": 9,
+        "杭州": 6,
+        "深圳": 5,
+        "武汉": 5,
+        "北京": 5,
+        "广州": 4,
+        "南京": 3,
+        "上海": 3,
+        "苏州": 1
+      },
+      "days_range": [
+        1,
+        3
+      ],
+      "days_counts": {
+        "1": 11,
+        "2": 21,
+        "3": 18
+      },
+      "people_number_range": [
+        1,
+        4
+      ],
+      "people_number_counts": {
+        "1": 18,
+        "2": 11,
+        "3": 12,
+        "4": 9
+      },
+      "hard_logic_py_count": {
+        "min": 5,
+        "max": 7,
+        "mean": 5.2,
+        "bad": 0
+      }
+    },
+    "query/phase2/competition_test.csv": {
+      "rows": 100,
+      "columns": [
+        "uid",
+        "tag",
+        "start_city",
+        "target_city",
+        "days",
+        "people_number",
+        "hard_logic_py",
+        "hard_logic_nl",
+        "nature_language",
+        "constraint_keys",
+        "official_phase2_evaluation"
+      ],
+      "dtypes": {
+        "uid": "object",
+        "tag": "object",
+        "start_city": "object",
+        "target_city": "object",
+        "days": "int64",
+        "people_number": "int64",
+        "hard_logic_py": "object",
+        "hard_logic_nl": "object",
+        "nature_language": "object",
+        "constraint_keys": "object",
+        "official_phase2_evaluation": "bool"
+      },
+      "start_city_counts": {
+        "Shenzhen": 18,
+        "Suzhou": 18,
+        "Nanjing": 14,
+        "Chongqing": 14,
+        "Wuhan": 8,
+        "Chengdu": 8,
+        "Guangzhou": 6,
+        "Shanghai": 6,
+        "Beijing": 4,
+        "Hangzhou": 4
+      },
+      "target_city_counts": {
+        "Shanghai": 28,
+        "Hangzhou": 24,
+        "Shenzhen": 14,
+        "Suzhou": 8,
+        "Chengdu": 8,
+        "Wuhan": 8,
+        "Nanjing": 4,
+        "Guangzhou": 4,
+        "Beijing": 2
+      },
+      "days_range": [
+        1,
+        5
+      ],
+      "days_counts": {
+        "1": 4,
+        "2": 22,
+        "3": 42,
+        "4": 24,
+        "5": 8
+      },
+      "people_number_range": [
+        1,
+        5
+      ],
+      "people_number_counts": {
+        "1": 22,
+        "2": 14,
+        "3": 14,
+        "4": 38,
+        "5": 12
+      },
+      "hard_logic_py_count": {
+        "min": 9,
+        "max": 17,
+        "mean": 13.75,
+        "bad": 0
+      }
+    }
+  },
+  "sandbox": {
+    "zh": {
+      "attractions": {
+        "rows": 3413,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "type",
+          "lat",
+          "lon",
+          "opentime",
+          "endtime",
+          "price",
+          "recommendmintime",
+          "recommendmaxtime"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "type": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "opentime": "object",
+          "endtime": "object",
+          "price": "float64",
+          "recommendmintime": "float64",
+          "recommendmaxtime": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "杭州": 377,
+          "上海": 360,
+          "苏州": 359,
+          "重庆": 347,
+          "广州": 339,
+          "北京": 335,
+          "武汉": 334,
+          "成都": 333,
+          "南京": 323,
+          "深圳": 306
+        }
+      },
+      "accommodations": {
+        "rows": 3866,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "hotelname_en",
+          "featurehoteltype",
+          "lat",
+          "lon",
+          "price",
+          "numbed"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "hotelname_en": "object",
+          "featurehoteltype": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "price": "int64",
+          "numbed": "int64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "深圳": 498,
+          "上海": 403,
+          "北京": 401,
+          "广州": 400,
+          "成都": 379,
+          "杭州": 378,
+          "南京": 373,
+          "重庆": 373,
+          "武汉": 368,
+          "苏州": 293
+        }
+      },
+      "restaurants": {
+        "rows": 4655,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "lat",
+          "lon",
+          "price",
+          "cuisine",
+          "opentime",
+          "endtime",
+          "recommendedfood"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "price": "float64",
+          "cuisine": "object",
+          "opentime": "object",
+          "endtime": "object",
+          "recommendedfood": "object"
+        },
+        "nulls": {},
+        "city_counts": {
+          "上海": 484,
+          "深圳": 478,
+          "北京": 470,
+          "苏州": 469,
+          "南京": 468,
+          "成都": 467,
+          "广州": 467,
+          "杭州": 458,
+          "武汉": 457,
+          "重庆": 437
+        }
+      },
+      "poi": {
+        "rows": 12172,
+        "columns": [
+          "language",
+          "city",
+          "name",
+          "lat",
+          "lon"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "name": "object",
+          "lat": "float64",
+          "lon": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "深圳": 1294,
+          "上海": 1269,
+          "广州": 1238,
+          "北京": 1238,
+          "杭州": 1227,
+          "成都": 1210,
+          "重庆": 1188,
+          "南京": 1184,
+          "武汉": 1175,
+          "苏州": 1149
+        }
+      },
+      "trains": {
+        "rows": 5345,
+        "columns": [
+          "language",
+          "route_origin_city",
+          "route_destination_city",
+          "TrainID",
+          "TrainType",
+          "From",
+          "To",
+          "BeginTime",
+          "EndTime",
+          "Duration",
+          "Cost"
+        ],
+        "dtypes": {
+          "language": "object",
+          "route_origin_city": "object",
+          "route_destination_city": "object",
+          "TrainID": "object",
+          "TrainType": "object",
+          "From": "object",
+          "To": "object",
+          "BeginTime": "object",
+          "EndTime": "object",
+          "Duration": "float64",
+          "Cost": "float64"
+        },
+        "nulls": {
+          "Cost": 20
+        }
+      },
+      "flights": {
+        "rows": 720,
+        "columns": [
+          "language",
+          "FlightID",
+          "From",
+          "To",
+          "BeginTime",
+          "EndTime",
+          "Duration",
+          "Cost"
+        ],
+        "dtypes": {
+          "language": "object",
+          "FlightID": "object",
+          "From": "object",
+          "To": "object",
+          "BeginTime": "object",
+          "EndTime": "object",
+          "Duration": "float64",
+          "Cost": "float64"
+        },
+        "nulls": {}
+      },
+      "subway_stations": {
+        "rows": 3635,
+        "columns": [
+          "language",
+          "city",
+          "line_name",
+          "station_name",
+          "lat",
+          "lon"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "line_name": "object",
+          "station_name": "object",
+          "lat": "float64",
+          "lon": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "上海": 583,
+          "北京": 476,
+          "杭州": 419,
+          "深圳": 384,
+          "成都": 376,
+          "广州": 339,
+          "重庆": 305,
+          "武汉": 300,
+          "苏州": 227,
+          "南京": 226
+        }
+      }
+    },
+    "en": {
+      "attractions": {
+        "rows": 3413,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "type",
+          "lat",
+          "lon",
+          "opentime",
+          "endtime",
+          "price",
+          "recommendmintime",
+          "recommendmaxtime"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "type": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "opentime": "object",
+          "endtime": "object",
+          "price": "float64",
+          "recommendmintime": "float64",
+          "recommendmaxtime": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "Hangzhou": 377,
+          "Shanghai": 360,
+          "Suzhou": 359,
+          "Chongqing": 347,
+          "Guangzhou": 339,
+          "Beijing": 335,
+          "Wuhan": 334,
+          "Chengdu": 333,
+          "Nanjing": 323,
+          "Shenzhen": 306
+        }
+      },
+      "accommodations": {
+        "rows": 3866,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "hotelname_en",
+          "featurehoteltype",
+          "lat",
+          "lon",
+          "price",
+          "numbed"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "hotelname_en": "object",
+          "featurehoteltype": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "price": "int64",
+          "numbed": "int64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "Shenzhen": 498,
+          "Shanghai": 403,
+          "Beijing": 401,
+          "Guangzhou": 400,
+          "Chengdu": 379,
+          "Hangzhou": 378,
+          "Nanjing": 373,
+          "Chongqing": 373,
+          "Wuhan": 368,
+          "Suzhou": 293
+        }
+      },
+      "restaurants": {
+        "rows": 4655,
+        "columns": [
+          "language",
+          "city",
+          "id",
+          "name",
+          "lat",
+          "lon",
+          "price",
+          "cuisine",
+          "opentime",
+          "endtime",
+          "recommendedfood"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "id": "int64",
+          "name": "object",
+          "lat": "float64",
+          "lon": "float64",
+          "price": "float64",
+          "cuisine": "object",
+          "opentime": "object",
+          "endtime": "object",
+          "recommendedfood": "object"
+        },
+        "nulls": {},
+        "city_counts": {
+          "Shanghai": 484,
+          "Shenzhen": 478,
+          "Beijing": 470,
+          "Suzhou": 469,
+          "Nanjing": 468,
+          "Chengdu": 467,
+          "Guangzhou": 467,
+          "Hangzhou": 458,
+          "Wuhan": 457,
+          "Chongqing": 437
+        }
+      },
+      "poi": {
+        "rows": 12172,
+        "columns": [
+          "language",
+          "city",
+          "name",
+          "lat",
+          "lon"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "name": "object",
+          "lat": "float64",
+          "lon": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "Shenzhen": 1294,
+          "Shanghai": 1269,
+          "Guangzhou": 1238,
+          "Beijing": 1238,
+          "Hangzhou": 1227,
+          "Chengdu": 1210,
+          "Chongqing": 1188,
+          "Nanjing": 1184,
+          "Wuhan": 1175,
+          "Suzhou": 1149
+        }
+      },
+      "trains": {
+        "rows": 5345,
+        "columns": [
+          "language",
+          "route_origin_city",
+          "route_destination_city",
+          "TrainID",
+          "TrainType",
+          "From",
+          "To",
+          "BeginTime",
+          "EndTime",
+          "Duration",
+          "Cost"
+        ],
+        "dtypes": {
+          "language": "object",
+          "route_origin_city": "object",
+          "route_destination_city": "object",
+          "TrainID": "object",
+          "TrainType": "object",
+          "From": "object",
+          "To": "object",
+          "BeginTime": "object",
+          "EndTime": "object",
+          "Duration": "float64",
+          "Cost": "float64"
+        },
+        "nulls": {
+          "Cost": 20
+        }
+      },
+      "flights": {
+        "rows": 720,
+        "columns": [
+          "language",
+          "FlightID",
+          "From",
+          "To",
+          "BeginTime",
+          "EndTime",
+          "Duration",
+          "Cost"
+        ],
+        "dtypes": {
+          "language": "object",
+          "FlightID": "object",
+          "From": "object",
+          "To": "object",
+          "BeginTime": "object",
+          "EndTime": "object",
+          "Duration": "float64",
+          "Cost": "float64"
+        },
+        "nulls": {}
+      },
+      "subway_stations": {
+        "rows": 3635,
+        "columns": [
+          "language",
+          "city",
+          "line_name",
+          "station_name",
+          "lat",
+          "lon"
+        ],
+        "dtypes": {
+          "language": "object",
+          "city": "object",
+          "line_name": "object",
+          "station_name": "object",
+          "lat": "float64",
+          "lon": "float64"
+        },
+        "nulls": {},
+        "city_counts": {
+          "Shanghai": 583,
+          "Beijing": 476,
+          "Hangzhou": 419,
+          "Shenzhen": 384,
+          "Chengdu": 376,
+          "Guangzhou": 339,
+          "Chongqing": 305,
+          "Wuhan": 300,
+          "Suzhou": 227,
+          "Nanjing": 226
+        }
+      }
+    }
+  },
+  "sample": {
+    "human.csv row 0": {
+      "uid": "h20241029143447759844",
+      "tag": "human",
+      "start_city": "上海",
+      "target_city": "苏州",
+      "days": 3,
+      "people_number": 2,
+      "limit_rooms": false,
+      "limits_room_type": false,
+      "hard_logic_py": "['result=(day_count(plan)==3)', 'result=(people_count(plan)==2)', \"result=True\\nfor activity in allactivities(plan):\\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\"]",
+      "nature_language": "[当前位置上海,目标位置苏州,旅行人数2,旅行天数3] 我要带着我大儿子从上海出发去苏州玩三天，要轻快自由行，不要特种兵出行。帮我规划一下。",
+      "nature_language_en": "[Current location: Shanghai, Destination: Suzhou, Number of travelers: 2, Number of travel days: 3] I want to take my eldest son from Shanghai to Suzhou for a three-day trip. We want a light and free travel experience, not a rigorous one. Please help me plan it."
+    }
+  }
+}

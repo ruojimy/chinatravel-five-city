@@ -1,0 +1,86 @@
+{
+  "synthetic_fixture": true,
+  "coverage_floor_met": true,
+  "reports": [
+    {
+      "uid": "FIX-E",
+      "level": "easy",
+      "city": "合成城",
+      "synthetic": true,
+      "required_kinds": [
+        "accommodation"
+      ],
+      "plan_present": true,
+      "required_checks_complete": true,
+      "hard_checks": [
+        {
+          "id": "budget",
+          "state": "pass"
+        }
+      ],
+      "gaps": [
+        {
+          "gap_id": "FIX-G",
+          "entity_id": "synthetic-hotel",
+          "field": "price",
+          "context": {
+            "room": "twin"
+          },
+          "reason": "scope_mismatch",
+          "required": true,
+          "blocking": true,
+          "repairable": true,
+          "blocker_class": "data"
+        }
+      ],
+      "planner": {
+        "supported": true,
+        "search_complete": false
+      }
+    },
+    {
+      "uid": "FIX-M",
+      "level": "medium",
+      "city": "合成城",
+      "synthetic": true,
+      "required_kinds": [
+        "accommodation"
+      ],
+      "plan_present": true,
+      "required_checks_complete": true,
+      "hard_checks": [
+        {
+          "id": "budget",
+          "state": "fail"
+        }
+      ],
+      "gaps": [],
+      "planner": {
+        "supported": true,
+        "search_complete": false
+      }
+    },
+    {
+      "uid": "FIX-H",
+      "level": "human",
+      "city": "合成城",
+      "synthetic": true,
+      "required_kinds": [
+        "accommodation"
+      ],
+      "plan_present": true,
+      "required_checks_complete": true,
+      "hard_checks": [
+        {
+          "id": "budget",
+          "state": "pass"
+        }
+      ],
+      "gaps": [],
+      "planner": {
+        "supported": true,
+        "search_complete": false
+      }
+    }
+  ]
+}

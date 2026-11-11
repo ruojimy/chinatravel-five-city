@@ -1,0 +1,362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:shorttrip:collection-query-cohort:v1",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "uid",
+      "level",
+      "task_origin",
+      "purpose",
+      "nature_language",
+      "start_city",
+      "target_city",
+      "days",
+      "people_number",
+      "start_date",
+      "additional_constraints",
+      "required_kinds",
+      "mode",
+      "evidence_policy_id",
+      "generation",
+      "candidate_selection",
+      "split"
+    ],
+    "properties": {
+      "uid": {
+        "type": "string",
+        "minLength": 1
+      },
+      "level": {
+        "enum": [
+          "easy",
+          "medium",
+          "human"
+        ]
+      },
+      "task_origin": {
+        "enum": [
+          "researcher_generated",
+          "human_authored",
+          "synthetic_human_style"
+        ]
+      },
+      "purpose": {
+        "enum": [
+          "schema_example",
+          "development",
+          "holdout",
+          "regression"
+        ]
+      },
+      "nature_language": {
+        "type": "string",
+        "minLength": 1
+      },
+      "start_city": {
+        "type": "string",
+        "minLength": 1
+      },
+      "target_city": {
+        "type": "string",
+        "minLength": 1
+      },
+      "days": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "people_number": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "additional_constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "strength",
+            "scope",
+            "expression",
+            "compiler_status"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "strength": {
+              "enum": [
+                "hard",
+                "soft"
+              ]
+            },
+            "scope": {
+              "type": "object"
+            },
+            "expression": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "op",
+                "args"
+              ],
+              "properties": {
+                "op": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "args": {
+                  "type": "object"
+                }
+              }
+            },
+            "compiler_status": {
+              "enum": [
+                "unmapped",
+                "supported",
+                "unsupported"
+              ]
+            }
+          }
+        }
+      },
+      "required_kinds": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "attraction",
+            "restaurant",
+            "accommodation",
+            "poi",
+            "metro_station",
+            "train",
+            "flight"
+          ]
+        }
+      },
+      "mode": {
+        "enum": [
+          "collection_static_reference",
+          "benchmark_frozen",
+          "live_delivery"
+        ]
+      },
+      "evidence_policy_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "medium_variant": {
+        "enum": [
+          "paper_main_3_5",
+          "paper_appendix_2_5"
+        ]
+      },
+      "generation": {
+        "type": "object",
+        "required": [
+          "seed",
+          "budget_sampling",
+          "feasibility_claim"
+        ],
+        "properties": {
+          "seed": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "budget_sampling": {
+            "type": "string",
+            "minLength": 1
+          },
+          "feasibility_claim": {
+            "enum": [
+              "not_checked",
+              "witness_verified",
+              "infeasibility_proof_verified"
+            ]
+          }
+        }
+      },
+      "candidate_selection": {
+        "type": "object",
+        "required": [
+          "policy",
+          "required_entity_ids"
+        ],
+        "properties": {
+          "policy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_entity_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "split": {
+        "enum": [
+          "development",
+          "holdout",
+          "regression",
+          "example"
+        ]
+      },
+      "human_source": {
+        "type": "object",
+        "required": [
+          "reference",
+          "consent_status"
+        ],
+        "properties": {
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "consent_status": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "level": {
+              "const": "easy"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "additional_constraints": {
+              "minItems": 1,
+              "maxItems": 1
+            },
+            "task_origin": {
+              "const": "researcher_generated"
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "level": {
+              "const": "medium"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "medium_variant"
+          ],
+          "properties": {
+            "task_origin": {
+              "const": "researcher_generated"
+            },
+            "additional_constraints": {
+              "maxItems": 5
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "level": {
+              "const": "medium"
+            },
+            "medium_variant": {
+              "const": "paper_main_3_5"
+            }
+          },
+          "required": [
+            "medium_variant"
+          ]
+        },
+        "then": {
+          "properties": {
+            "additional_constraints": {
+              "minItems": 3
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "level": {
+              "const": "medium"
+            },
+            "medium_variant": {
+              "const": "paper_appendix_2_5"
+            }
+          },
+          "required": [
+            "medium_variant"
+          ]
+        },
+        "then": {
+          "properties": {
+            "additional_constraints": {
+              "minItems": 2
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "level": {
+              "const": "human"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "task_origin": {
+              "enum": [
+                "human_authored",
+                "synthetic_human_style"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "task_origin": {
+              "const": "human_authored"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "human_source"
+          ]
+        }
+      }
+    ]
+  },
+  "$comment": "Top-level constraints count logical requirements, not clauses or expression tree nodes. Native storage/plan contracts remain separate."
+}

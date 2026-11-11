@@ -1,0 +1,272 @@
+{
+ "version": "quality-v1",
+ "set_at": "2026-11-08T14:50:00+08:00",
+ "scope": "catalog.sqlite3 中 city='西安' 的全部记录（7 类），包含 legacy 与 transport",
+ "target": {
+  "high_quality_ratio": 0.5,
+  "rule": "A 类记录数 / 西安记录总数 >= 0.50，且 hard_failures = 0",
+  "note": "不降低字段标准：L1 静态字段必须全部非空；动态字段保持运行时依赖"
+ },
+ "L1_static_fields": {
+  "attraction": [
+   "lat",
+   "lon",
+   "type",
+   "opentime",
+   "endtime"
+  ],
+  "restaurant": [
+   "lat",
+   "lon",
+   "cuisine",
+   "opentime",
+   "endtime"
+  ],
+  "accommodation": [
+   "lat",
+   "lon",
+   "featurehoteltype"
+  ],
+  "poi": [
+   "name",
+   "position"
+  ],
+  "metro_station": [
+   "name",
+   "position",
+   "line"
+  ],
+  "train": [
+   "TrainID",
+   "TrainType",
+   "From",
+   "To",
+   "BeginTime",
+   "EndTime",
+   "Duration"
+  ],
+  "flight": [
+   "FlightID",
+   "From",
+   "To",
+   "BeginTime",
+   "EndTime",
+   "Duration"
+  ]
+ },
+ "L2_runtime_dependent": [
+  "price",
+  "Cost",
+  "numbed",
+  "room_type",
+  "ticket_inventory",
+  "weather",
+  "today_hours",
+  "recommendmintime",
+  "recommendmaxtime"
+ ],
+ "scope_rule": {
+  "version": "keep-and-document-v2",
+  "supersedes": "2026-11-08 早先的「只允许西安<->原生10城、其余降 C」口径，已按用户指示撤销",
+  "applies_to": [
+   "train",
+   "flight"
+  ],
+  "policy": "全部保留、不因目标城市不在原生 10 城而降级；但每条记录必须带可追溯的 scope_tier，并在报告中按层列出数量、A 类数与来源",
+  "user_instruction": "用户 2026-11-08：最早的扩展数据集包含了额外的一些城市，这些跨城数据可以保留，但必须说明",
+  "reference_sets": {
+   "native10": {
+    "cities": [
+     "北京",
+     "成都",
+     "重庆",
+     "广州",
+     "杭州",
+     "南京",
+     "上海",
+     "深圳",
+     "苏州",
+     "武汉"
+    ],
+    "evidence": "ChinaTravel/chinatravel/environment/database/intercity_transport/：列车 90 文件 = 10 城 x 9 方向（单城视角成都 18 文件 407 行）；航班 9 城 72 城市对 x 10 班 = 720 行（苏州无机场，单城视角 160 行）",
+    "tier": "native10"
+   },
+   "expansion30": {
+    "cities": [
+     "西安",
+     "天津",
+     "郑州",
+     "长沙",
+     "青岛",
+     "济南",
+     "厦门",
+     "福州",
+     "昆明",
+     "贵阳",
+     "南宁",
+     "合肥",
+     "南昌",
+     "沈阳",
+     "大连",
+     "哈尔滨",
+     "长春",
+     "石家庄",
+     "太原",
+     "兰州",
+     "乌鲁木齐",
+     "呼和浩特",
+     "海口",
+     "三亚",
+     "无锡",
+     "宁波",
+     "温州",
+     "珠海",
+     "佛山",
+     "东莞"
+    ],
+    "evidence": "data/expansion_v1_20261022/collection_manifest.json -> city_windows（30 城，created_at 2026-10-22T10:58:38Z）；报告/12_扩容数据完整合约与独立模型验证.md 与 报告/静态数据库5城市扩张.md 均记为「30 个新增城市」",
+    "note": "含西安自身，另 29 城为额外城市；西安 <-> 这 29 城的跨城记录属于扩展集既定范围",
+    "tier": "expansion30"
+   }
+  },
+  "tiers": {
+   "native10": "西安 <-> ChinaTravel 原生 10 城（沙盒全互联口径）",
+   "expansion30": "西安 <-> 最早扩展集额外 29 城；用户明确允许保留，必须说明",
+   "other_city": "两端含西安，但目标城市既不在原生 10 城也不在扩展 30 城（聚合看板/航司页真实航线）；保留并单独标注，报告里不得与上面两层混算",
+   "no_xian": "两端都不含西安（采集时混入的其它城市对）；保留并标注为范围异常",
+   "not_cross_city": "非跨城类别"
+  },
+  "normalisation": "scripts/xian_scope.py：IATA 三字码 + 中文/英文机场名 + 火车站名 -> 规范城市名；无法归一记 OUT",
+  "grading_effect": "scope_tier 不影响 A/B/C/D 判定（字段完整性 + 原文可复核 + 来源权威度仍是唯一门槛）；tier 只用于分层披露",
+  "reporting_requirement": "最终报告必须给出每层的记录数、A 类数、来源家族，以及扩展集 30 城清单的出处；不得把扩展城航线说成原生 10 城覆盖"
+ },
+ "grades": {
+  "A": "优质：L1 字段全部非空 + 本地原文可复核（所有 source_value 字段的 raw/sha256/quote/name 全部通过，或坐标佐证≤200m）+ 契约通过 + 来源评分≥0.60 + 无重复身份 + 坐标合规",
+  "B": "合格：本地可复核 + 契约通过 + 来源评分≥0.60，但 L1 字段仍有缺",
+  "C": "基础：可复核但来源评分<0.60，或 legacy 无本地原文 / 仅部分可复核而结构合规",
+  "D": "问题：硬失败（哈希不符/引文不符/名称不在原文/证据悬空）、契约失败、重复身份、坐标越界或坐标系未声明"
+ },
+ "source_score": {
+  "weights": {
+   "authority": 0.3,
+   "licence": 0.15,
+   "verifiability": 0.25,
+   "freshness": 0.1,
+   "field_coverage": 0.2
+  },
+  "tiers": {
+   "T1": 0.8,
+   "T2": 0.6,
+   "T3": 0.4,
+   "T4": 0.0
+  },
+  "authority_base": {
+   "government_published_list": 0.95,
+   "municipal_culture_tourism_bureau_public_table": 0.9,
+   "carrier_published_schedule": 0.92,
+   "airport_official_schedule": 0.9,
+   "airline_travel_guide": 0.78,
+   "amap_place_api": 0.78,
+   "baidu_place_api": 0.76,
+   "community_structured_data": 0.62,
+   "historical_catalog_reference": 0.45,
+   "historical_reference": 0.4,
+   "travel_marketplace_display": 0.55,
+   "aggregator_user_generated": 0.38,
+   "provider_snapshot": 0.55,
+   "unknown": 0.3
+  },
+  "licence_base": {
+   "public_official_notice": 0.95,
+   "public_timetable": 0.9,
+   "public_timetable_session_access": 0.85,
+   "cc0": 0.9,
+   "api_terms": 0.7,
+   "public_schedule_page": 0.65,
+   "provider_terms_pending_review": 0.55,
+   "public_page_reuse_unverified": 0.35,
+   "allowed": 0.8,
+   "unknown": 0.2
+  },
+  "freshness_days": 30,
+  "newly_opened_sites": [
+   {
+    "site": "you.ctrip.com / gs.ctrip.com",
+    "label": "携程公开攻略详情页",
+    "pilot": "results/xian_claude_20261107_000146/report.md",
+    "finding": "免登录 curl 原始 HTML 逐字含营业区间；89 页仅 3 条精确匹配，含旺淡季多值时必须剔除",
+    "admissible": true
+   },
+   {
+    "site": "www.dianping.com",
+    "label": "大众点评登录态",
+    "pilot": "results/xian_claude_20261106_232815/report.md",
+    "finding": "登录后详情页触发点选验证；只给开始营业无结束时间；菜系词来自导航栏不可信；20 次尝试 0 条可入库",
+    "admissible": false
+   },
+   {
+    "site": "www.meituan.com / i.meituan.com",
+    "label": "美团",
+    "pilot": "results/xian_claude_20261106_232815/report.md",
+    "finding": "企业官网无商户搜索；移动页为验证页；登录态试点无可用入口",
+    "admissible": false
+   },
+   {
+    "site": "flights.ch.com",
+    "label": "春秋航空官网时刻表",
+    "pilot": "results/xian_claude_20261106_214625/report.md",
+    "finding": "静态页逐字含航班号与起降时刻，T1 官方运营方",
+    "admissible": true
+   },
+   {
+    "site": "www.avionio.com / www.flightaware.com / www.flightstats.com",
+    "label": "航班聚合看板",
+    "pilot": "results/xian_claude_20261106_214625/report.md",
+    "finding": "当日看板 reference_only；大量单时刻记录缺 EndTime/Duration；不作权威来源",
+    "admissible": true
+   },
+   {
+    "site": "kyfw.12306.cn",
+    "label": "12306 查询页渲染表格",
+    "pilot": "results/xian_claude_20261106_185532/report.md",
+    "finding": "余票接口返回加密串，改读 DOM 快照；车次时刻可复核，票价缺失",
+    "admissible": true
+   },
+   {
+    "site": "restapi.amap.com",
+    "label": "高德 place/text",
+    "pilot": "results/xian_claude_20261106_184020/report.md",
+    "finding": "status=1 infocode=10000；GCJ02 转 WGS84；show_fields=business 批量给营业时段/菜系/酒店档次",
+    "admissible": true
+   },
+   {
+    "site": "api.map.baidu.com",
+    "label": "百度 place/v2",
+    "pilot": "scripts/xian_field_campaign.py",
+    "finding": "scope=2 批量返回 shop_hours/tag/inner_facility；BD09 转 WGS84；需 SN 签名",
+    "admissible": true
+   }
+  ]
+ },
+ "verification": "复用 scripts/xian_verify.py 的 raw 复算 + 引文逐字 + 名称/坐标佐证 + 身份去重；每批入库后必须跑，hard_failures>0 立即回滚受影响字段",
+ "completion": "A 占比≥50% 时停止采集，跑全量 xian_verify.py + xian_quality.py 出最终报告；若连续 3 轮 A 占比增量<0.5pp，记录来源天花板并请求换源，不无限消耗配额",
+ "native10_gate": {
+  "set_at": "2026-11-08T16:43:00+08:00",
+  "user_instruction": "但是西安和原生10城的跨城数据数量上和质量上也需要达标",
+  "applies_to": "scope_tier == native10 的 train/flight 记录（两端为 西安 + ChinaTravel 原生 10 城）",
+  "quantity": {
+   "train_records_min": 407,
+   "flight_records_min": 160,
+   "basis": "ChinaTravel 单城视角（成都）：train 18 文件 407 行、flight 160 行；见 ChinaTravel/chinatravel/environment/database/intercity_transport/",
+   "city_pairs": "train 10 城每城出/入双向至少各 1 条；flight 9 城（苏州无机场）每城出/入双向至少各 1 条"
+  },
+  "quality": {
+   "A_ratio_min": 0.5,
+   "hard_failures": 0,
+   "integrity_check": "ok",
+   "basis": "与全局优质口径一致：L1 字段齐备 + 本地原文可复核 + 来源评分≥0.60"
+  },
+  "completion_rule": "quantity + quality + city_pairs 三项同时满足，且全局 A 占比≥50%，才算整轮目标达成",
+  "independent_of": "expansion30 / other_city / no_xian 层不得用于凑 native10 的数量或质量"
+ }
+}

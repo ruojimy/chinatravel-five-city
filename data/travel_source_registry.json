@@ -1,0 +1,64 @@
+{
+  "chinatravel_sandbox": {
+    "name": "ChinaTravel bilingual sandbox",
+    "url": "https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel-Sandbox",
+    "maintainer_url": "https://github.com/LAMDA-NeSy/ChinaTravel",
+    "authority": "research_benchmark_not_live_operator",
+    "independence_group": "LAMDA-NeSy-ChinaTravel",
+    "supports": ["identity", "coordinates", "theme", "opening_hours", "price", "intercity_schedule"],
+    "source_published_at": null,
+    "source_updated_at": null,
+    "code_licence": "MIT",
+    "dataset_usage_rights": "unverified; do not inherit code licence",
+    "authority_note": "Official benchmark provenance is not evidence that each row is current or that a real operator confirmed it. Release date is not fact observation date.",
+    "verification_note": "Maintainer README and GitHub repository checked 2026-10-22. Dataset card could not be opened by web tool. Local source row timestamps absent."
+  },
+  "amap": {
+    "name": "高德 Web Service API",
+    "url": "https://restapi.amap.com",
+    "allowed_hosts": ["restapi.amap.com"],
+    "authority": "official_api",
+    "independence_group": "amap",
+    "field_independence_groups": {"weather_now": null, "weather_forecast": null},
+    "supports": ["identity", "coordinates", "route_duration", "route_fare", "weather_now", "weather_forecast"],
+    "documentation": ["https://lbs.amap.com/api/webservice/guide/api/newroute", "https://lbs.amap.com/api/webservice/guide/api/weatherinfo"],
+    "usage_rights": "API terms; keep research evidence locally, check redistribution rights separately",
+    "authority_note": "Routing times and fares are provider estimates, not real arrival guarantees. Weather reporttime governs source freshness; its upstream independence from CMA is unverified, so it does not add a second independent weather-source group. Amap need not be authoritative for venue temporary closure, inventory or accessibility."
+  },
+  "nmc": {
+    "name": "中央气象台城市天气页面",
+    "url": "https://www.nmc.cn/",
+    "allowed_hosts": ["www.nmc.cn", "nmc.cn"],
+    "authority": "official_agency",
+    "independence_group": "cma-weather-services",
+    "supports": ["weather_now", "weather_forecast", "weather_alert"],
+    "authority_note": "Concrete applicable dated bulletin needed. Page date fragments without year/timezone remain unknown. Not independent from other CMA service mirrors."
+  },
+  "weather_com_cn": {
+    "name": "中国天气网",
+    "url": "https://www.weather.com.cn/",
+    "allowed_hosts": ["www.weather.com.cn", "weather.com.cn"],
+    "authority": "official_agency",
+    "independence_group": "cma-weather-services",
+    "supports": ["weather_now", "weather_forecast", "weather_alert"],
+    "authority_note": "Same institutional weather-service lineage as NMC; do not count two websites as two independent forecasts. Verify issue time on actual page."
+  },
+  "cma_portal": {
+    "name": "中国气象局公共门户",
+    "url": "https://www.cma.gov.cn/",
+    "allowed_hosts": ["www.cma.gov.cn", "cma.gov.cn"],
+    "authority": "official_agency",
+    "independence_group": "cma",
+    "supports": ["weather_now", "weather_forecast", "weather_alert"],
+    "authority_note": "Only a concrete applicable bulletin with issue time is evidence; homepage alone is not. Verify upstream provenance: a republication of the same feed is not an independent observation."
+  },
+  "shanghai_metro": {
+    "name": "上海地铁运营公告",
+    "url": "https://www.shmetro.com/",
+    "allowed_hosts": ["www.shmetro.com", "shmetro.com"],
+    "authority": "primary_operator",
+    "independence_group": "shanghai-metro",
+    "supports": ["route_disruption", "intercity_schedule", "accessibility"],
+    "authority_note": "Applicable dated operator notice needed. Does not substitute for the required Amap door-to-door route-duration call."
+  }
+}

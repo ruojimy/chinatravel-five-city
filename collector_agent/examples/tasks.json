@@ -1,0 +1,50 @@
+[
+  {
+    "uid": "FIX-E",
+    "level": "easy",
+    "synthetic": true,
+    "task_origin": "synthetic_fixture",
+    "nature_language": "合成控制面例子，不计真实数据或论文成绩",
+    "start_city": "合成城",
+    "target_city": "合成城",
+    "days": 1,
+    "people_number": 2,
+    "additional_constraints": [],
+    "required_kinds": [
+      "accommodation"
+    ],
+    "budget_CNY": 500
+  },
+  {
+    "uid": "FIX-M",
+    "level": "medium",
+    "synthetic": true,
+    "task_origin": "synthetic_fixture",
+    "nature_language": "合成控制面例子，不计真实数据或论文成绩",
+    "start_city": "合成城",
+    "target_city": "合成城",
+    "days": 1,
+    "people_number": 2,
+    "additional_constraints": [],
+    "required_kinds": [
+      "accommodation"
+    ],
+    "budget_CNY": 500
+  },
+  {
+    "uid": "FIX-H",
+    "level": "human",
+    "synthetic": true,
+    "task_origin": "synthetic_fixture",
+    "nature_language": "合成控制面例子，不计真实数据或论文成绩",
+    "start_city": "合成城",
+    "target_city": "合成城",
+    "days": 1,
+    "people_number": 2,
+    "additional_constraints": [],
+    "required_kinds": [
+      "accommodation"
+    ],
+    "budget_CNY": 500
+  }
+]

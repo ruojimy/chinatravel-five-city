@@ -1,0 +1,1131 @@
+{
+  "schema_version": "full-itinerary-task-blueprint-v1",
+  "design_status": "designed_not_executed",
+  "title": "五城完整行程15题开发集",
+  "frozen_source_basis": "2026-11-03 acceptance snapshot; this blueprint is not a planning result",
+  "timezone": "Asia/Shanghai",
+  "date_resolution": {
+    "rule": "首次执行时读取Asia/Shanghai真实日期，D取次日；展开D/D+1/D+2并冻结全文及哈希，重跑不能滚动日期；记录执行时钟，天气超预报范围保持未知。",
+    "date_is_requirement_not_source_fact": true
+  },
+  "methodology": {
+    "difficulty": "参照本地ChinaTravel协议；easy/medium是研究者设计，需映射审计后才可称论文对齐；human仅为synthetic_human_style",
+    "budgets": "预先给定的研究需求，不从候选成本反推，也未证明可行",
+    "constraints": "此处为基准标注；现有compiler不一定支持。运行前生成真实可执行检查，unsupported归ENGINEERING，禁止仅改compiler_status",
+    "transport": "起终枢纽是需求锚点，不是已核验入口/坐标或班次事实；冻结入口解析策略，无法核实则保留CONTEXT/VERIFY"
+  },
+  "full_itinerary_policy": {
+    "continuous_timeline": true,
+    "all_movement_legs_required": true,
+    "opening_windows_cover_whole_visit": true,
+    "lunch_and_dinner_each_day": true,
+    "breakfast_on_overnight_following_days": true,
+    "all_required_nights": true,
+    "group_total_cost_includes_all_legs_tickets_meals_rooms": true,
+    "unknown_is_not_zero": true,
+    "soft_preferences_do_not_override_hard_constraints": true,
+    "source_estimates_are_labelled_not_execution_guarantees": true
+  },
+  "tasks": [
+    {
+      "uid": "FT15-E01",
+      "level": "easy",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "西安",
+      "start_city": "西安",
+      "target_city": "西安",
+      "days": 1,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "西安北站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "西安北站",
+      "return_by_token": "D 20:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从西安北站开始，在西安玩一天，20:00前回到同一车站。总预算600元，含两人的景点门票、午餐、晚餐和全部市内交通。请选择具体地点，排出可执行的时间表，说明每段交通方式、耗时和费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 600
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "基础时间边界与完整行程要求单列；附加逻辑要求为总预算。不得自称已证明可行。"
+    },
+    {
+      "uid": "FT15-M01",
+      "level": "medium",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "西安",
+      "start_city": "成都",
+      "target_city": "西安",
+      "days": 3,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "成都东站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "成都东站",
+      "return_by_token": "D+2 22:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从成都东站开始去西安玩三天两晚，D+2日22:00前回到成都东站。往返城际交通只坐火车，两晚住同一家酒店的一间双床房，必须参观陕西历史博物馆。总预算4500元，包括往返票、两晚住宿、行程中的餐饮、门票和市内交通。请列出实际日期对应的班次、酒店及房型、每天景点和三餐，连接所有交通并计算两人的总费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 4500
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "intercity_mode",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "intercity_modes_subset",
+            "args": {
+              "values": [
+                "train"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 2,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "陕西历史博物馆",
+              "city": "西安"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation",
+        "train"
+      ],
+      "required_transport_scope": [
+        "innercity",
+        "intercity_outbound",
+        "intercity_return"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "按4组附加逻辑要求设计；房间/床型/夜数/酒店一致性必须拆成实际可执行子检查并披露计数，不能只数标题。"
+    },
+    {
+      "uid": "FT15-E02",
+      "level": "easy",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "厦门",
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "days": 1,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "厦门站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "厦门站",
+      "return_by_token": "D 20:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从厦门站开始，在厦门玩一天，20:00前回到同一车站。总预算700元，含两人的景点门票、午餐、晚餐和全部市内交通。请选择具体地点，排出可执行的时间表，说明每段交通方式、耗时和费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 700
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "基础时间边界与完整行程要求单列；附加逻辑要求为总预算。不得自称已证明可行。"
+    },
+    {
+      "uid": "FT15-M02",
+      "level": "medium",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "厦门",
+      "start_city": "广州",
+      "target_city": "厦门",
+      "days": 3,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "广州白云国际机场",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "广州白云国际机场",
+      "return_by_token": "D+2 22:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从广州白云国际机场开始去厦门玩三天两晚，D+2日22:00前回到广州白云国际机场。往返城际交通只坐飞机，两晚住同一家酒店的一间双床房，必须参观厦门园林植物园。总预算7000元，包括往返票、两晚住宿、行程中的餐饮、门票和市内交通。请列出实际日期对应的班次、酒店及房型、每天景点和三餐，连接所有交通并计算两人的总费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 7000
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "intercity_mode",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "intercity_modes_subset",
+            "args": {
+              "values": [
+                "airplane"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 2,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "厦门园林植物园",
+              "city": "厦门"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation",
+        "flight"
+      ],
+      "required_transport_scope": [
+        "innercity",
+        "intercity_outbound",
+        "intercity_return"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "按4组附加逻辑要求设计；房间/床型/夜数/酒店一致性必须拆成实际可执行子检查并披露计数，不能只数标题。"
+    },
+    {
+      "uid": "FT15-E03",
+      "level": "easy",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "宁波",
+      "start_city": "宁波",
+      "target_city": "宁波",
+      "days": 1,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "宁波站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "宁波站",
+      "return_by_token": "D 20:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从宁波站开始，在宁波玩一天，20:00前回到同一车站。总预算600元，含两人的景点门票、午餐、晚餐和全部市内交通。请选择具体地点，排出可执行的时间表，说明每段交通方式、耗时和费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 600
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "基础时间边界与完整行程要求单列；附加逻辑要求为总预算。不得自称已证明可行。"
+    },
+    {
+      "uid": "FT15-M03",
+      "level": "medium",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "宁波",
+      "start_city": "杭州",
+      "target_city": "宁波",
+      "days": 3,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "杭州东站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "杭州东站",
+      "return_by_token": "D+2 22:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从杭州东站开始去宁波玩三天两晚，D+2日22:00前回到杭州东站。往返城际交通只坐火车，两晚住同一家酒店的一间双床房，必须参观天一阁博物院。总预算3500元，包括往返票、两晚住宿、行程中的餐饮、门票和市内交通。请列出实际日期对应的班次、酒店及房型、每天景点和三餐，连接所有交通并计算两人的总费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 3500
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "intercity_mode",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "intercity_modes_subset",
+            "args": {
+              "values": [
+                "train"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 2,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "天一阁博物院",
+              "city": "宁波"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation",
+        "train"
+      ],
+      "required_transport_scope": [
+        "innercity",
+        "intercity_outbound",
+        "intercity_return"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "按4组附加逻辑要求设计；房间/床型/夜数/酒店一致性必须拆成实际可执行子检查并披露计数，不能只数标题。"
+    },
+    {
+      "uid": "FT15-E04",
+      "level": "easy",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "长沙",
+      "start_city": "长沙",
+      "target_city": "长沙",
+      "days": 1,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "长沙站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "长沙站",
+      "return_by_token": "D 20:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从长沙站开始，在长沙玩一天，20:00前回到同一车站。总预算600元，含两人的景点门票、午餐、晚餐和全部市内交通。请选择具体地点，排出可执行的时间表，说明每段交通方式、耗时和费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 600
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "基础时间边界与完整行程要求单列；附加逻辑要求为总预算。不得自称已证明可行。"
+    },
+    {
+      "uid": "FT15-M04",
+      "level": "medium",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "长沙",
+      "start_city": "武汉",
+      "target_city": "长沙",
+      "days": 3,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "武汉站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "武汉站",
+      "return_by_token": "D+2 22:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从武汉站开始去长沙玩三天两晚，D+2日22:00前回到武汉站。往返城际交通只坐火车，两晚住同一家酒店的一间双床房，必须参观湖南博物院。总预算4000元，包括往返票、两晚住宿、行程中的餐饮、门票和市内交通。请列出实际日期对应的班次、酒店及房型、每天景点和三餐，连接所有交通并计算两人的总费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 4000
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "intercity_mode",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "intercity_modes_subset",
+            "args": {
+              "values": [
+                "train"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 2,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "湖南博物院",
+              "city": "长沙"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation",
+        "train"
+      ],
+      "required_transport_scope": [
+        "innercity",
+        "intercity_outbound",
+        "intercity_return"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "按4组附加逻辑要求设计；房间/床型/夜数/酒店一致性必须拆成实际可执行子检查并披露计数，不能只数标题。"
+    },
+    {
+      "uid": "FT15-E05",
+      "level": "easy",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "青岛",
+      "start_city": "青岛",
+      "target_city": "青岛",
+      "days": 1,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "青岛站",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "青岛站",
+      "return_by_token": "D 20:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从青岛站开始，在青岛玩一天，20:00前回到同一车站。总预算700元，含两人的景点门票、午餐、晚餐和全部市内交通。请选择具体地点，排出可执行的时间表，说明每段交通方式、耗时和费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 700
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "基础时间边界与完整行程要求单列；附加逻辑要求为总预算。不得自称已证明可行。"
+    },
+    {
+      "uid": "FT15-M05",
+      "level": "medium",
+      "task_origin": "researcher_generated",
+      "purpose": "development",
+      "city": "青岛",
+      "start_city": "上海",
+      "target_city": "青岛",
+      "days": 3,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "上海虹桥国际机场",
+      "start_at_token": "D 08:00+08:00",
+      "end_anchor": "上海虹桥国际机场",
+      "return_by_token": "D+2 22:00+08:00",
+      "nature_language_template": "我们两名成年人D日08:00从上海虹桥国际机场开始去青岛玩三天两晚，D+2日22:00前回到上海虹桥国际机场。往返城际交通只坐飞机，两晚住同一家酒店的一间双床房，必须参观青岛市博物馆。总预算6500元，包括往返票、两晚住宿、行程中的餐饮、门票和市内交通。请列出实际日期对应的班次、酒店及房型、每天景点和三餐，连接所有交通并计算两人的总费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 6500
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "intercity_mode",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "intercity_modes_subset",
+            "args": {
+              "values": [
+                "airplane"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 2,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "青岛市博物馆",
+              "city": "青岛"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation",
+        "flight"
+      ],
+      "required_transport_scope": [
+        "innercity",
+        "intercity_outbound",
+        "intercity_return"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "按4组附加逻辑要求设计；房间/床型/夜数/酒店一致性必须拆成实际可执行子检查并披露计数，不能只数标题。"
+    },
+    {
+      "uid": "FT15-H01",
+      "level": "human",
+      "task_origin": "synthetic_human_style",
+      "purpose": "development",
+      "city": "西安",
+      "start_city": "西安",
+      "target_city": "西安",
+      "days": 2,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "西安北站",
+      "start_at_token": "D 09:00+08:00",
+      "end_anchor": "西安北站",
+      "return_by_token": "D+1 18:00+08:00",
+      "nature_language_template": "我和父亲两个人想在西安慢慢玩两天。D日09:00从西安北站开始，D+1日18:00前回到西安北站，住一晚一间双床房。两人全部花费别超过1800元。父亲不想赶路，每天步行累计不要超过4公里，晚上19:00前回到酒店或结束当天行程。我们比较喜欢历史文化，希望景点之间有休息时间。请把吃饭、住宿、每段交通和费用都排进去。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 1800
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 1,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "walking",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "daily_walking_distance_lte",
+            "args": {
+              "km": 4
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "daily_end",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "daily_activity_end_lte",
+            "args": {
+              "local_time": "19:00"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "preference": "历史文化",
+          "scope": "attraction_selection"
+        },
+        {
+          "preference": "节奏舒缓并安排休息",
+          "scope": "daily_schedule"
+        }
+      ],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "研究者生成的人类需求风格，非human_authored；软偏好未知不能判硬约束失败，不能声称已测自然语言理解。"
+    },
+    {
+      "uid": "FT15-H02",
+      "level": "human",
+      "task_origin": "synthetic_human_style",
+      "purpose": "development",
+      "city": "厦门",
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "days": 2,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "厦门站",
+      "start_at_token": "D 09:00+08:00",
+      "end_anchor": "厦门站",
+      "return_by_token": "D+1 18:00+08:00",
+      "nature_language_template": "我和朋友两个人D日09:00到厦门站，D+1日18:00前回到厦门站，中间住一晚一间双床房。全部预算2200元，希望能看海，也安排些室内文化场馆；如果出行时段的预报有雨，希望给出能衔接上的室内备选。我们不坐船，午餐和晚餐都要有具体去处。请把酒店、景点、天气判断依据、往返交通、时间和总费用写清楚，哪些还没确认也说清楚。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 2200
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 1,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "no_boat",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "transport_modes_exclude",
+            "args": {
+              "values": [
+                "ferry",
+                "boat"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "preference": "海景",
+          "scope": "attraction_selection"
+        },
+        {
+          "preference": "预报有雨时优先室内替代",
+          "scope": "weather_conditional",
+          "condition": "forecast_rain_for_activity_window"
+        }
+      ],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "研究者生成的人类需求风格，非human_authored；软偏好未知不能判硬约束失败，不能声称已测自然语言理解。"
+    },
+    {
+      "uid": "FT15-H03",
+      "level": "human",
+      "task_origin": "synthetic_human_style",
+      "purpose": "development",
+      "city": "宁波",
+      "start_city": "宁波",
+      "target_city": "宁波",
+      "days": 2,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "宁波站",
+      "start_at_token": "D 09:00+08:00",
+      "end_anchor": "宁波站",
+      "return_by_token": "D+1 18:00+08:00",
+      "nature_language_template": "我们两名成年人想在宁波玩两天，D日09:00从宁波站出发，D+1日18:00前回到宁波站，住一晚一间双床房，全部预算1700元。天一阁博物院一定要去，每天不要安排09:00之前的活动。我们想了解城市历史，也想尝试本地菜，餐厅不必追求网红。请把三餐、住宿、景点停留和每段交通排成连贯行程，逐项计算费用。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 1700
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 1,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "天一阁博物院",
+              "city": "宁波"
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "daily_start",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "daily_activity_start_gte",
+            "args": {
+              "local_time": "09:00"
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "preference": "城市历史",
+          "scope": "attraction_selection"
+        },
+        {
+          "preference": "本地菜，网红属性不作硬条件",
+          "scope": "restaurant_selection"
+        }
+      ],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "研究者生成的人类需求风格，非human_authored；软偏好未知不能判硬约束失败，不能声称已测自然语言理解。"
+    },
+    {
+      "uid": "FT15-H04",
+      "level": "human",
+      "task_origin": "synthetic_human_style",
+      "purpose": "development",
+      "city": "长沙",
+      "start_city": "长沙",
+      "target_city": "长沙",
+      "days": 2,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "长沙站",
+      "start_at_token": "D 09:00+08:00",
+      "end_anchor": "长沙站",
+      "return_by_token": "D+1 18:00+08:00",
+      "nature_language_template": "我和朋友两个人D日09:00从长沙站开始玩，D+1日18:00前回到长沙站，住一晚一间双床房，所有费用合计1800元以内。湖南博物院必须安排进去，市内不打车。我们想吃本地菜，但希望尽量有清淡、不辣的菜可选，晚上也想留一点自由活动时间。请给出具体餐厅和有依据的菜品选择，把预约条件、饭点、酒店以及公交或地铁接驳都排清楚。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 1800
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 1,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "must_visit",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "must_visit_entity",
+            "args": {
+              "name": "湖南博物院",
+              "city": "长沙"
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "no_taxi",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "transport_modes_exclude",
+            "args": {
+              "values": [
+                "taxi"
+              ]
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "preference": "本地菜中有清淡不辣选择；无证据则标未知",
+          "scope": "restaurant_menu"
+        },
+        {
+          "preference": "晚上保留自由活动时间",
+          "scope": "daily_schedule"
+        }
+      ],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "研究者生成的人类需求风格，非human_authored；软偏好未知不能判硬约束失败，不能声称已测自然语言理解。"
+    },
+    {
+      "uid": "FT15-H05",
+      "level": "human",
+      "task_origin": "synthetic_human_style",
+      "purpose": "development",
+      "city": "青岛",
+      "start_city": "青岛",
+      "target_city": "青岛",
+      "days": 2,
+      "people_number": 2,
+      "adults": 2,
+      "start_date_token": "D",
+      "start_anchor": "青岛站",
+      "start_at_token": "D 09:00+08:00",
+      "end_anchor": "青岛站",
+      "return_by_token": "D+1 18:00+08:00",
+      "nature_language_template": "我们两名成年人想在青岛待两天，D日09:00从青岛站出发，D+1日18:00前回到青岛站，住一晚一间双床房，总预算2000元。每天步行累计最多5公里，希望兼顾海边和老城建筑；天气不适合户外时，优先用室内文化场馆替换。午晚餐不能省略，也不要把餐券价格直接当成人均饭钱。请把住宿、景点、交通和全部费用排成闭合的两日行程。",
+      "additional_constraints": [
+        {
+          "id": "budget",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "total_cost_lte",
+            "args": {
+              "CNY": 2000
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "room",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "room_configuration",
+            "args": {
+              "rooms": 1,
+              "minimum_beds": 2,
+              "room_type": "双床房",
+              "nights": 1,
+              "same_hotel": true
+            }
+          },
+          "compiler_status": "unmapped"
+        },
+        {
+          "id": "walking",
+          "strength": "hard",
+          "scope": "whole_trip",
+          "expression": {
+            "op": "daily_walking_distance_lte",
+            "args": {
+              "km": 5
+            }
+          },
+          "compiler_status": "unmapped"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "preference": "海边与老城建筑",
+          "scope": "attraction_selection"
+        },
+        {
+          "preference": "不利天气时优先室内文化场馆",
+          "scope": "weather_conditional",
+          "condition": "unfavorable_forecast_for_activity_window"
+        }
+      ],
+      "required_kinds": [
+        "attraction",
+        "restaurant",
+        "accommodation"
+      ],
+      "required_transport_scope": [
+        "innercity"
+      ],
+      "mode": "live_augmented",
+      "annotation_note": "研究者生成的人类需求风格，非human_authored；软偏好未知不能判硬约束失败，不能声称已测自然语言理解。"
+    }
+  ]
+}

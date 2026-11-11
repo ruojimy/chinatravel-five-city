@@ -1,0 +1,78 @@
+{
+  "version": "xian11-testset-v1",
+  "set_at": "2026-11-08T20:05:00+08:00",
+  "user_instruction": "ChinaTravel 原生测试集覆盖 10 城市，easy/medium/human 三类；现在加入西安，测试题目数量与覆盖范围等同等对待，多城市串行计划等也要覆盖",
+  "native_baseline": {
+    "cities": ["北京", "成都", "重庆", "广州", "杭州", "南京", "上海", "深圳", "苏州", "武汉"],
+    "easy": 300,
+    "medium": 150,
+    "human": 154,
+    "total": 604,
+    "per_city_easy": 30.0,
+    "per_city_medium": 15.0,
+    "per_city_human": 15.4,
+    "per_city_total": 60.4,
+    "source": "ChinaTravel/chinatravel/data/{easy,medium,human}/*.json 逐文件统计",
+    "note": "原生城市对为 10x9=90 个有序对；easy 实际覆盖 80、medium 76、human 63，并非全双向覆盖"
+  },
+  "quota": {
+    "rule": "西安作为第 11 城，取得与任一原生成市同等的题量（按每城平均配额向下取整）",
+    "easy": 30,
+    "medium": 15,
+    "human": 15,
+    "total": 60,
+    "derivation": "easy 300/10=30；medium 150/10=15；human 154/10=15.4 取 15；合计 60 题，与每城均值 60.4 相当"
+  },
+  "coverage_requirements": {
+    "city_pairs": {
+      "required": "西安 -> 10 城 与 10 城 -> 西安 共 20 个有序对，三层合计必须全覆盖；easy 层单独全覆盖 20 对",
+      "stricter_than_native": true,
+      "reason": "原生每层只覆盖 63~80/90 对；西安作为新增城市应做到双向无缺口"
+    },
+    "days": {"easy": [1, 2, 3], "medium": [2, 3, 4], "human": [1, 2, 3, 4, 5, 6]},
+    "people_number": {"easy": [1, 2, 3, 4], "medium": [1, 2, 3, 4], "human": [1, 2, 3, 4, 5]},
+    "constraint_families": {
+      "required_min": 10,
+      "source": "ChinaTravel/synthetic_query_generation/catalog.py -> CONSTRAINT_GENERATORS 的 13 个语义家族",
+      "families": ["basic", "room", "transport", "transport_metrics", "name_type", "count", "day_time", "schedule", "sequence", "relation", "budget", "negative", "logic"]
+    },
+    "entity_binding": "每条引用具体实体名/类型/菜系的 DSL 约束，其值必须来自导出的西安沙盒真实记录；不得编造"
+  },
+  "chain_queries": {
+    "enabled": true,
+    "count": 30,
+    "levels": {"easy": 10, "medium": 10, "human": 10},
+    "schema": "shorttrip-dynamic-v1（P24 扩展合约，见 results/p24_dynamic_feedback/public/schemas/query.schema.json）",
+    "required_fields": ["schema_version", "uid", "nature_language", "people_number", "city_sequence", "dates", "candidates", "retrieval_budget", "level"],
+    "chain_types": {
+      "two_city_xian_first": "西安 -> 原生成市",
+      "two_city_xian_last": "原生成市 -> 西安",
+      "three_city_xian_middle": "原生成市A -> 西安 -> 原生成市B"
+    },
+    "role_coverage": "西安在 city_sequence 的首 / 中 / 末三种位置都必须出现",
+    "city_coverage": "10 个原生成市每个至少出现在 1 条串联题中",
+    "note": "原生三层没有多城市串联题；此项是用户明确新增要求，采用项目 P24 已验证的扩展合约，不伪装成原生题"
+  },
+  "sandbox": {
+    "output_root": "data/xian11_sandbox",
+    "format": "ChinaTravel 原生目录结构：attractions/<slug>/attractions.csv、restaurants/<slug>/restaurants_<slug>.csv、accommodations/<slug>/accommodations.csv、poi/<slug>/poi.json、subway_stations/<slug>/subway_stations.json、intercity_transport/{train,airplane}",
+    "city_slug": "xian",
+    "source_snapshot": "results/xian_claude_20261108_145612/snapshot_v4/catalog.sqlite3",
+    "scope": "city='西安' 且 gate.discovery_ok=true 的记录",
+    "non_invasive": "不写入 ChinaTravel/chinatravel/environment/database/；注册第 11 城由 scripts/xian11_register.py 在运行时显式完成，避免污染官方冻结基准"
+  },
+  "output": {
+    "queries_root": "query_sets/xian11",
+    "splits": ["easy", "medium", "human", "chain"],
+    "uid_prefix": {"easy": "x11e", "medium": "x11m", "human": "x11h", "chain": "x11c"},
+    "bilingual": "nature_language 中文；nature_language_en 由受控模板生成并标注 translation=controlled_template，非官方人工翻译"
+  },
+  "verification": [
+    "逐题 JSON 结构与原生字段一致",
+    "hard_logic_py 每条可通过 Python compile() 语法检查",
+    "DSL 中引用的实体名 / 类型值在导出沙盒中真实存在",
+    "20 个新增城市对全覆盖、天数/人数档、约束族覆盖矩阵",
+    "串联题 city_sequence 城市注册、西安三角色、10 城覆盖",
+    "不改动 ChinaTravel/ 官方目录，不改动 data/ 既有快照"
+  ]
+}

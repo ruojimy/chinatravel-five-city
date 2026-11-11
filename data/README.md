@@ -9,6 +9,8 @@
 | `business_catalog_v1_7/` | 30 城业务库：14,057 实体 + 42,576 TAG + 5,187 证据 | 188 MB → gz **22.4 MB** | `full_completion=false`；见目录内 README |
 | `xian11_merged_v17_tags/` | v17 快照 TAG 层导出（7,173 行 / 68 种 / 2,371 实体） | 0.45 MB | 派生提示 ≠ 来源事实 |
 | `tag_store/` | TAG 层原型库 v1/v2（`tags` + `snapshots`，T1–T6 六闸） | 0.24 MB | OSM ODbL / Wikidata CC0 / Zenodo CC BY 4.0 |
+| `airport_aliases.json` | 机场别名 → IATA 三字码（102 条） | 9.6 KB | `scripts/normalize_airports.py` 依赖 |
+| `travel_source_registry.json` | 来源权威性 / 许可 / 独立性登记 | 3.8 KB | 分级与证据门用到 |
 
 ## catalog 的还原
 

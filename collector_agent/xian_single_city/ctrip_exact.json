@@ -1,0 +1,17 @@
+[
+ {
+  "name": "大唐不夜城",
+  "url": "https://you.ctrip.com/sight/xian7/130441.html",
+  "gaps": [
+   "endtime"
+  ]
+ },
+ {
+  "name": "西安城墙",
+  "url": "https://you.ctrip.com/sight/xian7/1449.html",
+  "gaps": [
+   "opentime",
+   "endtime"
+  ]
+ }
+]

@@ -1,0 +1,511 @@
+# DSL constraint families
+
+## easy  (300 queries, 1579 constraints)
+
+| signature | count |
+| --- | --- |
+| `day_count` | 300 |
+| `people_count` | 300 |
+| `activity_tickets|activity_transports|activity_type|allactivities|innercity_transport_type|metro_tickets` | 300 |
+| `activity_transports|allactivities|innercity_transport_type|taxi_cars` | 300 |
+| `activity_position|activity_type|allactivities` | 90 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost` | 60 |
+| `activity_type|allactivities|intercity_transport_type` | 51 |
+| `activity_type|allactivities|restaurant_type|target_city` | 30 |
+| `activity_type|allactivities|room_count` | 30 |
+| `activity_type|allactivities|room_type` | 30 |
+| `accommodation_type|activity_type|allactivities|target_city` | 30 |
+| `activity_type|allactivities|attraction_type|target_city` | 30 |
+| `activity_transports|allactivities|innercity_transport_type` | 28 |
+
+## medium  (150 queries, 1264 constraints)
+
+| signature | count |
+| --- | --- |
+| `day_count` | 150 |
+| `people_count` | 150 |
+| `activity_tickets|activity_transports|activity_type|allactivities|innercity_transport_type|metro_tickets` | 150 |
+| `activity_transports|allactivities|innercity_transport_type|taxi_cars` | 150 |
+| `activity_type|allactivities|room_count` | 149 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost` | 148 |
+| `activity_type|allactivities|room_type` | 120 |
+| `activity_type|allactivities|intercity_transport_type` | 85 |
+| `activity_position|activity_type|allactivities` | 42 |
+| `activity_type|allactivities|restaurant_type|target_city` | 33 |
+| `activity_type|allactivities|attraction_type|target_city` | 31 |
+| `activity_transports|allactivities|innercity_transport_type` | 21 |
+| `accommodation_type|activity_type|allactivities|target_city` | 21 |
+| `activity_cost|activity_type|allactivities|people_count` | 13 |
+| `activity_cost|activity_type|allactivities|day_count|people_count` | 1 |
+
+## human  (154 queries, 683 constraints)
+
+| signature | count |
+| --- | --- |
+| `day_count` | 154 |
+| `people_count` | 154 |
+| `activity_transports|allactivities|innercity_transport_type|taxi_cars` | 154 |
+| `activity_type|allactivities|attraction_type|target_city` | 57 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost` | 48 |
+| `activity_type|allactivities|intercity_transport_type` | 31 |
+| `activity_type|allactivities|restaurant_type|target_city` | 27 |
+| `activity_position|activity_type|allactivities` | 25 |
+| `activity_type|allactivities|room_count` | 7 |
+| `activity_cost|activity_type|allactivities|day_count|people_count` | 5 |
+| `activity_transports|allactivities|innercity_transport_type` | 4 |
+| `accommodation_type|activity_type|allactivities|target_city` | 4 |
+| `activity_type|allactivities|room_type` | 3 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost|people_count` | 3 |
+| `activity_start_time|activity_type|allactivities|intercity_transport_origin|start_city` | 2 |
+| `activity_start_time|activity_type|allactivities|intercity_transport_origin|target_city` | 2 |
+| `activity_end_time|activity_type|allactivities|intercity_transport_origin|start_city` | 1 |
+| `activity_end_time|activity_type|allactivities|intercity_transport_destination|start_city` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|innercity_transport_cost` | 1 |
+
+## preference_base50  (50 queries, 260 constraints)
+
+| signature | count |
+| --- | --- |
+| `day_count` | 50 |
+| `people_count` | 50 |
+| `activity_tickets|activity_transports|activity_type|allactivities|innercity_transport_type|metro_tickets` | 50 |
+| `activity_transports|allactivities|innercity_transport_type|taxi_cars` | 50 |
+| `activity_position|activity_type|allactivities` | 14 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost` | 11 |
+| `activity_type|allactivities|intercity_transport_type` | 11 |
+| `activity_transports|allactivities|innercity_transport_type` | 9 |
+| `activity_type|allactivities|restaurant_type|target_city` | 7 |
+| `activity_type|allactivities|attraction_type|target_city` | 5 |
+| `activity_type|allactivities|room_count` | 1 |
+| `activity_type|allactivities|room_type` | 1 |
+| `accommodation_type|activity_type|allactivities|target_city` | 1 |
+
+## phase2/competition_test  (100 queries, 1375 constraints)
+
+| signature | count |
+| --- | --- |
+| `activity_position|activity_type|allactivities` | 223 |
+| `activity_end_time|activity_position|activity_start_time|activity_type|allactivities` | 113 |
+| `activity_type|dayactivities` | 104 |
+| `day_count` | 100 |
+| `people_count` | 100 |
+| `activity_tickets|activity_transports|activity_type|allactivities|innercity_transport_type|metro_tickets` | 100 |
+| `activity_position|activity_type|dayactivities` | 83 |
+| `activity_transports|allactivities|innercity_transport_type` | 75 |
+| `activity_cost|activity_transports|dayactivities|innercity_transport_cost` | 61 |
+| `activity_type|allactivities|intercity_transport_type` | 44 |
+| `activity_cost|activity_type|allactivities` | 40 |
+| `activity_start_time|activity_type|allactivities` | 39 |
+| `accommodation_type|activity_type|allactivities|target_city` | 29 |
+| `activity_type|allactivities|restaurant_type|target_city` | 27 |
+| `activity_transports|allactivities|innercity_transport_time` | 27 |
+| `activity_type|allactivities|attraction_type|target_city` | 27 |
+| `activity_type|allactivities` | 23 |
+| `activity_time|activity_type|allactivities` | 20 |
+| `activity_transports|allactivities|innercity_transport_distance` | 19 |
+| `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|dayactivities` | 12 |
+| `activity_position|activity_type|allactivities|dayactivities` | 9 |
+| `activity_cost|activity_transports|allactivities|innercity_transport_cost` | 7 |
+| `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|intercity_transport_type` | 6 |
+| `activity_position|activity_transports|activity_type|allactivities|innercity_transport_type` | 5 |
+| `activity_cost|activity_position|activity_type|allactivities|dayactivities` | 4 |
+| `activity_transports|allactivities|innercity_transport_cost` | 4 |
+| `activity_cost|activity_position|activity_type|allactivities` | 3 |
+| `activity_cost|activity_end_time|activity_position|activity_start_time|activity_type|allactivities` | 3 |
+| `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|attraction_type|target_city` | 3 |
+| `activity_type|allactivities|room_count` | 3 |
+| `activity_transports|allactivities|innercity_transport_type|taxi_cars` | 3 |
+| `activity_cost|activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost` | 2 |
+| `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars` | 2 |
+| `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_type` | 2 |
+| `activity_position|activity_type|allactivities|intercity_transport_type` | 2 |
+| `activity_position|activity_type|allactivities|dayactivities|intercity_transport_type` | 2 |
+| `activity_end_time|activity_position|activity_start_time|activity_time|activity_type|allactivities` | 2 |
+| `activity_position|activity_start_time|activity_type|allactivities` | 2 |
+| `activity_cost|activity_position|activity_transports|activity_type|allactivities|innercity_transport_cost` | 2 |
+| `accommodation_type|activity_cost|activity_type|allactivities|target_city` | 2 |
+| `activity_position|activity_type|allactivities|room_count` | 2 |
+| `activity_type|allactivities|intercity_transport_type|restaurant_type|target_city` | 1 |
+| `activity_cost|activity_position|activity_transports|activity_type|dayactivities|innercity_transport_cost` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost|intercity_transport_type` | 1 |
+| `activity_transports|activity_type|allactivities|innercity_transport_type|intercity_transport_type` | 1 |
+| `activity_position|activity_start_time|activity_type|allactivities|dayactivities` | 1 |
+| `activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_distance` | 1 |
+| `activity_type|allactivities|room_type` | 1 |
+| `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_distance` | 1 |
+| `activity_position|activity_type|allactivities|dayactivities|room_type` | 1 |
+| `accommodation_type|activity_position|activity_type|allactivities|dayactivities|target_city` | 1 |
+| `activity_cost|activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_cost` | 1 |
+| `activity_type|allactivities|dayactivities|restaurant_type|target_city` | 1 |
+| `activity_transports|activity_type|allactivities|innercity_transport_type` | 1 |
+| `activity_start_time|activity_type|allactivities|intercity_transport_type` | 1 |
+| `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_cost` | 1 |
+| `activity_transports|activity_type|allactivities|innercity_transport_type|restaurant_type|target_city` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost` | 1 |
+| `activity_transports|allactivities|innercity_transport_distance|innercity_transport_type` | 1 |
+| `activity_type|allactivities|dayactivities|room_count` | 1 |
+| `activity_transports|activity_type|allactivities|innercity_transport_time|room_type` | 1 |
+| `activity_position|activity_transports|activity_type|allactivities|innercity_transport_time` | 1 |
+| `activity_transports|activity_type|allactivities|innercity_transport_time|intercity_transport_type` | 1 |
+| `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_time` | 1 |
+| `accommodation_type|activity_time|activity_type|allactivities|target_city` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|attraction_type|dayactivities|innercity_transport_cost|target_city` | 1 |
+| `activity_cost|activity_start_time|activity_type|allactivities` | 1 |
+| `activity_transports|activity_type|allactivities|attraction_type|innercity_transport_time|target_city` | 1 |
+| `activity_time|activity_type|allactivities|intercity_transport_type` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|innercity_transport_cost` | 1 |
+| `activity_cost|activity_type|allactivities|restaurant_type|target_city` | 1 |
+| `activity_type|allactivities|attraction_type|restaurant_type|target_city` | 1 |
+| `activity_position|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars` | 1 |
+| `activity_cost|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars` | 1 |
+| `activity_type|allactivities|attraction_type|dayactivities|target_city` | 1 |
+| `activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_type` | 1 |
+| `activity_cost|activity_start_time|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost` | 1 |
+| `activity_position|activity_time|activity_type|allactivities` | 1 |
+| `accommodation_type|activity_position|activity_type|allactivities|target_city` | 1 |
+| `activity_cost|activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost` | 1 |
+
+## Representative constraints
+### `day_count`
+- easy/e20241028160248698752: `result=(day_count(plan)==1)`
+- easy/e20241028160251109186: `result=(day_count(plan)==1)`
+- easy/e20241028160253742452: `result=(day_count(plan)==1)`
+
+### `people_count`
+- easy/e20241028160248698752: `result=(people_count(plan)==1)`
+- easy/e20241028160251109186: `result=(people_count(plan)==1)`
+- easy/e20241028160253742452: `result=(people_count(plan)==1)`
+
+### `activity_cost|activity_transports|allactivities|innercity_transport_cost`
+- easy/e20241028160248698752: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1500)`
+- easy/e20241028160251109186: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1000)`
+- easy/e20241028160253742452: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1200)`
+
+### `activity_tickets|activity_transports|activity_type|allactivities|innercity_transport_type|metro_tickets`
+- easy/e20241028160248698752: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False`
+- easy/e20241028160251109186: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False`
+- easy/e20241028160253742452: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False`
+
+### `activity_transports|allactivities|innercity_transport_type|taxi_cars`
+- easy/e20241028160248698752: `result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False`
+- easy/e20241028160251109186: `result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False`
+- easy/e20241028160253742452: `result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False`
+
+### `activity_type|allactivities|restaurant_type|target_city`
+- easy/m20241028164637595271: `restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'本帮菜'}<=restaurant_type_set)`
+- easy/m20241028164638852401: `restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'创意菜'}<=restaurant_type_set)`
+- easy/m20241028164640040111: `restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'鲁菜'}<=restaurant_type_set)`
+
+### `activity_position|activity_type|allactivities`
+- easy/m20241028164905266860: `restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'小酒小肉烤串店(新街口店)'}<=restaurant_name_set)`
+- easy/m20241028164906595512: `restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'国土六扇门(浣花北路店)'}<=restaurant_name_set)`
+- easy/m20241028164908007773: `restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'宴锦堂(隆福寺店)'}<=restaurant_name_set)`
+
+### `activity_type|allactivities|room_count`
+- easy/h20241204223651527057: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=1: result=False`
+- easy/m20241028164659379868: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False`
+- easy/m20241028164700651701: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False`
+
+### `activity_type|allactivities|room_type`
+- easy/h20241204223651527057: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=1: result=False`
+- easy/m20241028164659379868: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=2: result=False`
+- easy/m20241028164700651701: `result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=2: result=False`
+
+### `accommodation_type|activity_type|allactivities|target_city`
+- easy/h20241204223651527057: `accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'儿童乐园'}<=accommodation_type_set)`
+- easy/m20241028164659379868: `accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'江河景房'}<=accommodation_type_set)`
+- easy/m20241028164700651701: `accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'泳池'}<=accommodation_type_set)`
+
+### `activity_type|allactivities|attraction_type|target_city`
+- easy/m20241028164620332052: `attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'自然风光'}<=attraction_type_set)`
+- easy/m20241028164622142080: `attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'历史古迹'}<=attraction_type_set)`
+- easy/m20241028164623257189: `attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'公园'}<=attraction_type_set)`
+
+### `activity_type|allactivities|intercity_transport_type`
+- easy/t20241206164116321945: `intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)`
+- easy/t20241206171736098796: `intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'airplane'}==intercity_transport_set)`
+- easy/t20241206171751946181: `intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)`
+
+### `activity_transports|allactivities|innercity_transport_type`
+- easy/t20241206171807314229: `innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'metro'})`
+- easy/t20241206171834406054: `innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'taxi'})`
+- easy/t20241206171925565020: `innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'metro'})`
+
+### `activity_cost|activity_type|allactivities|day_count|people_count`
+- medium/e20241028160857444675: `hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)`
+- human/h20241029143701815147: `hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 700)`
+- human/h20241029143711334809: `hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 450)`
+
+### `activity_cost|activity_type|allactivities|people_count`
+- medium/e20241028161340383778: `food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=60)`
+- medium/e20241028161341975729: `food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=70)`
+- medium/e20241028161343498529: `food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=100)`
+
+### `activity_start_time|activity_type|allactivities|intercity_transport_origin|start_city`
+- human/h20241029143515190249: `go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='17:00')`
+- human/h20241029143622387332: `go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time<='08:00')`
+
+### `activity_end_time|activity_type|allactivities|intercity_transport_origin|start_city`
+- human/h20241029143522848652: `go_end_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_end_time = activity_end_time(activity)\nresult=(go_end_time<='12:00')`
+
+### `activity_start_time|activity_type|allactivities|intercity_transport_origin|target_city`
+- human/h20241029143551657496: `return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='19:00')`
+- human/h20241029143604280402: `return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='19:00')`
+
+### `activity_end_time|activity_type|allactivities|intercity_transport_destination|start_city`
+- human/h20241029143622387332: `back_end_time = 24\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_destination(activity) == start_city(plan): back_end_time = activity_end_time(activity)\nresult=(back_end_time<='17:00')`
+
+### `activity_cost|activity_transports|allactivities|innercity_transport_cost|people_count`
+- human/h20241029143807949268: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=people_count(plan)*10000)`
+- human/h20241029143814437710: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=people_count(plan)*6000)`
+- human/h20241029143828857993: `total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=people_count(plan)*8000)`
+
+### `activity_cost|activity_transports|activity_type|allactivities|innercity_transport_cost`
+- human/h20241029143816266519: `total_cost=0 \nfor activity in allactivities(plan):\n    if activity_type(activity) not in ['airplane', 'train']:\n        total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=6000)`
+- phase2/competition_test/phase2_extended_m20241028164748425604_00062: `result_list=[]\ntotal_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1550)\nresult_list.append(result)\nfree_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=4)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|allactivities|innercity_transport_distance`
+- phase2/competition_test/phase2_extended_20250322201643676309_00001: `total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=13.0)`
+- phase2/competition_test/phase2_extended_20250323101412557140_00005: `total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=7.0)`
+- phase2/competition_test/phase2_extended_20250323101412557140_00006: `total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=7.0)`
+
+### `activity_type|dayactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00001: `day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({"lunch", "dinner"}<=day_meal_type_set)`
+
+### `activity_end_time|activity_position|activity_start_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00001: `result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Sinan Mansions":\n    if activity_start_time(activity)>="08:34" and activity_end_time(activity)<="10:29": result=True`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Shanghai Library":\n    if activity_start_time(activity)>="19:41" and activity_end_time(activity)<="20:45": result=True`
+- phase2/competition_test/phase2_extended_20250323101412557140_00006: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="The Langham, Shanghai Xintiandi · Cachet Restaurant":\n    if activity_start_time(activity)=="11:00" and activity_end_time(activity)=="12:00": result=True\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Tribute to the Master: Picasso Art Center":\n    if activity_start_time(activity)>="14:46" and activity_end_time(activity)<="16:41": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_position|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `result_list=[]\ndistinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)\nresult_list.append(result)\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1101)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_m20241028164909526065_00017: `result_list=[]\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Shenzhen Wangye Museum": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Meilin Reservoir" and seen_first: result=True\nresult_list.append(result)\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1893)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322190831212547_00060: `result_list=[]\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1820)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="White Pagoda Park": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Spring Dawn at Su Causeway Stele Pavilion" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|dayactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Site of the Second National Congress of the Communist Party of China Memorial Hall", "Era of Life"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Era of Life":\n    if activity_start_time(activity)>="13:36" and activity_end_time(activity)<="15:21": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="J Prime Steak and Seafood Restaurant (People's Square Branch)":\n    if activity_start_time(activity)=="17:00" and activity_end_time(activity)=="18:00": result=True\nresult_list.append(result)\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Era of Life"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_m20241028164909526065_00017: `result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Shenzhen Wangye Museum", "Guanlan Ancient Market"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)":\n    if activity_start_time(activity)>="21:45" and activity_end_time(activity)<="24:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_transports|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2341)`
+- phase2/competition_test/phase2_extended_20250321155107635610_00008: `daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=3872)`
+- phase2/competition_test/phase2_extended_20250322111110896994_00009: `daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=4494)`
+
+### `activity_start_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="04:02")\n    outbound_intercity_found=True`
+- phase2/competition_test/phase2_extended_20250322111110896994_00009: `result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>="23:09")`
+- phase2/competition_test/phase2_extended_t20241206211714064986_00011: `result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="06:36")\n    outbound_intercity_found=True`
+
+### `activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322201643676309_00002: `attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)`
+- phase2/competition_test/phase2_extended_20250322111110896994_00009: `attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)`
+- phase2/competition_test/phase2_extended_20250322111110896994_00010: `attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)`
+
+### `activity_cost|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `accommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1792)`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)`
+- phase2/competition_test/phase2_extended_20250323021732100207_00004: `free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)`
+
+### `activity_position|activity_type|allactivities|dayactivities`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `result_list=[]\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({"Baiye Homestay (West Lake Branch)"}<=day_accommodation_name_set)\nresult_list.append(result)\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({"Relais & Châteaux Hangzhou Zixuan Resort - Manshu Kaiseki Cuisine", "Crab Quest: Encounter the Beauty of Crab (Raffles City Branch)"}&restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322212110159665_00016: `result_list=[]\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({"Renhe Hall (Zhaojiabang Road Branch)", "Mercato by Jean-Georges Italian Restaurant", "Shanghai Peace Hotel Dragon and Phoenix Hall"}&restaurant_name_set)\nresult_list.append(result)\nday_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250324091253666121_00022: `result_list=[]\nday_meal_type_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({"breakfast", "lunch"}<=day_meal_type_set)\nresult_list.append(result)\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=({"Chengdu Yuehuimei Hotel"}<=accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=435)`
+- phase2/competition_test/phase2_extended_20250321155107635610_00007: `attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=780)`
+- phase2/competition_test/phase2_extended_20250322111110896994_00010: `attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=720)`
+
+### `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|intercity_transport_type`
+- phase2/competition_test/phase2_extended_20250323021732100207_00003: `result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({"train"}<=intercity_transport_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Baiye Homestay (West Lake Branch)":\n    if activity_start_time(activity)>="21:38" and activity_end_time(activity)<="24:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322123500150175_00024: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Grandma Sun's Scallion Pancake Rolls":\n    if activity_start_time(activity)=="17:17" and activity_end_time(activity)=="18:17": result=True\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!="airplane")\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250324222807389444_00040: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!="airplane")\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Pingshan Park":\n    if activity_start_time(activity)>="14:02" and activity_end_time(activity)<="15:52": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_position|activity_type|allactivities|dayactivities`
+- phase2/competition_test/phase2_extended_20250323021732100207_00004: `result_list=[]\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({"Baiye Homestay (West Lake Branch)"}<=day_restaurant_name_set)\nresult_list.append(result)\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1806)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322123500150175_00024: `result_list=[]\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=301)\nresult_list.append(result)\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({"Grandma Sun's Scallion Pancake Rolls"}<=day_restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250323001847804634_00053: `result_list=[]\nfree_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=7)\nresult_list.append(result)\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Night Cruise on the Moat"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250323021732100207_00004: `result_list=[]\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({"Zhongshan West Lake Hotel Hangzhou", "Atour Hotel (Hangzhou Xixi Wetland)"}&accommodation_name_set)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1055)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250323001847804634_00054: `result_list=[]\ndistinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=955)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_type|dayactivities`
+- phase2/competition_test/phase2_extended_20250323021732100207_00004: `day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Encounter Museum · Hangzhou Pavilion"}<=day_attraction_name_set)`
+- phase2/competition_test/phase2_extended_20250323021732100207_00004: `day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Encounter Museum · Hangzhou Pavilion", "Lingyin Temple"}<=day_attraction_name_set)`
+- phase2/competition_test/phase2_extended_20250323101412557140_00005: `result_list=[]\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({"SuShi Qingshe Hotel (Hanzhong Road subway station)"}<=day_restaurant_name_set)\nresult_list.append(result)\nday_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({"breakfast", "lunch", "dinner"}<=day_meal_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_type|allactivities|intercity_transport_type|restaurant_type|target_city`
+- phase2/competition_test/phase2_extended_20250321155107635610_00007: `result_list=[]\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({"Western cuisine"}<=restaurant_type_set)\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!="train")\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_position|activity_transports|activity_type|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250321155107635610_00007: `result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Shanghai Comics Museum", "Chuansha Ancient Town"}<=day_attraction_name_set)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=3902)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|allactivities|innercity_transport_time`
+- phase2/competition_test/phase2_extended_20250321155107635610_00008: `innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=563)`
+- phase2/competition_test/phase2_extended_20250322111110896994_00010: `innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=476)`
+- phase2/competition_test/phase2_extended_t20241206211714064986_00011: `innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=95)`
+
+### `activity_position|activity_transports|activity_type|allactivities|innercity_transport_type`
+- phase2/competition_test/phase2_extended_20250322111110896994_00010: `result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(inner_city_transportation_set<={"metro", "taxi"})\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Juliet's Balcony": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Dongba Donbar (Lujiazui Tourist Loop Line)" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250323005729070302_00033: `result_list=[]\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=="metro": transport_journey_count+=1\nresult=(transport_journey_count==11)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan)": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Dijiao Park" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_e20241028160324401047_00068: `result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(inner_city_transportation_set<={"metro", "taxi"})\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Guangzhou Chimelong Resort": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Shamian Island - Riverside Square" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost|intercity_transport_type`
+- phase2/competition_test/phase2_extended_20250322111110896994_00010: `result_list=[]\ndaily_cost=0\nfor activity in dayactivities(plan, 3):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=586)\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="airplane")\n    is_first_intercity=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars`
+- phase2/competition_test/phase2_extended_t20241206211714064986_00011: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Nanjing Gunandu Bridge Hotel (Yuejianglou Scenic Area Branch) · Jiangsu Restaurant (Jianning Road Branch)":\n    if activity_start_time(activity)>="16:45" and activity_end_time(activity)<="18:10": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322190831212547_00059: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Encounter Museum · Hangzhou Pavilion":\n    if activity_start_time(activity)=="18:14" and activity_end_time(activity)=="18:30": result=True\nresult_list.append(result)\nresult=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_type`
+- phase2/competition_test/phase2_extended_t20241206211714064986_00012: `result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({"metro"}&inner_city_transportation_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Nanjing Yuhuatai Scenic Area - Meigang":\n    if activity_start_time(activity)=="19:37" and activity_end_time(activity)=="21:07": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_m20241028165016137718_00081: `result_list=[]\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=="metro": transport_journey_count+=1\nresult=(transport_journey_count==12)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Delicious and Fragrant Bean Curd Skins":\n    if activity_start_time(activity)=="11:00" and activity_end_time(activity)=="12:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_end_time|activity_position|activity_start_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_t20241206211714064986_00012: `result_list=[]\nfree_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=7)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Kaitong Cafe & Book (Himalaya Branch)":\n    if activity_start_time(activity)>="16:45" and activity_end_time(activity)<="18:05": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322134244879150_00045: `result_list=[]\nattraction_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_cost+=activity_cost(activity)\nresult=(attraction_cost<=53)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)":\n    if activity_start_time(activity)>="07:55" and activity_end_time(activity)<="08:40": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322235422616103_00094: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Baiye Homestay (West Lake Branch)":\n    if activity_start_time(activity)>="22:34" and activity_end_time(activity)<="24:00": result=True\nresult_list.append(result)\nrestaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=789)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_type|allactivities|intercity_transport_type`
+- phase2/competition_test/phase2_extended_20250322212110159665_00015: `result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({"airplane"}<=intercity_transport_set)\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Jin Mao Tower": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322190831212547_00059: `result_list=[]\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Lingyin Temple": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Hangzhou Little Iceland" and seen_first: result=True\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="airplane")\n    is_first_intercity=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|allactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_m20241028164909526065_00017: `inner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=230)`
+- phase2/competition_test/phase2_extended_20250322123500150175_00023: `inner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=93)`
+- phase2/competition_test/phase2_extended_20250323221718305968_00043: `inner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=183)`
+
+### `activity_transports|activity_type|allactivities|innercity_transport_type|intercity_transport_type`
+- phase2/competition_test/phase2_extended_m20241028164909526065_00018: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="train")\n    is_first_intercity=False\nresult_list.append(result)\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=="taxi": transport_journey_count+=1\nresult=(transport_journey_count==1)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_start_time|activity_type|allactivities|dayactivities`
+- phase2/competition_test/phase2_extended_20250322100019318103_00019: `result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Liu Haisu Art Museum", "Shanghai Children's Museum"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="00:48")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_distance`
+- phase2/competition_test/phase2_extended_20250322100019318103_00019: `result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Foreigner Street 101"}<=day_attraction_name_set)\nresult_list.append(result)\ntotal_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=15.8)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_type|allactivities|dayactivities|intercity_transport_type`
+- phase2/competition_test/phase2_extended_20250322100019318103_00020: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="train")\n    is_first_intercity=False\nresult_list.append(result)\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Venice Town", "Xujiahui Origin"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322225736541303_00052: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="train")\n    is_first_intercity=False\nresult_list.append(result)\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({"Baotong Temple"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_distance`
+- phase2/competition_test/phase2_extended_20250324091253666121_00021: `result_list=[]\ntotal_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=13.8)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Three Saints Flower Village Tourist Area":\n    if activity_start_time(activity)=="19:56" and activity_end_time(activity)=="21:26": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_type|allactivities|dayactivities|room_type`
+- phase2/competition_test/phase2_extended_20250322123500150175_00023: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=1: result=False\nresult_list.append(result)\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({"Baiye Homestay (West Lake Branch)"}<=day_accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `accommodation_type|activity_position|activity_type|allactivities|dayactivities|target_city`
+- phase2/competition_test/phase2_extended_20250322123500150175_00024: `result_list=[]\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({"Baiye Homestay (West Lake Branch)"}<=day_accommodation_name_set)\nresult_list.append(result)\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({"Media Room"}<=accommodation_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250321032128072931_00025: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Zhejiang's Authentic Jiangnan Flavors":\n    if activity_start_time(activity)>="11:15" and activity_end_time(activity)<="12:40": result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=540)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322224723967549_00097: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show":\n    if activity_start_time(activity)>="18:21" and activity_end_time(activity)<="20:16": result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=645)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250321032128072931_00025: `result_list=[]\ntotal_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=11651)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Baiye Homestay (West Lake Branch)":\n    if activity_start_time(activity)>="21:37" and activity_end_time(activity)<="24:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_type|allactivities|attraction_type|target_city`
+- phase2/competition_test/phase2_extended_20250321032128072931_00026: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Zhejiang's Authentic Jiangnan Flavors":\n    if activity_start_time(activity)=="11:30" and activity_end_time(activity)=="12:30": result=True\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({"Art museum"}&attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250324222807389444_00039: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)":\n    if activity_start_time(activity)>="07:55" and activity_end_time(activity)<="08:40": result=True\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({"natural scenery"}<=attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322132333453556_00057: `result_list=[]\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({"park"}<=attraction_type_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Vienna International Hotel (Shenzhen Qianhai Happy Bay Hotel)":\n    if activity_start_time(activity)=="20:59" and activity_end_time(activity)=="24:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_type|allactivities|dayactivities|restaurant_type|target_city`
+- phase2/competition_test/phase2_extended_20250321032128072931_00026: `result_list=[]\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({"Hot pot"}&restaurant_type_set)\nresult_list.append(result)\nday_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({"breakfast", "lunch", "dinner"}<=day_meal_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|activity_type|allactivities|innercity_transport_type`
+- phase2/competition_test/phase2_extended_m20241028164754037833_00027: `result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({"walk"}&inner_city_transportation_set)\nresult_list.append(result)\nattraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_start_time|activity_type|allactivities|intercity_transport_type`
+- phase2/competition_test/phase2_extended_m20241028164754037833_00028: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="airplane")\n    is_first_intercity=False\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="01:08")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_start_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322201313997965_00032: `result_list=[]\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({"Riverside Banquet · Cloud", "Chengdu Foodie (Kuixinglou Branch)"}&restaurant_name_set)\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="04:54")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250321183809221459_00077: `result_list=[]\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<="00:17")\n    outbound_intercity_found=True\nresult_list.append(result)\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({"Nanjing University (Gulou Campus)", "Confucius Temple and Qinhuai River Scenic Area", "Stone City Ruins Park"}<=attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250323005729070302_00033: `result_list=[]\ninner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=154)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Wuhan Police Museum":\n    if activity_start_time(activity)=="14:58" and activity_end_time(activity)=="16:00": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|activity_type|allactivities|innercity_transport_type|restaurant_type|target_city`
+- phase2/competition_test/phase2_extended_m20241028164623257189_00035: `result_list=[]\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=="metro": transport_journey_count+=1\nresult=(transport_journey_count==10)\nresult_list.append(result)\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({"Teahouse"}<=restaurant_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_m20241028164623257189_00036: `result_list=[]\nrestaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=2308)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2534)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|allactivities|innercity_transport_distance|innercity_transport_type`
+- phase2/competition_test/phase2_extended_m20241028164623257189_00036: `result_list=[]\ntotal_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=35.2)\nresult_list.append(result)\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(inner_city_transportation_set<={"metro", "taxi"})\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_position|activity_transports|activity_type|allactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250322114324029605_00038: `result_list=[]\ntotal_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=2802)\nresult_list.append(result)\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({"Southern Eclectic Buns (Lakeside Branch)", "Zhouping's Zongzi Shop"}<=restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_e20241028160324401047_00067: `result_list=[]\ntotal_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1063)\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Danggong Dessert Shop (Lujiang Branch)": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Guangzhou Uprising Martyrs' Cemetery" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_type|allactivities|dayactivities|room_count`
+- phase2/competition_test/phase2_extended_20250322114324029605_00038: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=4: result=False\nresult_list.append(result)\nday_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|activity_type|allactivities|innercity_transport_time|room_type`
+- phase2/competition_test/phase2_extended_m20241028164807696509_00041: `result_list=[]\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=573)\nresult_list.append(result)\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=2: result=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_transports|activity_type|allactivities|innercity_transport_time`
+- phase2/competition_test/phase2_extended_20250323221718305968_00044: `result_list=[]\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=409)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Baotong Temple": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Yingwuzhou Yangtze River Bridge" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `accommodation_type|activity_cost|activity_type|allactivities|target_city`
+- phase2/competition_test/phase2_extended_20250322134244879150_00046: `result_list=[]\nattraction_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_cost+=activity_cost(activity)\nresult=(attraction_cost<=53)\nresult_list.append(result)\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({"Family Room"}&accommodation_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322224203329023_00086: `result_list=[]\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({"Hotel Apartment"}&accommodation_type_set)\nresult_list.append(result)\nrestaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=2090)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|activity_type|allactivities|innercity_transport_time|intercity_transport_type`
+- phase2/competition_test/phase2_extended_20250322165053508050_00048: `result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!="airplane")\nresult_list.append(result)\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=622)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|innercity_transport_time`
+- phase2/competition_test/phase2_extended_20250322143421348526_00049: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)=="Baiye Homestay (West Lake Branch)":\n    if activity_start_time(activity)=="21:43" and activity_end_time(activity)=="24:00": result=True\nresult_list.append(result)\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=619)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_type|allactivities|room_count`
+- phase2/competition_test/phase2_extended_20250322143421348526_00050: `result_list=[]\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({"Chuiyun Tongtian River", "Thousand Island Lake Tianyu Scenic Area"}&attraction_name_set)\nresult_list.append(result)\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=4: result=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+- phase2/competition_test/phase2_extended_20250322180946178753_00071: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Chuansha Park" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `accommodation_type|activity_time|activity_type|allactivities|target_city`
+- phase2/competition_test/phase2_extended_20250322225736541303_00051: `result_list=[]\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=585)\nresult_list.append(result)\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({"24-hour front desk"}<=accommodation_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_transports|activity_type|allactivities|attraction_type|dayactivities|innercity_transport_cost|target_city`
+- phase2/competition_test/phase2_extended_20250325015820363948_00055: `result_list=[]\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({"Cultural Tourism Area"}&attraction_type_set)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1061)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_start_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322190831212547_00059: `result_list=[]\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1804)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>="20:13")\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_transports|activity_type|allactivities|attraction_type|innercity_transport_time|target_city`
+- phase2/competition_test/phase2_extended_20250322190831212547_00060: `result_list=[]\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=614)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({"University campus"}&attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_time|activity_type|allactivities|intercity_transport_type`
+- phase2/competition_test/phase2_extended_m20241028164748425604_00061: `result_list=[]\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=705)\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!="train")\n    is_first_intercity=False\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_type|allactivities|restaurant_type|target_city`
+- phase2/competition_test/phase2_extended_m20241028164748425604_00062: `result_list=[]\nfree_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=4)\nresult_list.append(result)\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({"Barbecue"}&restaurant_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_type|allactivities|attraction_type|restaurant_type|target_city`
+- phase2/competition_test/phase2_extended_20250321092432118774_00066: `result_list=[]\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({"Hot pot", "Recommended dishes"}<=restaurant_type_set)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({"Cultural Landscape"}<=attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars`
+- phase2/competition_test/phase2_extended_e20241028160324401047_00067: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Danggong Dessert Shop (Lujiang Branch)": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Guangzhou Folk Museum" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_transports|activity_type|allactivities|innercity_transport_type|taxi_cars`
+- phase2/competition_test/phase2_extended_20250322120414354584_00074: `result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\nresult_list.append(result)\nfree_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_type|allactivities|attraction_type|dayactivities|target_city`
+- phase2/competition_test/phase2_extended_20250321183809221459_00077: `result_list=[]\nday_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({"Red tourism sites", "Art museum"}&attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_type`
+- phase2/competition_test/phase2_extended_20250323023056756713_00080: `result_list=[]\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=="metro": transport_journey_count+=1\nresult=(transport_journey_count==13)\nresult_list.append(result)\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 4):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({"Baiye Homestay (West Lake Branch)"}<=day_accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_start_time|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250322140738894742_00084: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>="20:13")\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 3):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=598)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_position|activity_time|activity_type|allactivities`
+- phase2/competition_test/phase2_extended_20250322143700260029_00087: `result_list=[]\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="Meilin Reservoir": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)=="Xinyiwei Chaoshan Rice Noodle King (Meilin Branch)" and first_activity_seen: result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=420)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `accommodation_type|activity_position|activity_type|allactivities|target_city`
+- phase2/competition_test/phase2_extended_20250324221337458084_00092: `result_list=[]\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({"Multifunction Hall", "Butler Service"}&accommodation_type_set)\nresult_list.append(result)\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=({"Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)"}<=accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`
+
+### `activity_cost|activity_end_time|activity_position|activity_start_time|activity_transports|activity_type|allactivities|dayactivities|innercity_transport_cost`
+- phase2/competition_test/phase2_extended_20250322235422616103_00094: `result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=="704 Project (Lin Biao's Hangzhou Villa)":\n    if activity_start_time(activity)>="16:45" and activity_end_time(activity)<="18:15": result=True\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=576)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r`

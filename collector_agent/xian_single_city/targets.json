@@ -1,0 +1,121 @@
+{
+ "city": "西安",
+ "derived_from": "ChinaTravel/chinatravel/environment/database (10-city sandbox)",
+ "generated_at": "2026-11-06T18:39:33+08:00",
+ "milestone_task_book": {
+  "attraction": 300,
+  "restaurant": 300,
+  "accommodation": 300
+ },
+ "parity_min": {
+  "attraction": 306,
+  "restaurant": 437,
+  "accommodation": 293
+ },
+ "parity_mean": {
+  "attraction": 341,
+  "restaurant": 466,
+  "accommodation": 387
+ },
+ "parity_max": {
+  "attraction": 377,
+  "restaurant": 484,
+  "accommodation": 498
+ },
+ "completion_rule": "discovery counts >= parity_mean for attraction, restaurant and accommodation",
+ "completion_target": {
+  "attraction": 341,
+  "restaurant": 466,
+  "accommodation": 387
+ },
+ "transport": {
+  "poi": {
+   "mean": 1217,
+   "min": 1149,
+   "max": 1294
+  },
+  "metro_station": {
+   "mean": 364,
+   "min": 226,
+   "max": 583
+  },
+  "train": {
+   "benchmark_chengdu": 407,
+   "mean": null,
+   "note": "90 city-pair files double-count endpoints; Chengdu is the task-book benchmark (9 pairs x 2 directions)"
+  },
+  "flight": {
+   "benchmark_chengdu": 160
+  }
+ },
+ "transport_target": {
+  "poi": 1217,
+  "metro_station": 364,
+  "train": 407,
+  "flight": 160
+ },
+ "transport_note": "POI/metro use the 10-city mean; train/flight use the Chengdu task-book benchmark (9 city pairs x 2 directions).",
+ "planning_ready_is_not_a_goal": "price/opening-hours TTLs are 86400s, so a frozen static snapshot cannot be planning_ready by design; tier3 stays 0 and is reported, not gated",
+ "sandbox_rows": [
+  {
+   "city": "北京",
+   "attraction": 335,
+   "restaurant": 470,
+   "accommodation": 401
+  },
+  {
+   "city": "成都",
+   "attraction": 333,
+   "restaurant": 467,
+   "accommodation": 379
+  },
+  {
+   "city": "重庆",
+   "attraction": 347,
+   "restaurant": 437,
+   "accommodation": 373
+  },
+  {
+   "city": "广州",
+   "attraction": 339,
+   "restaurant": 467,
+   "accommodation": 400
+  },
+  {
+   "city": "杭州",
+   "attraction": 377,
+   "restaurant": 458,
+   "accommodation": 378
+  },
+  {
+   "city": "南京",
+   "attraction": 323,
+   "restaurant": 468,
+   "accommodation": 373
+  },
+  {
+   "city": "上海",
+   "attraction": 360,
+   "restaurant": 484,
+   "accommodation": 403
+  },
+  {
+   "city": "深圳",
+   "attraction": 306,
+   "restaurant": 478,
+   "accommodation": 498
+  },
+  {
+   "city": "苏州",
+   "attraction": 359,
+   "restaurant": 469,
+   "accommodation": 293
+  },
+  {
+   "city": "武汉",
+   "attraction": 334,
+   "restaurant": 457,
+   "accommodation": 368
+  }
+ ]
+}

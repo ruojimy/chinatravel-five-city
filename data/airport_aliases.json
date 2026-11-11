@@ -1,0 +1,413 @@
+{
+ "generated_for": "data/xian11_sandbox/intercity_transport/airplane.jsonl",
+ "aliases": {
+  "上海浦东国际机场": {
+   "code": "PVG",
+   "name": "上海浦东国际机场"
+  },
+  "北京首都国际机场": {
+   "code": "PEK",
+   "name": "北京首都国际机场"
+  },
+  "上海虹桥国际机场": {
+   "code": "SHA",
+   "name": "上海虹桥国际机场"
+  },
+  "北京大兴国际机场": {
+   "code": "PKX",
+   "name": "北京大兴国际机场"
+  },
+  "深圳宝安国际机场": {
+   "code": "SZX",
+   "name": "深圳宝安国际机场"
+  },
+  "广州白云国际机场": {
+   "code": "CAN",
+   "name": "广州白云国际机场"
+  },
+  "重庆江北国际机场": {
+   "code": "CKG",
+   "name": "重庆江北国际机场"
+  },
+  "成都双流国际机场": {
+   "code": "CTU",
+   "name": "成都双流国际机场"
+  },
+  "成都天府国际机场": {
+   "code": "TFU",
+   "name": "成都天府国际机场"
+  },
+  "杭州萧山国际机场": {
+   "code": "HGH",
+   "name": "杭州萧山国际机场"
+  },
+  "武汉天河国际机场": {
+   "code": "WUH",
+   "name": "武汉天河国际机场"
+  },
+  "南京禄口国际机场": {
+   "code": "NKG",
+   "name": "南京禄口国际机场"
+  },
+  "西安咸阳国际机场": {
+   "code": "XIY",
+   "name": "西安咸阳国际机场"
+  },
+  "青岛胶东国际机场": {
+   "code": "TAO",
+   "name": "青岛胶东国际机场"
+  },
+  "厦门高崎国际机场": {
+   "code": "XMN",
+   "name": "厦门高崎国际机场"
+  },
+  "揭阳潮汕机场": {
+   "code": "SWA",
+   "name": "揭阳潮汕机场"
+  },
+  "上海": {
+   "code": "SHA-CITY",
+   "name": "上海"
+  },
+  "曼谷": {
+   "code": "BKK",
+   "name": "曼谷"
+  },
+  "深圳": {
+   "code": "SZX",
+   "name": "深圳宝安国际机场"
+  },
+  "沈阳": {
+   "code": "SHE",
+   "name": "沈阳"
+  },
+  "清迈": {
+   "code": "CNX",
+   "name": "清迈"
+  },
+  "宁波": {
+   "code": "NGB",
+   "name": "宁波"
+  },
+  "南昌": {
+   "code": "KHN",
+   "name": "南昌"
+  },
+  "喀什": {
+   "code": "KHG",
+   "name": "喀什"
+  },
+  "乌鲁木齐": {
+   "code": "URC",
+   "name": "乌鲁木齐"
+  },
+  "伊宁": {
+   "code": "YIN",
+   "name": "伊宁"
+  },
+  "金边机场": {
+   "code": "PNH",
+   "name": "金边机场"
+  },
+  "Baiyun (Guangzhou, Guangdong) - CAN": {
+   "code": "CAN",
+   "name": "广州白云国际机场"
+  },
+  "Xianyang Airport (Xi'an, Shaanxi) XIY": {
+   "code": "XIY",
+   "name": "西安咸阳国际机场"
+  },
+  "Daxing (Beijing) - PKX": {
+   "code": "PKX",
+   "name": "北京大兴国际机场"
+  },
+  "Lishe (Ningbo, Zhejiang) - NGB": {
+   "code": "NGB",
+   "name": "宁波"
+  },
+  "Donghe (Baotou, Inner Mongolia) - BAV": {
+   "code": "BAV",
+   "name": "Donghe (Baotou, Inner Mongolia) - BAV"
+  },
+  "Pudong (Shanghai) - PVG": {
+   "code": "PVG",
+   "name": "上海浦东国际机场"
+  },
+  "Baoan (Shenzhen, Guangdong) - SZX": {
+   "code": "SZX",
+   "name": "深圳宝安国际机场"
+  },
+  "Jiaodong (Qingdao, Shandong) - TAO": {
+   "code": "TAO",
+   "name": "青岛胶东国际机场"
+  },
+  "Korla (Korla, Xinjiang) - KRL": {
+   "code": "KRL",
+   "name": "Korla (Korla, Xinjiang) - KRL"
+  },
+  "Xiaoshan (Hangzhou, Zhejiang) - HGH": {
+   "code": "HGH",
+   "name": "杭州萧山国际机场"
+  },
+  "Phoenix (Hainan) - SYX": {
+   "code": "SYX",
+   "name": "Phoenix (Hainan) - SYX"
+  },
+  "Longdongbao (Guiyang, Guizhou) - KWE": {
+   "code": "KWE",
+   "name": "Longdongbao (Guiyang, Guizhou) - KWE"
+  },
+  "Taiping (Harbin, Heilongjiang) - HRB": {
+   "code": "HRB",
+   "name": "Taiping (Harbin, Heilongjiang) - HRB"
+  },
+  "Penglai (Yantai, Shandong) - YNT": {
+   "code": "YNT",
+   "name": "Penglai (Yantai, Shandong) - YNT"
+  },
+  "Hongqiao (Shanghai) - SHA": {
+   "code": "SHA",
+   "name": "上海虹桥国际机场"
+  },
+  "Manas (Bishkek) - BSZ": {
+   "code": "BSZ",
+   "name": "Manas (Bishkek) - BSZ"
+  },
+  "Binhai (Tianjin) - TSN": {
+   "code": "TSN",
+   "name": "Binhai (Tianjin) - TSN"
+  },
+  "Huanghua (Changsha, Hunan) - CSX": {
+   "code": "CSX",
+   "name": "Huanghua (Changsha, Hunan) - CSX"
+  },
+  "Gaoqi (Xiamen, Fujian) - XMN": {
+   "code": "XMN",
+   "name": "厦门高崎国际机场"
+  },
+  "Tianfu (Chengdu, Sichuan) - TFU": {
+   "code": "TFU",
+   "name": "成都天府国际机场"
+  },
+  "Tianshan (Urumqi, Xinjiang) - URC": {
+   "code": "URC",
+   "name": "乌鲁木齐"
+  },
+  "Baita (Hohhot, Inner Mongolia) - HET": {
+   "code": "HET",
+   "name": "Baita (Hohhot, Inner Mongolia) - HET"
+  },
+  "Changshui (Kunming, Yunnan) - KMG": {
+   "code": "KMG",
+   "name": "Changshui (Kunming, Yunnan) - KMG"
+  },
+  "Yaoqiang (Jinan, Shandong) - TNA": {
+   "code": "TNA",
+   "name": "Yaoqiang (Jinan, Shandong) - TNA"
+  },
+  "Shuofang (Wuxi, Jiangsu) - WUX": {
+   "code": "WUX",
+   "name": "Shuofang (Wuxi, Jiangsu) - WUX"
+  },
+  "Changbei (Nanchang, Jiangxi) - KHN": {
+   "code": "KHN",
+   "name": "南昌"
+  },
+  "Longwan (Wenzhou, Zhejiang) - WNZ": {
+   "code": "WNZ",
+   "name": "Longwan (Wenzhou, Zhejiang) - WNZ"
+  },
+  "Yulin (Yulin, Shaanxi) - UYN": {
+   "code": "UYN",
+   "name": "Yulin (Yulin, Shaanxi) - UYN"
+  },
+  "Ejin Horo (Dongsheng, Inner Magnolia) - DSN": {
+   "code": "DSN",
+   "name": "Ejin Horo (Dongsheng, Inner Magnolia) - DSN"
+  },
+  "Zhuhai Int'l (Zhuhai, Guangdong) - ZUH": {
+   "code": "ZUH",
+   "name": "Zhuhai Int'l (Zhuhai, Guangdong) - ZUH"
+  },
+  "Dali (Xiaguan, Yunnan) - DLU": {
+   "code": "DLU",
+   "name": "Dali (Xiaguan, Yunnan) - DLU"
+  },
+  "Huizhou Pingtan Airport (Huizhou, Guangdong) - HUZ": {
+   "code": "HUZ",
+   "name": "Huizhou Pingtan Airport (Huizhou, Guangdong) - HUZ"
+  },
+  "Jiuquan (Jiuquan, Gansu) - JGN": {
+   "code": "JGN",
+   "name": "Jiuquan (Jiuquan, Gansu) - JGN"
+  },
+  "Zhaotong (Zhaotong, Yunnan) - ZAT": {
+   "code": "ZAT",
+   "name": "Zhaotong (Zhaotong, Yunnan) - ZAT"
+  },
+  "Capital (Beijing) - PEK": {
+   "code": "PEK",
+   "name": "北京首都国际机场"
+  },
+  "Changle (Fuzhou, Fujian) - FOC": {
+   "code": "FOC",
+   "name": "Changle (Fuzhou, Fujian) - FOC"
+  },
+  "Golmud (Golmud, Qinghai) - GOQ": {
+   "code": "GOQ",
+   "name": "Golmud (Golmud, Qinghai) - GOQ"
+  },
+  "Konggar (Lhasa, Tibet Autonomous Region) - LXA": {
+   "code": "LXA",
+   "name": "Konggar (Lhasa, Tibet Autonomous Region) - LXA"
+  },
+  "Longjia (Changchun, Jilin) - CGQ": {
+   "code": "CGQ",
+   "name": "Longjia (Changchun, Jilin) - CGQ"
+  },
+  "Tongren Daxing (Tongren, Guizhou) - TEN": {
+   "code": "TEN",
+   "name": "Tongren Daxing (Tongren, Guizhou) - TEN"
+  },
+  "Sanyi (Lijiang, Yunnan) - LJG": {
+   "code": "LJG",
+   "name": "Sanyi (Lijiang, Yunnan) - LJG"
+  },
+  "Wuxu (Nanning, Guangxi) - NNG": {
+   "code": "NNG",
+   "name": "Wuxu (Nanning, Guangxi) - NNG"
+  },
+  "Zhoushuizi (Dalian, Liaoning) - DLC": {
+   "code": "DLC",
+   "name": "Zhoushuizi (Dalian, Liaoning) - DLC"
+  },
+  "Lukou (Nanjing, Jiangsu) - NKG": {
+   "code": "NKG",
+   "name": "南京禄口国际机场"
+  },
+  "Caojiapu (Xining, Qinghai) - XNN": {
+   "code": "XNN",
+   "name": "Caojiapu (Xining, Qinghai) - XNN"
+  },
+  "Xinqiao (Feixi, Hefei) - HFE": {
+   "code": "HFE",
+   "name": "Xinqiao (Feixi, Hefei) - HFE"
+  },
+  "Guangzhou (CAN)": {
+   "code": "CAN",
+   "name": "广州白云国际机场"
+  },
+  "Wenzhou (WNZ)": {
+   "code": "WNZ",
+   "name": "Wenzhou (WNZ)"
+  },
+  "Xiamen (XMN)": {
+   "code": "XMN",
+   "name": "厦门高崎国际机场"
+  },
+  "Shanghai (SHA)": {
+   "code": "SHA",
+   "name": "上海虹桥国际机场"
+  },
+  "Ordos (DSN)": {
+   "code": "DSN",
+   "name": "Ordos (DSN)"
+  },
+  "Yulin - Shanxi (UYN)": {
+   "code": "UYN",
+   "name": "Yulin - Shanxi (UYN)"
+  },
+  "Wuxi (WUX)": {
+   "code": "WUX",
+   "name": "Wuxi (WUX)"
+  },
+  "Kunming (KMG)": {
+   "code": "KMG",
+   "name": "Kunming (KMG)"
+  },
+  "Nanchang (KHN)": {
+   "code": "KHN",
+   "name": "南昌"
+  },
+  "Jinan (TNA)": {
+   "code": "TNA",
+   "name": "Jinan (TNA)"
+  },
+  "Chengdu (TFU)": {
+   "code": "TFU",
+   "name": "成都天府国际机场"
+  },
+  "Hohhot (HET)": {
+   "code": "HET",
+   "name": "Hohhot (HET)"
+  },
+  "Changsha (CSX)": {
+   "code": "CSX",
+   "name": "Changsha (CSX)"
+  },
+  "Urumqi (URC)": {
+   "code": "URC",
+   "name": "乌鲁木齐"
+  },
+  "Hangzhou (HGH)": {
+   "code": "HGH",
+   "name": "杭州萧山国际机场"
+  },
+  "Ningbo (NGB)": {
+   "code": "NGB",
+   "name": "宁波"
+  },
+  "Shenzhen (SZX)": {
+   "code": "SZX",
+   "name": "深圳宝安国际机场"
+  },
+  "Kashi (KHG)": {
+   "code": "KHG",
+   "name": "喀什"
+  },
+  "Hotan (HTN)": {
+   "code": "HTN",
+   "name": "Hotan (HTN)"
+  },
+  "Aksu (AKU)": {
+   "code": "AKU",
+   "name": "Aksu (AKU)"
+  },
+  "Yantai (YNT)": {
+   "code": "YNT",
+   "name": "Yantai (YNT)"
+  },
+  "Beijing (PKX)": {
+   "code": "PKX",
+   "name": "北京大兴国际机场"
+  },
+  "Tianjin (TSN)": {
+   "code": "TSN",
+   "name": "Tianjin (TSN)"
+  },
+  "Harbin (HRB)": {
+   "code": "HRB",
+   "name": "Harbin (HRB)"
+  },
+  "Sanya (SYX)": {
+   "code": "SYX",
+   "name": "Sanya (SYX)"
+  },
+  "Bishkek (BSZ)": {
+   "code": "BSZ",
+   "name": "Bishkek (BSZ)"
+  },
+  "Guiyang (KWE)": {
+   "code": "KWE",
+   "name": "Guiyang (KWE)"
+  },
+  "Shanghai (PVG)": {
+   "code": "PVG",
+   "name": "上海浦东国际机场"
+  },
+  "Baotou (BAV)": {
+   "code": "BAV",
+   "name": "Baotou (BAV)"
+  }
+ }
+}

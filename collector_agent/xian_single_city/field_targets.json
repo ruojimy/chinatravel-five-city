@@ -1,0 +1,20 @@
+{
+  "phase": "field_usability",
+  "set_at": "2026-11-06T23:00:00+08:00",
+  "definition": "字段可用 = L1 静态可复核字段全部非空且带原始 API 证据。动态价格/房态按项目 TTL 规则属于运行时依赖，不在静态快照里固化。",
+  "L1_static_fields": {
+    "attraction": ["lat", "lon", "type", "opentime", "endtime"],
+    "restaurant": ["lat", "lon", "cuisine", "opentime", "endtime"],
+    "accommodation": ["lat", "lon", "featurehoteltype"]
+  },
+  "L2_runtime_dependent": ["price", "numbed", "room_type", "ticket_inventory", "weather", "today_hours"],
+  "completion_target": {"attraction": 300, "restaurant": 300, "accommodation": 300},
+  "completion_rule": "每一类 L1 齐备的记录数 >= 300（任务书每类 300 的口径）；三类同时达标才算字段可用",
+  "strict_full_native_fields": "全部原生必需字段非空，仅作报告，不作为完成门槛（id 为供应商数值主键、numbed/推荐时长等无法从 POI 接口合规取得）",
+  "planning_ready_note": "price/opening_hours TTL 仅 86400s，冻结快照的 planning_ready 恒为 0；字段可用不等于官方 checker 三关通过",
+  "sources": {
+    "amap": "v5/place/text show_fields=business -> opentime_today, cost, keytag, tag",
+    "baidu": "place/v2/search scope=2 -> uid；place/v2/detail scope=2 -> shop_hours, price, tag, level, inner_facility"
+  },
+  "evidence_rule": "每次 API 响应落原始字节；quote 必须是实体名且在 raw 中逐字存在；由 xian_ingest.py --enrich 只补空字段，xian_verify.py 复算哈希与引文"
+}

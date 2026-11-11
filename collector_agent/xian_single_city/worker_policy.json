@@ -1,0 +1,9 @@
+{
+  "model": "auto",
+  "mode": "auto",
+  "scope": "接下来几轮数据采集子代理（2026-11-06 用户指示）",
+  "set_at": "2026-11-06T19:55:00+08:00",
+  "previous_model": "lite",
+  "revert_hint": "用户说改回弱模型时，把 model 改回 lite；主代理验收与入库门不受此配置影响",
+  "note": "model=auto 表示模型由框架自动选择；mode=auto 表示权限模式自动。两者都只作用于采集子代理，不作用于主代理验收。"
+}

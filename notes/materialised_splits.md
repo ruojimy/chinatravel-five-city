@@ -1,0 +1,10 @@
+| split | rows | materialised |
+| --- | --- | --- |
+| easy | 300 | 300 |
+| medium | 150 | 150 |
+| human | 154 | 154 |
+| human1000 | 1000 | 1000 |
+| preference_base50 | 50 | 50 |
+| preference0_base50 | 50 | 50 |
+| preference5_base50 | 50 | 50 |
+| phase2/competition_test | 100 | 100 |
