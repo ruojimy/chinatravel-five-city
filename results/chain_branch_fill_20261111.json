@@ -1,0 +1,136 @@
+{
+ "candidates": 8,
+ "applied": true,
+ "status": {
+  "estimated_hostel_comparable": 2,
+  "estimated_chain_branch": 6
+ },
+ "items": [
+  {
+   "name": "木木夕青年旅舍(西安钟楼店)",
+   "kind": "hostel_category",
+   "brand": "hostel",
+   "donors": [
+    26.0,
+    25.0,
+    42.0,
+    38.0,
+    41.0
+   ],
+   "price": 38.0,
+   "range": [
+    25.0,
+    42.0
+   ],
+   "status": "estimated_hostel_comparable"
+  },
+  {
+   "name": "易休太空舱公寓(西安南门店)",
+   "kind": "chain",
+   "brand": "易休太空舱",
+   "donors": [
+    25.0
+   ],
+   "price": 25.0,
+   "range": [
+    25.0,
+    25.0
+   ],
+   "status": "estimated_chain_branch"
+  },
+  {
+   "name": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+   "kind": "hostel_category",
+   "brand": "hostel",
+   "donors": [
+    26.0,
+    25.0,
+    42.0,
+    38.0,
+    41.0
+   ],
+   "price": 38.0,
+   "range": [
+    25.0,
+    42.0
+   ],
+   "status": "estimated_hostel_comparable"
+  },
+  {
+   "name": "布丁酒店(西安钟楼回民街明城墙店)",
+   "kind": "chain",
+   "brand": "布丁",
+   "donors": [
+    70.0,
+    63.0,
+    86.0
+   ],
+   "price": 70.0,
+   "range": [
+    63.0,
+    86.0
+   ],
+   "status": "estimated_chain_branch"
+  },
+  {
+   "name": "布丁酒店(西安钟鼓楼回民街北大街十字店)(暂停营业)",
+   "kind": "chain",
+   "brand": "布丁",
+   "donors": [
+    70.0,
+    63.0,
+    86.0
+   ],
+   "price": 70.0,
+   "range": [
+    63.0,
+    86.0
+   ],
+   "status": "estimated_chain_branch"
+  },
+  {
+   "name": "OYO豪庭商务酒店(西安胡家庙地铁站店)",
+   "kind": "chain",
+   "brand": "oyo",
+   "donors": [
+    43.0
+   ],
+   "price": 43.0,
+   "range": [
+    43.0,
+    43.0
+   ],
+   "status": "estimated_chain_branch"
+  },
+  {
+   "name": "布丁酒店(西安郭杜十字店)",
+   "kind": "chain",
+   "brand": "布丁",
+   "donors": [
+    70.0,
+    63.0,
+    86.0
+   ],
+   "price": 70.0,
+   "range": [
+    63.0,
+    86.0
+   ],
+   "status": "estimated_chain_branch"
+  },
+  {
+   "name": "尚客优酒店(西安唐都医院半坡地铁站店)",
+   "kind": "chain",
+   "brand": "尚客优",
+   "donors": [
+    218.0
+   ],
+   "price": 218.0,
+   "range": [
+    218.0,
+    218.0
+   ],
+   "status": "estimated_chain_branch"
+  }
+ ]
+}
