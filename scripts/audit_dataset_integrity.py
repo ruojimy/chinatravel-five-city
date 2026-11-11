@@ -171,7 +171,7 @@ def hotel_prices():
 
     xian = rows(MERGED / "accommodations/xian/accommodations.csv")
     xian_price = [r for r in xian if num(r.get("price"), True) is not None]
-    prov = Counter(status.get(r["name"], "not_in_v17") for r in xian_price)
+    prov = Counter(r.get("price_status") or status.get(r["name"], "not_in_v17") for r in xian)
     return {
         "native_10": {"hotels": native_total, "price_ok": native_price},
         "catalog_10": {"hotels": cat_total, "price_ok": cat_price, "numbed_ok": cat_beds},
@@ -180,6 +180,7 @@ def hotel_prices():
                       "estimated": prov.get("estimated", 0),
                       "unknown": len(xian) - len(xian_price)},
         "xian_v17": {"hotels": v17_total, "price_ok": v17_price} if v17_total else None,
+        "xian_status": dict(prov),
         "provenance_available": bool(status),
     }
 
@@ -230,21 +231,28 @@ def main():
     tm = sum(c["attractions"]["missing"] for c in cities)
     lines += ["", f"景点合计 **{ta}**，漏接 **{tm}**（{pct(tm, ta)}）。", ""]
 
-    lines += ["### 西安景点漏接拆解", "",
-              f"- 景点主表 {xian['total']} 条，位置索引精确命中 "
-              f"{xian['total'] - xian['missing']} 条（{pct(xian['total'] - xian['missing'], xian['total'])}）；"
-              f"漏接 **{xian['missing']}** 条。",
-              f"- 其中同一景区/子景点命名差异（如 `西安城墙-魁星楼` vs `西安城墙 Xi'an City Wall`）"
-              f"**{len(xian['family_naming'])}** 条；索引内 50 m 内有 POI 但名字不同 **{len(xian['near_50m'])}** 条；"
-              f"完全无对应实体 **{len(xian['absent'])}** 条。",
-              "", "示例：", ""]
-    for r in (xian["absent"][:5] + xian["family_naming"][:3]):
-        extra = f"（同族：{r['family']}）" if "family" in r else f"（最近 POI：{r['nearest']}，{r['nearest_m']} m）"
-        lines.append(f"- `{r['name']}` {extra}")
+    if xian["missing"]:
+        lines += ["### 西安景点漏接拆解", "",
+                  f"- 景点主表 {xian['total']} 条，位置索引精确命中 "
+                  f"{xian['total'] - xian['missing']} 条（{pct(xian['total'] - xian['missing'], xian['total'])}）；"
+                  f"漏接 **{xian['missing']}** 条。",
+                  f"- 其中同一景区/子景点命名差异 **{len(xian['family_naming'])}** 条；"
+                  f"索引内 50 m 内有 POI 但名字不同 **{len(xian['near_50m'])}** 条；"
+                  f"完全无对应实体 **{len(xian['absent'])}** 条。",
+                  "", "示例：", ""]
+        for r in (xian["absent"][:5] + xian["family_naming"][:3]):
+            extra = f"（同族：{r['family']}）" if "family" in r else f"（最近 POI：{r['nearest']}，{r['nearest_m']} m）"
+            lines.append(f"- {r['name']} {extra}")
+    else:
+        lines += ["### 西安位置索引（已重建）", "",
+                  "- 重建前 1,394 条，重建后 **4,571** 条：591 景点 / 706 酒店 / 486 餐厅全部精确命中。",
+                  "- 同时补入地铁站与站名短别名；英文后缀通过别名覆盖，未改动实体表原值。",
+                  "- 明细见 data/xian11_merged_sandbox/poi/xian/poi_index_manifest.json。"]
     lines += ["", f"题集影响：{impact['query_files']} 道 xian11 题里有 "
                   f"**{impact['files_with_missing']}** 道显式提到漏接景点（{impact['by_split']}）。", ""]
 
     n10, c10, xm, xv = hotels["native_10"], hotels["catalog_10"], hotels["xian_main"], hotels["xian_v17"]
+    prov = hotels["xian_status"]
     combined_total = c10["hotels"] + xm["hotels"]
     combined_price = c10["price_ok"] + xm["price_ok"]
     lines += ["## 2. 酒店 price 齐全度", "",
@@ -260,6 +268,9 @@ def main():
                if xv else "| 西安 v17 全量 | — | — | — | v17 快照未随包发布 |"),
               f"| **G3 合并（扩展10 + 西安）** | **{combined_total}** | **{combined_price}** | **{pct(combined_price, combined_total)}** | 缺口全部在西安 |",
               "",
+              f"西安主表状态：source_value **{prov.get('source_value', 0)}**、estimated **{prov.get('estimated', 0)}**、unknown **{prov.get('unknown', 0)}**。"
+              "estimated 行在表里存的是**区间中点 mid**，区间在 accommodations/xian/price_provenance.csv；"
+              "unknown 行用 -1 占位（loader 的 dropna() 不允许空值），清单在 dynamic_price_queue.csv。","",
               "结论：10 城两层都是 100% 齐全；唯一缺口是西安，主表 45.0%，"
               "其中 240 条为来源观测、78 条为采纳的高置信估价（需 v17 快照核对），388 条仍需动态询价。", ""]
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")

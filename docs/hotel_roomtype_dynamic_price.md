@@ -76,13 +76,12 @@ hotel_price_observations(
 
 ## 覆盖现状与限制
 
-- 主表 `price`：**723 / 761（95.0%）**（**267 条真实观测** + 456 条估价：94 条详情页无价、362 条搜索无同名）。
-- 主表 `numbed`：**761 / 761**（27 条观测/主房型 + 734 条默认 1 床）。
+- 主表 `price`（merged 主路径 **706** 家）：**318 / 706（45.0%）** = **240 条来源观测** + **78 条采纳的高置信估价**；其余 388 家写 `-1` 占位（`price_status=unknown`），不估价。
+- 主表 `numbed`：**706 / 706**。
 - 搜索覆盖：Trip.com 693 家；携程 UI 39 次（0 命中）；美团 UI 90 次/账号，3 个账号各 90 次后限流，累计 360 次查询、58 命中。
-- 剩余 **38 家未搜索/缺坐标**保持空值，不估价；362 条 `no_candidate` 估价标 `confidence=low`，区间放宽 25%。
 - `room_types`：**308 家 / 2243 个房型**，多床型酒店可查子表。
 - 合并集主路径：**706 家**（`ready` 318 / `l1_only` 388），`reference_only` 55 家（全部缺坐标）。
-- 采纳规则 2026-11-10 v1：**只采纳 `confidence=high` 的估价（78 家）**；medium/low 一律 `price=None`、`status=unknown`、`basis=estimate_not_adopted`，区间留在 `provenance.estimate` 供排序与审计。
+- 采纳规则 2026-11-10 v1：**只采纳 `confidence=high` 的估价（78 家）**；medium/low 一律 `price=None`、`status=unknown`、`basis=estimate_not_adopted`。
   - 准入口径 2026-11-10 调整：`featurehoteltype` 允许留空，不再阻断 planner；仅 `lat`/`lon` 为硬门槛。
   - 主路径价格构成：真实 240 家、采纳的估价 78 家、需询价 388 家。
 - 估价区间校准（留一法，holdout 240 家真实价酒店）：
@@ -95,6 +94,27 @@ hotel_price_observations(
 
   分价格段覆盖率（原区间 / 放宽）：≤¥100 46.6%/64.7%、¥101–200 53.0%/81.9%、¥201–400 24.1%/48.3%、>¥400 16.7%/33.3%；luxury 22.2%/44.4%。
   结论：**这是同类邻店的经验分布，不是该酒店的真实报价区间**，只能做量级参考与排序，不能当报价展示。
+
+## 2026-11-11 修复：表里到底存了什么
+
+| 问题 | 答案 |
+|---|---|
+| 高置信区间估价的**主表**里填的是区间还是估价？ | 填的是**区间中点 `mid`**（单一数值），不是区间。78 条全部核对为 `price == mid`。 |
+| 有标注它不是来源明确的 price 吗？ | **修复前没有**：CSV 只有 8 列，估价和观测价长得一样。现在新增 `price_status ∈ {source_value, estimated, unknown}`，每行都有值（loader 会 `dropna()`，不能留空）。 |
+| 区间还能访问吗？ | **能**：`accommodations/xian/price_provenance.csv` 保存 `price_low / price_high / price_mid / confidence / n_comparables / method`；`scripts/hotel_dynamic_price.py provenance --hotel "<name>"` 直接返回。 |
+
+约定：
+
+- `estimated` 行的 `price` = `mid`；报告/计划里必须写成“预估 ¥low–¥high”，不能当实价。
+- `unknown` 行的 `price` = **`-1` 哨兵值**（不是 0，也不是空），避免 `pd.read_csv(...).dropna()` 丢行；语义由 `price_status=unknown` 表达。
+- `dynamic_price_queue.csv` 列出 388 家待询价酒店，可直接批跑：
+
+```bash
+python scripts/hotel_dynamic_price.py batch --queue data/xian11_merged_sandbox/accommodations/xian/dynamic_price_queue.csv \
+    --checkin 2026-11-20 --checkout 2026-11-21 --limit 20
+```
+
+- 工具默认快照已从 `snapshot_v7` 切到 `snapshot_v17`（可用 `SHORTTRIP_HOTEL_SNAPSHOT` 覆盖）。
 
 ## 不做什么
 

@@ -1,0 +1,142 @@
+{
+ "generated_at": "2026-11-11T07:23:40+00:00",
+ "poi_entries_before": 1394,
+ "poi_entries_after": 4571,
+ "added": {
+  "attraction": 523,
+  "accommodation": 691,
+  "restaurant": 463,
+  "alias": 750
+ },
+ "station_entries_added": 502,
+ "station_short_aliases": 275,
+ "coordinates_replaced_by_entity": 4,
+ "replaced_sample": [
+  {
+   "name": "大唐西市",
+   "old_m": 419,
+   "old_source": "existing",
+   "new_source": "attraction"
+  },
+  {
+   "name": "西安城墙-角楼",
+   "old_m": 4214,
+   "old_source": "existing",
+   "new_source": "attraction"
+  },
+  {
+   "name": "西安交大南洋大酒店",
+   "old_m": 472,
+   "old_source": "existing",
+   "new_source": "accommodation"
+  },
+  {
+   "name": "维也纳国际酒店西安北站店",
+   "old_m": 460,
+   "old_source": "existing",
+   "new_source": "accommodation"
+  }
+ ],
+ "ambiguous_aliases_skipped": 15,
+ "ambiguous_sample": [
+  {
+   "alias": "鸿盛宾馆",
+   "owners": 2,
+   "spread_m": 28429
+  },
+  {
+   "alias": "时代宾馆",
+   "owners": 3,
+   "spread_m": 15688
+  },
+  {
+   "alias": "天翼公寓",
+   "owners": 2,
+   "spread_m": 6341
+  },
+  {
+   "alias": "布丁酒店",
+   "owners": 3,
+   "spread_m": 14200
+  },
+  {
+   "alias": "宜必思酒店",
+   "owners": 2,
+   "spread_m": 34169
+  },
+  {
+   "alias": "西安润家宾馆",
+   "owners": 2,
+   "spread_m": 9871
+  },
+  {
+   "alias": "凯悦宾馆",
+   "owners": 2,
+   "spread_m": 13915
+  },
+  {
+   "alias": "布丁严选酒店",
+   "owners": 2,
+   "spread_m": 10973
+  },
+  {
+   "alias": "吉祥宾馆",
+   "owners": 2,
+   "spread_m": 26815
+  },
+  {
+   "alias": "尚客优酒店",
+   "owners": 2,
+   "spread_m": 44164
+  },
+  {
+   "alias": "锦江之星酒店",
+   "owners": 2,
+   "spread_m": 59239
+  },
+  {
+   "alias": "全季酒店",
+   "owners": 2,
+   "spread_m": 8317
+  },
+  {
+   "alias": "瑞幸咖啡",
+   "owners": 7,
+   "spread_m": 24548
+  },
+  {
+   "alias": "杨凌蘸水面",
+   "owners": 2,
+   "spread_m": 8488
+  },
+  {
+   "alias": "遇见饸饹",
+   "owners": 2,
+   "spread_m": 3463
+  }
+ ],
+ "coverage": {
+  "attraction": {
+   "total": 591,
+   "hit": 591,
+   "missing": 0
+  },
+  "accommodation": {
+   "total": 706,
+   "hit": 706,
+   "missing": 0
+  },
+  "restaurant": {
+   "total": 486,
+   "hit": 486,
+   "missing": 0
+  }
+ },
+ "sources": [
+  "attractions",
+  "accommodations",
+  "restaurants",
+  "transportation/subways.json",
+  "existing poi.json"
+ ]
+}
