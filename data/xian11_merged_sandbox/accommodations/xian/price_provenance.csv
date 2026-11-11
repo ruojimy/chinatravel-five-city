@@ -1,13 +1,13 @@
 name,price,price_status,price_low,price_high,price_mid,confidence,n_comparables,method,observed_at,source_url
 西安威斯汀大酒店,776.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-420032/?locale=zh-CN&curr=CNY
-西安索菲特传奇酒店（人民大厦）,,unknown,,,,,,,,
+西安索菲特传奇酒店（人民大厦）,1440.0,source_value,,,,,,trip_com:unknown,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-839111/?locale=zh-CN&curr=CNY
 西安索菲特人民大厦,491.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-347332/?locale=zh-CN&curr=CNY
 西安丽思卡尔顿酒店,1200.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-41410905/?locale=zh-CN&curr=CNY
 西安W酒店,1116.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-6746873/?locale=zh-CN&curr=CNY
 西安唐华华邑酒店,829.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-51470451/?locale=zh-CN&curr=CNY
 西安钟楼诺富特酒店,434.0,source_value,,,,,,,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-54597222/?locale=zh-CN&curr=CNY
 西安交大南洋大酒店,420.0,source_value,,,,,,,2026-11-09T18:15:25+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-2052561/?locale=zh-CN&curr=CNY
-维也纳国际酒店西安北站店,,unknown,,,,,,,,
+维也纳国际酒店西安北站店,191.0,source_value,,,,,,trip_com:unknown,2026-11-09,https://hk.trip.com/hotels/xi-an-hotel-detail-12046096/?locale=zh-CN&curr=CNY
 西安丽晶家庭公寓,,unknown,,,,,,,,
 静雅旅馆(西安友谊路店),,unknown,,,,,,,,
 加利利连锁酒店(西安钟鼓楼大差市地铁站店),,unknown,,,,,,,,
@@ -165,7 +165,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 汉庭酒店西安明城墙火车站新店大堂,,unknown,,,,,,,,
 桔子酒店(西安钟楼东大街店),150.0,estimated,90.0,230.0,150.0,high,12,same_class_nearest_p25_p75:mid,,
 凯悦宾馆(三桥店),124.0,source_value,,,,,,,2026-11-09T17:25:01+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-77370196/?locale=zh-CN&curr=CNY
-西安书友理想国主题青年旅舍大明宫遗址公园店,,unknown,,,,,,,,
+西安书友理想国主题青年旅舍大明宫遗址公园店,41.0,source_value,,,,,,trip_com:price_range_starting,2026-11-11T16:40:15+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-5982271/?locale=zh-CN&curr=CNY&checkin=2026-11-20&checkout=2026-11-21
 卓越宾馆,57.0,source_value,,,,,,,2026-11-09T17:25:48+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-76115785/?locale=zh-CN&curr=CNY
 唐苑旅馆(西安火车站店),,unknown,,,,,,,,
 宴长安金伯爵主题婚礼酒店,,unknown,,,,,,,,
@@ -299,13 +299,13 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 漫悦CC酒店(西安奥体中心双寨地铁站店),95.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 四季宾宾馆(韶雨水韵星城店),53.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 芷未里影院民宿,,unknown,,,,,,,,
-西安悦享精品酒店,,unknown,,,,,,,,
+西安悦享精品酒店,137.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:17:52+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-80406422/?locale=zh-CN&curr=CNY
 青露影院酒店(浐灞桃花潭店),,unknown,,,,,,,,
 万客来宾馆,25.0,source_value,,,,,,,2026-11-09T16:54:47+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-75461068/?locale=zh-CN&curr=CNY
 金丝路宾馆(新筑地铁站店),95.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 西安港都酒店(新筑地铁站西铁职院店),,unknown,,,,,,,,
 新顺达成宾馆(唐都医院店),,unknown,,,,,,,,
-西安庆丰商务宾馆,,unknown,,,,,,,,
+西安庆丰商务宾馆,117.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:17:40+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-109439262/?locale=zh-CN&curr=CNY
 天和宾馆(咸宁东路卫星测控中心地铁站店),44.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 西安君健酒店(西安浐灞唐都医院北门城东客运站店),182.0,estimated,80.0,290.0,182.0,high,8,same_class_nearest_p25_p75:mid,,
 皖安宾馆(广泰门地铁站店),48.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
@@ -315,7 +315,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 友缘宾馆(西安白鹿原店),124.0,source_value,,,,,,,2026-11-09T17:25:55+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-51623306/?locale=zh-CN&curr=CNY
 初舍公寓(西安御城路店),152.0,source_value,,,,,,,2026-11-09T17:25:11+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-35494379/?locale=zh-CN&curr=CNY
 118私房出租|民宿(西安十里铺店),,unknown,,,,,,,,
-瑞诚假日酒店,,unknown,,,,,,,,
+瑞诚假日酒店,181.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:03:21+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-125813000/?locale=zh-CN&curr=CNY
 西安枫舍民宿,118.0,estimated,70.0,150.0,118.0,high,12,same_class_nearest_p25_p75:budget,,
 花园快捷宾馆,38.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 睿婕酒店(西安半坡地铁站店),108.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
@@ -357,7 +357,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 西安阳光朗豪酒店(兵马俑银桥大道地铁站店),129.0,source_value,,,,,,,2026-11-09T18:26:04+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1990016/?locale=zh-CN&curr=CNY
 临潼温泉酒店(原铁道部临潼疗养院),,unknown,,,,,,,,
 西安桐栖精品客栈,,unknown,,,,,,,,
-非哈酒店(西工程大西科大临潼校区地铁站店),,unknown,,,,,,,,
+非哈酒店(西工程大西科大临潼校区地铁站店),158.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:32:40+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-123259026/?locale=zh-CN&curr=CNY
 悦盛商旅酒店(西安临潼东三岔地铁站店),194.0,source_value,,,,,,,2026-11-09T17:55:15+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-106373876/?locale=zh-CN&curr=CNY
 西安柏尘宾馆(临潼华清池地铁站店),88.0,source_value,,,,,,,2026-11-09T18:14:33+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-107882336/?locale=zh-CN&curr=CNY
 泽润瑞莱酒店(临潼华清池地铁站店),123.0,source_value,,,,,,,2026-11-09T18:05:54+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-116697649/?locale=zh-CN&curr=CNY
@@ -472,8 +472,8 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 乐巢雅颂酒店(长庆大街店),124.0,source_value,,,,,,,2026-11-09T17:23:13+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-134863900/?locale=zh-CN&curr=CNY
 东苑公寓酒店,,unknown,,,,,,,,
 高陵区壹号商务宾馆,,unknown,,,,,,,,
-西安博豪快捷酒店,,unknown,,,,,,,,
-西安赛庭商务宾馆,,unknown,,,,,,,,
+西安博豪快捷酒店,98.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:11:26+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1950717/?locale=zh-CN&curr=CNY
+西安赛庭商务宾馆,135.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:21:23+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-104677639/?locale=zh-CN&curr=CNY
 颐和商务酒店(高陵店),120.0,estimated,110.0,130.0,120.0,high,12,same_class_nearest_p25_p75:mid,,
 安家乐宾馆,101.0,source_value,,,,,,,2026-11-09T17:53:45+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-117473130/?locale=zh-CN&curr=CNY
 心邸民宿,,unknown,,,,,,,,
@@ -483,7 +483,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 优品观影酒店(比亚迪二厂店),130.0,source_value,,,,,,,2026-11-09T17:23:56+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-125298393/?locale=zh-CN&curr=CNY
 奥朵精选酒店(西安草堂比亚迪店),,unknown,,,,,,,,
 星简智影酒店(西安比亚迪二厂店),250.0,source_value,,,,,,,2026-11-09T17:55:52+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-131302695/?locale=zh-CN&curr=CNY
-西安永佳宾馆,,unknown,,,,,,,,
+西安永佳宾馆,91.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:19:30+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-72175357/?locale=zh-CN&curr=CNY
 梓源宾馆,,unknown,,,,,,,,
 神马电竞酒店(西安鄠邑石油大学店),338.0,source_value,,,,,,,2026-11-09T18:03:39+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-80342205/?locale=zh-CN&curr=CNY
 钟楼宾馆(鄠邑区店),,unknown,,,,,,,,
@@ -516,7 +516,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),,unknown,,,,,,,,
 西安云镜民宿,255.0,source_value,,,,,,,2026-11-09T18:10:29+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-48473449/?locale=zh-CN&curr=CNY
 西安锦上酒店(鄠邑店),,unknown,,,,,,,,
 柏悦酒店(鄠邑区店),,unknown,,,,,,,,
-馨悦宾馆(西安长安大街店),,unknown,,,,,,,,
+馨悦宾馆(西安长安大街店),98.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:32:55+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-106388688/?locale=zh-CN&curr=CNY
 今悦宾馆,73.0,source_value,,,,,,,2026-11-09T17:23:51+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-111425972/?locale=zh-CN&curr=CNY
 ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2026-11-09T16:54:35+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-125770955/?locale=zh-CN&curr=CNY
 彬山民宿(鄠邑区体育学院店),208.0,estimated,150.0,230.0,208.0,high,8,same_class_nearest_p25_p75:budget,,
@@ -524,7 +524,7 @@ ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2
 西安西户酒店(西安石油大学鄠邑店),184.0,estimated,140.0,230.0,184.0,high,10,same_class_nearest_p25_p75:mid,,
 西安你好酒店(鄠邑店),,unknown,,,,,,,,
 腾达商务宾馆(银榕线店),,unknown,,,,,,,,
-西安柏羽酒店,,unknown,,,,,,,,
+西安柏羽酒店,227.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:14:37+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-6663069/?locale=zh-CN&curr=CNY
 元宇宙电竞酒店(鄠邑大十字店),,unknown,,,,,,,,
 汤峪天潭温泉,,unknown,,,,,,,,
 蓝田晨羿宾馆,,unknown,,,,,,,,
@@ -664,7 +664,7 @@ ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2
 槿和酒店(西安曲江创意谷店),112.0,source_value,,,,,,,2026-11-09T17:57:21+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-105726868/?locale=zh-CN&curr=CNY
 唐玺智能酒店(西安大雁塔大唐不夜城店),257.0,source_value,,,,,,,2026-11-09T17:27:19+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-114115550/?locale=zh-CN&curr=CNY
 春田居公寓(公田五路分店),,unknown,,,,,,,,
-西安威斯汀大酒店(大雁塔大唐不夜城店),,unknown,,,,,,,,
+西安威斯汀大酒店(大雁塔大唐不夜城店),776.0,source_value,,,,,,trip_com:unknown,2026-11-09T18:12:30+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-420032/?locale=zh-CN&curr=CNY
 千寻智能酒店(曲江大雁塔店),,unknown,,,,,,,,
 西安馨语之家公寓(曲江银泰城西安大唐芙蓉园店),,unknown,,,,,,,,
 唐礼坊民宿(大唐不夜城店),274.0,source_value,,,,,,,2026-11-09T17:27:24+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-125246644/?locale=zh-CN&curr=CNY
@@ -700,7 +700,7 @@ QQ宾馆(沙井村店),,unknown,,,,,,,,
 悦见民宿(西安软件园高新医院店),146.0,source_value,,,,,,,2026-11-09T17:55:04+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-115059830/?locale=zh-CN&curr=CNY
 西安金瑞酒店(乳驾庄店),,unknown,,,,,,,,
 辛庄快捷酒店(西安高新医院店),,unknown,,,,,,,,
-金舟酒店(西安比亚迪阳光天地店),,unknown,,,,,,,,
+金舟酒店(西安比亚迪阳光天地店),161.0,source_value,,,,,,trip_com:starting_average_price,2026-11-09T18:28:04+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1229678/?locale=zh-CN&curr=CNY
 西安春秋季居至臻酒店,,unknown,,,,,,,,
 蚂蚁景栋青年旅舍,61.0,estimated,50.0,80.0,61.0,high,12,same_class_nearest_p25_p75:budget,,
 雅轩王姐度假别墅(丈八西路分店),,unknown,,,,,,,,

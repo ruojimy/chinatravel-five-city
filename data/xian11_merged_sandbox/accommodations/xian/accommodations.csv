@@ -1,13 +1,13 @@
 id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 1,西安威斯汀大酒店,The Westin Xi'an,泳池,34.2162925,108.9574758,776,1,source_value
-2,西安索菲特传奇酒店（人民大厦）,Sofitel Legend People's Grand Hotel Xian,管家服务,34.26697632881779,108.95426448155578,-1,1,unknown
+2,西安索菲特传奇酒店（人民大厦）,Sofitel Legend People's Grand Hotel Xian,管家服务,34.26697632881779,108.95426448155578,1440.0,1,source_value
 3,西安索菲特人民大厦,Sofitel Xian on Renmin Square,泳池,34.266459,108.955067,491,1,source_value
 4,西安丽思卡尔顿酒店,"The Ritz-Carlton, Xi'an",泳池,34.2252383,108.8929647,1200,1,source_value
 5,西安W酒店,W Xi'an,泳池,34.1984964,108.9838305,1116,1,source_value
 6,西安唐华华邑酒店,HUALUXE Xi'an Tanghua,园林建筑,34.2190223,108.9641401,829,1,source_value
 7,西安钟楼诺富特酒店,Novotel Xian The Bell Tower,家庭房,34.2622959,108.9451948,434,1,source_value
 8,西安交大南洋大酒店,XJTU Academic Exchange Center (Nanyang Hotel),UNKNOWN,34.242918,108.9843,420,1,source_value
-9,维也纳国际酒店西安北站店,UNKNOWN,UNKNOWN,34.360293,108.933371,-1,1,unknown
+9,维也纳国际酒店西安北站店,UNKNOWN,UNKNOWN,34.360293,108.933371,191.0,1,source_value
 64,西安丽晶家庭公寓,UNKNOWN,经济型,34.241993,108.928141,-1,1,unknown
 65,静雅旅馆(西安友谊路店),UNKNOWN,UNKNOWN,34.243242,108.945653,-1,1,unknown
 66,加利利连锁酒店(西安钟鼓楼大差市地铁站店),UNKNOWN,经济型,34.259377,108.963915,-1,1,unknown
@@ -165,7 +165,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 218,汉庭酒店西安明城墙火车站新店大堂,UNKNOWN,UNKNOWN,34.278623,108.973674,-1,1,unknown
 219,桔子酒店(西安钟楼东大街店),UNKNOWN,舒适型,34.26147,108.950321,150,1,estimated
 220,凯悦宾馆(三桥店),UNKNOWN,旅馆,34.288977,108.825955,124,1,source_value
-221,西安书友理想国主题青年旅舍大明宫遗址公园店,UNKNOWN,青年旅舍,34.29194,108.974828,-1,1,unknown
+221,西安书友理想国主题青年旅舍大明宫遗址公园店,UNKNOWN,青年旅舍,34.29194,108.974828,41.0,1,source_value
 222,卓越宾馆,UNKNOWN,家庭旅馆,34.289207,108.826744,57,1,source_value
 223,唐苑旅馆(西安火车站店),UNKNOWN,旅馆,34.273328,108.963148,-1,1,unknown
 224,宴长安金伯爵主题婚礼酒店,UNKNOWN,UNKNOWN,34.290435,108.988843,-1,1,unknown
@@ -299,13 +299,13 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 352,漫悦CC酒店(西安奥体中心双寨地铁站店),UNKNOWN,快捷酒店,34.378123,109.03888,95,1,source_value
 353,四季宾宾馆(韶雨水韵星城店),UNKNOWN,旅馆,34.285904,109.065859,53,1,source_value
 354,芷未里影院民宿,UNKNOWN,经济型,34.233034,109.079947,-1,1,unknown
-355,西安悦享精品酒店,UNKNOWN,经济型,34.291026,109.112202,-1,1,unknown
+355,西安悦享精品酒店,UNKNOWN,经济型,34.291026,109.112202,137.0,1,source_value
 356,青露影院酒店(浐灞桃花潭店),UNKNOWN,UNKNOWN,34.301789,109.040602,-1,1,unknown
 357,万客来宾馆,UNKNOWN,快捷酒店,34.282521,109.056611,25,1,source_value
 358,金丝路宾馆(新筑地铁站店),UNKNOWN,经济型,34.384116,109.051103,95,1,source_value
 359,西安港都酒店(新筑地铁站西铁职院店),UNKNOWN,UNKNOWN,34.38425,109.059816,-1,1,unknown
 360,新顺达成宾馆(唐都医院店),UNKNOWN,经济型,34.285635,109.066105,-1,1,unknown
-361,西安庆丰商务宾馆,UNKNOWN,商务酒店,34.325967,109.099089,-1,2,unknown
+361,西安庆丰商务宾馆,UNKNOWN,商务酒店,34.325967,109.099089,117.0,2,source_value
 362,天和宾馆(咸宁东路卫星测控中心地铁站店),UNKNOWN,旅馆,34.254483,109.025315,44,1,source_value
 363,西安君健酒店(西安浐灞唐都医院北门城东客运站店),UNKNOWN,UNKNOWN,34.289047,109.057462,182,2,estimated
 364,皖安宾馆(广泰门地铁站店),UNKNOWN,旅馆,34.302748,109.004961,48,1,source_value
@@ -315,7 +315,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 368,友缘宾馆(西安白鹿原店),UNKNOWN,UNKNOWN,34.23303,109.079288,124,1,source_value
 369,初舍公寓(西安御城路店),UNKNOWN,民宿,34.278993,109.03924,152,1,source_value
 370,118私房出租|民宿(西安十里铺店),UNKNOWN,UNKNOWN,34.290395,109.022484,-1,1,unknown
-371,瑞诚假日酒店,UNKNOWN,UNKNOWN,34.232587,109.080617,-1,1,unknown
+371,瑞诚假日酒店,UNKNOWN,UNKNOWN,34.232587,109.080617,181.0,1,source_value
 372,西安枫舍民宿,UNKNOWN,UNKNOWN,34.29716,109.022842,118,1,estimated
 373,花园快捷宾馆,UNKNOWN,旅馆,34.285645,109.064439,38,1,source_value
 374,睿婕酒店(西安半坡地铁站店),UNKNOWN,经济型,34.277295,109.047303,108,1,source_value
@@ -357,7 +357,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 410,西安阳光朗豪酒店(兵马俑银桥大道地铁站店),UNKNOWN,商务酒店,34.384812,109.219726,129,1,source_value
 411,临潼温泉酒店(原铁道部临潼疗养院),UNKNOWN,度假酒店,34.366378,109.204969,-1,1,unknown
 412,西安桐栖精品客栈,UNKNOWN,UNKNOWN,34.375713,109.191957,-1,1,unknown
-413,非哈酒店(西工程大西科大临潼校区地铁站店),UNKNOWN,UNKNOWN,34.371157,109.185118,-1,1,unknown
+413,非哈酒店(西工程大西科大临潼校区地铁站店),UNKNOWN,UNKNOWN,34.371157,109.185118,158.0,1,source_value
 414,悦盛商旅酒店(西安临潼东三岔地铁站店),UNKNOWN,经济型,34.379348,109.21634,194,1,source_value
 415,西安柏尘宾馆(临潼华清池地铁站店),UNKNOWN,经济型,34.374913,109.21433,88,1,source_value
 416,泽润瑞莱酒店(临潼华清池地铁站店),UNKNOWN,快捷酒店,34.375464,109.206128,123,1,source_value
@@ -472,8 +472,8 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 525,乐巢雅颂酒店(长庆大街店),UNKNOWN,商务酒店,34.447168,109.004457,124,2,source_value
 526,东苑公寓酒店,UNKNOWN,公寓式酒店,34.542769,109.088354,-1,1,unknown
 527,高陵区壹号商务宾馆,UNKNOWN,商务酒店,34.505568,109.018996,-1,1,unknown
-528,西安博豪快捷酒店,UNKNOWN,快捷酒店,34.528016,109.089447,-1,2,unknown
-529,西安赛庭商务宾馆,UNKNOWN,经济型,34.504668,109.023433,-1,2,unknown
+528,西安博豪快捷酒店,UNKNOWN,快捷酒店,34.528016,109.089447,98.0,2,source_value
+529,西安赛庭商务宾馆,UNKNOWN,经济型,34.504668,109.023433,135.0,2,source_value
 530,颐和商务酒店(高陵店),UNKNOWN,商务酒店,34.446934,108.996447,120,1,estimated
 531,安家乐宾馆,UNKNOWN,经济型,34.493506,108.983963,101,1,source_value
 532,心邸民宿,UNKNOWN,UNKNOWN,34.110995,108.598464,-1,1,unknown
@@ -483,7 +483,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 536,优品观影酒店(比亚迪二厂店),UNKNOWN,快捷酒店,34.044679,108.714554,130,1,source_value
 537,奥朵精选酒店(西安草堂比亚迪店),UNKNOWN,经济型,34.044821,108.713281,-1,1,unknown
 538,星简智影酒店(西安比亚迪二厂店),UNKNOWN,UNKNOWN,34.044767,108.712923,250,1,source_value
-539,西安永佳宾馆,UNKNOWN,快捷酒店,34.097038,108.605343,-1,1,unknown
+539,西安永佳宾馆,UNKNOWN,快捷酒店,34.097038,108.605343,91.0,1,source_value
 540,梓源宾馆,UNKNOWN,UNKNOWN,34.108871,108.600104,-1,1,unknown
 541,神马电竞酒店(西安鄠邑石油大学店),UNKNOWN,UNKNOWN,34.108771,108.648161,338,1,source_value
 542,钟楼宾馆(鄠邑区店),UNKNOWN,旅馆,34.110399,108.599214,-1,1,unknown
@@ -516,7 +516,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 569,西安云镜民宿,UNKNOWN,UNKNOWN,34.102242,108.617171,255,1,source_value
 570,西安锦上酒店(鄠邑店),UNKNOWN,UNKNOWN,34.11342,108.619633,-1,1,unknown
 571,柏悦酒店(鄠邑区店),UNKNOWN,经济型,34.112808,108.608885,-1,1,unknown
-572,馨悦宾馆(西安长安大街店),UNKNOWN,UNKNOWN,34.109882,108.745595,-1,1,unknown
+572,馨悦宾馆(西安长安大街店),UNKNOWN,UNKNOWN,34.109882,108.745595,98.0,1,source_value
 573,今悦宾馆,UNKNOWN,UNKNOWN,34.044135,108.71691,73,1,source_value
 574,ZSMART智尚酒店(西安鄠邑交通工程学院店),UNKNOWN,UNKNOWN,34.123915,108.604145,114,1,source_value
 575,彬山民宿(鄠邑区体育学院店),UNKNOWN,UNKNOWN,34.090362,108.629895,208,1,estimated
@@ -524,7 +524,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 577,西安西户酒店(西安石油大学鄠邑店),UNKNOWN,商务酒店,34.098013,108.649757,184,2,estimated
 578,西安你好酒店(鄠邑店),UNKNOWN,UNKNOWN,34.113492,108.619881,-1,1,unknown
 579,腾达商务宾馆(银榕线店),UNKNOWN,商务酒店,34.204148,108.653462,-1,1,unknown
-580,西安柏羽酒店,UNKNOWN,快捷酒店,34.116292,108.603643,-1,1,unknown
+580,西安柏羽酒店,UNKNOWN,快捷酒店,34.116292,108.603643,227.0,1,source_value
 581,元宇宙电竞酒店(鄠邑大十字店),UNKNOWN,UNKNOWN,34.112293,108.604063,-1,1,unknown
 582,汤峪天潭温泉,UNKNOWN,温泉,34.019261,109.224532,-1,1,unknown
 583,蓝田晨羿宾馆,UNKNOWN,快捷酒店,34.047776,109.206086,-1,1,unknown
@@ -664,7 +664,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 717,槿和酒店(西安曲江创意谷店),UNKNOWN,UNKNOWN,34.209333,109.001575,112,1,source_value
 718,唐玺智能酒店(西安大雁塔大唐不夜城店),UNKNOWN,UNKNOWN,34.213494,108.952462,257,1,source_value
 719,春田居公寓(公田五路分店),UNKNOWN,UNKNOWN,34.191036,108.98879,-1,1,unknown
-720,西安威斯汀大酒店(大雁塔大唐不夜城店),UNKNOWN,UNKNOWN,34.216329,108.95765,-1,1,unknown
+720,西安威斯汀大酒店(大雁塔大唐不夜城店),UNKNOWN,UNKNOWN,34.216329,108.95765,776.0,1,source_value
 721,千寻智能酒店(曲江大雁塔店),UNKNOWN,UNKNOWN,34.209206,108.993829,-1,1,unknown
 722,西安馨语之家公寓(曲江银泰城西安大唐芙蓉园店),UNKNOWN,UNKNOWN,34.215014,108.987352,-1,1,unknown
 723,唐礼坊民宿(大唐不夜城店),UNKNOWN,UNKNOWN,34.212931,108.952553,274,1,source_value
@@ -700,7 +700,7 @@ id,name,hotelname_en,featurehoteltype,lat,lon,price,numbed,price_status
 753,悦见民宿(西安软件园高新医院店),UNKNOWN,UNKNOWN,34.229153,108.878725,146,1,source_value
 754,西安金瑞酒店(乳驾庄店),UNKNOWN,UNKNOWN,34.174096,108.825093,-1,1,unknown
 755,辛庄快捷酒店(西安高新医院店),UNKNOWN,UNKNOWN,34.235641,108.872152,-1,1,unknown
-756,金舟酒店(西安比亚迪阳光天地店),UNKNOWN,UNKNOWN,34.175469,108.843249,-1,1,unknown
+756,金舟酒店(西安比亚迪阳光天地店),UNKNOWN,UNKNOWN,34.175469,108.843249,161.0,1,source_value
 757,西安春秋季居至臻酒店,UNKNOWN,UNKNOWN,34.210324,108.888042,-1,1,unknown
 758,蚂蚁景栋青年旅舍,UNKNOWN,经济型,34.242617,108.894679,61,1,estimated
 759,雅轩王姐度假别墅(丈八西路分店),UNKNOWN,UNKNOWN,34.198421,108.850382,-1,1,unknown

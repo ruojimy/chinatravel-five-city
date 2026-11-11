@@ -83,7 +83,7 @@ hotel_price_observations(
 - 合并集主路径：**706 家**（`ready` 318 / `l1_only` 388），`reference_only` 55 家（全部缺坐标）。
 - 采纳规则 2026-11-10 v1：**只采纳 `confidence=high` 的估价（78 家）**；medium/low 一律 `price=None`、`status=unknown`、`basis=estimate_not_adopted`。
   - 准入口径 2026-11-10 调整：`featurehoteltype` 允许留空，不再阻断 planner；仅 `lat`/`lon` 为硬门槛。
-  - 主路径价格构成：真实 240 家、采纳的估价 78 家、需询价 388 家。
+  - 主路径价格构成：真实 254 家、采纳的估价 78 家、需询价 374 家。
 - 估价区间校准（留一法，holdout 240 家真实价酒店）：
 
   | 指标 | 原区间 p25–p75 | 低置信放宽 ×0.75–1.25 |

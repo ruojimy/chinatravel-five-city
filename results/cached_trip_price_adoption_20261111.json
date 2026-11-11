@@ -1,0 +1,167 @@
+{
+ "unknown_before": 388,
+ "candidates": 13,
+ "adopted": 13,
+ "basis": {
+  "unknown": 3,
+  "starting_average_price": 10
+ },
+ "items": [
+  {
+   "name": "西安永佳宾馆",
+   "price": 91.0,
+   "basis": "starting_average_price",
+   "hotel_id": "72175357",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-72175357/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/72175357.html",
+   "quote": "rank\":4},{\"question\":\"起始平均價格\",\"answer\":\"CNY91\",\"rank\":7}]}},\"gtmData\":\"{\\\\\"productSDa",
+   "observed_at": "2026-11-09T18:19:30+08:00",
+   "notes": {},
+   "matched_name": "西安永佳宾馆"
+  },
+  {
+   "name": "西安博豪快捷酒店",
+   "price": 98.0,
+   "basis": "starting_average_price",
+   "hotel_id": "1950717",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-1950717/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/1950717.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY98\",\"rank\":7}]}},\"gtmData\":\"{\\\\\"productSDa",
+   "observed_at": "2026-11-09T18:11:26+08:00",
+   "notes": {},
+   "matched_name": "西安博豪快捷酒店"
+  },
+  {
+   "name": "馨悦宾馆(西安长安大街店)",
+   "price": 98.0,
+   "basis": "starting_average_price",
+   "hotel_id": "106388688",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-106388688/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripB/106388688.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY98\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:32:55+08:00",
+   "notes": {},
+   "matched_name": "馨悦宾馆(西安长安大街店)"
+  },
+  {
+   "name": "西安庆丰商务宾馆",
+   "price": 117.0,
+   "basis": "starting_average_price",
+   "hotel_id": "109439262",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-109439262/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripB/109439262.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY117\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:17:40+08:00",
+   "notes": {},
+   "matched_name": "西安庆丰商务宾馆"
+  },
+  {
+   "name": "西安赛庭商务宾馆",
+   "price": 135.0,
+   "basis": "starting_average_price",
+   "hotel_id": "104677639",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-104677639/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/104677639.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY135\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:21:23+08:00",
+   "notes": {},
+   "matched_name": "西安赛庭商务宾馆"
+  },
+  {
+   "name": "西安悦享精品酒店",
+   "price": 137.0,
+   "basis": "starting_average_price",
+   "hotel_id": "80406422",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-80406422/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripB/80406422.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY137\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:17:52+08:00",
+   "notes": {},
+   "matched_name": "西安悦享精品酒店"
+  },
+  {
+   "name": "非哈酒店(西工程大西科大临潼校区地铁站店)",
+   "price": 158.0,
+   "basis": "starting_average_price",
+   "hotel_id": "123259026",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-123259026/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripB/123259026.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY158\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:32:40+08:00",
+   "notes": {},
+   "matched_name": "非哈酒店(西工程大西科大临潼校区地铁站店)"
+  },
+  {
+   "name": "金舟酒店(西安比亚迪阳光天地店)",
+   "price": 161.0,
+   "basis": "starting_average_price",
+   "hotel_id": "1229678",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-1229678/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripB/1229678.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY161\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:28:04+08:00",
+   "notes": {},
+   "matched_name": "金舟酒店(西安比亚迪阳光天地店)"
+  },
+  {
+   "name": "瑞诚假日酒店",
+   "price": 181.0,
+   "basis": "starting_average_price",
+   "hotel_id": "125813000",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-125813000/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/125813000.html",
+   "quote": "rank\":6},{\"question\":\"起始平均價格\",\"answer\":\"CNY181\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:03:21+08:00",
+   "notes": {},
+   "matched_name": "瑞诚假日酒店"
+  },
+  {
+   "name": "维也纳国际酒店西安北站店",
+   "price": 191.0,
+   "basis": "unknown",
+   "hotel_id": "12046096",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-12046096/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel/12046096.html",
+   "quote": "維也納國際酒店（西安北站店）(Vienna International Hotel (Xi'an North Railway Station))\",\"address\":{\"postalCode\":\"710051\",\"addressLocality\":\"鳳城十二路與文景路十字西北角文景路188號 (中港國際旁)\",\"streetAddress\":\"鳳城十二路與文景路十字西北角文景路188號 (中港國際旁), 未央區, 西安, 710051\",\"addressRegion\":\"西安\",\"addressCountry\":\"中國\",\"@type\":\"PostalAddress\"},\"image\":\"https://ak-d.tripcdn.com/images/1mc1712000rh6f49s7412_R_960_660_R5_D.jpg\",\"@context\":\"http://schema.org\",\"aggregateRating\":{\"bestRating\":10,\"@type\":\"AggregateRating\",\"reviewCount\":\"2911\",\"ratingValue\":\"9.4\"},\"priceRange\":\"由 CNY191 起\"",
+   "observed_at": "2026-11-09",
+   "notes": {},
+   "matched_name": "维也纳国际酒店西安北站店"
+  },
+  {
+   "name": "西安柏羽酒店",
+   "price": 227.0,
+   "basis": "starting_average_price",
+   "hotel_id": "6663069",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-6663069/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/6663069.html",
+   "quote": "rank\":4},{\"question\":\"起始平均價格\",\"answer\":\"CNY227\",\"rank\":7},{\"question\":\"酒店星級\",\"answer\":",
+   "observed_at": "2026-11-09T18:14:37+08:00",
+   "notes": {},
+   "matched_name": "西安柏羽酒店"
+  },
+  {
+   "name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+   "price": 776.0,
+   "basis": "unknown",
+   "hotel_id": "420032",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-420032/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel_batch_tripA/420032.html",
+   "quote": "評論，酒店獲得 9.5/10 的卓越評分，彰顯了其優質服務和超值體驗，房價只需 CNY776 起。\",\"textStructures\":[{\"h2Content\":\"房間\"",
+   "observed_at": "2026-11-09T18:12:30+08:00",
+   "notes": {},
+   "matched_name": "西安威斯汀大酒店(大雁塔大唐不夜城店)"
+  },
+  {
+   "name": "西安索菲特传奇酒店（人民大厦）",
+   "price": 1440.0,
+   "basis": "unknown",
+   "hotel_id": "839111",
+   "url": "https://hk.trip.com/hotels/xi-an-hotel-detail-839111/?locale=zh-CN&curr=CNY",
+   "raw_path": "results/xian_gapfill_20261109/raw/hotel/839111.html",
+   "quote": "西安人民大廈雅高索菲特傳奇酒店(Sofitel Legend People's Grand Hotel Xian)\",\"address\":{\"postalCode\":\"710005\",\"addressLocality\":\"東新街319號\",\"streetAddress\":\"東新街319號, 新城區, 西安, 710005\",\"addressRegion\":\"西安\",\"addressCountry\":\"中國\",\"@type\":\"PostalAddress\"},\"image\":\"https://ak-d.tripcdn.com/images/20060k000000b971iEA9A_R_960_660_R5_D.jpg\",\"@context\":\"http://schema.org\",\"aggregateRating\":{\"bestRating\":10,\"@type\":\"AggregateRating\",\"reviewCount\":\"1166\",\"ratingValue\":\"9.6\"},\"priceRange\":\"由 CNY1,440 起\"",
+   "observed_at": "2026-11-09",
+   "notes": {},
+   "matched_name": "西安索菲特传奇酒店（人民大厦）"
+  }
+ ]
+}
