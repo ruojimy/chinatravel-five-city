@@ -1,0 +1,32 @@
+{
+ "schema_version": "shorttrip-dynamic-v1",
+ "uid": "x11c018",
+ "nature_language": "2人从深圳出发，途经西安、重庆，共4天；在西安安排大唐芙蓉园-鹿园，请核对跨城班次与到达时刻，没有班次或坐标证据时保留待定连接，切勿编造车次。",
+ "people_number": 2,
+ "city_sequence": [
+  "深圳",
+  "西安",
+  "重庆"
+ ],
+ "dates": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12",
+  "2026-11-13"
+ ],
+ "level": "medium",
+ "candidates": [],
+ "retrieval_budget": 8,
+ "requirements": {
+  "must_visit": [
+   "大唐芙蓉园-鹿园"
+  ],
+  "city_role": "middle"
+ },
+ "xian11": {
+  "chain_type": "three_city_xian_middle",
+  "xian_role": "middle",
+  "translation": "controlled_template",
+  "native_compatible": false
+ }
+}

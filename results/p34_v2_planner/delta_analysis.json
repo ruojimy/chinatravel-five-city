@@ -1,0 +1,81 @@
+{
+ "easy": {
+  "fixed": {
+   "logic_py_3": 33,
+   "logic_py_5": 20,
+   "logic_py_2": 18,
+   "logic_py_4": 1
+  },
+  "broken": {},
+  "commonsense_old": {
+   "Incorrect Information of Accommodation on price or room type": 20,
+   "Does not follow Chronological Order": 10,
+   "Invalid or ungrounded activity entity": 3,
+   "Intercity transportation events must occur": 3,
+   "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 3,
+   "Incorrect Information of Intercity Transport on price or duration": 3,
+   "Incorrect Cost on Intercity Transportation": 3,
+   "Unavailable attractions": 3
+  },
+  "commonsense_v2": {
+   "Inappropriate Meal Times": 22,
+   "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 20,
+   "Incorrect Information of Intercity Transport on price or duration": 20,
+   "Incorrect Cost on Intercity Transportation": 20,
+   "Does not follow Chronological Order": 10,
+   "Invalid or ungrounded activity entity": 3,
+   "Intercity transportation events must occur": 3,
+   "Unavailable attractions": 3
+  },
+  "queries_improved": 72
+ },
+ "medium": {
+  "fixed": {
+   "logic_py_3": 22,
+   "logic_py_7": 13,
+   "logic_py_6": 12,
+   "logic_py_2": 8,
+   "logic_py_5": 3,
+   "logic_py_8": 3,
+   "logic_py_4": 2,
+   "logic_py_9": 1
+  },
+  "broken": {
+   "logic_py_5": 1,
+   "logic_py_4": 1
+  },
+  "commonsense_old": {
+   "Incorrect Information of Accommodation on price or room type": 58
+  },
+  "commonsense_v2": {
+   "Inappropriate Meal Times": 15,
+   "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 14,
+   "Incorrect Information of Intercity Transport on price or duration": 14,
+   "Incorrect Cost on Intercity Transportation": 14
+  },
+  "queries_improved": 49
+ },
+ "human": {
+  "fixed": {
+   "logic_py_0": 37,
+   "logic_py_1": 20,
+   "logic_py_2": 7,
+   "logic_py_3": 1,
+   "logic_py_5": 1,
+   "logic_py_4": 1
+  },
+  "broken": {},
+  "commonsense_old": {
+   "Does not follow Chronological Order": 2,
+   "Incorrect Information of Accommodation on price or room type": 1
+  },
+  "commonsense_v2": {
+   "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 14,
+   "Incorrect Information of Intercity Transport on price or duration": 14,
+   "Incorrect Cost on Intercity Transportation": 14,
+   "Inappropriate Meal Times": 11,
+   "Does not follow Chronological Order": 1
+  },
+  "queries_improved": 56
+ }
+}

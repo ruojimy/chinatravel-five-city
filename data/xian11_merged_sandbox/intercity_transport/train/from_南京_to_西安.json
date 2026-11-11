@@ -1,0 +1,82 @@
+[
+ {
+  "TrainID": "G94",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "09:56",
+  "EndTime": "14:34",
+  "Duration": 4.63,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1887",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "07:41",
+  "EndTime": "13:56",
+  "Duration": 6.25,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3177",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "07:57",
+  "EndTime": "14:45",
+  "Duration": 6.8,
+  "Cost": null
+ },
+ {
+  "TrainID": "G465",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "08:12",
+  "EndTime": "13:40",
+  "Duration": 5.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3165",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "11:21",
+  "EndTime": "17:47",
+  "Duration": 6.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1925",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "12:48",
+  "EndTime": "19:00",
+  "Duration": 6.2,
+  "Cost": null
+ },
+ {
+  "TrainID": "K290",
+  "TrainType": "普速",
+  "From": "南京",
+  "To": "西安东",
+  "BeginTime": "12:59",
+  "EndTime": "05:30",
+  "Duration": 16.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3153",
+  "TrainType": "高铁",
+  "From": "南京南",
+  "To": "西安北",
+  "BeginTime": "13:21",
+  "EndTime": "20:29",
+  "Duration": 7.13,
+  "Cost": null
+ }
+]

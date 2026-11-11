@@ -1,0 +1,36 @@
+{
+ "uid": "x11e028",
+ "tag": "easy",
+ "start_city": "西安",
+ "target_city": "深圳",
+ "days": 1,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==1)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'历史古迹'}<=attraction_type_set)"
+ ],
+ "nature_language": "当前位置西安。我们三个人想去深圳玩1天，想去历史古迹类景点，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 深圳 for 1 day(s); want to visit 历史古迹 attractions. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_attraction_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

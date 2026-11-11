@@ -1,0 +1,224 @@
+
+
+===== Page 1 =====
+
+Short Trip Assistant
+Team member: Lingwei Cao, Yuhang Ji, Churui Xie
+Reporter: Yuhang Ji
+2026.10.10
+
+===== Page 2 =====
+
+Target Users and Project Scope
+User Scenario The Problem that the User Hopes to Solve
+Lin, who is visiting Guangzhou 
+for the first time
+My classmates and I will come to Guangzhou for two days over the weekend and stay in
+Zhujiang New Town. Each of us will spend 800 yuan on sightseeing, dining, and urban
+transportation. I like museums and Cantonese cuisine, and I hope to receive an arrangement that
+has been checked for time, transportation, and budget.
+Chen, who has made an 
+appointment already
+Assuming the attraction scheduled for the afternoon is temporarily closed, but the dinner
+reservation at 18:00 has already been made, I would like to replace the afternoon activity,
+retain the dinner, and try not to alter other arrangements. I also wish to understand the reasons
+for the modification.
+Zhou, who is short on time
+I want to enter the museum at 14:00 and spend at least 2 hours visiting, while I must arrive at
+the station by 15:30. I wish to know which requirements conflict and decide for myself whether
+to visit earlier or adjust other conditions.
+
+===== Page 3 =====
+
+Related Work and Project Core
+Related Work Significance Focus of the Work
+ChinaTravel Combine large models with search to 
+generate and check itineraries.
+Add modification and reconfirmation processes 
+around the confirmed itinerary.
+LLMs Can Solve Real-
+World Planning Rigorously
+Plan using a solver and explain demand 
+conflicts.
+Distinguish between conflicting requirements, 
+search timeouts, and insufficient information.
+Personal Travel Solver
+Understand preferences from historical 
+information and carry out personalized
+planning.
+Collect preferences through questionnaires, and 
+use them for planning after confirmation.
+TripTide
+The revised itinerary after the evaluation 
+changes will be retained while the 
+original arrangement will be maintained.
+On the premise of meeting the requirements, 
+priority should be given to the plan with fewer 
+changes.
+
+===== Page 4 =====
+
+System Architecture and Technical Solution
+System Part Technology and Data Solutions
+User input
+The questionnaire collects user preferences, and LLM aids in clarification. After user
+confirmation, hard constraints are handed over to the checker, while soft preferences are used
+for candidate ranking and evaluation of feasible solutions.
+Offline test data Reuse the public request and sandbox of ChinaTravel for testing.
+Online query
+Networked data collection and standardization: Utilize large model networked search and map
+interfaces to obtain location, traffic, and change information, extract it into a unified format
+and supplement with classification and preference labels; check sources, applicable dates, and
+data conflicts, save data versions for use in itinerary planning and dynamic repairs.
+Program and Interface
+Python is responsible for invoking large models, searching itineraries, and checking and
+fixing errors; FastAPI provides interfaces, while React displays questionnaires, itineraries,
+and modifies differences; SQLite stores confirmed requirements, preferences, and itinerary
+versions; and maps link to view segmented routes.
+
+===== Page 5 =====
+
+Pre-collected user preference
+User input demand
+LLM extract constraints 
+& user confirm
+Search relevant information 
+Candidate Ranking
+Bounded search
+Itinerary check
+Save best scheme
+Visualize travel route to user 
+External disruptions 
+or
+User demand change
+Update Constraints
+Traversal 
+complete
+Y
+N
+N
+Inform user substitute schemeSet of qualified schemes
+User reply
+Compute change cost
+User provide rejection reason 
+Y
+N
+Y
+Further changes
+N
+Y
+User Input
+Constraints analysis and 
+candidate selection
+Itinerary search 
+& verification
+Handling of 
+unsolvable 
+situations
+Method 
+Optimization
+Dynamic
+Adjustment
+
+===== Page 6 =====
+
+Experiments
+Experiment Procedure Evaluation
+Initial Planning Ablation
+20 verified-feasible requests. Full system vs. no check-
+feedback revision vs. no questionnaire soft preferences; 
+hard constraints/data/model/resources fixed. 
+Feedback: valid itineraries, runtime, 
+cost. Questionnaire: jointly valid cases 
+scored by original profile; pass rate. 
+Same independent checker.
+Post-Change Revision
+20 jointly feasible itineraries → 60 verified repairable 
+cases: closure, delay, early departure. Compare vs. no 
+modification cost; strong-model revision as reference.
+Repair success rate; for joint successes: 
+replacements, deletions, additions, time 
+shifts. Check commuting, must-haves, 
+preferences; report quality tradeoffs.
+Correct No-Solution Explanation
+3 types × 3 cases: confirmed conflict, feasible-but-
+timeout, missing key data. Check classification, 
+evidence, confirmation; no hard-constraint relaxation 
+before confirmation.
+Avoid “not found” as “infeasible”; no 
+unauthorized changes. Report correct 
+counts by type. Engineering acceptance, 
+not algorithm benefit.
+
+===== Page 7 =====
+
+Risks Solution
+Data is outdated or missing
+Save the source, query, and effective time; missing values are not 
+defaulted to zero or open all day; prompts are given when key items 
+are insufficient, indicating that verification cannot be completed.
+The search scale is too large Limit cities and days; cache repeated requests; set candidate and 
+search budgets; retry after expanding candidates if necessary.
+The checker is incorrect Test the time boundaries, transportation, budget, and lock-in 
+requirements; re-examine the complete itinerary after revisions.
+Risks and Tests
+
+===== Page 8 =====
+
+Team Plan and Duty
+Requirements and Interface Data and Tools Planning and Verification
+Questionnair e, user portrait,  and 
+de ma nd  con f i rma t i on p ag e, 
+itinerary timeline, and differences 
+between the old and new versions.
+Location, transportation, 
+announcement access, 
+caching, and map opening.
+Candidate ranking, searching, 
+constraint checking, and 
+modification cost.
+Integration and Evaluation
+Public data structures, baselines, experimental records, and end-to-end demonstrations
+<Yuhang JI> <Churui Xie> <Lingwei Cao>
+<Lingwei Cao, Yuhang JI, Churui Xie>
+Phase Main Work Outcomes
+1. Requirements & Data Foundation
+Define questionnaire, hard constraints, soft preferences; unify data formats; trial web search and 
+map APIs; build verified cases and independent checker.
+Questionnaire, standard data samples, 
+checking rules.
+2. Initial Itinerary Generation
+Web information extraction, tag enrichment, verification; connect requirement confirmation, 
+candidate screening, planning, and check-feedback revision.
+Prototype that generates and validates 
+complete itineraries.
+3. Dynamic Repair & Interaction
+Add modification cost; protect locked arrangements; implement failure classification, user 
+confirmation, old-vs-new comparison, and version saving.
+Post-change repair and failure-
+negotiation workflow.
+4. Experiments & Full Demo
+Run initial-planning ablation, low-edit repair experiment, and failure-handling tests; validate real 
+web queries, saving, and map operations.
+Experimental results and full system 
+demo.
+
+===== Page 9 =====
+
+References
+1. Hao, Y ., Chen, Y ., Zhang, Y ., & Fan, C. (2025). Large language models can solve real-world planning rigorously with formal 
+verification tools. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for 
+Computational Linguistics: Human Language Technologies (V ol. 1, pp. 3434–3483). Association for Computational Linguistics.
+2. Karmakar, P., Chaudhuri, S., Mallick, S., Gupta, M., Jana, A., & Ghosh, S. (2025). TripTide: A benchmark for adaptive travel 
+planning under disruptions (arXiv:2510.21329). arXiv. https://arxiv.org/abs/2510.21329
+3. Shao, J.-J., Zhang, B.-W., Yang, X.-W., Chen, B.-Z., Han, S.-Y ., Pang, J.-H., Wei, W.-D., Cai, G., Dong, Z., Guo, L.-Z., & Li, Y.-F. 
+(2026). ChinaTravel: An open-ended travel planning benchmark with compositional constraint validation for language agents. In 
+Proceedings of the 14th International Conference on Learning Representations (ICLR 2026).
+4. Shao, Z., Wu, J., Chen, W., & Wang, X. (2025). Personal Travel Solver: A preference-driven LLM-solver system for travel planning. 
+In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (V ol. 1, pp. 27622–27642). 
+Association for Computational Linguistics.
+5. Xie, J., Zhang, K., Chen, J., Zhu, T., Lou, R., Tian, Y ., Xiao, Y ., & Su, Y . (2024). TravelPlanner: A benchmark for real-world 
+planning with language agents. In Proceedings of the 41st International Conference on Machine Learning (pp. 54590–54613). 
+PMLR.
+6. Zhang, B.-W., Ye, J., Hua, P.-Y ., Cao, J.-W., Shao, J.-J., Li, Y .-F., & Guo, L.-Z. (2026). Revisiting the travel planning capabilities of 
+large language models [Unpublished manuscript].

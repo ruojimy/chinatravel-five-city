@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250322132333453556_00058",
+  "tag": "phase2",
+  "start_city": "Shanghai",
+  "target_city": "Shenzhen",
+  "days": 4,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Atour Hotel Shenzhen Luohu Vientiane City\"}&accommodation_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Self-operated entertainment room\", \"Sauna\"}&accommodation_type_set)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shenzhen Jewelry Museum\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Honey Lake 1979 Cultural and Creative Park\" and seen_first: result=True",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"01:53\")\n    outbound_intercity_found=True",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Vienna International Hotel (Shenzhen Qianhai Happy Bay Hotel)\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Zunbao Pizza (Shangsha Branch)\" and first_activity_seen: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==1)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"train\")"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Do not include any of these hotels: Atour Hotel Shenzhen Luohu Vientiane City.",
+    "Day 1 must include breakfast, lunch, and dinner.",
+    "Do not include any of these hotel feature types: Self-operated entertainment room and Sauna.",
+    "Visit Shenzhen Jewelry Museum before Honey Lake 1979 Cultural and Creative Park.",
+    "The outbound intercity trip must depart no later than 01:53.",
+    "Stay at Vienna International Hotel (Shenzhen Qianhai Happy Bay Hotel) before dining at Zunbao Pizza (Shangsha Branch).",
+    "Use taxi as the primary mode for exactly 1 in-city journey.",
+    "Do not use train for the return intercity trip."
+  ],
+  "nature_language": "We are 3 people traveling from Shanghai to Shenzhen for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Do not include any of these hotels: Atour Hotel Shenzhen Luohu Vientiane City.\n5. Day 1 must include breakfast, lunch, and dinner.\n6. Do not include any of these hotel feature types: Self-operated entertainment room and Sauna.\n7. Visit Shenzhen Jewelry Museum before Honey Lake 1979 Cultural and Creative Park.\n8. The outbound intercity trip must depart no later than 01:53.\n9. Stay at Vienna International Hotel (Shenzhen Qianhai Happy Bay Hotel) before dining at Zunbao Pizza (Shangsha Branch).\n10. Use taxi as the primary mode for exactly 1 in-city journey.\n11. Do not use train for the return intercity trip.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_accommodation_names\",\"required_meals_on_day\",\"forbidden_accommodation_types\",\"attraction_order\",\"outbound_departure_deadline\",\"cross_category_order\",\"inner_transport_mode_count\",\"forbidden_return_transport\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,36 @@
+{
+ "uid": "x11e022",
+ "tag": "easy",
+ "start_city": "西安",
+ "target_city": "成都",
+ "days": 2,
+ "people_number": 1,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==2)",
+  "result=(people_count(plan)==1)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'青年旅舍'}<=accommodation_type_set)"
+ ],
+ "nature_language": "当前位置西安。我一个人想去成都玩2天，酒店要有青年旅舍，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. I want to travel to 成都 for 2 day(s); the hotel should offer 青年旅舍. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_accommodation_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

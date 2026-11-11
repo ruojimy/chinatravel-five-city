@@ -1,0 +1,36 @@
+{
+ "uid": "x11e019",
+ "tag": "easy",
+ "start_city": "苏州",
+ "target_city": "西安",
+ "days": 2,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==2)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'同盛祥'}<=restaurant_name_set)"
+ ],
+ "nature_language": "当前位置苏州。我们四个人想去西安玩2天，想去同盛祥吃饭，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 苏州. four of us want to travel to 西安 for 2 day(s); want to eat at 同盛祥. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_restaurant_names"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

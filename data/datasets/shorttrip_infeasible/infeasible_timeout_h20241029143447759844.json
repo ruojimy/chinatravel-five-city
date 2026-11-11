@@ -1,0 +1,1075 @@
+{
+  "uid": "infeasible_timeout_h20241029143447759844",
+  "kind": "feasible_but_timeout",
+  "ground_truth": "feasible_but_timeout",
+  "prediction": {
+    "label": "feasible_but_timeout",
+    "evidence": [
+      "bounded search exhausted without a witness; infeasibility not proven"
+    ],
+    "confidence": "low"
+  },
+  "solved_by_repair": false,
+  "query": {
+    "uid": "infeasible_timeout_h20241029143447759844",
+    "tag": "shorttrip_infeasible",
+    "start_city": "上海",
+    "target_city": "苏州",
+    "days": 3,
+    "people_number": 2,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==3)",
+      "result=(people_count(plan)==2)",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+    ],
+    "nature_language": "[当前位置上海,目标位置苏州,旅行人数2,旅行天数3] 我要带着我大儿子从上海出发去苏州玩三天，要轻快自由行，不要特种兵出行。帮我规划一下。",
+    "nature_language_en": "[Current location: Shanghai, Destination: Suzhou, Number of travelers: 2, Number of travel days: 3] I want to take my eldest son from Shanghai to Suzhou for a three-day trip. We want a light and free travel experience, not a rigorous one. Please help me plan it.",
+    "source_uid": "h20241029143447759844",
+    "infeasible_kind": "feasible_but_timeout",
+    "search_budget": {
+      "max_evaluations": 1,
+      "deadline_seconds": 1.0
+    }
+  },
+  "evidence": [
+    "a witness exists, so 'infeasible' must not be reported"
+  ],
+  "seed_plan": {
+    "people_number": 2,
+    "start_city": "上海",
+    "target_city": "苏州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "上海站",
+            "end": "苏州站",
+            "start_time": "06:06",
+            "end_time": "06:38",
+            "price": 55.23,
+            "cost": 110.46,
+            "tickets": 2,
+            "type": "train",
+            "transports": [],
+            "TrainID": "G3124"
+          },
+          {
+            "position": "平门",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "06:46",
+            "end_time": "08:46",
+            "transports": [
+              {
+                "start": "苏州站",
+                "end": "苏州火车站-地铁站",
+                "mode": "walk",
+                "start_time": "06:38",
+                "end_time": "06:39",
+                "cost": 0,
+                "distance": 0.13,
+                "price": 0
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "平河路-地铁站",
+                "mode": "metro",
+                "start_time": "06:39",
+                "end_time": "06:40",
+                "cost": 4.0,
+                "distance": 0.76,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "平河路-地铁站",
+                "end": "平门",
+                "mode": "walk",
+                "start_time": "06:40",
+                "end_time": "06:46",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "苏州商会博物馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "09:01",
+            "end_time": "11:01",
+            "transports": [
+              {
+                "start": "平门",
+                "end": "平河路-地铁站",
+                "mode": "walk",
+                "start_time": "08:46",
+                "end_time": "08:52",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              },
+              {
+                "start": "平河路-地铁站",
+                "end": "苏州火车站-地铁站",
+                "mode": "metro",
+                "start_time": "08:52",
+                "end_time": "08:53",
+                "cost": 4.0,
+                "distance": 0.76,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "苏州商会博物馆",
+                "mode": "walk",
+                "start_time": "08:53",
+                "end_time": "09:01",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "藏书小朱羊肉(桃花坞店)",
+            "type": "lunch",
+            "price": 69.0,
+            "cost": 138.0,
+            "start_time": "11:12",
+            "end_time": "12:12",
+            "transports": [
+              {
+                "start": "苏州商会博物馆",
+                "end": "苏州火车站-地铁站",
+                "mode": "walk",
+                "start_time": "11:01",
+                "end_time": "11:09",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "北寺塔-地铁站",
+                "mode": "metro",
+                "start_time": "11:09",
+                "end_time": "11:11",
+                "cost": 4.0,
+                "distance": 1.46,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "北寺塔-地铁站",
+                "end": "藏书小朱羊肉(桃花坞店)",
+                "mode": "walk",
+                "start_time": "11:11",
+                "end_time": "11:12",
+                "cost": 0,
+                "distance": 0.1,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "真趣园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:24",
+            "end_time": "14:24",
+            "transports": [
+              {
+                "start": "藏书小朱羊肉(桃花坞店)",
+                "end": "北寺塔-地铁站",
+                "mode": "walk",
+                "start_time": "12:12",
+                "end_time": "12:13",
+                "cost": 0,
+                "distance": 0.1,
+                "price": 0
+              },
+              {
+                "start": "北寺塔-地铁站",
+                "end": "山塘街-地铁站",
+                "mode": "metro",
+                "start_time": "12:13",
+                "end_time": "12:16",
+                "cost": 4.0,
+                "distance": 1.69,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "山塘街-地铁站",
+                "end": "真趣园",
+                "mode": "walk",
+                "start_time": "12:16",
+                "end_time": "12:24",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "泽一居精舍(苏州观前街平江路店)",
+            "type": "accommodation",
+            "room_type": 2,
+            "price": 250.0,
+            "cost": 250.0,
+            "rooms": 1,
+            "start_time": "14:39",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "真趣园",
+                "end": "山塘街-地铁站",
+                "mode": "walk",
+                "start_time": "14:24",
+                "end_time": "14:32",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              },
+              {
+                "start": "山塘街-地铁站",
+                "end": "悬桥巷-地铁站",
+                "mode": "metro",
+                "start_time": "14:32",
+                "end_time": "14:37",
+                "cost": 4.0,
+                "distance": 2.66,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "泽一居精舍(苏州观前街平江路店)",
+                "mode": "walk",
+                "start_time": "14:37",
+                "end_time": "14:39",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "怡园",
+            "type": "attraction",
+            "price": 15.0,
+            "cost": 30.0,
+            "tickets": 2,
+            "start_time": "08:31",
+            "end_time": "11:01",
+            "transports": [
+              {
+                "start": "泽一居精舍(苏州观前街平江路店)",
+                "end": "怡园",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:31",
+                "cost": 0,
+                "distance": 0.09307279882658719,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "祺一食",
+            "type": "lunch",
+            "price": 55.0,
+            "cost": 110.0,
+            "start_time": "11:03",
+            "end_time": "12:03",
+            "transports": [
+              {
+                "start": "怡园",
+                "end": "祺一食",
+                "mode": "walk",
+                "start_time": "11:01",
+                "end_time": "11:03",
+                "cost": 0,
+                "distance": 0.22781056855930132,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "鹤园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:05",
+            "end_time": "13:35",
+            "transports": [
+              {
+                "start": "祺一食",
+                "end": "鹤园",
+                "mode": "walk",
+                "start_time": "12:03",
+                "end_time": "12:05",
+                "cost": 0,
+                "distance": 0.24370206468520214,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "苏州园林曲园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:35",
+            "end_time": "14:35",
+            "transports": [
+              {
+                "start": "鹤园",
+                "end": "苏州园林曲园",
+                "mode": "walk",
+                "start_time": "13:35",
+                "end_time": "13:35",
+                "cost": 0,
+                "distance": 0.07291214497850647,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "泽一居精舍(苏州观前街平江路店)",
+            "type": "accommodation",
+            "room_type": 2,
+            "price": 250.0,
+            "cost": 250.0,
+            "rooms": 1,
+            "start_time": "14:39",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "苏州园林曲园",
+                "end": "泽一居精舍(苏州观前街平江路店)",
+                "mode": "walk",
+                "start_time": "14:35",
+                "end_time": "14:39",
+                "cost": 0,
+                "distance": 0.3381046626112444,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "position": "城隍庙",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:35",
+            "end_time": "09:20",
+            "transports": [
+              {
+                "start": "泽一居精舍(苏州观前街平江路店)",
+                "end": "城隍庙",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:35",
+                "cost": 0,
+                "distance": 0.49383026016026965,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "畅园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "09:29",
+            "end_time": "11:29",
+            "transports": [
+              {
+                "start": "城隍庙",
+                "end": "悬桥巷-地铁站",
+                "mode": "walk",
+                "start_time": "09:20",
+                "end_time": "09:26",
+                "cost": 0,
+                "distance": 0.5,
+                "price": 0
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "察院场-地铁站",
+                "mode": "metro",
+                "start_time": "09:26",
+                "end_time": "09:27",
+                "cost": 4.0,
+                "distance": 0.8,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "察院场-地铁站",
+                "end": "畅园",
+                "mode": "walk",
+                "start_time": "09:27",
+                "end_time": "09:29",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "阿福砂锅煲(步行街店)",
+            "type": "lunch",
+            "price": 28.0,
+            "cost": 56.0,
+            "start_time": "11:35",
+            "end_time": "12:35",
+            "transports": [
+              {
+                "start": "畅园",
+                "end": "察院场-地铁站",
+                "mode": "walk",
+                "start_time": "11:29",
+                "end_time": "11:31",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              },
+              {
+                "start": "察院场-地铁站",
+                "end": "悬桥巷-地铁站",
+                "mode": "metro",
+                "start_time": "11:31",
+                "end_time": "11:32",
+                "cost": 4.0,
+                "distance": 0.8,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "阿福砂锅煲(步行街店)",
+                "mode": "walk",
+                "start_time": "11:32",
+                "end_time": "11:35",
+                "cost": 0,
+                "distance": 0.31,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "南山鬼校",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:44",
+            "end_time": "13:44",
+            "transports": [
+              {
+                "start": "阿福砂锅煲(步行街店)",
+                "end": "南山鬼校",
+                "mode": "walk",
+                "start_time": "12:35",
+                "end_time": "12:44",
+                "cost": 0,
+                "distance": 0.7669908684906359,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "苏州站",
+            "end": "上海虹桥站",
+            "start_time": "22:55",
+            "end_time": "23:20",
+            "price": 55.23,
+            "cost": 110.46,
+            "tickets": 2,
+            "type": "train",
+            "transports": [
+              {
+                "start": "南山鬼校",
+                "end": "悬桥巷-地铁站",
+                "mode": "walk",
+                "start_time": "13:44",
+                "end_time": "13:49",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "苏州火车站-地铁站",
+                "mode": "metro",
+                "start_time": "13:49",
+                "end_time": "13:54",
+                "cost": 4.0,
+                "distance": 2.57,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "苏州站",
+                "mode": "walk",
+                "start_time": "13:54",
+                "end_time": "13:55",
+                "cost": 0,
+                "distance": 0.13,
+                "price": 0
+              }
+            ],
+            "TrainID": "G7167"
+          }
+        ]
+      }
+    ]
+  },
+  "witness": {
+    "people_number": 2,
+    "start_city": "上海",
+    "target_city": "苏州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "上海站",
+            "end": "苏州站",
+            "start_time": "06:06",
+            "end_time": "06:38",
+            "price": 55.23,
+            "cost": 110.46,
+            "tickets": 2,
+            "type": "train",
+            "transports": [],
+            "TrainID": "G3124"
+          },
+          {
+            "position": "平门",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "06:46",
+            "end_time": "08:46",
+            "transports": [
+              {
+                "start": "苏州站",
+                "end": "苏州火车站-地铁站",
+                "mode": "walk",
+                "start_time": "06:38",
+                "end_time": "06:39",
+                "cost": 0,
+                "distance": 0.13,
+                "price": 0
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "平河路-地铁站",
+                "mode": "metro",
+                "start_time": "06:39",
+                "end_time": "06:40",
+                "cost": 4.0,
+                "distance": 0.76,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "平河路-地铁站",
+                "end": "平门",
+                "mode": "walk",
+                "start_time": "06:40",
+                "end_time": "06:46",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "苏州商会博物馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "09:01",
+            "end_time": "11:01",
+            "transports": [
+              {
+                "start": "平门",
+                "end": "平河路-地铁站",
+                "mode": "walk",
+                "start_time": "08:46",
+                "end_time": "08:52",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              },
+              {
+                "start": "平河路-地铁站",
+                "end": "苏州火车站-地铁站",
+                "mode": "metro",
+                "start_time": "08:52",
+                "end_time": "08:53",
+                "cost": 4.0,
+                "distance": 0.76,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "苏州商会博物馆",
+                "mode": "walk",
+                "start_time": "08:53",
+                "end_time": "09:01",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "藏书小朱羊肉(桃花坞店)",
+            "type": "lunch",
+            "price": 69.0,
+            "cost": 138.0,
+            "start_time": "11:12",
+            "end_time": "12:12",
+            "transports": [
+              {
+                "start": "苏州商会博物馆",
+                "end": "苏州火车站-地铁站",
+                "mode": "walk",
+                "start_time": "11:01",
+                "end_time": "11:09",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "北寺塔-地铁站",
+                "mode": "metro",
+                "start_time": "11:09",
+                "end_time": "11:11",
+                "cost": 4.0,
+                "distance": 1.46,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "北寺塔-地铁站",
+                "end": "藏书小朱羊肉(桃花坞店)",
+                "mode": "walk",
+                "start_time": "11:11",
+                "end_time": "11:12",
+                "cost": 0,
+                "distance": 0.1,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "真趣园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:24",
+            "end_time": "14:24",
+            "transports": [
+              {
+                "start": "藏书小朱羊肉(桃花坞店)",
+                "end": "北寺塔-地铁站",
+                "mode": "walk",
+                "start_time": "12:12",
+                "end_time": "12:13",
+                "cost": 0,
+                "distance": 0.1,
+                "price": 0
+              },
+              {
+                "start": "北寺塔-地铁站",
+                "end": "山塘街-地铁站",
+                "mode": "metro",
+                "start_time": "12:13",
+                "end_time": "12:16",
+                "cost": 4.0,
+                "distance": 1.69,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "山塘街-地铁站",
+                "end": "真趣园",
+                "mode": "walk",
+                "start_time": "12:16",
+                "end_time": "12:24",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "泽一居精舍(苏州观前街平江路店)",
+            "type": "accommodation",
+            "room_type": 2,
+            "price": 250.0,
+            "cost": 250.0,
+            "rooms": 1,
+            "start_time": "14:39",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "真趣园",
+                "end": "山塘街-地铁站",
+                "mode": "walk",
+                "start_time": "14:24",
+                "end_time": "14:32",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              },
+              {
+                "start": "山塘街-地铁站",
+                "end": "悬桥巷-地铁站",
+                "mode": "metro",
+                "start_time": "14:32",
+                "end_time": "14:37",
+                "cost": 4.0,
+                "distance": 2.66,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "泽一居精舍(苏州观前街平江路店)",
+                "mode": "walk",
+                "start_time": "14:37",
+                "end_time": "14:39",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "怡园",
+            "type": "attraction",
+            "price": 15.0,
+            "cost": 30.0,
+            "tickets": 2,
+            "start_time": "08:31",
+            "end_time": "11:01",
+            "transports": [
+              {
+                "start": "泽一居精舍(苏州观前街平江路店)",
+                "end": "怡园",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:31",
+                "cost": 0,
+                "distance": 0.09307279882658719,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "祺一食",
+            "type": "lunch",
+            "price": 55.0,
+            "cost": 110.0,
+            "start_time": "11:03",
+            "end_time": "12:03",
+            "transports": [
+              {
+                "start": "怡园",
+                "end": "祺一食",
+                "mode": "walk",
+                "start_time": "11:01",
+                "end_time": "11:03",
+                "cost": 0,
+                "distance": 0.22781056855930132,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "鹤园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:05",
+            "end_time": "13:35",
+            "transports": [
+              {
+                "start": "祺一食",
+                "end": "鹤园",
+                "mode": "walk",
+                "start_time": "12:03",
+                "end_time": "12:05",
+                "cost": 0,
+                "distance": 0.24370206468520214,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "苏州园林曲园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:35",
+            "end_time": "14:35",
+            "transports": [
+              {
+                "start": "鹤园",
+                "end": "苏州园林曲园",
+                "mode": "walk",
+                "start_time": "13:35",
+                "end_time": "13:35",
+                "cost": 0,
+                "distance": 0.07291214497850647,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "泽一居精舍(苏州观前街平江路店)",
+            "type": "accommodation",
+            "room_type": 2,
+            "price": 250.0,
+            "cost": 250.0,
+            "rooms": 1,
+            "start_time": "14:39",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "苏州园林曲园",
+                "end": "泽一居精舍(苏州观前街平江路店)",
+                "mode": "walk",
+                "start_time": "14:35",
+                "end_time": "14:39",
+                "cost": 0,
+                "distance": 0.3381046626112444,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "position": "城隍庙",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:35",
+            "end_time": "09:20",
+            "transports": [
+              {
+                "start": "泽一居精舍(苏州观前街平江路店)",
+                "end": "城隍庙",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:35",
+                "cost": 0,
+                "distance": 0.49383026016026965,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "畅园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "09:29",
+            "end_time": "11:29",
+            "transports": [
+              {
+                "start": "城隍庙",
+                "end": "悬桥巷-地铁站",
+                "mode": "walk",
+                "start_time": "09:20",
+                "end_time": "09:26",
+                "cost": 0,
+                "distance": 0.5,
+                "price": 0
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "察院场-地铁站",
+                "mode": "metro",
+                "start_time": "09:26",
+                "end_time": "09:27",
+                "cost": 4.0,
+                "distance": 0.8,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "察院场-地铁站",
+                "end": "畅园",
+                "mode": "walk",
+                "start_time": "09:27",
+                "end_time": "09:29",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "阿福砂锅煲(步行街店)",
+            "type": "lunch",
+            "price": 28.0,
+            "cost": 56.0,
+            "start_time": "11:35",
+            "end_time": "12:35",
+            "transports": [
+              {
+                "start": "畅园",
+                "end": "察院场-地铁站",
+                "mode": "walk",
+                "start_time": "11:29",
+                "end_time": "11:31",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              },
+              {
+                "start": "察院场-地铁站",
+                "end": "悬桥巷-地铁站",
+                "mode": "metro",
+                "start_time": "11:31",
+                "end_time": "11:32",
+                "cost": 4.0,
+                "distance": 0.8,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "阿福砂锅煲(步行街店)",
+                "mode": "walk",
+                "start_time": "11:32",
+                "end_time": "11:35",
+                "cost": 0,
+                "distance": 0.31,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "南山鬼校",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:44",
+            "end_time": "13:44",
+            "transports": [
+              {
+                "start": "阿福砂锅煲(步行街店)",
+                "end": "南山鬼校",
+                "mode": "walk",
+                "start_time": "12:35",
+                "end_time": "12:44",
+                "cost": 0,
+                "distance": 0.7669908684906359,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "苏州站",
+            "end": "上海虹桥站",
+            "start_time": "22:55",
+            "end_time": "23:20",
+            "price": 55.23,
+            "cost": 110.46,
+            "tickets": 2,
+            "type": "train",
+            "transports": [
+              {
+                "start": "南山鬼校",
+                "end": "悬桥巷-地铁站",
+                "mode": "walk",
+                "start_time": "13:44",
+                "end_time": "13:49",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              },
+              {
+                "start": "悬桥巷-地铁站",
+                "end": "苏州火车站-地铁站",
+                "mode": "metro",
+                "start_time": "13:49",
+                "end_time": "13:54",
+                "cost": 4.0,
+                "distance": 2.57,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "苏州火车站-地铁站",
+                "end": "苏州站",
+                "mode": "walk",
+                "start_time": "13:54",
+                "end_time": "13:55",
+                "cost": 0,
+                "distance": 0.13,
+                "price": 0
+              }
+            ],
+            "TrainID": "G7167"
+          }
+        ]
+      }
+    ]
+  }
+}

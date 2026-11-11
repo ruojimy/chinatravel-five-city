@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250323221718305968_00044",
+  "tag": "phase2",
+  "start_city": "Chengdu",
+  "target_city": "Wuhan",
+  "days": 5,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==5)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "day_restaurant_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Jiangnan Small Garden Restaurant (Wuhan University Branch)\"}<=day_restaurant_name_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Hongshan Park\", \"Maple Fragrance Cloud Fortress\"}<=day_attraction_name_set)",
+    "result_list=[]\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=409)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Baotong Temple\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Yingwuzhou Yangtze River Bridge\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Super Bird Bureau\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Yingwuzhou Yangtze River Bridge\" and seen_first: result=True",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Cultural Tourism Area\"}&attraction_type_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Yingwuzhou Yangtze River Bridge\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop)\" and first_activity_seen: result=True",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Family Room\"}&accommodation_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 5 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Dine at Jiangnan Small Garden Restaurant (Wuhan University Branch) on day 1.",
+    "Do not use train for the outbound intercity trip.",
+    "Visit both Hongshan Park and Maple Fragrance Cloud Fortress on day 1.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total duration of all in-city transport segments within 409 minutes. (B) Visit Baotong Temple before Yingwuzhou Yangtze River Bridge.",
+    "Stay at exactly 1 different hotel.",
+    "Visit Super Bird Bureau before Yingwuzhou Yangtze River Bridge.",
+    "Do not include any of these attraction types: Cultural Tourism Area.",
+    "Visit Yingwuzhou Yangtze River Bridge before dining at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop).",
+    "Do not include any of these hotel feature types: Family Room."
+  ],
+  "nature_language": "We are 3 people traveling from Chengdu to Wuhan for 5 days.\nRequirements:\n1. The trip must last 5 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Dine at Jiangnan Small Garden Restaurant (Wuhan University Branch) on day 1.\n5. Do not use train for the outbound intercity trip.\n6. Visit both Hongshan Park and Maple Fragrance Cloud Fortress on day 1.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total duration of all in-city transport segments within 409 minutes. (B) Visit Baotong Temple before Yingwuzhou Yangtze River Bridge.\n8. Stay at exactly 1 different hotel.\n9. Visit Super Bird Bureau before Yingwuzhou Yangtze River Bridge.\n10. Do not include any of these attraction types: Cultural Tourism Area.\n11. Visit Yingwuzhou Yangtze River Bridge before dining at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop).\n12. Do not include any of these hotel feature types: Family Room.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"restaurant_on_day\",\"forbidden_depart_transport\",\"attraction_pair_on_day\",\"either_requirement\",\"distinct_accommodation_count\",\"attraction_order\",\"forbidden_attraction_types\",\"cross_category_order\",\"forbidden_accommodation_types\"]",
+  "official_phase2_evaluation": true
+}

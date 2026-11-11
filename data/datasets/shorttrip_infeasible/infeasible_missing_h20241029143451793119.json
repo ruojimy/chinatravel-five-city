@@ -1,0 +1,730 @@
+{
+  "uid": "infeasible_missing_h20241029143451793119",
+  "kind": "missing_key_data",
+  "ground_truth": "missing_key_data",
+  "prediction": {
+    "label": "missing_key_data",
+    "evidence": [
+      "not present in sandbox: attraction:ShortTrip Missing Museum 9122"
+    ],
+    "confidence": "high"
+  },
+  "solved_by_repair": false,
+  "query": {
+    "uid": "infeasible_missing_h20241029143451793119",
+    "tag": "shorttrip_infeasible",
+    "start_city": "南京",
+    "target_city": "重庆",
+    "days": 4,
+    "people_number": 4,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'川菜'}<=restaurant_type_set)",
+      "result=(day_count(plan)==4)",
+      "result=(people_count(plan)==4)",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"ShortTrip Missing Museum 9122\":\n    result=True"
+    ],
+    "nature_language": "[当前位置南京,目标位置重庆,旅行人数4,旅行天数4] 我想去重庆吃有当地特色，实惠且好吃的美食，有没有推荐",
+    "nature_language_en": "[Current location: Nanjing, Destination: Chongqing, Number of travelers: 4, Number of travel days: 4] I want to go to Chongqing to eat local, affordable, and delicious food. Do you have any recommendations?",
+    "source_uid": "h20241029143451793119",
+    "infeasible_kind": "missing_key_data"
+  },
+  "evidence": [
+    "required attraction ShortTrip Missing Museum 9122 is absent from the sandbox"
+  ],
+  "seed_plan": {
+    "people_number": 4,
+    "start_city": "南京",
+    "target_city": "重庆",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "南京南站",
+            "end": "重庆北站",
+            "start_time": "07:20",
+            "end_time": "16:49",
+            "price": 720.72,
+            "cost": 2882.88,
+            "tickets": 4,
+            "type": "train",
+            "transports": [],
+            "TrainID": "D2373"
+          },
+          {
+            "position": "熊婆婆的花园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "16:59",
+            "end_time": "17:44",
+            "transports": [
+              {
+                "start": "重庆北站",
+                "end": "重庆北站南广场-地铁站",
+                "mode": "walk",
+                "start_time": "16:49",
+                "end_time": "16:52",
+                "cost": 0,
+                "distance": 0.27,
+                "price": 0
+              },
+              {
+                "start": "重庆北站南广场-地铁站",
+                "end": "龙头寺-地铁站",
+                "mode": "metro",
+                "start_time": "16:52",
+                "end_time": "16:54",
+                "cost": 8.0,
+                "distance": 1.12,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "龙头寺-地铁站",
+                "end": "熊婆婆的花园",
+                "mode": "walk",
+                "start_time": "16:54",
+                "end_time": "16:59",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "华宇温德姆至尊豪廷酒店豪廷轩中餐厅",
+            "type": "dinner",
+            "price": 265.0,
+            "cost": 1060.0,
+            "start_time": "17:56",
+            "end_time": "18:56",
+            "transports": [
+              {
+                "start": "熊婆婆的花园",
+                "end": "龙头寺-地铁站",
+                "mode": "walk",
+                "start_time": "17:44",
+                "end_time": "17:49",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              },
+              {
+                "start": "龙头寺-地铁站",
+                "end": "狮子坪-地铁站",
+                "mode": "metro",
+                "start_time": "17:49",
+                "end_time": "17:52",
+                "cost": 8.0,
+                "distance": 1.71,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "华宇温德姆至尊豪廷酒店豪廷轩中餐厅",
+                "mode": "walk",
+                "start_time": "17:52",
+                "end_time": "17:56",
+                "cost": 0,
+                "distance": 0.36,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "重庆今与今至酒店",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 79.0,
+            "cost": 316.0,
+            "rooms": 4,
+            "start_time": "18:58",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "华宇温德姆至尊豪廷酒店豪廷轩中餐厅",
+                "end": "重庆今与今至酒店",
+                "mode": "walk",
+                "start_time": "18:56",
+                "end_time": "18:58",
+                "cost": 0,
+                "distance": 0.2461305881560606,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "渝北龙头寺公园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "08:39",
+            "end_time": "09:39",
+            "transports": [
+              {
+                "start": "重庆今与今至酒店",
+                "end": "狮子坪-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:35",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "渝鲁-地铁站",
+                "mode": "metro",
+                "start_time": "08:35",
+                "end_time": "08:37",
+                "cost": 8.0,
+                "distance": 1.16,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "渝鲁-地铁站",
+                "end": "渝北龙头寺公园",
+                "mode": "walk",
+                "start_time": "08:37",
+                "end_time": "08:39",
+                "cost": 0,
+                "distance": 0.24,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "不夜九街",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "09:46",
+            "end_time": "11:16",
+            "transports": [
+              {
+                "start": "渝北龙头寺公园",
+                "end": "渝鲁-地铁站",
+                "mode": "walk",
+                "start_time": "09:39",
+                "end_time": "09:41",
+                "cost": 0,
+                "distance": 0.24,
+                "price": 0
+              },
+              {
+                "start": "渝鲁-地铁站",
+                "end": "红土地-地铁站",
+                "mode": "metro",
+                "start_time": "09:41",
+                "end_time": "09:44",
+                "cost": 8.0,
+                "distance": 1.55,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "红土地-地铁站",
+                "end": "不夜九街",
+                "mode": "walk",
+                "start_time": "09:44",
+                "end_time": "09:46",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "重庆华宇温德姆至尊豪廷大酒店·星璨自助餐厅",
+            "type": "lunch",
+            "price": 165.0,
+            "cost": 660.0,
+            "start_time": "11:25",
+            "end_time": "12:25",
+            "transports": [
+              {
+                "start": "不夜九街",
+                "end": "红土地-地铁站",
+                "mode": "walk",
+                "start_time": "11:16",
+                "end_time": "11:18",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              },
+              {
+                "start": "红土地-地铁站",
+                "end": "狮子坪-地铁站",
+                "mode": "metro",
+                "start_time": "11:18",
+                "end_time": "11:21",
+                "cost": 8.0,
+                "distance": 1.93,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "重庆华宇温德姆至尊豪廷大酒店·星璨自助餐厅",
+                "mode": "walk",
+                "start_time": "11:21",
+                "end_time": "11:25",
+                "cost": 0,
+                "distance": 0.37,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "北仓文创街区",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "12:39",
+            "end_time": "14:39",
+            "transports": [
+              {
+                "start": "重庆华宇温德姆至尊豪廷大酒店·星璨自助餐厅",
+                "end": "狮子坪-地铁站",
+                "mode": "walk",
+                "start_time": "12:25",
+                "end_time": "12:29",
+                "cost": 0,
+                "distance": 0.37,
+                "price": 0
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "红土地-地铁站",
+                "mode": "metro",
+                "start_time": "12:29",
+                "end_time": "12:32",
+                "cost": 8.0,
+                "distance": 1.93,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "红土地-地铁站",
+                "end": "北仓文创街区",
+                "mode": "walk",
+                "start_time": "12:32",
+                "end_time": "12:39",
+                "cost": 0,
+                "distance": 0.62,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "重庆今与今至酒店",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 79.0,
+            "cost": 316.0,
+            "rooms": 4,
+            "start_time": "14:54",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "北仓文创街区",
+                "end": "红土地-地铁站",
+                "mode": "walk",
+                "start_time": "14:39",
+                "end_time": "14:46",
+                "cost": 0,
+                "distance": 0.62,
+                "price": 0
+              },
+              {
+                "start": "红土地-地铁站",
+                "end": "狮子坪-地铁站",
+                "mode": "metro",
+                "start_time": "14:46",
+                "end_time": "14:49",
+                "cost": 8.0,
+                "distance": 1.93,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "重庆今与今至酒店",
+                "mode": "walk",
+                "start_time": "14:49",
+                "end_time": "14:54",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "position": "朝天门大桥",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "08:47",
+            "end_time": "09:47",
+            "transports": [
+              {
+                "start": "重庆今与今至酒店",
+                "end": "狮子坪-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:35",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "溉澜溪-地铁站",
+                "mode": "metro",
+                "start_time": "08:35",
+                "end_time": "08:39",
+                "cost": 8.0,
+                "distance": 2.31,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "溉澜溪-地铁站",
+                "end": "朝天门大桥",
+                "mode": "walk",
+                "start_time": "08:39",
+                "end_time": "08:47",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "观音桥步行街",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "10:11",
+            "end_time": "11:11",
+            "transports": [
+              {
+                "start": "朝天门大桥",
+                "end": "溉澜溪-地铁站",
+                "mode": "walk",
+                "start_time": "09:47",
+                "end_time": "09:55",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              },
+              {
+                "start": "溉澜溪-地铁站",
+                "end": "黄泥塝-地铁站",
+                "mode": "metro",
+                "start_time": "09:55",
+                "end_time": "10:01",
+                "cost": 8.0,
+                "distance": 3.32,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "黄泥塝-地铁站",
+                "end": "观音桥步行街",
+                "mode": "walk",
+                "start_time": "10:01",
+                "end_time": "10:11",
+                "cost": 0,
+                "distance": 0.85,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "莱忆八零·来凤鱼璧山兔(鲁能星城店)",
+            "type": "lunch",
+            "price": 75.0,
+            "cost": 300.0,
+            "start_time": "11:31",
+            "end_time": "12:31",
+            "transports": [
+              {
+                "start": "观音桥步行街",
+                "end": "黄泥塝-地铁站",
+                "mode": "walk",
+                "start_time": "11:11",
+                "end_time": "11:21",
+                "cost": 0,
+                "distance": 0.85,
+                "price": 0
+              },
+              {
+                "start": "黄泥塝-地铁站",
+                "end": "渝鲁-地铁站",
+                "mode": "metro",
+                "start_time": "11:21",
+                "end_time": "11:25",
+                "cost": 8.0,
+                "distance": 2.24,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "渝鲁-地铁站",
+                "end": "莱忆八零·来凤鱼璧山兔(鲁能星城店)",
+                "mode": "walk",
+                "start_time": "11:25",
+                "end_time": "11:31",
+                "cost": 0,
+                "distance": 0.58,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "画游梵高沉浸式艺术馆",
+            "type": "attraction",
+            "price": 39.9,
+            "cost": 159.6,
+            "tickets": 4,
+            "start_time": "12:46",
+            "end_time": "15:46",
+            "transports": [
+              {
+                "start": "莱忆八零·来凤鱼璧山兔(鲁能星城店)",
+                "end": "渝鲁-地铁站",
+                "mode": "walk",
+                "start_time": "12:31",
+                "end_time": "12:37",
+                "cost": 0,
+                "distance": 0.58,
+                "price": 0
+              },
+              {
+                "start": "渝鲁-地铁站",
+                "end": "黄泥塝-地铁站",
+                "mode": "metro",
+                "start_time": "12:37",
+                "end_time": "12:41",
+                "cost": 8.0,
+                "distance": 2.24,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "黄泥塝-地铁站",
+                "end": "画游梵高沉浸式艺术馆",
+                "mode": "walk",
+                "start_time": "12:41",
+                "end_time": "12:46",
+                "cost": 0,
+                "distance": 0.43,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "重庆今与今至酒店",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 79.0,
+            "cost": 316.0,
+            "rooms": 4,
+            "start_time": "15:59",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "画游梵高沉浸式艺术馆",
+                "end": "黄泥塝-地铁站",
+                "mode": "walk",
+                "start_time": "15:46",
+                "end_time": "15:51",
+                "cost": 0,
+                "distance": 0.43,
+                "price": 0
+              },
+              {
+                "start": "黄泥塝-地铁站",
+                "end": "狮子坪-地铁站",
+                "mode": "metro",
+                "start_time": "15:51",
+                "end_time": "15:54",
+                "cost": 8.0,
+                "distance": 1.79,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "重庆今与今至酒店",
+                "mode": "walk",
+                "start_time": "15:54",
+                "end_time": "15:59",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "activities": [
+          {
+            "position": "巴渝文化会馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 4,
+            "start_time": "08:49",
+            "end_time": "09:49",
+            "transports": [
+              {
+                "start": "重庆今与今至酒店",
+                "end": "狮子坪-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:35",
+                "cost": 0,
+                "distance": 0.47,
+                "price": 0
+              },
+              {
+                "start": "狮子坪-地铁站",
+                "end": "大溪沟-地铁站",
+                "mode": "metro",
+                "start_time": "08:35",
+                "end_time": "08:42",
+                "cost": 8.0,
+                "distance": 4.0,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "大溪沟-地铁站",
+                "end": "巴渝文化会馆",
+                "mode": "walk",
+                "start_time": "08:42",
+                "end_time": "08:49",
+                "cost": 0,
+                "distance": 0.61,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "绿色星球动物主题公园",
+            "type": "attraction",
+            "price": 120.0,
+            "cost": 480.0,
+            "tickets": 4,
+            "start_time": "10:09",
+            "end_time": "10:54",
+            "transports": [
+              {
+                "start": "巴渝文化会馆",
+                "end": "大溪沟-地铁站",
+                "mode": "walk",
+                "start_time": "09:49",
+                "end_time": "09:56",
+                "cost": 0,
+                "distance": 0.61,
+                "price": 0
+              },
+              {
+                "start": "大溪沟-地铁站",
+                "end": "江北城-地铁站",
+                "mode": "metro",
+                "start_time": "09:56",
+                "end_time": "09:59",
+                "cost": 8.0,
+                "distance": 1.7,
+                "price": 2.0,
+                "tickets": 4
+              },
+              {
+                "start": "江北城-地铁站",
+                "end": "绿色星球动物主题公园",
+                "mode": "walk",
+                "start_time": "09:59",
+                "end_time": "10:09",
+                "cost": 0,
+                "distance": 0.91,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "重庆北站",
+            "end": "南京南站",
+            "start_time": "11:43",
+            "end_time": "21:33",
+            "price": 720.72,
+            "cost": 2882.88,
+            "tickets": 4,
+            "type": "train",
+            "transports": [
+              {
+                "start": "绿色星球动物主题公园",
+                "end": "江北城-地铁站",
+                "mode": "walk",
+                "start_time": "10:54",
+                "end_time": "11:04",
+                "cost": 0,
+                "distance": 0.91,
+                "price": 0
+              },
+              {
+                "start": "江北城-地铁站",
+                "end": "重庆北站南广场-地铁站",
+                "mode": "metro",
+                "start_time": "11:04",
+                "end_time": "11:12",
+                "cost": 12.0,
+                "distance": 4.07,
+                "price": 3.0,
+                "tickets": 4
+              },
+              {
+                "start": "重庆北站南广场-地铁站",
+                "end": "重庆北站",
+                "mode": "walk",
+                "start_time": "11:12",
+                "end_time": "11:15",
+                "cost": 0,
+                "distance": 0.27,
+                "price": 0
+              }
+            ],
+            "TrainID": "D2374"
+          }
+        ]
+      }
+    ]
+  },
+  "witness": null
+}

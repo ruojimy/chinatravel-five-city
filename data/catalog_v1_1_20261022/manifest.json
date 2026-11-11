@@ -1,0 +1,2224 @@
+{
+  "schema_version": "travel-catalog-v1",
+  "catalogued_at": "2026-10-22T09:03:48+00:00",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "counts": {
+    "zh:accommodation": 3866,
+    "zh:attraction": 3413,
+    "zh:flight": 720,
+    "zh:train": 5345,
+    "zh:poi": 12172,
+    "zh:restaurant": 4655,
+    "zh:metro_station": 3635,
+    "en:accommodation": 3866,
+    "en:attraction": 3413,
+    "en:flight": 720,
+    "en:train": 5345,
+    "en:poi": 12172,
+    "en:restaurant": 4655,
+    "en:metro_station": 3635
+  },
+  "records": 67612,
+  "files": 264,
+  "source_files": [
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/beijing/accommodations.csv",
+      "sha256": "b48f3d5576d60aac51071b3cb4435e5def18b2b00ed25a4a2b34d8543e123194",
+      "bytes": 46952,
+      "records": 401,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/chengdu/accommodations.csv",
+      "sha256": "c554810aa62f55df306105b1b93959ca71ca4ea9e29be7709d730664c67567cc",
+      "bytes": 47697,
+      "records": 379,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/chongqing/accommodations.csv",
+      "sha256": "a431fc16c2948fa84da5e741b9a62acd6b99cb317abd425f060e7b7959e21bf1",
+      "bytes": 45964,
+      "records": 373,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/guangzhou/accommodations.csv",
+      "sha256": "97c5c7125f97e76c16560532e2a59d30514982bcc8361bd2151b5d2635b2c0db",
+      "bytes": 50946,
+      "records": 400,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/hangzhou/accommodations.csv",
+      "sha256": "844e32ee235545c24d31d58eade392b40879a73a77bb983b8ca06b08dfaafc1a",
+      "bytes": 43922,
+      "records": 378,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/nanjing/accommodations.csv",
+      "sha256": "657951ada973394e842451ec7bb2529a66632ca63de89322a6fe4776d6ec80ab",
+      "bytes": 46132,
+      "records": 373,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/shanghai/accommodations.csv",
+      "sha256": "14ebeffe075efb2d0ba060837a73ddde997bf8afad7e79d9cf0ed4a9be47df6f",
+      "bytes": 46128,
+      "records": 403,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/shenzhen/accommodations.csv",
+      "sha256": "5e0c0e401420c6fa4711893465c8afa4f05947390e350f243de3008c963d415b",
+      "bytes": 62400,
+      "records": 498,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/suzhou/accommodations.csv",
+      "sha256": "e3c6a68e12e03b55737fb7b45828fe46efa6912217d3de12f71decd0b438e41d",
+      "bytes": 34405,
+      "records": 293,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/accommodations/wuhan/accommodations.csv",
+      "sha256": "3886e45c906faf200dee25cc206b1e87f252fcdc98079ac7ef6b4a9cba0e30a5",
+      "bytes": 49446,
+      "records": 368,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/beijing/attractions.csv",
+      "sha256": "e1f384acd54303041d386c8abf119ae16674841cda079cb248ce3aa3fdd7eddf",
+      "bytes": 28206,
+      "records": 335,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/chengdu/attractions.csv",
+      "sha256": "9f93e7f491494c4ceb32938945b87e6fa214773ce3f0d0b9412496e900723fdb",
+      "bytes": 28596,
+      "records": 333,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/chongqing/attractions.csv",
+      "sha256": "b2aa26f18d4cc8bec1a42ae823318d87aebc4a08f9814b7e6df245d43ed2a99e",
+      "bytes": 29763,
+      "records": 347,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/guangzhou/attractions.csv",
+      "sha256": "00f4d6984a82eef86df818b89d47a9b6c28b50246b83985c90f7d58f569c0bb0",
+      "bytes": 29382,
+      "records": 339,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/hangzhou/attractions.csv",
+      "sha256": "e208779f8e3b5d1fba2e9c1293c8a09c336c70b57dac90ed3c53209fc31fc0c6",
+      "bytes": 32357,
+      "records": 377,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/nanjing/attractions.csv",
+      "sha256": "2520d8aee10e9c6b84facd3b1b2a9b11836aa66e7c4cd91cb0509f3e275df08c",
+      "bytes": 27510,
+      "records": 323,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/shanghai/attractions.csv",
+      "sha256": "323ea61d9422edb0e935ca819c8660be017fc14d031f2c462d456b0034b61d7b",
+      "bytes": 31625,
+      "records": 360,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/shenzhen/attractions.csv",
+      "sha256": "001aa18995b37403e63b24eb1ba38e9f7ae2ec8614c0a343809298f285d2317c",
+      "bytes": 26450,
+      "records": 306,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/suzhou/attractions.csv",
+      "sha256": "2f6300639a75a8a3594fa1ed68597dfdcf7274c51f9799a2d2d90f1db964f079",
+      "bytes": 29556,
+      "records": 359,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/attractions/wuhan/attractions.csv",
+      "sha256": "85a7baf41fe6f5a1ae630eb66a88c7e8c204bee57db00b8deb8b632669b5e062",
+      "bytes": 28793,
+      "records": 334,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/airplane.jsonl",
+      "sha256": "91977a5dd0999415b7a9d2f968f793c4949f6a5ba447db03a9b530b899bc0b67",
+      "bytes": 120780,
+      "records": 720,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_北京.json",
+      "sha256": "0826221e59befdd7f9ff52c5aa3459155ce917dfa6fb8eb2504a53a15e59d0f2",
+      "bytes": 11824,
+      "records": 49,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_南京.json",
+      "sha256": "ece7a05912ae7bc19689982d28436ec3ef291fa87d4da24b4d419375b90341b1",
+      "bytes": 91556,
+      "records": 381,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_广州.json",
+      "sha256": "23ea381b71fd103ebde774aaf64091da63d75ae92aad6cdb8a117e043deaa375",
+      "bytes": 1936,
+      "records": 8,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_成都.json",
+      "sha256": "6f1518ce1b9a2c3e4bfa2850a80990f5e6a9a67b4e8632fa52bb980273e7d8b8",
+      "bytes": 6569,
+      "records": 27,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_杭州.json",
+      "sha256": "242767b3ce812146eb307638381ee32c36f20d2d435505d7ff4d02409d53a70b",
+      "bytes": 55488,
+      "records": 229,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_武汉.json",
+      "sha256": "ae1d7666acd0443b4707b65a4b28911e28b402387d9c47b0db5530e27ba95139",
+      "bytes": 5982,
+      "records": 25,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_深圳.json",
+      "sha256": "ce6275ccdd4e671defc3be66af7dcf6d6308455b76b0bdaa9aa16c22ffe6939b",
+      "bytes": 5096,
+      "records": 21,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_苏州.json",
+      "sha256": "f502f939e551e3c663ed64b89416f300efc21674c6d6cf758ff56313c2ad6bc0",
+      "bytes": 75251,
+      "records": 316,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_上海_to_重庆.json",
+      "sha256": "9656473c551d0f2b52ebfd608551d8681ace5aa40b535082b8faa4e4b3a74092",
+      "bytes": 7299,
+      "records": 30,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_上海.json",
+      "sha256": "455120e7884342de7e3b1b93bc42722560d5e6b2b441098c41af6c827099a72c",
+      "bytes": 12303,
+      "records": 51,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_南京.json",
+      "sha256": "243c5c61238de598d5a3ecad9e308132311a890c9036e02f4c911f7699f66b0d",
+      "bytes": 17205,
+      "records": 72,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_广州.json",
+      "sha256": "fc42f9f97e32946badf6b5c02caf105e94b7bb1fa15285bcebfbfed2ef576e65",
+      "bytes": 3875,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_成都.json",
+      "sha256": "550809b8b2b53758769e8225acf89fc10aba663c86a7a24b47a08a18c1d14fc2",
+      "bytes": 2647,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_杭州.json",
+      "sha256": "026b23423bc379be2fc881b3fd6bc383fd81f4e0856f70d0cb4ac158fe9108d9",
+      "bytes": 6477,
+      "records": 27,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_武汉.json",
+      "sha256": "f4ce16b497ba60cb5c83fac06c1eb9c68e6b49cc91f59df1b34d3b1e4d302a4d",
+      "bytes": 7329,
+      "records": 31,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_深圳.json",
+      "sha256": "2affb8bfe9a32827e78c47748d4400fd226a1b8927d30b006a7b1e6123be549a",
+      "bytes": 2674,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_苏州.json",
+      "sha256": "bef863544b864a1fecdc1cfb2135ecbe32c3d85bfb39ead3855fa9b71dc4c5d7",
+      "bytes": 5752,
+      "records": 24,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_北京_to_重庆.json",
+      "sha256": "67b396f1aa20fade82f3008cef0bc86c50a1761a96643a03d8090ee9d97e34ea",
+      "bytes": 2642,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_上海.json",
+      "sha256": "df7ab98203f4fa22618fd5535a09562befe83c64f33a1352d80e23ae7f705743",
+      "bytes": 96181,
+      "records": 400,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_北京.json",
+      "sha256": "a8e770ae6de75c4cabdf4e7c4e6cf750bf409faf51309a8dd2fb1022a96d789c",
+      "bytes": 17206,
+      "records": 72,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_广州.json",
+      "sha256": "297f947333d15dcf3658879a58462b663b767e274e4726423fde8423bae90bf9",
+      "bytes": 965,
+      "records": 4,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_成都.json",
+      "sha256": "10e9f62f17e95a51057a4efbd6b3a5bba26908bb605df2596994962d020609ce",
+      "bytes": 6017,
+      "records": 25,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_杭州.json",
+      "sha256": "d85b7d5e542b2083e4a386d4272f8e4b0a1c0342eb67effbc3dd062afe6a7b0e",
+      "bytes": 45548,
+      "records": 190,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_武汉.json",
+      "sha256": "19bc93f92e4164270e1ac698256aec886a775d327a6fd84289c17d17cfa6467f",
+      "bytes": 9746,
+      "records": 41,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_深圳.json",
+      "sha256": "4fcd15bd7abc9ca37ab00cfd1a71a8fe7c27bab4c42937d13cc30aa042811669",
+      "bytes": 3108,
+      "records": 13,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_苏州.json",
+      "sha256": "739e583382f367090a24cb7c3f19957458d2e6c9fd06aa819098c6796e86076b",
+      "bytes": 75606,
+      "records": 319,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_南京_to_重庆.json",
+      "sha256": "31014547210a591060c732794b63781cdefc28c1e9d7e69c218d9d7000ea898f",
+      "bytes": 7465,
+      "records": 31,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_上海.json",
+      "sha256": "226debe7a97d3fb118b48b9e341f7dac8b4883b81554459168004b50491ec589",
+      "bytes": 1942,
+      "records": 8,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_北京.json",
+      "sha256": "26f17ee133134075b6668281749f6ed48dbc9d5733f36f9aff6033e1e367e825",
+      "bytes": 3872,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_南京.json",
+      "sha256": "3a1da0cd7db981061f04513ebec797712b4ff8df0a664ebe3b62f690f526cb98",
+      "bytes": 960,
+      "records": 4,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_成都.json",
+      "sha256": "fb92fd355856525a1fff4d037904af25e091bdfc945fb559596a9608833bc2ed",
+      "bytes": 4830,
+      "records": 20,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_杭州.json",
+      "sha256": "12ffcab40f3a6defd6b6cf1bf3f39dab6bf3d621996da5462d5a0fd58b93ed95",
+      "bytes": 3848,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_武汉.json",
+      "sha256": "ef2fbadd733a605f2614b3674fb44d50dc274ab07f1aaa742da7e9a538e4c10b",
+      "bytes": 17495,
+      "records": 74,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_深圳.json",
+      "sha256": "781d71d6cd3add89325aa70e7f4d332c8810b2a67b41d441283a5ad94e3293f5",
+      "bytes": 71453,
+      "records": 297,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_苏州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "records": 0,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_广州_to_重庆.json",
+      "sha256": "ef3920f4815895694439d777a4a761e67a6de2e3f3bd2e99867fe3296866203a",
+      "bytes": 6750,
+      "records": 28,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_上海.json",
+      "sha256": "ca58988a4e09e901c4bd9babbbe952c70ab2273b71de431e7800e2850225aba5",
+      "bytes": 4371,
+      "records": 18,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_北京.json",
+      "sha256": "ea0e0c128a927fd6e4adebe5c98a1e465f5d97f86693b08b9954c9ae3d6d2958",
+      "bytes": 2645,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_南京.json",
+      "sha256": "ae23ceccab3a8320223d200ae98272b6866890819bd11323e2ed183b3173feae",
+      "bytes": 3858,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_广州.json",
+      "sha256": "5af4c615d096a835fb671ea1dbe7a9575ea580ee73b1a999af022e77abe9a75e",
+      "bytes": 4103,
+      "records": 17,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_杭州.json",
+      "sha256": "f3d4c769222047f6f25bfd58b419e9e35feda5102917f7a662deb6e8100653a6",
+      "bytes": 1930,
+      "records": 8,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_武汉.json",
+      "sha256": "380f0af031ceb39656959570b5d93d5aa683e2c4678b4755eead58b7b4f74ea9",
+      "bytes": 715,
+      "records": 3,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_深圳.json",
+      "sha256": "1dc77058254db6fb7176f3b3f3d1b007b31180dd72725e11b4f082ce30a18c1c",
+      "bytes": 730,
+      "records": 3,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_苏州.json",
+      "sha256": "abb73996b3b294646cd09220d5f83590d3504bb3cabe4cad2a0d5344592b10a8",
+      "bytes": 2150,
+      "records": 9,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_成都_to_重庆.json",
+      "sha256": "5c53450a6b23a04d55a57d507921de2cab9797932addbe93d28ef6c34fb35070",
+      "bytes": 23286,
+      "records": 97,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_上海.json",
+      "sha256": "6837c00e5c6bad826ef90909470283c6e846759d0538c49900de3f612ed7107f",
+      "bytes": 52149,
+      "records": 215,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_北京.json",
+      "sha256": "bbef0ab16a1d01a7bc413f3a1857cab1b413398f5ddf506f8030e7ada800b09e",
+      "bytes": 6718,
+      "records": 28,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_南京.json",
+      "sha256": "a63a00cddd1f5b83e20ce163c5e948cbf6fe8e5f009f73596f64c68b61547c27",
+      "bytes": 41469,
+      "records": 173,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_广州.json",
+      "sha256": "dc13aa955cedbb1f19a08666c99910778e2ddc411d3fc35da3dedc73c25f9fe6",
+      "bytes": 3612,
+      "records": 15,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_成都.json",
+      "sha256": "dff743d9f1a9019263c3e44a39bfae2977fa15e8a17498827bf229b1e6d16bfd",
+      "bytes": 2416,
+      "records": 10,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_武汉.json",
+      "sha256": "b98ef23e63552b2017abbd424e6f43b120d7c511f52e50ae1583d59f13082470",
+      "bytes": 4989,
+      "records": 21,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_深圳.json",
+      "sha256": "81969aceb7560886f29aff90b3b10fc9afcb2691c94328bcdbcea04db589536b",
+      "bytes": 6019,
+      "records": 25,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_苏州.json",
+      "sha256": "01de1bd5668cf8397c3d7ca8b4128f7051a82068a437c6c99d43548f1193eb95",
+      "bytes": 13970,
+      "records": 59,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_杭州_to_重庆.json",
+      "sha256": "caff24738fc8eba54fe6fc0749d0d4ef0f5f7c0148c1da9f0b426b08d0235701",
+      "bytes": 4350,
+      "records": 18,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_上海.json",
+      "sha256": "bce90abb18d2e2f757617317afc3093d8d262059b59d8c6495d969f5405af209",
+      "bytes": 5521,
+      "records": 23,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_北京.json",
+      "sha256": "6960349f90e64f063f96e3820c5b18f4fb0ea2c922a82d914b916a6a092b9f58",
+      "bytes": 7333,
+      "records": 31,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_南京.json",
+      "sha256": "2f725e4737818735940fe7f82407306e5d5216b3e2ed1706209f646103573464",
+      "bytes": 8085,
+      "records": 34,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_广州.json",
+      "sha256": "bf5bd657880eb1941710901e2546d9686723182958d0a73eb600816a73b9f2f3",
+      "bytes": 17016,
+      "records": 72,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_成都.json",
+      "sha256": "04f8f880a8db0d46b2ea045df35bab847ddd166148d4d7d79792e046378d54c7",
+      "bytes": 951,
+      "records": 4,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_杭州.json",
+      "sha256": "c366e5ea4ada99c7ea14a23a56344a82ec56f02aa478ba7b043761908cedb955",
+      "bytes": 3802,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_深圳.json",
+      "sha256": "67d110edaa2de030713987b2430dd09380e70d0078081fdf9dc36d77819bffaf",
+      "bytes": 9258,
+      "records": 39,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_苏州.json",
+      "sha256": "158d48614e273b31f27140e7eff71621977baacb804c5e43a01d66f63816fdd7",
+      "bytes": 3088,
+      "records": 13,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_武汉_to_重庆.json",
+      "sha256": "4ba8a503f9bcb051f4ae33b115209778cf41a5019c9fe5aedf94a5eda218f8c3",
+      "bytes": 2843,
+      "records": 12,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_上海.json",
+      "sha256": "057fde50a154d5e9229b3bc9a17977988a8e8385193faca00a1bc370eee26988",
+      "bytes": 5108,
+      "records": 21,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_北京.json",
+      "sha256": "c292edc96fa92a7d74795db00bcbc2fa4ed42ae8c695d6bf1693ed31978d9b6b",
+      "bytes": 2180,
+      "records": 9,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_南京.json",
+      "sha256": "c00df9948dbf045fb2ce29091210ccfcc1a4c2ba9a10598a6c896af8f3bb0725",
+      "bytes": 2860,
+      "records": 12,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_广州.json",
+      "sha256": "e05fb641af7aa391a8c2068b25f5713e3eee78037eeb3e9b000e51b4b464dcf0",
+      "bytes": 73180,
+      "records": 304,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_成都.json",
+      "sha256": "2ae16b223275590e655811be399ab49f835d3df4c1d663600fcb3c4765692143",
+      "bytes": 731,
+      "records": 3,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_杭州.json",
+      "sha256": "26c7c45bc7051e235bd8b841cad2dfa94947ac3857f071917450dbdbe2bc3b61",
+      "bytes": 6018,
+      "records": 25,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_武汉.json",
+      "sha256": "7019bb8bb424768af4583a23afa09bcbd86b9cf6ba8115ca6ebb8fc0d18d68b4",
+      "bytes": 10694,
+      "records": 45,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_苏州.json",
+      "sha256": "952e3213f763c8ec73124e3b60e871bf4f23c8af63516c057a877dff5bae704c",
+      "bytes": 1655,
+      "records": 7,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_深圳_to_重庆.json",
+      "sha256": "1195eea978daf97dbaadb94bfea9601e892529af8a15a6e68255d6d9333b8180",
+      "bytes": 1927,
+      "records": 8,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_上海.json",
+      "sha256": "78536d64ed7a2f4d746ed9caa9eaa1f6c3db1a96ad7447686e6a5395aafffb18",
+      "bytes": 84375,
+      "records": 354,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_北京.json",
+      "sha256": "d77f8ddaa7f0c4d286335b5dd97cd1a61fc1a593b4e943bd086a181b56fc2b50",
+      "bytes": 5272,
+      "records": 22,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_南京.json",
+      "sha256": "8b632bb3319a3674d88eac11b798bcb3323f1b8d9d4f3eb7493427216aa943ba",
+      "bytes": 69427,
+      "records": 293,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_广州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "records": 0,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_成都.json",
+      "sha256": "a56694c0063259433d3c2a705e391879d3a1f0c2ca85c57a91b1377c00600823",
+      "bytes": 3599,
+      "records": 15,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_杭州.json",
+      "sha256": "b1e3642d185ce13ff3c5415155ae5d558d23332bc77ffab6162256492da873c1",
+      "bytes": 15163,
+      "records": 64,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_武汉.json",
+      "sha256": "1d2a055ae63c9ff394e4f57281dc562e56bda444fb2291802003dd9e9c43381c",
+      "bytes": 2604,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_深圳.json",
+      "sha256": "6d771ebd7857df3cd6d6c02f6031b602d003da820729d038b4e135ea02ab2b7a",
+      "bytes": 1655,
+      "records": 7,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_苏州_to_重庆.json",
+      "sha256": "cf5971cffce146e41c9d0ddedfb4f2ed759f634b264f81a1f67ac5c7348a589b",
+      "bytes": 3852,
+      "records": 16,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_上海.json",
+      "sha256": "8cbde9cdf78fc83fe12e1912368bb2919d1dc9c106df6ba7bdd8755c21628689",
+      "bytes": 5591,
+      "records": 23,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_北京.json",
+      "sha256": "5b7675f911af1557368c17e149d0c3eefdcfee3492412cd63fb77e35a8c580d7",
+      "bytes": 2641,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_南京.json",
+      "sha256": "e228eedc7f8b775207243f6d33e51e97c08158098c0761b1c9ab9c2c810f6188",
+      "bytes": 5293,
+      "records": 22,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_广州.json",
+      "sha256": "7b81fffbb1a99c6002cc92fd88c3a257ee81442e960c6edb75995ed480436883",
+      "bytes": 7470,
+      "records": 31,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_成都.json",
+      "sha256": "9554e14d13a36b9c3543e35cfd9b140afeab38cde7b14da51de97c67465f5291",
+      "bytes": 26414,
+      "records": 110,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_杭州.json",
+      "sha256": "64c47bec14760dba0e4ee45df8b8dfdd67ed09576019c0f5dd5ad71420ccc82c",
+      "bytes": 2899,
+      "records": 12,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_武汉.json",
+      "sha256": "65f7131c06f1aaea5eb5a41a80e7f7fbc5163d08589aca2924e143ee4ac64380",
+      "bytes": 2604,
+      "records": 11,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_深圳.json",
+      "sha256": "82a1c5e48820c786b6641e6a57674b037a05ae8c48ca042956c93b2125adb439",
+      "bytes": 1926,
+      "records": 8,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/intercity_transport/train/from_重庆_to_苏州.json",
+      "sha256": "6f57c4193a9197af6c590d9b833ecd4824cbe76237068bd78b6031f100d753f9",
+      "bytes": 3096,
+      "records": 13,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/beijing/poi.json",
+      "sha256": "9c530706dcac09f875b5111b011ab5a24270824bfb9d3f491fe1f9bdc6626c78",
+      "bytes": 182297,
+      "records": 1238,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/chengdu/poi.json",
+      "sha256": "cc94c3394c5bf94d0ba9c4b625be93f570c936b1a293471971098aa2ad70f1cc",
+      "bytes": 181692,
+      "records": 1210,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/chongqing/poi.json",
+      "sha256": "2b6171b2e2fc052bd1454a10188e3dbaf161d64c12b27e33b3418d6ab99e42a7",
+      "bytes": 177404,
+      "records": 1188,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/guangzhou/poi.json",
+      "sha256": "3021df4f061877cf178003d4b8ee9cef696008e366f711f622377db2a1be97e0",
+      "bytes": 185576,
+      "records": 1238,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/hangzhou/poi.json",
+      "sha256": "f636c025ccd8fd12e1c6b056bc96c8cfafb2c17f3172af369e40cbe5e0e86885",
+      "bytes": 181292,
+      "records": 1227,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/nanjing/poi.json",
+      "sha256": "e985b2e74521c40052e93c2e7b9bdb5633003554a9ee45e5b87852e552773e65",
+      "bytes": 177102,
+      "records": 1184,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/shanghai/poi.json",
+      "sha256": "e5dbe2bd63936bdb1af51632ae588a7feaa792cd64257065b20da66622b05321",
+      "bytes": 187907,
+      "records": 1269,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/shenzhen/poi.json",
+      "sha256": "114b98fbb8b4bd844589bff2d927b3562df8a241199c6dc46ffd3ad19d95273f",
+      "bytes": 195034,
+      "records": 1294,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/suzhou/poi.json",
+      "sha256": "818a3c5888202dd43c651b340017f0e5e7d012275ef326bf25dc5d0c9257ba62",
+      "bytes": 169586,
+      "records": 1149,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/poi/wuhan/poi.json",
+      "sha256": "0cc19029c3921797bc2adee8c28f7046eb348070c2bd1bc1c9680465f0002ec8",
+      "bytes": 177350,
+      "records": 1175,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/beijing/restaurants_beijing.csv",
+      "sha256": "264be9a32348d7f98a1b9ae4fe8f309b70f8f4f08b513c7a65d2ba28d589e413",
+      "bytes": 67434,
+      "records": 470,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/chengdu/restaurants_chengdu.csv",
+      "sha256": "aee043d83c37cdec6937500a95c04c4d695e05c16f26df99876b5a7571df870f",
+      "bytes": 71919,
+      "records": 467,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/chongqing/restaurants_chongqing.csv",
+      "sha256": "f0f5cde31667a09adbd5145a8435eaedebb14410dc402f026348a4ea59d75ed3",
+      "bytes": 54529,
+      "records": 437,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/guangzhou/restaurants_guangzhou.csv",
+      "sha256": "b02acf3ba100404cb87cd1b35ca42587052441109bc9deedcca63a329dcc1bc9",
+      "bytes": 68999,
+      "records": 467,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/hangzhou/restaurants_hangzhou.csv",
+      "sha256": "0e4e6148e45c2432123457dd57cdcc0294b8af1b2522d999f06172e33848adb9",
+      "bytes": 63988,
+      "records": 458,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/nanjing/restaurants_nanjing.csv",
+      "sha256": "238ff75809bebbc2166bae9db6f4ecda991c5771bde77e79788e7d0da8ee5d24",
+      "bytes": 58127,
+      "records": 468,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/shanghai/restaurants_shanghai.csv",
+      "sha256": "a9ef7c3dcd791f9c679928f5db055cc1472ca6e7c6419f3d539768361d57cc2a",
+      "bytes": 75460,
+      "records": 484,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/shenzhen/restaurants_shenzhen.csv",
+      "sha256": "c1adf97293e968c20afe618406e1943b9f262f79453d4b2e19a025a48ad48038",
+      "bytes": 71793,
+      "records": 478,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/suzhou/restaurants_suzhou.csv",
+      "sha256": "f66071954604f1f9318f3bb6b7ac7fba051783279abf4a8c6e9d723106653ff1",
+      "bytes": 56940,
+      "records": 469,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/restaurants/wuhan/restaurants_wuhan.csv",
+      "sha256": "0cc4388460c477f9a23265f9b60493f8dac904e43a9fee807514f6e24e83d6f4",
+      "bytes": 52774,
+      "records": 457,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database/transportation/subways.json",
+      "sha256": "c6b5dc4ec63e806bcb4fff95c4842c3478be170ab9498486f19f94de11adb468",
+      "bytes": 500531,
+      "records": 3635,
+      "language": "zh",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/beijing/accommodations.csv",
+      "sha256": "785182e00c40422f43c196c18021c9f5d439b783da78b5a58d9048aa31d98dfb",
+      "bytes": 48872,
+      "records": 401,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/chengdu/accommodations.csv",
+      "sha256": "7598c2e5c88fb30917e775d6e932f9f11ce6072d2eb3b939bf97a86a33c0abed",
+      "bytes": 47907,
+      "records": 379,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/chongqing/accommodations.csv",
+      "sha256": "8f8d967f459cd28d6aa0a5cef77c79f73201960c86307cab7732f5b16c62d352",
+      "bytes": 47037,
+      "records": 373,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/guangzhou/accommodations.csv",
+      "sha256": "66a7f98e6db56436a9b401bf52ad1fa6113052ee51ef0a205f4044f3a0604c3b",
+      "bytes": 52621,
+      "records": 400,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/hangzhou/accommodations.csv",
+      "sha256": "d15c4a944c9e0aa5427d64a350fbb629514dbafc769ae286eef934e470272947",
+      "bytes": 45376,
+      "records": 378,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/nanjing/accommodations.csv",
+      "sha256": "9b30cccd3b0948240584648c48833a918d2eb9317413c514bf859834bd9db09d",
+      "bytes": 47812,
+      "records": 373,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/shanghai/accommodations.csv",
+      "sha256": "d5a3113586955947461ed5581d017412a3ea3c4d37640431a15fa0961143354c",
+      "bytes": 47857,
+      "records": 403,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/shenzhen/accommodations.csv",
+      "sha256": "09bcf8d86cb1a7c4d601e6b1535304ae68e1065dac970e2d3b46aca8dc9dcca7",
+      "bytes": 65718,
+      "records": 498,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/suzhou/accommodations.csv",
+      "sha256": "29971b6523d95efc59902e53a57dd0628c8a7d55ed41070a7593e3558d1bca45",
+      "bytes": 34868,
+      "records": 293,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/accommodations/wuhan/accommodations.csv",
+      "sha256": "0bb04d93a9a059c2f55c5d475aa8d0f5c7693947ee4db4167ca59b553e3d3fd5",
+      "bytes": 50660,
+      "records": 368,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/beijing/attractions.csv",
+      "sha256": "fb5806c225732f522fb483a50e555a15d45f32b2b9a7d7e516861a4b302070ad",
+      "bytes": 31452,
+      "records": 335,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/chengdu/attractions.csv",
+      "sha256": "2e89c86b11efd1b706dc7628932c33e8489c341416a2ebe240fa51517402367e",
+      "bytes": 32362,
+      "records": 333,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/chongqing/attractions.csv",
+      "sha256": "6da18891bd12145e1c8705881653893542151da6e8bd5a5fd9e5fa481805305b",
+      "bytes": 34269,
+      "records": 347,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/guangzhou/attractions.csv",
+      "sha256": "c8d3cf8c5f241448a6be95260cf365dfbc718b2d99f9edb1c0782f5061ea9214",
+      "bytes": 33438,
+      "records": 339,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/hangzhou/attractions.csv",
+      "sha256": "c5997cfe1e85cb58edf834f1973e34b3a24e771e311784e0ad2be74cd00d60d3",
+      "bytes": 37444,
+      "records": 377,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/nanjing/attractions.csv",
+      "sha256": "1f0864ebb101e60ca763baa34d6d9c96fc837114bf38969e4c8b4bbc3ff5841c",
+      "bytes": 31043,
+      "records": 323,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/shanghai/attractions.csv",
+      "sha256": "971da537c38e45e4f4fef8266b02378a7a680bafeead8399da7a27cf064fda88",
+      "bytes": 35334,
+      "records": 360,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/shenzhen/attractions.csv",
+      "sha256": "ac985e4cc519866af5dc204ee68eec2ce682971363721af33baac173f7e9ffb1",
+      "bytes": 29231,
+      "records": 306,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/suzhou/attractions.csv",
+      "sha256": "f62d1917809a4fe2790e441489277d59dff7e0383eb88fe2c0147e520090b1c4",
+      "bytes": 33226,
+      "records": 359,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/attractions/wuhan/attractions.csv",
+      "sha256": "fe65c4bd909a7cd69f2b94385cdb2de4ed4c3ad15b1cc6578872fe695b54a8e7",
+      "bytes": 33036,
+      "records": 334,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/airplane.jsonl",
+      "sha256": "94373f1f2013a2e8b703fc2a0449550c5aa11ef462490a79487be1318a411795",
+      "bytes": 139851,
+      "records": 720,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_北京.json",
+      "sha256": "3f6ae2e0bb8419f7b974747aee3637e2db1f03d9825a503b62abae4b5b8b0a62",
+      "bytes": 13553,
+      "records": 49,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_南京.json",
+      "sha256": "73bd8329a1c03e00e10b0ae953020e674436432e90a5f458e1f5e241e26af565",
+      "bytes": 103743,
+      "records": 381,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_广州.json",
+      "sha256": "8e0982e01b559a9f21f3a3c76c046d9c199a2b985b5ee05d7174bb91cc3eb115",
+      "bytes": 2236,
+      "records": 8,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_成都.json",
+      "sha256": "f89e25cb3840d128a8e886328c9c36936c86cf5081fc9fc59bc339ce16f07d29",
+      "bytes": 7588,
+      "records": 27,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_杭州.json",
+      "sha256": "a8ffe28a385f0fd3b26e80e5d2d3f79d7cfa3545f50989b6457eb8542f4a34fa",
+      "bytes": 64048,
+      "records": 229,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_武汉.json",
+      "sha256": "098529e9114d0405e3dc7ab071183e5720745da8640d02c456afa0f6b5945f61",
+      "bytes": 6594,
+      "records": 25,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_深圳.json",
+      "sha256": "0bbb8c1c00da608d51db70ff3bb9b4730a33c4f050475841f0d400b43336faad",
+      "bytes": 5953,
+      "records": 21,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_苏州.json",
+      "sha256": "8b3d4269b76743314b4136341dcacc0add729c7a8e7c21aa4a907ac25acc02cf",
+      "bytes": 82907,
+      "records": 316,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_上海_to_重庆.json",
+      "sha256": "d02a6eb184674b3198ab126c15fa10ef8dc8979c35578fe2dfdaaa341a83e00d",
+      "bytes": 8668,
+      "records": 30,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_上海.json",
+      "sha256": "22bbc4f032a2cc756796a7960c34be00c126933fb6cdb6c5e71f73abfcfdc610",
+      "bytes": 14101,
+      "records": 51,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_南京.json",
+      "sha256": "e680fbd0d652bc3a3e6efb197f62161085f0a430c0a342ef707027347ea4943a",
+      "bytes": 20201,
+      "records": 72,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_广州.json",
+      "sha256": "932a73c31dba2c02dc490faaa8f0c0a47949395b7924a4c39994a3f6d97abad3",
+      "bytes": 4591,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_成都.json",
+      "sha256": "453e34e0c4e39297c3508ea18091a64a5adbf429d808fefb0109369e0ecce2eb",
+      "bytes": 3063,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_杭州.json",
+      "sha256": "9e22b6857a32d7088f2a0dd0afa2e38ec6f18e42497ac4f08ad5410e217c8b8e",
+      "bytes": 7580,
+      "records": 27,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_武汉.json",
+      "sha256": "530af592c2f68854cbb8bfbbbad82cc85698605eb581162d91bbf3df4a49b654",
+      "bytes": 8224,
+      "records": 31,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_深圳.json",
+      "sha256": "80385d1e0d7c1ec731d67c7c172caadebe0f8faa32b7b7ad9520d2f1bddab438",
+      "bytes": 3120,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_苏州.json",
+      "sha256": "e28c1fc6b410f017dd173c6e56779a03ff3f07cb2da89a605574520cea4a8952",
+      "bytes": 6512,
+      "records": 24,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_北京_to_重庆.json",
+      "sha256": "2ab18babd137ce9d15ad70305aab34e7743c467542e726c50a1235040554643f",
+      "bytes": 3138,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_上海.json",
+      "sha256": "a9ccf57c43b71cff5ef101ee67d971881876f3ba2db7979a62b8dec869d2d80b",
+      "bytes": 108817,
+      "records": 400,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_北京.json",
+      "sha256": "41544bf9d4c52b156eca2533be97de4a3a4fda27d334ae1bf70f87f7e435cb41",
+      "bytes": 20202,
+      "records": 72,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_广州.json",
+      "sha256": "a6d1eac1bb1b8bbf0d332b6366d9b8bf4422eb49c259c15ec970018b1e898a4c",
+      "bytes": 1136,
+      "records": 4,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_成都.json",
+      "sha256": "77586504264091efa232a3e548fd5481b0e592528030399a4405f0f2b4365ac8",
+      "bytes": 7148,
+      "records": 25,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_杭州.json",
+      "sha256": "17b6955a52c332e2f9bae14df9281e511e74fff6366e25a4a79bba588c9a77f3",
+      "bytes": 53411,
+      "records": 190,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_武汉.json",
+      "sha256": "b604154fa78d558496777c509f7a03baedc572e65341bb4fccdf704c9dfc856f",
+      "bytes": 11041,
+      "records": 41,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_深圳.json",
+      "sha256": "5175f4c33c28e86f45449f948a13c93c9b499e33af0b3fab035b1f9ca5b90bf2",
+      "bytes": 3601,
+      "records": 13,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_苏州.json",
+      "sha256": "e5e0c0b7531f4dc27b0b026bdeaf6b14c82a772dcafabdbfd4d5a974266c8d97",
+      "bytes": 84419,
+      "records": 319,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_南京_to_重庆.json",
+      "sha256": "d338662f55477bcbb5572e9161ecc689d87a0d42dd1b397b8f918cea0c295898",
+      "bytes": 9142,
+      "records": 31,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_上海.json",
+      "sha256": "087fcce904dc7c3c64b70f0e2465542519dc515a974124fe04d5553a7646c980",
+      "bytes": 2253,
+      "records": 8,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_北京.json",
+      "sha256": "09460011ec7a27814dd4ca2147fedc1753b357452b6a7d254fa43d3e729f3923",
+      "bytes": 4584,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_南京.json",
+      "sha256": "9651265c610ad0c0be4418e967a8f53f801062dcb59a8f93cfaea022754dfd65",
+      "bytes": 1101,
+      "records": 4,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_成都.json",
+      "sha256": "58b999d813ca6c95586880f0a1fdd04ef9c5af96c2980150f83e8a573c43b498",
+      "bytes": 5848,
+      "records": 20,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_杭州.json",
+      "sha256": "1f188b7264105cce501860c77ce3345983252f4c0555abe411c039efbab731ad",
+      "bytes": 4552,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_武汉.json",
+      "sha256": "065feb119445d104f3268491637385cc45ee25c32aad03f4a1407638a69ab2ce",
+      "bytes": 19863,
+      "records": 74,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_深圳.json",
+      "sha256": "f0afe2a95ab41478c27f75e79ee60bffda5ff6a82ab7d7d94ce6801704338913",
+      "bytes": 82800,
+      "records": 297,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_苏州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "records": 0,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_广州_to_重庆.json",
+      "sha256": "d8d076d595ff756e12f722aaa5eb267eb497e561f619a0a1f8075359257f2dc6",
+      "bytes": 8069,
+      "records": 28,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_上海.json",
+      "sha256": "8fdd9039bcab3f8940ef1ca6adffd622c614eb26ab4f5a26b1b24f60c776cf51",
+      "bytes": 5061,
+      "records": 18,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_北京.json",
+      "sha256": "6787a30f7d4875821387b3353adee8ad93f6dd22776c845215eef7376004efd9",
+      "bytes": 3061,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_南京.json",
+      "sha256": "9cdb24ce9e019106ce4579eeace877ebf3c5a0c85bcc8c4a6158ac57593aaaad",
+      "bytes": 4603,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_广州.json",
+      "sha256": "56b1e4347a93ba076246127f8b4fd5756b5d805bccf541af8b1e9cdde7b66f8d",
+      "bytes": 4962,
+      "records": 17,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_杭州.json",
+      "sha256": "0085e7b8a3800ea0ce3aeabd4ac6ab87a8be8043ea8cedb92fdbc4ab009c431d",
+      "bytes": 2246,
+      "records": 8,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_武汉.json",
+      "sha256": "39a68afa0d91e5ea449810d41350d24574335239f4af8e7bc9f0cba8edfe0d7c",
+      "bytes": 841,
+      "records": 3,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_深圳.json",
+      "sha256": "7efa2d5adde4465377427d339b8e0e1cecc5b31ac145ab81f3f748355eb4da5f",
+      "bytes": 843,
+      "records": 3,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_苏州.json",
+      "sha256": "103e5c2f649b1224ba0f9107628a1f841fbbafb7224c6f09c3f0eff3fb49f96c",
+      "bytes": 2485,
+      "records": 9,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_成都_to_重庆.json",
+      "sha256": "c3b58929607052b94b6bac2707641f094581640c97fb9d95916df7e1096a10c9",
+      "bytes": 27794,
+      "records": 97,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_上海.json",
+      "sha256": "f41e88cc0ca5a372335bf3876069d23aa6bea9897320d81cd2a6417b69b736ef",
+      "bytes": 60260,
+      "records": 215,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_北京.json",
+      "sha256": "cc19bf090ec62b52d9a3e81b0737a3132f279312fe570b7ccbe6e309cd9de449",
+      "bytes": 7845,
+      "records": 28,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_南京.json",
+      "sha256": "d23be90dcc385b33868770503db24d4cce4e28635c7135f8046aae5c64f122ca",
+      "bytes": 48809,
+      "records": 173,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_广州.json",
+      "sha256": "77b33315c50ae380ad509325dcb9ea5b3b7b0200d820c6e6b29570fb4711d370",
+      "bytes": 4271,
+      "records": 15,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_成都.json",
+      "sha256": "75b7e1d74777f7b98e32014296c68a5f0f41a29dad650d0469bee4cffd30c66e",
+      "bytes": 2871,
+      "records": 10,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_武汉.json",
+      "sha256": "c8d4c868385d92ae11c17ce96a5c99451e04b2b86ae75705864c30e01e426da7",
+      "bytes": 5620,
+      "records": 21,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_深圳.json",
+      "sha256": "90452fe46699123d1e59c15b450f0196efd705387681200aa2dd0888f0caaf16",
+      "bytes": 7294,
+      "records": 25,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_苏州.json",
+      "sha256": "2718c9e5a1973251aa4f7333012366c146796b8668e80baf0076697f13862472",
+      "bytes": 15811,
+      "records": 59,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_杭州_to_重庆.json",
+      "sha256": "70a67c19287aab88bd0f34bd51ff6431d5b456ec442db9bf19b5f43fa12edcc0",
+      "bytes": 5228,
+      "records": 18,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_上海.json",
+      "sha256": "3eb18c29052be4f27adbed741de89dfd09c07a70d25af2a2e996b57e3b5db4c9",
+      "bytes": 6080,
+      "records": 23,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_北京.json",
+      "sha256": "0d43d3d85087a8defb99f508897a267fddd3e93579599c4851124333a27674dd",
+      "bytes": 8230,
+      "records": 31,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_南京.json",
+      "sha256": "79155ad7a61ae06c700eb134d01cb9b83fd02f204ba269bea8da0b33584d14a3",
+      "bytes": 9170,
+      "records": 34,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_广州.json",
+      "sha256": "0c2adbcc4cc6582355aec240335c1b16b50d028a393e4c449d4117a69a2c25e5",
+      "bytes": 19320,
+      "records": 72,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_成都.json",
+      "sha256": "11925050d52a6019766ece10c3e60d884dde8c05e56d7e7524edf15d5c53b00c",
+      "bytes": 1119,
+      "records": 4,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_杭州.json",
+      "sha256": "04147f8f36af002b494b3d0eaa0af52fd353f1f4af7d22fed4565a679a62e95e",
+      "bytes": 4282,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_深圳.json",
+      "sha256": "780b996664b2cbded4586c7d95e0fc03a082aae878910dd65a404ed7c69e9d8b",
+      "bytes": 10456,
+      "records": 39,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_苏州.json",
+      "sha256": "9ffc81cb9f41ed326ae9d58025f25d7e23f491a9a80ea4b955293c78268197ee",
+      "bytes": 3373,
+      "records": 13,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_武汉_to_重庆.json",
+      "sha256": "c44968904fffc2775dbd20fd0f8f6d0ae9f6f97725ca20fcd052cce90d8dd458",
+      "bytes": 3383,
+      "records": 12,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_上海.json",
+      "sha256": "7e783cde365785e5282786989e25289c378a14d2b1f6a753fe0cbd987d2ebf2d",
+      "bytes": 5971,
+      "records": 21,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_北京.json",
+      "sha256": "c453fc6fa7b74a3a2116a53000345587a0ba0d9f40d498e1b7b789a9053e3201",
+      "bytes": 2572,
+      "records": 9,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_南京.json",
+      "sha256": "95b927e7f0d51c23187f8f982e1c4ba6606fa82083c1b7b19afe2c47dd206545",
+      "bytes": 3336,
+      "records": 12,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_广州.json",
+      "sha256": "22d5c23f2ae7f45ed0adddac994faed7547519afc83dd06e1f55124cb9073f85",
+      "bytes": 84530,
+      "records": 304,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_成都.json",
+      "sha256": "c4f0ea5a566efba0fb0cc172ddf90b6b27a8b5d512affffcec40e379cbd694c8",
+      "bytes": 844,
+      "records": 3,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_杭州.json",
+      "sha256": "3566b4a3771e6d0adc403fea4c8c531e9fd96ad2e65bed81ce26deb40e5a2428",
+      "bytes": 7313,
+      "records": 25,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_武汉.json",
+      "sha256": "0b8660a4278b7a7ca224b540aa6b684fe098b6867e69bd38def37ec99ba56496",
+      "bytes": 12035,
+      "records": 45,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_苏州.json",
+      "sha256": "6706349c162ad8e775e58fa9945b72bddf3d7ae82a0a0d98744e0b6803fdea4a",
+      "bytes": 1832,
+      "records": 7,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_深圳_to_重庆.json",
+      "sha256": "c61d08c155e0075130e546bbc35bef85df853a5823aad8ccc4bd285e60edcd3f",
+      "bytes": 2220,
+      "records": 8,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_上海.json",
+      "sha256": "125f26d3a0f1b767f0ed36ec97faa978627a153d955436e98cbfcf6598f428e6",
+      "bytes": 93015,
+      "records": 354,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_北京.json",
+      "sha256": "16b43c488f6978287d773aa096cd4265051492a70c6a5dc84fcce5ac38b91610",
+      "bytes": 5964,
+      "records": 22,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_南京.json",
+      "sha256": "6ab3e5799541a2bda0397853de9fc0cfa5868b7ef0fd48e0fe6e38ad869013cb",
+      "bytes": 77452,
+      "records": 293,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_广州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "records": 0,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_成都.json",
+      "sha256": "9c11f9215bd7c13ab816883d876d19609c3df4371fc5f4a3d7777c83e6088fcb",
+      "bytes": 4102,
+      "records": 15,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_杭州.json",
+      "sha256": "5232a5d543847f665cc706a86f28aba8df16a6662ed86b5496d38b0ffc1fdc3b",
+      "bytes": 17079,
+      "records": 64,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_武汉.json",
+      "sha256": "6b904392a631dc8f2145f972ae166f8c70eb64cece921c49bd7dec5eb3aeb182",
+      "bytes": 2836,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_深圳.json",
+      "sha256": "48856098b36cdd687402742f8644af5e4965be61172d2d413ed2c7180647d6dc",
+      "bytes": 1824,
+      "records": 7,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_苏州_to_重庆.json",
+      "sha256": "a8235903c6f4bdc33b39d9a93aaecfa5e7b02b82b21f0a7d48ea4ae093938623",
+      "bytes": 4524,
+      "records": 16,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_上海.json",
+      "sha256": "9aa23f24811a4a5ba7a3da21269881073b7931c88b5356e877f19020a5b55955",
+      "bytes": 6628,
+      "records": 23,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_北京.json",
+      "sha256": "3d6b576995ff3750ce4b6a1cb922568f8dbd74ad603faefaa43803ad58592e4c",
+      "bytes": 3135,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_南京.json",
+      "sha256": "0112b7ce0c2b34a730e6680a98e1691f6d0f686204cfb1ed4220cf591a92f764",
+      "bytes": 6462,
+      "records": 22,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_广州.json",
+      "sha256": "2afdec56dbe79ef64374f64f7a9407db6a1d6041a4588b15230f8e1eb895d888",
+      "bytes": 8947,
+      "records": 31,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_成都.json",
+      "sha256": "a0d9913837c66eb24c2063e9a0983229586d40935e208f986a1cb83b7bd81315",
+      "bytes": 31618,
+      "records": 110,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_杭州.json",
+      "sha256": "70aae82489f554b36bf298f7d21c5723218b07ff8c4bca215b5851d01dc8c678",
+      "bytes": 3477,
+      "records": 12,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_武汉.json",
+      "sha256": "bd7ef94a0c356f6e2333879d6ab9675c5e8544b78a989fb4680a17b2347de048",
+      "bytes": 3099,
+      "records": 11,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_深圳.json",
+      "sha256": "e205a72ee81492d60ece1c7ea67d124b9e9b49e30065d395df87a02111372097",
+      "bytes": 2219,
+      "records": 8,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/intercity_transport/train/from_重庆_to_苏州.json",
+      "sha256": "beed30d7066e4cb80def6e901a19b268c4e2b23d5c8cb262d2e40df5c0b75b7b",
+      "bytes": 3640,
+      "records": 13,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/beijing/poi.json",
+      "sha256": "a91eb7978dc0157e912505c6d4765031f0c2224646b534ebaef4aff03b59b407",
+      "bytes": 183527,
+      "records": 1238,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/chengdu/poi.json",
+      "sha256": "73b6689cd6b02479b349f34fa460bbc9091de66174265dc1706c3fd653c37abd",
+      "bytes": 182467,
+      "records": 1210,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/chongqing/poi.json",
+      "sha256": "ac02301026e54cc4134989e04bfd0933b00a39e28f95c22a5a375a36e0c5030a",
+      "bytes": 179404,
+      "records": 1188,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/guangzhou/poi.json",
+      "sha256": "611b082de14b377fb530a33cad4fe1356666066d531fdefc4b85fb65c2a480e6",
+      "bytes": 187131,
+      "records": 1238,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/hangzhou/poi.json",
+      "sha256": "233a1065f13debe5e6884222f62ab6d99edda5096fd40a07c2a5f25522170759",
+      "bytes": 184038,
+      "records": 1227,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/nanjing/poi.json",
+      "sha256": "451eee97e5237c1fe99224bd6c9201104514aa6d6c0048fd9b3e551f8e7fe06b",
+      "bytes": 179600,
+      "records": 1184,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/shanghai/poi.json",
+      "sha256": "7348da279690828d9377590c9af435bb898e3fd7e145a268029a4f2b9ae89a5f",
+      "bytes": 187043,
+      "records": 1269,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/shenzhen/poi.json",
+      "sha256": "34b8028958b636cb113fb838e95c098f4cf05cc0f19f1e1fb688a69405d3e0c5",
+      "bytes": 196965,
+      "records": 1294,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/suzhou/poi.json",
+      "sha256": "f0c2efd9514be77d995fb5950f05e2ddd6e06bb43c15117b46e684245d09065d",
+      "bytes": 170997,
+      "records": 1149,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/poi/wuhan/poi.json",
+      "sha256": "05720de1076124bebc2808fa19c6c9a1f6b543512ac1296e234ea6150d4a53c8",
+      "bytes": 179178,
+      "records": 1175,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/beijing/restaurants_beijing.csv",
+      "sha256": "1f97c870f0adf4055ac971f4467b2178e45323647d611c59387ef2e614d0644e",
+      "bytes": 96400,
+      "records": 470,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/chengdu/restaurants_chengdu.csv",
+      "sha256": "cab892c87db947b2a10a7db261f847c17e3f3f5fed08895e8cfdfe626733a0f3",
+      "bytes": 102892,
+      "records": 467,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/chongqing/restaurants_chongqing.csv",
+      "sha256": "7e89fc9c446e902425e6344b17e9c76ac1383b57950dad400b5a763edcae34ef",
+      "bytes": 78174,
+      "records": 437,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/guangzhou/restaurants_guangzhou.csv",
+      "sha256": "8108a492ff58cf30566fd609c78ded212a51194f5923ec7edd6c6deed0faaa1a",
+      "bytes": 98938,
+      "records": 467,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/hangzhou/restaurants_hangzhou.csv",
+      "sha256": "b7e03af09ec9943356d5b0f17363e2c9afe9ae9ee406214cc3be4a4bb11477ac",
+      "bytes": 93455,
+      "records": 458,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/nanjing/restaurants_nanjing.csv",
+      "sha256": "920b25d575bbea372ecc62a7ffa078ce2aa64aae5baa110e522b87fed4725b1a",
+      "bytes": 83404,
+      "records": 468,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/shanghai/restaurants_shanghai.csv",
+      "sha256": "598e68485e7ad1f202f56083f9094b9215c19b5f30ed6954068b0580e49b5e8e",
+      "bytes": 104074,
+      "records": 484,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/shenzhen/restaurants_shenzhen.csv",
+      "sha256": "b7ad458c202ccc8fd87d7e354aeded006d0e0a779ad22668a4958f2e9e9e46af",
+      "bytes": 103958,
+      "records": 478,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/suzhou/restaurants_suzhou.csv",
+      "sha256": "0292ef6fff31980832c7582af78589720816250b637764ccfcf34ea2d9fea9ff",
+      "bytes": 81980,
+      "records": 469,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/restaurants/wuhan/restaurants_wuhan.csv",
+      "sha256": "307fd73cfdeeed2c2945d0dd50a64b899fd500102c0effedf21f250c76a2d9d5",
+      "bytes": 74684,
+      "records": 457,
+      "language": "en",
+      "unchanged_during_read": true
+    },
+    {
+      "file": "ChinaTravel/chinatravel/environment/database_en/transportation/subways.json",
+      "sha256": "77cf81fe8fc1004cc6ff5f5ce89502a7985f4f9cf59a494ffbb8b9a9d8c4c516",
+      "bytes": 512218,
+      "records": 3635,
+      "language": "en",
+      "unchanged_during_read": true
+    }
+  ],
+  "source_id": "chinatravel_sandbox",
+  "source_registry_sha256": "20943f90a044268fa2e371e3befb2c9644eb9d5c574d1a920d2afd7ea76b7e5b",
+  "unknown_source_time_records": 67612,
+  "new_verified_real_world_records": 0,
+  "source_files_modified": 0,
+  "policy_note": "TTL starts at verified source observation; unknown clocks never renewed by import.",
+  "policies": {
+    "identity": {
+      "ttl_seconds": 7776000,
+      "mandatory_dynamic": false
+    },
+    "coordinates": {
+      "ttl_seconds": 7776000,
+      "mandatory_dynamic": false
+    },
+    "theme": {
+      "ttl_seconds": 15552000,
+      "mandatory_dynamic": false
+    },
+    "experience": {
+      "ttl_seconds": 7776000,
+      "mandatory_dynamic": false
+    },
+    "opening_hours": {
+      "ttl_seconds": 86400,
+      "mandatory_dynamic": true
+    },
+    "closure": {
+      "ttl_seconds": 3600,
+      "mandatory_dynamic": true
+    },
+    "price": {
+      "ttl_seconds": 86400,
+      "mandatory_dynamic": true
+    },
+    "inventory": {
+      "ttl_seconds": 300,
+      "mandatory_dynamic": true
+    },
+    "dynamic_price": {
+      "ttl_seconds": 300,
+      "mandatory_dynamic": true
+    },
+    "room_configuration": {
+      "ttl_seconds": 2592000,
+      "mandatory_dynamic": false
+    },
+    "weather_now": {
+      "ttl_seconds": 900,
+      "mandatory_dynamic": true
+    },
+    "weather_forecast": {
+      "ttl_seconds": 3600,
+      "mandatory_dynamic": true
+    },
+    "weather_alert": {
+      "ttl_seconds": 600,
+      "mandatory_dynamic": true
+    },
+    "route_duration": {
+      "ttl_seconds": 900,
+      "mandatory_dynamic": true
+    },
+    "route_fare": {
+      "ttl_seconds": 1800,
+      "mandatory_dynamic": true
+    },
+    "route_disruption": {
+      "ttl_seconds": 600,
+      "mandatory_dynamic": true
+    },
+    "intercity_schedule": {
+      "ttl_seconds": 21600,
+      "mandatory_dynamic": true
+    },
+    "queue": {
+      "ttl_seconds": 600,
+      "mandatory_dynamic": true
+    },
+    "accessibility": {
+      "ttl_seconds": 604800,
+      "mandatory_dynamic": true
+    }
+  }
+}

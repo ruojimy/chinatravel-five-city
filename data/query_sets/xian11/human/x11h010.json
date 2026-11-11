@@ -1,0 +1,38 @@
+{
+ "uid": "x11h010",
+ "tag": "human",
+ "start_city": "广州",
+ "target_city": "西安",
+ "days": 5,
+ "people_number": 5,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==5)",
+  "result=(people_count(plan)==5)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 700)",
+  "innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'metro'})"
+ ],
+ "nature_language": "[当前位置广州,目标位置西安,旅行人数5,旅行天数5] 希望能玩得舒服些，每晚人均住宿不超过700元，市内只坐地铁。帮我规划一下。",
+ "nature_language_en": "Currently in 广州. five of us want to travel to 西安 for 5 day(s); hotel cost under 700 RMB per person per night, use only metro within the city. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "accommodation_budget",
+  "inner_transport_modes_subset"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

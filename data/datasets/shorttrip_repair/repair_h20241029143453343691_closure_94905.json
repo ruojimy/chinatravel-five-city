@@ -1,0 +1,989 @@
+{
+  "uid": "repair_h20241029143453343691_closure_94905",
+  "source_uid": "h20241029143453343691",
+  "disruption": "closure",
+  "query": {
+    "uid": "repair_h20241029143453343691_closure_94905",
+    "tag": "shorttrip_repair",
+    "start_city": "南京",
+    "target_city": "成都",
+    "days": 3,
+    "people_number": 2,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==3)",
+      "result=(people_count(plan)==2)",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"成都华熙LIVE·528M空间\"}&attraction_name_set)"
+    ],
+    "nature_language": "[当前位置南京,目标位置成都,旅行人数2,旅行天数3] 我们2人想去成都玩3天，本人对美食比较感兴趣，想在游玩成都一些热门景点的同时吃一些地道的当地苍蝇馆子，怎么规划行程",
+    "nature_language_en": "[Current location: Nanjing, Destination: Chengdu, Number of travelers: 2, Number of travel days: 3] We, two people, want to visit Chengdu for 3 days. I am particularly interested in food and would like to plan an itinerary that includes visiting some popular attractions in Chengdu while also trying some authentic local \"fly restaurants.\" How should we plan our trip?",
+    "disruption": [
+      {
+        "kind": "closure",
+        "name": "成都华熙LIVE·528M空间",
+        "code": "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"成都华熙LIVE·528M空间\"}&attraction_name_set)",
+        "note": "attraction 成都华熙LIVE·528M空间 is closed all day"
+      }
+    ],
+    "source_uid": "h20241029143453343691",
+    "disruption_kind": "closure"
+  },
+  "seed_plan": {
+    "people_number": 2,
+    "start_city": "南京",
+    "target_city": "成都",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "南京南站",
+            "end": "成都东站",
+            "start_time": "07:20",
+            "end_time": "19:16",
+            "price": 844.74,
+            "cost": 1689.48,
+            "tickets": 2,
+            "type": "train",
+            "transports": [],
+            "TrainID": "D2373"
+          },
+          {
+            "position": "成都斯维登精品公寓(火车东站西广场店)",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 197.0,
+            "cost": 394.0,
+            "rooms": 2,
+            "start_time": "19:22",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "成都东站",
+                "end": "成都斯维登精品公寓(火车东站西广场店)",
+                "mode": "walk",
+                "start_time": "19:16",
+                "end_time": "19:22",
+                "cost": 0,
+                "distance": 0.508347289216286,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "新尚公馆·水韵Plus",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:44",
+            "end_time": "10:14",
+            "transports": [
+              {
+                "start": "成都斯维登精品公寓(火车东站西广场店)",
+                "end": "成都东客站-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:36",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "塔子山公园-地铁站",
+                "mode": "metro",
+                "start_time": "08:36",
+                "end_time": "08:39",
+                "cost": 4.0,
+                "distance": 1.63,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "新尚公馆·水韵Plus",
+                "mode": "walk",
+                "start_time": "08:39",
+                "end_time": "08:44",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "成都鸟语林",
+            "type": "attraction",
+            "price": 29.0,
+            "cost": 58.0,
+            "tickets": 2,
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "transports": [
+              {
+                "start": "新尚公馆·水韵Plus",
+                "end": "塔子山公园-地铁站",
+                "mode": "walk",
+                "start_time": "10:14",
+                "end_time": "10:19",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "迎晖路-地铁站",
+                "mode": "metro",
+                "start_time": "10:19",
+                "end_time": "10:22",
+                "cost": 4.0,
+                "distance": 1.88,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "迎晖路-地铁站",
+                "end": "成都鸟语林",
+                "mode": "walk",
+                "start_time": "10:22",
+                "end_time": "10:30",
+                "cost": 0,
+                "distance": 0.68,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "麻辣空间·清油火锅(万科魅力店)",
+            "type": "lunch",
+            "price": 88.0,
+            "cost": 176.0,
+            "start_time": "12:19",
+            "end_time": "13:19",
+            "transports": [
+              {
+                "start": "成都鸟语林",
+                "end": "迎晖路-地铁站",
+                "mode": "walk",
+                "start_time": "12:00",
+                "end_time": "12:08",
+                "cost": 0,
+                "distance": 0.68,
+                "price": 0
+              },
+              {
+                "start": "迎晖路-地铁站",
+                "end": "成渝立交-地铁站",
+                "mode": "metro",
+                "start_time": "12:08",
+                "end_time": "12:11",
+                "cost": 4.0,
+                "distance": 1.67,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "成渝立交-地铁站",
+                "end": "麻辣空间·清油火锅(万科魅力店)",
+                "mode": "walk",
+                "start_time": "12:11",
+                "end_time": "12:19",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "东门市井",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:32",
+            "end_time": "14:17",
+            "transports": [
+              {
+                "start": "麻辣空间·清油火锅(万科魅力店)",
+                "end": "成渝立交-地铁站",
+                "mode": "walk",
+                "start_time": "13:19",
+                "end_time": "13:27",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              },
+              {
+                "start": "成渝立交-地铁站",
+                "end": "大观-地铁站",
+                "mode": "metro",
+                "start_time": "13:27",
+                "end_time": "13:29",
+                "cost": 4.0,
+                "distance": 1.42,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "大观-地铁站",
+                "end": "东门市井",
+                "mode": "walk",
+                "start_time": "13:29",
+                "end_time": "13:32",
+                "cost": 0,
+                "distance": 0.25,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "成都斯维登精品公寓(火车东站西广场店)",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 197.0,
+            "cost": 394.0,
+            "rooms": 2,
+            "start_time": "14:28",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "东门市井",
+                "end": "大观-地铁站",
+                "mode": "walk",
+                "start_time": "14:17",
+                "end_time": "14:20",
+                "cost": 0,
+                "distance": 0.25,
+                "price": 0
+              },
+              {
+                "start": "大观-地铁站",
+                "end": "成都东客站-地铁站",
+                "mode": "metro",
+                "start_time": "14:20",
+                "end_time": "14:22",
+                "cost": 4.0,
+                "distance": 1.08,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "成都斯维登精品公寓(火车东站西广场店)",
+                "mode": "walk",
+                "start_time": "14:22",
+                "end_time": "14:28",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "position": "成都华熙LIVE·528M空间",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:53",
+            "end_time": "11:53",
+            "transports": [
+              {
+                "start": "成都斯维登精品公寓(火车东站西广场店)",
+                "end": "成都东客站-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:36",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "洪河-地铁站",
+                "mode": "metro",
+                "start_time": "08:36",
+                "end_time": "08:42",
+                "cost": 4.0,
+                "distance": 3.18,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "洪河-地铁站",
+                "end": "成都华熙LIVE·528M空间",
+                "mode": "walk",
+                "start_time": "08:42",
+                "end_time": "08:53",
+                "cost": 0,
+                "distance": 0.98,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "300杯·和牛烧肉清酒(廊里店)",
+            "type": "lunch",
+            "price": 448.0,
+            "cost": 896.0,
+            "start_time": "12:15",
+            "end_time": "13:15",
+            "transports": [
+              {
+                "start": "成都华熙LIVE·528M空间",
+                "end": "洪河-地铁站",
+                "mode": "walk",
+                "start_time": "11:53",
+                "end_time": "12:04",
+                "cost": 0,
+                "distance": 0.98,
+                "price": 0
+              },
+              {
+                "start": "洪河-地铁站",
+                "end": "塔子山公园-地铁站",
+                "mode": "metro",
+                "start_time": "12:04",
+                "end_time": "12:12",
+                "cost": 6.0,
+                "distance": 4.28,
+                "price": 3.0,
+                "tickets": 2
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "300杯·和牛烧肉清酒(廊里店)",
+                "mode": "walk",
+                "start_time": "12:12",
+                "end_time": "12:15",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "塔子山公园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:32",
+            "end_time": "14:17",
+            "transports": [
+              {
+                "start": "300杯·和牛烧肉清酒(廊里店)",
+                "end": "塔子山公园-地铁站",
+                "mode": "walk",
+                "start_time": "13:15",
+                "end_time": "13:18",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "万年场-地铁站",
+                "mode": "metro",
+                "start_time": "13:18",
+                "end_time": "13:21",
+                "cost": 4.0,
+                "distance": 1.68,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "万年场-地铁站",
+                "end": "塔子山公园",
+                "mode": "walk",
+                "start_time": "13:21",
+                "end_time": "13:32",
+                "cost": 0,
+                "distance": 0.94,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "游玩攻略·潮玩街区",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "14:38",
+            "end_time": "15:23",
+            "transports": [
+              {
+                "start": "塔子山公园",
+                "end": "万年场-地铁站",
+                "mode": "walk",
+                "start_time": "14:17",
+                "end_time": "14:28",
+                "cost": 0,
+                "distance": 0.94,
+                "price": 0
+              },
+              {
+                "start": "万年场-地铁站",
+                "end": "净居寺-地铁站",
+                "mode": "metro",
+                "start_time": "14:28",
+                "end_time": "14:33",
+                "cost": 4.0,
+                "distance": 2.78,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "净居寺-地铁站",
+                "end": "游玩攻略·潮玩街区",
+                "mode": "walk",
+                "start_time": "14:33",
+                "end_time": "14:38",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "成都西站",
+            "end": "南京站",
+            "start_time": "18:23",
+            "end_time": "03:39",
+            "price": 563.16,
+            "cost": 1126.32,
+            "tickets": 2,
+            "type": "train",
+            "transports": [
+              {
+                "start": "游玩攻略·潮玩街区",
+                "end": "净居寺-地铁站",
+                "mode": "walk",
+                "start_time": "15:23",
+                "end_time": "15:28",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              },
+              {
+                "start": "净居寺-地铁站",
+                "end": "成都西站-地铁站",
+                "mode": "metro",
+                "start_time": "15:28",
+                "end_time": "15:55",
+                "cost": 8.0,
+                "distance": 13.98,
+                "price": 4.0,
+                "tickets": 2
+              },
+              {
+                "start": "成都西站-地铁站",
+                "end": "成都西站",
+                "mode": "walk",
+                "start_time": "15:55",
+                "end_time": "15:58",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              }
+            ],
+            "TrainID": "K284"
+          }
+        ]
+      }
+    ]
+  },
+  "locked": {
+    "kind": "attraction",
+    "position": "新尚公馆·水韵Plus",
+    "start_time": "08:44",
+    "end_time": "10:14"
+  },
+  "feasible": true,
+  "witness": {
+    "people_number": 2,
+    "start_city": "南京",
+    "target_city": "成都",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "南京南站",
+            "end": "成都东站",
+            "start_time": "07:20",
+            "end_time": "19:16",
+            "price": 844.74,
+            "cost": 1689.48,
+            "tickets": 2,
+            "type": "train",
+            "transports": [],
+            "TrainID": "D2373"
+          },
+          {
+            "position": "成都斯维登精品公寓(火车东站西广场店)",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 197.0,
+            "cost": 394.0,
+            "rooms": 2,
+            "start_time": "19:22",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "成都东站",
+                "end": "成都斯维登精品公寓(火车东站西广场店)",
+                "mode": "walk",
+                "start_time": "19:16",
+                "end_time": "19:22",
+                "cost": 0,
+                "distance": 0.508347289216286,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "新尚公馆·水韵Plus",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:44",
+            "end_time": "10:14",
+            "transports": [
+              {
+                "start": "成都斯维登精品公寓(火车东站西广场店)",
+                "end": "成都东客站-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:36",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "塔子山公园-地铁站",
+                "mode": "metro",
+                "start_time": "08:36",
+                "end_time": "08:39",
+                "cost": 4.0,
+                "distance": 1.63,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "新尚公馆·水韵Plus",
+                "mode": "walk",
+                "start_time": "08:39",
+                "end_time": "08:44",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "成都鸟语林",
+            "type": "attraction",
+            "price": 29.0,
+            "cost": 58.0,
+            "tickets": 2,
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "transports": [
+              {
+                "start": "新尚公馆·水韵Plus",
+                "end": "塔子山公园-地铁站",
+                "mode": "walk",
+                "start_time": "10:14",
+                "end_time": "10:19",
+                "cost": 0,
+                "distance": 0.49,
+                "price": 0
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "迎晖路-地铁站",
+                "mode": "metro",
+                "start_time": "10:19",
+                "end_time": "10:22",
+                "cost": 4.0,
+                "distance": 1.88,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "迎晖路-地铁站",
+                "end": "成都鸟语林",
+                "mode": "walk",
+                "start_time": "10:22",
+                "end_time": "10:30",
+                "cost": 0,
+                "distance": 0.68,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "麻辣空间·清油火锅(万科魅力店)",
+            "type": "lunch",
+            "price": 88.0,
+            "cost": 176.0,
+            "start_time": "12:19",
+            "end_time": "13:19",
+            "transports": [
+              {
+                "start": "成都鸟语林",
+                "end": "迎晖路-地铁站",
+                "mode": "walk",
+                "start_time": "12:00",
+                "end_time": "12:08",
+                "cost": 0,
+                "distance": 0.68,
+                "price": 0
+              },
+              {
+                "start": "迎晖路-地铁站",
+                "end": "成渝立交-地铁站",
+                "mode": "metro",
+                "start_time": "12:08",
+                "end_time": "12:11",
+                "cost": 4.0,
+                "distance": 1.67,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "成渝立交-地铁站",
+                "end": "麻辣空间·清油火锅(万科魅力店)",
+                "mode": "walk",
+                "start_time": "12:11",
+                "end_time": "12:19",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "东门市井",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:32",
+            "end_time": "14:17",
+            "transports": [
+              {
+                "start": "麻辣空间·清油火锅(万科魅力店)",
+                "end": "成渝立交-地铁站",
+                "mode": "walk",
+                "start_time": "13:19",
+                "end_time": "13:27",
+                "cost": 0,
+                "distance": 0.73,
+                "price": 0
+              },
+              {
+                "start": "成渝立交-地铁站",
+                "end": "大观-地铁站",
+                "mode": "metro",
+                "start_time": "13:27",
+                "end_time": "13:29",
+                "cost": 4.0,
+                "distance": 1.42,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "大观-地铁站",
+                "end": "东门市井",
+                "mode": "walk",
+                "start_time": "13:29",
+                "end_time": "13:32",
+                "cost": 0,
+                "distance": 0.25,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "成都斯维登精品公寓(火车东站西广场店)",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 197.0,
+            "cost": 394.0,
+            "rooms": 2,
+            "start_time": "14:28",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "东门市井",
+                "end": "大观-地铁站",
+                "mode": "walk",
+                "start_time": "14:17",
+                "end_time": "14:20",
+                "cost": 0,
+                "distance": 0.25,
+                "price": 0
+              },
+              {
+                "start": "大观-地铁站",
+                "end": "成都东客站-地铁站",
+                "mode": "metro",
+                "start_time": "14:20",
+                "end_time": "14:22",
+                "cost": 4.0,
+                "distance": 1.08,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "成都斯维登精品公寓(火车东站西广场店)",
+                "mode": "walk",
+                "start_time": "14:22",
+                "end_time": "14:28",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "activities": [
+          {
+            "position": "300杯·和牛烧肉清酒(廊里店)",
+            "type": "lunch",
+            "price": 448.0,
+            "cost": 896.0,
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "transports": [
+              {
+                "start": "成都斯维登精品公寓(火车东站西广场店)",
+                "end": "成都东客站-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:36",
+                "cost": 0,
+                "distance": 0.51,
+                "price": 0
+              },
+              {
+                "start": "成都东客站-地铁站",
+                "end": "塔子山公园-地铁站",
+                "mode": "metro",
+                "start_time": "08:36",
+                "end_time": "08:39",
+                "cost": 4.0,
+                "distance": 1.63,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "300杯·和牛烧肉清酒(廊里店)",
+                "mode": "walk",
+                "start_time": "08:39",
+                "end_time": "08:42",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "塔子山公园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "12:47",
+            "end_time": "13:32",
+            "transports": [
+              {
+                "start": "300杯·和牛烧肉清酒(廊里店)",
+                "end": "塔子山公园-地铁站",
+                "mode": "walk",
+                "start_time": "12:30",
+                "end_time": "12:33",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              },
+              {
+                "start": "塔子山公园-地铁站",
+                "end": "万年场-地铁站",
+                "mode": "metro",
+                "start_time": "12:33",
+                "end_time": "12:36",
+                "cost": 4.0,
+                "distance": 1.68,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "万年场-地铁站",
+                "end": "塔子山公园",
+                "mode": "walk",
+                "start_time": "12:36",
+                "end_time": "12:47",
+                "cost": 0,
+                "distance": 0.94,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "游玩攻略·潮玩街区",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "13:53",
+            "end_time": "14:38",
+            "transports": [
+              {
+                "start": "塔子山公园",
+                "end": "万年场-地铁站",
+                "mode": "walk",
+                "start_time": "13:32",
+                "end_time": "13:43",
+                "cost": 0,
+                "distance": 0.94,
+                "price": 0
+              },
+              {
+                "start": "万年场-地铁站",
+                "end": "净居寺-地铁站",
+                "mode": "metro",
+                "start_time": "13:43",
+                "end_time": "13:48",
+                "cost": 4.0,
+                "distance": 2.78,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "净居寺-地铁站",
+                "end": "游玩攻略·潮玩街区",
+                "mode": "walk",
+                "start_time": "13:48",
+                "end_time": "13:53",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "成都西站",
+            "end": "南京站",
+            "start_time": "18:23",
+            "end_time": "03:39",
+            "price": 563.16,
+            "cost": 1126.32,
+            "tickets": 2,
+            "type": "train",
+            "transports": [
+              {
+                "start": "游玩攻略·潮玩街区",
+                "end": "净居寺-地铁站",
+                "mode": "walk",
+                "start_time": "14:38",
+                "end_time": "14:43",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              },
+              {
+                "start": "净居寺-地铁站",
+                "end": "成都西站-地铁站",
+                "mode": "metro",
+                "start_time": "14:43",
+                "end_time": "15:10",
+                "cost": 8.0,
+                "distance": 13.98,
+                "price": 4.0,
+                "tickets": 2
+              },
+              {
+                "start": "成都西站-地铁站",
+                "end": "成都西站",
+                "mode": "walk",
+                "start_time": "15:10",
+                "end_time": "15:13",
+                "cost": 0,
+                "distance": 0.28,
+                "price": 0
+              }
+            ],
+            "TrainID": "K284"
+          }
+        ]
+      }
+    ]
+  },
+  "witness_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "commonsense_violations": [],
+    "hard_results": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "hard_pass_count": 4,
+    "hard_total": 4,
+    "hard_ok": true,
+    "all_ok": true,
+    "error": null
+  },
+  "witness_cost": {
+    "removed": 1,
+    "added": 0,
+    "moved": 3,
+    "retimed": 0,
+    "total": 4,
+    "details": {
+      "removed": [
+        "attraction|成都华熙LIVE·528M空间"
+      ],
+      "added": [],
+      "moved": [
+        "lunch|300杯·和牛烧肉清酒(廊里店)",
+        "attraction|塔子山公园",
+        "attraction|游玩攻略·潮玩街区"
+      ]
+    }
+  },
+  "seed_violations": [
+    "failed DSL 3"
+  ]
+}

@@ -1,0 +1,612 @@
+[
+ {
+  "TrainID": "D1998",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "06:09",
+  "EndTime": "09:31",
+  "Duration": 3.37,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3418",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "06:34",
+  "EndTime": "09:52",
+  "Duration": 3.3,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1910",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "07:00",
+  "EndTime": "10:59",
+  "Duration": 3.98,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1902",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "07:16",
+  "EndTime": "11:24",
+  "Duration": 4.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1282",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "07:36",
+  "EndTime": "11:21",
+  "Duration": 3.75,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3782",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "08:03",
+  "EndTime": "12:26",
+  "Duration": 4.38,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1912",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "08:08",
+  "EndTime": "12:04",
+  "Duration": 3.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3354",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "08:18",
+  "EndTime": "12:20",
+  "Duration": 4.03,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1986",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "08:23",
+  "EndTime": "12:43",
+  "Duration": 4.33,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1920",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "09:04",
+  "EndTime": "13:32",
+  "Duration": 4.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1702",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "09:09",
+  "EndTime": "13:22",
+  "Duration": 4.22,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1836",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "09:34",
+  "EndTime": "13:44",
+  "Duration": 4.17,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2088",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "09:44",
+  "EndTime": "14:10",
+  "Duration": 4.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3880",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "10:32",
+  "EndTime": "14:21",
+  "Duration": 3.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1972",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "10:46",
+  "EndTime": "15:12",
+  "Duration": 4.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1908",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "11:06",
+  "EndTime": "15:21",
+  "Duration": 4.25,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3442",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "11:20",
+  "EndTime": "15:28",
+  "Duration": 4.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1702",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "11:30",
+  "EndTime": "15:38",
+  "Duration": 4.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2234",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "11:35",
+  "EndTime": "15:46",
+  "Duration": 4.18,
+  "Cost": null
+ },
+ {
+  "TrainID": "D166",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安东",
+  "BeginTime": "11:47",
+  "EndTime": "19:34",
+  "Duration": 7.78,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1710",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:03",
+  "EndTime": "16:04",
+  "Duration": 4.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1832",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:08",
+  "EndTime": "16:13",
+  "Duration": 4.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1926",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:13",
+  "EndTime": "16:30",
+  "Duration": 4.28,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1834",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:28",
+  "EndTime": "16:19",
+  "Duration": 3.85,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1930",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:39",
+  "EndTime": "16:27",
+  "Duration": 3.8,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1928",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "12:59",
+  "EndTime": "16:48",
+  "Duration": 3.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2206",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:04",
+  "EndTime": "17:05",
+  "Duration": 4.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "K386",
+  "TrainType": "普速",
+  "From": "成都龙泉驿",
+  "To": "西安东",
+  "BeginTime": "13:09",
+  "EndTime": "00:04",
+  "Duration": 10.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1976",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:21",
+  "EndTime": "17:25",
+  "Duration": 4.07,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1718",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:28",
+  "EndTime": "17:33",
+  "Duration": 4.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2832",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:33",
+  "EndTime": "17:42",
+  "Duration": 4.15,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3210",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:43",
+  "EndTime": "17:46",
+  "Duration": 4.05,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3350",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "13:50",
+  "EndTime": "17:54",
+  "Duration": 4.07,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1934",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "14:01",
+  "EndTime": "18:09",
+  "Duration": 4.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3360",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "14:14",
+  "EndTime": "18:19",
+  "Duration": 4.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1936",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "14:19",
+  "EndTime": "18:52",
+  "Duration": 4.55,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3352",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "14:24",
+  "EndTime": "18:28",
+  "Duration": 4.07,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1938",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "15:06",
+  "EndTime": "19:07",
+  "Duration": 4.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1840",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "15:18",
+  "EndTime": "18:47",
+  "Duration": 3.48,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1942",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "15:29",
+  "EndTime": "19:25",
+  "Duration": 3.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2214",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "15:57",
+  "EndTime": "19:40",
+  "Duration": 3.72,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3140",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:02",
+  "EndTime": "19:33",
+  "Duration": 3.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2218",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:08",
+  "EndTime": "19:53",
+  "Duration": 3.75,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1958",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:14",
+  "EndTime": "20:11",
+  "Duration": 3.95,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1518",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:39",
+  "EndTime": "20:22",
+  "Duration": 3.72,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1944",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:50",
+  "EndTime": "20:48",
+  "Duration": 3.97,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3438",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "16:55",
+  "EndTime": "20:27",
+  "Duration": 3.53,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1954",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:00",
+  "EndTime": "21:00",
+  "Duration": 4,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3432",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:14",
+  "EndTime": "21:12",
+  "Duration": 3.97,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3740",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:19",
+  "EndTime": "21:28",
+  "Duration": 4.15,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1948",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:36",
+  "EndTime": "21:41",
+  "Duration": 4.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2852",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:46",
+  "EndTime": "21:33",
+  "Duration": 3.78,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1966",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:51",
+  "EndTime": "22:08",
+  "Duration": 4.28,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3764",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "17:58",
+  "EndTime": "21:56",
+  "Duration": 3.97,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1952",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "18:09",
+  "EndTime": "22:03",
+  "Duration": 3.9,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1950",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "18:43",
+  "EndTime": "22:22",
+  "Duration": 3.65,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2240",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "18:48",
+  "EndTime": "22:38",
+  "Duration": 3.83,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2242",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "18:52",
+  "EndTime": "22:43",
+  "Duration": 3.85,
+  "Cost": null
+ },
+ {
+  "TrainID": "K998",
+  "TrainType": "普速",
+  "From": "成都龙泉驿",
+  "To": "西安东",
+  "BeginTime": "19:48",
+  "EndTime": "06:58",
+  "Duration": 11.17,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1980",
+  "TrainType": "高铁",
+  "From": "成都东",
+  "To": "西安北",
+  "BeginTime": "19:57",
+  "EndTime": "23:43",
+  "Duration": 3.77,
+  "Cost": null
+ },
+ {
+  "TrainID": "K246",
+  "TrainType": "普速",
+  "From": "成都龙泉驿",
+  "To": "西安东",
+  "BeginTime": "20:52",
+  "EndTime": "12:08",
+  "Duration": 15.27,
+  "Cost": null
+ }
+]

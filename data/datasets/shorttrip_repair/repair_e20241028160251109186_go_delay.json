@@ -1,0 +1,279 @@
+{
+  "uid": "repair_e20241028160251109186_go_delay",
+  "source_uid": "e20241028160251109186",
+  "disruption": "go_delay",
+  "query": {
+    "uid": "repair_e20241028160251109186_go_delay",
+    "tag": "shorttrip_repair",
+    "start_city": "广州",
+    "target_city": "深圳",
+    "days": 1,
+    "people_number": 1,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==1)",
+      "result=(people_count(plan)==1)",
+      "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1000)",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='07:00')"
+    ],
+    "nature_language": "当前位置广州。我一个人想去深圳玩一天，预算1000人民币，请给我一个旅行规划。",
+    "nature_language_en": "Current location: Guangzhou. I want to go to Shenzhen alone for a day, with a budget of 1000 RMB. Please provide me with a travel plan.",
+    "disruption": [
+      {
+        "kind": "go_delay",
+        "code": "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='07:00')",
+        "note": "outbound train delayed: earliest acceptable departure 07:00 (original 06:00)",
+        "later_options": 236
+      }
+    ],
+    "source_uid": "e20241028160251109186",
+    "disruption_kind": "go_delay"
+  },
+  "seed_plan": {
+    "people_number": 1,
+    "start_city": "广州",
+    "target_city": "深圳",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "广州东站",
+            "end": "深圳站",
+            "start_time": "06:00",
+            "end_time": "07:24",
+            "price": 46.89,
+            "cost": 46.89,
+            "tickets": 1,
+            "type": "train",
+            "transports": [],
+            "TrainID": "C7001"
+          },
+          {
+            "position": "邓小平画像广场",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "07:37",
+            "end_time": "08:22",
+            "transports": [
+              {
+                "start": "深圳站",
+                "end": "罗湖-地铁站",
+                "mode": "walk",
+                "start_time": "07:24",
+                "end_time": "07:26",
+                "cost": 0,
+                "distance": 0.17,
+                "price": 0
+              },
+              {
+                "start": "罗湖-地铁站",
+                "end": "红岭-地铁站",
+                "mode": "metro",
+                "start_time": "07:26",
+                "end_time": "07:30",
+                "cost": 2.0,
+                "distance": 2.31,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "红岭-地铁站",
+                "end": "邓小平画像广场",
+                "mode": "walk",
+                "start_time": "07:30",
+                "end_time": "07:37",
+                "cost": 0,
+                "distance": 0.63,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "邓小平画像",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "08:22",
+            "end_time": "11:22",
+            "transports": [
+              {
+                "start": "邓小平画像广场",
+                "end": "邓小平画像",
+                "mode": "walk",
+                "start_time": "08:22",
+                "end_time": "08:22",
+                "cost": 0,
+                "distance": 0.023848746443337204,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "深圳香格里拉·香宫中餐厅·粤菜·点心",
+            "type": "lunch",
+            "price": 197.0,
+            "cost": 197.0,
+            "start_time": "11:35",
+            "end_time": "12:35",
+            "transports": [
+              {
+                "start": "邓小平画像",
+                "end": "红岭-地铁站",
+                "mode": "walk",
+                "start_time": "11:22",
+                "end_time": "11:29",
+                "cost": 0,
+                "distance": 0.61,
+                "price": 0
+              },
+              {
+                "start": "红岭-地铁站",
+                "end": "罗湖-地铁站",
+                "mode": "metro",
+                "start_time": "11:29",
+                "end_time": "11:33",
+                "cost": 2.0,
+                "distance": 2.31,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "罗湖-地铁站",
+                "end": "深圳香格里拉·香宫中餐厅·粤菜·点心",
+                "mode": "walk",
+                "start_time": "11:33",
+                "end_time": "11:35",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "冰纷万象滑冰场",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "12:41",
+            "end_time": "14:11",
+            "transports": [
+              {
+                "start": "深圳香格里拉·香宫中餐厅·粤菜·点心",
+                "end": "罗湖-地铁站",
+                "mode": "walk",
+                "start_time": "12:35",
+                "end_time": "12:37",
+                "cost": 0,
+                "distance": 0.2,
+                "price": 0
+              },
+              {
+                "start": "罗湖-地铁站",
+                "end": "老街-地铁站",
+                "mode": "metro",
+                "start_time": "12:37",
+                "end_time": "12:39",
+                "cost": 2.0,
+                "distance": 1.36,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "老街-地铁站",
+                "end": "冰纷万象滑冰场",
+                "mode": "walk",
+                "start_time": "12:39",
+                "end_time": "12:41",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "深圳北站",
+            "end": "广州南站",
+            "start_time": "23:30",
+            "end_time": "23:59",
+            "price": 67.73,
+            "cost": 67.73,
+            "tickets": 1,
+            "type": "train",
+            "transports": [
+              {
+                "start": "冰纷万象滑冰场",
+                "end": "老街-地铁站",
+                "mode": "walk",
+                "start_time": "14:11",
+                "end_time": "14:13",
+                "cost": 0,
+                "distance": 0.22,
+                "price": 0
+              },
+              {
+                "start": "老街-地铁站",
+                "end": "深圳北站-地铁站",
+                "mode": "metro",
+                "start_time": "14:13",
+                "end_time": "14:36",
+                "cost": 4.0,
+                "distance": 11.54,
+                "price": 4.0,
+                "tickets": 1
+              },
+              {
+                "start": "深圳北站-地铁站",
+                "end": "深圳北站",
+                "mode": "walk",
+                "start_time": "14:36",
+                "end_time": "14:37",
+                "cost": 0,
+                "distance": 0.15,
+                "price": 0
+              }
+            ],
+            "TrainID": "G6568"
+          }
+        ]
+      }
+    ]
+  },
+  "locked": {
+    "kind": "attraction",
+    "position": "邓小平画像广场",
+    "start_time": "07:37",
+    "end_time": "08:22"
+  },
+  "feasible": false,
+  "witness": null,
+  "witness_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "commonsense_violations": [],
+    "hard_results": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "hard_pass_count": 6,
+    "hard_total": 6,
+    "hard_ok": true,
+    "all_ok": true,
+    "error": null
+  },
+  "witness_cost": null,
+  "seed_violations": [
+    "failed DSL 5"
+  ]
+}

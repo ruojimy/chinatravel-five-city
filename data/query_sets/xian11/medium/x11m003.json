@@ -1,0 +1,47 @@
+{
+ "uid": "x11m003",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "南京",
+ "days": 3,
+ "people_number": 1,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==1)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=2000)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=1: result=False",
+  "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'川菜'}<=restaurant_type_set)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=2000)",
+  "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='metro': transport_journey_count+=1\nresult=(transport_journey_count<=4)"
+ ],
+ "nature_language": "当前位置西安。我一个人想去南京玩3天，预算2000元，住1间房，想吃川菜，每天预算不超过2000元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. I want to travel to 南京 for 3 day(s); with a budget of 2000 RMB, book 1 room(s), want to try 川菜 food, with a daily budget under 2000 RMB. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "total_budget",
+  "room_count",
+  "required_restaurant_types",
+  "daily_budget",
+  "inner_transport_mode_count"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "name_type",
+  "room",
+  "transport",
+  "transport_metrics"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

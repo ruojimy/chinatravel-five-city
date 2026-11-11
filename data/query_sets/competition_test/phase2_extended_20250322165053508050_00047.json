@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250322165053508050_00047",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({\"Snacks\"}<=restaurant_type_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Southern Eclectic Buns (Lakeside Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"White Pagoda Park\" and first_activity_seen: result=True",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Fuyang Dragon Scale Dam Scenic Area\" and seen_first: result=True",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Laxi Street Food Plaza\", \"Spring Dawn at Su Causeway Stele Pavilion\"}<=day_attraction_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\":\n    if activity_start_time(activity)==\"14:12\" and activity_end_time(activity)==\"24:00\": result=True",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==6)",
+    "result_list=[]\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Hu Xueyan's Former Residence\"}&attraction_name_set)\nresult_list.append(result)\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=({\"Baiye Homestay (West Lake Branch)\"}<=accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"White Pagoda Park\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\" and first_activity_seen: result=True",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==7)",
+    "result_list=[]\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Baiye Homestay (West Lake Branch)\"}<=day_accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Hangzhou Little Iceland\":\n    if activity_start_time(activity)>=\"13:22\" and activity_end_time(activity)<=\"15:02\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Include the following restaurant types: Snacks.",
+    "Dine at Southern Eclectic Buns (Lakeside Branch) before visiting White Pagoda Park.",
+    "Day 2 must include breakfast and lunch.",
+    "Visit Spring Dawn at Su Causeway Stele Pavilion before Fuyang Dragon Scale Dam Scenic Area.",
+    "Visit both Laxi Street Food Plaza and Spring Dawn at Su Causeway Stele Pavilion on day 1.",
+    "Stay at Baiye Homestay (West Lake Branch) exactly from 14:12 to 24:00.",
+    "Visit exactly 6 attractions on day 1.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these attractions: Hu Xueyan's Former Residence. (B) Stay at the following hotels: Baiye Homestay (West Lake Branch).",
+    "Visit White Pagoda Park before dining at Baiye Homestay (West Lake Branch).",
+    "Visit exactly 7 attractions during the trip.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 3. (B) Schedule the entire visit to Hangzhou Little Iceland within the time window from 13:22 to 15:02."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Include the following restaurant types: Snacks.\n5. Dine at Southern Eclectic Buns (Lakeside Branch) before visiting White Pagoda Park.\n6. Day 2 must include breakfast and lunch.\n7. Visit Spring Dawn at Su Causeway Stele Pavilion before Fuyang Dragon Scale Dam Scenic Area.\n8. Visit both Laxi Street Food Plaza and Spring Dawn at Su Causeway Stele Pavilion on day 1.\n9. Stay at Baiye Homestay (West Lake Branch) exactly from 14:12 to 24:00.\n10. Visit exactly 6 attractions on day 1.\n11. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these attractions: Hu Xueyan's Former Residence. (B) Stay at the following hotels: Baiye Homestay (West Lake Branch).\n12. Visit White Pagoda Park before dining at Baiye Homestay (West Lake Branch).\n13. Visit exactly 7 attractions during the trip.\n14. Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 3. (B) Schedule the entire visit to Hangzhou Little Iceland within the time window from 13:22 to 15:02.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"required_restaurant_types\",\"cross_category_order\",\"required_meals_on_day\",\"attraction_order\",\"attraction_pair_on_day\",\"accommodation_exact_time\",\"attraction_count_on_day\",\"either_requirement\",\"cross_category_order\",\"total_attraction_count\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,46 @@
+{
+ "uid": "x11m007",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "武汉",
+ "days": 4,
+ "people_number": 1,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==1)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='12:00')",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=60)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1500)",
+  "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({'善兴寺'}<=day_attraction_name_set)"
+ ],
+ "nature_language": "当前位置西安。我一个人想去武汉玩4天，去程12:00之后出发，每晚人均住宿不超过500元，每餐人均不超过60元，预算1500元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. I want to travel to 武汉 for 4 day(s); depart after 12:00, hotel cost under 500 RMB per person per night, meal cost under 60 RMB per person, with a budget of 1500 RMB. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "outbound_departure_deadline",
+  "accommodation_budget",
+  "restaurant_budget",
+  "total_budget",
+  "attraction_on_day"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "day_time",
+  "schedule",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

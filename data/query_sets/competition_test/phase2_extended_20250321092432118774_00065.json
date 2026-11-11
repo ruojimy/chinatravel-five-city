@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250321092432118774_00065",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Suzhou",
+  "days": 3,
+  "people_number": 5,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==5)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Suzhou Huaxi Meishi Hotel (Heiyi Wujiang Branch)\":\n    if activity_start_time(activity)>=\"07:50\" and activity_end_time(activity)<=\"08:40\": result=True\nresult_list.append(result)\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"North Xinjiang Restaurant (Wujiang Branch)\"}<=day_restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=21.2)",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"06:51\")\n    outbound_intercity_found=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Bath Spa Korean Sauna\":\n    if activity_start_time(activity)>=\"11:45\" and activity_end_time(activity)<=\"13:40\": result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Dingji Carnival Hotel (Wujiang Branch)\":\n    if activity_start_time(activity)==\"18:04\" and activity_end_time(activity)==\"19:04\": result=True",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 5 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 5 travelers.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Suzhou Huaxi Meishi Hotel (Heiyi Wujiang Branch) within the time window from 07:50 to 08:40. (B) Dine at North Xinjiang Restaurant (Wujiang Branch) on day 2.",
+    "Keep the total walking distance within 21.2 kilometers.",
+    "Stay at exactly 1 different hotel.",
+    "The outbound intercity trip must depart no later than 06:51.",
+    "Schedule the entire visit to Bath Spa Korean Sauna within the time window from 11:45 to 13:40.",
+    "Dine at Dingji Carnival Hotel (Wujiang Branch) exactly from 18:04 to 19:04.",
+    "Day 2 must include breakfast, lunch, and dinner."
+  ],
+  "nature_language": "We are 5 people traveling from Chongqing to Suzhou for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 5 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 5 travelers.\n4. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Suzhou Huaxi Meishi Hotel (Heiyi Wujiang Branch) within the time window from 07:50 to 08:40. (B) Dine at North Xinjiang Restaurant (Wujiang Branch) on day 2.\n6. Keep the total walking distance within 21.2 kilometers.\n7. Stay at exactly 1 different hotel.\n8. The outbound intercity trip must depart no later than 06:51.\n9. Schedule the entire visit to Bath Spa Korean Sauna within the time window from 11:45 to 13:40.\n10. Dine at Dingji Carnival Hotel (Wujiang Branch) exactly from 18:04 to 19:04.\n11. Day 2 must include breakfast, lunch, and dinner.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_inner_transport_modes\",\"either_requirement\",\"walking_distance_budget\",\"distinct_accommodation_count\",\"outbound_departure_deadline\",\"attraction_time_window\",\"restaurant_exact_time\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

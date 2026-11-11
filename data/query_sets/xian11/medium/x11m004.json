@@ -1,0 +1,47 @@
+{
+ "uid": "x11m004",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "苏州",
+ "days": 4,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)",
+  "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='12:00')",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'民宿'}<=accommodation_type_set)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=80)",
+  "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count>=1)"
+ ],
+ "nature_language": "当前位置西安。我们四个人想去苏州玩4天，往返坐火车，去程12:00之后出发，酒店要有民宿，每餐人均不超过80元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. four of us want to travel to 苏州 for 4 day(s); travel by train both ways, depart after 12:00, the hotel should offer 民宿, meal cost under 80 RMB per person. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "intercity_modes_include",
+  "outbound_departure_deadline",
+  "required_accommodation_types",
+  "restaurant_budget",
+  "attraction_count_on_day"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "count",
+  "name_type",
+  "schedule",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

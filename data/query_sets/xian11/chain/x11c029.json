@@ -1,0 +1,30 @@
+{
+ "schema_version": "shorttrip-dynamic-v1",
+ "uid": "x11c029",
+ "nature_language": "1人从苏州出发，前往西安，共3天；在西安安排太白山国家森林公园-三爷海，请核对跨城班次与到达时刻，没有班次或坐标证据时保留待定连接，切勿编造车次。",
+ "people_number": 1,
+ "city_sequence": [
+  "苏州",
+  "西安"
+ ],
+ "dates": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12"
+ ],
+ "level": "human",
+ "candidates": [],
+ "retrieval_budget": 8,
+ "requirements": {
+  "must_visit": [
+   "太白山国家森林公园-三爷海"
+  ],
+  "city_role": "last"
+ },
+ "xian11": {
+  "chain_type": "two_city_xian_last",
+  "xian_role": "last",
+  "translation": "controlled_template",
+  "native_compatible": false
+ }
+}

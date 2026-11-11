@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250323021732100207_00004",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result_list=[]\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Baiye Homestay (West Lake Branch)\"}<=day_restaurant_name_set)\nresult_list.append(result)\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1806)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"West Lake Scenic Area\", \"Hangzhou Section of the Beijing-Hangzhou Grand Canal\", \"Lingyin Feilai Peak Scenic Area\"}&attraction_name_set)",
+    "result_list=[]\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Zhongshan West Lake Hotel Hangzhou\", \"Atour Hotel (Hangzhou Xixi Wetland)\"}&accommodation_name_set)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1055)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Encounter Museum · Hangzhou Pavilion\"}<=day_attraction_name_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Encounter Museum · Hangzhou Pavilion\", \"Lingyin Temple\"}<=day_attraction_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Southern Eclectic Buns (Lakeside Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Encounter Museum · Hangzhou Pavilion\" and first_activity_seen: result=True",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"lunch\", \"dinner\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at Baiye Homestay (West Lake Branch) on day 2. (B) Keep the total accommodation cost within 1806 CNY.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Include at least 5 free attractions.",
+    "Do not include any of these attractions: West Lake Scenic Area, Hangzhou Section of the Beijing-Hangzhou Grand Canal, and Lingyin Feilai Peak Scenic Area.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these hotels: Zhongshan West Lake Hotel Hangzhou and Atour Hotel (Hangzhou Xixi Wetland). (B) Keep all activity and transportation costs on day 1 within 1055 CNY.",
+    "Visit Encounter Museum · Hangzhou Pavilion on day 1.",
+    "Visit both Encounter Museum · Hangzhou Pavilion and Lingyin Temple on day 1.",
+    "Dine at Southern Eclectic Buns (Lakeside Branch) before visiting Encounter Museum · Hangzhou Pavilion.",
+    "Day 1 must include lunch and dinner."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Dine at Baiye Homestay (West Lake Branch) on day 2. (B) Keep the total accommodation cost within 1806 CNY.\n5. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n6. Include at least 5 free attractions.\n7. Do not include any of these attractions: West Lake Scenic Area, Hangzhou Section of the Beijing-Hangzhou Grand Canal, and Lingyin Feilai Peak Scenic Area.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these hotels: Zhongshan West Lake Hotel Hangzhou and Atour Hotel (Hangzhou Xixi Wetland). (B) Keep all activity and transportation costs on day 1 within 1055 CNY.\n9. Visit Encounter Museum · Hangzhou Pavilion on day 1.\n10. Visit both Encounter Museum · Hangzhou Pavilion and Lingyin Temple on day 1.\n11. Dine at Southern Eclectic Buns (Lakeside Branch) before visiting Encounter Museum · Hangzhou Pavilion.\n12. Day 1 must include lunch and dinner.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"forbidden_inner_transport_modes\",\"free_attraction_count_minimum\",\"forbidden_attraction_names\",\"either_requirement\",\"attraction_on_day\",\"attraction_pair_on_day\",\"cross_category_order\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

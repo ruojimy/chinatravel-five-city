@@ -1,0 +1,35 @@
+{
+ "uid": "x11e006",
+ "tag": "easy",
+ "start_city": "西安",
+ "target_city": "南京",
+ "days": 2,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==2)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)"
+ ],
+ "nature_language": "当前位置西安。我们三个人想去南京玩2天，往返坐火车，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 南京 for 2 day(s); travel by train both ways. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "intercity_modes_include"
+ ],
+ "constraint_families": [
+  "basic",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

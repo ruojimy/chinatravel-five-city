@@ -1,0 +1,36 @@
+{
+ "uid": "x11h013",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "武汉",
+ "days": 3,
+ "people_number": 2,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==2)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 300)"
+ ],
+ "nature_language": "[当前位置西安,目标位置武汉,旅行人数2,旅行天数3] 希望能玩得舒服些，每晚人均住宿不超过300元。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. we two want to travel to 武汉 for 3 day(s); hotel cost under 300 RMB per person per night. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "accommodation_budget"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

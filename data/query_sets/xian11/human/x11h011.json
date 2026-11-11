@@ -1,0 +1,33 @@
+{
+ "uid": "x11h011",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "成都",
+ "days": 4,
+ "people_number": 5,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==5)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+ ],
+ "nature_language": "[当前位置西安,目标位置成都,旅行人数5,旅行天数4] 时间比较自由，帮忙推荐一条合适的路线。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. five of us want to travel to 成都 for 4 day(s). Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars"
+ ],
+ "constraint_families": [
+  "basic",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

@@ -1,0 +1,425 @@
+{
+  "uid": "repair_e20241028160248698752_early_departure",
+  "source_uid": "e20241028160248698752",
+  "disruption": "early_departure",
+  "query": {
+    "uid": "repair_e20241028160248698752_early_departure",
+    "tag": "shorttrip_repair",
+    "start_city": "上海",
+    "target_city": "杭州",
+    "days": 1,
+    "people_number": 1,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==1)",
+      "result=(people_count(plan)==1)",
+      "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1500)",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='15:30')"
+    ],
+    "nature_language": "当前位置上海。我一个人想去杭州玩一天，预算1500人民币，请给我一个旅行规划。",
+    "nature_language_en": "Current location: Shanghai. I want to travel to Hangzhou alone for a day with a budget of 1500 RMB. Please provide me with a travel plan.",
+    "disruption": [
+      {
+        "kind": "early_departure",
+        "code": "return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='15:30')",
+        "note": "traveller must be at the station by 15:30"
+      }
+    ],
+    "source_uid": "e20241028160248698752",
+    "disruption_kind": "early_departure"
+  },
+  "seed_plan": {
+    "people_number": 1,
+    "start_city": "上海",
+    "target_city": "杭州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "上海虹桥站",
+            "end": "杭州东站",
+            "start_time": "06:10",
+            "end_time": "06:56",
+            "price": 107.17,
+            "cost": 107.17,
+            "tickets": 1,
+            "type": "train",
+            "transports": [],
+            "TrainID": "G1321"
+          },
+          {
+            "position": "坝子桥",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "07:16",
+            "end_time": "09:46",
+            "transports": [
+              {
+                "start": "杭州东站",
+                "end": "火车东站(东广场)-地铁站",
+                "mode": "walk",
+                "start_time": "06:56",
+                "end_time": "07:01",
+                "cost": 0,
+                "distance": 0.48,
+                "price": 0
+              },
+              {
+                "start": "火车东站(东广场)-地铁站",
+                "end": "闸弄口-地铁站",
+                "mode": "metro",
+                "start_time": "07:01",
+                "end_time": "07:05",
+                "cost": 2.0,
+                "distance": 2.49,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "坝子桥",
+                "mode": "walk",
+                "start_time": "07:05",
+                "end_time": "07:16",
+                "cost": 0,
+                "distance": 0.92,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "江和美海洋公园",
+            "type": "attraction",
+            "price": 88.0,
+            "cost": 88.0,
+            "tickets": 1,
+            "start_time": "10:07",
+            "end_time": "10:52",
+            "transports": [
+              {
+                "start": "坝子桥",
+                "end": "闸弄口-地铁站",
+                "mode": "walk",
+                "start_time": "09:46",
+                "end_time": "09:57",
+                "cost": 0,
+                "distance": 0.92,
+                "price": 0
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "御道-地铁站",
+                "mode": "metro",
+                "start_time": "09:57",
+                "end_time": "10:05",
+                "cost": 3.0,
+                "distance": 4.37,
+                "price": 3.0,
+                "tickets": 1
+              },
+              {
+                "start": "御道-地铁站",
+                "end": "江和美海洋公园",
+                "mode": "walk",
+                "start_time": "10:05",
+                "end_time": "10:07",
+                "cost": 0,
+                "distance": 0.21,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "不伤心理想国(东站万象汇店)",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "11:06",
+            "end_time": "13:06",
+            "transports": [
+              {
+                "start": "江和美海洋公园",
+                "end": "御道-地铁站",
+                "mode": "walk",
+                "start_time": "10:52",
+                "end_time": "10:54",
+                "cost": 0,
+                "distance": 0.21,
+                "price": 0
+              },
+              {
+                "start": "御道-地铁站",
+                "end": "明石路-地铁站",
+                "mode": "metro",
+                "start_time": "10:54",
+                "end_time": "11:00",
+                "cost": 2.0,
+                "distance": 3.4,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "明石路-地铁站",
+                "end": "不伤心理想国(东站万象汇店)",
+                "mode": "walk",
+                "start_time": "11:00",
+                "end_time": "11:06",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "必胜客(天成国际店)",
+            "type": "lunch",
+            "price": 80.0,
+            "cost": 80.0,
+            "start_time": "13:20",
+            "end_time": "14:20",
+            "transports": [
+              {
+                "start": "不伤心理想国(东站万象汇店)",
+                "end": "明石路-地铁站",
+                "mode": "walk",
+                "start_time": "13:06",
+                "end_time": "13:12",
+                "cost": 0,
+                "distance": 0.54,
+                "price": 0
+              },
+              {
+                "start": "明石路-地铁站",
+                "end": "闸弄口-地铁站",
+                "mode": "metro",
+                "start_time": "13:12",
+                "end_time": "13:19",
+                "cost": 2.0,
+                "distance": 3.97,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "必胜客(天成国际店)",
+                "mode": "walk",
+                "start_time": "13:19",
+                "end_time": "13:20",
+                "cost": 0,
+                "distance": 0.12,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "杭州东站",
+            "end": "上海虹桥站",
+            "start_time": "22:27",
+            "end_time": "23:12",
+            "price": 107.17,
+            "cost": 107.17,
+            "tickets": 1,
+            "type": "train",
+            "transports": [
+              {
+                "start": "必胜客(天成国际店)",
+                "end": "闸弄口-地铁站",
+                "mode": "walk",
+                "start_time": "14:20",
+                "end_time": "14:21",
+                "cost": 0,
+                "distance": 0.12,
+                "price": 0
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "火车东站(东广场)-地铁站",
+                "mode": "metro",
+                "start_time": "14:21",
+                "end_time": "14:25",
+                "cost": 2.0,
+                "distance": 2.49,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "火车东站(东广场)-地铁站",
+                "end": "杭州东站",
+                "mode": "walk",
+                "start_time": "14:25",
+                "end_time": "14:30",
+                "cost": 0,
+                "distance": 0.48,
+                "price": 0
+              }
+            ],
+            "TrainID": "G1472"
+          }
+        ]
+      }
+    ]
+  },
+  "locked": {
+    "kind": "attraction",
+    "position": "坝子桥",
+    "start_time": "07:16",
+    "end_time": "09:46"
+  },
+  "feasible": true,
+  "witness": {
+    "people_number": 1,
+    "start_city": "上海",
+    "target_city": "杭州",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "上海虹桥站",
+            "end": "杭州东站",
+            "start_time": "06:10",
+            "end_time": "06:56",
+            "price": 107.17,
+            "cost": 107.17,
+            "tickets": 1,
+            "type": "train",
+            "transports": [],
+            "TrainID": "G1321"
+          },
+          {
+            "position": "坝子桥",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "07:16",
+            "end_time": "09:46",
+            "transports": [
+              {
+                "start": "杭州东站",
+                "end": "火车东站(东广场)-地铁站",
+                "mode": "walk",
+                "start_time": "06:56",
+                "end_time": "07:01",
+                "cost": 0,
+                "distance": 0.48,
+                "price": 0
+              },
+              {
+                "start": "火车东站(东广场)-地铁站",
+                "end": "闸弄口-地铁站",
+                "mode": "metro",
+                "start_time": "07:01",
+                "end_time": "07:05",
+                "cost": 2.0,
+                "distance": 2.49,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "坝子桥",
+                "mode": "walk",
+                "start_time": "07:05",
+                "end_time": "07:16",
+                "cost": 0,
+                "distance": 0.92,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "杭州东站",
+            "end": "上海虹桥站",
+            "start_time": "15:29",
+            "end_time": "16:24",
+            "price": 107.17,
+            "cost": 107.17,
+            "tickets": 1,
+            "type": "train",
+            "transports": [
+              {
+                "start": "坝子桥",
+                "end": "闸弄口-地铁站",
+                "mode": "walk",
+                "start_time": "09:46",
+                "end_time": "09:57",
+                "cost": 0,
+                "distance": 0.92,
+                "price": 0
+              },
+              {
+                "start": "闸弄口-地铁站",
+                "end": "火车东站(东广场)-地铁站",
+                "mode": "metro",
+                "start_time": "09:57",
+                "end_time": "10:01",
+                "cost": 2.0,
+                "distance": 2.49,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "火车东站(东广场)-地铁站",
+                "end": "杭州东站",
+                "mode": "walk",
+                "start_time": "10:01",
+                "end_time": "10:06",
+                "cost": 0,
+                "distance": 0.48,
+                "price": 0
+              }
+            ],
+            "TrainID": "G7560"
+          }
+        ]
+      }
+    ]
+  },
+  "witness_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "commonsense_violations": [],
+    "hard_results": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "hard_pass_count": 6,
+    "hard_total": 6,
+    "hard_ok": true,
+    "all_ok": true,
+    "error": null
+  },
+  "witness_cost": {
+    "removed": 3,
+    "added": 0,
+    "moved": 1,
+    "retimed": 0,
+    "total": 4,
+    "details": {
+      "removed": [
+        "attraction|江和美海洋公园",
+        "attraction|不伤心理想国(东站万象汇店)",
+        "lunch|必胜客(天成国际店)"
+      ],
+      "added": [],
+      "moved": [
+        "train|杭州东站"
+      ]
+    }
+  },
+  "seed_violations": [
+    "failed DSL 5"
+  ]
+}

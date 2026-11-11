@@ -1,0 +1,46 @@
+{
+ "uid": "x11m005",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "广州",
+ "days": 3,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'公园'}<=attraction_type_set)",
+  "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({'孔庙'}<=attraction_name_set)",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 300)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=60)",
+  "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({'breakfast', 'lunch', 'dinner'}<=day_meal_type_set)"
+ ],
+ "nature_language": "当前位置西安。我们四个人想去广州玩3天，想去公园类景点，一定要去孔庙，每晚人均住宿不超过300元，每餐人均不超过60元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. four of us want to travel to 广州 for 3 day(s); want to visit 公园 attractions, must visit 孔庙, hotel cost under 300 RMB per person per night, meal cost under 60 RMB per person. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_attraction_types",
+  "required_attraction_names",
+  "accommodation_budget",
+  "restaurant_budget",
+  "required_meals_on_day"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "count",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

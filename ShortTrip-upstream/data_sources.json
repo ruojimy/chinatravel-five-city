@@ -1,0 +1,10 @@
+{
+  "ChinaTravel": {
+    "revision": "a7d893afb628af6ca181625b6c7cca2d60a6bccb"
+  },
+  "ChinaTravel-Sandbox": {
+    "revision": "885c7dad143bf040238ddca263f4788d582ee0f4",
+    "release": "2026.08.2",
+    "sha256": "42d95ff7b8f96574d0ee972ca77599258e4854a219617868caeb462b79c715bd"
+  }
+}

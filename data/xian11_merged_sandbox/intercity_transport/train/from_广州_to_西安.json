@@ -1,0 +1,32 @@
+[
+ {
+  "TrainID": "G405",
+  "TrainType": "G",
+  "From": "广州南",
+  "To": "西安北",
+  "BeginTime": "09:49",
+  "EndTime": "16:50",
+  "Duration": 7.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "G843",
+  "TrainType": "G",
+  "From": "广州南",
+  "To": "西安北",
+  "BeginTime": "08:51",
+  "EndTime": "18:25",
+  "Duration": 9.57,
+  "Cost": null
+ },
+ {
+  "TrainID": "G915",
+  "TrainType": "G",
+  "From": "广州南",
+  "To": "西安北",
+  "BeginTime": "10:17",
+  "EndTime": "20:04",
+  "Duration": 9.78,
+  "Cost": null
+ }
+]

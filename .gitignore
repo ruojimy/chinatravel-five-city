@@ -1,0 +1,29 @@
+# credentials — never commit
+.secrets/
+.env
+
+# python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# generated data (rebuild from the shipped .gz)
+data/catalog_v1_1_20261022/catalog.sqlite3
+
+# model / binaries
+*.gguf
+shorttrip-local/
+shorttrip-runs/
+
+# runtime artifacts
+results/runs/
+*.log
+cache/
+.edge-debug-profile/
+node_modules/
+
+# OS
+Thumbs.db
+.DS_Store

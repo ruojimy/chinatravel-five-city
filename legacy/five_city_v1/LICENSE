@@ -1,0 +1,24 @@
+# License
+
+## Code
+
+Copyright (c) 2026 The ChinaTravel Five-City Reproduction authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the code in `code/`, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+## Data
+
+The data in `data/` and `results/` is a **research reproduction artifact**. It is **not** a grant of rights to the underlying third-party sources. Third-party content (web pages, OSM/Wikidata, OTA listings, airline timetables, hotel pages, etc.) remains subject to the terms of those sources.
+
+- `cc0`, `odbl`, `api_terms`, `public_page_reuse_unverified`, `unknown` and other licence labels are recorded in the evidence index; they are **not** relicensed by this package.
+- Raw source text (`raw_text`) is intentionally omitted; only source URLs, hashes, timestamps and short quotes are retained for audit.
+- Do not redistribute this data as a commercial dataset or claim it is a current, verified travel database.
+- If you need to redistribute, first resolve the `unknown` licences (554 evidence rows) and the host-level inconsistencies documented in `DATASET_CARD.md`.
+
+## Reports and documents
+
+The reports are provided for research and course use; they may quote short excerpts from sources for audit. Those excerpts remain the property of their original sources.

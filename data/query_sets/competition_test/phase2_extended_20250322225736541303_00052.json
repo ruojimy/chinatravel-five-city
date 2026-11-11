@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250322225736541303_00052",
+  "tag": "phase2",
+  "start_city": "Guangzhou",
+  "target_city": "Wuhan",
+  "days": 2,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "restaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=274)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==6)",
+    "result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False\nresult_list.append(result)\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Baotong Temple\"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Xia's Clay Pot (Wansongyuan Branch)\", \"Wuhan Shangri-La Hotel · Shang Palace Chinese Restaurant\"}&restaurant_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Jiangnan Small Garden Restaurant (Wuhan University Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Chuwang Terrace\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Baotong Temple\":\n    if activity_start_time(activity)==\"08:40\" and activity_end_time(activity)==\"10:10\": result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop)\":\n    if activity_start_time(activity)==\"08:00\" and activity_end_time(activity)==\"08:30\": result=True",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=13.3)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Keep the total dining cost within 274 CNY.",
+    "Visit exactly 6 attractions on day 1.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not use train for the outbound intercity trip. (B) Visit Baotong Temple on day 2.",
+    "Do not include any of these restaurants: Xia's Clay Pot (Wansongyuan Branch) and Wuhan Shangri-La Hotel · Shang Palace Chinese Restaurant.",
+    "Dine at Jiangnan Small Garden Restaurant (Wuhan University Branch) before visiting Chuwang Terrace.",
+    "Visit Baotong Temple exactly from 08:40 to 10:10.",
+    "Dine at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop) exactly from 08:00 to 08:30.",
+    "Keep the total walking distance within 13.3 kilometers."
+  ],
+  "nature_language": "I am traveling from Guangzhou to Wuhan for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Keep the total dining cost within 274 CNY.\n5. Visit exactly 6 attractions on day 1.\n6. Satisfy at least one of these two requirements (both are allowed): (A) Do not use train for the outbound intercity trip. (B) Visit Baotong Temple on day 2.\n7. Do not include any of these restaurants: Xia's Clay Pot (Wansongyuan Branch) and Wuhan Shangri-La Hotel · Shang Palace Chinese Restaurant.\n8. Dine at Jiangnan Small Garden Restaurant (Wuhan University Branch) before visiting Chuwang Terrace.\n9. Visit Baotong Temple exactly from 08:40 to 10:10.\n10. Dine at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop) exactly from 08:00 to 08:30.\n11. Keep the total walking distance within 13.3 kilometers.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"restaurant_budget\",\"attraction_count_on_day\",\"either_requirement\",\"forbidden_restaurant_names\",\"cross_category_order\",\"attraction_exact_time\",\"restaurant_exact_time\",\"walking_distance_budget\"]",
+  "official_phase2_evaluation": true
+}

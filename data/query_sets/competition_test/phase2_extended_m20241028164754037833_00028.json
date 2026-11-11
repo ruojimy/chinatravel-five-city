@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_m20241028164754037833_00028",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "result_list=[]\nday_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)\nresult_list.append(result)\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire\", \"Shanghai Jinjiang Metropolo Classic Hotel Nanjing East Road The Bund · Global Western Restaurant (The Bund Branch)\"}&restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Tongji University (Siping Road Campus)\", \"Yingdong Village\"}<=day_attraction_name_set)",
+    "result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"airplane\")\n    is_first_intercity=False\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"01:08\")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Jin Mao Tower Cloud Walk\", \"City Sightseeing Bus\"}<=day_attraction_name_set)",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Himalaya Art Museum\", \"Shanghai Comics Museum\"}<=day_attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit exactly 5 attractions on day 1. (B) Do not include any of these restaurants: Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire and Shanghai Jinjiang Metropolo Classic Hotel Nanjing East Road The Bund · Global Western Restaurant (The Bund Branch).",
+    "Stay at exactly 1 different hotel.",
+    "Visit both Tongji University (Siping Road Campus) and Yingdong Village on day 3.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the outbound intercity trip. (B) The outbound intercity trip must depart no later than 01:08.",
+    "Visit both Jin Mao Tower Cloud Walk and City Sightseeing Bus on day 1.",
+    "Visit exactly 10 attractions during the trip.",
+    "Visit both Himalaya Art Museum and Shanghai Comics Museum on day 2."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Visit exactly 5 attractions on day 1. (B) Do not include any of these restaurants: Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire and Shanghai Jinjiang Metropolo Classic Hotel Nanjing East Road The Bund · Global Western Restaurant (The Bund Branch).\n6. Stay at exactly 1 different hotel.\n7. Visit both Tongji University (Siping Road Campus) and Yingdong Village on day 3.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the outbound intercity trip. (B) The outbound intercity trip must depart no later than 01:08.\n9. Visit both Jin Mao Tower Cloud Walk and City Sightseeing Bus on day 1.\n10. Visit exactly 10 attractions during the trip.\n11. Visit both Himalaya Art Museum and Shanghai Comics Museum on day 2.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_inner_transport_modes\",\"either_requirement\",\"distinct_accommodation_count\",\"attraction_pair_on_day\",\"either_requirement\",\"attraction_pair_on_day\",\"total_attraction_count\",\"attraction_pair_on_day\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,15 @@
+{
+ "version": "xian11-testset-v1",
+ "seed": 20261108,
+ "source_snapshot": "results/xian_claude_20261108_145612/snapshot_v4/catalog.sqlite3",
+ "sandbox": "data/xian11_sandbox",
+ "queries": "query_sets/xian11",
+ "counts": {
+  "easy": 30,
+  "medium": 15,
+  "human": 15,
+  "chain": 30
+ },
+ "total": 90,
+ "policy": "collector_agent/xian_single_city/xian11_testset_policy.json"
+}

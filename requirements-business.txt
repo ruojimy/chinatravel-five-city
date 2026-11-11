@@ -1,0 +1,5 @@
+# Bounded business-field collection and parsing; no model runtime.
+beautifulsoup4==4.15.0
+protego==0.7.0
+requests==2.34.2
+opencc-python-reimplemented==0.1.7

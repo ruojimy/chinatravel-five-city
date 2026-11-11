@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250322201643676309_00001",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 2,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=13.0)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"West Nanjing Road\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Kempinski The One Suites Hotel Shanghai Downtown\" and first_activity_seen: result=True",
+    "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"airplane\"}<=intercity_transport_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tribute to the Master: Picasso Art Center\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"J Prime Steak and Seafood Restaurant (People's Square Branch)\" and first_activity_seen: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==4)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Sinan Mansions\":\n    if activity_start_time(activity)>=\"08:34\" and activity_end_time(activity)<=\"10:29\": result=True",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Shanghai cuisine\"}&restaurant_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Keep the total walking distance within 13 kilometers.",
+    "Visit exactly 4 attractions on day 2.",
+    "Visit West Nanjing Road before dining at Kempinski The One Suites Hotel Shanghai Downtown.",
+    "The intercity itinerary must include airplane.",
+    "Visit Tribute to the Master: Picasso Art Center before dining at J Prime Steak and Seafood Restaurant (People's Square Branch).",
+    "Use metro as the primary mode for exactly 4 in-city journeys.",
+    "Schedule the entire visit to Sinan Mansions within the time window from 08:34 to 10:29.",
+    "Do not include any of these restaurant types: Shanghai cuisine."
+  ],
+  "nature_language": "I am traveling from Shenzhen to Shanghai for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Keep the total walking distance within 13 kilometers.\n5. Visit exactly 4 attractions on day 2.\n6. Visit West Nanjing Road before dining at Kempinski The One Suites Hotel Shanghai Downtown.\n7. The intercity itinerary must include airplane.\n8. Visit Tribute to the Master: Picasso Art Center before dining at J Prime Steak and Seafood Restaurant (People's Square Branch).\n9. Use metro as the primary mode for exactly 4 in-city journeys.\n10. Schedule the entire visit to Sinan Mansions within the time window from 08:34 to 10:29.\n11. Do not include any of these restaurant types: Shanghai cuisine.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"walking_distance_budget\",\"attraction_count_on_day\",\"cross_category_order\",\"intercity_modes_include\",\"cross_category_order\",\"inner_transport_mode_count\",\"attraction_time_window\",\"forbidden_restaurant_types\"]",
+  "official_phase2_evaluation": true
+}

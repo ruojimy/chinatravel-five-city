@@ -1,0 +1,33 @@
+{
+ "uid": "x11h014",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "北京",
+ "days": 3,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+ ],
+ "nature_language": "[当前位置西安,目标位置北京,旅行人数4,旅行天数3] 别安排得太赶，帮忙推荐一条合适的路线。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. four of us want to travel to 北京 for 3 day(s). Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars"
+ ],
+ "constraint_families": [
+  "basic",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

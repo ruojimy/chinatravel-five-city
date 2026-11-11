@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250322212110159665_00015",
+  "tag": "phase2",
+  "start_city": "Wuhan",
+  "target_city": "Shanghai",
+  "days": 4,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire\", \"The Langham, Shanghai Xintiandi · Cachet Restaurant\"}&restaurant_name_set)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\":\n    if activity_start_time(activity)==\"19:51\" and activity_end_time(activity)==\"24:00\": result=True\nresult_list.append(result)\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Shanghai Tower\"}&attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\":\n    if activity_start_time(activity)==\"16:28\" and activity_end_time(activity)==\"24:00\": result=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2001)",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\"}<=day_accommodation_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"17:13\")",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Bar/Pub\", \"Korean cuisine\"}&restaurant_type_set)",
+    "day_restaurant_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Imperial Banquet Chinese Restaurant\"}<=day_restaurant_name_set)",
+    "result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"airplane\"}<=intercity_transport_set)\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Jin Mao Tower\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Do not include any of these restaurants: Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire and The Langham, Shanghai Xintiandi · Cachet Restaurant.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 19:51 to 24:00. (B) Do not include any of these attractions: Shanghai Tower.",
+    "Visit exactly 5 attractions on day 1.",
+    "Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 16:28 to 24:00.",
+    "Keep all activity and transportation costs on day 2 within 2001 CNY.",
+    "Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) on day 3.",
+    "The return intercity trip must depart no earlier than 17:13.",
+    "Do not include any of these restaurant types: Bar/Pub and Korean cuisine.",
+    "Dine at Imperial Banquet Chinese Restaurant on day 2.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Visit Jin Mao Tower before dining at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)."
+  ],
+  "nature_language": "We are 3 people traveling from Wuhan to Shanghai for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Do not include any of these restaurants: Capella Shanghai Jianye Li · Le Comptoir de Pierre Gagnaire and The Langham, Shanghai Xintiandi · Cachet Restaurant.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 19:51 to 24:00. (B) Do not include any of these attractions: Shanghai Tower.\n6. Visit exactly 5 attractions on day 1.\n7. Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 16:28 to 24:00.\n8. Keep all activity and transportation costs on day 2 within 2001 CNY.\n9. Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) on day 3.\n10. The return intercity trip must depart no earlier than 17:13.\n11. Do not include any of these restaurant types: Bar/Pub and Korean cuisine.\n12. Dine at Imperial Banquet Chinese Restaurant on day 2.\n13. Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Visit Jin Mao Tower before dining at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station).",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_restaurant_names\",\"either_requirement\",\"attraction_count_on_day\",\"accommodation_exact_time\",\"daily_budget\",\"accommodation_on_day\",\"return_departure_earliest\",\"forbidden_restaurant_types\",\"restaurant_on_day\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

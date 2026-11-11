@@ -1,0 +1,26 @@
+{
+ "tasks": 96,
+ "plans": 96,
+ "finals": 96,
+ "requests": 450,
+ "responses": 450,
+ "request_types": {
+  "weather": 116,
+  "route": 311,
+  "place": 23
+ },
+ "response_types": {
+  "route": 311,
+  "weather": 116,
+  "place": 23
+ },
+ "status": {
+  "complete": 72,
+  "infeasible": 4,
+  "blocked": 20
+ },
+ "detail_calls": 18,
+ "detail_with_hours": 11,
+ "errors": [],
+ "warnings": []
+}

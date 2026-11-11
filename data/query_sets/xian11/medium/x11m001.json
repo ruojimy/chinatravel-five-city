@@ -1,0 +1,46 @@
+{
+ "uid": "x11m001",
+ "tag": "medium",
+ "start_city": "杭州",
+ "target_city": "西安",
+ "days": 3,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'管家服务'}<=accommodation_type_set)",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'airplane'}==intercity_transport_set)",
+  "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'老赵家炖牛肉丸子烩菜(大秦店)'}<=restaurant_name_set)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=80)",
+  "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=10.0)"
+ ],
+ "nature_language": "当前位置杭州。我们三个人想去西安玩3天，酒店要有管家服务，往返坐飞机，想去老赵家炖牛肉丸子烩菜(大秦店)吃饭，每餐人均不超过80元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 杭州. three of us want to travel to 西安 for 3 day(s); the hotel should offer 管家服务, travel by airplane both ways, want to eat at 老赵家炖牛肉丸子烩菜(大秦店), meal cost under 80 RMB per person. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_accommodation_types",
+  "intercity_modes_include",
+  "required_restaurant_names",
+  "restaurant_budget",
+  "walking_distance_budget"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "name_type",
+  "transport",
+  "transport_metrics"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

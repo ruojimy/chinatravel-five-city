@@ -1,0 +1,99 @@
+{
+ "quality_model": "collector_agent/xian_single_city/quality_model.json",
+ "policy": "P0+P1 admission (coords, opening hours); P2 attributes (type/cuisine/price) optional and graded L3; see docs/data_grading_standard.md",
+ "l2_fields": [
+  "Cost",
+  "numbed",
+  "price",
+  "recommendmaxtime",
+  "recommendmintime",
+  "room_type",
+  "ticket_inventory",
+  "today_hours",
+  "weather"
+ ],
+ "kinds": {
+  "attraction": {
+   "L1_fields": [
+    "lat",
+    "lon",
+    "opentime",
+    "endtime"
+   ],
+   "L2_columns_in_file": [
+    "price",
+    "recommendmintime",
+    "recommendmaxtime"
+   ],
+   "total": 757,
+   "tiers": {
+    "ready": 22,
+    "l1_only": 569,
+    "reference_only": 166
+   },
+   "main_view_rows": 591,
+   "reference_only_rows": 166,
+   "non_l1_non_l2_gaps_filled": 0,
+   "main_view": "data/xian11_merged_sandbox/attractions/xian/attractions.csv",
+   "reference_only": "data/xian11_merged_sandbox/reference_only/attraction.csv",
+   "sentinel": {
+    "numeric": -1,
+    "text": "UNKNOWN",
+    "disclosure": "L2 gaps only; not real values. Any commonsense verdict depending on them is not trustworthy and is reported separately."
+   }
+  },
+  "restaurant": {
+   "L1_fields": [
+    "lat",
+    "lon",
+    "opentime",
+    "endtime"
+   ],
+   "L2_columns_in_file": [
+    "price"
+   ],
+   "total": 560,
+   "tiers": {
+    "ready": 452,
+    "l1_only": 34,
+    "reference_only": 74
+   },
+   "main_view_rows": 486,
+   "reference_only_rows": 74,
+   "non_l1_non_l2_gaps_filled": 563,
+   "main_view": "data/xian11_merged_sandbox/restaurants/xian/restaurants_xian.csv",
+   "reference_only": "data/xian11_merged_sandbox/reference_only/restaurant.csv",
+   "sentinel": {
+    "numeric": -1,
+    "text": "UNKNOWN",
+    "disclosure": "L2 gaps only; not real values. Any commonsense verdict depending on them is not trustworthy and is reported separately."
+   }
+  },
+  "accommodation": {
+   "L1_fields": [
+    "lat",
+    "lon"
+   ],
+   "L2_columns_in_file": [
+    "price",
+    "numbed"
+   ],
+   "total": 761,
+   "tiers": {
+    "ready": 318,
+    "l1_only": 388,
+    "reference_only": 55
+   },
+   "main_view_rows": 706,
+   "reference_only_rows": 55,
+   "non_l1_non_l2_gaps_filled": 1051,
+   "main_view": "data/xian11_merged_sandbox/accommodations/xian/accommodations.csv",
+   "reference_only": "data/xian11_merged_sandbox/reference_only/accommodation.csv",
+   "sentinel": {
+    "numeric": -1,
+    "text": "UNKNOWN",
+    "disclosure": "L2 gaps only; not real values. Any commonsense verdict depending on them is not trustworthy and is reported separately."
+   }
+  }
+ }
+}

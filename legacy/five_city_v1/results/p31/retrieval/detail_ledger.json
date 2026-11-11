@@ -1,0 +1,147 @@
+{
+ "spent": 18,
+ "stopped": false,
+ "calls": [
+  {
+   "uid": "D06",
+   "poi_id": "B0FFGQNO60",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "D06",
+   "poi_id": "B0I1NRAH0H",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "D08",
+   "poi_id": "B0FFGQNO60",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "D08",
+   "poi_id": "B025003IUP",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "D10",
+   "poi_id": "B023E05A3C",
+   "ok": true,
+   "hours": [
+    540,
+    1020
+   ]
+  },
+  {
+   "uid": "D10",
+   "poi_id": "B023E05BX0",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "D12",
+   "poi_id": "B023E05A3C",
+   "ok": true,
+   "hours": [
+    540,
+    1020
+   ]
+  },
+  {
+   "uid": "D12",
+   "poi_id": "B023E05BX0",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "D18",
+   "poi_id": "B0214019F9",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "D18",
+   "poi_id": "B0KUBMXYL6",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "D20",
+   "poi_id": "B0214075FL",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "D20",
+   "poi_id": "B0FFFAGMBM",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "N07",
+   "poi_id": "B0I1NRAH0H",
+   "ok": true,
+   "hours": null
+  },
+  {
+   "uid": "N10",
+   "poi_id": "B02500SJWD",
+   "ok": true,
+   "hours": [
+    570,
+    1260
+   ]
+  },
+  {
+   "uid": "N12",
+   "poi_id": "B023E05A3C",
+   "ok": true,
+   "hours": [
+    540,
+    1020
+   ]
+  },
+  {
+   "uid": "N12",
+   "poi_id": "B023E05BX0",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "N21",
+   "poi_id": "B0214019F9",
+   "ok": true,
+   "hours": [
+    0,
+    1440
+   ]
+  },
+  {
+   "uid": "N21",
+   "poi_id": "B0KUBMXYL6",
+   "ok": true,
+   "hours": null
+  }
+ ]
+}

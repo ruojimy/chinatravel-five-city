@@ -1,0 +1,180 @@
+{
+ "verified_at": "2026-11-08T20:17:32+08:00",
+ "queries_root": "query_sets/xian11",
+ "sandbox_root": "data/xian11_sandbox",
+ "counts": {
+  "easy": 30,
+  "medium": 15,
+  "human": 15,
+  "chain": 30
+ },
+ "total": 90,
+ "native_reference": {
+  "easy": 300,
+  "medium": 150,
+  "human": 154,
+  "per_city": {
+   "easy": 30,
+   "medium": 15,
+   "human": 15.4
+  }
+ },
+ "city_pairs": {
+  "expected": 20,
+  "covered": 20,
+  "missing": [],
+  "easy_layer_missing": [],
+  "per_pair_queries": {
+   "上海->西安": 1,
+   "北京->西安": 4,
+   "南京->西安": 1,
+   "广州->西安": 4,
+   "成都->西安": 3,
+   "杭州->西安": 4,
+   "武汉->西安": 1,
+   "深圳->西安": 2,
+   "苏州->西安": 1,
+   "西安->上海": 3,
+   "西安->北京": 4,
+   "西安->南京": 3,
+   "西安->广州": 3,
+   "西安->成都": 4,
+   "西安->杭州": 4,
+   "西安->武汉": 4,
+   "西安->深圳": 4,
+   "西安->苏州": 3,
+   "西安->重庆": 3,
+   "重庆->西安": 4
+  }
+ },
+ "days_by_level": {
+  "easy": {
+   "1": 8,
+   "3": 9,
+   "2": 13
+  },
+  "medium": {
+   "3": 6,
+   "2": 3,
+   "4": 6
+  },
+  "human": {
+   "5": 4,
+   "2": 2,
+   "1": 2,
+   "3": 4,
+   "6": 1,
+   "4": 2
+  }
+ },
+ "people_by_level": {
+  "easy": {
+   "3": 7,
+   "2": 6,
+   "1": 7,
+   "4": 10
+  },
+  "medium": {
+   "3": 4,
+   "2": 4,
+   "1": 3,
+   "4": 4
+  },
+  "human": {
+   "3": 4,
+   "5": 6,
+   "4": 3,
+   "2": 1,
+   "1": 1
+  }
+ },
+ "constraint_families": {
+  "easy": {
+   "basic": 30,
+   "budget": 1,
+   "transport": 30,
+   "name_type": 17,
+   "room": 5
+  },
+  "medium": {
+   "basic": 15,
+   "budget": 14,
+   "name_type": 11,
+   "transport": 15,
+   "transport_metrics": 3,
+   "room": 3,
+   "count": 2,
+   "schedule": 6,
+   "day_time": 2,
+   "sequence": 1,
+   "relation": 1,
+   "negative": 2,
+   "logic": 1
+  },
+  "human": {
+   "basic": 15,
+   "name_type": 3,
+   "transport": 15,
+   "schedule": 2,
+   "budget": 3
+  }
+ },
+ "families_covered": [
+  "basic",
+  "budget",
+  "count",
+  "day_time",
+  "logic",
+  "name_type",
+  "negative",
+  "relation",
+  "room",
+  "schedule",
+  "sequence",
+  "transport",
+  "transport_metrics"
+ ],
+ "families_count": 13,
+ "chain": {
+  "roles": {
+   "first": 10,
+   "last": 10,
+   "middle": 10
+  },
+  "types": {
+   "two_city_xian_first": 10,
+   "two_city_xian_last": 10,
+   "three_city_xian_middle": 10
+  },
+  "native10_cities": [
+   "上海",
+   "北京",
+   "南京",
+   "广州",
+   "成都",
+   "杭州",
+   "武汉",
+   "深圳",
+   "苏州",
+   "重庆"
+  ],
+  "native10_missing": [],
+  "levels": {
+   "easy": 10,
+   "medium": 10,
+   "human": 10
+  }
+ },
+ "sandbox_entities": {
+  "attraction": 757,
+  "restaurant": 560,
+  "accommodation": 761,
+  "attraction_type": 52,
+  "cuisine": 90,
+  "hotel_type": 29
+ },
+ "dsl_compile_failures": 0,
+ "unbound_entity_references": 0,
+ "problems": [],
+ "ok": true
+}

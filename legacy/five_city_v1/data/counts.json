@@ -1,0 +1,9 @@
+{
+  "version": "five_city_reference_v4_20261026",
+  "records": 1914,
+  "claims": 5790,
+  "tags": 6072,
+  "evidence": 3598,
+  "evidence_raw_text_included": false,
+  "note": "Raw source text is intentionally omitted from this release. Every evidence row keeps source_url, retrieved_at, licence_status, authority, capture_method and raw_sha256, so the local full snapshot can be audited but not redistributed from this package."
+}

@@ -1,0 +1,47 @@
+{
+ "uid": "x11m009",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "杭州",
+ "days": 3,
+ "people_number": 1,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==1)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'经济型'}<=accommodation_type_set)",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+  "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='17:00')",
+  "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'绿伞正宗锅贴店(建章路店)'}<=restaurant_name_set)",
+  "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=='富平奇树观木': first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)=='润泽庭院民宿' and first_activity_seen: result=True"
+ ],
+ "nature_language": "当前位置西安。我一个人想去杭州玩3天，酒店要有经济型，每晚人均住宿不超过500元，去程17:00之后出发，想去绿伞正宗锅贴店(建章路店)吃饭，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. I want to travel to 杭州 for 3 day(s); the hotel should offer 经济型, hotel cost under 500 RMB per person per night, depart after 17:00, want to eat at 绿伞正宗锅贴店(建章路店). Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_accommodation_types",
+  "accommodation_budget",
+  "outbound_departure_deadline",
+  "required_restaurant_names",
+  "cross_category_order"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "name_type",
+  "relation",
+  "schedule",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250322195527737080_00090",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 2,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Era of Life\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Sinan Mansions\" and seen_first: result=True",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({\"Cantonese cuisine\"}<=restaurant_type_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Era of Life\":\n    if activity_start_time(activity)==\"12:10\" and activity_end_time(activity)==\"13:40\": result=True",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"People's Park\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Lai Lai Soup Dumplings · Qiao Ai\" and first_activity_seen: result=True",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Paper-Thin Building\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Lai Lai Soup Dumplings · Qiao Ai\" and first_activity_seen: result=True",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Site of the Second National Congress of the Communist Party of China Memorial Hall\", \"Era of Life\"}<=day_attraction_name_set)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({\"Sauna\"}<=accommodation_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Visit Era of Life before Sinan Mansions.",
+    "Include the following restaurant types: Cantonese cuisine.",
+    "Visit Era of Life exactly from 12:10 to 13:40.",
+    "Visit People's Park before dining at Lai Lai Soup Dumplings · Qiao Ai.",
+    "Visit Paper-Thin Building before dining at Lai Lai Soup Dumplings · Qiao Ai.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Visit exactly 4 attractions on day 2.",
+    "Visit both Site of the Second National Congress of the Communist Party of China Memorial Hall and Era of Life on day 2.",
+    "Include the following hotel feature types: Sauna."
+  ],
+  "nature_language": "I am traveling from Shenzhen to Shanghai for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Visit Era of Life before Sinan Mansions.\n5. Include the following restaurant types: Cantonese cuisine.\n6. Visit Era of Life exactly from 12:10 to 13:40.\n7. Visit People's Park before dining at Lai Lai Soup Dumplings · Qiao Ai.\n8. Visit Paper-Thin Building before dining at Lai Lai Soup Dumplings · Qiao Ai.\n9. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n10. Visit exactly 4 attractions on day 2.\n11. Visit both Site of the Second National Congress of the Communist Party of China Memorial Hall and Era of Life on day 2.\n12. Include the following hotel feature types: Sauna.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_order\",\"required_restaurant_types\",\"attraction_exact_time\",\"cross_category_order\",\"cross_category_order\",\"forbidden_inner_transport_modes\",\"attraction_count_on_day\",\"attraction_pair_on_day\",\"required_accommodation_types\"]",
+  "official_phase2_evaluation": true
+}

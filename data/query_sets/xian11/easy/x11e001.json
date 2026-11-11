@@ -1,0 +1,36 @@
+{
+ "uid": "x11e001",
+ "tag": "easy",
+ "start_city": "西安",
+ "target_city": "北京",
+ "days": 1,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==1)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=3000)"
+ ],
+ "nature_language": "当前位置西安。我们三个人想去北京玩1天，预算3000元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 北京 for 1 day(s); with a budget of 3000 RMB. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "total_budget"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

@@ -1,0 +1,1938 @@
+{
+  "label": "offline_identity_triage_not_dispatch_or_evidence_acceptance",
+  "catalog_sha256": "58a368a7d3d8ec66208fc7a42da3556b44f5b299b7fed849de32c868003dbdac",
+  "input_sha256": {
+    "identity_queue": "f007a47945202de2a561c32fe8836161025546329c95f6637b54803b4b9bbb5c",
+    "text_triage": "eb30237264dca941f361499f9fa63cc2e818ab11054445ec0066a0a3947e017a"
+  },
+  "entity_count": 120,
+  "entities_with_two_or_more_historical_families": 36,
+  "entities_with_one_historical_family": 68,
+  "entities_without_historical_families": 16,
+  "sort": "number of affected development tasks, then historical family count; not an evidence quality ranking",
+  "notes": [
+    "Different stored family names are leads, not proof of independent provenance.",
+    "Paused and unknown families remain restricted; this list grants no access.",
+    "Names, cities, kinds and all retained claims remain unverified."
+  ],
+  "rows": [
+    {
+      "entity_id": "p30:117e8f65317ad5bde3254d118beb",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "曾厝垵",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 2,
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:1716739acc99d43c49a0e93e7347",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "岳麓山",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 3
+      },
+      "claim_reference_count": 9,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:2fb1c1061b82a44390599435304a",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "西安丽思卡尔顿酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 3
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3d859ce4762701706ab43dccf431",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "西安W酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 3
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:60ea24405ed577f96ccb3c02d1ec",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "长沙会展诺富特酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 2,
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:7ae9269f2b9890b82dd022e853d0",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "厦门大学(思明校区)",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "unregistered": 2,
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:8e32e7105b3eee8cb8675a424ad9",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "长沙会展宜必思尚品酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 2,
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 4,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:ae6615bf0fed81dba1ae13bf3584",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "宁波凯洲皇冠假日酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1,
+        "unregistered": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:cdd64f14cc7f199ab0d5ae2dca1b",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "天心阁",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 2,
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:fb7b7b23ae31f0319abdc2f9d1cd",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "西安威斯汀大酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 3,
+      "historical_source_access_states": {
+        "paused": 3
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 3,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:097a7fa0572127dcf8d5c502e2d3",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "石老人海水浴场",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:1e27411fc6e477084f4fbd5c5014",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "西安钟楼",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 2
+      },
+      "claim_reference_count": 9,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:211c3fa14fa3421f14b33a647d6b",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "达蓬山旅游度假区",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:27c245d3f2222d1496c75e4a3e62",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "五四广场",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:2c361ef7d58b8a1d11ceb48bdb6f",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "宁波博物馆",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:2c57e7f3da0526b8946d2e0bb733",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "湖南第一师范学院城南书院校区",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 2
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:35d2e6165f55ac2f58dbc573bc78",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "天主教堂（圣弥厄尔教堂）",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:40d6cbdf43a46da847d85266fda9",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "开元宁波九龙湖度假村",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:44349c9b53f9f42df307374deaaa",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "青岛饭店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:4524b9e329ca04a1fac33ea5e701",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "瑞颐大酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 1,
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:4bcde7f1523648ece225be426918",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "钱湖渔港",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 1,
+        "unregistered": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:54e6d2d2ff1ab189d145e440f628",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "宁波朗豪酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 2,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:6ddd88c33f98e3c85dc1fe065acd",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "长沙环球融创施柏阁酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:8c7c1c5c7c168957cd363723cd5a",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "青岛市美术馆",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:95dcbc6ac68d81610f4dbe07bc7b",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "阿呆姜母鸭(大同路店)",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 1,
+        "unregistered": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:9788cab1cde1cf68225d56513646",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "陕西考古博物馆",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 2
+      },
+      "claim_reference_count": 9,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:9d7291c031c1ff04c0e4692d2258",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "慈城古县城",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:a912ca6e5e3afed499076ac6da27",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "厦门佰翔软件园酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 2
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b0b529617b6693c7472c99955cfe",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "大明宫国家遗址公园",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 2
+      },
+      "claim_reference_count": 9,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b5eda0643494ef28af53beb69621",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "厦门方特梦幻王国",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:bbec274cbd06da6b071a6aa0f34b",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "招宝山旅游风景区",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unknown": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:c77b7cae9e6a565b778664b5e3bb",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "灵玲国际马戏城",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d07fb2503c40d048734ee1a31ef9",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "贾谊故居",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 2
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d6a5c861f444078caed30412ff97",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "长沙茉莉花国际酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "unregistered": 1,
+        "paused": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:e17146fa00d522de617dda34151c",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "樊记腊汁肉夹馍",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 2
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:f4feaf73995737fad06048ec8a8a",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "厦门鹭江・佲家酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 2,
+      "historical_source_access_states": {
+        "paused": 1,
+        "unregistered": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:107f29d86554de42766c368ff6f1",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "青岛海鸥艺术民宿",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:18a20680e5b62bf904da63bf06a4",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "刘百味粉馆",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:2129f8e26b7b632a8e4d8a988886",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "全季酒店(厦门大学店)",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:255092ad24946aa1e22946819627",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "沃德·观云里酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 1,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3b7a8a248f9b6e3b44d4087d5e11",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "中信宁波国际大酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 1,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3da8fecfbf36f0688de86f2e795f",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "缸鸭狗",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3fe9480068fae4dcda33361a9623",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "P95 Pub House",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:58147d9f5c0a345185b22ba76475",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "五兰沙茶面(曾厝垵店)",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:5d3308b6282d0b17aebdd09b4ab2",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "老街鱼嘴巴",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:62c5403d22fc460af307cce4770a",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "天下第一面",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 6,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:8fd24a2fbbe81543ab8015088bdb",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "浮屿大同鸭肉粥",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:9914dc008c25e4e4894c128bacc8",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "青岛若七酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:9eba2bb54863afc88200d4528775",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "21克拉烘焙",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b5e7f0cd317ade535ca8a402cef1",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "attraction",
+      "stored_name_unverified": "大兴善寺",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b86c307bcd8defc8c618249e02fe",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "Seasonal Tastes",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 4,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:c7a93f59a77e7e79a7932680d2f3",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "天宝兄弟",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d3afef47ba72b458d12cf784505d",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "黄老伯的海蛎煎(鼓浪屿)",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:da9026ffca9663b7e0475b2dc3e6",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "公交新村粉店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:de5798913ffa2ec61dc076b90db9",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "老香港手工蛋糕",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 1,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:f02399d4ac2f7a04cb73dd107fb0",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "梅龙镇酒家",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 2,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:f2abb743041f71516ea4c902610d",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "米奥米亲子度假乐园（青岛栈桥中山路店）",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 2,
+      "distinct_evidence_id_count": 2,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:4bebfe1e2234c84776182f8c61eb",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "丫蛋东北铁锅炖鱼陕汽南门老店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:5947ef65bf5e61d7aa021e33567b",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "restaurant",
+      "stored_name_unverified": "不二京涮",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d9022638c5901734342ceb02508d",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "accommodation",
+      "stored_name_unverified": "Hilton Xi'an 西安万达希尔顿酒店",
+      "affected_development_task_count": 3,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:0a9dbf16b54dc8dbdecc79352dc4",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "角美东-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:1f7d761138b133c12778d15883a6",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "宁波西枢纽-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:317729326fcd0959d408d6b3f234",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "洪盛路-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:3f678bb98583d44c066d9b791278",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "大托-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:62b3428e11c6f8b0e00381aff497",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "湖滨中路-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:64d148ef5692afbe79fa3d104e17",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "井冈山路-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:76b7a644280fcc790aa02daeadf6",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "青岛科大-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:921e66a8982447d89f0811519f88",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "长沙火车-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:964a4c8523e6bc6207ff1b8c6190",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "五缘湾-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:995002f0e628b9e57ec14401dc46",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "大塘-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:b01be8b8dba238383cd7c8455b7d",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "兴宁桥西-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:f044d89968f71d04c86af28f415a",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "大明宮-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:f2e686b0bb7984321f02f4c1d29c",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "青龙寺-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:f43a3f4c39af3d0d07b339891405",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "积米崖-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p29-wd:f446ebd1d3e450a0ea13d012a23f",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "metro_station",
+      "stored_name_unverified": "曲江池西-地铁站",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 3,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:023d34e55fe750b9b91014e18a98",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "FM9392",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:0ecda39fdf658199ba51725bb737",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "G55096",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:1bbb56e31a196073c6def9c1e8ee",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G1856",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:1ca56a3c78fe6036188de409fd10",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "D2913",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:26ef73c0fddeebe31cce62510521",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "D2339",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:27246b3b00b559dd7a72f4e58573",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "D3234",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:29a3faf46103055b9cf4c67a0787",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "3U6532",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:2d482a4b4a9a62975c843c08684b",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G6053",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3e9a68fd2e128bcc0134efd977f6",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G209",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:41c34f42b26d57e0cd44bc2f6a2f",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G504",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:4cbf94f73ef8fd40491868e59938",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "MU6655",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:558d8495becb44252947e2305bce",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G1856",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:626658acdf91f29ab1518b0a6c44",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "SC4656",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:64a8f6579b4d4635b322c237568e",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "栈桥",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 1,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:68af7b61db9a894ab9fafed0893e",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "SC4874",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:6bde55a8716dc5bc3d4ee814d38f",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "MF8501",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:6c9ca3eec6962658d8d8781f4992",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G89",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:7265344ef22d9ac2e919a0ef7d10",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "CZ3672",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:7ce6e4c8cae2416c698be6e9144d",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G1434",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:89645d15cc51e8eda98d895f350a",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "CA1206",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:8b3ca60568cd9ebda3a10e8e83dc",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "MF8217",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:9c69f34dd745c6dbd7c6d03a0569",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "五四广场",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 1,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b0110dfb9db8f59784cad0daa261",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "D3307",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b1a96ff2f510fcfa148b2532393a",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G366",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b3dbd75f6d62e290c056a1ffc4ef",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "MU2303",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:b5652fc69ef9689fa6c6371eeca2",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "SC4771",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:bc089e1c4b9879fcaca3dff98c8c",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "HU7136",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:c4eca76afa4d5e251d8336a6f80b",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "MF8511",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d175a3334163b29b7253d3a34b9a",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G1344",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:e0928fef7f216dfa7d1778d608ee",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "flight",
+      "stored_name_unverified": "SC4675",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unknown": 1
+      },
+      "claim_reference_count": 5,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:e943f1fc68ed7a6b8911916c591e",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "D941",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "unregistered": 1
+      },
+      "claim_reference_count": 7,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:eee1265b2ca8436432c87fd26bce",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "train",
+      "stored_name_unverified": "G982",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 1,
+      "historical_source_access_states": {
+        "paused": 1
+      },
+      "claim_reference_count": 8,
+      "distinct_evidence_id_count": 1,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:027abef6cb39e1c4cd44db1fd929",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "宁波万豪酒店",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:287113d9a0f4146fc5161d95c48e",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "宁波东钱湖华茂希尔顿酒店",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3446ead89e81425f1c26abf6e900",
+      "stored_city_unverified": "宁波",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "钱湖渔港",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3c0365737df18a76361a6444802d",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "西安博物院",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:3ef044258dd242ffbb8d6872a769",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "哈利德餐厅",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:5b090acc0cf77077b1d21a1792a1",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "益华家菜屋",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:6377117c345d085ddb7151835d81",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "月华沙茶面店(镇邦路)",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:6f3f24f8255cd1b7fa26d700dddc",
+      "stored_city_unverified": "青岛",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "沃德·观云里酒店",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:af36ffe765e9cd78fccab06f13db",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "娟娟餐馆",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:be5d8a761ac5d6eb8717ed9058df",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "厦门鹭江宾馆",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d52b465b1b791495528d80eb977d",
+      "stored_city_unverified": "长沙",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "炊烟小炒黄牛肉",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d5a8b127b40fa835fa98cbe25c46",
+      "stored_city_unverified": "西安",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "长安大牌档",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    },
+    {
+      "entity_id": "p30:d82bb04c73f4f4dafd47b4f8d281",
+      "stored_city_unverified": "厦门",
+      "stored_kind_unverified": "poi",
+      "stored_name_unverified": "厦门大学逸夫楼(建文楼)",
+      "affected_development_task_count": 1,
+      "historical_source_family_count": 0,
+      "historical_source_access_states": {},
+      "claim_reference_count": 0,
+      "distinct_evidence_id_count": 0,
+      "direct_observation_time_count": 0,
+      "identity_verified": false,
+      "source_access_authorized": false
+    }
+  ],
+  "input_paths": {
+    "identity_queue": "results/manual_20261031_2107/identity_review_queue.json",
+    "text_triage": "results/manual_20261101_1803/retained_evidence_triage_v5.json"
+  }
+}

@@ -1,0 +1,44 @@
+{
+ "uid": "x11m014",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "上海",
+ "days": 4,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=2000)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=40)",
+  "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='12:00')"
+ ],
+ "nature_language": "当前位置西安。我们三个人想去上海玩4天，住2间房，每天预算不超过2000元，每餐人均不超过40元，去程12:00之后出发，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 上海 for 4 day(s); book 2 room(s), with a daily budget under 2000 RMB, meal cost under 40 RMB per person, depart after 12:00. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "room_count",
+  "daily_budget",
+  "restaurant_budget",
+  "outbound_departure_deadline"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "room",
+  "schedule",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

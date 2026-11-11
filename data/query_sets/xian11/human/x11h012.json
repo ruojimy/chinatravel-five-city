@@ -1,0 +1,38 @@
+{
+ "uid": "x11h012",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "南京",
+ "days": 4,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 300)",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)"
+ ],
+ "nature_language": "[当前位置西安,目标位置南京,旅行人数3,旅行天数4] 别安排得太赶，每晚人均住宿不超过300元，往返坐火车。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 南京 for 4 day(s); hotel cost under 300 RMB per person per night, travel by train both ways. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "accommodation_budget",
+  "intercity_modes_include"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

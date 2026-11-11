@@ -1,0 +1,382 @@
+[
+ {
+  "TrainID": "G366",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "09:10",
+  "EndTime": "13:30",
+  "Duration": 4.33,
+  "Cost": 618.0
+ },
+ {
+  "TrainID": "G652",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "07:07",
+  "EndTime": "12:13",
+  "Duration": 5.1,
+  "Cost": 618.0
+ },
+ {
+  "TrainID": "D20",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "19:19",
+  "EndTime": "07:08",
+  "Duration": 11.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "K546",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "00:05",
+  "EndTime": "16:48",
+  "Duration": 16.72,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z180",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "00:27",
+  "EndTime": "13:33",
+  "Duration": 13.1,
+  "Cost": null
+ },
+ {
+  "TrainID": "D102",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "02:00",
+  "EndTime": "14:31",
+  "Duration": 12.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "D30",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "02:06",
+  "EndTime": "14:37",
+  "Duration": 12.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "K508",
+  "TrainType": "普速",
+  "From": "西安东",
+  "To": "北京西",
+  "BeginTime": "06:05",
+  "EndTime": "21:38",
+  "Duration": 15.55,
+  "Cost": null
+ },
+ {
+  "TrainID": "G654",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "07:47",
+  "EndTime": "13:17",
+  "Duration": 5.5,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1044",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "清河",
+  "BeginTime": "08:05",
+  "EndTime": "16:17",
+  "Duration": 8.2,
+  "Cost": null
+ },
+ {
+  "TrainID": "G358",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "10:02",
+  "EndTime": "14:21",
+  "Duration": 4.32,
+  "Cost": null
+ },
+ {
+  "TrainID": "G322",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "10:09",
+  "EndTime": "14:26",
+  "Duration": 4.28,
+  "Cost": null
+ },
+ {
+  "TrainID": "G672",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "10:20",
+  "EndTime": "15:48",
+  "Duration": 5.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "G686",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "10:39",
+  "EndTime": "16:19",
+  "Duration": 5.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "G658",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "10:45",
+  "EndTime": "16:42",
+  "Duration": 5.95,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1046",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "清河",
+  "BeginTime": "11:21",
+  "EndTime": "18:53",
+  "Duration": 7.53,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1050",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "清河",
+  "BeginTime": "11:48",
+  "EndTime": "19:16",
+  "Duration": 7.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1406",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "12:00",
+  "EndTime": "17:14",
+  "Duration": 5.23,
+  "Cost": null
+ },
+ {
+  "TrainID": "G354",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "12:04",
+  "EndTime": "16:32",
+  "Duration": 4.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "G660",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "13:04",
+  "EndTime": "18:54",
+  "Duration": 5.83,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1308",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京丰台",
+  "BeginTime": "14:11",
+  "EndTime": "20:22",
+  "Duration": 6.18,
+  "Cost": null
+ },
+ {
+  "TrainID": "G368",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "14:26",
+  "EndTime": "18:37",
+  "Duration": 4.18,
+  "Cost": null
+ },
+ {
+  "TrainID": "G970",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "14:57",
+  "EndTime": "20:20",
+  "Duration": 5.38,
+  "Cost": null
+ },
+ {
+  "TrainID": "G662",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "15:04",
+  "EndTime": "20:35",
+  "Duration": 5.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2456",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京北",
+  "BeginTime": "15:15",
+  "EndTime": "22:00",
+  "Duration": 6.75,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1592",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "15:27",
+  "EndTime": "20:30",
+  "Duration": 5.05,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3932",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "16:01",
+  "EndTime": "21:16",
+  "Duration": 5.25,
+  "Cost": null
+ },
+ {
+  "TrainID": "G362",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "16:10",
+  "EndTime": "20:45",
+  "Duration": 4.58,
+  "Cost": null
+ },
+ {
+  "TrainID": "G674",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "16:51",
+  "EndTime": "22:55",
+  "Duration": 6.07,
+  "Cost": null
+ },
+ {
+  "TrainID": "D40",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "17:31",
+  "EndTime": "06:00",
+  "Duration": 12.48,
+  "Cost": null
+ },
+ {
+  "TrainID": "G324",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "18:22",
+  "EndTime": "22:32",
+  "Duration": 4.17,
+  "Cost": null
+ },
+ {
+  "TrainID": "G352",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "18:27",
+  "EndTime": "22:37",
+  "Duration": 4.17,
+  "Cost": null
+ },
+ {
+  "TrainID": "G370",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "北京西",
+  "BeginTime": "19:00",
+  "EndTime": "23:17",
+  "Duration": 4.28,
+  "Cost": null
+ },
+ {
+  "TrainID": "D42",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "20:23",
+  "EndTime": "08:49",
+  "Duration": 12.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "T56",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "北京丰台",
+  "BeginTime": "20:30",
+  "EndTime": "10:23",
+  "Duration": 13.88,
+  "Cost": null
+ },
+ {
+  "TrainID": "D44",
+  "TrainType": "高铁",
+  "From": "西安",
+  "To": "北京西",
+  "BeginTime": "20:35",
+  "EndTime": "08:23",
+  "Duration": 11.8,
+  "Cost": null
+ },
+ {
+  "TrainID": "D118",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "北京丰台",
+  "BeginTime": "21:53",
+  "EndTime": "10:44",
+  "Duration": 12.85,
+  "Cost": null
+ },
+ {
+  "TrainID": "D16",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "北京西",
+  "BeginTime": "23:34",
+  "EndTime": "12:16",
+  "Duration": 12.7,
+  "Cost": null
+ }
+]

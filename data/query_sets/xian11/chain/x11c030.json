@@ -1,0 +1,32 @@
+{
+ "schema_version": "shorttrip-dynamic-v1",
+ "uid": "x11c030",
+ "nature_language": "4人从武汉出发，途经西安、上海，共4天；在西安安排善兴寺，请核对跨城班次与到达时刻，没有班次或坐标证据时保留待定连接，切勿编造车次。",
+ "people_number": 4,
+ "city_sequence": [
+  "武汉",
+  "西安",
+  "上海"
+ ],
+ "dates": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12",
+  "2026-11-13"
+ ],
+ "level": "human",
+ "candidates": [],
+ "retrieval_budget": 8,
+ "requirements": {
+  "must_visit": [
+   "善兴寺"
+  ],
+  "city_role": "middle"
+ },
+ "xian11": {
+  "chain_type": "three_city_xian_middle",
+  "xian_role": "middle",
+  "translation": "controlled_template",
+  "native_compatible": false
+ }
+}

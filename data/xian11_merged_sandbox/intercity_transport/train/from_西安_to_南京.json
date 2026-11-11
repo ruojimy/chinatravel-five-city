@@ -1,0 +1,22 @@
+[
+ {
+  "TrainID": "G92",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "南京南",
+  "BeginTime": "08:51",
+  "EndTime": "13:32",
+  "Duration": 4.68,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1888",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "南京南",
+  "BeginTime": "16:17",
+  "EndTime": "22:42",
+  "Duration": 6.42,
+  "Cost": null
+ }
+]

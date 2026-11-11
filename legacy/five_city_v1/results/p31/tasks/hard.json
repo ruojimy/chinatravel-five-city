@@ -1,0 +1,7339 @@
+[
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D01",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从西安北站出发，一天内看西安的大明宫国家遗址公园、西安钟楼、西安鼓楼，午饭在三阳开泰酒楼(新旅城店)，全程地铁公交，18:30 前回到西安北站。总预算 490 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:b0b529617b6693c7472c99955cfe",
+    "name": "大明宫国家遗址公园",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 107975805814154,
+     "lat": 34.291388888,
+     "lon": 108.959444444,
+     "name": "大明宫国家遗址公园",
+     "opentime": "08:30",
+     "price": 60.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 2.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/daming-palace",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "公园",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:1e27411fc6e477084f4fbd5c5014",
+    "name": "西安钟楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 16983358412743,
+     "lat": 34.26101,
+     "lon": 108.94238,
+     "name": "西安钟楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/bell-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:bf82985fc0e82feb1cbcad42e655",
+    "name": "西安鼓楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 65110926856218,
+     "lat": 34.261793573,
+     "lon": 108.93893069,
+     "name": "西安鼓楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/drum-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:75da097b67eeec5369d92bba8293",
+    "name": "三阳开泰酒楼(新旅城店)",
+    "city": "西安",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "中餐",
+     "endtime": "22:00",
+     "id": 164889488820071,
+     "lat": 34.237428,
+     "lon": 108.953455,
+     "name": "三阳开泰酒楼(新旅城店)",
+     "opentime": "09:00",
+     "price": 65.0,
+     "recommendedfood": "四季烤麸,清炒鸡毛菜,豆腐节红烧肉,上海豆腐,糖醋里脊,红烧狮子头,四鲜烤麸,红烧小黄鱼,小黄鱼烧豆腐,红烧肉百结,上海油爆虾,三黄鸡,鱼香茄子,酒酿小圆子,干烧大黄鱼,红烧肉豆腐结,双人餐,响油烧鳝糊,狮子头,响油鳝糊"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://restapi.amap.com/v5/place/text",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 490.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 490.0,
+   "known_cost": 370.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D02",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从西安站出发，一天内看西安的西安鼓楼、西安钟楼、回民街，午饭在不二京涮，全程地铁公交，18:30 前回到西安站。总预算 450 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:bf82985fc0e82feb1cbcad42e655",
+    "name": "西安鼓楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 65110926856218,
+     "lat": 34.261793573,
+     "lon": 108.93893069,
+     "name": "西安鼓楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/drum-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:1e27411fc6e477084f4fbd5c5014",
+    "name": "西安钟楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 16983358412743,
+     "lat": 34.26101,
+     "lon": 108.94238,
+     "name": "西安钟楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/bell-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c3aa2af9d01af442f04ed86ca22",
+    "name": "回民街",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 197217566423915,
+     "lat": 34.2638,
+     "lon": 108.934,
+     "name": "回民街",
+     "opentime": "10:00",
+     "price": 0.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "商业街区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/muslim-quarter",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "街巷",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:5947ef65bf5e61d7aa021e33567b",
+    "name": "不二京涮",
+    "city": "西安",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "老北京火锅",
+     "endtime": "23:30",
+     "id": 170079504732887,
+     "lat": 34.254872,
+     "lon": 108.962404,
+     "name": "不二京涮",
+     "opentime": "10:30",
+     "price": 104.0,
+     "recommendedfood": "羊肉,涮羊肉,盐池滩羊手切鲜羊健,涮肉,烤肉,牛肉,老北京油爆肚"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://restapi.amap.com/v5/place/text",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 450.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 450.0,
+   "known_cost": 328.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D03",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从西安北站出发，一天内看西安的汉长安城未央宫遗址公园、广仁寺、西安化觉巷清真大寺，午饭在东北王酱骨，全程地铁公交，18:30 前回到西安北站。总预算 290 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:84b35ae61a22c0d5bf938ba11231",
+    "name": "汉长安城未央宫遗址公园",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 176253491885904,
+     "lat": 34.30444444,
+     "lon": 108.85722222,
+     "name": "汉长安城未央宫遗址公园",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/weiyang-palace",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "公园",
+      "status": "source_category"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6114fa0da8bba1d073f22716dd1f",
+    "name": "广仁寺",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 270078180048647,
+     "lat": 34.27642353,
+     "lon": 108.92108583,
+     "name": "广仁寺",
+     "opentime": "08:00",
+     "price": 0.0,
+     "recommendmaxtime": 1.5,
+     "recommendmintime": 0.75,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/guangren-temple",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d2666975f7678da9301960c02537",
+    "name": "西安化觉巷清真大寺",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:40",
+     "id": 14841590863548,
+     "lat": 34.2637,
+     "lon": 108.9313,
+     "name": "西安化觉巷清真大寺",
+     "opentime": "08:00",
+     "price": 25.0,
+     "recommendmaxtime": 1.5,
+     "recommendmintime": 0.75,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/great-mosque",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b6ea9241f2ea2eda3ea4f00923e8",
+    "name": "东北王酱骨",
+    "city": "西安",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "东北菜",
+     "endtime": "22:00",
+     "id": 210926158331517,
+     "lat": 34.236565,
+     "lon": 108.935669,
+     "name": "东北王酱骨",
+     "opentime": "09:30",
+     "price": 59.0,
+     "recommendedfood": "大拉皮,锅包肉,拆骨肉炖酸菜,农家一锅出,酱骨头,东北菜,熘肉段,猪肉炖粉条,锅包肉,溜肉段,酱骨头"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://restapi.amap.com/v5/place/text",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 290.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 290.0,
+   "known_cost": 168.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D04",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从西安站出发，一天内看西安的回民街、西安都城隍庙、西安化觉巷清真大寺，午饭在东哥紫阳蒸盆子(旺座现代城C座店)，全程地铁公交，18:30 前回到西安站。总预算 310 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:6c3aa2af9d01af442f04ed86ca22",
+    "name": "回民街",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 197217566423915,
+     "lat": 34.2638,
+     "lon": 108.934,
+     "name": "回民街",
+     "opentime": "10:00",
+     "price": 0.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "商业街区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/muslim-quarter",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "街巷",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:1ad5a2caf357e8e03474b961e626",
+    "name": "西安都城隍庙",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 155096064384577,
+     "lat": 34.263219865,
+     "lon": 108.93270343,
+     "name": "西安都城隍庙",
+     "opentime": "08:30",
+     "price": 0.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-god-temple",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d2666975f7678da9301960c02537",
+    "name": "西安化觉巷清真大寺",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:40",
+     "id": 14841590863548,
+     "lat": 34.2637,
+     "lon": 108.9313,
+     "name": "西安化觉巷清真大寺",
+     "opentime": "08:00",
+     "price": 25.0,
+     "recommendmaxtime": 1.5,
+     "recommendmintime": 0.75,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/great-mosque",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:5bbaa514c12c89e9d32fbbbb2953",
+    "name": "东哥紫阳蒸盆子(旺座现代城C座店)",
+    "city": "西安",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "西北菜",
+     "endtime": "21:30",
+     "id": 101150086622100,
+     "lat": 34.21773,
+     "lon": 108.886748,
+     "name": "东哥紫阳蒸盆子(旺座现代城C座店)",
+     "opentime": "10:00",
+     "price": 70.0,
+     "recommendedfood": "卤猪蹄,紫阳蒸盆子"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://restapi.amap.com/v5/place/text",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 310.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 310.0,
+   "known_cost": 190.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D05",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从厦门北站出发，一天内看厦门的厦门科技馆、厦门园林植物园、钟鼓索道，午饭在临家闽南菜(环岛路店)，全程地铁公交，18:30 前回到厦门北站。总预算 870 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f02908aa0e6eacf4fa9afaf63e57",
+    "name": "厦门科技馆",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 83767650338061,
+     "lat": 24.490264,
+     "lon": 118.108127,
+     "name": "厦门科技馆",
+     "opentime": "09:00",
+     "price": 140,
+     "recommendmaxtime": 5,
+     "recommendmintime": 3,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a302a282d064fd798356c3383f2c",
+    "name": "厦门园林植物园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 216163219282179,
+     "lat": 24.455259044615,
+     "lon": 118.0904038514,
+     "name": "厦门园林植物园",
+     "opentime": "06:30",
+     "price": 30,
+     "recommendmaxtime": 5,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.xiamenbg.cn/Home/yyzn2",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "植物园",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "雨林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3a66083b38ce329afe695a4e5885",
+    "name": "钟鼓索道",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 165511573851304,
+     "lat": 24.4510271,
+     "lon": 118.0896061,
+     "name": "钟鼓索道",
+     "opentime": "08:30",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": 0.67,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%92%9F%E9%BC%93%E7%B4%A2%E9%81%93&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:8fb0d4bf30cdc7f8b0c993ceb824",
+    "name": "临家闽南菜(环岛路店)",
+    "city": "厦门",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "闽菜",
+     "endtime": "21:00",
+     "id": 14920091824658,
+     "lat": 24.426863,
+     "lon": 118.119765,
+     "name": "临家闽南菜(环岛路店)",
+     "opentime": "11:00",
+     "price": 125.0,
+     "recommendedfood": "原味土猪汤,鸡汤捞面线,临家姜母鸭,香煎山地鸡,炒清水岩笋干笋叶,蚵仔煎,闽南炸醋肉,安溪咸笋包,现点卤水豆腐,土笋冻,油条,特色小吃,特色菜,豆腐,下午茶,拌饭,米汤,鱿鱼,鸭肉,姜母鸭"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://restapi.amap.com/v5/place/text",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "闽菜",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "view",
+      "value": "日落",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 870.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 870.0,
+   "known_cost": 750.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D06",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从厦门站出发，一天内看厦门的沙坡尾、厦门双子塔、白城沙滩，午饭在乌糖沙茶面(民族路店)，全程地铁公交，18:30 前回到厦门站。总预算 510 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:38c16217096f033730f7c3cbdd60",
+    "name": "沙坡尾",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 155680731809938,
+     "lat": 24.4398901,
+     "lon": 118.0829431,
+     "name": "沙坡尾",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "人文景观"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "http://xm.bendibao.com/tour/201964/57337.shtm",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:e40c9deb857c260383e085a0b094",
+    "name": "厦门双子塔",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 115624532111529,
+     "lat": 24.4383556,
+     "lon": 118.0837041,
+     "name": "厦门双子塔",
+     "opentime": null,
+     "price": 155,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "人文景观"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E4%B8%96%E8%8C%82%E6%B5%B7%E5%B3%A1%E5%A4%A7%E5%8E%A6&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:e3fc6eba3b9b3b633297a6b64919",
+    "name": "白城沙滩",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 101131819747714,
+     "lat": 24.4332909,
+     "lon": 118.0996332,
+     "name": "白城沙滩",
+     "opentime": "00:00",
+     "price": null,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "price",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7368dceee5d18cfed59b14eedf86",
+    "name": "乌糖沙茶面(民族路店)",
+    "city": "厦门",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "小吃",
+     "endtime": "14:30",
+     "id": 94480642414157,
+     "lat": 24.4463069,
+     "lon": 118.0793162,
+     "name": "乌糖沙茶面(民族路店)",
+     "opentime": "05:30",
+     "price": 41,
+     "recommendedfood": "鱿鱼、海蛎、米血、豆干、鱼丸"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://gs.ctrip.com/html5/you/foods/Xiamen21/317925.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "小吃",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 510.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 510.0,
+   "known_cost": 392.0,
+   "unknown_price_items": [
+    "白城沙滩:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D07",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从厦门北站出发，一天内看厦门的钟鼓索道、厦门园林植物园、南普陀寺，午饭在南普陀素菜馆(普照楼)，全程地铁公交，18:30 前回到厦门北站。总预算 460 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:3a66083b38ce329afe695a4e5885",
+    "name": "钟鼓索道",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 165511573851304,
+     "lat": 24.4510271,
+     "lon": 118.0896061,
+     "name": "钟鼓索道",
+     "opentime": "08:30",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": 0.67,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%92%9F%E9%BC%93%E7%B4%A2%E9%81%93&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a302a282d064fd798356c3383f2c",
+    "name": "厦门园林植物园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 216163219282179,
+     "lat": 24.455259044615,
+     "lon": 118.0904038514,
+     "name": "厦门园林植物园",
+     "opentime": "06:30",
+     "price": 30,
+     "recommendmaxtime": 5,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.xiamenbg.cn/Home/yyzn2",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "植物园",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "雨林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3272b4f9ef5c27640c0f5b5661c5",
+    "name": "南普陀寺",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194961818784519,
+     "lat": 24.4432578,
+     "lon": 118.0915032,
+     "name": "南普陀寺",
+     "opentime": "08:00",
+     "price": 0,
+     "recommendmaxtime": 3,
+     "recommendmintime": 1,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "佛教寺院",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:30c7388f921f46860196664798a3",
+    "name": "南普陀素菜馆(普照楼)",
+    "city": "厦门",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "素食",
+     "endtime": null,
+     "id": 152003487422122,
+     "lat": 24.4435883,
+     "lon": 118.0922623,
+     "name": "南普陀素菜馆(普照楼)",
+     "opentime": null,
+     "price": 59,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.iflying.com/xiamen/meishi/",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 460.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 460.0,
+   "known_cost": 338.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D08",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从厦门站出发，一天内看厦门的鼓浪屿管风琴艺术中心、中山路步行街、沙坡尾，午饭在大方素菜馆，全程地铁公交，18:30 前回到厦门站。总预算 240 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:972d150f0a008667ad8880162707",
+    "name": "鼓浪屿管风琴艺术中心",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 71015241500172,
+     "lat": 24.4510653,
+     "lon": 118.0638624,
+     "name": "鼓浪屿管风琴艺术中心",
+     "opentime": "08:30",
+     "price": null,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%BC%93%E6%B5%AA%E5%B1%BF%E7%AE%A1%E9%A3%8E%E7%90%B4%E8%89%BA%E6%9C%AF%E4%B8%AD%E5%BF%83&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "price",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:e6c96bf43d7b7fc08d4619b3a049",
+    "name": "中山路步行街",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 228597371954287,
+     "lat": 24.4565521,
+     "lon": 118.0746864,
+     "name": "中山路步行街",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.chinahighlights.com/xiamen/free-things-to-do.htm",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:38c16217096f033730f7c3cbdd60",
+    "name": "沙坡尾",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 155680731809938,
+     "lat": 24.4398901,
+     "lon": 118.0829431,
+     "name": "沙坡尾",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "人文景观"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "http://xm.bendibao.com/tour/201964/57337.shtm",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:362b2e67b924339aacc89e9d1c25",
+    "name": "大方素菜馆",
+    "city": "厦门",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "素食",
+     "endtime": null,
+     "id": 123536113828635,
+     "lat": 24.4429149,
+     "lon": 118.0878426,
+     "name": "大方素菜馆",
+     "opentime": null,
+     "price": 60,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E7%B4%A0%E8%8F%9C%E9%A6%86&format=jsonv2&limit=5&extratags=1&viewbox=117.85%2C24.95%2C118.45%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "vegetarian",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 240.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 240.0,
+   "known_cost": 120.0,
+   "unknown_price_items": [
+    "鼓浪屿管风琴艺术中心:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D09",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从宁波站出发，一天内看宁波的庆安会馆、宁波老外滩、宁波美术馆，午饭在宁波状元楼，全程地铁公交，18:30 前回到宁波站。总预算 440 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f3a9a11c60f9a131b5687bffa035",
+    "name": "庆安会馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 271966989459985,
+     "lat": 29.87472222,
+     "lon": 121.55888889,
+     "name": "庆安会馆",
+     "opentime": "08:30",
+     "price": 10.0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://zh.wikipedia.org/zh-cn/%E5%BA%86%E5%AE%89%E4%BC%9A%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:526d26a70e59235ae021bdb2fb29",
+    "name": "宁波美术馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 30412075616599,
+     "lat": 29.880753197796327,
+     "lon": 121.55696760727108,
+     "name": "宁波美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.0,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://you.ctrip.com/sight/ningbo83/1482301.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:74aa5523d6f5fb877e0e5dfc4d32",
+    "name": "宁波状元楼",
+    "city": "宁波",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "江浙菜",
+     "endtime": "13:30",
+     "id": 19428825425689,
+     "lat": 29.8774607,
+     "lon": 121.5505255,
+     "name": "宁波状元楼",
+     "opentime": "10:30",
+     "price": 151.0,
+     "recommendedfood": "腐皮包黄鱼,苔菜江白虾"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://post.smzdm.com/p/a3g7m895/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 440.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 440.0,
+   "known_cost": 322.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D10",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从宁波站出发，一天内看宁波的天封塔、月湖公园、宁波鼓楼，午饭在缸鸭狗，全程地铁公交，18:30 前回到宁波站。总预算 200 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:aee438703dc65c7fbe371605f522",
+    "name": "天封塔",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 213341238644178,
+     "lat": 29.867927195917304,
+     "lon": 121.54670477941396,
+     "name": "天封塔",
+     "opentime": "08:30",
+     "price": null,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://touch.travel.qunar.com/poi/708767",
+    "entity_verified": false,
+    "missing_fields": [
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "heritage_tower",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b58283552d98eb55a527bd26dd4b",
+    "name": "月湖公园",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 114725561378190,
+     "lat": 29.869444,
+     "lon": 121.539444,
+     "name": "月湖公园",
+     "opentime": null,
+     "price": 0.0,
+     "recommendmaxtime": null,
+     "recommendmintime": 3.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/4176",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:2e621d1c3ab0d8954b4cc510e5f2",
+    "name": "宁波鼓楼",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 126990602412702,
+     "lat": 29.876305555,
+     "lon": 121.542361111,
+     "name": "宁波鼓楼",
+     "opentime": null,
+     "price": null,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/5709",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "price",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3da8fecfbf36f0688de86f2e795f",
+    "name": "缸鸭狗",
+    "city": "宁波",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "小吃",
+     "endtime": "14:00",
+     "id": 235149747374487,
+     "lat": 29.870769748220894,
+     "lon": 121.55081525808944,
+     "name": "缸鸭狗",
+     "opentime": "10:30",
+     "price": 41,
+     "recommendedfood": "全家福汤圆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "traditional_tangyuan",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 200.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 200.0,
+   "known_cost": 82.0,
+   "unknown_price_items": [
+    "天封塔:price",
+    "宁波鼓楼:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D11",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从宁波站出发，一天内看宁波的宁波美术馆、宁波老外滩、庆安会馆，午饭在老宁波弄堂菜馆，全程地铁公交，18:30 前回到宁波站。总预算 320 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:526d26a70e59235ae021bdb2fb29",
+    "name": "宁波美术馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 30412075616599,
+     "lat": 29.880753197796327,
+     "lon": 121.55696760727108,
+     "name": "宁波美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.0,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://you.ctrip.com/sight/ningbo83/1482301.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f3a9a11c60f9a131b5687bffa035",
+    "name": "庆安会馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 271966989459985,
+     "lat": 29.87472222,
+     "lon": 121.55888889,
+     "name": "庆安会馆",
+     "opentime": "08:30",
+     "price": 10.0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://zh.wikipedia.org/zh-cn/%E5%BA%86%E5%AE%89%E4%BC%9A%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7321730586a9873b1e0dc22f0a16",
+    "name": "老宁波弄堂菜馆",
+    "city": "宁波",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "江浙菜",
+     "endtime": "14:00",
+     "id": 8277074773348,
+     "lat": 29.824363,
+     "lon": 121.549349,
+     "name": "老宁波弄堂菜馆",
+     "opentime": "10:30",
+     "price": 90,
+     "recommendedfood": "茄子年糕"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "baby_chair",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 320.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 320.0,
+   "known_cost": 200.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D12",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从宁波站出发，一天内看宁波的宁波植物园   Ningbo Botanical Garden、宁波鼓楼、月湖公园，午饭在钱湖渔港，全程地铁公交，18:30 前回到宁波站。总预算 1070 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:bab837cb625e862d38fe48a65fd1",
+    "name": "宁波植物园   Ningbo Botanical Garden",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 43234080880046,
+     "lat": 29.953149766717,
+     "lon": 121.60749435425,
+     "name": "宁波植物园   Ningbo Botanical Garden",
+     "opentime": "08:00",
+     "price": null,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 2.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://touch.travel.qunar.com/poi/10091093",
+    "entity_verified": false,
+    "missing_fields": [
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:2e621d1c3ab0d8954b4cc510e5f2",
+    "name": "宁波鼓楼",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 126990602412702,
+     "lat": 29.876305555,
+     "lon": 121.542361111,
+     "name": "宁波鼓楼",
+     "opentime": null,
+     "price": null,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/5709",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "price",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b58283552d98eb55a527bd26dd4b",
+    "name": "月湖公园",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 114725561378190,
+     "lat": 29.869444,
+     "lon": 121.539444,
+     "name": "月湖公园",
+     "opentime": null,
+     "price": 0.0,
+     "recommendmaxtime": null,
+     "recommendmintime": 3.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/4176",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4bcde7f1523648ece225be426918",
+    "name": "钱湖渔港",
+    "city": "宁波",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "海鲜",
+     "endtime": null,
+     "id": 58764508642686,
+     "lat": 29.7700159,
+     "lon": 121.6384702,
+     "name": "钱湖渔港",
+     "opentime": null,
+     "price": 477.0,
+     "recommendedfood": "钱湖四宝——朋鱼,东海醉花螺,黄鱼面"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://post.smzdm.com/p/a3g7m895/",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "award",
+      "value": "黑珍珠二钻",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1070.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1070.0,
+   "known_cost": 954.0,
+   "unknown_price_items": [
+    "宁波植物园   Ningbo Botanical Garden:price",
+    "宁波鼓楼:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D13",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从长沙南站出发，一天内看长沙的湖南省森林植物园、湖南省科学技术馆、湖南省地质博物馆，午饭在周记粉店，全程地铁公交，18:30 前回到长沙南站。总预算 150 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:72c48f3c5c729e463962c98100b8",
+    "name": "湖南省森林植物园",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 151862049768742,
+     "lat": 28.1065099191,
+     "lon": 113.026270769,
+     "name": "湖南省森林植物园",
+     "opentime": "08:00",
+     "price": 0,
+     "recommendmaxtime": 4,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7abe84a1b43d6c18967c8c15390c",
+    "name": "湖南省科学技术馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:00",
+     "id": 4970178382795,
+     "lat": 28.1110823447,
+     "lon": 112.9803541866,
+     "name": "湖南省科学技术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Tuesday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c93167514c5e7de9001a063474d",
+    "name": "湖南省地质博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 71655155048683,
+     "lat": 28.1111216,
+     "lon": 112.9767069,
+     "name": "湖南省地质博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=3&addressdetails=0&countrycodes=cn&q=%E6%B9%96%E5%8D%97%E7%9C%81%E5%9C%B0%E8%B4%A8%E5%8D%9A%E7%89%A9%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "derived"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:26ddc76d2ca1301553c46ee151a2",
+    "name": "周记粉店",
+    "city": "长沙",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "小吃",
+     "endtime": null,
+     "id": 100458041187132,
+     "lat": 28.1892853,
+     "lon": 112.975235,
+     "name": "周记粉店",
+     "opentime": "00:00",
+     "price": 15,
+     "recommendedfood": "肉丝粉,肉饼蛋粉"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.cityhui.com/shop/21009.html",
+    "entity_verified": false,
+    "missing_fields": [
+     "endtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "小吃",
+      "status": "derived"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 150.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 150.0,
+   "known_cost": 30.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D14",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从长沙站出发，一天内看长沙的新民学会旧址、爱晚亭、太平老街，午饭在夏记粉店，全程地铁公交，18:30 前回到长沙站。总预算 160 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:445bc08c79737d28d9344811d189",
+    "name": "新民学会旧址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 272327668067220,
+     "lat": 28.19687,
+     "lon": 112.94676,
+     "name": "新民学会旧址",
+     "opentime": "09:00",
+     "price": null,
+     "recommendmaxtime": 1,
+     "recommendmintime": 1,
+     "type": "红色景点"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fzh%20%3Fcoord%20%28GROUP_CONCAT%28DISTINCT%20%3Ftl%3Bseparator%3D%22%7C%22%29%20AS%20%3Ftypes%29%20WHERE%20%7B%0A%3Fitem%20wdt%3AP131%2B%20wd%3AQ174091%3B%20wdt%3AP625%20%3Fcoord%3B%20rdfs%3Alabel%20%3Fzh.%20FILTER%28LANG%28%3Fzh%29%3D%22zh%22%29%0A%3Fzhw%20schema%3Aabout%20%3Fitem%3B%20schema%3AisPartOf%20%3Chttps%3A//zh.wikipedia.org/%3E.%0A%3Fitem%20wdt%3AP31%20%3Ft.%20%3Ft%20rdfs%3Alabel%20%3Ftl.%20FILTER%28LANG%28%3Ftl%29%3D%22zh%22%29%0A%7D%20GROUP%20BY%20%3Fitem%20%3Fzh%20%3Fcoord%20LIMIT%203000",
+    "entity_verified": false,
+    "missing_fields": [
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6332c69589fa50ab6445dfee1410",
+    "name": "爱晚亭",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 88572984388830,
+     "lat": 28.184113,
+     "lon": 112.932045,
+     "name": "爱晚亭",
+     "opentime": "00:00",
+     "price": 0,
+     "recommendmaxtime": 1,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fzh%20%3Fcoord%20%28GROUP_CONCAT%28DISTINCT%20%3Ftl%3Bseparator%3D%22%7C%22%29%20AS%20%3Ftypes%29%20WHERE%20%7B%0A%3Fitem%20wdt%3AP131%2B%20wd%3AQ174091%3B%20wdt%3AP625%20%3Fcoord%3B%20rdfs%3Alabel%20%3Fzh.%20FILTER%28LANG%28%3Fzh%29%3D%22zh%22%29%0A%3Fzhw%20schema%3Aabout%20%3Fitem%3B%20schema%3AisPartOf%20%3Chttps%3A//zh.wikipedia.org/%3E.%0A%3Fitem%20wdt%3AP31%20%3Ft.%20%3Ft%20rdfs%3Alabel%20%3Ftl.%20FILTER%28LANG%28%3Ftl%29%3D%22zh%22%29%0A%7D%20GROUP%20BY%20%3Fitem%20%3Fzh%20%3Fcoord%20LIMIT%203000",
+    "entity_verified": false,
+    "missing_fields": [
+     "endtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5d1d11bd0b0d450f52c4f6b7955",
+    "name": "太平老街",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 25882046662652,
+     "lat": 28.19656,
+     "lon": 112.96693,
+     "name": "太平老街",
+     "opentime": "00:00",
+     "price": null,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "endtime",
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:2b0791868b45faf5b952e4283e64",
+    "name": "夏记粉店",
+    "city": "长沙",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "小吃快餐",
+     "endtime": "14:00",
+     "id": 149671089062204,
+     "lat": 28.191869347823,
+     "lon": 112.97340553954,
+     "name": "夏记粉店",
+     "opentime": "06:00",
+     "price": 18,
+     "recommendedfood": "肉丸汤粉、排骨粉"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "flavour",
+      "value": "mild",
+      "status": "candidate_quarantined"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 36.0,
+   "unknown_price_items": [
+    "新民学会旧址:price",
+    "太平老街:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D15",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从长沙南站出发，一天内看长沙的中国湘绣博物馆、湖南烈士公园、湖南省博物馆，午饭在小二面店，全程地铁公交，18:30 前回到长沙南站。总预算 160 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:4753a2a2da1b2cc8deb693ae9090",
+    "name": "中国湘绣博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 195460757632001,
+     "lat": 28.201636,
+     "lon": 113.004399,
+     "name": "中国湘绣博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b487c6b6c174d745d3082e58f10d",
+    "name": "湖南烈士公园",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 110904364902520,
+     "lat": 28.214581,
+     "lon": 112.999764,
+     "name": "湖南烈士公园",
+     "opentime": "05:00",
+     "price": 0,
+     "recommendmaxtime": 3,
+     "recommendmintime": 1,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fzh%20%3Fcoord%20%28GROUP_CONCAT%28DISTINCT%20%3Ftl%3Bseparator%3D%22%7C%22%29%20AS%20%3Ftypes%29%20WHERE%20%7B%0A%3Fitem%20wdt%3AP131%2B%20wd%3AQ174091%3B%20wdt%3AP625%20%3Fcoord%3B%20rdfs%3Alabel%20%3Fzh.%20FILTER%28LANG%28%3Fzh%29%3D%22zh%22%29%0A%3Fzhw%20schema%3Aabout%20%3Fitem%3B%20schema%3AisPartOf%20%3Chttps%3A//zh.wikipedia.org/%3E.%0A%3Fitem%20wdt%3AP31%20%3Ft.%20%3Ft%20rdfs%3Alabel%20%3Ftl.%20FILTER%28LANG%28%3Ftl%29%3D%22zh%22%29%0A%7D%20GROUP%20BY%20%3Fitem%20%3Fzh%20%3Fcoord%20LIMIT%203000",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f4aca57ba95bc4a6a21042d4919c",
+    "name": "湖南省博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 21388672494261,
+     "lat": 28.215234409548902,
+     "lon": 112.986894243624,
+     "name": "湖南省博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 5.0,
+     "recommendmintime": 3.0,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d95ccd74acb03afd24f0ea43a65a",
+    "name": "小二面店",
+    "city": "长沙",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "小吃",
+     "endtime": "14:00",
+     "id": 206617488124070,
+     "lat": 28.21,
+     "lon": 112.968,
+     "name": "小二面店",
+     "opentime": "10:00",
+     "price": 18,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "小吃",
+      "status": "derived"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 36.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D16",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从长沙站出发，一天内看长沙的黄兴路步行街、太平老街、新民学会旧址，午饭在炊烟小炒黄牛肉，全程地铁公交，18:30 前回到长沙站。总预算 260 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:364f218063548019e6ed589788cc",
+    "name": "黄兴路步行街",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 2980043870592,
+     "lat": 28.19254,
+     "lon": 112.97128,
+     "name": "黄兴路步行街",
+     "opentime": "00:00",
+     "price": null,
+     "recommendmaxtime": 3,
+     "recommendmintime": 2,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "endtime",
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5d1d11bd0b0d450f52c4f6b7955",
+    "name": "太平老街",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 25882046662652,
+     "lat": 28.19656,
+     "lon": 112.96693,
+     "name": "太平老街",
+     "opentime": "00:00",
+     "price": null,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "endtime",
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:445bc08c79737d28d9344811d189",
+    "name": "新民学会旧址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 272327668067220,
+     "lat": 28.19687,
+     "lon": 112.94676,
+     "name": "新民学会旧址",
+     "opentime": "09:00",
+     "price": null,
+     "recommendmaxtime": 1,
+     "recommendmintime": 1,
+     "type": "红色景点"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fzh%20%3Fcoord%20%28GROUP_CONCAT%28DISTINCT%20%3Ftl%3Bseparator%3D%22%7C%22%29%20AS%20%3Ftypes%29%20WHERE%20%7B%0A%3Fitem%20wdt%3AP131%2B%20wd%3AQ174091%3B%20wdt%3AP625%20%3Fcoord%3B%20rdfs%3Alabel%20%3Fzh.%20FILTER%28LANG%28%3Fzh%29%3D%22zh%22%29%0A%3Fzhw%20schema%3Aabout%20%3Fitem%3B%20schema%3AisPartOf%20%3Chttps%3A//zh.wikipedia.org/%3E.%0A%3Fitem%20wdt%3AP31%20%3Ft.%20%3Ft%20rdfs%3Alabel%20%3Ftl.%20FILTER%28LANG%28%3Ftl%29%3D%22zh%22%29%0A%7D%20GROUP%20BY%20%3Fitem%20%3Fzh%20%3Fcoord%20LIMIT%203000",
+    "entity_verified": false,
+    "missing_fields": [
+     "price"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:9bf2645135312e9e454cc6295607",
+    "name": "炊烟小炒黄牛肉",
+    "city": "长沙",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "湘菜",
+     "endtime": "14:30",
+     "id": 259027903856433,
+     "lat": 28.1970329,
+     "lon": 112.973587,
+     "name": "炊烟小炒黄牛肉",
+     "opentime": "11:00",
+     "price": 72,
+     "recommendedfood": "小炒黄牛肉,酸辣跳跳蛙,皮蛋辣椒擂茄子"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.cityhui.com/shop/20933.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "cuisine",
+      "value": "湘菜",
+      "status": "derived"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 260.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 260.0,
+   "known_cost": 144.0,
+   "unknown_price_items": [
+    "黄兴路步行街:price",
+    "太平老街:price",
+    "新民学会旧址:price"
+   ]
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D17",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从青岛北站出发，一天内看青岛的信号山公园、德国总督楼旧址博物馆、青岛市美术馆，午饭在春和楼饭店，全程地铁公交，18:30 前回到青岛北站。总预算 330 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:8c7c1c5c7c168957cd363723cd5a",
+    "name": "青岛市美术馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "19:00",
+     "id": 131928367785208,
+     "lat": 36.0614226,
+     "lon": 120.3275421,
+     "name": "青岛市美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/qingdao-art-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:857e0f058e807c45a279c7385e7a",
+    "name": "春和楼饭店",
+    "city": "青岛",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "鲁菜",
+     "endtime": null,
+     "id": 192422645026895,
+     "lat": 36.0706777,
+     "lon": 120.3133987,
+     "name": "春和楼饭店",
+     "opentime": null,
+     "price": 85,
+     "recommendedfood": "香酥鸡,油爆海螺,燕窝凤尾虾,凤凰鱼翅"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://m.maigoo.com/top/399605.html",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 330.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 330.0,
+   "known_cost": 210.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D18",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从青岛站出发，一天内看青岛的大学路、第一海水浴场、栈桥，午饭在炉鱼（青岛万象城店），全程地铁公交，18:30 前回到青岛站。总预算 250 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f3a6a4cd0d380d95addbc6c5ca2b",
+    "name": "大学路",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 34517882215851,
+     "lat": 36.0639711,
+     "lon": 120.32999,
+     "name": "大学路",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "人文景观"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/daxue-road",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a1258235938126f3ff87894ed237",
+    "name": "第一海水浴场",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 3286679167935,
+     "lat": 36.0566679,
+     "lon": 120.3360765,
+     "name": "第一海水浴场",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/no1-bathing-beach",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4faddfd177570918515d3bdd0823",
+    "name": "栈桥",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 190377543459374,
+     "lat": 36.062075812066574,
+     "lon": 120.3155133754919,
+     "name": "栈桥",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 0.5,
+     "type": "人文景观"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/zhanqiao-pier",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "wheelchair_ramp",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4b3240c4b5cb73243e742a62d576",
+    "name": "炉鱼（青岛万象城店）",
+    "city": "青岛",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "烤鱼",
+     "endtime": "21:00",
+     "id": 251426310923602,
+     "lat": 36.0664704,
+     "lon": 120.3723663,
+     "name": "炉鱼（青岛万象城店）",
+     "opentime": "10:30",
+     "price": 67,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/dining/luyu-restaurant",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 250.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 250.0,
+   "known_cost": 134.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D19",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从青岛北站出发，一天内看青岛的天主教堂（圣弥厄尔教堂）、信号山公园、德国总督楼旧址博物馆，午饭在青岛海尔洲际酒店·品香苑自助餐厅，全程地铁公交，18:30 前回到青岛北站。总预算 900 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:35d2e6165f55ac2f58dbc573bc78",
+    "name": "天主教堂（圣弥厄尔教堂）",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 82129592487353,
+     "lat": 36.0679913,
+     "lon": 120.3155999,
+     "name": "天主教堂（圣弥厄尔教堂）",
+     "opentime": "08:30",
+     "price": 10,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/stmichael-cathedral",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7e83d8f11ac31711d8a581ca5930",
+    "name": "青岛海尔洲际酒店·品香苑自助餐厅",
+    "city": "青岛",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "自助餐",
+     "endtime": "21:30",
+     "id": 20415963394727,
+     "lat": 36.0565061,
+     "lon": 120.3926919,
+     "name": "青岛海尔洲际酒店·品香苑自助餐厅",
+     "opentime": "06:30",
+     "price": 358,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/lodging/intercontinental-hotels-qingdao",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 900.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 900.0,
+   "known_cost": 776.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D20",
+  "level": "hard",
+  "nature_language": "2026-10-29，两人从青岛站出发，一天内看青岛的太平角、第三海水浴场、第一海水浴场，午饭在青岛海尔洲际酒店·天下一品中餐厅，全程地铁公交，18:30 前回到青岛站。总预算 520 元（含门票、午饭、交通）。请给出顺序和时段，核对开放时间与午饭营业时间；来源冲突或缺失不要猜。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:3a3d1acb24d6bed45663f02fc39f",
+    "name": "太平角",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 58104514084130,
+     "lat": 36.0527042,
+     "lon": 120.3551944,
+     "name": "太平角",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/taiping-cape",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:fc9f5fa73a003a8344d4a174f7bd",
+    "name": "第三海水浴场",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 85046444984128,
+     "lat": 36.0502759,
+     "lon": 120.3611411,
+     "name": "第三海水浴场",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/no3-bathing-beach",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a1258235938126f3ff87894ed237",
+    "name": "第一海水浴场",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": null,
+     "id": 3286679167935,
+     "lat": 36.0566679,
+     "lon": 120.3360765,
+     "name": "第一海水浴场",
+     "opentime": null,
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/no1-bathing-beach",
+    "entity_verified": false,
+    "missing_fields": [
+     "opentime",
+     "endtime",
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:05fa67dce17dcd19e370c3276696",
+    "name": "青岛海尔洲际酒店·天下一品中餐厅",
+    "city": "青岛",
+    "kind": "restaurant",
+    "data": {
+     "cuisine": "中餐",
+     "endtime": "21:30",
+     "id": 47542444347766,
+     "lat": 36.0565061,
+     "lon": 120.3926919,
+     "name": "青岛海尔洲际酒店·天下一品中餐厅",
+     "opentime": "11:30",
+     "price": 200,
+     "recommendedfood": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/lodging/intercontinental-hotels-qingdao",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendedfood"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "restaurant",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:30"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 520.0,
+   "meals": [
+    "lunch"
+   ]
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 520.0,
+   "known_cost": 400.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D21",
+  "level": "hard",
+  "nature_language": "西安两天一夜：2026-10-28 上午两人从西安北站出发，看汉阳陵和大明宫国家遗址公园，住Hilton Xi'an 西安万达希尔顿酒店；10-29 早上坐 G366（09:10 出发）去北京，下午看颐和园。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 2210 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安",
+   "北京"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:198d4379ff431ca2f9c86dd878d6",
+    "name": "汉阳陵",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 240174430410981,
+     "lat": 34.44379722,
+     "lon": 108.94071111,
+     "name": "汉阳陵",
+     "opentime": "08:30",
+     "price": 70.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 2.0,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/hanyangling",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "博物馆",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b0b529617b6693c7472c99955cfe",
+    "name": "大明宫国家遗址公园",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 107975805814154,
+     "lat": 34.291388888,
+     "lon": 108.959444444,
+     "name": "大明宫国家遗址公园",
+     "opentime": "08:30",
+     "price": 60.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 2.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/daming-palace",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "公园",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d9022638c5901734342ceb02508d",
+    "name": "Hilton Xi'an 西安万达希尔顿酒店",
+    "city": "西安",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "室内泳池",
+     "hotelname_en": null,
+     "id": 92219486257845,
+     "lat": 34.26598470718398,
+     "lon": 108.9617031883435,
+     "name": "Hilton Xi'an 西安万达希尔顿酒店",
+     "numbed": 2,
+     "price": 594.66
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b1a96ff2f510fcfa148b2532393a",
+    "name": "G366",
+    "city": "西安",
+    "kind": "train",
+    "data": {
+     "BeginTime": "09:10",
+     "Cost": 618.0,
+     "Duration": 4.33,
+     "EndTime": "13:30",
+     "From": "西安北",
+     "To": "北京西",
+     "TrainID": "G366",
+     "TrainType": "高铁"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://qq.ip138.com/train/G366.htm",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 2210.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 2210.0,
+   "known_cost": 2090.7,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:b1a96ff2f510fcfa148b2532393a",
+   "name": "G366",
+   "city": "西安",
+   "kind": "train",
+   "data": {
+    "BeginTime": "09:10",
+    "Cost": 618.0,
+    "Duration": 4.33,
+    "EndTime": "13:30",
+    "From": "西安北",
+    "To": "北京西",
+    "TrainID": "G366",
+    "TrainType": "高铁"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://qq.ip138.com/train/G366.htm",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "北京",
+   "attraction": {
+    "entity_id": "a7a7f34c21f3ff8aa16760e4",
+    "name": "颐和园",
+    "city": "北京",
+    "kind": "attraction",
+    "data": {
+     "endtime": "20:00",
+     "id": "4",
+     "lat": "40.008817",
+     "lon": "116.280234",
+     "name": "颐和园",
+     "opentime": "06:00",
+     "price": "30.0",
+     "recommendmaxtime": "1.0",
+     "recommendmintime": "0.5",
+     "type": "文化旅游区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "文化旅游区",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D22",
+  "level": "hard",
+  "nature_language": "西安两天一夜：2026-10-28 上午两人从西安站出发，看西安钟楼和西安鼓楼，住西安W酒店；10-29 早上坐 G89（08:51 出发）去上海，下午看东方明珠。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 3180 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:1e27411fc6e477084f4fbd5c5014",
+    "name": "西安钟楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 16983358412743,
+     "lat": 34.26101,
+     "lon": 108.94238,
+     "name": "西安钟楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/bell-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:bf82985fc0e82feb1cbcad42e655",
+    "name": "西安鼓楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 65110926856218,
+     "lat": 34.261793573,
+     "lon": 108.93893069,
+     "name": "西安鼓楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/drum-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3d859ce4762701706ab43dccf431",
+    "name": "西安W酒店",
+    "city": "西安",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "泳池",
+     "hotelname_en": "W Xi'an",
+     "id": 212822713099678,
+     "lat": 34.1984964,
+     "lon": 108.9838305,
+     "name": "西安W酒店",
+     "numbed": null,
+     "price": 1200.0
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/hotels/w-xian",
+    "entity_verified": false,
+    "missing_fields": [
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "view",
+      "value": "qujiang_pool_balcony",
+      "status": "source_value"
+     },
+     {
+      "tag": "amenity",
+      "value": "indoor_pool",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c9ca3eec6962658d8d8781f4992",
+    "name": "G89",
+    "city": "西安",
+    "kind": "train",
+    "data": {
+     "BeginTime": "08:51",
+     "Cost": 870.0,
+     "Duration": 5.87,
+     "EndTime": "14:43",
+     "From": "西安北",
+     "To": "上海虹桥",
+     "TrainID": "G89",
+     "TrainType": "高铁"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://qq.ip138.com/train/G89.htm",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 3180.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 3180.0,
+   "known_cost": 3060.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:6c9ca3eec6962658d8d8781f4992",
+   "name": "G89",
+   "city": "西安",
+   "kind": "train",
+   "data": {
+    "BeginTime": "08:51",
+    "Cost": 870.0,
+    "Duration": 5.87,
+    "EndTime": "14:43",
+    "From": "西安北",
+    "To": "上海虹桥",
+    "TrainID": "G89",
+    "TrainType": "高铁"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://qq.ip138.com/train/G89.htm",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "19288e0c812e449e7bf2b0ca",
+    "name": "东方明珠",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "21:00",
+     "id": "1",
+     "lat": "31.245417",
+     "lon": "121.50635",
+     "name": "东方明珠",
+     "opentime": "09:00",
+     "price": "199.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "0.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D23",
+  "level": "hard",
+  "nature_language": "厦门两天一夜：2026-10-28 上午两人从厦门北站出发，看厦门园林植物园和钟鼓索道，住厦门磐基希尔顿酒店；10-29 早上坐 D3142（08:02 出发）去上海，下午看外滩。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1880 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:a302a282d064fd798356c3383f2c",
+    "name": "厦门园林植物园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 216163219282179,
+     "lat": 24.455259044615,
+     "lon": 118.0904038514,
+     "name": "厦门园林植物园",
+     "opentime": "06:30",
+     "price": 30,
+     "recommendmaxtime": 5,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.xiamenbg.cn/Home/yyzn2",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "植物园",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "雨林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3a66083b38ce329afe695a4e5885",
+    "name": "钟鼓索道",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 165511573851304,
+     "lat": 24.4510271,
+     "lon": 118.0896061,
+     "name": "钟鼓索道",
+     "opentime": "08:30",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": 0.67,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%92%9F%E9%BC%93%E7%B4%A2%E9%81%93&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a9d2c5fb63d8e7dff6a6c8fab10b",
+    "name": "厦门磐基希尔顿酒店",
+    "city": "厦门",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "室外泳池",
+     "hotelname_en": null,
+     "id": 184494529930399,
+     "lat": 24.48438047292542,
+     "lon": 118.11579948683054,
+     "name": "厦门磐基希尔顿酒店",
+     "numbed": 2,
+     "price": 638.97
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "amenity",
+      "value": "室外泳池",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f76e59a0df3dc5a275ca9e81111b",
+    "name": "D3142",
+    "city": "厦门",
+    "kind": "train",
+    "data": {
+     "BeginTime": "08:02",
+     "Cost": 451.0,
+     "Duration": 7.9,
+     "EndTime": "15:56",
+     "From": "厦门北站",
+     "To": "上海虹桥站",
+     "TrainID": "D3142",
+     "TrainType": "动车"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://trains.ctrip.com/trainbooking/xiamenbei-shanghaihongqiao",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1880.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1880.0,
+   "known_cost": 1761.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:f76e59a0df3dc5a275ca9e81111b",
+   "name": "D3142",
+   "city": "厦门",
+   "kind": "train",
+   "data": {
+    "BeginTime": "08:02",
+    "Cost": 451.0,
+    "Duration": 7.9,
+    "EndTime": "15:56",
+    "From": "厦门北站",
+    "To": "上海虹桥站",
+    "TrainID": "D3142",
+    "TrainType": "动车"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://trains.ctrip.com/trainbooking/xiamenbei-shanghaihongqiao",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "1d792133907e7b9f86fcb134",
+    "name": "外滩",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "24:00",
+     "id": "2",
+     "lat": "31.243453",
+     "lon": "121.497204",
+     "name": "外滩",
+     "opentime": "00:00",
+     "price": "0.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "1.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D24",
+  "level": "hard",
+  "nature_language": "厦门两天一夜：2026-10-28 上午两人从厦门站出发，看南普陀寺和厦门大学(思明校区)，住厦门鹭江・佲家酒店；10-29 早上坐 D3234（06:44 出发）去杭州，下午看西湖风景名胜区。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1250 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门",
+   "杭州"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:3272b4f9ef5c27640c0f5b5661c5",
+    "name": "南普陀寺",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194961818784519,
+     "lat": 24.4432578,
+     "lon": 118.0915032,
+     "name": "南普陀寺",
+     "opentime": "08:00",
+     "price": 0,
+     "recommendmaxtime": 3,
+     "recommendmintime": 1,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "佛教寺院",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7ae9269f2b9890b82dd022e853d0",
+    "name": "厦门大学(思明校区)",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 203143007676623,
+     "lat": 24.4399419,
+     "lon": 118.0930178,
+     "name": "厦门大学(思明校区)",
+     "opentime": "10:30",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "大学校园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "id_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f4feaf73995737fad06048ec8a8a",
+    "name": "厦门鹭江・佲家酒店",
+    "city": "厦门",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "园林建筑",
+     "hotelname_en": null,
+     "id": 261138045666985,
+     "lat": 24.4333656,
+     "lon": 118.117034,
+     "name": "厦门鹭江・佲家酒店",
+     "numbed": null,
+     "price": 350
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://conf.xmu.edu.cn/virtual_attach_file.vsb?afc=_L87FZnzUiUmG8n9RGDnRTknNCiL7LAiU8QfMm-PM7LbU4G0gihFp2hmCIa0MkhRoSyDLkyZMRUiM49aUNQRUm-Zoll8LmCaLlliMNLin7nFMNWfUzUboR6FozW7L8lJv2nto4OeoDM0ptC0qIbtpYyiMzCYg4UYMRlJqd1nx&oid=1497198570&tid=5562&nid=4245&e=.pdf",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:dada0c4e18fd2207ab5e8ee81eac",
+    "name": "D3234",
+    "city": "厦门",
+    "kind": "train",
+    "data": {
+     "BeginTime": "06:44",
+     "Cost": 390.0,
+     "Duration": 6.95,
+     "EndTime": "13:41",
+     "From": "厦门站",
+     "To": "杭州东站",
+     "TrainID": "D3234",
+     "TrainType": "动车"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://trains.ctrip.com/trainbooking/xiamenbei-hangzhoudong",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1250.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1250.0,
+   "known_cost": 1130.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:dada0c4e18fd2207ab5e8ee81eac",
+   "name": "D3234",
+   "city": "厦门",
+   "kind": "train",
+   "data": {
+    "BeginTime": "06:44",
+    "Cost": 390.0,
+    "Duration": 6.95,
+    "EndTime": "13:41",
+    "From": "厦门站",
+    "To": "杭州东站",
+    "TrainID": "D3234",
+    "TrainType": "动车"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://trains.ctrip.com/trainbooking/xiamenbei-hangzhoudong",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "杭州",
+   "attraction": {
+    "entity_id": "569aa0d34f59babc243f4f1f",
+    "name": "西湖风景名胜区",
+    "city": "杭州",
+    "kind": "attraction",
+    "data": {
+     "endtime": "24:00",
+     "id": "2",
+     "lat": "30.228932",
+     "lon": "120.12792",
+     "name": "西湖风景名胜区",
+     "opentime": "00:00",
+     "price": "0.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "1.0",
+     "type": "自然风光"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "自然风光",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "nature",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D25",
+  "level": "hard",
+  "nature_language": "宁波两天一夜：2026-10-28 上午两人从宁波站出发，看宁波海洋世界和庆安会馆，住开元宁波九龙湖度假村；10-29 早上坐 G7658（05:40 出发）去上海，下午看外滩。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1640 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:096a1776d4eccef8a4957989fe0a",
+    "name": "宁波海洋世界",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:15",
+     "id": 955121386293,
+     "lat": 29.8559613,
+     "lon": 121.5789238,
+     "name": "宁波海洋世界",
+     "opentime": "08:30",
+     "price": 200.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 3.0,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6171",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f3a9a11c60f9a131b5687bffa035",
+    "name": "庆安会馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 271966989459985,
+     "lat": 29.87472222,
+     "lon": 121.55888889,
+     "name": "庆安会馆",
+     "opentime": "08:30",
+     "price": 10.0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://zh.wikipedia.org/zh-cn/%E5%BA%86%E5%AE%89%E4%BC%9A%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:40d6cbdf43a46da847d85266fda9",
+    "name": "开元宁波九龙湖度假村",
+    "city": "宁波",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "湖景房",
+     "hotelname_en": "New Century Resort Jiu Long Lake Ningbo",
+     "id": 74164714090580,
+     "lat": 30.0329236,
+     "lon": 121.5105731,
+     "name": "开元宁波九龙湖度假村",
+     "numbed": null,
+     "price": 760.0
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6739",
+    "entity_verified": false,
+    "missing_fields": [
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "twin_room_option",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:cfb9c34c6f8048e6d6d5e819c8fe",
+    "name": "G7658",
+    "city": "宁波",
+    "kind": "train",
+    "data": {
+     "BeginTime": "05:40",
+     "Cost": 172.0,
+     "Duration": 2.1,
+     "EndTime": "07:46",
+     "From": "宁波站",
+     "To": "上海虹桥站",
+     "TrainID": "G7658",
+     "TrainType": "高铁"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.gaotie.net/route/ningbo-shanghaihongqiao/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1640.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1640.0,
+   "known_cost": 1524.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:cfb9c34c6f8048e6d6d5e819c8fe",
+   "name": "G7658",
+   "city": "宁波",
+   "kind": "train",
+   "data": {
+    "BeginTime": "05:40",
+    "Cost": 172.0,
+    "Duration": 2.1,
+    "EndTime": "07:46",
+    "From": "宁波站",
+    "To": "上海虹桥站",
+    "TrainID": "G7658",
+    "TrainType": "高铁"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.gaotie.net/route/ningbo-shanghaihongqiao/",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "1d792133907e7b9f86fcb134",
+    "name": "外滩",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "24:00",
+     "id": "2",
+     "lat": "31.243453",
+     "lon": "121.497204",
+     "name": "外滩",
+     "opentime": "00:00",
+     "price": "0.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "1.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D26",
+  "level": "hard",
+  "nature_language": "宁波两天一夜：2026-10-28 上午两人从宁波站出发，看宁波博物馆和宁波海洋世界，住宁波饭店；10-29 早上坐 G1866（06:14 出发）去杭州，下午看西湖风景名胜区。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 990 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波",
+   "杭州"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:2c361ef7d58b8a1d11ceb48bdb6f",
+    "name": "宁波博物馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 164283693093204,
+     "lat": 29.817374021714596,
+     "lon": 121.5411280926556,
+     "name": "宁波博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbmuseum.cn/",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "weekend_evening_open",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "reservation_required",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:096a1776d4eccef8a4957989fe0a",
+    "name": "宁波海洋世界",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:15",
+     "id": 955121386293,
+     "lat": 29.8559613,
+     "lon": 121.5789238,
+     "name": "宁波海洋世界",
+     "opentime": "08:30",
+     "price": 200.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 3.0,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6171",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:69aea70e5519cc9681d0a70401c7",
+    "name": "宁波饭店",
+    "city": "宁波",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "棋牌室",
+     "hotelname_en": "ningbohotel",
+     "id": 181862685577253,
+     "lat": null,
+     "lon": null,
+     "name": "宁波饭店",
+     "numbed": null,
+     "price": 298.0
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.nbtour.com/archives/7637",
+    "entity_verified": false,
+    "missing_fields": [
+     "lat",
+     "lon",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:95d7f9493de2478e09df1278d0a3",
+    "name": "G1866",
+    "city": "宁波",
+    "kind": "train",
+    "data": {
+     "BeginTime": "06:14",
+     "Cost": 85.0,
+     "Duration": 1.13,
+     "EndTime": "07:22",
+     "From": "宁波站",
+     "To": "杭州东站",
+     "TrainID": "G1866",
+     "TrainType": "高铁"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.gaotie.net/route/ningbo-hangzhoudong/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 990.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 990.0,
+   "known_cost": 868.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:95d7f9493de2478e09df1278d0a3",
+   "name": "G1866",
+   "city": "宁波",
+   "kind": "train",
+   "data": {
+    "BeginTime": "06:14",
+    "Cost": 85.0,
+    "Duration": 1.13,
+    "EndTime": "07:22",
+    "From": "宁波站",
+    "To": "杭州东站",
+    "TrainID": "G1866",
+    "TrainType": "高铁"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.gaotie.net/route/ningbo-hangzhoudong/",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "杭州",
+   "attraction": {
+    "entity_id": "569aa0d34f59babc243f4f1f",
+    "name": "西湖风景名胜区",
+    "city": "杭州",
+    "kind": "attraction",
+    "data": {
+     "endtime": "24:00",
+     "id": "2",
+     "lat": "30.228932",
+     "lon": "120.12792",
+     "name": "西湖风景名胜区",
+     "opentime": "00:00",
+     "price": "0.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "1.0",
+     "type": "自然风光"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "自然风光",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "nature",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D27",
+  "level": "hard",
+  "nature_language": "长沙两天一夜：2026-10-28 上午两人从长沙南站出发，看湖南省科学技术馆和湖南省地质博物馆，住长沙海富丽景酒店；10-29 早上坐 CA1350（08:25 出发）去北京，下午看颐和园。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 3480 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙",
+   "北京"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:7abe84a1b43d6c18967c8c15390c",
+    "name": "湖南省科学技术馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:00",
+     "id": 4970178382795,
+     "lat": 28.1110823447,
+     "lon": 112.9803541866,
+     "name": "湖南省科学技术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Tuesday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c93167514c5e7de9001a063474d",
+    "name": "湖南省地质博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 71655155048683,
+     "lat": 28.1111216,
+     "lon": 112.9767069,
+     "name": "湖南省地质博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=3&addressdetails=0&countrycodes=cn&q=%E6%B9%96%E5%8D%97%E7%9C%81%E5%9C%B0%E8%B4%A8%E5%8D%9A%E7%89%A9%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "derived"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:ea5134a0e725195a7ae11b3e0f01",
+    "name": "长沙海富丽景酒店",
+    "city": "长沙",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": null,
+     "hotelname_en": "Laiking Hotel",
+     "id": 251947399531862,
+     "lat": 28.18669,
+     "lon": 112.97326,
+     "name": "长沙海富丽景酒店",
+     "numbed": null,
+     "price": 200
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "featurehoteltype",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:c48393e98fab07ded4f97462d53c",
+    "name": "CA1350",
+    "city": "长沙",
+    "kind": "flight",
+    "data": {
+     "BeginTime": "08:25",
+     "Cost": 1580.0,
+     "Duration": 2.42,
+     "EndTime": "10:50",
+     "FlightID": "CA1350",
+     "From": "长沙黄花国际机场",
+     "To": "北京首都国际机场"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.ly.com/flights/itinerary/oneway/CSX-PEK?date=2026-11-01",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "flight",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 3480.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 3480.0,
+   "known_cost": 3360.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:c48393e98fab07ded4f97462d53c",
+   "name": "CA1350",
+   "city": "长沙",
+   "kind": "flight",
+   "data": {
+    "BeginTime": "08:25",
+    "Cost": 1580.0,
+    "Duration": 2.42,
+    "EndTime": "10:50",
+    "FlightID": "CA1350",
+    "From": "长沙黄花国际机场",
+    "To": "北京首都国际机场"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.ly.com/flights/itinerary/oneway/CSX-PEK?date=2026-11-01",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "flight",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "北京",
+   "attraction": {
+    "entity_id": "a7a7f34c21f3ff8aa16760e4",
+    "name": "颐和园",
+    "city": "北京",
+    "kind": "attraction",
+    "data": {
+     "endtime": "20:00",
+     "id": "4",
+     "lat": "40.008817",
+     "lon": "116.280234",
+     "name": "颐和园",
+     "opentime": "06:00",
+     "price": "30.0",
+     "recommendmaxtime": "1.0",
+     "recommendmintime": "0.5",
+     "type": "文化旅游区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "文化旅游区",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D28",
+  "level": "hard",
+  "nature_language": "长沙两天一夜：2026-10-28 上午两人从长沙站出发，看隆平水稻博物馆和马王堆汉墓遗址，住长沙环球融创施柏阁酒店；10-29 早上坐 FM9392（08:40 出发）去上海，下午看东方明珠。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1810 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:ee1cef6919e480e630675085c385",
+    "name": "隆平水稻博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 114929917538370,
+     "lat": 28.1928865,
+     "lon": 113.0537731,
+     "name": "隆平水稻博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:5d0be342e09cc0489c9f4f2ed204",
+    "name": "马王堆汉墓遗址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194009883521622,
+     "lat": 28.208611,
+     "lon": 113.021667,
+     "name": "马王堆汉墓遗址",
+     "opentime": "09:00",
+     "price": 2,
+     "recommendmaxtime": 1,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6ddd88c33f98e3c85dc1fe065acd",
+    "name": "长沙环球融创施柏阁酒店",
+    "city": "长沙",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": null,
+     "hotelname_en": null,
+     "id": 270811918180613,
+     "lat": 28.1567803,
+     "lon": 113.0744505,
+     "name": "长沙环球融创施柏阁酒店",
+     "numbed": null,
+     "price": 450
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.chemsoc.org.cn/meeting/15thCCSNCAC/a7190.html",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en",
+     "featurehoteltype",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:023d34e55fe750b9b91014e18a98",
+    "name": "FM9392",
+    "city": "长沙",
+    "kind": "flight",
+    "data": {
+     "BeginTime": "08:40",
+     "Cost": 620.0,
+     "Duration": 1.75,
+     "EndTime": "10:25",
+     "FlightID": "FM9392",
+     "From": "长沙黄花国际机场",
+     "To": "上海虹桥国际机场"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.ly.com/flights/itinerary/oneway/CSX-SHA?date=2026-11-01",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "flight",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1810.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1810.0,
+   "known_cost": 1694.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:023d34e55fe750b9b91014e18a98",
+   "name": "FM9392",
+   "city": "长沙",
+   "kind": "flight",
+   "data": {
+    "BeginTime": "08:40",
+    "Cost": 620.0,
+    "Duration": 1.75,
+    "EndTime": "10:25",
+    "FlightID": "FM9392",
+    "From": "长沙黄花国际机场",
+    "To": "上海虹桥国际机场"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.ly.com/flights/itinerary/oneway/CSX-SHA?date=2026-11-01",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "flight",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "19288e0c812e449e7bf2b0ca",
+    "name": "东方明珠",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "21:00",
+     "id": "1",
+     "lat": "31.245417",
+     "lon": "121.50635",
+     "name": "东方明珠",
+     "opentime": "09:00",
+     "price": "199.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "0.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D29",
+  "level": "hard",
+  "nature_language": "青岛两天一夜：2026-10-28 上午两人从青岛北站出发，看崂山风景名胜区巨峰游览区和青岛啤酒博物馆，住青岛海尔洲际酒店；10-29 早上坐 G206（10:30 出发）去北京，下午看颐和园。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1090 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛",
+   "北京"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:33d45d506ee4d39545f2b5010edc",
+    "name": "崂山风景名胜区巨峰游览区",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 241070794782608,
+     "lat": 36.1731096,
+     "lon": 120.6244167,
+     "name": "崂山风景名胜区巨峰游览区",
+     "opentime": "07:00",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.dahepiao.com/lvyounews1/20250506511987.html",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f657e04a980f5608079ca63ab25f",
+    "name": "青岛啤酒博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 6592813139687,
+     "lat": 36.0789716,
+     "lon": 120.3419778,
+     "name": "青岛啤酒博物馆",
+     "opentime": "08:00",
+     "price": 60,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/tsingtao-beer-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "beer",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7c684ec162b7defa039888d3e561",
+    "name": "青岛海尔洲际酒店",
+    "city": "青岛",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "泳池",
+     "hotelname_en": "Intercontinental Qingdao",
+     "id": 38353665993545,
+     "lat": 36.0565061,
+     "lon": 120.3926919,
+     "name": "青岛海尔洲际酒店",
+     "numbed": null,
+     "price": null
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/lodging/intercontinental-hotels-qingdao",
+    "entity_verified": false,
+    "missing_fields": [
+     "price",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "hotel_star_rating",
+      "value": "五星级",
+      "status": "source_value"
+     },
+     {
+      "tag": "view",
+      "value": "sea",
+      "status": "source_value"
+     },
+     {
+      "tag": "wheelchair_ramp",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "twin_room_option",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7f80b027b511d0c3762b4fccd857",
+    "name": "G206",
+    "city": "青岛",
+    "kind": "train",
+    "data": {
+     "BeginTime": "10:30",
+     "Cost": 343.0,
+     "Duration": 3.5,
+     "EndTime": "13:58",
+     "From": "青岛北站",
+     "To": "北京南站",
+     "TrainID": "G206",
+     "TrainType": "高铁"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://train.hao86.com/%E9%9D%92%E5%B2%9B-%E5%8C%97%E4%BA%AC/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1090.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1090.0,
+   "known_cost": 966.0,
+   "unknown_price_items": [
+    "青岛海尔洲际酒店:price"
+   ]
+  },
+  "intercity": {
+   "entity_id": "p30:7f80b027b511d0c3762b4fccd857",
+   "name": "G206",
+   "city": "青岛",
+   "kind": "train",
+   "data": {
+    "BeginTime": "10:30",
+    "Cost": 343.0,
+    "Duration": 3.5,
+    "EndTime": "13:58",
+    "From": "青岛北站",
+    "To": "北京南站",
+    "TrainID": "G206",
+    "TrainType": "高铁"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://train.hao86.com/%E9%9D%92%E5%B2%9B-%E5%8C%97%E4%BA%AC/",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "北京",
+   "attraction": {
+    "entity_id": "a7a7f34c21f3ff8aa16760e4",
+    "name": "颐和园",
+    "city": "北京",
+    "kind": "attraction",
+    "data": {
+     "endtime": "20:00",
+     "id": "4",
+     "lat": "40.008817",
+     "lon": "116.280234",
+     "name": "颐和园",
+     "opentime": "06:00",
+     "price": "30.0",
+     "recommendmaxtime": "1.0",
+     "recommendmintime": "0.5",
+     "type": "文化旅游区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "文化旅游区",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D30",
+  "level": "hard",
+  "nature_language": "青岛两天一夜：2026-10-28 上午两人从青岛站出发，看天主教堂（圣弥厄尔教堂）和信号山公园，住沃德·观云里酒店；10-29 早上坐 D2913（08:06 出发）去上海，下午看东方明珠。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 780 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:35d2e6165f55ac2f58dbc573bc78",
+    "name": "天主教堂（圣弥厄尔教堂）",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 82129592487353,
+     "lat": 36.0679913,
+     "lon": 120.3155999,
+     "name": "天主教堂（圣弥厄尔教堂）",
+     "opentime": "08:30",
+     "price": 10,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/stmichael-cathedral",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:255092ad24946aa1e22946819627",
+    "name": "沃德·观云里酒店",
+    "city": "青岛",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": null,
+     "hotelname_en": "World Guanyunli Hotel (Qingdao Zhanqiao Zhongshan Road Branch)",
+     "id": 52024685110356,
+     "lat": null,
+     "lon": null,
+     "name": "沃德·观云里酒店",
+     "numbed": null,
+     "price": null
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://inqingdao.com/zh/explore/lodging/world-guanyunli-hotel",
+    "entity_verified": false,
+    "missing_fields": [
+     "featurehoteltype",
+     "lat",
+     "lon",
+     "price",
+     "numbed"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "heritage_building",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:1ca56a3c78fe6036188de409fd10",
+    "name": "D2913",
+    "city": "青岛",
+    "kind": "train",
+    "data": {
+     "BeginTime": "08:06",
+     "Cost": 320.0,
+     "Duration": 5.92,
+     "EndTime": "13:51",
+     "From": "青岛北站",
+     "To": "上海虹桥站",
+     "TrainID": "D2913",
+     "TrainType": "动车"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://train.hao86.com/%E9%9D%92%E5%B2%9B-%E4%B8%8A%E6%B5%B7/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "train",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 780.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 780.0,
+   "known_cost": 660.0,
+   "unknown_price_items": [
+    "沃德·观云里酒店:price"
+   ]
+  },
+  "intercity": {
+   "entity_id": "p30:1ca56a3c78fe6036188de409fd10",
+   "name": "D2913",
+   "city": "青岛",
+   "kind": "train",
+   "data": {
+    "BeginTime": "08:06",
+    "Cost": 320.0,
+    "Duration": 5.92,
+    "EndTime": "13:51",
+    "From": "青岛北站",
+    "To": "上海虹桥站",
+    "TrainID": "D2913",
+    "TrainType": "动车"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://train.hao86.com/%E9%9D%92%E5%B2%9B-%E4%B8%8A%E6%B5%B7/",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "train",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "19288e0c812e449e7bf2b0ca",
+    "name": "东方明珠",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "21:00",
+     "id": "1",
+     "lat": "31.245417",
+     "lon": "121.50635",
+     "name": "东方明珠",
+     "opentime": "09:00",
+     "price": "199.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "0.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D31",
+  "level": "hard",
+  "nature_language": "西安两天一夜：2026-10-28 上午两人从西安北站出发，看西安城墙 Xi'an City Wall和西安碑林博物馆，住Hilton Xi'an 西安万达希尔顿酒店；10-29 早上坐 CA1206（08:20 出发）去北京，下午看颐和园。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1870 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安",
+   "北京"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:e288ddd9b9887ddea97f6e447577",
+    "name": "西安城墙 Xi'an City Wall",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "22:00",
+     "id": 2776668737316,
+     "lat": 34.251448,
+     "lon": 108.947099,
+     "name": "西安城墙 Xi'an City Wall",
+     "opentime": "08:00",
+     "price": 54.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 1.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-wall",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:19418b5075fc9b1238a0d9af7ed6",
+    "name": "西安碑林博物馆",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 185719960583642,
+     "lat": 34.255,
+     "lon": 108.94833333,
+     "name": "西安碑林博物馆",
+     "opentime": "09:00",
+     "price": 85.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/forest-of-steles",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "博物馆",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d9022638c5901734342ceb02508d",
+    "name": "Hilton Xi'an 西安万达希尔顿酒店",
+    "city": "西安",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": "室内泳池",
+     "hotelname_en": null,
+     "id": 92219486257845,
+     "lat": 34.26598470718398,
+     "lon": 108.9617031883435,
+     "name": "Hilton Xi'an 西安万达希尔顿酒店",
+     "numbed": 2,
+     "price": 594.66
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:89645d15cc51e8eda98d895f350a",
+    "name": "CA1206",
+    "city": "西安",
+    "kind": "flight",
+    "data": {
+     "BeginTime": "08:20",
+     "Cost": 440.0,
+     "Duration": 2.33,
+     "EndTime": "10:40",
+     "FlightID": "CA1206",
+     "From": "西安咸阳国际机场",
+     "To": "北京首都国际机场"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.ly.com/flights/itinerary/oneway/XIY-PEK?date=2026-11-01",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "flight",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1870.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1870.0,
+   "known_cost": 1752.7,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:89645d15cc51e8eda98d895f350a",
+   "name": "CA1206",
+   "city": "西安",
+   "kind": "flight",
+   "data": {
+    "BeginTime": "08:20",
+    "Cost": 440.0,
+    "Duration": 2.33,
+    "EndTime": "10:40",
+    "FlightID": "CA1206",
+    "From": "西安咸阳国际机场",
+    "To": "北京首都国际机场"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.ly.com/flights/itinerary/oneway/XIY-PEK?date=2026-11-01",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "flight",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "北京",
+   "attraction": {
+    "entity_id": "a7a7f34c21f3ff8aa16760e4",
+    "name": "颐和园",
+    "city": "北京",
+    "kind": "attraction",
+    "data": {
+     "endtime": "20:00",
+     "id": "4",
+     "lat": "40.008817",
+     "lon": "116.280234",
+     "name": "颐和园",
+     "opentime": "06:00",
+     "price": "30.0",
+     "recommendmaxtime": "1.0",
+     "recommendmintime": "0.5",
+     "type": "文化旅游区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "文化旅游区",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "D32",
+  "level": "hard",
+  "nature_language": "厦门两天一夜：2026-10-28 上午两人从厦门站出发，看菽庄花园和日光岩，住格菲酒店(厦门大学环岛路店)；10-29 早上坐 MF8511（09:00 出发）去上海，下午看东方明珠。请核对车次/航班时刻、酒店价格、两侧开放时间与天气，总预算 1620 元。城际与市内交通都要给依据。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门",
+   "上海"
+  ],
+  "dates": [
+   "2026-10-28",
+   "2026-10-29"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:927a1ad9537383ed34beb43349a3",
+    "name": "菽庄花园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 109516666595107,
+     "lat": 24.442222631958504,
+     "lon": 118.06429923242591,
+     "name": "菽庄花园",
+     "opentime": "08:30",
+     "price": 30,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.glyylq.cn/article.php?id=1265",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "钢琴",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "滨海园林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:ffe67da729d39af16856d1d49169",
+    "name": "日光岩",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 246592028382221,
+     "lat": 24.444660186768,
+     "lon": 118.06219482422,
+     "name": "日光岩",
+     "opentime": "08:30",
+     "price": 50,
+     "recommendmaxtime": 3,
+     "recommendmintime": 2,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.glyylq.cn/article.php?id=1265",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "登山",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:0a3fd9ea1622053762f59c603f7c",
+    "name": "格菲酒店(厦门大学环岛路店)",
+    "city": "厦门",
+    "kind": "accommodation",
+    "data": {
+     "featurehoteltype": null,
+     "hotelname_en": null,
+     "id": 90037457659691,
+     "lat": null,
+     "lon": null,
+     "name": "格菲酒店(厦门大学环岛路店)",
+     "numbed": 2,
+     "price": 340
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://conf.xmu.edu.cn/virtual_attach_file.vsb?afc=_L87FZnzUiUmG8n9RGDnRTknNCiL7LAiU8QfMm-PM7LbU4G0gihFp2hmCIa0MkhRoSyDLkyZMRUiM49aUNQRUm-Zoll8LmCaLlliMNLin7nFMNWfUzUboR6FozW7L8lJv2nto4OeoDM0ptC0qIbtpYyiMzCYg4UYMRlJqd1nx&oid=1497198570&tid=5562&nid=4245&e=.pdf",
+    "entity_verified": false,
+    "missing_fields": [
+     "hotelname_en",
+     "featurehoteltype",
+     "lat",
+     "lon"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "accommodation",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "twin_room_option",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:c4eca76afa4d5e251d8336a6f80b",
+    "name": "MF8511",
+    "city": "厦门",
+    "kind": "flight",
+    "data": {
+     "BeginTime": "09:00",
+     "Cost": 500.0,
+     "Duration": 1.67,
+     "EndTime": "10:40",
+     "FlightID": "MF8511",
+     "From": "厦门高崎国际机场",
+     "To": "上海虹桥国际机场"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://www.ly.com/flights/itinerary/oneway/XMN-SHA?date=2026-11-01",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "flight",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "08:00",
+    "20:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 1620.0,
+   "overnight": true,
+   "chain": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 1620.0,
+   "known_cost": 1500.0,
+   "unknown_price_items": []
+  },
+  "intercity": {
+   "entity_id": "p30:c4eca76afa4d5e251d8336a6f80b",
+   "name": "MF8511",
+   "city": "厦门",
+   "kind": "flight",
+   "data": {
+    "BeginTime": "09:00",
+    "Cost": 500.0,
+    "Duration": 1.67,
+    "EndTime": "10:40",
+    "FlightID": "MF8511",
+    "From": "厦门高崎国际机场",
+    "To": "上海虹桥国际机场"
+   },
+   "coordinate_system": "unknown",
+   "source_url": "https://www.ly.com/flights/itinerary/oneway/XMN-SHA?date=2026-11-01",
+   "entity_verified": false,
+   "missing_fields": [],
+   "tags": [
+    {
+     "tag": "kind",
+     "value": "flight",
+     "status": "derived_recall_hint"
+    },
+    {
+     "tag": "native_fields_complete",
+     "value": true,
+     "status": "derived_recall_hint"
+    }
+   ]
+  },
+  "old_city": {
+   "city": "上海",
+   "attraction": {
+    "entity_id": "19288e0c812e449e7bf2b0ca",
+    "name": "东方明珠",
+    "city": "上海",
+    "kind": "attraction",
+    "data": {
+     "endtime": "21:00",
+     "id": "1",
+     "lat": "31.245417",
+     "lon": "121.50635",
+     "name": "东方明珠",
+     "opentime": "09:00",
+     "price": "199.0",
+     "recommendmaxtime": "2.0",
+     "recommendmintime": "0.5",
+     "type": "人文景观"
+    },
+    "coordinate_system": "unknown",
+    "source_url": null,
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "benchmark_attribute"
+     },
+     {
+      "tag": "type",
+      "value": "人文景观",
+      "status": "benchmark_attribute"
+     }
+    ]
+   }
+  }
+ }
+]

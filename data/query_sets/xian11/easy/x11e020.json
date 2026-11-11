@@ -1,0 +1,36 @@
+{
+ "uid": "x11e020",
+ "tag": "easy",
+ "start_city": "武汉",
+ "target_city": "西安",
+ "days": 3,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'招待所'}<=accommodation_type_set)"
+ ],
+ "nature_language": "当前位置武汉。我们四个人想去西安玩3天，酒店要有招待所，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 武汉. four of us want to travel to 西安 for 3 day(s); the hotel should offer 招待所. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_accommodation_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

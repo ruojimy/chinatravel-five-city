@@ -1,0 +1,38 @@
+{
+ "uid": "x11h001",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "苏州",
+ "days": 5,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==5)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({'拾愿精舍'}<=attraction_name_set)",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'公园'}<=attraction_type_set)"
+ ],
+ "nature_language": "[当前位置西安,目标位置苏州,旅行人数3,旅行天数5] 别安排得太赶，一定要去拾愿精舍，想去公园类景点。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 苏州 for 5 day(s); must visit 拾愿精舍, want to visit 公园 attractions. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_attraction_names",
+  "required_attraction_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

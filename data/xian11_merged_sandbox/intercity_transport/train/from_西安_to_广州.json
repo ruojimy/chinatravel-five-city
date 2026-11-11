@@ -1,0 +1,12 @@
+[
+ {
+  "TrainID": "G409",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "广州南",
+  "BeginTime": "07:25",
+  "EndTime": "14:47",
+  "Duration": 7.37,
+  "Cost": 1052.0
+ }
+]

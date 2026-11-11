@@ -1,0 +1,332 @@
+[
+ {
+  "TrainID": "D92",
+  "TrainType": "高铁",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "18:19",
+  "EndTime": "09:07",
+  "Duration": 14.8,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1970",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "06:09",
+  "EndTime": "13:20",
+  "Duration": 7.18,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1802",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "06:13",
+  "EndTime": "13:51",
+  "Duration": 7.63,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3176",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "06:19",
+  "EndTime": "14:45",
+  "Duration": 8.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "G464",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "06:48",
+  "EndTime": "13:40",
+  "Duration": 6.87,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1974",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "07:16",
+  "EndTime": "14:22",
+  "Duration": 7.1,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3288",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "07:46",
+  "EndTime": "15:52",
+  "Duration": 8.1,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3292",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "08:24",
+  "EndTime": "16:32",
+  "Duration": 8.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "K2186",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "08:57",
+  "EndTime": "04:47",
+  "Duration": 19.83,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2194",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "09:19",
+  "EndTime": "16:28",
+  "Duration": 7.15,
+  "Cost": null
+ },
+ {
+  "TrainID": "K360",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "09:29",
+  "EndTime": "06:05",
+  "Duration": 20.6,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3164",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "09:38",
+  "EndTime": "17:47",
+  "Duration": 8.15,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1979",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "09:56",
+  "EndTime": "18:40",
+  "Duration": 8.73,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3174",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "10:15",
+  "EndTime": "18:01",
+  "Duration": 7.77,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3284",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "10:37",
+  "EndTime": "19:38",
+  "Duration": 9.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3257",
+  "TrainType": "高铁",
+  "From": "上海南",
+  "To": "西安北",
+  "BeginTime": "10:42",
+  "EndTime": "20:08",
+  "Duration": 9.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1924",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "11:28",
+  "EndTime": "19:00",
+  "Duration": 7.53,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3152",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "11:32",
+  "EndTime": "20:29",
+  "Duration": 8.95,
+  "Cost": null
+ },
+ {
+  "TrainID": "D112",
+  "TrainType": "高铁",
+  "From": "上海松江",
+  "To": "西安",
+  "BeginTime": "12:03",
+  "EndTime": "03:30",
+  "Duration": 15.45,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1928",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "12:36",
+  "EndTime": "20:00",
+  "Duration": 7.4,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3161",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "12:51",
+  "EndTime": "21:46",
+  "Duration": 8.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "D288",
+  "TrainType": "高铁",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "13:22",
+  "EndTime": "04:53",
+  "Duration": 15.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1932",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "13:38",
+  "EndTime": "20:41",
+  "Duration": 7.05,
+  "Cost": null
+ },
+ {
+  "TrainID": "D122",
+  "TrainType": "高铁",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "14:13",
+  "EndTime": "05:24",
+  "Duration": 15.18,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z376",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "15:38",
+  "EndTime": "07:35",
+  "Duration": 15.95,
+  "Cost": null
+ },
+ {
+  "TrainID": "K560",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "15:52",
+  "EndTime": "12:26",
+  "Duration": 20.57,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1916",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "16:09",
+  "EndTime": "23:00",
+  "Duration": 6.85,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z40",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "16:48",
+  "EndTime": "08:16",
+  "Duration": 15.47,
+  "Cost": null
+ },
+ {
+  "TrainID": "D216",
+  "TrainType": "高铁",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "16:54",
+  "EndTime": "07:49",
+  "Duration": 14.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1940",
+  "TrainType": "高铁",
+  "From": "上海虹桥",
+  "To": "西安北",
+  "BeginTime": "17:07",
+  "EndTime": "23:33",
+  "Duration": 6.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z304",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "17:46",
+  "EndTime": "08:42",
+  "Duration": 14.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "D126",
+  "TrainType": "高铁",
+  "From": "上海松江",
+  "To": "西安",
+  "BeginTime": "18:09",
+  "EndTime": "09:01",
+  "Duration": 14.87,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z164",
+  "TrainType": "普速",
+  "From": "上海",
+  "To": "西安",
+  "BeginTime": "18:33",
+  "EndTime": "09:19",
+  "Duration": 14.77,
+  "Cost": null
+ }
+]

@@ -1,0 +1,30 @@
+{
+ "schema_version": "shorttrip-dynamic-v1",
+ "uid": "x11c013",
+ "nature_language": "1人从西安出发，前往重庆，共3天；离开西安前安排岳劼恒，请核对跨城班次与到达时刻，没有班次或坐标证据时保留待定连接，切勿编造车次。",
+ "people_number": 1,
+ "city_sequence": [
+  "西安",
+  "重庆"
+ ],
+ "dates": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12"
+ ],
+ "level": "medium",
+ "candidates": [],
+ "retrieval_budget": 8,
+ "requirements": {
+  "must_visit": [
+   "岳劼恒"
+  ],
+  "city_role": "first"
+ },
+ "xian11": {
+  "chain_type": "two_city_xian_first",
+  "xian_role": "first",
+  "translation": "controlled_template",
+  "native_compatible": false
+ }
+}

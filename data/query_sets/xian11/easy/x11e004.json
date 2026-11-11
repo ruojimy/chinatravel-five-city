@@ -1,0 +1,36 @@
+{
+ "uid": "x11e004",
+ "tag": "easy",
+ "start_city": "西安",
+ "target_city": "广州",
+ "days": 1,
+ "people_number": 1,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==1)",
+  "result=(people_count(plan)==1)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({'四川火锅'}<=restaurant_type_set)"
+ ],
+ "nature_language": "当前位置西安。我一个人想去广州玩1天，想吃四川火锅，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. I want to travel to 广州 for 1 day(s); want to try 四川火锅 food. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "required_restaurant_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

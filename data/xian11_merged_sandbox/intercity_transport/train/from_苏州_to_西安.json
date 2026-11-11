@@ -1,0 +1,32 @@
+[
+ {
+  "TrainID": "G1803",
+  "TrainType": "G",
+  "From": "苏州北",
+  "To": "西安北",
+  "BeginTime": "06:38",
+  "EndTime": "13:51",
+  "Duration": 7.22,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1933",
+  "TrainType": "G",
+  "From": "苏州北",
+  "To": "西安北",
+  "BeginTime": "14:03",
+  "EndTime": "20:41",
+  "Duration": 6.63,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1929",
+  "TrainType": "G",
+  "From": "苏州北",
+  "To": "西安北",
+  "BeginTime": "13:01",
+  "EndTime": "20:00",
+  "Duration": 6.98,
+  "Cost": null
+ }
+]

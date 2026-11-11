@@ -1,0 +1,336 @@
+{
+  "uid": "repair_h20241029143456235562_early_departure",
+  "source_uid": "h20241029143456235562",
+  "disruption": "early_departure",
+  "query": {
+    "uid": "repair_h20241029143456235562_early_departure",
+    "tag": "shorttrip_repair",
+    "start_city": "北京",
+    "target_city": "南京",
+    "days": 1,
+    "people_number": 1,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "hard_logic_py": [
+      "result=(day_count(plan)==1)",
+      "result=(people_count(plan)==1)",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='15:30')"
+    ],
+    "nature_language": "[当前位置北京,目标位置南京,旅行人数1,旅行天数1] 我要去南京一天，帮我安排一天旅游的路线。",
+    "nature_language_en": "[Current location: Beijing, Destination: Nanjing, Number of travelers: 1, Number of travel days: 1] I want to go to Nanjing for one day. Please help me arrange a one-day travel itinerary.",
+    "disruption": [
+      {
+        "kind": "early_departure",
+        "code": "return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='15:30')",
+        "note": "traveller must be at the station by 15:30"
+      }
+    ],
+    "source_uid": "h20241029143456235562",
+    "disruption_kind": "early_departure"
+  },
+  "seed_plan": {
+    "people_number": 1,
+    "start_city": "北京",
+    "target_city": "南京",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "北京南站",
+            "end": "南京南站",
+            "start_time": "06:10",
+            "end_time": "10:44",
+            "price": 583.83,
+            "cost": 583.83,
+            "tickets": 1,
+            "type": "train",
+            "transports": [],
+            "TrainID": "G101"
+          },
+          {
+            "position": "南京沃德喜马拉雅冰雪乐园",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "10:59",
+            "end_time": "11:44",
+            "transports": [
+              {
+                "start": "南京南站",
+                "end": "南京南站-地铁站",
+                "mode": "walk",
+                "start_time": "10:44",
+                "end_time": "10:47",
+                "cost": 0,
+                "distance": 0.29,
+                "price": 0
+              },
+              {
+                "start": "南京南站-地铁站",
+                "end": "明发广场-地铁站",
+                "mode": "metro",
+                "start_time": "10:47",
+                "end_time": "10:48",
+                "cost": 2.0,
+                "distance": 0.76,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "明发广场-地铁站",
+                "end": "南京沃德喜马拉雅冰雪乐园",
+                "mode": "walk",
+                "start_time": "10:48",
+                "end_time": "10:59",
+                "cost": 0,
+                "distance": 0.98,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "开通CAFE&BOOK(喜马拉雅店)",
+            "type": "lunch",
+            "price": 41.0,
+            "cost": 41.0,
+            "start_time": "12:07",
+            "end_time": "13:07",
+            "transports": [
+              {
+                "start": "南京沃德喜马拉雅冰雪乐园",
+                "end": "明发广场-地铁站",
+                "mode": "walk",
+                "start_time": "11:44",
+                "end_time": "11:55",
+                "cost": 0,
+                "distance": 0.98,
+                "price": 0
+              },
+              {
+                "start": "明发广场-地铁站",
+                "end": "宏运大道-地铁站",
+                "mode": "metro",
+                "start_time": "11:55",
+                "end_time": "11:58",
+                "cost": 2.0,
+                "distance": 1.96,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "宏运大道-地铁站",
+                "end": "开通CAFE&BOOK(喜马拉雅店)",
+                "mode": "walk",
+                "start_time": "11:58",
+                "end_time": "12:07",
+                "cost": 0,
+                "distance": 0.77,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "南京民间抗日战争博物馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "13:28",
+            "end_time": "14:58",
+            "transports": [
+              {
+                "start": "开通CAFE&BOOK(喜马拉雅店)",
+                "end": "宏运大道-地铁站",
+                "mode": "walk",
+                "start_time": "13:07",
+                "end_time": "13:16",
+                "cost": 0,
+                "distance": 0.77,
+                "price": 0
+              },
+              {
+                "start": "宏运大道-地铁站",
+                "end": "软件大道-地铁站",
+                "mode": "metro",
+                "start_time": "13:16",
+                "end_time": "13:22",
+                "cost": 2.0,
+                "distance": 3.35,
+                "price": 2.0,
+                "tickets": 1
+              },
+              {
+                "start": "软件大道-地铁站",
+                "end": "南京民间抗日战争博物馆",
+                "mode": "walk",
+                "start_time": "13:22",
+                "end_time": "13:28",
+                "cost": 0,
+                "distance": 0.55,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "战神突击真枪射击馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 1,
+            "start_time": "15:22",
+            "end_time": "18:22",
+            "transports": [
+              {
+                "start": "南京民间抗日战争博物馆",
+                "end": "软件大道-地铁站",
+                "mode": "walk",
+                "start_time": "14:58",
+                "end_time": "15:04",
+                "cost": 0,
+                "distance": 0.55,
+                "price": 0
+              },
+              {
+                "start": "软件大道-地铁站",
+                "end": "河定桥-地铁站",
+                "mode": "metro",
+                "start_time": "15:04",
+                "end_time": "15:14",
+                "cost": 3.0,
+                "distance": 5.1,
+                "price": 3.0,
+                "tickets": 1
+              },
+              {
+                "start": "河定桥-地铁站",
+                "end": "战神突击真枪射击馆",
+                "mode": "walk",
+                "start_time": "15:14",
+                "end_time": "15:22",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "新晶丽酒店·南京精菜馆",
+            "type": "dinner",
+            "price": 256.0,
+            "cost": 256.0,
+            "start_time": "18:45",
+            "end_time": "19:45",
+            "transports": [
+              {
+                "start": "战神突击真枪射击馆",
+                "end": "河定桥-地铁站",
+                "mode": "walk",
+                "start_time": "18:22",
+                "end_time": "18:30",
+                "cost": 0,
+                "distance": 0.71,
+                "price": 0
+              },
+              {
+                "start": "河定桥-地铁站",
+                "end": "卡子门-地铁站",
+                "mode": "metro",
+                "start_time": "18:30",
+                "end_time": "18:40",
+                "cost": 3.0,
+                "distance": 5.3,
+                "price": 3.0,
+                "tickets": 1
+              },
+              {
+                "start": "卡子门-地铁站",
+                "end": "新晶丽酒店·南京精菜馆",
+                "mode": "walk",
+                "start_time": "18:40",
+                "end_time": "18:45",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "南京站",
+            "end": "北京站",
+            "start_time": "23:56",
+            "end_time": "09:26",
+            "price": 538.92,
+            "cost": 538.92,
+            "tickets": 1,
+            "type": "train",
+            "transports": [
+              {
+                "start": "新晶丽酒店·南京精菜馆",
+                "end": "卡子门-地铁站",
+                "mode": "walk",
+                "start_time": "19:45",
+                "end_time": "19:50",
+                "cost": 0,
+                "distance": 0.46,
+                "price": 0
+              },
+              {
+                "start": "卡子门-地铁站",
+                "end": "南京站-地铁站",
+                "mode": "metro",
+                "start_time": "19:50",
+                "end_time": "20:10",
+                "cost": 4.0,
+                "distance": 10.45,
+                "price": 4.0,
+                "tickets": 1
+              },
+              {
+                "start": "南京站-地铁站",
+                "end": "南京站",
+                "mode": "walk",
+                "start_time": "20:10",
+                "end_time": "20:12",
+                "cost": 0,
+                "distance": 0.25,
+                "price": 0
+              }
+            ],
+            "TrainID": "D6"
+          }
+        ]
+      }
+    ]
+  },
+  "locked": {
+    "kind": "dinner",
+    "position": "新晶丽酒店·南京精菜馆",
+    "start_time": "18:45",
+    "end_time": "19:45"
+  },
+  "feasible": false,
+  "witness": null,
+  "witness_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "commonsense_violations": [],
+    "hard_results": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "hard_pass_count": 4,
+    "hard_total": 4,
+    "hard_ok": true,
+    "all_ok": true,
+    "error": null
+  },
+  "witness_cost": null,
+  "seed_violations": [
+    "failed DSL 3"
+  ]
+}

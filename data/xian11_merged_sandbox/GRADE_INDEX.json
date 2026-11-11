@@ -1,0 +1,67 @@
+{
+ "standard": "docs/data_grading_standard.md",
+ "snapshot": "results/xian_gapfill_20261109/snapshot_v17/catalog.sqlite3",
+ "generated_at": "2026-11-11T01:13:00+08:00",
+ "policy": "L1-L3 -> sandbox main path; L4 -> reference_only; L2/L3 open dynamic search on access",
+ "kinds": {
+  "attraction": {
+   "L1": 571,
+   "L2": 20,
+   "L3": 0,
+   "L4": 166,
+   "main": 591,
+   "dynamic_fetch": 20
+  },
+  "restaurant": {
+   "L1": 322,
+   "L2": 22,
+   "L3": 142,
+   "L4": 74,
+   "main": 486,
+   "dynamic_fetch": 164
+  },
+  "accommodation": {
+   "L1": 234,
+   "L2": 84,
+   "L3": 388,
+   "L4": 55,
+   "main": 706,
+   "dynamic_fetch": 708
+  },
+  "poi": {
+   "L1": 1298,
+   "L2": 96,
+   "L3": 0,
+   "L4": 5,
+   "main": 1394,
+   "dynamic_fetch": 96
+  },
+  "metro_station": {
+   "L1": 474,
+   "L2": 0,
+   "L3": 71,
+   "L4": 0,
+   "main": 545,
+   "dynamic_fetch": 71
+  },
+  "train": {
+   "L1": 423,
+   "L2": 13,
+   "L3": 0,
+   "L4": 0,
+   "main": 436,
+   "dynamic_fetch": 13
+  },
+  "flight": {
+   "L1": 200,
+   "L2": 77,
+   "L3": 0,
+   "L4": 36,
+   "main": 277,
+   "dynamic_fetch": 77
+  }
+ },
+ "sandbox": "data/xian11_sandbox",
+ "merged_sandbox": "data/xian11_merged_sandbox",
+ "dynamic_entry": "scripts/dynamic_lookup.py"
+}

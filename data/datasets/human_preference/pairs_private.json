@@ -1,0 +1,577 @@
+{
+  "generated_at": "2026-10-22",
+  "seed": 20261022,
+  "note": "A/B -> 候选映射与配置，仅用于事后计算模型-人一致率；不要给评价者看",
+  "pairs": [
+    {
+      "pair_id": "e20241028160248698752__p01",
+      "candidate_A": 14,
+      "candidate_B": 7,
+      "signature_A": "上海虹桥站@08:00|亚运主题公园@09:09|中国扇博物馆@10:36|101茶餐厅@11:42|京杭大运河博物馆@13:00|杭州东站@22:27",
+      "signature_B": "上海虹桥站@09:01|三公园@10:37|南方迷宗大包(湖滨店)@13:18|不伤心理想国(东站万象汇店)@14:43|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p02",
+      "candidate_A": 14,
+      "candidate_B": 4,
+      "signature_A": "上海虹桥站@08:00|亚运主题公园@09:09|中国扇博物馆@10:36|101茶餐厅@11:42|京杭大运河博物馆@13:00|杭州东站@22:27",
+      "signature_B": "上海虹桥站@08:00|三公园@09:08|南方迷宗大包(湖滨店)@11:49|不伤心理想国(东站万象汇店)@13:14|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p03",
+      "candidate_A": 7,
+      "candidate_B": 17,
+      "signature_A": "上海虹桥站@09:01|三公园@10:37|南方迷宗大包(湖滨店)@13:18|不伤心理想国(东站万象汇店)@14:43|杭州东站@22:27",
+      "signature_B": "上海虹桥站@09:01|中国扇博物馆@10:44|101茶餐厅@11:50|亚运主题公园@13:27|京杭大运河博物馆@14:51|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "price",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p04",
+      "candidate_A": 6,
+      "candidate_B": 14,
+      "signature_A": "上海虹桥站@09:01|不伤心理想国(东站万象汇店)@10:28|必胜客(天成国际店)@12:42|江和美海洋公园@13:53|杭州东站@22:27",
+      "signature_B": "上海虹桥站@08:00|亚运主题公园@09:09|中国扇博物馆@10:36|101茶餐厅@11:42|京杭大运河博物馆@13:00|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p05",
+      "candidate_A": 11,
+      "candidate_B": 6,
+      "signature_A": "上海虹桥站@07:04|亚运主题公园@08:20|中国扇博物馆@09:47|京杭大运河博物馆@10:36|101茶餐厅@11:39|杭州东站@22:27",
+      "signature_B": "上海虹桥站@09:01|不伤心理想国(东站万象汇店)@10:28|必胜客(天成国际店)@12:42|江和美海洋公园@13:53|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p06",
+      "candidate_A": 4,
+      "candidate_B": 17,
+      "signature_A": "上海虹桥站@08:00|三公园@09:08|南方迷宗大包(湖滨店)@11:49|不伤心理想国(东站万象汇店)@13:14|杭州东站@22:27",
+      "signature_B": "上海虹桥站@09:01|中国扇博物馆@10:44|101茶餐厅@11:50|亚运主题公园@13:27|京杭大运河博物馆@14:51|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p07",
+      "candidate_A": 10,
+      "candidate_B": 3,
+      "signature_A": "上海虹桥站@07:04|三公园@08:19|不伤心理想国(东站万象汇店)@11:16|南方迷宗大包(湖滨店)@13:41|中国刀剪剑博物馆@15:06|杭州东站@22:27",
+      "signature_B": "上海虹桥站@08:00|浙江大学(华家池校区)-植物园@09:04|必胜客(天成国际店)@11:18|不伤心理想国(东站万象汇店)@12:32|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "price",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p08",
+      "candidate_A": 0,
+      "candidate_B": 16,
+      "signature_A": "上海虹桥站@07:04|浙江大学(华家池校区)-植物园@08:15|不伤心理想国(东站万象汇店)@10:38|必胜客(天成国际店)@12:52|杭州东站@22:27",
+      "signature_B": "上海虹桥站@09:01|三公园@10:37|南方迷宗大包(湖滨店)@13:18|不伤心理想国(东站万象汇店)@14:43|中山公园@17:22|建德大包(凤起路店)@18:45|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p09",
+      "candidate_A": 6,
+      "candidate_B": 10,
+      "signature_A": "上海虹桥站@09:01|不伤心理想国(东站万象汇店)@10:28|必胜客(天成国际店)@12:42|江和美海洋公园@13:53|杭州东站@22:27",
+      "signature_B": "上海虹桥站@07:04|三公园@08:19|不伤心理想国(东站万象汇店)@11:16|南方迷宗大包(湖滨店)@13:41|中国刀剪剑博物馆@15:06|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160248698752__p10",
+      "candidate_A": 15,
+      "candidate_B": 4,
+      "signature_A": "上海虹桥站@09:01|不伤心理想国(东站万象汇店)@10:28|必胜客(天成国际店)@12:42|江和美海洋公园@13:53|坝子桥@14:59|滋味渊·匠心桐庐菜(景芳店)@17:54|杭州东站@22:27",
+      "signature_B": "上海虹桥站@08:00|三公园@09:08|南方迷宗大包(湖滨店)@11:49|不伤心理想国(东站万象汇店)@13:14|杭州东站@22:27",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p01",
+      "candidate_A": 11,
+      "candidate_B": 1,
+      "signature_A": "广州站@07:00|东湖公园@09:38|东部通航·空中的士直升机飞行基地(大中华店)@11:02|79号渔船海鲜饭店(笋岗店)@12:02|奈尔宝家庭中心(卓悦店)@13:20|深圳北站@23:30",
+      "signature_B": "广州站@07:00|万佛禅寺@09:33|东江游击队指挥部旧址纪念馆@10:51|老周记顺德双皮奶@12:10|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p02",
+      "candidate_A": 9,
+      "candidate_B": 4,
+      "signature_A": "广州站@07:00|铁路公园@09:24|谭厨中山传家菜(百合店)@11:42|SGP卡丁车俱乐部@12:55|春江游乐求水山景区游乐场@16:24|木屋烧烤(布吉老街店)@18:51|深圳北站@23:30",
+      "signature_B": "广州北站@08:11|O·POWER文化艺术中心@09:38|老周记顺德双皮奶@11:59|OCAT(深圳馆)@13:17|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p03",
+      "candidate_A": 1,
+      "candidate_B": 9,
+      "signature_A": "广州站@07:00|万佛禅寺@09:33|东江游击队指挥部旧址纪念馆@10:51|老周记顺德双皮奶@12:10|深圳北站@23:30",
+      "signature_B": "广州站@07:00|铁路公园@09:24|谭厨中山传家菜(百合店)@11:42|SGP卡丁车俱乐部@12:55|春江游乐求水山景区游乐场@16:24|木屋烧烤(布吉老街店)@18:51|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "price",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p04",
+      "candidate_A": 3,
+      "candidate_B": 14,
+      "signature_A": "广州北站@08:11|北站中心公园@09:20|玉龙公园@10:31|深圳深铁铂尔曼酒店·璞肴中餐厅@13:41|深圳北站@23:30",
+      "signature_B": "广州北站@08:11|东部通航·空中的士直升机飞行基地(大中华店)@09:36|OCAT(深圳馆)@10:43|gaga(中心书城店)@11:47|塘朗山郊野公园@13:20|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p05",
+      "candidate_A": 6,
+      "candidate_B": 11,
+      "signature_A": "广州南站@09:05|北站中心公园@09:53|玉龙公园@11:04|深圳北站@23:30",
+      "signature_B": "广州站@07:00|东湖公园@09:38|东部通航·空中的士直升机飞行基地(大中华店)@11:02|79号渔船海鲜饭店(笋岗店)@12:02|奈尔宝家庭中心(卓悦店)@13:20|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p06",
+      "candidate_A": 3,
+      "candidate_B": 13,
+      "signature_A": "广州北站@08:11|北站中心公园@09:20|玉龙公园@10:31|深圳深铁铂尔曼酒店·璞肴中餐厅@13:41|深圳北站@23:30",
+      "signature_B": "广州北站@08:11|O·POWER文化艺术中心@09:38|老周记顺德双皮奶@11:59|OCAT(深圳馆)@13:17|东部通航·空中的士直升机飞行基地(大中华店)@14:24|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p07",
+      "candidate_A": 3,
+      "candidate_B": 17,
+      "signature_A": "广州北站@08:11|北站中心公园@09:20|玉龙公园@10:31|深圳深铁铂尔曼酒店·璞肴中餐厅@13:41|深圳北站@23:30",
+      "signature_B": "广州南站@09:05|东部通航·空中的士直升机飞行基地(大中华店)@10:09|OCAT(深圳馆)@11:16|gaga(中心书城店)@12:20|塘朗山郊野公园@13:53|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p08",
+      "candidate_A": 9,
+      "candidate_B": 3,
+      "signature_A": "广州站@07:00|铁路公园@09:24|谭厨中山传家菜(百合店)@11:42|SGP卡丁车俱乐部@12:55|春江游乐求水山景区游乐场@16:24|木屋烧烤(布吉老街店)@18:51|深圳北站@23:30",
+      "signature_B": "广州北站@08:11|北站中心公园@09:20|玉龙公园@10:31|深圳深铁铂尔曼酒店·璞肴中餐厅@13:41|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p09",
+      "candidate_A": 2,
+      "candidate_B": 6,
+      "signature_A": "广州站@07:00|东湖公园@09:38|东部通航·空中的士直升机飞行基地(大中华店)@11:02|79号渔船海鲜饭店(笋岗店)@12:02|深圳北站@23:30",
+      "signature_B": "广州南站@09:05|北站中心公园@09:53|玉龙公园@11:04|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160251109186__p10",
+      "candidate_A": 17,
+      "candidate_B": 6,
+      "signature_A": "广州南站@09:05|东部通航·空中的士直升机飞行基地(大中华店)@10:09|OCAT(深圳馆)@11:16|gaga(中心书城店)@12:20|塘朗山郊野公园@13:53|深圳北站@23:30",
+      "signature_B": "广州南站@09:05|北站中心公园@09:53|玉龙公园@11:04|深圳北站@23:30",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p01",
+      "candidate_A": 14,
+      "candidate_B": 4,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|刘湘墓@13:25|成都东站@22:36",
+      "signature_B": "重庆西站@08:00|MAO Livehouse@09:40|三圣花乡旅游区@11:32|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p02",
+      "candidate_A": 5,
+      "candidate_B": 7,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|成都东站@22:36",
+      "signature_B": "重庆西站@09:07|邓记新一代糖油果子@12:59|七重空间大国重器互动体验馆@14:31|obibi蜀色茶颜(奎星楼店)@17:27|井巷子@18:42|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p03",
+      "candidate_A": 11,
+      "candidate_B": 7,
+      "signature_A": "重庆西站@07:04|东门市井@08:55|交子公园@10:10|刘湘墓@11:34|300杯·和牛烧肉清酒(廊里店)@12:43|成都东站@22:36",
+      "signature_B": "重庆西站@09:07|邓记新一代糖油果子@12:59|七重空间大国重器互动体验馆@14:31|obibi蜀色茶颜(奎星楼店)@17:27|井巷子@18:42|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "late",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p04",
+      "candidate_A": 3,
+      "candidate_B": 11,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|新尚公馆·水韵Plus@10:26|麻辣空间·清油火锅(万科魅力店)@12:13|成都东站@22:36",
+      "signature_B": "重庆西站@07:04|东门市井@08:55|交子公园@10:10|刘湘墓@11:34|300杯·和牛烧肉清酒(廊里店)@12:43|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p05",
+      "candidate_A": 14,
+      "candidate_B": 3,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|刘湘墓@13:25|成都东站@22:36",
+      "signature_B": "重庆西站@08:00|东门市井@09:31|新尚公馆·水韵Plus@10:26|麻辣空间·清油火锅(万科魅力店)@12:13|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "distance",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p06",
+      "candidate_A": 14,
+      "candidate_B": 1,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|刘湘墓@13:25|成都东站@22:36",
+      "signature_B": "重庆西站@07:04|MAO Livehouse@09:04|三圣花乡旅游区@10:56|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "price",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p07",
+      "candidate_A": 2,
+      "candidate_B": 11,
+      "signature_A": "重庆西站@07:04|东门市井@08:55|交子公园@10:10|成都东站@22:36",
+      "signature_B": "重庆西站@07:04|东门市井@08:55|交子公园@10:10|刘湘墓@11:34|300杯·和牛烧肉清酒(廊里店)@12:43|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "early",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p08",
+      "candidate_A": 0,
+      "candidate_B": 14,
+      "signature_A": "重庆西站@07:04|东门市井@08:55|新尚公馆·水韵Plus@09:50|麻辣空间·清油火锅(万科魅力店)@11:37|成都东站@22:36",
+      "signature_B": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|刘湘墓@13:25|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "early",
+        "order_by": "distance",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p09",
+      "candidate_A": 13,
+      "candidate_B": 5,
+      "signature_A": "重庆西站@08:00|MAO Livehouse@09:40|三圣花乡旅游区@11:32|东湖公园@14:49|成都东站@22:36",
+      "signature_B": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 3,
+        "window": "mid",
+        "order_by": "price",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    },
+    {
+      "pair_id": "e20241028160253742452__p10",
+      "candidate_A": 5,
+      "candidate_B": 17,
+      "signature_A": "重庆西站@08:00|东门市井@09:31|交子公园@10:46|300杯·和牛烧肉清酒(廊里店)@12:01|成都东站@22:36",
+      "signature_B": "重庆西站@09:07|TAVIE LAND塔未@12:52|刘湘墓@14:23|奎星楼街@15:25|易园园林艺术博物馆@16:36|he’s何师烧烤(交大凯德店)@17:33|成都东站@22:36",
+      "config_A": {
+        "attractions_per_day": 2,
+        "window": "mid",
+        "order_by": "duration",
+        "mode": "metro"
+      },
+      "config_B": {
+        "attractions_per_day": 3,
+        "window": "late",
+        "order_by": "duration",
+        "mode": "metro"
+      }
+    }
+  ]
+}

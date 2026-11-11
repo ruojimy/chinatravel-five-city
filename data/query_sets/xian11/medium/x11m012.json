@@ -1,0 +1,46 @@
+{
+ "uid": "x11m012",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "北京",
+ "days": 2,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==2)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'airplane'}==intercity_transport_set)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=80)",
+  "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'宝岛便当(西安碑林店)'}<=restaurant_name_set)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=2000)",
+  "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=='灞桥区基督教半坡礼拜堂': result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=360)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+ ],
+ "nature_language": "当前位置西安。我们四个人想去北京玩2天，往返坐飞机，每餐人均不超过80元，想去宝岛便当(西安碑林店)吃饭，预算2000元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. four of us want to travel to 北京 for 2 day(s); travel by airplane both ways, meal cost under 80 RMB per person, want to eat at 宝岛便当(西安碑林店), with a budget of 2000 RMB. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "intercity_modes_include",
+  "restaurant_budget",
+  "required_restaurant_names",
+  "total_budget",
+  "either_requirement"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "logic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

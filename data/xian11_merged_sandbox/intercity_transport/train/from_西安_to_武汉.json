@@ -1,0 +1,342 @@
+[
+ {
+  "TrainID": "G870",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "07:11",
+  "EndTime": "11:07",
+  "Duration": 3.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "G412",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "07:27",
+  "EndTime": "10:35",
+  "Duration": 3.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "K228",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "07:33",
+  "EndTime": "22:51",
+  "Duration": 15.3,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3996",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "07:36",
+  "EndTime": "11:26",
+  "Duration": 3.83,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3902",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "08:03",
+  "EndTime": "12:15",
+  "Duration": 4.2,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3904",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "08:08",
+  "EndTime": "11:48",
+  "Duration": 3.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3906",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "09:15",
+  "EndTime": "13:12",
+  "Duration": 3.95,
+  "Cost": null
+ },
+ {
+  "TrainID": "K84",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "09:55",
+  "EndTime": "00:03",
+  "Duration": 14.13,
+  "Cost": null
+ },
+ {
+  "TrainID": "G4612",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "10:28",
+  "EndTime": "15:24",
+  "Duration": 4.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3908",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "10:39",
+  "EndTime": "14:55",
+  "Duration": 4.27,
+  "Cost": null
+ },
+ {
+  "TrainID": "G866",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "10:49",
+  "EndTime": "15:26",
+  "Duration": 4.62,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3918",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "11:27",
+  "EndTime": "15:48",
+  "Duration": 4.35,
+  "Cost": null
+ },
+ {
+  "TrainID": "G642",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "11:55",
+  "EndTime": "16:35",
+  "Duration": 4.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3910",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "12:07",
+  "EndTime": "16:19",
+  "Duration": 4.2,
+  "Cost": null
+ },
+ {
+  "TrainID": "G406",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "12:22",
+  "EndTime": "16:04",
+  "Duration": 3.7,
+  "Cost": null
+ },
+ {
+  "TrainID": "K1298",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "12:28",
+  "EndTime": "00:23",
+  "Duration": 11.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3912",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "12:54",
+  "EndTime": "17:49",
+  "Duration": 4.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2174",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "12:55",
+  "EndTime": "16:55",
+  "Duration": 4,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3914",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "13:25",
+  "EndTime": "17:07",
+  "Duration": 3.7,
+  "Cost": null
+ },
+ {
+  "TrainID": "G848",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "13:31",
+  "EndTime": "17:51",
+  "Duration": 4.33,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1166",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "汉口",
+  "BeginTime": "13:59",
+  "EndTime": "18:00",
+  "Duration": 4.02,
+  "Cost": null
+ },
+ {
+  "TrainID": "G854",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "14:16",
+  "EndTime": "19:12",
+  "Duration": 4.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3856",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "15:02",
+  "EndTime": "19:07",
+  "Duration": 4.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3182",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "武汉",
+  "BeginTime": "15:48",
+  "EndTime": "20:34",
+  "Duration": 4.77,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3926",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "16:41",
+  "EndTime": "19:37",
+  "Duration": 2.93,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z38",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "18:17",
+  "EndTime": "04:57",
+  "Duration": 10.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "K148",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "18:43",
+  "EndTime": "08:09",
+  "Duration": 13.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "K145",
+  "TrainType": "普速",
+  "From": "西安东",
+  "To": "武昌",
+  "BeginTime": "19:15",
+  "EndTime": "08:09",
+  "Duration": 12.9,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3864",
+  "TrainType": "高铁",
+  "From": "西安东",
+  "To": "汉口",
+  "BeginTime": "19:25",
+  "EndTime": "22:37",
+  "Duration": 3.2,
+  "Cost": null
+ },
+ {
+  "TrainID": "K1086",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "19:37",
+  "EndTime": "06:57",
+  "Duration": 11.33,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z266",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "21:47",
+  "EndTime": "08:27",
+  "Duration": 10.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z136",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "22:10",
+  "EndTime": "09:28",
+  "Duration": 11.3,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z294",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "23:26",
+  "EndTime": "11:03",
+  "Duration": 11.62,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z128",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "武昌",
+  "BeginTime": "23:44",
+  "EndTime": "11:46",
+  "Duration": 12.03,
+  "Cost": null
+ }
+]

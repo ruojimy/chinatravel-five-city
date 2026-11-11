@@ -1,0 +1,123 @@
+{
+  "version": "collection-loop-v1",
+  "reviewed_on": "2026-10-29",
+  "mode": "collection_static_reference",
+  "cities": [
+    "西安",
+    "厦门",
+    "宁波",
+    "长沙",
+    "青岛"
+  ],
+  "catalog": "data/five_city_reference_v4_20261026/catalog.sqlite3",
+  "manifest": "data/five_city_reference_v4_20261026/manifest.json",
+  "legacy_pointer_is_stale": "results/p29_five_city_completion/current_five_city_catalog.json",
+  "levels": [
+    "easy",
+    "medium",
+    "human"
+  ],
+  "medium_additional_constraints": [
+    3,
+    5
+  ],
+  "medium_appendix_variant": [
+    2,
+    5
+  ],
+  "human_generated_origin": "synthetic_human_style",
+  "cohort": {
+    "development_per_city_level": 4,
+    "holdout_per_city_level": 2,
+    "freeze_before_repair": true,
+    "max_batches_per_run": 3
+  },
+  "stop": {
+    "global_block_rate": 0.1,
+    "stratum_block_rate": 0.2,
+    "stable_rounds": 2,
+    "min_block_rate_gain": 0.01,
+    "max_repair_rounds": 4
+  },
+  "budget": {
+    "web_action": 60,
+    "api_http": 0
+  },
+  "max_sources_per_gap": 3,
+  "max_workers": 2,
+  "agent_models": {
+    "coordinator": "gpt-6.1-terra",
+    "coordinator_reasoning": "high",
+    "worker": "gpt-6-luna",
+    "worker_reasoning": "medium",
+    "speed": "standard",
+    "model_selection_must_be_verified": true
+  },
+  "continuation_policy": {
+    "revision": "2026-10-30-no-microtask-exit",
+    "checkpoint_is_not_session_exit": true,
+    "continue_while_ready_work_and_guard_allows": true,
+    "first_pilot_completed": true,
+    "early_exit_requires_artifact_and_no_ready_items": true,
+    "engineering_milestone": "strict_adapter_integrated_with_five_city_real_data_smoke",
+    "avoid_idle_time_padding": true
+  },
+  "scheduled_run_policy": {
+    "interval_hours": 8,
+    "target_minutes": [
+      45,
+      60
+    ],
+    "stop_starting_work_after_minutes": 50,
+    "checkpoint_deadline_minutes": 60,
+    "control_mode": "time_only",
+    "usage_monitoring": "disabled_by_user",
+    "max_repairs_per_wakeup": 4,
+    "avoid_overlapping_runs": true,
+    "limits_are": "time_and_source_request_safety_only_no_account_quota_baselines"
+  },
+  "overnight_acceptance": {
+    "date": "2026-10-30",
+    "report": "报告/2026-10-30早间验收.md",
+    "supplemental_local_run": "2026-10-30T04:00:00+08:00",
+    "supplemental_automation_id": "chinatravel-10-30-04",
+    "supplemental_occurrences": 1,
+    "preserve_normal_schedule": true
+  },
+  "unknown_source_exploration_fraction": 0.2,
+  "coverage_floor": {
+    "axes": [
+      "city",
+      "level",
+      "kind"
+    ],
+    "required_kinds": [
+      "attraction",
+      "restaurant",
+      "accommodation",
+      "poi",
+      "metro_station",
+      "train",
+      "flight"
+    ],
+    "must_include_room_scope_and_intercity_directions": true
+  },
+  "publication": "new_immutable_version_after_contract_and_semantic_gates",
+  "network_execution": "agent_tools_after_shared_ledger_reservation",
+  "scheduled_execution_created": true,
+  "automation": {
+    "id": "chinatravel",
+    "kind": "cron",
+    "status": "ACTIVE",
+    "execution_environment": "local",
+    "local_times": [
+      "00:00",
+      "08:00",
+      "16:00"
+    ],
+    "timezone": "Asia/Shanghai",
+    "prompt_file": "collector_agent/AUTOMATION_PROMPT.md",
+    "main_model_verified_from_saved_automation": true
+  },
+  "thresholds_are": "initial_operational_policy_not_empirical_guarantees"
+}

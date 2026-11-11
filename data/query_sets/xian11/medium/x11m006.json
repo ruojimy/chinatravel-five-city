@@ -1,0 +1,46 @@
+{
+ "uid": "x11m006",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "成都",
+ "days": 3,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=6000)",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+  "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({'毛家烤鸭店'}<=restaurant_name_set)",
+  "food_cost,food_count=0,0\nfor activity in allactivities(plan):\n    if activity_type(activity) in ['breakfast', 'lunch', 'dinner']:\n        food_cost+=activity_cost(activity)\n        food_count+=1\nresult=(food_cost/food_count/people_count(plan)<=60)",
+  "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=='兴庆宫公园-兴庆宫两栖爬行馆':\n    if activity_start_time(activity)>='09:00' and activity_end_time(activity)<='13:40': result=True"
+ ],
+ "nature_language": "当前位置西安。我们三个人想去成都玩3天，每天预算不超过6000元，每晚人均住宿不超过500元，想去毛家烤鸭店吃饭，每餐人均不超过60元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 成都 for 3 day(s); with a daily budget under 6000 RMB, hotel cost under 500 RMB per person per night, want to eat at 毛家烤鸭店, meal cost under 60 RMB per person. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "daily_budget",
+  "accommodation_budget",
+  "required_restaurant_names",
+  "restaurant_budget",
+  "attraction_time_window"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "day_time",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

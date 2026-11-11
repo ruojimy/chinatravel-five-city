@@ -1,0 +1,30 @@
+{
+ "schema_version": "shorttrip-dynamic-v1",
+ "uid": "x11c025",
+ "nature_language": "3人从西安出发，前往杭州，共3天；离开西安前安排楼观(垂·钓·园)，请核对跨城班次与到达时刻，没有班次或坐标证据时保留待定连接，切勿编造车次。",
+ "people_number": 3,
+ "city_sequence": [
+  "西安",
+  "杭州"
+ ],
+ "dates": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12"
+ ],
+ "level": "human",
+ "candidates": [],
+ "retrieval_budget": 8,
+ "requirements": {
+  "must_visit": [
+   "楼观(垂·钓·园)"
+  ],
+  "city_role": "first"
+ },
+ "xian11": {
+  "chain_type": "two_city_xian_first",
+  "xian_role": "first",
+  "translation": "controlled_template",
+  "native_compatible": false
+ }
+}

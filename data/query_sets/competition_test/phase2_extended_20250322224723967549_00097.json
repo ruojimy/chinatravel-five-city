@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250322224723967549_00097",
+  "tag": "phase2",
+  "start_city": "Wuhan",
+  "target_city": "Chengdu",
+  "days": 2,
+  "people_number": 2,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==2)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show\":\n    if activity_start_time(activity)>=\"18:21\" and activity_end_time(activity)<=\"20:16\": result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=645)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result_list=[]\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({\"Family Room\"}<=accommodation_type_set)\nresult_list.append(result)\nattraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==8)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Chengdu Yuehuimei Hotel\"}<=day_accommodation_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Maha Pond\":\n    if activity_start_time(activity)>=\"08:15\" and activity_end_time(activity)<=\"10:10\": result=True",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==7)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=278)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Chengdu Yuehuimei Hotel\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show\" and first_activity_seen: result=True"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 2 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 2 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire visit to Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show within the time window from 18:21 to 20:16. (B) Spend at least 645 minutes in total visiting attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Include the following hotel feature types: Family Room. (B) Visit exactly 8 attractions during the trip.",
+    "Stay at Chengdu Yuehuimei Hotel on day 1.",
+    "Schedule the entire visit to Maha Pond within the time window from 08:15 to 10:10.",
+    "Visit exactly 1 attraction on day 2.",
+    "Visit exactly 7 attractions on day 1.",
+    "Keep the total duration of all in-city transport segments within 278 minutes.",
+    "Dine at Chengdu Yuehuimei Hotel before visiting Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show."
+  ],
+  "nature_language": "We are 2 people traveling from Wuhan to Chengdu for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 2 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 2 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire visit to Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show within the time window from 18:21 to 20:16. (B) Spend at least 645 minutes in total visiting attractions.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Include the following hotel feature types: Family Room. (B) Visit exactly 8 attractions during the trip.\n6. Stay at Chengdu Yuehuimei Hotel on day 1.\n7. Schedule the entire visit to Maha Pond within the time window from 08:15 to 10:10.\n8. Visit exactly 1 attraction on day 2.\n9. Visit exactly 7 attractions on day 1.\n10. Keep the total duration of all in-city transport segments within 278 minutes.\n11. Dine at Chengdu Yuehuimei Hotel before visiting Lianhua Pear Garden Club - Chunxi Theater Sichuan Opera Face-Changing Show.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"either_requirement\",\"accommodation_on_day\",\"attraction_time_window\",\"attraction_count_on_day\",\"attraction_count_on_day\",\"innercity_travel_time_budget\",\"cross_category_order\"]",
+  "official_phase2_evaluation": true
+}

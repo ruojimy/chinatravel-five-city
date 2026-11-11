@@ -1,0 +1,3933 @@
+[
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E01",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安北站出发，想去西安的汉阳陵、大明宫国家遗址公园，坐地铁或公交，当天 18:00 前回到西安北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 380 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:198d4379ff431ca2f9c86dd878d6",
+    "name": "汉阳陵",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 240174430410981,
+     "lat": 34.44379722,
+     "lon": 108.94071111,
+     "name": "汉阳陵",
+     "opentime": "08:30",
+     "price": 70.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 2.0,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/hanyangling",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "博物馆",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b0b529617b6693c7472c99955cfe",
+    "name": "大明宫国家遗址公园",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 107975805814154,
+     "lat": 34.291388888,
+     "lon": 108.959444444,
+     "name": "大明宫国家遗址公园",
+     "opentime": "08:30",
+     "price": 60.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 2.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/daming-palace",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "公园",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 380.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 380.0,
+   "known_cost": 260.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E02",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安站出发，想去西安的西安钟楼、西安鼓楼，坐地铁或公交，当天 18:00 前回到西安站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 240 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:1e27411fc6e477084f4fbd5c5014",
+    "name": "西安钟楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 16983358412743,
+     "lat": 34.26101,
+     "lon": 108.94238,
+     "name": "西安钟楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/bell-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:bf82985fc0e82feb1cbcad42e655",
+    "name": "西安鼓楼",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 65110926856218,
+     "lat": 34.261793573,
+     "lon": 108.93893069,
+     "name": "西安鼓楼",
+     "opentime": "08:30",
+     "price": 30.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/drum-tower",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "景点",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 240.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 240.0,
+   "known_cost": 120.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E03",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安北站出发，想去西安的广仁寺、西安化觉巷清真大寺，坐地铁或公交，当天 18:00 前回到西安北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 170 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:6114fa0da8bba1d073f22716dd1f",
+    "name": "广仁寺",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 270078180048647,
+     "lat": 34.27642353,
+     "lon": 108.92108583,
+     "name": "广仁寺",
+     "opentime": "08:00",
+     "price": 0.0,
+     "recommendmaxtime": 1.5,
+     "recommendmintime": 0.75,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/guangren-temple",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:d2666975f7678da9301960c02537",
+    "name": "西安化觉巷清真大寺",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:40",
+     "id": 14841590863548,
+     "lat": 34.2637,
+     "lon": 108.9313,
+     "name": "西安化觉巷清真大寺",
+     "opentime": "08:00",
+     "price": 25.0,
+     "recommendmaxtime": 1.5,
+     "recommendmintime": 0.75,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/great-mosque",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 170.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 170.0,
+   "known_cost": 50.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E04",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安站出发，想去西安的西安碑林博物馆、西安城墙 Xi'an City Wall，坐地铁或公交，当天 18:00 前回到西安站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 400 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:19418b5075fc9b1238a0d9af7ed6",
+    "name": "西安碑林博物馆",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 185719960583642,
+     "lat": 34.255,
+     "lon": 108.94833333,
+     "name": "西安碑林博物馆",
+     "opentime": "09:00",
+     "price": 85.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/forest-of-steles",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "博物馆",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:e288ddd9b9887ddea97f6e447577",
+    "name": "西安城墙 Xi'an City Wall",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "22:00",
+     "id": 2776668737316,
+     "lat": 34.251448,
+     "lon": 108.947099,
+     "name": "西安城墙 Xi'an City Wall",
+     "opentime": "08:00",
+     "price": 54.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 1.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-wall",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 400.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 400.0,
+   "known_cost": 278.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E05",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安北站出发，想去西安的回民街、西安都城隍庙，坐地铁或公交，当天 18:00 前回到西安北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:6c3aa2af9d01af442f04ed86ca22",
+    "name": "回民街",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 197217566423915,
+     "lat": 34.2638,
+     "lon": 108.934,
+     "name": "回民街",
+     "opentime": "10:00",
+     "price": 0.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "商业街区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/muslim-quarter",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "街巷",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:1ad5a2caf357e8e03474b961e626",
+    "name": "西安都城隍庙",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 155096064384577,
+     "lat": 34.263219865,
+     "lon": 108.93270343,
+     "name": "西安都城隍庙",
+     "opentime": "08:30",
+     "price": 0.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-god-temple",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E06",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安站出发，想去西安的西安城墙 Xi'an City Wall、西安碑林博物馆，坐地铁或公交，当天 18:00 前回到西安站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 400 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安站",
+   "city": "西安",
+   "position_wgs84": [
+    34.2786,
+    108.958
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:2fa5255a87170b7ceb09cd9c2873"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:e288ddd9b9887ddea97f6e447577",
+    "name": "西安城墙 Xi'an City Wall",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "22:00",
+     "id": 2776668737316,
+     "lat": 34.251448,
+     "lon": 108.947099,
+     "name": "西安城墙 Xi'an City Wall",
+     "opentime": "08:00",
+     "price": 54.0,
+     "recommendmaxtime": 4.0,
+     "recommendmintime": 1.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-wall",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:19418b5075fc9b1238a0d9af7ed6",
+    "name": "西安碑林博物馆",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 185719960583642,
+     "lat": 34.255,
+     "lon": 108.94833333,
+     "name": "西安碑林博物馆",
+     "opentime": "09:00",
+     "price": 85.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/forest-of-steles",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "博物馆",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 400.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 400.0,
+   "known_cost": 278.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E07",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从西安北站出发，想去西安的西安都城隍庙、回民街，坐地铁或公交，当天 18:00 前回到西安北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "西安"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "西安北站",
+   "city": "西安",
+   "position_wgs84": [
+    34.3766,
+    108.934
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:01884bfce71462e206f3983eb31b"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:1ad5a2caf357e8e03474b961e626",
+    "name": "西安都城隍庙",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 155096064384577,
+     "lat": 34.263219865,
+     "lon": 108.93270343,
+     "name": "西安都城隍庙",
+     "opentime": "08:30",
+     "price": 0.0,
+     "recommendmaxtime": 1.0,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://visitxian.cn/zh-CN/places/city-god-temple",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "寺庙",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c3aa2af9d01af442f04ed86ca22",
+    "name": "回民街",
+    "city": "西安",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 197217566423915,
+     "lat": 34.2638,
+     "lon": 108.934,
+     "name": "回民街",
+     "opentime": "10:00",
+     "price": 0.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.5,
+     "type": "商业街区"
+    },
+    "coordinate_system": "unknown",
+    "source_url": "https://visitxian.cn/zh-CN/places/muslim-quarter",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": false,
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "街巷",
+      "status": "source_category"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E08",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门北站出发，想去厦门的灵玲国际马戏城、厦门科技馆，坐地铁或公交，当天 18:00 前回到厦门北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 920 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:c77b7cae9e6a565b778664b5e3bb",
+    "name": "灵玲国际马戏城",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 69407980066062,
+     "lat": 24.5913642,
+     "lon": 118.0468072,
+     "name": "灵玲国际马戏城",
+     "opentime": "10:00",
+     "price": 260,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E7%81%B5%E7%8E%B2%E5%9B%BD%E9%99%85%E9%A9%AC%E6%88%8F%E5%9F%8E&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "show_time",
+      "value": "14:30",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f02908aa0e6eacf4fa9afaf63e57",
+    "name": "厦门科技馆",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 83767650338061,
+     "lat": 24.490264,
+     "lon": 118.108127,
+     "name": "厦门科技馆",
+     "opentime": "09:00",
+     "price": 140,
+     "recommendmaxtime": 5,
+     "recommendmintime": 3,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 920.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 920.0,
+   "known_cost": 800.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E09",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门站出发，想去厦门的厦门园林植物园、钟鼓索道，坐地铁或公交，当天 18:00 前回到厦门站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 340 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:a302a282d064fd798356c3383f2c",
+    "name": "厦门园林植物园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 216163219282179,
+     "lat": 24.455259044615,
+     "lon": 118.0904038514,
+     "name": "厦门园林植物园",
+     "opentime": "06:30",
+     "price": 30,
+     "recommendmaxtime": 5,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.xiamenbg.cn/Home/yyzn2",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "植物园",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "雨林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3a66083b38ce329afe695a4e5885",
+    "name": "钟鼓索道",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 165511573851304,
+     "lat": 24.4510271,
+     "lon": 118.0896061,
+     "name": "钟鼓索道",
+     "opentime": "08:30",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": 0.67,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%92%9F%E9%BC%93%E7%B4%A2%E9%81%93&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 340.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 340.0,
+   "known_cost": 220.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E10",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门北站出发，想去厦门的厦门园林植物园、钟鼓索道，坐地铁或公交，当天 18:00 前回到厦门北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 340 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:a302a282d064fd798356c3383f2c",
+    "name": "厦门园林植物园",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 216163219282179,
+     "lat": 24.455259044615,
+     "lon": 118.0904038514,
+     "name": "厦门园林植物园",
+     "opentime": "06:30",
+     "price": 30,
+     "recommendmaxtime": 5,
+     "recommendmintime": 2,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.xiamenbg.cn/Home/yyzn2",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "植物园",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "theme",
+      "value": "雨林",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3a66083b38ce329afe695a4e5885",
+    "name": "钟鼓索道",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 165511573851304,
+     "lat": 24.4510271,
+     "lon": 118.0896061,
+     "name": "钟鼓索道",
+     "opentime": "08:30",
+     "price": 80,
+     "recommendmaxtime": null,
+     "recommendmintime": 0.67,
+     "type": "自然风光"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%92%9F%E9%BC%93%E7%B4%A2%E9%81%93&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 340.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 340.0,
+   "known_cost": 220.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E11",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门站出发，想去厦门的南普陀寺、厦门大学(思明校区)，坐地铁或公交，当天 18:00 前回到厦门站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:3272b4f9ef5c27640c0f5b5661c5",
+    "name": "南普陀寺",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194961818784519,
+     "lat": 24.4432578,
+     "lon": 118.0915032,
+     "name": "南普陀寺",
+     "opentime": "08:00",
+     "price": 0,
+     "recommendmaxtime": 3,
+     "recommendmintime": 1,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "佛教寺院",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7ae9269f2b9890b82dd022e853d0",
+    "name": "厦门大学(思明校区)",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 203143007676623,
+     "lat": 24.4399419,
+     "lon": 118.0930178,
+     "name": "厦门大学(思明校区)",
+     "opentime": "10:30",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "大学校园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "id_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E12",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门北站出发，想去厦门的厦门鼓浪屿海底世界、鼓浪屿，坐地铁或公交，当天 18:00 前回到厦门北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 360 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门北站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.6400179,
+    118.0683222
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:5893031e36f35df4181e2bcd1580"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:9546042cb4aa1d7da60f3c700d12",
+    "name": "厦门鼓浪屿海底世界",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 270739968555340,
+     "lat": 24.4487566,
+     "lon": 118.0663029,
+     "name": "厦门鼓浪屿海底世界",
+     "opentime": "08:00",
+     "price": 119,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8E%A6%E9%97%A8%E9%BC%93%E6%B5%AA%E5%B1%BF%E6%B5%B7%E5%BA%95%E4%B8%96%E7%95%8C&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4c75f87f58c88f7058c1b7f97f7e",
+    "name": "鼓浪屿",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 26393774528419,
+     "lat": 24.4472464,
+     "lon": 118.0618914,
+     "name": "鼓浪屿",
+     "opentime": "00:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "文化旅游区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E9%BC%93%E6%B5%AA%E5%B1%BF&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 360.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 360.0,
+   "known_cost": 238.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E13",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从厦门站出发，想去厦门的胡里山炮台、厦门大学(思明校区)，坐地铁或公交，当天 18:00 前回到厦门站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 170 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "厦门"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "厦门站",
+   "city": "厦门",
+   "position_wgs84": [
+    24.470237,
+    118.1112217
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a445fc850a6f032d524745129d8a"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:62a3075a41754acaa8e261d36452",
+    "name": "胡里山炮台",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 229797016581336,
+     "lat": 24.431757357272176,
+     "lon": 118.10170227903355,
+     "name": "胡里山炮台",
+     "opentime": "08:00",
+     "price": 25,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "历史遗址",
+      "status": "source_attribute_unverified"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:7ae9269f2b9890b82dd022e853d0",
+    "name": "厦门大学(思明校区)",
+    "city": "厦门",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 203143007676623,
+     "lat": 24.4399419,
+     "lon": 118.0930178,
+     "name": "厦门大学(思明校区)",
+     "opentime": "10:30",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "大学校园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?q=%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6&format=jsonv2&limit=5&viewbox=117.85%2C24.80%2C118.40%2C24.35&bounded=1&accept-language=zh-CN",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "id_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 170.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 170.0,
+   "known_cost": 50.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E14",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的天一阁、宁波老外滩，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 180 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:99288641c9ffab7ea3baeb08bee8",
+    "name": "天一阁",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 169314659042143,
+     "lat": 29.87375259,
+     "lon": 121.53562164,
+     "name": "天一阁",
+     "opentime": "08:00",
+     "price": 30.0,
+     "recommendmaxtime": null,
+     "recommendmintime": 2.0,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/4176",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday morning",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 180.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 180.0,
+   "known_cost": 60.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E15",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的庆安会馆、宁波老外滩，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 140 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f3a9a11c60f9a131b5687bffa035",
+    "name": "庆安会馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 271966989459985,
+     "lat": 29.87472222,
+     "lon": 121.55888889,
+     "name": "庆安会馆",
+     "opentime": "08:30",
+     "price": 10.0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://zh.wikipedia.org/zh-cn/%E5%BA%86%E5%AE%89%E4%BC%9A%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 140.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 140.0,
+   "known_cost": 20.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E16",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的宁波老外滩、宁波美术馆，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:526d26a70e59235ae021bdb2fb29",
+    "name": "宁波美术馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 30412075616599,
+     "lat": 29.880753197796327,
+     "lon": 121.55696760727108,
+     "name": "宁波美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.0,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://you.ctrip.com/sight/ningbo83/1482301.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E17",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的宁波美术馆、宁波老外滩，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:526d26a70e59235ae021bdb2fb29",
+    "name": "宁波美术馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 30412075616599,
+     "lat": 29.880753197796327,
+     "lon": 121.55696760727108,
+     "name": "宁波美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.0,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://you.ctrip.com/sight/ningbo83/1482301.html",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:a5775ab10469e941cdb5306c391b",
+    "name": "宁波老外滩",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:59",
+     "id": 84720284393051,
+     "lat": 29.87906,
+     "lon": 121.55721,
+     "name": "宁波老外滩",
+     "opentime": "00:00",
+     "price": 0.0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 2.0,
+     "type": "商业街区"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6490",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "open_24_hours",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E18",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的宁波海洋世界、庆安会馆，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 540 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:096a1776d4eccef8a4957989fe0a",
+    "name": "宁波海洋世界",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:15",
+     "id": 955121386293,
+     "lat": 29.8559613,
+     "lon": 121.5789238,
+     "name": "宁波海洋世界",
+     "opentime": "08:30",
+     "price": 200.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 3.0,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6171",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:f3a9a11c60f9a131b5687bffa035",
+    "name": "庆安会馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:30",
+     "id": 271966989459985,
+     "lat": 29.87472222,
+     "lon": 121.55888889,
+     "name": "庆安会馆",
+     "opentime": "08:30",
+     "price": 10.0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://zh.wikipedia.org/zh-cn/%E5%BA%86%E5%AE%89%E4%BC%9A%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 540.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 540.0,
+   "known_cost": 420.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E19",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从宁波站出发，想去宁波的宁波博物馆、宁波海洋世界，坐地铁或公交，当天 18:00 前回到宁波站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 520 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "宁波"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "宁波站",
+   "city": "宁波",
+   "position_wgs84": [
+    29.864655555,
+    121.53265
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:a5b7864979df433514caa4cef03d"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:2c361ef7d58b8a1d11ceb48bdb6f",
+    "name": "宁波博物馆",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 164283693093204,
+     "lat": 29.817374021714596,
+     "lon": 121.5411280926556,
+     "name": "宁波博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbmuseum.cn/",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "weekend_evening_open",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "reservation_required",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:096a1776d4eccef8a4957989fe0a",
+    "name": "宁波海洋世界",
+    "city": "宁波",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:15",
+     "id": 955121386293,
+     "lat": 29.8559613,
+     "lon": 121.5789238,
+     "name": "宁波海洋世界",
+     "opentime": "08:30",
+     "price": 200.0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 3.0,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://www.nbtour.com/archives/6171",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "indoor",
+      "value": "true",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 520.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 520.0,
+   "known_cost": 400.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E20",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙南站出发，想去长沙的隆平水稻博物馆、马王堆汉墓遗址，坐地铁或公交，当天 18:00 前回到长沙南站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:ee1cef6919e480e630675085c385",
+    "name": "隆平水稻博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 114929917538370,
+     "lat": 28.1928865,
+     "lon": 113.0537731,
+     "name": "隆平水稻博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:5d0be342e09cc0489c9f4f2ed204",
+    "name": "马王堆汉墓遗址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194009883521622,
+     "lat": 28.208611,
+     "lon": 113.021667,
+     "name": "马王堆汉墓遗址",
+     "opentime": "09:00",
+     "price": 2,
+     "recommendmaxtime": 1,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 4.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E21",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙站出发，想去长沙的马王堆汉墓遗址、中国湘绣博物馆，坐地铁或公交，当天 18:00 前回到长沙站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:5d0be342e09cc0489c9f4f2ed204",
+    "name": "马王堆汉墓遗址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194009883521622,
+     "lat": 28.208611,
+     "lon": 113.021667,
+     "name": "马王堆汉墓遗址",
+     "opentime": "09:00",
+     "price": 2,
+     "recommendmaxtime": 1,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4753a2a2da1b2cc8deb693ae9090",
+    "name": "中国湘绣博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 195460757632001,
+     "lat": 28.201636,
+     "lon": 113.004399,
+     "name": "中国湘绣博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 4.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E22",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙南站出发，想去长沙的马王堆汉墓遗址、中国湘绣博物馆，坐地铁或公交，当天 18:00 前回到长沙南站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:5d0be342e09cc0489c9f4f2ed204",
+    "name": "马王堆汉墓遗址",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 194009883521622,
+     "lat": 28.208611,
+     "lon": 113.021667,
+     "name": "马王堆汉墓遗址",
+     "opentime": "09:00",
+     "price": 2,
+     "recommendmaxtime": 1,
+     "recommendmintime": 0.5,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:4753a2a2da1b2cc8deb693ae9090",
+    "name": "中国湘绣博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 195460757632001,
+     "lat": 28.201636,
+     "lon": 113.004399,
+     "name": "中国湘绣博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 4.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E23",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙站出发，想去长沙的湖南省博物馆、湖南烈士公园，坐地铁或公交，当天 18:00 前回到长沙站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f4aca57ba95bc4a6a21042d4919c",
+    "name": "湖南省博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 21388672494261,
+     "lat": 28.215234409548902,
+     "lon": 112.986894243624,
+     "name": "湖南省博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 5.0,
+     "recommendmintime": 3.0,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "reservation_required",
+      "value": true,
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:b487c6b6c174d745d3082e58f10d",
+    "name": "湖南烈士公园",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "23:00",
+     "id": 110904364902520,
+     "lat": 28.214581,
+     "lon": 112.999764,
+     "name": "湖南烈士公园",
+     "opentime": "05:00",
+     "price": 0,
+     "recommendmaxtime": 3,
+     "recommendmintime": 1,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fzh%20%3Fcoord%20%28GROUP_CONCAT%28DISTINCT%20%3Ftl%3Bseparator%3D%22%7C%22%29%20AS%20%3Ftypes%29%20WHERE%20%7B%0A%3Fitem%20wdt%3AP131%2B%20wd%3AQ174091%3B%20wdt%3AP625%20%3Fcoord%3B%20rdfs%3Alabel%20%3Fzh.%20FILTER%28LANG%28%3Fzh%29%3D%22zh%22%29%0A%3Fzhw%20schema%3Aabout%20%3Fitem%3B%20schema%3AisPartOf%20%3Chttps%3A//zh.wikipedia.org/%3E.%0A%3Fitem%20wdt%3AP31%20%3Ft.%20%3Ft%20rdfs%3Alabel%20%3Ftl.%20FILTER%28LANG%28%3Ftl%29%3D%22zh%22%29%0A%7D%20GROUP%20BY%20%3Fitem%20%3Fzh%20%3Fcoord%20LIMIT%203000",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E24",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙南站出发，想去长沙的长沙海底世界、长沙世界之窗，坐地铁或公交，当天 18:00 前回到长沙南站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 820 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:3724e3f9d4d3fffbe99b22daae37",
+    "name": "长沙海底世界",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:00",
+     "id": 151720077395680,
+     "lat": 28.2353610193,
+     "lon": 113.0502424909,
+     "name": "长沙海底世界",
+     "opentime": "09:00",
+     "price": 150,
+     "recommendmaxtime": 4,
+     "recommendmintime": 3,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:3a76a9f3127d77775ac250b63e0c",
+    "name": "长沙世界之窗",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 90087237190509,
+     "lat": 28.2399730193,
+     "lon": 113.0490274909,
+     "name": "长沙世界之窗",
+     "opentime": "09:00",
+     "price": 200,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "游乐园/体育娱乐"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 820.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 820.0,
+   "known_cost": 700.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E25",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙站出发，想去长沙的天心阁、Changsha Bamboo Slips Museum，坐地铁或公交，当天 18:00 前回到长沙站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 180 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.1958,
+    113.011
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:933d06adf05759a6aec0cff87c67"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:cdd64f14cc7f199ab0d5ae2dca1b",
+    "name": "天心阁",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 267238251943578,
+     "lat": 28.1871623,
+     "lon": 112.9758666,
+     "name": "天心阁",
+     "opentime": "08:00",
+     "price": 32,
+     "recommendmaxtime": 2,
+     "recommendmintime": 1,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://cs.bendibao.com/xiuxian/20241210/124143.shtm",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:fae80dd3d0c756b83c2737be02b3",
+    "name": "Changsha Bamboo Slips Museum",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 187051463729944,
+     "lat": 28.1883,
+     "lon": 112.9776,
+     "name": "Changsha Bamboo Slips Museum",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 3.0,
+     "recommendmintime": 1.0,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://docs.overturemaps.org/guides/places/",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 180.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 180.0,
+   "known_cost": 64.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E26",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从长沙南站出发，想去长沙的湖南省科学技术馆、湖南省地质博物馆，坐地铁或公交，当天 18:00 前回到长沙南站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 120 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "长沙"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "长沙南站",
+   "city": "长沙",
+   "position_wgs84": [
+    28.15027778,
+    113.05888889
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:0e189d917d83de55dd676955ee29"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:7abe84a1b43d6c18967c8c15390c",
+    "name": "湖南省科学技术馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "16:00",
+     "id": 4970178382795,
+     "lat": 28.1110823447,
+     "lon": 112.9803541866,
+     "name": "湖南省科学技术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://en.wikivoyage.org/w/index.php?title=Changsha&action=raw",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Tuesday",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:6c93167514c5e7de9001a063474d",
+    "name": "湖南省地质博物馆",
+    "city": "长沙",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 71655155048683,
+     "lat": 28.1111216,
+     "lon": 112.9767069,
+     "name": "湖南省地质博物馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=3&addressdetails=0&countrycodes=cn&q=%E6%B9%96%E5%8D%97%E7%9C%81%E5%9C%B0%E8%B4%A8%E5%8D%9A%E7%89%A9%E9%A6%86",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "indoor",
+      "value": true,
+      "status": "derived"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 120.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 120.0,
+   "known_cost": 0.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E27",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛北站出发，想去青岛的青岛啤酒博物馆、信号山公园，坐地铁或公交，当天 18:00 前回到青岛北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 240 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f657e04a980f5608079ca63ab25f",
+    "name": "青岛啤酒博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 6592813139687,
+     "lat": 36.0789716,
+     "lon": 120.3419778,
+     "name": "青岛啤酒博物馆",
+     "opentime": "08:00",
+     "price": 60,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/tsingtao-beer-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "beer",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 240.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 240.0,
+   "known_cost": 120.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E28",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛站出发，想去青岛的信号山公园、德国总督楼旧址博物馆，坐地铁或公交，当天 18:00 前回到青岛站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 160 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 40.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E29",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛北站出发，想去青岛的德国总督楼旧址博物馆、信号山公园，坐地铁或公交，当天 18:00 前回到青岛北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 160 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 40.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E30",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛站出发，想去青岛的德国总督楼旧址博物馆、信号山公园，坐地铁或公交，当天 18:00 前回到青岛站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 160 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 40.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E31",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛北站出发，想去青岛的青岛市美术馆、德国总督楼旧址博物馆，坐地铁或公交，当天 18:00 前回到青岛北站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 160 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛北站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.169241,
+    120.368056
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:dc7965b15f45597b1a9bcbac7bc0"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:8c7c1c5c7c168957cd363723cd5a",
+    "name": "青岛市美术馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "19:00",
+     "id": 131928367785208,
+     "lat": 36.0614226,
+     "lon": 120.3275421,
+     "name": "青岛市美术馆",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "美术馆/艺术馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/qingdao-art-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:525df40166acf80c77cc78124bcf",
+    "name": "德国总督楼旧址博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:00",
+     "id": 258782985170753,
+     "lat": 36.0647362,
+     "lon": 120.3279321,
+     "name": "德国总督楼旧址博物馆",
+     "opentime": "09:00",
+     "price": 20,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "历史古迹"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/former-german-governor-residence-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "closed_weekday",
+      "value": "Monday",
+      "status": "source_value"
+     },
+     {
+      "tag": "theme",
+      "value": "history",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 160.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 160.0,
+   "known_cost": 40.0,
+   "unknown_price_items": []
+  }
+ },
+ {
+  "schema_version": "p31-five-city-v1",
+  "uid": "E32",
+  "level": "easy",
+  "nature_language": "2026-10-28，两人从青岛站出发，想去青岛的青岛啤酒博物馆、信号山公园，坐地铁或公交，当天 18:00 前回到青岛站。请核对开放时间、两人门票、当天天气和往返路上要多久，预算 240 元。信息缺失或过期就说明要查什么。",
+  "people_number": 2,
+  "city_sequence": [
+   "青岛"
+  ],
+  "dates": [
+   "2026-10-28"
+  ],
+  "start": {
+   "name": "青岛站",
+   "city": "青岛",
+   "position_wgs84": [
+    36.063098,
+    120.30746
+   ],
+   "coordinate_system": "WGS84",
+   "entity_id": "p30:57d1f542d0be0d68633b7856b0f1"
+  },
+  "candidates": [
+   {
+    "entity_id": "p30:f657e04a980f5608079ca63ab25f",
+    "name": "青岛啤酒博物馆",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "17:30",
+     "id": 6592813139687,
+     "lat": 36.0789716,
+     "lon": 120.3419778,
+     "name": "青岛啤酒博物馆",
+     "opentime": "08:00",
+     "price": 60,
+     "recommendmaxtime": null,
+     "recommendmintime": null,
+     "type": "博物馆/纪念馆"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/tsingtao-beer-museum",
+    "entity_verified": false,
+    "missing_fields": [
+     "recommendmintime",
+     "recommendmaxtime"
+    ],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "theme",
+      "value": "beer",
+      "status": "source_value"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": false,
+      "status": "derived_recall_hint"
+     }
+    ]
+   },
+   {
+    "entity_id": "p30:427285712510f052ca066b142641",
+    "name": "信号山公园",
+    "city": "青岛",
+    "kind": "attraction",
+    "data": {
+     "endtime": "18:30",
+     "id": 261980921520062,
+     "lat": 36.0663893,
+     "lon": 120.3265586,
+     "name": "信号山公园",
+     "opentime": "09:00",
+     "price": 0,
+     "recommendmaxtime": 2.0,
+     "recommendmintime": 1.0,
+     "type": "公园"
+    },
+    "coordinate_system": "WGS84",
+    "source_url": "https://inqingdao.com/zh/explore/attractions/signal-hill-park",
+    "entity_verified": false,
+    "missing_fields": [],
+    "tags": [
+     {
+      "tag": "kind",
+      "value": "attraction",
+      "status": "derived_recall_hint"
+     },
+     {
+      "tag": "native_fields_complete",
+      "value": true,
+      "status": "derived_recall_hint"
+     }
+    ]
+   }
+  ],
+  "constraints": {
+   "window": [
+    "09:00",
+    "18:00"
+   ],
+   "start_time": "09:00",
+   "mode": "public_transit",
+   "budget": 240.0,
+   "return_to_start": true
+  },
+  "retrieval_budget": 8,
+  "static_estimate": {
+   "budget_limit": 240.0,
+   "known_cost": 120.0,
+   "unknown_price_items": []
+  }
+ }
+]

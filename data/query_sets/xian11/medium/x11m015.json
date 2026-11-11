@@ -1,0 +1,44 @@
+{
+ "uid": "x11m015",
+ "tag": "medium",
+ "start_city": "成都",
+ "target_city": "西安",
+ "days": 2,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==2)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 300)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'历史古迹'}<=attraction_type_set)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=3000)"
+ ],
+ "nature_language": "当前位置成都。我们三个人想去西安玩2天，每晚人均住宿不超过300元，住2间房，想去历史古迹类景点，每天预算不超过3000元，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 成都. three of us want to travel to 西安 for 2 day(s); hotel cost under 300 RMB per person per night, book 2 room(s), want to visit 历史古迹 attractions, with a daily budget under 3000 RMB. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "accommodation_budget",
+  "room_count",
+  "required_attraction_types",
+  "daily_budget"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "name_type",
+  "room",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

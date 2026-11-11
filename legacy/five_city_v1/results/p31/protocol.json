@@ -1,0 +1,40 @@
+{
+ "schema": "p31-five-city-v1",
+ "created_at": "2026-10-26T18:30:00+08:00",
+ "levels": {
+  "easy": 32,
+  "hard": 32,
+  "human": 32
+ },
+ "cities": [
+  "西安",
+  "厦门",
+  "宁波",
+  "长沙",
+  "青岛"
+ ],
+ "dates": {
+  "easy": [
+   "2026-10-28"
+  ],
+  "hard": [
+   "2026-10-29"
+  ],
+  "human": [
+   "2026-10-29"
+  ]
+ },
+ "design": "easy=1-2 complete attractions + station start; hard=3 attractions+lunch or 2-day chain to an old city; human=natural-language soft constraints, some chains",
+ "grounding": "candidates copied from data/five_city_reference_v4_20261026 and data/catalog_v1_1_20261022",
+ "retrieval_budget_per_task": 8,
+ "amap_scope": [
+  "weather forecast",
+  "public-transit route",
+  "place text/detail for missing hours or coordinates"
+ ],
+ "amap_excluded": [
+  "intercity schedule (use frozen v4 records)",
+  "ticket price (not provided by Amap place API)"
+ ],
+ "note": "Human tasks are researcher-written natural expressions, not real user utterances; levels reuse entities."
+}

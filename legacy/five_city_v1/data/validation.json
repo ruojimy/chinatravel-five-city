@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-26T03:01:42+00:00",
+  "records": 1914,
+  "discovery_ok": 1914,
+  "planning_ready": 0,
+  "all_records_have_all_native_keys": true,
+  "evidence": 3598,
+  "claims": 5790,
+  "tags": 6072,
+  "all_evidence_claim_contracts_valid": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": [],
+  "historical_catalog_unchanged": true,
+  "historical_candidate_records_reused": 3029,
+  "network_calls_by_builder": 0,
+  "full_five_city_fact_completion": false,
+  "official_checker_or_route_injection_performed": false,
+  "metro_relationships_by_city": {
+    "宁波": 214,
+    "西安": 285,
+    "长沙": 173,
+    "青岛": 187,
+    "厦门": 111
+  },
+  "metro_unique_stations_by_city": {
+    "宁波": 181,
+    "西安": 247,
+    "长沙": 154,
+    "青岛": 169,
+    "厦门": 100
+  },
+  "rejected_entities": 37,
+  "all_values_nonempty_records": 1607
+}

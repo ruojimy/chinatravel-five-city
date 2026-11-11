@@ -1,0 +1,35 @@
+{
+  "uid": "phase2_extended_e20241028160312706595_00014",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Suzhou",
+  "days": 1,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==1)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"08:13\")\n    outbound_intercity_found=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1395)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"airplane\")\n    is_first_intercity=False",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Free parking\", \"Family Room\"}&accommodation_type_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"11:25\")",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 1 day.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "The outbound intercity trip must depart no later than 08:13.",
+    "Keep all activity and transportation costs on day 1 within 1395 CNY.",
+    "Do not use airplane for the outbound intercity trip.",
+    "Do not include any of these hotel feature types: Free parking and Family Room.",
+    "The return intercity trip must depart no earlier than 11:25.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Do not use airplane for the return intercity trip."
+  ],
+  "nature_language": "I am traveling from Chongqing to Suzhou for 1 day.\nRequirements:\n1. The trip must last 1 day.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. The outbound intercity trip must depart no later than 08:13.\n5. Keep all activity and transportation costs on day 1 within 1395 CNY.\n6. Do not use airplane for the outbound intercity trip.\n7. Do not include any of these hotel feature types: Free parking and Family Room.\n8. The return intercity trip must depart no earlier than 11:25.\n9. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n10. Do not use airplane for the return intercity trip.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"outbound_departure_deadline\",\"daily_budget\",\"forbidden_depart_transport\",\"forbidden_accommodation_types\",\"return_departure_earliest\",\"forbidden_inner_transport_modes\",\"forbidden_return_transport\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,479 @@
+{
+  "uid": "repair_e20241028160857444675_go_delay",
+  "source_uid": "e20241028160857444675",
+  "disruption": "go_delay",
+  "query": {
+    "uid": "repair_e20241028160857444675_go_delay",
+    "tag": "shorttrip_repair",
+    "start_city": "苏州",
+    "target_city": "上海",
+    "days": 2,
+    "people_number": 2,
+    "limit_rooms": true,
+    "limits_room_type": true,
+    "hard_logic_py": [
+      "result=(day_count(plan)==2)",
+      "result=(people_count(plan)==2)",
+      "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1300)",
+      "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 500)",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=1: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!=1: result=False",
+      "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+      "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='07:25')"
+    ],
+    "nature_language": "当前位置苏州。我和女朋友打算去上海玩两天，预算1300元，希望酒店每晚不超过500元，开一间单床房。请给我一个旅行规划。",
+    "nature_language_en": "Current location: Suzhou. My girlfriend and I are planning to visit Shanghai for two days, with a budget of 1300 RMB. We hope to find a hotel with a single-bed room for no more than 500 RMB per night. Please provide a travel plan.",
+    "disruption": [
+      {
+        "kind": "go_delay",
+        "code": "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='07:25')",
+        "note": "outbound train delayed: earliest acceptable departure 07:25 (original 06:12)",
+        "later_options": 273
+      }
+    ],
+    "source_uid": "e20241028160857444675",
+    "disruption_kind": "go_delay"
+  },
+  "seed_plan": {
+    "people_number": 2,
+    "start_city": "苏州",
+    "target_city": "上海",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "start": "苏州站",
+            "end": "上海站",
+            "start_time": "06:12",
+            "end_time": "09:05",
+            "price": 33.99,
+            "cost": 67.98,
+            "tickets": 2,
+            "type": "train",
+            "transports": [],
+            "TrainID": "K233"
+          },
+          {
+            "position": "玉佛禅寺",
+            "type": "attraction",
+            "price": 10.0,
+            "cost": 20.0,
+            "tickets": 2,
+            "start_time": "09:10",
+            "end_time": "10:10",
+            "transports": [
+              {
+                "start": "上海站",
+                "end": "玉佛禅寺",
+                "mode": "walk",
+                "start_time": "09:05",
+                "end_time": "09:10",
+                "cost": 0,
+                "distance": 0.4481911255049792,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "上海纺织博物馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "10:17",
+            "end_time": "12:17",
+            "transports": [
+              {
+                "start": "玉佛禅寺",
+                "end": "上海纺织博物馆",
+                "mode": "walk",
+                "start_time": "10:10",
+                "end_time": "10:17",
+                "cost": 0,
+                "distance": 0.5937967846583974,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "栗原家の日本料理串焼専門店",
+            "type": "lunch",
+            "price": 122.0,
+            "cost": 244.0,
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "transports": [
+              {
+                "start": "上海纺织博物馆",
+                "end": "上海火车站-地铁站",
+                "mode": "walk",
+                "start_time": "12:17",
+                "end_time": "12:24",
+                "cost": 0,
+                "distance": 0.65,
+                "price": 0
+              },
+              {
+                "start": "上海火车站-地铁站",
+                "end": "中山北路-地铁站",
+                "mode": "metro",
+                "start_time": "12:24",
+                "end_time": "12:26",
+                "cost": 4.0,
+                "distance": 1.03,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "中山北路-地铁站",
+                "end": "栗原家の日本料理串焼専門店",
+                "mode": "walk",
+                "start_time": "12:26",
+                "end_time": "12:30",
+                "cost": 0,
+                "distance": 0.34,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "黑色博物馆BLACK MUSEUM",
+            "type": "attraction",
+            "price": 76.0,
+            "cost": 152.0,
+            "tickets": 2,
+            "start_time": "13:42",
+            "end_time": "14:27",
+            "transports": [
+              {
+                "start": "栗原家の日本料理串焼専門店",
+                "end": "中山北路-地铁站",
+                "mode": "walk",
+                "start_time": "13:30",
+                "end_time": "13:34",
+                "cost": 0,
+                "distance": 0.34,
+                "price": 0
+              },
+              {
+                "start": "中山北路-地铁站",
+                "end": "上海火车站-地铁站",
+                "mode": "metro",
+                "start_time": "13:34",
+                "end_time": "13:36",
+                "cost": 4.0,
+                "distance": 1.03,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "上海火车站-地铁站",
+                "end": "黑色博物馆BLACK MUSEUM",
+                "mode": "walk",
+                "start_time": "13:36",
+                "end_time": "13:42",
+                "cost": 0,
+                "distance": 0.52,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "宿适轻奢酒店(上海火车站汉中路地铁站店)",
+            "type": "accommodation",
+            "room_type": 1,
+            "price": 307.0,
+            "cost": 307.0,
+            "rooms": 1,
+            "start_time": "14:35",
+            "end_time": "24:00",
+            "transports": [
+              {
+                "start": "黑色博物馆BLACK MUSEUM",
+                "end": "上海火车站-地铁站",
+                "mode": "walk",
+                "start_time": "14:27",
+                "end_time": "14:33",
+                "cost": 0,
+                "distance": 0.52,
+                "price": 0
+              },
+              {
+                "start": "上海火车站-地铁站",
+                "end": "汉中路-地铁站",
+                "mode": "metro",
+                "start_time": "14:33",
+                "end_time": "14:34",
+                "cost": 4.0,
+                "distance": 0.86,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "汉中路-地铁站",
+                "end": "宿适轻奢酒店(上海火车站汉中路地铁站店)",
+                "mode": "walk",
+                "start_time": "14:34",
+                "end_time": "14:35",
+                "cost": 0,
+                "distance": 0.11,
+                "price": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "activities": [
+          {
+            "position": "南京西路",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "08:37",
+            "end_time": "09:37",
+            "transports": [
+              {
+                "start": "宿适轻奢酒店(上海火车站汉中路地铁站店)",
+                "end": "汉中路-地铁站",
+                "mode": "walk",
+                "start_time": "08:30",
+                "end_time": "08:31",
+                "cost": 0,
+                "distance": 0.11,
+                "price": 0
+              },
+              {
+                "start": "汉中路-地铁站",
+                "end": "南京西路-地铁站",
+                "mode": "metro",
+                "start_time": "08:31",
+                "end_time": "08:33",
+                "cost": 4.0,
+                "distance": 1.34,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "南京西路-地铁站",
+                "end": "南京西路",
+                "mode": "walk",
+                "start_time": "08:33",
+                "end_time": "08:37",
+                "cost": 0,
+                "distance": 0.36,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "上海自然博物馆",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "09:47",
+            "end_time": "10:32",
+            "transports": [
+              {
+                "start": "南京西路",
+                "end": "南京西路-地铁站",
+                "mode": "walk",
+                "start_time": "09:37",
+                "end_time": "09:41",
+                "cost": 0,
+                "distance": 0.36,
+                "price": 0
+              },
+              {
+                "start": "南京西路-地铁站",
+                "end": "曲阜路-地铁站",
+                "mode": "metro",
+                "start_time": "09:41",
+                "end_time": "09:44",
+                "cost": 4.0,
+                "distance": 1.77,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "曲阜路-地铁站",
+                "end": "上海自然博物馆",
+                "mode": "walk",
+                "start_time": "09:44",
+                "end_time": "09:47",
+                "cost": 0,
+                "distance": 0.26,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "致敬大师・毕加索艺术中心",
+            "type": "attraction",
+            "price": 0.0,
+            "cost": 0.0,
+            "tickets": 2,
+            "start_time": "10:46",
+            "end_time": "11:46",
+            "transports": [
+              {
+                "start": "上海自然博物馆",
+                "end": "曲阜路-地铁站",
+                "mode": "walk",
+                "start_time": "10:32",
+                "end_time": "10:35",
+                "cost": 0,
+                "distance": 0.26,
+                "price": 0
+              },
+              {
+                "start": "曲阜路-地铁站",
+                "end": "南京西路-地铁站",
+                "mode": "metro",
+                "start_time": "10:35",
+                "end_time": "10:38",
+                "cost": 4.0,
+                "distance": 1.77,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "南京西路-地铁站",
+                "end": "致敬大师・毕加索艺术中心",
+                "mode": "walk",
+                "start_time": "10:38",
+                "end_time": "10:46",
+                "cost": 0,
+                "distance": 0.69,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "position": "BELLOCO倍乐(静安店)",
+            "type": "lunch",
+            "price": 149.0,
+            "cost": 298.0,
+            "start_time": "11:58",
+            "end_time": "12:58",
+            "transports": [
+              {
+                "start": "致敬大师・毕加索艺术中心",
+                "end": "南京西路-地铁站",
+                "mode": "walk",
+                "start_time": "11:46",
+                "end_time": "11:54",
+                "cost": 0,
+                "distance": 0.69,
+                "price": 0
+              },
+              {
+                "start": "南京西路-地铁站",
+                "end": "自然博物馆-地铁站",
+                "mode": "metro",
+                "start_time": "11:54",
+                "end_time": "11:55",
+                "cost": 4.0,
+                "distance": 0.77,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "自然博物馆-地铁站",
+                "end": "BELLOCO倍乐(静安店)",
+                "mode": "walk",
+                "start_time": "11:55",
+                "end_time": "11:58",
+                "cost": 0,
+                "distance": 0.33,
+                "price": 0
+              }
+            ]
+          },
+          {
+            "start": "上海站",
+            "end": "苏州站",
+            "start_time": "23:39",
+            "end_time": "00:40",
+            "price": 33.99,
+            "cost": 67.98,
+            "tickets": 2,
+            "type": "train",
+            "transports": [
+              {
+                "start": "BELLOCO倍乐(静安店)",
+                "end": "自然博物馆-地铁站",
+                "mode": "walk",
+                "start_time": "12:58",
+                "end_time": "13:01",
+                "cost": 0,
+                "distance": 0.33,
+                "price": 0
+              },
+              {
+                "start": "自然博物馆-地铁站",
+                "end": "上海火车站-地铁站",
+                "mode": "metro",
+                "start_time": "13:01",
+                "end_time": "13:04",
+                "cost": 4.0,
+                "distance": 1.52,
+                "price": 2.0,
+                "tickets": 2
+              },
+              {
+                "start": "上海火车站-地铁站",
+                "end": "上海站",
+                "mode": "walk",
+                "start_time": "13:04",
+                "end_time": "13:06",
+                "cost": 0,
+                "distance": 0.21,
+                "price": 0
+              }
+            ],
+            "TrainID": "K1506"
+          }
+        ]
+      }
+    ]
+  },
+  "locked": {
+    "kind": "attraction",
+    "position": "玉佛禅寺",
+    "start_time": "09:10",
+    "end_time": "10:10"
+  },
+  "feasible": false,
+  "witness": null,
+  "witness_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "commonsense_violations": [],
+    "hard_results": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "hard_pass_count": 9,
+    "hard_total": 9,
+    "hard_ok": true,
+    "all_ok": true,
+    "error": null
+  },
+  "witness_cost": null,
+  "seed_violations": [
+    "failed DSL 8"
+  ]
+}

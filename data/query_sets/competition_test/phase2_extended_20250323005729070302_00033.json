@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250323005729070302_00033",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Wuhan",
+  "days": 2,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==7)",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=16.4)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==3)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Wuhan Police Museum\":\n    if activity_start_time(activity)>=\"14:53\" and activity_end_time(activity)<=\"16:05\": result=True",
+    "result_list=[]\ninner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=154)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Wuhan Police Museum\":\n    if activity_start_time(activity)==\"14:58\" and activity_end_time(activity)==\"16:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop)\"}<=day_accommodation_name_set)",
+    "result_list=[]\ntransport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==11)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan)\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Dijiao Park\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"23:04\")",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"University campus\"}&attraction_type_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Wuhan Police Museum\", \"Dijiao Park\"}<=day_attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit exactly 7 attractions during the trip.",
+    "Keep the total walking distance within 16.4 kilometers.",
+    "Visit exactly 3 attractions on day 1.",
+    "Schedule the entire visit to Wuhan Police Museum within the time window from 14:53 to 16:05.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total cost of in-city transportation throughout the itinerary within 154 CNY. (B) Visit Wuhan Police Museum exactly from 14:58 to 16:00.",
+    "Stay at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop) on day 1.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Use metro as the primary mode for exactly 11 in-city journeys. (B) Visit Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan) before Dijiao Park.",
+    "The return intercity trip must depart no earlier than 23:04.",
+    "Do not include any of these attraction types: University campus.",
+    "Visit both Wuhan Police Museum and Dijiao Park on day 2."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Wuhan for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit exactly 7 attractions during the trip.\n5. Keep the total walking distance within 16.4 kilometers.\n6. Visit exactly 3 attractions on day 1.\n7. Schedule the entire visit to Wuhan Police Museum within the time window from 14:53 to 16:05.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total cost of in-city transportation throughout the itinerary within 154 CNY. (B) Visit Wuhan Police Museum exactly from 14:58 to 16:00.\n9. Stay at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop) on day 1.\n10. Satisfy at least one of these two requirements (both are allowed): (A) Use metro as the primary mode for exactly 11 in-city journeys. (B) Visit Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan) before Dijiao Park.\n11. The return intercity trip must depart no earlier than 23:04.\n12. Do not include any of these attraction types: University campus.\n13. Visit both Wuhan Police Museum and Dijiao Park on day 2.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"total_attraction_count\",\"walking_distance_budget\",\"attraction_count_on_day\",\"attraction_time_window\",\"either_requirement\",\"accommodation_on_day\",\"either_requirement\",\"return_departure_earliest\",\"forbidden_attraction_types\",\"attraction_pair_on_day\"]",
+  "official_phase2_evaluation": true
+}

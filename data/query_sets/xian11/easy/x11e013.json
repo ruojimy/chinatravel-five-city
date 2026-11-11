@@ -1,0 +1,36 @@
+{
+ "uid": "x11e013",
+ "tag": "easy",
+ "start_city": "重庆",
+ "target_city": "西安",
+ "days": 3,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": true,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_type(activity)!='单床房': result=False"
+ ],
+ "nature_language": "当前位置重庆。我们三个人想去西安玩3天，要单床房，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 重庆. three of us want to travel to 西安 for 3 day(s); require a 单床房 room. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "room_type"
+ ],
+ "constraint_families": [
+  "basic",
+  "room",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

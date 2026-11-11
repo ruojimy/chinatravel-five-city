@@ -1,0 +1,103 @@
+{
+  "variant": "shorttrip_infeasible",
+  "cases": 18,
+  "by_kind": {
+    "confirmed_conflict": 6,
+    "feasible_but_timeout": 6,
+    "missing_key_data": 6
+  },
+  "classification_accuracy": 1.0,
+  "confusion": [
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    },
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    },
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    },
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    },
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    },
+    {
+      "kind": "confirmed_conflict",
+      "pred": "confirmed_conflict",
+      "solved": false
+    },
+    {
+      "kind": "feasible_but_timeout",
+      "pred": "feasible_but_timeout",
+      "solved": false
+    },
+    {
+      "kind": "missing_key_data",
+      "pred": "missing_key_data",
+      "solved": false
+    }
+  ],
+  "false_infeasible_claims": 0
+}

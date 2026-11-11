@@ -1,0 +1,24 @@
+{
+  "variant": "shorttrip_repair",
+  "cases": 40,
+  "repair_success": 28,
+  "repair_success_rate": 0.7,
+  "lock_preserved": 28,
+  "by_disruption": {
+    "closure": {
+      "cases": 22,
+      "success": 20
+    },
+    "go_delay": {
+      "cases": 10,
+      "success": 2
+    },
+    "early_departure": {
+      "cases": 8,
+      "success": 6
+    }
+  },
+  "mean_change_cost": 3.275,
+  "seeds_valid": 11,
+  "queries_considered": 27
+}

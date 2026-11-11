@@ -1,0 +1,116 @@
+{
+ "tasks": 96,
+ "levels": {
+  "easy": {
+   "tasks": 32,
+   "static_closure_avg": 1.0,
+   "static_schedule_ok": 32,
+   "route_cov_avg": 1.0,
+   "weather_cov_avg": 1.0,
+   "opening_known": 32,
+   "budget_ok": 32,
+   "time_ok": 32,
+   "status": {
+    "complete": 32
+   }
+  },
+  "hard": {
+   "tasks": 32,
+   "static_closure_avg": 0.898,
+   "static_schedule_ok": 32,
+   "route_cov_avg": 1.0,
+   "weather_cov_avg": 1.0,
+   "opening_known": 26,
+   "budget_ok": 24,
+   "time_ok": 27,
+   "status": {
+    "complete": 19,
+    "infeasible": 3,
+    "blocked": 10
+   }
+  },
+  "human": {
+   "tasks": 32,
+   "static_closure_avg": 0.904,
+   "static_schedule_ok": 32,
+   "route_cov_avg": 1.0,
+   "weather_cov_avg": 1.0,
+   "opening_known": 28,
+   "budget_ok": 25,
+   "time_ok": 31,
+   "status": {
+    "complete": 21,
+    "blocked": 10,
+    "infeasible": 1
+   }
+  }
+ },
+ "status_total": {
+  "complete": 72,
+  "infeasible": 4,
+  "blocked": 20
+ },
+ "scope_total": {
+  "single_city": 76,
+  "chain": 20
+ },
+ "status_by_scope": {
+  "single_city": {
+   "complete": 58,
+   "infeasible": 4,
+   "blocked": 14
+  },
+  "chain": {
+   "complete": 14,
+   "blocked": 6
+  }
+ },
+ "responses": 450,
+ "detail_calls": 18,
+ "details_with_hours": 11,
+ "requests_planned": 450,
+ "by_city": {
+  "西安": {
+   "tasks": 21,
+   "status": {
+    "complete": 21
+   },
+   "closure": 1.0
+  },
+  "厦门": {
+   "tasks": 19,
+   "status": {
+    "complete": 14,
+    "infeasible": 1,
+    "blocked": 4
+   },
+   "closure": 0.909
+  },
+  "宁波": {
+   "tasks": 17,
+   "status": {
+    "complete": 13,
+    "blocked": 4
+   },
+   "closure": 0.909
+  },
+  "长沙": {
+   "tasks": 20,
+   "status": {
+    "complete": 14,
+    "infeasible": 2,
+    "blocked": 4
+   },
+   "closure": 0.948
+  },
+  "青岛": {
+   "tasks": 19,
+   "status": {
+    "complete": 10,
+    "blocked": 8,
+    "infeasible": 1
+   },
+   "closure": 0.893
+  }
+ }
+}

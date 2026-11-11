@@ -1,0 +1,162 @@
+[
+ {
+  "TrainID": "Z596",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "01:33",
+  "EndTime": "20:19",
+  "Duration": 18.77,
+  "Cost": null
+ },
+ {
+  "TrainID": "K306",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "06:45",
+  "EndTime": "03:21",
+  "Duration": 20.6,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1900",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "07:23",
+  "EndTime": "14:44",
+  "Duration": 7.35,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2238",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "08:18",
+  "EndTime": "14:49",
+  "Duration": 6.52,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1896",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州东",
+  "BeginTime": "08:32",
+  "EndTime": "16:27",
+  "Duration": 7.92,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2390",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "09:02",
+  "EndTime": "17:01",
+  "Duration": 7.98,
+  "Cost": null
+ },
+ {
+  "TrainID": "K390",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "11:00",
+  "EndTime": "05:26",
+  "Duration": 18.43,
+  "Cost": null
+ },
+ {
+  "TrainID": "K608",
+  "TrainType": "普速",
+  "From": "西安东",
+  "To": "杭州",
+  "BeginTime": "12:05",
+  "EndTime": "10:45",
+  "Duration": 22.67,
+  "Cost": null
+ },
+ {
+  "TrainID": "G3188",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "12:36",
+  "EndTime": "20:25",
+  "Duration": 7.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1884",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州东",
+  "BeginTime": "13:09",
+  "EndTime": "21:18",
+  "Duration": 8.15,
+  "Cost": null
+ },
+ {
+  "TrainID": "G2028",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "14:39",
+  "EndTime": "22:31",
+  "Duration": 7.87,
+  "Cost": null
+ },
+ {
+  "TrainID": "K468",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "14:46",
+  "EndTime": "10:51",
+  "Duration": 20.08,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1946",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州西",
+  "BeginTime": "15:01",
+  "EndTime": "22:47",
+  "Duration": 7.77,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1876",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "杭州东",
+  "BeginTime": "15:37",
+  "EndTime": "23:26",
+  "Duration": 7.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "K2908",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "21:53",
+  "EndTime": "19:08",
+  "Duration": 21.25,
+  "Cost": null
+ },
+ {
+  "TrainID": "K658",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "杭州",
+  "BeginTime": "22:15",
+  "EndTime": "17:47",
+  "Duration": 19.53,
+  "Cost": null
+ }
+]

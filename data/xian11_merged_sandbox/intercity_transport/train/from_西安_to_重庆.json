@@ -1,0 +1,32 @@
+[
+ {
+  "TrainID": "G3766",
+  "TrainType": "G",
+  "From": "西安北",
+  "To": "重庆北",
+  "BeginTime": "08:02",
+  "EndTime": "13:34",
+  "Duration": 5.53,
+  "Cost": null
+ },
+ {
+  "TrainID": "D1991",
+  "TrainType": "D",
+  "From": "西安北",
+  "To": "重庆西",
+  "BeginTime": "17:43",
+  "EndTime": "22:57",
+  "Duration": 5.23,
+  "Cost": null
+ },
+ {
+  "TrainID": "G1831",
+  "TrainType": "G",
+  "From": "西安北",
+  "To": "重庆西",
+  "BeginTime": "13:38",
+  "EndTime": "19:02",
+  "Duration": 5.4,
+  "Cost": null
+ }
+]

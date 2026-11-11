@@ -1,0 +1,92 @@
+[
+ {
+  "TrainID": "G837",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "深圳北",
+  "BeginTime": "10:15",
+  "EndTime": "19:52",
+  "Duration": 9.62,
+  "Cost": 1048.5
+ },
+ {
+  "TrainID": "K1310",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "深圳东",
+  "BeginTime": "09:27",
+  "EndTime": "13:26",
+  "Duration": 27.98,
+  "Cost": null
+ },
+ {
+  "TrainID": "G840",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "深圳北",
+  "BeginTime": "10:15",
+  "EndTime": "19:52",
+  "Duration": 9.62,
+  "Cost": null
+ },
+ {
+  "TrainID": "G916",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "深圳北",
+  "BeginTime": "11:02",
+  "EndTime": "20:50",
+  "Duration": 9.8,
+  "Cost": null
+ },
+ {
+  "TrainID": "G844",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "深圳北",
+  "BeginTime": "11:06",
+  "EndTime": "21:00",
+  "Duration": 9.9,
+  "Cost": null
+ },
+ {
+  "TrainID": "K1350",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "深圳",
+  "BeginTime": "14:30",
+  "EndTime": "20:06",
+  "Duration": 29.6,
+  "Cost": null
+ },
+ {
+  "TrainID": "Z232",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "深圳东",
+  "BeginTime": "20:01",
+  "EndTime": "19:19",
+  "Duration": 23.3,
+  "Cost": null
+ },
+ {
+  "TrainID": "K132",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "深圳东",
+  "BeginTime": "23:06",
+  "EndTime": "07:55",
+  "Duration": 32.82,
+  "Cost": null
+ },
+ {
+  "TrainID": "K448",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "深圳东",
+  "BeginTime": "23:30",
+  "EndTime": "05:01",
+  "Duration": 29.52,
+  "Cost": null
+ }
+]

@@ -1,0 +1,46 @@
+{
+ "uid": "x11m008",
+ "tag": "medium",
+ "start_city": "广州",
+ "target_city": "西安",
+ "days": 4,
+ "people_number": 2,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==2)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'airplane'}==intercity_transport_set)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=5000)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=5000)",
+  "go_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == start_city(plan): go_start_time = activity_start_time(activity)\nresult=(go_start_time>='12:00')",
+  "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)=='鸠摩罗什舍利塔': seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)=='十方菩萨庙' and seen_first: result=True"
+ ],
+ "nature_language": "当前位置广州。我们两个人想去西安玩4天，往返坐飞机，预算5000元，每天预算不超过5000元，去程12:00之后出发，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 广州. we two want to travel to 西安 for 4 day(s); travel by airplane both ways, with a budget of 5000 RMB, with a daily budget under 5000 RMB, depart after 12:00. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "intercity_modes_include",
+  "total_budget",
+  "daily_budget",
+  "outbound_departure_deadline",
+  "attraction_order"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "schedule",
+  "sequence",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "target",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

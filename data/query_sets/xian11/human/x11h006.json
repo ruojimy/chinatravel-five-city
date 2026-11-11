@@ -1,0 +1,38 @@
+{
+ "uid": "x11h006",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "重庆",
+ "days": 1,
+ "people_number": 5,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==1)",
+  "result=(people_count(plan)==5)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'taxi'})",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'公园'}<=attraction_type_set)"
+ ],
+ "nature_language": "[当前位置西安,目标位置重庆,旅行人数5,旅行天数1] 希望能玩得舒服些，市内只坐出租车，想去公园类景点。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. five of us want to travel to 重庆 for 1 day(s); use only taxi within the city, want to visit 公园 attractions. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "inner_transport_modes_subset",
+  "required_attraction_types"
+ ],
+ "constraint_families": [
+  "basic",
+  "name_type",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

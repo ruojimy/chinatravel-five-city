@@ -1,0 +1,46 @@
+{
+ "uid": "x11m011",
+ "tag": "medium",
+ "start_city": "西安",
+ "target_city": "重庆",
+ "days": 4,
+ "people_number": 4,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==4)",
+  "result=(people_count(plan)==4)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({'train'}==intercity_transport_set)",
+  "total_cost=0 \nfor activity in allactivities(plan):\n    total_cost+=activity_cost(activity)\n    total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=6000)",
+  "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'历史古迹'}<=attraction_type_set)",
+  "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'室内泳池'}<=accommodation_type_set)",
+  "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({'鲍旗寨写生基地观景台'}&attraction_name_set)"
+ ],
+ "nature_language": "当前位置西安。我们四个人想去重庆玩4天，往返坐火车，每天预算不超过6000元，想去历史古迹类景点，酒店要有室内泳池，请给我一个旅行规划。",
+ "nature_language_en": "Currently in 西安. four of us want to travel to 重庆 for 4 day(s); travel by train both ways, with a daily budget under 6000 RMB, want to visit 历史古迹 attractions, the hotel should offer 室内泳池. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "intercity_modes_include",
+  "daily_budget",
+  "required_attraction_types",
+  "required_accommodation_types",
+  "forbidden_attraction_names"
+ ],
+ "constraint_families": [
+  "basic",
+  "budget",
+  "name_type",
+  "negative",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}

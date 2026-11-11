@@ -1,0 +1,36 @@
+{
+ "uid": "x11h004",
+ "tag": "human",
+ "start_city": "西安",
+ "target_city": "广州",
+ "days": 3,
+ "people_number": 3,
+ "limit_rooms": false,
+ "limits_room_type": false,
+ "hard_logic_py": [
+  "result=(day_count(plan)==3)",
+  "result=(people_count(plan)==3)",
+  "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+  "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+  "return_start_time = 0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train','airplane'] and intercity_transport_origin(activity) == target_city(plan): return_start_time = activity_start_time(activity)\nresult=(return_start_time<='19:00')"
+ ],
+ "nature_language": "[当前位置西安,目标位置广州,旅行人数3,旅行天数3] 想找个轻松点的行程，返程19:00之前出发。帮我规划一下。",
+ "nature_language_en": "Currently in 西安. three of us want to travel to 广州 for 3 day(s); return before 19:00. Please provide a travel plan.",
+ "constraint_keys": [
+  "trip_days",
+  "people_number",
+  "tickets_match_people",
+  "taxi_cars",
+  "return_departure_earliest"
+ ],
+ "constraint_families": [
+  "basic",
+  "schedule",
+  "transport"
+ ],
+ "xian11": {
+  "city_role": "start",
+  "translation": "controlled_template",
+  "native_compatible": true
+ }
+}
