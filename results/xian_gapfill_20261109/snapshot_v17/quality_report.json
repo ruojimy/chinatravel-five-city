@@ -1,0 +1,597 @@
+{
+ "checked_at": "2026-11-11T01:13:16+08:00",
+ "snapshot": "C:\\Users\\xiech\\Downloads\\计算机软件工程概论\\reproduction\\results\\xian_gapfill_20261109\\snapshot_v17\\catalog.sqlite3",
+ "integrity_check": "ok",
+ "records": 4771,
+ "grades": {
+  "D": 57,
+  "C": 546,
+  "A": 3414,
+  "B": 754
+ },
+ "high_quality_ratio": 0.7156,
+ "target": 0.5,
+ "complete": true,
+ "hard_failures": 0,
+ "by_kind": {
+  "accommodation": {
+   "D": 5,
+   "C": 58,
+   "A": 346,
+   "B": 352
+  },
+  "attraction": {
+   "C": 86,
+   "D": 3,
+   "B": 99,
+   "A": 569
+  },
+  "flight": {
+   "C": 11,
+   "D": 2,
+   "A": 264,
+   "B": 36
+  },
+  "metro_station": {
+   "C": 285,
+   "A": 189,
+   "B": 71
+  },
+  "poi": {
+   "C": 57,
+   "D": 44,
+   "A": 1298
+  },
+  "restaurant": {
+   "D": 3,
+   "C": 38,
+   "A": 323,
+   "B": 196
+  },
+  "train": {
+   "C": 11,
+   "A": 425
+  }
+ },
+ "missing_l1_fields": {
+  "accommodation": {
+   "featurehoteltype": 400,
+   "lat": 55,
+   "lon": 55
+  },
+  "attraction": {
+   "endtime": 144,
+   "opentime": 142,
+   "lat": 66,
+   "lon": 66,
+   "type": 3
+  },
+  "flight": {
+   "Duration": 36,
+   "EndTime": 21,
+   "BeginTime": 15
+  },
+  "metro_station": {
+   "line": 71
+  },
+  "poi": {
+   "position": 5
+  },
+  "restaurant": {
+   "cuisine": 164,
+   "endtime": 61,
+   "opentime": 52,
+   "lat": 19,
+   "lon": 19
+  }
+ },
+ "scope": {
+  "policy": "KEEP-AND-DOCUMENT (user 2026-11-08): cross-city records to expansion-set cities are kept and NOT downgraded; each record carries a documented tier",
+  "reference_sets": {
+   "native10": "ChinaTravel 原生 10 城；intercity_transport 全互联，单城视角 407 列车 / 160 航班",
+   "expansion30": "data/expansion_v1_20261022/collection_manifest.json city_windows 的 30 城（含西安），2026-10-22 最早扩展集",
+   "other_city": "两端含西安但目标城市不在上述两个集合（聚合看板/航司页真实航线）",
+   "no_xian": "两端都不含西安的混入城市对"
+  },
+  "by_kind": {
+   "flight": {
+    "native10": 170,
+    "expansion30": 88,
+    "other_city": 55
+   },
+   "train": {
+    "expansion30": 4,
+    "native10": 424,
+    "no_xian": 6,
+    "other_city": 2
+   }
+  },
+  "grades_by_tier": {
+   "expansion30": {
+    "C": 7,
+    "D": 2,
+    "A": 71,
+    "B": 12
+   },
+   "native10": {
+    "C": 15,
+    "A": 563,
+    "B": 16
+   },
+   "no_xian": {
+    "A": 6
+   },
+   "other_city": {
+    "A": 49,
+    "B": 8
+   }
+  },
+  "covered_cities": {
+   "flight": [
+    "三亚",
+    "上海",
+    "乌鲁木齐",
+    "北京",
+    "南京",
+    "南昌",
+    "厦门",
+    "呼和浩特",
+    "哈尔滨",
+    "天津",
+    "宁波",
+    "广州",
+    "成都",
+    "揭阳",
+    "无锡",
+    "昆明",
+    "杭州",
+    "榆林",
+    "武汉",
+    "沈阳",
+    "济南",
+    "深圳",
+    "烟台",
+    "珠海",
+    "贵阳",
+    "重庆",
+    "长沙",
+    "阿克苏",
+    "青岛"
+   ],
+   "train": [
+    "上海",
+    "北京",
+    "南京",
+    "厦门",
+    "广州",
+    "成都",
+    "杭州",
+    "武汉",
+    "深圳",
+    "苏州",
+    "重庆",
+    "长沙",
+    "青岛"
+   ]
+  },
+  "kept_total": 749
+ },
+ "source_scores": {
+  "www.marriott.com.cn": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 1,
+   "total": 0.7,
+   "tier": "T2"
+  },
+  "all.accor.com": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.667,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 3,
+   "total": 0.617,
+   "tier": "T2"
+  },
+  "docs.overturemaps.org": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.5,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 4,
+   "total": 0.575,
+   "tier": "T3"
+  },
+  "visitxian.cn": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.178,
+   "freshness": 1.0,
+   "field_coverage": 0.947,
+   "records": 45,
+   "total": 0.484,
+   "tier": "T3"
+  },
+  "asiatefl2026.aconf.org": {
+   "authority": 0.55,
+   "licence": 0.2,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.667,
+   "records": 1,
+   "total": 0.678,
+   "tier": "T2"
+  },
+  "restapi.amap.com": {
+   "authority": 0.78,
+   "licence": 0.55,
+   "verifiability": 0.994,
+   "freshness": 1.0,
+   "field_coverage": 0.931,
+   "records": 3347,
+   "total": 0.851,
+   "tier": "T1"
+  },
+  "www.xa.gov.cn": {
+   "authority": 0.9,
+   "licence": 0.2,
+   "verifiability": 0.447,
+   "freshness": 1.0,
+   "field_coverage": 0.204,
+   "records": 114,
+   "total": 0.553,
+   "tier": "T3"
+  },
+  "zgsxh2026nxsnh.nwu.edu.cn": {
+   "authority": 0.3,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.0,
+   "records": 1,
+   "total": 0.22,
+   "tier": "T4"
+  },
+  "www.chemsoc.org.cn": {
+   "authority": 0.3,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.0,
+   "records": 3,
+   "total": 0.22,
+   "tier": "T4"
+  },
+  "www.cmes.org": {
+   "authority": 0.3,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.0,
+   "records": 1,
+   "total": 0.22,
+   "tier": "T4"
+  },
+  "news.cctv.com": {
+   "authority": 0.3,
+   "licence": 0.2,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.6,
+   "records": 1,
+   "total": 0.59,
+   "tier": "T3"
+  },
+  "whhlyt.shaanxi.gov.cn": {
+   "authority": 0.95,
+   "licence": 0.95,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.2,
+   "records": 1,
+   "total": 0.818,
+   "tier": "T1"
+  },
+  "www.ly.com": {
+   "authority": 0.55,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 8,
+   "total": 0.495,
+   "tier": "T3"
+  },
+  "www.sda.cn": {
+   "authority": 0.3,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 3,
+   "total": 0.42,
+   "tier": "T3"
+  },
+  "legacy:carrier_published_schedule": {
+   "authority": 0.92,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 0.0,
+   "field_coverage": 1.0,
+   "records": 2,
+   "total": 0.506,
+   "tier": "T3"
+  },
+  "flights.ch.com": {
+   "authority": 0.9,
+   "licence": 0.9,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 30,
+   "total": 0.955,
+   "tier": "T1"
+  },
+  "www.flightaware.com": {
+   "authority": 0.55,
+   "licence": 0.65,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 101,
+   "total": 0.812,
+   "tier": "T1"
+  },
+  "www.avionio.com": {
+   "authority": 0.55,
+   "licence": 0.65,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.88,
+   "records": 100,
+   "total": 0.788,
+   "tier": "T2"
+  },
+  "m.airpaz.com": {
+   "authority": 0.55,
+   "licence": 0.9,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 61,
+   "total": 0.85,
+   "tier": "T1"
+  },
+  "www.airpaz.com": {
+   "authority": 0.78,
+   "licence": 0.9,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 5,
+   "total": 0.919,
+   "tier": "T1"
+  },
+  "www.flightstats.com": {
+   "authority": 0.55,
+   "licence": 0.65,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 3,
+   "total": 0.812,
+   "tier": "T1"
+  },
+  "www.wikidata.org": {
+   "authority": 0.62,
+   "licence": 0.9,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 285,
+   "total": 0.621,
+   "tier": "T2"
+  },
+  "shorttrip": {
+   "authority": 0.45,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.96,
+   "records": 62,
+   "total": 0.457,
+   "tier": "T3"
+  },
+  "query.wikidata.org": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 14,
+   "total": 0.45,
+   "tier": "T3"
+  },
+  "zh.wikipedia.org": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 7,
+   "total": 0.45,
+   "tier": "T3"
+  },
+  "nominatim.openstreetmap.org": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 5,
+   "total": 0.45,
+   "tier": "T3"
+  },
+  "www.csair.com": {
+   "authority": 0.78,
+   "licence": 0.2,
+   "verifiability": 0.5,
+   "freshness": 1.0,
+   "field_coverage": 0.3,
+   "records": 4,
+   "total": 0.549,
+   "tier": "T3"
+  },
+  "www.cityhui.com": {
+   "authority": 0.38,
+   "licence": 0.2,
+   "verifiability": 0.3,
+   "freshness": 1.0,
+   "field_coverage": 0.42,
+   "records": 10,
+   "total": 0.403,
+   "tier": "T3"
+  },
+  "www.amap.com": {
+   "authority": 0.78,
+   "licence": 0.55,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 113,
+   "total": 0.867,
+   "tier": "T1"
+  },
+  "qq.ip138.com": {
+   "authority": 0.4,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 11,
+   "total": 0.45,
+   "tier": "T3"
+  },
+  "kyfw.12306.cn": {
+   "authority": 0.92,
+   "licence": 0.85,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 410,
+   "total": 0.954,
+   "tier": "T1"
+  },
+  "www.liecheba.com": {
+   "authority": 0.4,
+   "licence": 0.9,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 1.0,
+   "records": 15,
+   "total": 0.805,
+   "tier": "T1"
+  },
+  "pilot:you.ctrip.com / gs.ctrip.com": {
+   "authority": 0.8,
+   "licence": 0.6,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.4,
+   "records": 3,
+   "pages": 89,
+   "total": 0.76,
+   "tier": "T2",
+   "pilot": true
+  },
+  "pilot:www.dianping.com": {
+   "authority": 0.55,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.1,
+   "records": 0,
+   "pages": 20,
+   "total": 0.315,
+   "tier": "T4",
+   "pilot": true
+  },
+  "pilot:www.meituan.com / i.meituan.com": {
+   "authority": 0.55,
+   "licence": 0.2,
+   "verifiability": 0.0,
+   "freshness": 1.0,
+   "field_coverage": 0.0,
+   "records": 0,
+   "pages": 2,
+   "total": 0.295,
+   "tier": "T4",
+   "pilot": true
+  },
+  "pilot:flights.ch.com": {
+   "authority": 0.92,
+   "licence": 0.9,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.85,
+   "records": 65,
+   "pages": 10,
+   "total": 0.931,
+   "tier": "T1",
+   "pilot": true
+  },
+  "pilot:www.avionio.com / www.flightaware.com / www.flightstats.com": {
+   "authority": 0.45,
+   "licence": 0.55,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.45,
+   "records": 79,
+   "pages": 4,
+   "total": 0.657,
+   "tier": "T2",
+   "pilot": true
+  },
+  "pilot:kyfw.12306.cn": {
+   "authority": 0.92,
+   "licence": 0.85,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.9,
+   "records": 405,
+   "pages": 18,
+   "total": 0.933,
+   "tier": "T1",
+   "pilot": true
+  },
+  "pilot:restapi.amap.com": {
+   "authority": 0.78,
+   "licence": 0.55,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.55,
+   "records": 2110,
+   "pages": 100,
+   "total": 0.776,
+   "tier": "T2",
+   "pilot": true
+  },
+  "pilot:api.map.baidu.com": {
+   "authority": 0.76,
+   "licence": 0.55,
+   "verifiability": 1.0,
+   "freshness": 1.0,
+   "field_coverage": 0.5,
+   "records": 78,
+   "pages": 360,
+   "total": 0.76,
+   "tier": "T2",
+   "pilot": true
+  }
+ }
+}

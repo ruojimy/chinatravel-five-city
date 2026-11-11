@@ -1,0 +1,2956 @@
+{
+ "parent": "results/xian_gapfill_20261109/snapshot_v16/catalog.sqlite3",
+ "parent_sha256": "670686cf47e948b381b98a4ecb583a5848247faadc9fc243a02e6dde3679cbd8",
+ "items": "tmp_empty_items.jsonl",
+ "accepted": 0,
+ "rejected": 0,
+ "by_kind": {
+  "attraction": 0,
+  "restaurant": 0,
+  "accommodation": 0,
+  "poi": 0,
+  "metro_station": 0,
+  "train": 0,
+  "flight": 0
+ },
+ "dry_run": false,
+ "ingested_at": "2026-11-11T01:12:58+08:00",
+ "rejected_detail": [],
+ "xian_by_kind": {
+  "attraction": {
+   "n": 757,
+   "discovery_ok": 757,
+   "planning_ready": 0,
+   "native_complete": 22
+  },
+  "restaurant": {
+   "n": 560,
+   "discovery_ok": 560,
+   "planning_ready": 0,
+   "native_complete": 21
+  },
+  "accommodation": {
+   "n": 761,
+   "discovery_ok": 761,
+   "planning_ready": 0,
+   "native_complete": 7
+  }
+ },
+ "enrichment": {
+  "applied": [
+   {
+    "name": "同盛祥",
+    "record_id": "p30:2b4abc1a7590dead40a7dc625d8f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "德发长",
+    "record_id": "p30:57346f75195ce700210c79c107e5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西安饭庄",
+    "record_id": "p30:b8da7fa2936e54c6297fa47035d0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "长安大牌档",
+    "record_id": "p30:3fa0405efc9aea043f23e9abbe82",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "樊记腊汁肉夹馍",
+    "record_id": "p30:e17146fa00d522de617dda34151c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "天下第一面",
+    "record_id": "p30:62c5403d22fc460af307cce4770a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老刘家伊味香肉丸糊辣汤",
+    "record_id": "scale07:xianrestaurant:7d75a58801e1df88e928de6e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "节奏烧烤音乐餐吧(德福巷店)",
+    "record_id": "xian:cf7176a8ce67e7b1a20da455",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "中街冷饮批发(黄金屋店)",
+    "record_id": "xian:b654247c92076ff3d18655dc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "雷记绿豆馅饼(中贸广场店)",
+    "record_id": "xian:68b2c405f5cf8ca0911f337d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "壹览江南花雕酒馆(西荷花园店)",
+    "record_id": "xian:230703cd77c1d82ef04e858c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真疆域客椒麻鸡体验店",
+    "record_id": "xian:e815d4edbce80b33dcf43de5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "捞一碗biangbiang面(交大店)",
+    "record_id": "xian:87ecee691949f881fdda4835",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三军味道私房菜",
+    "record_id": "xian:cb29e32d63fa438d87ea2201",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "阿晴煲仔饭(交大店)",
+    "record_id": "xian:c3378e2234f73fa62efaee17",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "河南水煎包(五道十字店)",
+    "record_id": "xian:e9548fe4f7960b68a80b814f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小草大排档(红锋时代广场店)",
+    "record_id": "xian:ff7e04e8cf932f319e1a8a6b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "樊永平梆梆肉",
+    "record_id": "xian:ee0fa6e9b4d8ab44aa05ed13",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕歌人家(陕西歌剧院家属院店)",
+    "record_id": "xian:4bf7ab61c0a52d4a5b9a6e41",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆要德小面(从新小区店)",
+    "record_id": "xian:e3ec9e2f520d873f6173d1da",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老张涮菜(八号街坊小区店)",
+    "record_id": "xian:85aa9f49e70650501ef3de02",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马军爆辣牛筋丸(高家大院店)",
+    "record_id": "xian:aa3612b398660459f46286d6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "美之家港式烧腊(欣集古镇店)",
+    "record_id": "xian:c41e26a18f6d478dc390508c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "丫丫粤式打边炉(宏府408坊店)",
+    "record_id": "xian:b633f92a3dc9c93c265afb98",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马志元稀糊烂腊牛羊肉店(西部店)",
+    "record_id": "xian:f55480e92be2d4835276b337",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "希木酸奶·广济街店",
+    "record_id": "xian:24314e1729cfa9631397fb90",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "一禾重庆小面",
+    "record_id": "xian:52858d99a4ac8944363d795e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "柳州螺蛳粉(团结中路店)",
+    "record_id": "xian:727f023b3b5c3933454d4dc6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "潮汕铺(群贤道九号店)",
+    "record_id": "xian:85dfb5f1b63a00d37023239f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "蒲城小五剪刀面(唐人街店)",
+    "record_id": "xian:c506b2a8f29fadd787f86740",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "温州友发海鲜酒楼(玉祥门店)",
+    "record_id": "xian:79d09ebb5c7d7e889c5c6e74",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "阿里锅盔馍店(回民街店)",
+    "record_id": "xian:7044edad334de79ad1f720c2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "天津一绝小笼汤包馆",
+    "record_id": "xian:3bb49322e7adde284d087ff5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "春来和(汉城路店)",
+    "record_id": "xian:861593344e37654f3e8643f4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西城京涮",
+    "record_id": "xian:fe333aef037228d78b4f55c1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新疆特色营养馕(大学习巷店)",
+    "record_id": "xian:d631ec374f6712bde6a44549",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金刀铜锅涮肉(宫园壹号2期店)",
+    "record_id": "xian:ac1e861467877c5bb92b0280",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "宁夏宁馨源生态烤全羊",
+    "record_id": "xian:bad8ec8946db7f7b6d54d46a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "石羊农庄",
+    "record_id": "xian:71a1b496a08b9f9098b88b2f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "韩家韩国料理烧烤(绿地店)",
+    "record_id": "xian:6aa1d407cf79ab1a9967cf79",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乌拉火锅(堤柳花园店)",
+    "record_id": "xian:f040c42e6dc199087a7d91b5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "明东碳烤韩国料理(绿地中央广场店)",
+    "record_id": "xian:b0d7c46b38d9718a4e0dccb5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "黑牛臭豆腐(欧风商务店)",
+    "record_id": "xian:f19ad7aa412c1efe715885f5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "壹仟金·融合创意陕菜(团结南路店)",
+    "record_id": "xian:93074b67222196d0bb28d2fd",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "汇聚德铜锅涮肉(中海城店)",
+    "record_id": "xian:83daad2bb2f2cd7bae896f72",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "曲水菜馆·陕菜葫芦鸡(创客大街店)",
+    "record_id": "xian:664889e7dc5a38bff7a067eb",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "石葵居酒屋(锦业时代店)",
+    "record_id": "xian:caf0854ab06db74e9611af2a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "酣舍·粤菜融合菜·中餐·茶馆(金泰假日花城店)",
+    "record_id": "xian:5feeee1ddc0219bbf8f6020e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "半口香椒麻土鸡(华城万象1期店)",
+    "record_id": "xian:fe6e5a006bcc8fa7ddf0a350",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "567大连海鲜(锦业路店)",
+    "record_id": "xian:d8fd4ccc3cc21792816daa60",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "销魂烤鱼(高新六路)",
+    "record_id": "xian:f1b5a2409082d50284af73f6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "莲西餐厅",
+    "record_id": "xian:3952c2e400eb0d1ec8e033c5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小葛·烤肉(建章路店)",
+    "record_id": "xian:5fdf69c92214f019fd8fd675",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三力烤鸡(华旗·东郡南区店)",
+    "record_id": "xian:9f4540f95647d62288578d80",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "旭隆餐厅",
+    "record_id": "xian:4c935bfeadcdbe7d966cd7f6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "熊记笼笼肉夹馍",
+    "record_id": "xian:8e6487ba4d50c34d3e0c4c62",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小邓麻辣鱼庄(长安店)",
+    "record_id": "xian:6c04e1791c07dbbc42bb9467",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆老地方铁板鱼(天时新苑店)",
+    "record_id": "xian:afcd9048844df1b034de5926",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "徐州农家一锅炖",
+    "record_id": "xian:c6f144aef5627cc09d2c0376",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金世纪中餐厅(陕西世纪金源大饭店)",
+    "record_id": "xian:7faa8eeb909907fb2c0aa96b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "辣妹子家常菜(公园南路店)",
+    "record_id": "xian:241acf0ab2df2c50e33e995a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三月茉甜品店",
+    "record_id": "xian:ee34c30ee5f28f10a8d9dae5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "尔萨砂锅烧烤(都市新村小区店)",
+    "record_id": "xian:2050c56c0646836bacb03383",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乾州四宝(东仪路店)",
+    "record_id": "xian:8fa155af698ebf93e53e2123",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小蓝鲸咖啡园(黄河温泉小区店)",
+    "record_id": "xian:cc99e347a43cc50e4ec38f31",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "幺妹小可以川菜鱼庄(啤酒路店)",
+    "record_id": "xian:9bba46444bfafbdcff043a5f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "土豪火锅排骨面",
+    "record_id": "xian:d90e60ee95d51e9293ab31fd",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "鸿运串串香",
+    "record_id": "xian:a9569333c05441a0627beb24",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "朝阳美食城(白马品牌服饰批发广场店)",
+    "record_id": "xian:5e2f4eafcae4a8c7e8779690",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞成名仕(北郊店)",
+    "record_id": "xian:87b098e34c0e5b45c5181752",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "鲜呦蒸汽石锅鱼(祥和居店)",
+    "record_id": "xian:cdbb3387314bc13610fe3c40",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "榆林大烩菜(凤城四路店)",
+    "record_id": "xian:6330a51840f828174222bcd1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "珍味轩酒楼(留园店)",
+    "record_id": "xian:be7b46f16288424537800837",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕北赵二绥德羊杂碎",
+    "record_id": "xian:b9002e28329441916fd1bf48",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "喜螺记螺蛳粉(首创·漫香郡店)",
+    "record_id": "xian:e1e6902257c5107c3cceb503",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "福建海鲜面(龙钢广场店)",
+    "record_id": "xian:4d7381cb55fd0b04a702c786",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "绥德羊杂碎羊肉面(文景路纬三十街总店)",
+    "record_id": "xian:eacae8014eb3395550b51dcb",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "湘约东风号湘菜馆(北三环店)",
+    "record_id": "xian:7218bc79df191fd0b753bb43",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "俏陕南百姓餐厅(盐张东区店)",
+    "record_id": "xian:2c96abdeff5e8008b2099af8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "顶牛富硒牛肉鲜切火锅",
+    "record_id": "xian:3319be1395a50d588f7bc48d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "菌香大盘鸡大盆骨",
+    "record_id": "xian:577b115a3f1050e05ed44897",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "津福润酒楼(沣东新城店)",
+    "record_id": "xian:3ba8f23a43bd05c16cda0832",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "宁夏吴忠老吴特色炒肉片饭店(大秦七十二坊店)",
+    "record_id": "xian:8d24cdc7f773fcaf8701f716",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "河南烩面猪蹄店",
+    "record_id": "xian:53d7a4fa80cba5964e8e1a56",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆沣苑香石锅鱼(沣峪口店)",
+    "record_id": "xian:bb623a54cc567c055ebcccdf",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "那家(乡土菜地道铁锅炖)",
+    "record_id": "xian:6cc445ad5a1afcdaedcbd2e9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "最花溪花溪牛肉粉(西安阳光天地购物中心店)",
+    "record_id": "xian:4ab6cd62ad0b148db4f019f8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "神木烩菜焖面",
+    "record_id": "xian:6b45d3a3c36cf903d85e8267",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "怡咖啡·自助餐(香格里拉大酒店)",
+    "record_id": "xian:af76d980cdf377b2cf183d91",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "福运阁酒楼(西长安街店)",
+    "record_id": "xian:503791688a1c6470e74d7081",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "咪咪小面",
+    "record_id": "xian:60fea4dd2b5c4cb618b0b307",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乡村农家",
+    "record_id": "xian:3316a0caefdafcb178caa8ed",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "沣峪口酸奶店(润豪沣峪鲜奶作坊)",
+    "record_id": "xian:a7d623502e2d480612a95b41",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "传之承铁锅炖(长安区总店)",
+    "record_id": "xian:8c5f6a48903493966526cdde",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "寂寞的鸭子(建东街店)",
+    "record_id": "xian:e9ff9a629a4d99d023f41629",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "细柳臊子面(广天苑小区店)",
+    "record_id": "xian:3e86f40623d78f9061e5cfb4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老袁烧烤(北三街店)",
+    "record_id": "xian:e748300589f8e27fb1d6cbe5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "宝岛便当(西安碑林店)",
+    "record_id": "xian:91ccf9ed4ec95dd85d2fc49f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "朱锋炒菜馆",
+    "record_id": "xian:d9549e45170d09e4dfc4185c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "东岸茶坊(新东尚店)",
+    "record_id": "xian:e13e749120139dae7171187e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "胖嫂锅盔",
+    "record_id": "xian:59c5fd8aecfdc50e167e0169",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "土家酱香饼(太白北路店)",
+    "record_id": "xian:5e4630e61e097d041b347913",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "爱丁堡庭院吧",
+    "record_id": "xian:7605caad5d9099ec9819727a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "段青平凉菜专卖(西铁大明宫住宅小区东区店)",
+    "record_id": "xian:8ceb8b903853389a7b63c210",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "好吃嘴川菜(缤纷鸟大厦店)",
+    "record_id": "xian:768a9421f6b6ab89bf2a3d49",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "民生芝麻饼(新华街店)",
+    "record_id": "xian:bd556ec23018ea4e9061beaa",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老陕手擀面(秋林店)",
+    "record_id": "xian:43e64da190be2276df9fc8b3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "酥不腻北京烤鸭",
+    "record_id": "xian:ba2fd8a07368cfa1990cd081",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老丁家糊辣汤水煎包(东关总店)",
+    "record_id": "xian:e822b1390323d49b6e35f731",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老成都江湖石锅鱼",
+    "record_id": "xian:be9ea1485172d9f5b9370940",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "发财小酒馆",
+    "record_id": "xian:c51cb8b8d57f58868073b9c6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "江南三月牛肉麻酱米线",
+    "record_id": "xian:76aa0f55b5f66a303de2ea4a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "熊家无二·韩式炸鸡(钟楼店)",
+    "record_id": "xian:9b3b20e310df0e56fe91916c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "阳阳老火锅",
+    "record_id": "xian:2a1afe4e3a05b648b91f3019",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "花小小新疆炒米粉(南门王府井店)",
+    "record_id": "xian:442948789441c99d51005595",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真老马家粽子店",
+    "record_id": "xian:b44be9ec1e4cfe673adb0def",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "秦镇南街李家大米面皮(兴庆小区店)",
+    "record_id": "xian:42ea69cafae53cb82636c857",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "信阳土菜馆(西安钟楼店)",
+    "record_id": "xian:a52af94b1c22c71c33489f57",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "潮州大排档(体育场北路)",
+    "record_id": "xian:cdd8ce7531606316f393dea8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "山城小火锅(红缨东坊店)",
+    "record_id": "xian:ce5e2493b07d6d9471adac41",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "蜀南竹签烤肉(雁塔北路店)",
+    "record_id": "xian:5f5bcfe513b0cd726a1fad73",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "李三烤鸡",
+    "record_id": "xian:8b8d611be9ccf464cef4bf46",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "大方茶馆(瑞丽公寓店)",
+    "record_id": "xian:441f55603f2a880c6f9ebb4b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "玉川煮茶坊(陕西日报社家属院店)",
+    "record_id": "xian:633e38e1bc59d109ad25defd",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "国食天香(友谊东路店)",
+    "record_id": "xian:909965e92a73116d5a80e500",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "赵记素斋绿豆馅饼(钟楼店)",
+    "record_id": "xian:b6b6c696f5ebae212755f29d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老马家酸汤水饺牛肉面",
+    "record_id": "xian:97d820f6da8a3c688b7dd875",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小世界西餐厅(建国门店)",
+    "record_id": "xian:2da043acb39507868dc49b27",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "蘸水裤带面",
+    "record_id": "xian:21939704ffdf4b8f7331bc5d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "饼一哥土豆片夹馍(立丰公寓店)",
+    "record_id": "xian:82988a4edf424c392213aa58",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "澳门德兴海鲜火锅(华融国际店)",
+    "record_id": "xian:4301efbf0c6ef9a156be6d4f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "天台牛排主题餐厅",
+    "record_id": "xian:913ba21fbee0cef32398d7e1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "对猫弹琴猫咖啡",
+    "record_id": "xian:939331d68f6594a1ed7e5db8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老孙家馄饨店(教场门店)",
+    "record_id": "xian:2b774b69736bebed74886b19",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "味芝朗烧鹅广东菜(碑林博物馆店)",
+    "record_id": "xian:3d3f3271e1b1214b60787712",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "杨凌蘸水面(农兴路24号院店)",
+    "record_id": "xian:4861e9730de33c18df15b2aa",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "好享龙虾(咸宁路店)",
+    "record_id": "xian:4c778c78d99e48bf40e7e65b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "刘二永香羊肉面庄",
+    "record_id": "xian:e640ea0f9a6772f1585c4a55",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金牌烤羊腿(劳动西路店)",
+    "record_id": "xian:759b546ae854508cee8385ed",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三顾冒菜·麻辣烫(普里店)",
+    "record_id": "xian:954a61b2df6c01af19794546",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "周黑鸭",
+    "record_id": "xian:bc1457992cf4043ce6a84101",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "红油米线",
+    "record_id": "xian:591624a2a4849bb18d995d25",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西北伊兰牛肉面",
+    "record_id": "xian:a96b58aae575bd326dcc7ec4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "华祥苑茶业·茶馆茶室(陕西省西安市碑林区文艺北路店)",
+    "record_id": "xian:3fe2fef03e7104c4b680d372",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "正新鸡排",
+    "record_id": "xian:d30c79f59194d344d2cb6662",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马磊家夜宵",
+    "record_id": "xian:5ab79945aa903dfc2286536f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "粤味乡",
+    "record_id": "xian:9598af6928977528936410e3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "兰州正宗牛肉拉面(大新巷小区店)",
+    "record_id": "xian:b60a710c68b07dc62153d8b9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "香掉牙酥饼",
+    "record_id": "xian:2f8159aa0d7d0eccec8b3d00",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "豫东烩面夜市(丰禾路店)",
+    "record_id": "xian:c009d27f24ec1243c8e3a899",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "粤茗客茶点",
+    "record_id": "xian:26c10e5d2e7702d5fdab26d8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "东关老葫芦头泡馍(更新小区店)",
+    "record_id": "xian:4ab41f18516d55171ac4e53d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "农夫馋嘴麻辣香锅(东关店)",
+    "record_id": "xian:b57ea416e7cc83dd17c6265f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "悠谷手作面包店",
+    "record_id": "xian:31ae7a7c1b5e3d6cb7c958a8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "有家·酸汤鱼(铜雀台店)",
+    "record_id": "xian:573dff81eca3859b218dee58",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "塞北春横山炖羊肉(中海华庭店)",
+    "record_id": "xian:9d6edb79031b960dcec57a8f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "回回牛肉(西工大店)",
+    "record_id": "xian:46fa630cce6730e6abfdce46",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "一粉一城新疆炒米粉(雅阁宾馆店)",
+    "record_id": "xian:487767d4126308cd1e586574",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老安家德富园精细糕点(回民街店)",
+    "record_id": "xian:60299b69793fbbd4995b10de",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "馨磊酱肉店(麦苋街店)",
+    "record_id": "xian:c61c60d60d693025195b7d7b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "擂饭(开元西旺店)",
+    "record_id": "xian:969cacb713f119a57d5b9d0e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "曹氏鸭脖(昆明路店)",
+    "record_id": "xian:c585289bdd5bb35f8abd84be",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "海荣锅贴(中南·青樾店)",
+    "record_id": "xian:e3d1676b4ba8cf80fe784210",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "甑香卤鹅(汉城南路店)",
+    "record_id": "xian:b195a44a405113db99c93135",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "毛家烤鸭店",
+    "record_id": "xian:a22e138f7296f286e3351d9f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "米多面多(高新四路店)",
+    "record_id": "xian:9a29a1d6c14581e662c3a93d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真蜀湘曹氏鸭脖(莲湖旗舰店)",
+    "record_id": "xian:248204db1d13bafb71b3e61e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老顾客卤菜凉菜店",
+    "record_id": "xian:d685e2638b5680450141323d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "鑫聚坊北京烤鸭",
+    "record_id": "xian:66d817d528461abcf6c1c404",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新凯肉食",
+    "record_id": "xian:3cb2cc9c552fff0d144cc7a3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "稻壳儿酒吧(五星小区南区店)",
+    "record_id": "xian:7ed2f30b6b8909cfbf91f356",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "百里川私房菜(丰登北路店)",
+    "record_id": "xian:6aac08a89b0bb1d66729098a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "松园酸菜鱼火锅(龙首原店)",
+    "record_id": "xian:3781e40ed803d10c2b0a77c7",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "冬强烧烤串串店(兴中路店)",
+    "record_id": "xian:53cd4734aa42ff291352d399",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "李娟玫瑰元宵(金桥公寓店)",
+    "record_id": "xian:46982e81c991f1fb9968c04b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "御宴宫",
+    "record_id": "xian:e5318742b73a6e6b5e4fad0e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(天赐苑店)",
+    "record_id": "xian:855533cb095c542541ba9b1f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "同义诚酱肉(大皮院)",
+    "record_id": "xian:8da01b553d0756cceec5141c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小芙蓉深海鱼头私家川菜(唐延中心城店)",
+    "record_id": "xian:cf8af27f3b83e4d8892b0601",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕北绥德羊杂碎(中海·东郡店)",
+    "record_id": "xian:63c1933e7ea314b3360a4303",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老吴家牛羊肉水盆(大皮院店)",
+    "record_id": "xian:c4d7313859c1b1de7602a8e9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "鱼你在一起(馥桂园店)",
+    "record_id": "xian:25b84bbabd7d214d882f1f65",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "横山双城铁锅炖羊肉(曲江店)",
+    "record_id": "xian:a1e69599938493eb945660e8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老安家安建坡传统糕点(庙后街店)",
+    "record_id": "xian:9b91167f66703baeaa0fb4f0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "紫燕百味鸡(西安丰禾店)",
+    "record_id": "xian:c5503b6c6c52c868e9d9dc3c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "绣桥中餐厅(西安君悦酒店)",
+    "record_id": "xian:737ee60fed47ca00bbf91c9f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老马家酱腊牛肉店",
+    "record_id": "xian:985411564eb24a9f5efe9fde",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "兄弟千里香馄饨王(馥桂园店)",
+    "record_id": "xian:7d54018e5b31e8ca5c7b4094",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "尔里餐厅(回民街店)",
+    "record_id": "xian:f211090e2e59370646d62f17",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "特色农家铁锅炖(公园南路店)",
+    "record_id": "xian:826c948982590065c4ccee85",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "庙后街马三快餐店",
+    "record_id": "xian:8dbb792ca22ae9fed4df7696",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "菜客陕菜白伟托盘鱼",
+    "record_id": "xian:92eeb243ea44d193e996a255",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小贾麻花油茶",
+    "record_id": "xian:435ebb6bb6301898897a22a2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老碗•陕菜传承(曲江店)",
+    "record_id": "xian:6b796ef4dd87afcb1c916802",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "胖子手工菠菜面(丰登路店)",
+    "record_id": "xian:665ed1783d30bd59a43d6cf9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老余油焖龙虾(团结东路店)",
+    "record_id": "xian:23f18ca11e85c5174d728ddd",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "聚宾楼·科技三路店",
+    "record_id": "xian:cc4c79ae013ef36ffd46f94e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "东茗轩茶艺棋牌(劳动公园店)",
+    "record_id": "xian:75ee57b1b95ec43c17714176",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真海清斋铜锅涮肉(电子城店)",
+    "record_id": "xian:6fc487939d7720aa66b26d72",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "南瓜花意大利餐厅(瑞吉大厦店)",
+    "record_id": "xian:60fa5122ef8b1ca727110a58",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "李国平烧鸡(庙后街店)",
+    "record_id": "xian:b4dc31a67f7b06687717955f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真·胡弄巷·烧烤涮锅(西延路店)",
+    "record_id": "xian:450e69d2c742edf8bfcecba2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "銘門·味觉小厨(大唐芙蓉园店)",
+    "record_id": "xian:26b11ba89cde2b4d6888db6f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "遇见饸饹(丈八六路店)",
+    "record_id": "xian:92b46d4de396b1be18fb311b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "肯悦咖啡沣镐店",
+    "record_id": "xian:c88bc61a145a1ee5f584e28d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小南园(西安电子科技大学北校区店)",
+    "record_id": "xian:bb080c33068f12ab89957b83",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "喵星人的猫咖啡馆(电子正街店)",
+    "record_id": "xian:f27bda1ead948b8a3468673a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "独一佳湘菜(老游一店)",
+    "record_id": "xian:62d4d4689208781c67c6b830",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "如意铜锅·关中油泼辣子涮肉(建工路店)",
+    "record_id": "xian:ad0eff8f109db31597e16fbd",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "潮汕鲜鲜居牛肉火锅(长丰园店)",
+    "record_id": "xian:63760f4dee4ef7b83c9339c9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "妈妈的味道(韩国艺术之街店)",
+    "record_id": "xian:795ca95d33ebaf8ee3fb1b0e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "普素茶房·石器艺术·素食茶馆(高新店)",
+    "record_id": "xian:b03c77e8acd838c1fd3fd487",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "舞日本料理(西安威斯汀大酒店)",
+    "record_id": "xian:6dafdd4f41cf827136a1410b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "游来游去酸菜鱼(盛世芳洲·金座店)",
+    "record_id": "xian:63e64983005756ff2d70d911",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "七号馆",
+    "record_id": "xian:f375b1207d645b4e13c7499c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "嗨温·韩国料理",
+    "record_id": "xian:23007a7c009d44ba0bb0222c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "梁记菜馆(南风大厦店)",
+    "record_id": "xian:c79ab1437e87d21518a55db0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "东阳磐安私房菜馆(甘家寨西区店)",
+    "record_id": "xian:9412b9358160f798b6d11ba3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "驴肉米饭(大雁塔店)",
+    "record_id": "xian:d0279fab1957fc967239ff79",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "番食园鲜食火锅(天地源·丹轩坊店)",
+    "record_id": "xian:699ff1195eb38824da6f83b0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "口味日记·江南小馆(曲江店)",
+    "record_id": "xian:4b9fa28a9b22ef8c8d43525b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小艺饺子馆",
+    "record_id": "xian:6de5144ca8bb603027b9fb1b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "盛运自助涮烤(科技路店)",
+    "record_id": "xian:5bf4257848dde0a0c568fe3e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "黄牛村韩国料理(绿地中央广场店)",
+    "record_id": "xian:7c4cad564b123d13df200247",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "横山炖羊肉(鑫龙天然居店)",
+    "record_id": "xian:c916846c787b93c283e163ab",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "苑美厨子川湘菜",
+    "record_id": "xian:3d0ab91e8ae38012cef3f07e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西泰厚泡馍馆",
+    "record_id": "xian:573b082c3dbb5e65be0d1eba",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "石洪腊牛肉夹馍(钻石半岛店)",
+    "record_id": "xian:7e0247d2f00242cb54954e3d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新纪元大酒楼",
+    "record_id": "xian:2f9e4fa83594c2271d544ae5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "巨炉烤肉(科技路店)",
+    "record_id": "xian:2c5a81d217522c171d7591a6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "秦味牛·真牛鸳鸯泡馍庙坡头店",
+    "record_id": "xian:bd5ac7476252730360c7c7c9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "天和臻品炝锅鱼",
+    "record_id": "xian:b83c89bafeb218c38d986ec3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "一刘烤肉(科技二路)",
+    "record_id": "xian:d3b8ff3659e7d178bc413c98",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "秦盛轩陕菜·烧烤(大雁塔店)",
+    "record_id": "xian:610cd4b2e3aa978ced7707ac",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "亚利烤肉·大雁塔30年老店",
+    "record_id": "xian:822f37b4febabefdb66c2248",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "羊记炒酸奶",
+    "record_id": "xian:cbdb5d8aba6fe5ed10013de9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "众家灯火西安头牌煎饼(环普店)",
+    "record_id": "xian:76d99107fb7141a2d75e35de",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "一一面馆(融鑫路店)",
+    "record_id": "xian:2b2614dd89cc45744ac61f27",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新生餐饮",
+    "record_id": "xian:384295127880a651c6d015ee",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小邹川味馆(雁南四路)",
+    "record_id": "xian:8d96895086239ceae5c795a8",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "咥一碗(吉祥路店)",
+    "record_id": "xian:bbda2dac34661171e02e1d78",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乐山味道钵钵鸡油炸串串(茅坡新城小区店)",
+    "record_id": "xian:931cd8b0e341ba6f41d1a504",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "香提小镇(曲江六号2期店)",
+    "record_id": "xian:9b2f1fc18f6cd9dd458348fa",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "安塞地椒羊肉(曲江壹街店)",
+    "record_id": "xian:26d71a746577dd3938e285fc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金花大酒店风和轩中餐厅",
+    "record_id": "xian:d8c8101c3427c34c135fdc90",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老北京果木烤鸭(咸宁中路店)",
+    "record_id": "xian:5ab2b378d2ee2117e0220614",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "椒香火辣老成都传统串串香(甘家寨东区店)",
+    "record_id": "xian:9ea51078a0fd8a8bc8c16db3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "霸碗盖码饭(西安沣东自贸园店)",
+    "record_id": "xian:2676ed74f43ea3aad2653ba9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "子午路张记肉夹馍(小烟庄店)",
+    "record_id": "xian:747d130c0389484a12b1aa2b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "张亮麻辣烫(西安隆瀚城店)",
+    "record_id": "xian:7c2a6b22f9348b7edfec3258",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "海宝轩(高新品阁店)",
+    "record_id": "xian:2573af6cf3055ba0fc4fc0b9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "李记炝锅鱼(市中医医院店)",
+    "record_id": "xian:ffea47f0fe6b06e96beaf910",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "四十里铺羊肉面(雁引路店)",
+    "record_id": "xian:eadbb8b393c6e8a2033d6d8a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西安粘糕甑糕",
+    "record_id": "xian:c678fd36b8f1fa06fe84e13e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "明盛澄城水盆羊肉(高新店)",
+    "record_id": "xian:90d79cc6c18476fee867e81a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "要德鱼庄平价川菜",
+    "record_id": "xian:4fa1d0f0d3b2505cdcf1c551",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "acquolina阿果里呐意大利比萨店(紫薇尚层店)",
+    "record_id": "xian:a2f56693531064e520ef58bc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "余记无敌锅锅米线(万和城购物中心店)",
+    "record_id": "xian:56cd6c9324b994d3d99a2c4f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "永兴坊·贵妃龙须酥",
+    "record_id": "xian:fbf3e7be927c097f8a5ea8db",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "毛家人湖南土菜馆(长安大学雁塔校区店)",
+    "record_id": "xian:4787718ecf716889aea7ee88",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆纸包鱼(新城店)",
+    "record_id": "xian:f0e4fdad7b5b563f77966826",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "山由之cafe&meal(小寨店)",
+    "record_id": "xian:9dc5343dbeb9329c3173ab11",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "奈雪的茶(西安绿洲insula店)",
+    "record_id": "xian:74f72e5448887b7af3296bbc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "水碧园",
+    "record_id": "xian:6bb032bff3a31579f3740fb0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老赵家炖牛肉丸子烩菜(大秦店)",
+    "record_id": "xian:adbec2cf08487b26663fe964",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "长盛斋泡馍馆(西影社区店)",
+    "record_id": "xian:5d3acab3a9d5565ee120ff39",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "福慧居餐饮(胡家庙店)",
+    "record_id": "xian:55b387453a355819759c031f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马奎胡辣汤(嘉惠公寓店)",
+    "record_id": "xian:7564de221f88ad9e1aabd1d6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "河南羊肉烩面(西宝公路)",
+    "record_id": "xian:97299e7a58c1c43d5a253e2b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "八旗不上火铜锅涮肉·烧烤(吉祥路店)",
+    "record_id": "xian:a1047f0cc2449785c78eb904",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老巷子户县小吃·烤鸭(兆丰西路店)",
+    "record_id": "xian:37ec49a732588650684ba571",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "澄城吕记水盆羊肉",
+    "record_id": "xian:a53c44ca862ba3165ed3fc01",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "王记葫芦头梆梆肉",
+    "record_id": "xian:c301f495a95ca348d55241ee",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "旬洲锅巴米饭(北新街店)",
+    "record_id": "xian:e115d33172249b41327ed3c6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "刘家烩菜(民乐新都会商城店)",
+    "record_id": "xian:f16086e6cfa7da823561da39",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小院有猫咖啡吧",
+    "record_id": "xian:f5ee44a22664df2e350084c4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕北陕北风味(爱学路店)",
+    "record_id": "xian:b0f271632b81ec72de58ee7f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马王大众面馆",
+    "record_id": "xian:d5a02d55e705863539b162de",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "摔碗酒(永兴坊店)",
+    "record_id": "xian:cd622d904f156242b015ec91",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "藤椒牛杂牛肉老火锅·斗酒馆(八府庄十年老店)",
+    "record_id": "xian:d748146e728da701215dae27",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新川人王大馅馄饨(公园北路店)",
+    "record_id": "xian:615085f08fe499fddc7dd9c1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "朝花里川菜小馆(阳光天地店)",
+    "record_id": "xian:3091e621090ae1778d2d3113",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "威海荣成海鲜(公园南路)",
+    "record_id": "xian:4efb8987093b7cc0decec4ef",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "河南方城羊肉烩面(中山门小区店)",
+    "record_id": "xian:6a79adca33ef4d74e35d47ac",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "兰亭茶叙",
+    "record_id": "xian:a835bd6017f9d274b686b29e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "6茶共享茶室",
+    "record_id": "xian:21fcf985828eff24a2cc6e95",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕西印象(辛家庙店)",
+    "record_id": "xian:2f1e438892cf22b69c3fb73e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "湖南土菜馆(永乐小区店)",
+    "record_id": "xian:40562e35dbe4dbc33ffe98d4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "大秦手擀面(蓝天华庭店)",
+    "record_id": "xian:4b9df760120f3d1d8686aa08",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "泾阳石子馍(永兴坊店)",
+    "record_id": "xian:d61eaf525139d5bea00e3d17",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "香茗闲庭茶楼(保亿风景大院店)",
+    "record_id": "xian:68407ca79ddfb46ffb0dfd1e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清雅水盆牛羊肉(名京·九合院锦荟苑店)",
+    "record_id": "xian:f649a84b88ca87b22955108b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "7080庭院饭堂",
+    "record_id": "xian:81566b3f0e31caba24195b9d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "长安大学渭水校区树蕙园餐厅",
+    "record_id": "xian:41f30a857b046a63440e4883",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "长安印记·宴会厅(北郊店)",
+    "record_id": "xian:b337ceac31c8a85ef363e457",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(海康威视西安科技园店)",
+    "record_id": "xian:450302b586aab118fad7be05",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "壹佰斤东北铁锅炖(太元路店)",
+    "record_id": "xian:506e5b6eec199288a1ac3d4a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "源久粥食府",
+    "record_id": "xian:8e7474c3272c16e5d724e1c1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "绥德汉陕北风味(世融嘉城店)",
+    "record_id": "xian:660c00ffc5e91a8d91e749f2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "泉州牛肉火锅馆(锦园君逸店)",
+    "record_id": "xian:35406adf7133acf4c75c6420",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "怡云轩茶舍.品茗.商务洽谈.简餐",
+    "record_id": "xian:2cb8d8cbfc7487e06a895986",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老安家水盆(经开店)",
+    "record_id": "xian:7fb4d391841dabdbab6a1cde",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "二小酸菜面烧烤(建章路店)",
+    "record_id": "xian:d6122679e8d6bf07ccc2ff77",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "百兴牛肉馆(丽舍春天店)",
+    "record_id": "xian:b3810679a423b165c78c8bb5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "渭南时辰包子(东曲江池社区店)",
+    "record_id": "xian:9589f904984917234384be71",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "兴庆斋(白桦林居店)",
+    "record_id": "xian:2cc2eefa16769a72d06d188b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "兴庆斋·盐池手抓羊肉清真餐厅(交通学院店)",
+    "record_id": "xian:8eecd71a7ad3c49500aadb1d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老谢家羊血大王",
+    "record_id": "xian:4641bc3e69368d723d8450bf",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真一品楼泡馍",
+    "record_id": "xian:ce7a3d02289851262e686566",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "绿伞正宗锅贴店(建章路店)",
+    "record_id": "xian:3e3f7ba1ad2ed0529633be55",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "户县印象(人民路店)",
+    "record_id": "xian:b2d4ef311cc88def0e660dec",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "红旗游奶奶串串",
+    "record_id": "xian:ee3e4b33025724317a5c882d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕南荟(樱花二路店)",
+    "record_id": "xian:372efee3e5a9eafea3e0e830",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "聚福生葫芦头烤肉(凤八店)",
+    "record_id": "xian:4b4ed32d04f0e50232591fe3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小四川菜馆",
+    "record_id": "xian:542f4dd5d21b63ebc09bb2d4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕西一绝葫芦头(建章路店)",
+    "record_id": "xian:33b5ba5e6247f4806ce08b26",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "品不凡川菜馆(西安工业大学店)",
+    "record_id": "xian:b3c00b7dcbad6f2e42ac1b69",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "luckin coffee 瑞幸咖啡(西安红旗广场店)",
+    "record_id": "xian:c91b699655192836263db0fe",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "一方情怀茶馆",
+    "record_id": "xian:f98e665e450e3373ff1c7be2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "嘎嘎好吃干锅排骨(百花家园店)",
+    "record_id": "xian:bdf2018a1235ad62ff60bb5f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(西安中电产业园店)",
+    "record_id": "xian:fc9bacebc5982e72f995dbd9",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三慧共享茶室",
+    "record_id": "xian:55370598aea54ad44de6d90c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三鑫葫芦头泡馍(浐灞店)",
+    "record_id": "xian:2afb3241a47ebdaf795e287e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "川华酸菜铜锅涮肉(浐灞店)",
+    "record_id": "xian:9a7be95e5eef831f209c491c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "响石盖福禄羊肉馆(海荣.雅庭花园店)",
+    "record_id": "xian:f4ab2b81822750bf22bcaa3f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金瑶六道汤(中海开元壹号店)",
+    "record_id": "xian:f73ed906a8b054192ca9eceb",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "新疆阿不都大串烤肉(别无分店)",
+    "record_id": "xian:b67bb02a5383e34aee865990",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "吾里家手工煎饼(长安店)",
+    "record_id": "xian:268ba81ccd0af1d91ce79da4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "艾美酒店汉江·鲜火锅餐厅",
+    "record_id": "xian:2bf9b49cd18e333aaf09da70",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "徐记烤肉排骨面(张家堡新区店)",
+    "record_id": "xian:e00d87b482f9f355350826b6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "王家老店凉皮(西弥街店)",
+    "record_id": "xian:f63499f9af3e4f3f424bccf4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "金瑞坊炝锅鱼(长安圣合家园店)",
+    "record_id": "xian:fa60427333f54635b8fdb870",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "汉中黄辣丁(西樊店)",
+    "record_id": "xian:8f12387af5831995e2871916",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "沣峪口启华火锅(山水花园旗舰店)",
+    "record_id": "xian:256db0e1ed5fe9b6f59e01f3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "八哥烧烤",
+    "record_id": "xian:850c3474e358760b34ad4e4f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆万州石锅鱼(沣峪口店)",
+    "record_id": "xian:6690e60180d405484c56b598",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "巷陌坊剪刀面(锦园君逸西区店)",
+    "record_id": "xian:b1a9f2c2f0ee24bafa64efd1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西安市长安区仅一味香辣蟹土菜馆(沣峪口店)",
+    "record_id": "xian:f1815393725faad71cf188b2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "四至茶舍",
+    "record_id": "xian:a4c2c91d9ff51503e38d04e3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "好梦圆清汤牛羊杂(太乙正街店)",
+    "record_id": "xian:cfb97ddc53c3575ca8a91e39",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆邓波绝味鱼庄",
+    "record_id": "xian:614c985404e9f1a4dad88bb7",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "茶话弄(阎良大良路店)",
+    "record_id": "xian:9f3c3c8d8a159574a6083bb3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "姜姐串串香(下北良店)",
+    "record_id": "xian:32f6b9c65e9e006496373dc7",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "烤肉侠",
+    "record_id": "xian:3f89faabaf5e4892b6cb48cb",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "回坊阁牛羊肉泡馍(黄良店)",
+    "record_id": "xian:6326e5233a4c9f0df0405850",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "马四羊肉面铁锅炖羊肉烧烤(新房绿色家园店)",
+    "record_id": "xian:705f14468715dfc3e69be0ea",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "杏园烩三鲜",
+    "record_id": "xian:891407bd293eb837d82f17b3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "秦镇米皮(薛家分店)",
+    "record_id": "xian:c60d8ea9ceeb0b6bbe330331",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆川江石锅鱼",
+    "record_id": "xian:877422199ba1aadcff6055e6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "川味鲜厨",
+    "record_id": "xian:2758de1c8778bfed51d9245d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "呱呱叫旗舰店·花园餐厅(沣峪口店)",
+    "record_id": "xian:469ae1bbf0e87c81a6baf243",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "龙师傅辣子鸡(沣峪口店)",
+    "record_id": "xian:a1bb240d10b4d2158770fddf",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "黄辣丁川湘菜(浐灞半岛藏珑店)",
+    "record_id": "xian:7c1b3f3b1e1f7f2c35ed8b4c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(西安国际医学中心店)",
+    "record_id": "xian:65289a6b9e84a327a6ffa167",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "康二姐成都最牛冷热锅串串(西安经开店)",
+    "record_id": "xian:6e98879da0844e34bce2c438",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "农家后院",
+    "record_id": "xian:62f41bdccd93221d2137a374",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "独秀澄城水盆羊肉(长安总店)",
+    "record_id": "xian:7cc6abc2f6a1b4f7d88f6052",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "皇城巷葫芦头泡馍(大明宫店)",
+    "record_id": "xian:30823614736f7b519146cece",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "杨记砂锅(航开路店)",
+    "record_id": "xian:2f832f428979b359cf0aa360",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小满酒食小馆(万科荣华·金域名城店)",
+    "record_id": "xian:99dd119d4f382fd1c8e7a866",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "同州水盆羊肉",
+    "record_id": "xian:7e7dcc3f81a3c158021062c6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆砂锅一绝(风景御园店)",
+    "record_id": "xian:8d5ba18cff26cd1fd0c025b1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "巷子头纸包鱼(东大店)",
+    "record_id": "xian:f15bf628c7127f5f76262959",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西安电子科技大学南校区丁香餐厅",
+    "record_id": "xian:9013f94b776d090f51832994",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乾州豆腐脑(长安南路华东店)",
+    "record_id": "xian:cd8ed2b5cd3a42f948208af2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆吴胖子石锅鱼(沣峪口店)",
+    "record_id": "xian:d9603dc424882a5fe4a771bc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "穆斯白烧烤坊",
+    "record_id": "xian:f3f0287033776a684f98851e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "都江堰石锅鱼",
+    "record_id": "xian:bb6c39a5976233af41813ffc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "可多鱼鲜鱼火锅",
+    "record_id": "xian:55aec8180b21b3ed6be504e2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "卢记粉汤羊血(摩登小镇店)",
+    "record_id": "xian:d6ed2d3c7af4cc99b54c9d95",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "品湘厨湘菜馆",
+    "record_id": "xian:580928478470aa94185fa33e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "杨凌蘸水面(八里村店)",
+    "record_id": "xian:22e10338ace3eef0154e1e23",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "秦正biangbiang面(长安总店)",
+    "record_id": "xian:3b2af0273ccacb058e550fd3",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "蒙古大汗炭火烤羊腿烤全羊(紫园店)",
+    "record_id": "xian:9f6d66510897acd4d018387b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆山城石锅鱼",
+    "record_id": "xian:a1997a879e7f001435adb5e5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "沣峪鱼庄老店",
+    "record_id": "xian:7904837930ce032639c2546c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "四个朋友·自助棋牌(万科城润园店)",
+    "record_id": "xian:3305e83a9e600d3b1a150cc0",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "乐语茶馆(天赐颐府店)",
+    "record_id": "xian:ad0795b3f1fa4bf770a693a1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "和泰农庄",
+    "record_id": "xian:79668aa30d92753d94d62a27",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "牛约堡-牛肉汉堡(西工大长安校区店)",
+    "record_id": "xian:4e6196ce39c46cd6a12eeb87",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "麟泰虹鳟鱼庄",
+    "record_id": "xian:6698a3b04060fee4a72c1a71",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老三凉皮(造字台路店)",
+    "record_id": "xian:4f0ad95feffceea0ffb52210",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "陕南锅巴米饭(凤栖东路店)",
+    "record_id": "xian:e279b45e7043390e6556ee7f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真尔卜餐厅",
+    "record_id": "xian:662fa12b25e10f591f3ab588",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "司马农舍",
+    "record_id": "xian:29a5ebd8a6b4bbe8ebf401eb",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(大洋时代国际店)",
+    "record_id": "xian:896b3781e0d4c53765909ef1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真老铁家灌汤包",
+    "record_id": "xian:65d192fce098d84acfe96156",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小竹签烤肉(金花北路店)",
+    "record_id": "xian:2de117f5f9b9ae55825bffc2",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "尔吾咖啡(西安总店)",
+    "record_id": "xian:faf6cb34d58f1812c48031a6",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "辣呦川菜·麻麻鱼(南二环店)",
+    "record_id": "xian:2214bd5daf40a6a5fc39dbf1",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "冒二麻一麻辣香锅·川蜀冒菜(莲湖店)",
+    "record_id": "xian:b5a2849a13c65999c430fd4d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "蜜雪冰城(方欣市场兴发美食城入口店)",
+    "record_id": "xian:572b7af93b74fc6d5d5a6f90",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三巷涮肉(建国三巷)",
+    "record_id": "xian:96ab8c38c6ac34c067899519",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆丰园(外贸大楼店)",
+    "record_id": "xian:33e07d3fedcad9860dfbe113",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "桂之味桂林米粉(高新四路)",
+    "record_id": "xian:cb351f8b4b8eb2bfd409c67d",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "饺小吉(万锦城店)",
+    "record_id": "xian:c2f03cfcdfcb17ffe36fe97f",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "窑鸡王(土门店)",
+    "record_id": "xian:c42d32943f0d5b21dcd264b4",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "福建海鲜酒楼(玄武路店)",
+    "record_id": "xian:3a91db6dfdf33f2afb775bc5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "哈克穆光明巷饺子馆(西羊市店)",
+    "record_id": "xian:96e640b7d6e96ee29020256e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "尔里牛羊肉泡馍(汇通太古城青都新界店)",
+    "record_id": "xian:c9c7c12561921f4b1e7a2296",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(金辉国际写字楼店)",
+    "record_id": "xian:20ed4d88af90f9fa4dd37fef",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "曹家泡馍馆",
+    "record_id": "xian:bce0e2a1544efd535f7866d5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "晶海餐饮·晶海酒楼(高新店)",
+    "record_id": "xian:be09ae66360ab1971d77b070",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "众家灯火煎饼·家常菜(卜蜂中心店)",
+    "record_id": "xian:9928eb82b63bb3516a8ab276",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "老糜家油糊玹",
+    "record_id": "xian:b6177b78a1b2dcf90c86720e",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "茗鑫茶社棋牌(招商依云店)",
+    "record_id": "xian:888bba7e6922641c9b9b7dfe",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "小赵烤肉(新东尚店)",
+    "record_id": "xian:eee71fbc2df651cd41d32a5b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "西咸新区沣东新城新东东川菜酒楼",
+    "record_id": "xian:c3a5682636e4ab16e12ff64c",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "瑞幸咖啡(幸福林带店)",
+    "record_id": "xian:69720c4cd6e07964cd685d24",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "浩洋食府",
+    "record_id": "xian:a965ef7de04321848ef6a62a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "三道味乾县豆腐脑(尚勤路店)",
+    "record_id": "xian:8fdaf4b995d5b3b58f7ba90a",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "这儿有烤肉",
+    "record_id": "xian:564e9a49f05039e251990bf5",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "喜子面皮",
+    "record_id": "xian:a37fa50d7c4489a5b0c32e3b",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "清真宁夏红马月强炒肉片大盘鸡烤肉(长庆未央湖花园店)",
+    "record_id": "xian:d63e8774c4be7b58c4effdcc",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "重庆沸腾石锅鱼土灶(沣峪口店)",
+    "record_id": "xian:39e24f18f64e64864086b531",
+    "fields": [
+     "price"
+    ]
+   },
+   {
+    "name": "林香蒸肉",
+    "record_id": "xian:7611284f01ce651f37e7df05",
+    "fields": [
+     "price"
+    ]
+   }
+  ],
+  "skipped": []
+ }
+}

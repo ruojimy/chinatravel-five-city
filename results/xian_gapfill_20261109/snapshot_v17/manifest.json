@@ -1,0 +1,60 @@
+{
+ "snapshot": "snapshot_v17",
+ "derived_from": "snapshot_v16 (immutable, unchanged)",
+ "parent": "results/xian_gapfill_20261109/snapshot_v16/catalog.sqlite3",
+ "parent_sha256": "670686cf47e948b381b98a4ecb583a5848247faadc9fc243a02e6dde3679cbd8",
+ "catalog_sha256": "58dafff7da307fc65d7ea40f6310dddaa98acfe0fb494c24634d4860ae9292cc",
+ "sqlite_integrity_check": "ok",
+ "record_count": 6549,
+ "xian_by_kind": {
+  "attraction": {
+   "n": 757,
+   "discovery_ok": 757,
+   "planning_ready": 0,
+   "native_complete": 22
+  },
+  "restaurant": {
+   "n": 560,
+   "discovery_ok": 560,
+   "planning_ready": 0,
+   "native_complete": 21
+  },
+  "accommodation": {
+   "n": 761,
+   "discovery_ok": 761,
+   "planning_ready": 0,
+   "native_complete": 7
+  }
+ },
+ "transport_by_kind": {
+  "flight": 313,
+  "metro_station": 545,
+  "poi": 1399,
+  "train": 436
+ },
+ "ingested": {
+  "items": "tmp_empty_items.jsonl",
+  "accepted": 0,
+  "by_kind": {
+   "attraction": 0,
+   "restaurant": 0,
+   "accommodation": 0,
+   "poi": 0,
+   "metro_station": 0,
+   "train": 0,
+   "flight": 0
+  },
+  "label": "food-price-20261111"
+ },
+ "enrichment": {
+  "applied": 416,
+  "fields": 416,
+  "skipped": 0
+ },
+ "categories": {
+  "new_facts_or_entities": "0 rows with raw page + verbatim quote re-checked at ingest",
+  "engineering_envelope_repair": "none in this snapshot",
+  "quarantined": "0 items rejected, see quarantine.jsonl"
+ },
+ "ingested_at": "2026-11-11T01:12:58+08:00"
+}

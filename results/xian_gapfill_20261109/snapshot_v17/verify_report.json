@@ -1,0 +1,273 @@
+{
+ "snapshot": "results/xian_gapfill_20261109/snapshot_v17/catalog.sqlite3",
+ "checked_at": "2026-11-11T01:13:23+08:00",
+ "records": 4771,
+ "sampled": 4771,
+ "integrity_check": "ok",
+ "by_kind": {
+  "accommodation": {
+   "records": 761,
+   "src_none": 61,
+   "no_raw_path": 189,
+   "locally_verified": 733,
+   "coord_undeclared": 5,
+   "legacy_unverifiable": 28,
+   "src_other": 2,
+   "src_amap": 697,
+   "no_source_fields": 1,
+   "coordinate_identity": 28,
+   "src_gov": 1
+  },
+  "attraction": {
+   "records": 757,
+   "src_other": 15,
+   "no_raw_path": 371,
+   "legacy_unverifiable": 66,
+   "src_none": 70,
+   "coord_undeclared": 3,
+   "coordinate_identity": 77,
+   "locally_verified": 691,
+   "src_gov": 5,
+   "src_amap": 667
+  },
+  "flight": {
+   "records": 313,
+   "src_other": 311,
+   "no_raw_path": 44,
+   "legacy_unverifiable": 13,
+   "fails_contract": 2,
+   "src_none": 2,
+   "no_source_fields": 2,
+   "locally_verified": 300
+  },
+  "metro_station": {
+   "records": 545,
+   "src_other": 285,
+   "no_raw_path": 570,
+   "legacy_unverifiable": 285,
+   "src_amap": 260,
+   "locally_verified": 260
+  },
+  "poi": {
+   "records": 1399,
+   "src_other": 99,
+   "no_source_fields": 78,
+   "legacy_unverifiable": 101,
+   "coord_undeclared": 27,
+   "no_raw_path": 23,
+   "duplicate_identity": 25,
+   "src_amap": 1300,
+   "locally_verified": 1298
+  },
+  "restaurant": {
+   "records": 560,
+   "src_none": 14,
+   "no_raw_path": 205,
+   "locally_verified": 530,
+   "coord_undeclared": 3,
+   "src_other": 12,
+   "legacy_unverifiable": 30,
+   "src_amap": 534,
+   "coordinate_identity": 22
+  },
+  "train": {
+   "records": 436,
+   "src_other": 436,
+   "no_raw_path": 77,
+   "legacy_unverifiable": 11,
+   "locally_verified": 425
+  }
+ },
+ "totals": {
+  "records": 4771,
+  "src_none": 147,
+  "no_raw_path": 1479,
+  "locally_verified": 4237,
+  "coord_undeclared": 38,
+  "legacy_unverifiable": 534,
+  "src_other": 1160,
+  "src_amap": 3458,
+  "no_source_fields": 81,
+  "coordinate_identity": 127,
+  "src_gov": 6,
+  "fails_contract": 2,
+  "duplicate_identity": 25
+ },
+ "hard_failures": 0,
+ "problems": [
+  {
+   "id": "workpack01:flight:79a89c4dc30501cce9453a75",
+   "kind": "flight",
+   "name": "SC4964",
+   "issue": "discovery_contract",
+   "detail": [
+    "coordinate_order",
+    "coordinate_system",
+    "invalid_metadata:licence_status",
+    "invalid_metadata:name"
+   ]
+  },
+  {
+   "id": "workpack01:flight:3ad65a7274836aa7f6011d4b",
+   "kind": "flight",
+   "name": "SC4970",
+   "issue": "discovery_contract",
+   "detail": [
+    "coordinate_order",
+    "coordinate_system",
+    "invalid_metadata:licence_status",
+    "invalid_metadata:name"
+   ]
+  },
+  {
+   "id": "p30:1b1dc56c3fb959433b5bf442bd06",
+   "kind": "poi",
+   "name": "秦始皇兵马俑",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:88e69baa9c1a868b1a73ed7161b4",
+   "kind": "poi",
+   "name": "大雁塔",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:8bcd8abbbc08c97e91f5c561a573",
+   "kind": "poi",
+   "name": "陕西历史博物馆",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:4a82a5570597c4d5b7c7fa0804fe",
+   "kind": "poi",
+   "name": "西安钟楼",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:a1f022f68c8f5a45f2c18d2d1873",
+   "kind": "poi",
+   "name": "西安鼓楼",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:32dab3477b20040f69dd8645214f",
+   "kind": "poi",
+   "name": "回民街",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:3815e3ba056ac1ff1d06dc873d9d",
+   "kind": "poi",
+   "name": "大唐不夜城",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:cae3528ef1e5eb5900480be84cf8",
+   "kind": "poi",
+   "name": "西安化觉巷清真大寺",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:02b606e3e978cc083e65712b6dbf",
+   "kind": "poi",
+   "name": "华清宫",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:cdf5c49234080561397c9ec3f3b4",
+   "kind": "poi",
+   "name": "西安碑林博物馆",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:d21f37543441e549555a45bd36f4",
+   "kind": "poi",
+   "name": "汉阳陵",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:d148140e866279f96b2903820a09",
+   "kind": "poi",
+   "name": "大唐芙蓉园",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:2284269385c14ff205bbbad3fc89",
+   "kind": "poi",
+   "name": "大明宫国家遗址公园",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:0bb028def32ee9f41d94bda3242c",
+   "kind": "poi",
+   "name": "半坡博物馆",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:e414198a922c55f2dce0c6c1a6af",
+   "kind": "poi",
+   "name": "青龙寺",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:b12681eeb6577a142412a11fa86d",
+   "kind": "poi",
+   "name": "兴庆宫公园",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:bc2169f4490ad062c9e37053808e",
+   "kind": "poi",
+   "name": "广仁寺",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:1482f1dda4d7c87f9e27033a3335",
+   "kind": "poi",
+   "name": "曲江池遗址公园",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:4375ad10a4fb6d856e51195198bb",
+   "kind": "poi",
+   "name": "西安都城隍庙",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:95f08b2a1b13272ab78f977b8abd",
+   "kind": "poi",
+   "name": "汉长安城未央宫遗址公园",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:a0f447df0f44d18cb7dd7b55d11e",
+   "kind": "poi",
+   "name": "西安威斯汀大酒店",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:48ccef997e6a4de70fd84ae8ce96",
+   "kind": "poi",
+   "name": "西安丽思卡尔顿酒店",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:f9e4bdc16437d3c122aab0dc9517",
+   "kind": "poi",
+   "name": "西安W酒店",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:8fddead87418c2c17936e1d19939",
+   "kind": "poi",
+   "name": "西安唐华华邑酒店",
+   "issue": "duplicate_identity"
+  },
+  {
+   "id": "p30:abb07c97fb0100772ef172b1a0f2",
+   "kind": "poi",
+   "name": "西安钟楼诺富特酒店",
+   "issue": "duplicate_identity"
+  }
+ ]
+}
