@@ -1,0 +1,485 @@
+{
+ "generated_at": "2026-11-11T15:55:51+0800",
+ "summary": {
+  "sample": 26,
+  "amap_cost": 0,
+  "baidu_price": 0,
+  "pairs": 0
+ },
+ "pairs": [],
+ "all": [
+  {
+   "name": "追风者青年旅社(南稍门地铁站店)",
+   "class": "budget",
+   "beds": 1,
+   "room_price": 42.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;经济型连锁酒店",
+    "rating": "4.8"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安鑫怡宾馆(付村花园店)",
+   "class": "budget",
+   "beds": 1,
+   "room_price": 94.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店|住宿服务;旅馆招待所;旅馆招待所",
+    "rating": "4.8"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "新天地宾馆(西安苏席村店)",
+   "class": "budget",
+   "beds": 1,
+   "room_price": 70.0,
+   "star": "",
+   "amap": {
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": "新天地宾馆(西安苏席村店)",
+    "price": null,
+    "type": null,
+    "tag": "酒店"
+   }
+  },
+  {
+   "name": "西安江川客栈",
+   "class": "budget",
+   "beds": 1,
+   "room_price": 72.0,
+   "star": "",
+   "amap": {
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": "西安江川客栈",
+    "price": null,
+    "type": null,
+    "tag": "酒店;其他"
+   }
+  },
+  {
+   "name": "昕泊酒店(西安阎良火车站店)",
+   "class": "budget",
+   "beds": 1,
+   "room_price": 181.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.6"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安西郊和平宾馆",
+   "class": "budget",
+   "beds": 2,
+   "room_price": 95.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "3.8"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": "西安西郊和平宾馆",
+    "price": null,
+    "type": null,
+    "tag": "酒店"
+   }
+  },
+  {
+   "name": "西安新城康泰宾馆(北大街地铁站店)",
+   "class": "budget",
+   "beds": 2,
+   "room_price": 103.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;住宿服务相关;住宿服务相关",
+    "rating": "4.2"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": "西安新城康泰宾馆(北大街地铁站店)",
+    "price": null,
+    "type": null,
+    "tag": "酒店"
+   }
+  },
+  {
+   "name": "皇城宾馆(西安长乐西苑店)",
+   "class": "budget",
+   "beds": 2,
+   "room_price": 87.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.8"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "九天快捷酒店(西安田洪店)",
+   "class": "budget",
+   "beds": 2,
+   "room_price": 165.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.2"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": "九天快捷酒店(西安田洪店)",
+    "price": null,
+    "type": null,
+    "tag": "酒店"
+   }
+  },
+  {
+   "name": "西安龙雨宾馆",
+   "class": "budget",
+   "beds": 2,
+   "room_price": 143.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "3.4"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安威斯汀大酒店",
+   "class": "luxury",
+   "beds": 1,
+   "room_price": 776.0,
+   "star": "",
+   "amap": null,
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安索菲特人民大厦",
+   "class": "luxury",
+   "beds": 1,
+   "room_price": 491.0,
+   "star": "",
+   "amap": null,
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安丽思卡尔顿酒店",
+   "class": "luxury",
+   "beds": 1,
+   "room_price": 1200.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;五星级宾馆",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安W酒店",
+   "class": "luxury",
+   "beds": 1,
+   "room_price": 1116.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安唐华华邑酒店",
+   "class": "luxury",
+   "beds": 1,
+   "room_price": 829.0,
+   "star": "",
+   "amap": null,
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "Hilton Xi'an 西安万达希尔顿酒店",
+   "class": "luxury",
+   "beds": 2,
+   "room_price": 594.66,
+   "star": "",
+   "amap": null,
+   "baidu": {
+    "status": 0,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "西安钟楼诺富特酒店",
+   "class": "mid",
+   "beds": 1,
+   "room_price": 434.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;四星级宾馆",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "象牙宫寓",
+   "class": "mid",
+   "beds": 1,
+   "room_price": 153.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "似程酒店(临潼汽车站店)",
+   "class": "mid",
+   "beds": 1,
+   "room_price": 82.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.2"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "哈啰轻酒店(西安高陵泾渭新城店)",
+   "class": "mid",
+   "beds": 1,
+   "room_price": 120.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.3"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "缦橙酒店(曲江新区西北妇女儿童医院店)",
+   "class": "mid",
+   "beds": 1,
+   "room_price": 330.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.6"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "長·安丨Boutique·铁通精品商务酒店(西安小寨电子科技大学店)",
+   "class": "mid",
+   "beds": 2,
+   "room_price": 84.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;三星级宾馆",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "澳龙商务酒店(西安唐都医院纺织城地铁站店)",
+   "class": "mid",
+   "beds": 3,
+   "room_price": 67.0,
+   "star": "",
+   "amap": {
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "临潼美都影咖酒店(西安兵马俑西花园地铁站店)",
+   "class": "mid",
+   "beds": 2,
+   "room_price": 162.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.7"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "安逸商务酒店",
+   "class": "mid",
+   "beds": 2,
+   "room_price": 105.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.1"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  },
+  {
+   "name": "沐华酒店",
+   "class": "mid",
+   "beds": 2,
+   "room_price": 124.0,
+   "star": "",
+   "amap": {
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.8"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null,
+    "tag": null
+   }
+  }
+ ],
+ "baidu_calls": 16
+}
