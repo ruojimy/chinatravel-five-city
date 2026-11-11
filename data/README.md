@@ -53,9 +53,11 @@ PY
 |---|---:|---|---|
 | `source_value` | 240 | 观测价 | 有 `hotel_price_observations` 记录 |
 | `estimated` | 78 | **区间中点 mid** | 只采纳 `confidence=high`；区间在 `price_provenance.csv` |
+- price_estimates_supplement.csv：388 家 unknown 中 253 家可算出 n>=8 的同类邻店区间（另 32 家 medium、7 家 low、96 家无可比），**仅供排序/参考，未写入主表**；方法见 docs/hotel_roomtype_dynamic_price.md。
 | `unknown` | 388 | `-1` | 待动态询价；清单在 `dynamic_price_queue.csv` |
 
 - `price_provenance.csv`：`price_low / price_high / price_mid / confidence / n_comparables / method`，估价区间可被程序读取。
+- price_estimates_supplement.csv：388 家 unknown 中 253 家可算出 n>=8 的同类邻店区间（另 32 家 medium、7 家 low、96 家无可比），**仅供排序/参考，未写入主表**；方法见 docs/hotel_roomtype_dynamic_price.md。
 - `-1` 不是 0 或空：ChinaTravel loader 会 `pd.read_csv(...).dropna()`，空值会丢行，所以用哨兵 + 状态列表达“未知”。
 - 计划/报告里 `estimated` 必须写成“预估 ¥low–¥high”，不能当实价；`unknown` 必须先询价。
 - 动态询价：`scripts/hotel_dynamic_price.py {provenance,price,batch}`，默认快照 v17。
