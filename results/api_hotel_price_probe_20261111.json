@@ -1,0 +1,224 @@
+{
+ "generated_at": "2026-11-11T15:33:48+0800",
+ "credentials": {
+  "baidu": {
+   "ak": "MV4b************************Kw1A",
+   "sk_present": true,
+   "source": "file",
+   "path": "C:\\Users\\xiech\\Downloads\\计算机软件工程概论\\reproduction\\.secrets\\baidu.key"
+  }
+ },
+ "hotels": [
+  {
+   "hotel": "西安威斯汀大酒店",
+   "observed_price": 776,
+   "amap": {
+    "v5_text": {
+     "http": 200,
+     "seconds": 4.3,
+     "status": "1",
+     "info": "OK",
+     "count": "5",
+     "returned": 5,
+     "matched_name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+     "poi_type": "住宿服务;宾馆酒店;五星级宾馆|餐饮服务;餐饮相关场所;餐饮相关",
+     "cost": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.7",
+     "tag": null
+    },
+    "v3_text": {
+     "http": 200,
+     "seconds": 1.14,
+     "status": "1",
+     "info": "OK",
+     "count": "41",
+     "returned": 5,
+     "matched_name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+     "poi_type": "住宿服务;宾馆酒店;五星级宾馆|餐饮服务;餐饮相关场所;餐饮相关",
+     "cost": {
+      "raw": "[]",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.7",
+     "tag": []
+    }
+   },
+   "baidu": {
+    "search": {
+     "status": 0,
+     "message": "ok",
+     "returned": 5,
+     "matched_name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+     "uid": "7dd99e94b7d68a9e61685823",
+     "type": null,
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": "4.7",
+     "comment_num": "109"
+    },
+    "detail": {
+     "status": 0,
+     "message": "ok",
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": "4.7",
+     "comment_num": "109",
+     "shop_hours": "",
+     "tag": "酒店;星级酒店"
+    }
+   }
+  },
+  {
+   "hotel": "金鑫宾馆(西安钟楼店)",
+   "observed_price": 84,
+   "amap": {
+    "v5_text": {
+     "http": 200,
+     "seconds": 0.87,
+     "status": "1",
+     "info": "OK",
+     "count": "3",
+     "returned": 3,
+     "matched_name": "金鑫宾馆(西安钟楼店)",
+     "poi_type": "住宿服务;宾馆酒店;宾馆酒店",
+     "cost": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.1",
+     "tag": null
+    },
+    "v3_text": {
+     "http": 200,
+     "seconds": 1.44,
+     "status": "1",
+     "info": "OK",
+     "count": "3",
+     "returned": 3,
+     "matched_name": "金鑫宾馆(西安钟楼店)",
+     "poi_type": "住宿服务;宾馆酒店;宾馆酒店",
+     "cost": {
+      "raw": "[]",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.1",
+     "tag": []
+    }
+   },
+   "baidu": {
+    "search": {
+     "status": 0,
+     "message": "ok",
+     "returned": 5,
+     "matched_name": "西安未央区金鑫宾馆",
+     "uid": "c0f03f522d3daa6062685888",
+     "type": null,
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": "3.5",
+     "comment_num": "1"
+    },
+    "detail": {
+     "status": 0,
+     "message": "ok",
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": "3.5",
+     "comment_num": "1",
+     "shop_hours": "",
+     "tag": "酒店"
+    }
+   }
+  },
+  {
+   "hotel": "秋林酒店(西安建筑科技大学李家村地铁站店)",
+   "observed_price": 154,
+   "amap": {
+    "v5_text": {
+     "http": 200,
+     "seconds": 5.75,
+     "status": "1",
+     "info": "OK",
+     "count": "2",
+     "returned": 2,
+     "matched_name": "秋林酒店(西安建筑科技大学李家村地铁站店)",
+     "poi_type": "住宿服务;宾馆酒店;三星级宾馆",
+     "cost": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.0",
+     "tag": null
+    },
+    "v3_text": {
+     "http": 200,
+     "seconds": 4.84,
+     "status": "1",
+     "info": "OK",
+     "count": "2",
+     "returned": 2,
+     "matched_name": "秋林酒店(西安建筑科技大学李家村地铁站店)",
+     "poi_type": "住宿服务;宾馆酒店;三星级宾馆",
+     "cost": {
+      "raw": "[]",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "rating": "4.0",
+     "tag": []
+    }
+   },
+   "baidu": {
+    "search": {
+     "status": 0,
+     "message": "ok",
+     "returned": 5,
+     "matched_name": "建筑科技大学·李家村",
+     "uid": "9bd525b95f3b47c740ab9a8a",
+     "type": null,
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": null,
+     "comment_num": null
+    },
+    "detail": {
+     "status": 0,
+     "message": "ok",
+     "price": {
+      "raw": "",
+      "is_range": false,
+      "is_positive_number": false
+     },
+     "overall_rating": null,
+     "comment_num": null,
+     "shop_hours": "",
+     "tag": "交通设施;地铁站"
+    }
+   }
+  }
+ ],
+ "baidu_calls": 6
+}

@@ -1,0 +1,403 @@
+{
+ "hotels": [
+  {
+   "status": "1",
+   "matched": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+   "cost": null,
+   "rating": "4.7",
+   "name": "西安威斯汀大酒店",
+   "observed": 776.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安雅高索菲特人民大厦",
+   "cost": null,
+   "rating": "4.5",
+   "name": "西安索菲特人民大厦",
+   "observed": 491.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安丽思卡尔顿酒店",
+   "cost": null,
+   "rating": "4.7",
+   "name": "西安丽思卡尔顿酒店",
+   "observed": 1200.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安W酒店",
+   "cost": null,
+   "rating": "4.7",
+   "name": "西安W酒店",
+   "observed": 1116.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安唐华华邑酒店(大雁塔大唐不夜城店)",
+   "cost": null,
+   "rating": "4.7",
+   "name": "西安唐华华邑酒店",
+   "observed": 829.0,
+   "cls": "luxury"
+  },
+  {
+   "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+   "name": "万豪宾馆(西辛庄店)",
+   "observed": 68.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "凯悦宾馆(三桥店)",
+   "cost": null,
+   "rating": "4.9",
+   "name": "凯悦宾馆(三桥店)",
+   "observed": 124.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "四季宾宾馆(韶雨水韵星城店)",
+   "cost": null,
+   "rating": "4.6",
+   "name": "四季宾宾馆(韶雨水韵星城店)",
+   "observed": 53.0,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安城墙希尔顿酒店-自助餐厅(民乐园文化街店)",
+   "cost": "132.00",
+   "rating": "4.3",
+   "name": "Hilton Xi'an 西安万达希尔顿酒店",
+   "observed": 594.66,
+   "cls": "luxury"
+  },
+  {
+   "status": "1",
+   "matched": "西安钟楼诺富特酒店",
+   "cost": null,
+   "rating": "4.7",
+   "name": "西安钟楼诺富特酒店",
+   "observed": 434.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "西安雅仕酒店",
+   "cost": null,
+   "rating": "4.0",
+   "name": "西安雅仕酒店",
+   "observed": 88.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "长安弈电竞酒店(西安半坡地铁站店)",
+   "cost": null,
+   "rating": "4.9",
+   "name": "长安弈电竞酒店(西安半坡地铁站店)",
+   "observed": 112.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "布丁严选酒店(西安洪庆街道田王地铁站店)",
+   "cost": null,
+   "rating": "4.8",
+   "name": "布丁严选酒店(西安洪庆街道田王地铁站店)",
+   "observed": 86.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "似程酒店(临潼汽车站店)",
+   "cost": null,
+   "rating": "4.2",
+   "name": "似程酒店(临潼汽车站店)",
+   "observed": 82.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "钰禧商务酒店(西安阎良客运站店)",
+   "cost": null,
+   "rating": "4.7",
+   "name": "钰禧商务酒店(西安阎良客运站店)",
+   "observed": 155.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "哈啰轻酒店(西安高陵泾渭新城店)",
+   "cost": null,
+   "rating": "4.3",
+   "name": "哈啰轻酒店(西安高陵泾渭新城店)",
+   "observed": 120.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "西安赫莎国际酒店(西安鄠邑比亚迪二厂店)",
+   "cost": null,
+   "rating": "4.8",
+   "name": "西安赫莎国际酒店(西安鄠邑比亚迪二厂店)",
+   "observed": 187.0,
+   "cls": "mid"
+  },
+  {
+   "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+   "name": "ZSMART智尚酒店(西安鄠邑交通工程学院店)",
+   "observed": 114.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "唐玺智能酒店(西安大雁塔大唐不夜城店)",
+   "cost": null,
+   "rating": "4.5",
+   "name": "唐玺智能酒店(西安大雁塔大唐不夜城店)",
+   "observed": 257.0,
+   "cls": "mid"
+  },
+  {
+   "status": "1",
+   "matched": "追风者青年旅社(南稍门地铁站店)",
+   "cost": null,
+   "rating": "4.8",
+   "name": "追风者青年旅社(南稍门地铁站店)",
+   "observed": 42.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "西安新开家庭公寓(黄雁村地铁站店)",
+   "cost": null,
+   "rating": "4.1",
+   "name": "西安新开家庭公寓(黄雁村地铁站店)",
+   "observed": 80.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "西安鑫怡宾馆(付村花园店)",
+   "cost": null,
+   "rating": "4.8",
+   "name": "西安鑫怡宾馆(付村花园店)",
+   "observed": 94.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "家园宾馆(西安徐家庄店)",
+   "cost": null,
+   "rating": "4.0",
+   "name": "家园宾馆(西安徐家庄店)",
+   "observed": 55.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "皇城宾馆(西安长乐西苑店)",
+   "cost": null,
+   "rating": "4.8",
+   "name": "皇城宾馆(西安长乐西苑店)",
+   "observed": 87.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "西安一鸣快捷酒店",
+   "cost": null,
+   "rating": "4.0",
+   "name": "西安一鸣快捷酒店",
+   "observed": 86.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "花园快捷宾馆",
+   "cost": null,
+   "rating": "3.5",
+   "name": "花园快捷宾馆",
+   "observed": 38.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "友谊宾馆(西安临潼店)",
+   "cost": null,
+   "rating": "3.7",
+   "name": "友谊宾馆(西安临潼店)",
+   "observed": 55.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "金贵源宾馆",
+   "cost": null,
+   "rating": "4.7",
+   "name": "金贵源宾馆",
+   "observed": 99.0,
+   "cls": "budget"
+  },
+  {
+   "status": "1",
+   "matched": "西安云镜民宿",
+   "cost": null,
+   "rating": "4.5",
+   "name": "西安云镜民宿",
+   "observed": 255.0,
+   "cls": "budget"
+  }
+ ],
+ "restaurants": [
+  {
+   "status": "1",
+   "matched": "同盛祥(凤城五路店)",
+   "cost": "42.00",
+   "rating": "4.5",
+   "name": "同盛祥",
+   "observed": "42.0"
+  },
+  {
+   "status": "1",
+   "matched": "清真尔卜餐厅",
+   "cost": "40.00",
+   "rating": "4.4",
+   "name": "清真尔卜餐厅",
+   "observed": "40.0"
+  },
+  {
+   "status": "1",
+   "matched": "绥德羊杂碎羊肉面(文景路纬三十街总店)",
+   "cost": "26.00",
+   "rating": "4.5",
+   "name": "绥德羊杂碎羊肉面(文景路纬三十街总店)",
+   "observed": "26.0"
+  },
+  {
+   "status": "1",
+   "matched": "小竹签烤肉(金花北路店)",
+   "cost": "49.00",
+   "rating": "3.8",
+   "name": "小竹签烤肉(金花北路店)",
+   "observed": "49.0"
+  },
+  {
+   "status": "1",
+   "matched": "马磊家夜宵",
+   "cost": "37.00",
+   "rating": "4.5",
+   "name": "马磊家夜宵",
+   "observed": "37.0"
+  },
+  {
+   "status": "1",
+   "matched": "新凯肉食",
+   "cost": "62.00",
+   "rating": "4.5",
+   "name": "新凯肉食",
+   "observed": "62.0"
+  },
+  {
+   "status": "1",
+   "matched": "黄牛村韩国料理(绿地中央广场店)",
+   "cost": "83.00",
+   "rating": "4.6",
+   "name": "黄牛村韩国料理(绿地中央广场店)",
+   "observed": "83.0"
+  },
+  {
+   "status": "1",
+   "matched": "永兴坊·贵妃龙须酥",
+   "cost": "17.00",
+   "rating": "3.7",
+   "name": "永兴坊·贵妃龙须酥",
+   "observed": "17.0"
+  },
+  {
+   "status": "1",
+   "matched": "春润老渔村(文景观园店)",
+   "cost": "84.00",
+   "rating": "4.4",
+   "name": "春润老渔村(文景观园店)",
+   "observed": "-1"
+  },
+  {
+   "status": "1",
+   "matched": "重庆万州石锅鱼(沣峪口店)",
+   "cost": "42.00",
+   "rating": "4.7",
+   "name": "重庆万州石锅鱼(沣峪口店)",
+   "observed": "42.0"
+  }
+ ],
+ "baidu_hotels": [
+  {
+   "name": "西安威斯汀大酒店",
+   "status": 0,
+   "matched": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+   "price": "",
+   "rating": "4.7"
+  },
+  {
+   "name": "西安索菲特人民大厦",
+   "status": 0,
+   "matched": "西安索菲特人民大厦(钟鼓楼五路口地铁站店)",
+   "price": "",
+   "rating": "4.7"
+  },
+  {
+   "name": "西安丽思卡尔顿酒店",
+   "status": 0,
+   "matched": "西安丽思卡尔顿酒店-北侧地上停车场",
+   "price": "",
+   "rating": "0"
+  },
+  {
+   "name": "西安W酒店",
+   "status": 0,
+   "matched": "西安W酒店·AWAY SPA",
+   "price": "872.1",
+   "rating": "5.0"
+  },
+  {
+   "name": "西安唐华华邑酒店",
+   "status": 0,
+   "matched": "西安浐灞华邑酒店·举茗邑",
+   "price": "45.9",
+   "rating": "4.3"
+  },
+  {
+   "name": "万豪宾馆(西辛庄店)",
+   "status": 0,
+   "matched": "西安雁塔万豪宾馆",
+   "price": "",
+   "rating": "4.4"
+  }
+ ],
+ "summary": {
+  "amap_hotels": {
+   "total": 29,
+   "nonempty": 1,
+   "range": 0
+  },
+  "amap_restaurants": {
+   "total": 10,
+   "nonempty": 10,
+   "range": 0
+  },
+  "baidu_hotels": {
+   "total": 6,
+   "nonempty": 2,
+   "range": 0
+  },
+  "baidu_calls": 6
+ }
+}
