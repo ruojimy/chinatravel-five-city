@@ -1,0 +1,179 @@
+{
+ "targets": 7,
+ "filled": 0,
+ "with_per_capita": 0,
+ "details": [
+  {
+   "name": "木木夕青年旅舍(西安钟楼店)",
+   "numbed": "1",
+   "hostel": true,
+   "factor": 1.0,
+   "amap_v5": {
+    "matched": "木木夕青年旅舍(西安钟楼店)",
+    "cost": null,
+    "type": "住宿服务;旅馆招待所;青年旅舍",
+    "rating": "4.5"
+   },
+   "amap_v3": {
+    "matched": "木木夕青年旅舍(西安钟楼店)",
+    "cost": null,
+    "type": "住宿服务;旅馆招待所;青年旅舍",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "易休太空舱公寓(西安南门店)",
+   "numbed": "1",
+   "hostel": true,
+   "factor": 1.0,
+   "amap_v5": {
+    "matched": "易休太空舱公寓(西安南门店)",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.1"
+   },
+   "amap_v3": {
+    "matched": "易休太空舱公寓(西安南门店)",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+   "numbed": "1",
+   "hostel": true,
+   "factor": 1.0,
+   "amap_v5": {
+    "matched": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+    "cost": null,
+    "type": "住宿服务;旅馆招待所;青年旅舍",
+    "rating": "4.8"
+   },
+   "amap_v3": {
+    "matched": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+    "cost": null,
+    "type": "住宿服务;旅馆招待所;青年旅舍",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "西安书友理想国主题青年旅舍大明宫遗址公园店",
+   "numbed": "1",
+   "hostel": true,
+   "factor": 1.0,
+   "amap_v5": {
+    "matched": "西安书友理想国主题青年旅舍大明宫遗址公园店",
+    "cost": null,
+    "type": "住宿服务;住宿服务相关;住宿服务相关",
+    "rating": "5.0"
+   },
+   "amap_v3": {
+    "matched": "西安书友理想国主题青年旅舍大明宫遗址公园店",
+    "cost": null,
+    "type": "住宿服务;住宿服务相关;住宿服务相关",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "西安庆丰商务宾馆",
+   "numbed": "2",
+   "hostel": false,
+   "factor": 2.0,
+   "amap_v5": {
+    "matched": "西安庆丰商务宾馆",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.4"
+   },
+   "amap_v3": {
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "西安博豪快捷酒店",
+   "numbed": "2",
+   "hostel": false,
+   "factor": 2.0,
+   "amap_v5": {
+    "matched": "西安博豪快捷酒店",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.1"
+   },
+   "amap_v3": {
+    "matched": "西安博豪快捷酒店",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  },
+  {
+   "name": "西安赛庭商务宾馆",
+   "numbed": "2",
+   "hostel": false,
+   "factor": 2.0,
+   "amap_v5": {
+    "matched": "西安赛庭商务宾馆",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": "4.4"
+   },
+   "amap_v3": {
+    "matched": "西安赛庭商务宾馆",
+    "cost": null,
+    "type": "住宿服务;宾馆酒店;宾馆酒店",
+    "rating": null
+   },
+   "baidu": {
+    "status": -2,
+    "matched": null,
+    "price": null,
+    "type": null
+   },
+   "per_capita": null
+  }
+ ]
+}
