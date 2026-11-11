@@ -76,14 +76,14 @@ hotel_price_observations(
 
 ## 覆盖现状与限制
 
-- 主表 `price`（merged 主路径 **706** 家）：**318 / 706（45.0%）** = **240 条来源观测** + **78 条采纳的高置信估价**；其余 388 家写 `-1` 占位（`price_status=unknown`），不估价。
+- 主表 `price`（merged 主路径 **706** 家）：**354 / 706（50.1%）** = **254 条来源观测** + **78 条高置信估价** + **6 条本市连锁 + 14 条跨城连锁 + 2 条青旅同类**；其余 352 家写 `-1`（`price_status=unknown`）。
 - 主表 `numbed`：**706 / 706**。
 - 搜索覆盖：Trip.com 693 家；携程 UI 39 次（0 命中）；美团 UI 90 次/账号，3 个账号各 90 次后限流，累计 360 次查询、58 命中。
 - `room_types`：**308 家 / 2243 个房型**，多床型酒店可查子表。
-- 合并集主路径：**706 家**（`ready` 318 / `l1_only` 388），`reference_only` 55 家（全部缺坐标）。
+- 合并集主路径：**706 家**（有价 354 / 待询价 352），`reference_only` 55 家（全部缺坐标）。
 - 采纳规则 2026-11-10 v1：**只采纳 `confidence=high` 的估价（78 家）**；medium/low 一律 `price=None`、`status=unknown`、`basis=estimate_not_adopted`。
   - 准入口径 2026-11-10 调整：`featurehoteltype` 允许留空，不再阻断 planner；仅 `lat`/`lon` 为硬门槛。
-  - 主路径价格构成：真实 254 家、采纳的估价 78 家、需询价 374 家。
+  - 主路径价格构成：真实 254、估价 78、本市连锁 6、跨城连锁 14、青旅同类 2、需询价 352。
 - 估价区间校准（留一法，holdout 240 家真实价酒店）：
 
   | 指标 | 原区间 p25–p75 | 低置信放宽 ×0.75–1.25 |
@@ -107,7 +107,7 @@ hotel_price_observations(
 
 - `estimated` 行的 `price` = `mid`；报告/计划里必须写成“预估 ¥low–¥high”，不能当实价。
 - `unknown` 行的 `price` = **`-1` 哨兵值**（不是 0，也不是空），避免 `pd.read_csv(...).dropna()` 丢行；语义由 `price_status=unknown` 表达。
-- `dynamic_price_queue.csv` 列出 388 家待询价酒店，可直接批跑：
+- `dynamic_price_queue.csv` 列出 352 家待询价酒店，可直接批跑：
 
 ```bash
 python scripts/hotel_dynamic_price.py batch --queue data/xian11_merged_sandbox/accommodations/xian/dynamic_price_queue.csv \
@@ -139,18 +139,18 @@ python scripts/hotel_dynamic_price.py batch --queue data/xian11_merged_sandbox/a
 
 ## 还能补充哪些酒店（2026-11-11 评估）
 
-388 家 `unknown` 按同一规则对 240 条观测价重算：
+352 家 `unknown` 按同一规则对 254 条观测价重算：
 
 | 档 | 家数 | 说明 |
 |---|---:|---|
-| n≥8（可标 high） | **253** | 211 家 n≥12、42 家 n=8–11 |
-| 4≤n<8（medium） | 32 | |
-| 1≤n<4（low） | 7 | |
-| n=0 | 96 | 同档 8 km 内无可比，估不了 |
+| n≥8（可标 high） | **241** | 含 n≥12 与 n=8–11 |
+| 4≤n<8（medium） | 14 | |
+| 1≤n<4（low） | 4 | |
+| n=0 | 93 | 同档 8 km 内无可比，估不了 |
 
 但**不建议直接填进主表**：
 
-- 这 253 家大多属于“**未搜过**”，而当前政策明确「未搜过不估」——它们保持 `-1` 是刻意的，不是漏填；
+- 这 241 家大多属于“**未搜过**”，而当前政策明确「未搜过不估」——它们保持 `-1` 是刻意的，不是漏填；
 - 即使标 high，区间覆盖率也只有 ~44%，填进去容易把估价当实价。
 
 已生成 `accommodations/xian/price_estimates_supplement.csv` 供**排序/参考**，含 `n_comparables`、`p25/p75/mid`、`mid±60%` 区间（覆盖率 73.7–79.4%）和 `recommended` 列；不改主表。

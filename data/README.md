@@ -51,13 +51,15 @@ PY
 
 | status | 条数 | 表里的 price | 说明 |
 |---|---:|---|---|
-| `source_value` | 240 | 观测价 | 有 `hotel_price_observations` 记录 |
+| `source_value` | 254 | 观测价（含 14 条 Trip.com 恢复） | 有观测/详情页证据 |
 | `estimated` | 78 | **区间中点 mid** | 只采纳 `confidence=high`；区间在 `price_provenance.csv` |
-- price_estimates_supplement.csv：388 家 unknown 中 253 家可算出 n>=8 的同类邻店区间（另 32 家 medium、7 家 low、96 家无可比），**仅供排序/参考，未写入主表**；方法见 docs/hotel_roomtype_dynamic_price.md。
-| `unknown` | 388 | `-1` | 待动态询价；清单在 `dynamic_price_queue.csv` |
+| `estimated_chain_branch` | 6 | 同城同品牌分店中位数 | 布丁/易休/OYO/尚客优 |
+| `estimated_chain_cross_city` | 14 | 跨城同品牌中位数（按城市中位数归一） | 如家/汉庭/宜必思/星程/都市118/锦江之星 |
+| `estimated_hostel_comparable` | 2 | 青旅同类中位数 | 木木夕/梦想家 |
+| `unknown` | 352 | `-1` | 待动态询价；清单在 `dynamic_price_queue.csv` |
 
 - `price_provenance.csv`：`price_low / price_high / price_mid / confidence / n_comparables / method`，估价区间可被程序读取。
-- price_estimates_supplement.csv：388 家 unknown 中 253 家可算出 n>=8 的同类邻店区间（另 32 家 medium、7 家 low、96 家无可比），**仅供排序/参考，未写入主表**；方法见 docs/hotel_roomtype_dynamic_price.md。
+- `price_estimates_supplement.csv`：352 家 unknown 中 241 家可算出 n>=8 的同类邻店区间（另 14 家 medium、4 家 low、93 家无可比），**仅供排序/参考，未写入主表**；方法见 `docs/hotel_roomtype_dynamic_price.md`。
 - `-1` 不是 0 或空：ChinaTravel loader 会 `pd.read_csv(...).dropna()`，空值会丢行，所以用哨兵 + 状态列表达“未知”。
 - 计划/报告里 `estimated` 必须写成“预估 ¥low–¥high”，不能当实价；`unknown` 必须先询价。
 - 动态询价：`scripts/hotel_dynamic_price.py {provenance,price,batch}`，默认快照 v17。
@@ -68,7 +70,7 @@ PY
 |---|---:|---|
 | 景点 | 112/908 = **12.3%** | 无公开票价源，补价脚本不覆盖 |
 | 餐厅 | 561/807 = **69.5%** | 已尽力补 |
-| 住宿 | 345/761 = **45.3%** | 267 观测 + 78 估价；主路径 318/706 |
+| 住宿 | 345/761 = **45.3%** | v17 全量；主路径 **354/706** |
 
 预算类约束会受这些缺口影响，报告必须披露，不能用「缺价 = 免费」解释。
 

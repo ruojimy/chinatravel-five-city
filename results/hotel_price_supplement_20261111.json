@@ -1,13 +1,13 @@
 {
- "unknown": 388,
+ "unknown": 352,
  "candidates": {
-  "medium": 32,
-  "high": 253,
-  "low": 7,
-  "none": 96
+  "high": 241,
+  "medium": 14,
+  "low": 4,
+  "none": 93
  },
- "adoptable_high_n8": 253,
- "adoptable_any_n4": 285,
+ "adoptable_high_n8": 241,
+ "adoptable_any_n4": 255,
  "note": "high = n>=8 comparables, not an accuracy guarantee; interval60 is calibrated to ~74-79% coverage",
  "csv": "data/xian11_merged_sandbox/accommodations/xian/price_estimates_supplement.csv"
 }

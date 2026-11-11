@@ -243,7 +243,7 @@ ShortTrip 的 C 组流程：自然语言 → 约束程序（LLM 翻译 + 程序�
 
 1. **本地 GPU 黑屏**：RTX 5080 Laptop + CUDA 12.4 连续高负载会驱动级黑屏；建议降 `-np`/ctx、限时跑，
    或换数据中心卡。见事故记录。
-2. **西安 price 缺口**：746 → 主表 706 家中，318 家有数值（**240 观测 + 78 高置信估价**），388 家为 `-1` 哨兵且 `price_status=unknown`。
+2. **西安 price 缺口**：主表 706 家中，**354 家有数值**（254 观测 + 78 高置信估价 + 6 本市连锁 + 14 跨城连锁 + 2 青旅同类），352 家为 `-1` 哨兵且 `price_status=unknown`。
    估价行存的是**区间中点 mid**，区间在 `accommodations/xian/price_provenance.csv`；报告不得把估价当实价。
 3. **西安位置索引（已重建）**：原 `poi.json` 1,394 条，景点仅命中 68/591；重建后 **4,571 条，591 景点 / 706 酒店 / 486 餐厅 100% 精确命中**，
    英文后缀走别名、未改实体表原值。重建脚本 `scripts/rebuild_xian_poi_index.py`，明细 `poi_index_manifest.json`。
