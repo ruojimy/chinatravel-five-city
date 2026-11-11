@@ -1,0 +1,104 @@
+{
+  "built_at": "2026-10-23T02:16:49+00:00",
+  "source_catalog": "data\\business_catalog_v1_4_20261022\\catalog.sqlite3",
+  "source_sha256": "93c798451427796b05b1d3d10b0a329463a9a5b65486cf966f9c7df5430fcd19",
+  "records": 14057,
+  "evidence": 5187,
+  "network_calls_in_publication": 0,
+  "cached_queries_reviewed": 816,
+  "safely_bound_candidates": 19,
+  "linked_pages_reviewed": 415,
+  "linked_entities_with_extractable_fields": 0,
+  "operator_assertions": 8548,
+  "entities_with_operator_assertions": 4320,
+  "records_changed_vs_v1_4": 2835,
+  "new_nonnull_native_fields_vs_v1_4": {
+    "restaurant:cuisine": 2563,
+    "accommodation:numbed": 162,
+    "attraction:recommendmintime": 109,
+    "attraction:recommendmaxtime": 109,
+    "restaurant:price": 18,
+    "restaurant:recommendedfood": 15,
+    "restaurant:opentime": 4,
+    "restaurant:endtime": 4,
+    "attraction:price": 1
+  },
+  "coverage": {
+    "restaurant": {
+      "records": 4601,
+      "planning_ready": 0,
+      "nonnull:cuisine": 2830,
+      "nonnull:endtime": 115,
+      "nonnull:id": 4601,
+      "nonnull:lat": 4601,
+      "nonnull:lon": 4601,
+      "nonnull:name": 4601,
+      "nonnull:opentime": 115,
+      "nonnull:price": 277,
+      "nonnull:recommendedfood": 282,
+      "parsed_structured_hours": 279
+    },
+    "accommodation": {
+      "records": 6080,
+      "planning_ready": 0,
+      "nonnull:featurehoteltype": 5,
+      "nonnull:hotelname_en": 0,
+      "nonnull:id": 6080,
+      "nonnull:lat": 6080,
+      "nonnull:lon": 6080,
+      "nonnull:name": 6080,
+      "nonnull:numbed": 167,
+      "nonnull:price": 2
+    },
+    "attraction": {
+      "records": 3376,
+      "planning_ready": 0,
+      "nonnull:endtime": 54,
+      "nonnull:id": 3376,
+      "nonnull:lat": 3376,
+      "nonnull:lon": 3376,
+      "nonnull:name": 3376,
+      "nonnull:opentime": 54,
+      "nonnull:price": 11,
+      "nonnull:recommendmaxtime": 260,
+      "nonnull:recommendmintime": 260,
+      "nonnull:type": 3376
+    }
+  },
+  "remaining_missing_business_fields": {
+    "restaurant:average_price": 4324,
+    "restaurant:opening_hours": 4322,
+    "accommodation:dated_room_price_reference": 6073,
+    "accommodation:room_type": 5848,
+    "accommodation:bed_count": 5913,
+    "restaurant:cuisine": 1771,
+    "attraction:admission_price": 3365,
+    "attraction:opening_hours": 3322,
+    "attraction:recommended_duration": 3116
+  },
+  "full_completion": false,
+  "new_entities": 0,
+  "validation": {
+    "all_checks_pass": true,
+    "record_or_reference_errors": 0,
+    "integrity": "ok",
+    "foreign_key_errors": 0
+  },
+  "files": [
+    {
+      "file": "data\\business_catalog_v1_7_20261023T021649Z\\catalog.sqlite3",
+      "bytes": 196182016,
+      "sha256": "bd8e6e97f9cc708c666d51db16b9f51a48ff4bf28dea60574d073505468b9210"
+    },
+    {
+      "file": "data\\business_catalog_v1_7_20261023T021649Z\\records.jsonl.gz",
+      "bytes": 7279762,
+      "sha256": "b82c2bd1c0b9fc7802dd0a5fe44e8bb5c82b8dbed9eea6f39e5c1c268df72f5e"
+    },
+    {
+      "file": "data\\business_catalog_v1_7_20261023T021649Z\\remaining_gaps.jsonl.gz",
+      "bytes": 321142,
+      "sha256": "6231ff626ef96e7fa904fa6a22d5a57b4ced1de0836dbd2bd4aa094b2e83dbc8"
+    }
+  ]
+}

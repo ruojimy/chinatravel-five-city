@@ -6,6 +6,9 @@
 | `xian11_merged_sandbox/` | 第 11 城西安（v17 + 评级标准 v1） | 5.4 MB | price 有已知缺口；见下文语义 |
 | `query_sets/` | 原生 easy/medium/human、xian11、competition_test | 2.2 MB | 官方部分 CC BY 4.0 |
 | `datasets/` | 偏好、POI 匹配金标、不可行/修复样本 | 1.8 MB | 项目衍生 |
+| `business_catalog_v1_7/` | 30 城业务库：14,057 实体 + 42,576 TAG + 5,187 证据 | 188 MB → gz **22.4 MB** | `full_completion=false`；见目录内 README |
+| `xian11_merged_v17_tags/` | v17 快照 TAG 层导出（7,173 行 / 68 种 / 2,371 实体） | 0.45 MB | 派生提示 ≠ 来源事实 |
+| `tag_store/` | TAG 层原型库 v1/v2（`tags` + `snapshots`，T1–T6 六闸） | 0.24 MB | OSM ODbL / Wikidata CC0 / Zenodo CC BY 4.0 |
 
 ## catalog 的还原
 

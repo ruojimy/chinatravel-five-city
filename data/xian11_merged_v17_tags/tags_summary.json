@@ -1,0 +1,31 @@
+{
+ "source": "results/xian_gapfill_20261109/snapshot_v17/catalog.sqlite3 :: tags",
+ "built_from_snapshot": "v17 (2026-11-11T01:13+08:00)",
+ "rows": 7173,
+ "distinct_tags": 68,
+ "distinct_records": 2371,
+ "tags_top": {
+  "kind": 2325,
+  "native_fields_complete": 1914,
+  "metro_line": 970,
+  "metro_network": 970,
+  "line_station_order": 224,
+  "scenic_grade": 70,
+  "source_scope": 66,
+  "hotel_star": 61,
+  "theme": 45,
+  "cuisine": 44,
+  "reservation_required": 41,
+  "amenity": 36,
+  "dated_source_reference": 35,
+  "seasonal_timetable_reference": 30,
+  "conference_rate_reference": 29
+ },
+ "tags_by_city": {
+  "西安": 1915,
+  "宁波": 1500,
+  "长沙": 1406,
+  "青岛": 1276,
+  "厦门": 1076
+ }
+}
