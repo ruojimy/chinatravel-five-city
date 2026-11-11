@@ -49,11 +49,39 @@
 | 同类邻店估计（`xian_estimate_fill.py`） | ⚠️ | p25–p75，留出覆盖率约 44%；`mid±60%` 约 74–79%，只能标注为 estimate |
 | 高德 / 百度 | ❌ | 无房费、无区间、子场馆误配风险 |
 
+## 6. 修正：餐厅人均可以直接当 `price`，酒店不行
+
+餐厅的 schema 是 `cost = price × people_number`（`nesy_agent.py:424/464`），所以 `price` 就是**人均**；
+高德 `business.cost` 正好是同一口径，可以直接用。实测校验（20 家已有价餐厅）：
+
+| 指标 | 结果 |
+|---|---|
+| 高德返回 `cost` | 17 / 20 |
+| 与现有价偏差 ≤30% | **17 / 17** |
+| 比值中位数 / p10 / p90 | **1.00 / 1.00 / 1.00** |
+
+据此把西安餐厅表 34 条 `-1` 中的 **16 条**用高德人均补齐，覆盖率 **452 → 468 / 486（96.3%）**；
+剩余 18 条里多数不是餐饮 POI（便利店、创业园、鲜花港、教育学院、二手设备、腊牛羊肉零售），
+高德本身没有 `cost`，继续保留 `-1`。补齐记录在 `restaurant_price_provenance.csv`（source=amap_v5_place_text）。
+
+酒店则不同：prompt 明确“price per night per room”，代码是 `cost = price × required_rooms`（`nesy_agent.py:362`），
+所以 `price` 是**每间/每晚**。高德/百度给的是**人均**，而且经常命中酒店内的餐厅/SPA：
+W 酒店 SPA 872.1 vs 房费 1,116、华邑茶室 45.9 vs 房费 829。两者不是同一单位，不能直接当酒店 `price`。
+
+## 7. 结论（按实体分开）
+
+| 实体 | 高德/百度人均能否当 `price` | 原因 |
+|---|---|---|
+| 餐厅 | ✅ 可以 | schema 的 price 就是人均；17/17 校验一致 |
+| 酒店 | ❌ 不可以 | schema 的 price 是每间/晚；人均是另一个单位，且常命中子场馆 |
+
 复现：
 
 ```bash
 python scripts/probe_hotel_price_apis.py        # 3 家酒店，高德 v5/v3 + 百度 search/detail
 python scripts/probe_amap_hotel_price_bulk.py   # 29 酒店 + 10 餐厅 + 6 百度酒店
+python scripts/fill_restaurant_price_from_amap.py --validate 20
+python scripts/fill_restaurant_price_from_amap.py --apply
 ```
 
 > 凭证只从 `.secrets/amap.key`、`.secrets/baidu.key` 读取；本文与结果文件均未记录 key。

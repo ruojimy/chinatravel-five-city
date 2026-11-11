@@ -1,0 +1,146 @@
+[
+ {
+  "name": "贾三灌汤包子馆",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "西安皇冠假日酒店·宴会厅",
+  "status": 0,
+  "matched": "西安皇冠假日酒店·宴会厅",
+  "price": "473.0",
+  "type": "life",
+  "tag": "生活服务;其他"
+ },
+ {
+  "name": "未央宫",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "紫葵易购生鲜电商创业园",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "西安鲜花港",
+  "status": 0,
+  "matched": "西安鲜花港",
+  "price": null,
+  "type": "enterprise",
+  "tag": "公司企业;农林园艺"
+ },
+ {
+  "name": "康康柳丁风干牛肉干(陕西公路设计院家属院店)",
+  "status": 0,
+  "matched": "康康柳丁风干牛肉干(陕西公路设计院家属院店)",
+  "price": "17.6",
+  "type": "shopping",
+  "tag": "购物;商铺"
+ },
+ {
+  "name": "先锋教育(曼城国际校区)",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "小样儿烟酒便利店",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "回头鱼",
+  "status": 0,
+  "matched": "回头鱼",
+  "price": "37.8",
+  "type": "cater",
+  "tag": "美食;中餐厅"
+ },
+ {
+  "name": "刘志军腊牛羊肉",
+  "status": 0,
+  "matched": "刘志军腊牛羊肉",
+  "price": "46.2",
+  "type": "shopping",
+  "tag": "购物;商铺"
+ },
+ {
+  "name": "马文学腊牛羊肉(马宗元老店)",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "马尔里腊牛羊肉(洒金桥)",
+  "status": 0,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "绒馍馍(大唐不夜城店)",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "赛莉牛羊肉",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "伊宝康宁夏盐池滩羊肉",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "西安小武二手烘培设备买卖",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "翠华山王家大院",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ },
+ {
+  "name": "子午饭庄",
+  "status": -2,
+  "matched": null,
+  "price": null,
+  "type": null,
+  "tag": null
+ }
+]

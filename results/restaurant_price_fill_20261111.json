@@ -1,0 +1,70 @@
+{
+ "total": 486,
+ "priced": 452,
+ "missing": 34,
+ "filled": 16,
+ "failed": 18,
+ "failed_sample": [
+  {
+   "name": "贾三灌汤包子馆",
+   "matched": null,
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "西安皇冠假日酒店·宴会厅",
+   "matched": "西安皇冠假日酒店·宴会厅",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "未央宫",
+   "matched": "未央宫",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "紫葵易购生鲜电商创业园",
+   "matched": "紫葵易购生鲜电商创业园",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "西安鲜花港",
+   "matched": "西安鲜花港",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "康康柳丁风干牛肉干(陕西公路设计院家属院店)",
+   "matched": "康康柳丁风干牛肉干(陕西公路设计院家属院店)",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "先锋教育(曼城国际校区)",
+   "matched": null,
+   "cost": null,
+   "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+  },
+  {
+   "name": "小样儿烟酒便利店",
+   "matched": "小样儿烟酒便利店",
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "回头鱼",
+   "matched": null,
+   "cost": null,
+   "error": null
+  },
+  {
+   "name": "刘志军腊牛羊肉",
+   "matched": "刘志军腊牛羊肉",
+   "cost": null,
+   "error": null
+  }
+ ],
+ "provenance": "data/xian11_merged_sandbox/restaurants/xian/restaurant_price_provenance.csv"
+}

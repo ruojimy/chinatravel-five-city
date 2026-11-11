@@ -71,3 +71,14 @@ PY
 | 住宿 | 345/761 = **45.3%** | 267 观测 + 78 估价；主路径 318/706 |
 
 预算类约束会受这些缺口影响，报告必须披露，不能用「缺价 = 免费」解释。
+
+## 西安餐厅 price（2026-11-11）
+
+餐厅 schema 是 cost = price × people_number，所以 price 就是**人均**，高德 usiness.cost 同口径。
+用 20 家已有价餐厅校验：17 家有高德 cost，17/17 偏差 ≤30%，比值中位 1.00。
+据此补齐 34 条 -1 中的 16 条，覆盖率 **452 → 468 / 486（96.3%）**；剩余 18 条多为非餐饮 POI（便利店、创业园、零售等），
+高德无 cost，保留 -1。补齐记录：
+estaurants/xian/restaurant_price_provenance.csv（source=amap_v5_place_text）。
+
+酒店不同：price 是每间/晚，代码 cost = price × required_rooms，人均不是同一单位，不能直接套用。
+
