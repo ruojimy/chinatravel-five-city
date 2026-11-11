@@ -1,0 +1,33 @@
+{
+  "uid": "phase2_extended_20250322201313997965_00032",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Chengdu",
+  "days": 5,
+  "people_number": 5,
+  "hard_logic_py": [
+    "result=(day_count(plan)==5)",
+    "result=(people_count(plan)==5)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+    "daily_cost=0\nfor activity in dayactivities(plan, 4):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1779)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Ming Xia Hui Sichuan-Style Prawn Restaurant (Global Center Branch)\":\n    if activity_start_time(activity)==\"17:00\" and activity_end_time(activity)==\"18:00\": result=True",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Sichuan Art Museum\", \"Liu Xiang's Tomb\"}<=day_attraction_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Four Points by Sheraton Chengdu High-tech Zone Exhibition Center\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Qingyang District Library\" and first_activity_seen: result=True",
+    "result_list=[]\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Riverside Banquet · Cloud\", \"Chengdu Foodie (Kuixinglou Branch)\"}&restaurant_name_set)\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"04:54\")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "accommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=7115)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 5 days.",
+    "The plan must be for 5 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 5 travelers.",
+    "Keep all activity and transportation costs on day 4 within 1779 CNY.",
+    "Dine at Ming Xia Hui Sichuan-Style Prawn Restaurant (Global Center Branch) exactly from 17:00 to 18:00.",
+    "Visit both Sichuan Art Museum and Liu Xiang's Tomb on day 3.",
+    "Dine at Four Points by Sheraton Chengdu High-tech Zone Exhibition Center before visiting Qingyang District Library.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurants: Riverside Banquet · Cloud and Chengdu Foodie (Kuixinglou Branch). (B) The outbound intercity trip must depart no later than 04:54.",
+    "Keep the total accommodation cost within 7115 CNY."
+  ],
+  "nature_language": "We are 5 people traveling from Chongqing to Chengdu for 5 days.\nRequirements:\n1. The trip must last 5 days.\n2. The plan must be for 5 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 5 travelers.\n4. Keep all activity and transportation costs on day 4 within 1779 CNY.\n5. Dine at Ming Xia Hui Sichuan-Style Prawn Restaurant (Global Center Branch) exactly from 17:00 to 18:00.\n6. Visit both Sichuan Art Museum and Liu Xiang's Tomb on day 3.\n7. Dine at Four Points by Sheraton Chengdu High-tech Zone Exhibition Center before visiting Qingyang District Library.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurants: Riverside Banquet · Cloud and Chengdu Foodie (Kuixinglou Branch). (B) The outbound intercity trip must depart no later than 04:54.\n9. Keep the total accommodation cost within 7115 CNY.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"daily_budget\",\"restaurant_exact_time\",\"attraction_pair_on_day\",\"cross_category_order\",\"either_requirement\",\"accommodation_budget\"]",
+  "official_phase2_evaluation": true
+}

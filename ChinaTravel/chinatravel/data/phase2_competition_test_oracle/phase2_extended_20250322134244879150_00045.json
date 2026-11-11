@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250322134244879150_00045",
+  "tag": "phase2",
+  "start_city": "Chengdu",
+  "target_city": "Shenzhen",
+  "days": 2,
+  "people_number": 2,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==2)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+    "result_list=[]\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guanlan Ancient Market\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Qianjiang Art Center\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)>=\"22:15\" and activity_end_time(activity)<=\"24:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=434)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2254)",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "result_list=[]\nattraction_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_cost+=activity_cost(activity)\nresult=(attraction_cost<=53)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)>=\"07:55\" and activity_end_time(activity)<=\"08:40\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==9)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"20:28\")",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1715)",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Qianjiang Art Center\" and first_activity_seen: result=True"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 2 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 2 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Guanlan Ancient Market before Qianjiang Art Center. (B) Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 22:15 to 24:00.",
+    "Keep the total duration of all in-city transport segments within 434 minutes.",
+    "Visit exactly 4 attractions on day 2.",
+    "Keep all activity and transportation costs on day 1 within 2254 CNY.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total attraction ticket cost within 53 CNY. (B) Schedule the entire meal at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 07:55 to 08:40.",
+    "Visit exactly 9 attractions during the trip.",
+    "The return intercity trip must depart no earlier than 20:28.",
+    "Keep all activity and transportation costs on day 2 within 1715 CNY.",
+    "Stay at exactly 1 different hotel.",
+    "Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Qianjiang Art Center."
+  ],
+  "nature_language": "We are 2 people traveling from Chengdu to Shenzhen for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 2 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 2 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Visit Guanlan Ancient Market before Qianjiang Art Center. (B) Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 22:15 to 24:00.\n5. Keep the total duration of all in-city transport segments within 434 minutes.\n6. Visit exactly 4 attractions on day 2.\n7. Keep all activity and transportation costs on day 1 within 2254 CNY.\n8. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n9. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total attraction ticket cost within 53 CNY. (B) Schedule the entire meal at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 07:55 to 08:40.\n10. Visit exactly 9 attractions during the trip.\n11. The return intercity trip must depart no earlier than 20:28.\n12. Keep all activity and transportation costs on day 2 within 1715 CNY.\n13. Stay at exactly 1 different hotel.\n14. Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Qianjiang Art Center.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"innercity_travel_time_budget\",\"attraction_count_on_day\",\"daily_budget\",\"forbidden_inner_transport_modes\",\"either_requirement\",\"total_attraction_count\",\"return_departure_earliest\",\"daily_budget\",\"distinct_accommodation_count\",\"cross_category_order\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,121 @@
+{
+  "updated_at": "2026-11-11T06:35:04.656427+00:00",
+  "arms": {
+    "G1_native": {
+      "checkout": "<workdir>\\shorttrip-runs\\G1_native_v3",
+      "target": 60,
+      "done": 6,
+      "states": {
+        "running": 6
+      },
+      "passes": {
+        "official_all_pass": 0,
+        "c_rule_pass": 0,
+        "combined_pass": 0
+      },
+      "by_split": {
+        "easy": {
+          "target": 30,
+          "done": 6,
+          "states": {
+            "running": 6
+          },
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "medium": {
+          "target": 15,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "human": {
+          "target": 15,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        }
+      }
+    },
+    "G2_ext10": {
+      "checkout": "<workdir>\\shorttrip-runs\\G2_ext10_v3",
+      "target": 60,
+      "done": 0,
+      "states": {},
+      "passes": {
+        "official_all_pass": 0,
+        "c_rule_pass": 0,
+        "combined_pass": 0
+      },
+      "by_split": {
+        "easy": {
+          "target": 30,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "medium": {
+          "target": 15,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "human": {
+          "target": 15,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        }
+      }
+    },
+    "G3_ext11": {
+      "checkout": "<workdir>\\shorttrip-runs\\G3_ext11_v4",
+      "target": 9,
+      "done": 0,
+      "states": {},
+      "passes": {
+        "official_all_pass": 0,
+        "c_rule_pass": 0,
+        "combined_pass": 0
+      },
+      "by_split": {
+        "easy": {
+          "target": 3,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "medium": {
+          "target": 3,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        },
+        "human": {
+          "target": 3,
+          "done": 0,
+          "states": {},
+          "official_all_pass": 0,
+          "c_rule_pass": 0,
+          "combined_pass": 0
+        }
+      }
+    }
+  },
+  "state": "running"
+}

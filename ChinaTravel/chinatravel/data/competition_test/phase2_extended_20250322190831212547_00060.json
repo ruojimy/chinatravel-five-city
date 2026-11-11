@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250322190831212547_00060",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=7)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\": first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\" and first_activity_seen: result=True",
+    "result_list=[]\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1820)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"White Pagoda Park\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=450)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Fuyang Dragon Scale Dam Scenic Area\":\n    if activity_start_time(activity)==\"09:41\" and activity_end_time(activity)==\"11:11\": result=True\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Encounter Museum · Hangzhou Pavilion\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Zhouping's Zongzi Shop\":\n    if activity_start_time(activity)==\"12:27\" and activity_end_time(activity)==\"13:27\": result=True",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=21.6)",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==10)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)",
+    "result_list=[]\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=614)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"University campus\"}&attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Include at least 7 free attractions.",
+    "Visit Spring Dawn at Su Causeway Stele Pavilion before staying at Baiye Homestay (West Lake Branch).",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total accommodation cost within 1820 CNY. (B) Visit White Pagoda Park before Spring Dawn at Su Causeway Stele Pavilion.",
+    "Spend at least 450 minutes in total visiting attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Fuyang Dragon Scale Dam Scenic Area exactly from 09:41 to 11:11. (B) Visit Encounter Museum · Hangzhou Pavilion before Spring Dawn at Su Causeway Stele Pavilion.",
+    "Dine at Zhouping's Zongzi Shop exactly from 12:27 to 13:27.",
+    "Keep the total walking distance within 21.6 kilometers.",
+    "Use metro as the primary mode for exactly 10 in-city journeys.",
+    "Visit exactly 1 attraction on day 2.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total duration of all in-city transport segments within 614 minutes. (B) Do not include any of these attraction types: University campus."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Include at least 7 free attractions.\n5. Visit Spring Dawn at Su Causeway Stele Pavilion before staying at Baiye Homestay (West Lake Branch).\n6. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total accommodation cost within 1820 CNY. (B) Visit White Pagoda Park before Spring Dawn at Su Causeway Stele Pavilion.\n7. Spend at least 450 minutes in total visiting attractions.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Visit Fuyang Dragon Scale Dam Scenic Area exactly from 09:41 to 11:11. (B) Visit Encounter Museum · Hangzhou Pavilion before Spring Dawn at Su Causeway Stele Pavilion.\n9. Dine at Zhouping's Zongzi Shop exactly from 12:27 to 13:27.\n10. Keep the total walking distance within 21.6 kilometers.\n11. Use metro as the primary mode for exactly 10 in-city journeys.\n12. Visit exactly 1 attraction on day 2.\n13. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total duration of all in-city transport segments within 614 minutes. (B) Do not include any of these attraction types: University campus.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"free_attraction_count_minimum\",\"cross_category_order\",\"either_requirement\",\"attraction_duration_minimum\",\"either_requirement\",\"restaurant_exact_time\",\"walking_distance_budget\",\"inner_transport_mode_count\",\"attraction_count_on_day\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

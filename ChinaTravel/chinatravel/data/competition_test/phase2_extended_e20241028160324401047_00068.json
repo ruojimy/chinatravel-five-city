@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_e20241028160324401047_00068",
+  "tag": "phase2",
+  "start_city": "Hangzhou",
+  "target_city": "Guangzhou",
+  "days": 1,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==1)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\" and first_activity_seen: result=True",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=306)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=2)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Guangzhou Folk Museum\"}<=day_attraction_name_set)",
+    "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==1)",
+    "result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(inner_city_transportation_set<={\"metro\", \"taxi\"})\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shamian Island - Riverside Square\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_restaurant_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Danggong Dessert Shop (Lujiang Branch)\"}<=day_restaurant_name_set)",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Vegetarian cuisine\"}&restaurant_type_set)",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==4)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shamian Island - Riverside Square\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\" and first_activity_seen: result=True"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 1 day.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Visit Guangzhou Chimelong Resort before dining at Danggong Dessert Shop (Lujiang Branch).",
+    "Keep the total duration of all in-city transport segments within 306 minutes.",
+    "Include at least 2 free attractions.",
+    "Visit Guangzhou Folk Museum on day 1.",
+    "Whenever taking a taxi, use 1 taxi.",
+    "Use taxi as the primary mode for exactly 1 in-city journey.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Use only metro and taxi as the primary modes of in-city journeys throughout the itinerary. (B) Visit Guangzhou Chimelong Resort before Shamian Island - Riverside Square.",
+    "Dine at Danggong Dessert Shop (Lujiang Branch) on day 1.",
+    "Do not include any of these restaurant types: Vegetarian cuisine.",
+    "Visit exactly 4 attractions during the trip.",
+    "Visit Shamian Island - Riverside Square before dining at Danggong Dessert Shop (Lujiang Branch)."
+  ],
+  "nature_language": "I am traveling from Hangzhou to Guangzhou for 1 day.\nRequirements:\n1. The trip must last 1 day.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Visit Guangzhou Chimelong Resort before dining at Danggong Dessert Shop (Lujiang Branch).\n5. Keep the total duration of all in-city transport segments within 306 minutes.\n6. Include at least 2 free attractions.\n7. Visit Guangzhou Folk Museum on day 1.\n8. Whenever taking a taxi, use 1 taxi.\n9. Use taxi as the primary mode for exactly 1 in-city journey.\n10. Satisfy at least one of these two requirements (both are allowed): (A) Use only metro and taxi as the primary modes of in-city journeys throughout the itinerary. (B) Visit Guangzhou Chimelong Resort before Shamian Island - Riverside Square.\n11. Dine at Danggong Dessert Shop (Lujiang Branch) on day 1.\n12. Do not include any of these restaurant types: Vegetarian cuisine.\n13. Visit exactly 4 attractions during the trip.\n14. Visit Shamian Island - Riverside Square before dining at Danggong Dessert Shop (Lujiang Branch).",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"cross_category_order\",\"innercity_travel_time_budget\",\"free_attraction_count_minimum\",\"attraction_on_day\",\"taxi_cars\",\"inner_transport_mode_count\",\"either_requirement\",\"restaurant_on_day\",\"forbidden_restaurant_types\",\"total_attraction_count\",\"cross_category_order\"]",
+  "official_phase2_evaluation": true
+}

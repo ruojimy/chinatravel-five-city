@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250321183809221459_00078",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Nanjing",
+  "days": 2,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==9)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1011)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Swimming Pool\", \"Spa\"}&accommodation_type_set)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=422)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Intangible Cultural Heritage Hall · Nanjing Intangible Cultural Heritage Experience Center\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Nanjing BuildHome Cinema apartment\" and first_activity_seen: result=True",
+    "accommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=232)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"21:39\")",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Sofitel Nanjing Galaxy  Suning\", \"Jinling Mandarin Garden Hotel Nanjing\"}&accommodation_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Use metro as the primary mode for exactly 9 in-city journeys.",
+    "Keep all activity and transportation costs on day 1 within 1011 CNY.",
+    "Do not include any of these hotel feature types: Swimming Pool and Spa.",
+    "Keep the total duration of all in-city transport segments within 422 minutes.",
+    "Visit Intangible Cultural Heritage Hall · Nanjing Intangible Cultural Heritage Experience Center before dining at Nanjing BuildHome Cinema apartment.",
+    "Keep the total accommodation cost within 232 CNY.",
+    "The return intercity trip must depart no earlier than 21:39.",
+    "Do not include any of these hotels: Sofitel Nanjing Galaxy  Suning and Jinling Mandarin Garden Hotel Nanjing."
+  ],
+  "nature_language": "We are 3 people traveling from Suzhou to Nanjing for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n5. Use metro as the primary mode for exactly 9 in-city journeys.\n6. Keep all activity and transportation costs on day 1 within 1011 CNY.\n7. Do not include any of these hotel feature types: Swimming Pool and Spa.\n8. Keep the total duration of all in-city transport segments within 422 minutes.\n9. Visit Intangible Cultural Heritage Hall · Nanjing Intangible Cultural Heritage Experience Center before dining at Nanjing BuildHome Cinema apartment.\n10. Keep the total accommodation cost within 232 CNY.\n11. The return intercity trip must depart no earlier than 21:39.\n12. Do not include any of these hotels: Sofitel Nanjing Galaxy  Suning and Jinling Mandarin Garden Hotel Nanjing.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_inner_transport_modes\",\"inner_transport_mode_count\",\"daily_budget\",\"forbidden_accommodation_types\",\"innercity_travel_time_budget\",\"cross_category_order\",\"accommodation_budget\",\"return_departure_earliest\",\"forbidden_accommodation_names\"]",
+  "official_phase2_evaluation": true
+}

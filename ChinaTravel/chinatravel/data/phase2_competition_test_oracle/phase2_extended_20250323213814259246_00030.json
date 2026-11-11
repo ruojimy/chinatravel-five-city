@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250323213814259246_00030",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"City Sightseeing Bus\", \"Fosun Foundation Center\"}<=day_attraction_name_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"natural scenery\"}&attraction_type_set)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"MaxX by Steigenberger Shanghai, Hongqiao\":\n    if activity_start_time(activity)==\"16:36\" and activity_end_time(activity)==\"24:00\": result=True",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==3)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=6)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=6179)",
+    "restaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=3402)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit both City Sightseeing Bus and Fosun Foundation Center on day 2.",
+    "Do not use train for the outbound intercity trip.",
+    "Visit exactly 10 attractions during the trip.",
+    "Do not include any of these attraction types: natural scenery.",
+    "Visit exactly 1 attraction on day 3.",
+    "Stay at MaxX by Steigenberger Shanghai, Hongqiao exactly from 16:36 to 24:00.",
+    "Visit exactly 3 attractions on day 2.",
+    "Include at least 6 free attractions.",
+    "Keep all activity and transportation costs on day 2 within 6179 CNY.",
+    "Keep the total dining cost within 3402 CNY."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit both City Sightseeing Bus and Fosun Foundation Center on day 2.\n5. Do not use train for the outbound intercity trip.\n6. Visit exactly 10 attractions during the trip.\n7. Do not include any of these attraction types: natural scenery.\n8. Visit exactly 1 attraction on day 3.\n9. Stay at MaxX by Steigenberger Shanghai, Hongqiao exactly from 16:36 to 24:00.\n10. Visit exactly 3 attractions on day 2.\n11. Include at least 6 free attractions.\n12. Keep all activity and transportation costs on day 2 within 6179 CNY.\n13. Keep the total dining cost within 3402 CNY.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_pair_on_day\",\"forbidden_depart_transport\",\"total_attraction_count\",\"forbidden_attraction_types\",\"attraction_count_on_day\",\"accommodation_exact_time\",\"attraction_count_on_day\",\"free_attraction_count_minimum\",\"daily_budget\",\"restaurant_budget\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,408 @@
+{
+ "description": "P34 ConstraintPlannerV2 (pure rule, 0 LLM tokens) filtered to the frozen 1/10 native UIDs shared by G1/G2",
+ "source": "results/p34_v2_planner/<split>_ShortTripV2_<split>.json",
+ "by_split": {
+  "easy": {
+   "sample": 30,
+   "found_in_p34": 30,
+   "passes": {
+    "schema_ok": 30,
+    "commonsense_ok": 29,
+    "hard_ok": 19,
+    "all_ok": 18
+   }
+  },
+  "medium": {
+   "sample": 15,
+   "found_in_p34": 15,
+   "passes": {
+    "schema_ok": 15,
+    "commonsense_ok": 13,
+    "hard_ok": 5,
+    "all_ok": 4
+   }
+  },
+  "human": {
+   "sample": 15,
+   "found_in_p34": 15,
+   "passes": {
+    "schema_ok": 15,
+    "commonsense_ok": 15,
+    "hard_ok": 9,
+    "all_ok": 9
+   }
+  }
+ },
+ "total": {
+  "sample": 60,
+  "found": 60,
+  "passes": {
+   "schema_ok": 60,
+   "commonsense_ok": 57,
+   "hard_ok": 33,
+   "all_ok": 31
+  }
+ },
+ "per_uid": {
+  "e20241028160255878579": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160311039073": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160355814749": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160400903418": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160430652306": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160440274536": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164627218521": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164638852401": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164702515882": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164716406990": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164743925079": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164746091821": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164750006178": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "m20241028164825618732": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164847353449": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164905266860": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164908007773": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164918990517": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164942477698": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164944055132": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028164954860610": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "m20241028165013851142": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "t20241206171925565020": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "t20241206171940092767": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "t20241206211714064628": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "t20241206211714064921": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "t20241206211714065114": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "t20241206211714066294": {
+   "schema_ok": true,
+   "commonsense_ok": false,
+   "hard_ok": true,
+   "all_ok": false
+  },
+  "t20241206211714066811": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "t20241206211714066996": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028160851829629": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028160902013119": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028161022415715": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161030936732": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028161046455300": {
+   "schema_ok": true,
+   "commonsense_ok": false,
+   "hard_ok": true,
+   "all_ok": false
+  },
+  "e20241028161111138617": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028161236945933": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161256713544": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "e20241028161258161531": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161304176860": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161314922311": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161323947938": {
+   "schema_ok": true,
+   "commonsense_ok": false,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161357703933": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161403238048": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "e20241028161422443540": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143456235562": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143515190249": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143530430866": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143532210869": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143536587211": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143547722063": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143608049345": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143625307702": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143714502665": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143732290071": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143733781691": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143736524841": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  },
+  "h20241029143840382242": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143853055859": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": true,
+   "all_ok": true
+  },
+  "h20241029143925294432": {
+   "schema_ok": true,
+   "commonsense_ok": true,
+   "hard_ok": false,
+   "all_ok": false
+  }
+ }
+}

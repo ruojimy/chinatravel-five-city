@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_m20241028165016137718_00082",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Wuhan",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Aquatic Life Museum\":\n    if activity_start_time(activity)>=\"13:47\" and activity_end_time(activity)<=\"15:42\": result=True",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Madame Tussauds Wuhan\", \"Wuhan Happy Valley\", \"East Lake\"}&attraction_name_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Aquatic Life Museum\"}<=day_attraction_name_set)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 3):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2011)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=586)",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Sweet Hotel\":\n    if activity_start_time(activity)==\"08:00\" and activity_end_time(activity)==\"08:30\": result=True",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Schedule the entire visit to Aquatic Life Museum within the time window from 13:47 to 15:42.",
+    "Do not include any of these attractions: Madame Tussauds Wuhan, Wuhan Happy Valley, and East Lake.",
+    "Visit Aquatic Life Museum on day 2.",
+    "Keep all activity and transportation costs on day 3 within 2011 CNY.",
+    "Keep the total duration of all in-city transport segments within 586 minutes.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Dine at Sweet Hotel exactly from 08:00 to 08:30.",
+    "Stay at exactly 1 different hotel."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Wuhan for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Schedule the entire visit to Aquatic Life Museum within the time window from 13:47 to 15:42.\n5. Do not include any of these attractions: Madame Tussauds Wuhan, Wuhan Happy Valley, and East Lake.\n6. Visit Aquatic Life Museum on day 2.\n7. Keep all activity and transportation costs on day 3 within 2011 CNY.\n8. Keep the total duration of all in-city transport segments within 586 minutes.\n9. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n10. Dine at Sweet Hotel exactly from 08:00 to 08:30.\n11. Stay at exactly 1 different hotel.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_time_window\",\"forbidden_attraction_names\",\"attraction_on_day\",\"daily_budget\",\"innercity_travel_time_budget\",\"forbidden_inner_transport_modes\",\"restaurant_exact_time\",\"distinct_accommodation_count\"]",
+  "official_phase2_evaluation": true
+}

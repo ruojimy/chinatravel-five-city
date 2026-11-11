@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250323021732100207_00003",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)",
+    "accommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1792)",
+    "result_list=[]\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Baiye Homestay (West Lake Branch)\"}<=day_accommodation_name_set)\nresult_list.append(result)\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Relais & Châteaux Hangzhou Zixuan Resort - Manshu Kaiseki Cuisine\", \"Crab Quest: Encounter the Beauty of Crab (Raffles City Branch)\"}&restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==6)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)",
+    "result_list=[]\ndistinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"White Pagoda Park\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=435)",
+    "result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"train\"}<=intercity_transport_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\":\n    if activity_start_time(activity)>=\"21:38\" and activity_end_time(activity)<=\"24:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit exactly 1 attraction on day 2.",
+    "Keep the total accommodation cost within 1792 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 2. (B) Do not include any of these restaurants: Relais & Châteaux Hangzhou Zixuan Resort - Manshu Kaiseki Cuisine and Crab Quest: Encounter the Beauty of Crab (Raffles City Branch).",
+    "Day 1 must include lunch and dinner.",
+    "Visit exactly 6 attractions on day 1.",
+    "Include at least 5 free attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at exactly 1 different hotel. (B) Visit White Pagoda Park before Spring Dawn at Su Causeway Stele Pavilion.",
+    "Spend at least 435 minutes in total visiting attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include train. (B) Schedule the entire stay at Baiye Homestay (West Lake Branch) within the time window from 21:38 to 24:00."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit exactly 1 attraction on day 2.\n5. Keep the total accommodation cost within 1792 CNY.\n6. Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 2. (B) Do not include any of these restaurants: Relais & Châteaux Hangzhou Zixuan Resort - Manshu Kaiseki Cuisine and Crab Quest: Encounter the Beauty of Crab (Raffles City Branch).\n7. Day 1 must include lunch and dinner.\n8. Visit exactly 6 attractions on day 1.\n9. Include at least 5 free attractions.\n10. Satisfy at least one of these two requirements (both are allowed): (A) Stay at exactly 1 different hotel. (B) Visit White Pagoda Park before Spring Dawn at Su Causeway Stele Pavilion.\n11. Spend at least 435 minutes in total visiting attractions.\n12. Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include train. (B) Schedule the entire stay at Baiye Homestay (West Lake Branch) within the time window from 21:38 to 24:00.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_count_on_day\",\"accommodation_budget\",\"either_requirement\",\"required_meals_on_day\",\"attraction_count_on_day\",\"free_attraction_count_minimum\",\"either_requirement\",\"attraction_duration_minimum\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

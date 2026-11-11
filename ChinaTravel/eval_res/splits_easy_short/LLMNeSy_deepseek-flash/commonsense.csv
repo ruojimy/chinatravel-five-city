@@ -1,0 +1,9 @@
+data_id,Invalid or ungrounded activity entity,Intercity transportation events must occur,"Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination",Incorrect Information of Intercity Transport on price or duration,Incorrect Cost on Intercity Transportation,Unavailable attractions,Visiting attraction in their closed time,Repeated attraction Choices,Incorrect price Information of attraction,Incorrect cost Information of attraction,Unavailable Accommodation,Incorrect Information of Accommodation on price or room type,Incorrect cost Information of Accommodation,Accomondation is necessary for trips longer than one day,Unavailable Restruants,Visiting Restruants in their closed time,Repeated Restruants Choices,Incorrect price Information of Restruants,Incorrect cost Information of Restruants,Inappropriate Meal Times,Repeated Meal Types in One Day,Unavailable Inner-City Transport,"Incorrect Information of Inner-City Transporton on price, distance, and duration",Inccorrect cost information of Inner-City Transport,Invalid duration information of each activity,Does not follow Chronological Order,Invalid Transport information across positions
+e20241028160248698752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160251109186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160253742452,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160255878579,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160258515151,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160300570125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160301887545,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+e20241028160303262666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

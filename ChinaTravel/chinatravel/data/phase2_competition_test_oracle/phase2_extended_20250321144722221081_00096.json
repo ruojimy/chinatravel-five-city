@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250321144722221081_00096",
+  "tag": "phase2",
+  "start_city": "Beijing",
+  "target_city": "Shenzhen",
+  "days": 3,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"train\")",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"University campus\"}&attraction_type_set)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=635)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Meilin Reservoir\" and first_activity_seen: result=True",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Garden Restaurant No. 6\", \"Ensue\", \"Shenzhen Marriott Hotel Renaissance · Cloud View Pavilion Revolving Restaurant · Cloud Gathering for Dates\"}&restaurant_name_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Shenzhen Book City (Central City Branch)\", \"Meilin Reservoir\"}<=day_attraction_name_set)",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"01:41\")\n    outbound_intercity_found=True"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Do not use train for the return intercity trip.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Do not include any of these attraction types: University campus.",
+    "Keep the total duration of all in-city transport segments within 635 minutes.",
+    "Dine at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Meilin Reservoir.",
+    "Do not include any of these restaurants: Garden Restaurant No. 6, Ensue, and Shenzhen Marriott Hotel Renaissance · Cloud View Pavilion Revolving Restaurant · Cloud Gathering for Dates.",
+    "Do not use train for the outbound intercity trip.",
+    "Visit both Shenzhen Book City (Central City Branch) and Meilin Reservoir on day 3.",
+    "The outbound intercity trip must depart no later than 01:41."
+  ],
+  "nature_language": "I am traveling from Beijing to Shenzhen for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Do not use train for the return intercity trip.\n5. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n6. Do not include any of these attraction types: University campus.\n7. Keep the total duration of all in-city transport segments within 635 minutes.\n8. Dine at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Meilin Reservoir.\n9. Do not include any of these restaurants: Garden Restaurant No. 6, Ensue, and Shenzhen Marriott Hotel Renaissance · Cloud View Pavilion Revolving Restaurant · Cloud Gathering for Dates.\n10. Do not use train for the outbound intercity trip.\n11. Visit both Shenzhen Book City (Central City Branch) and Meilin Reservoir on day 3.\n12. The outbound intercity trip must depart no later than 01:41.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_return_transport\",\"forbidden_inner_transport_modes\",\"forbidden_attraction_types\",\"innercity_travel_time_budget\",\"cross_category_order\",\"forbidden_restaurant_names\",\"forbidden_depart_transport\",\"attraction_pair_on_day\",\"outbound_departure_deadline\"]",
+  "official_phase2_evaluation": true
+}

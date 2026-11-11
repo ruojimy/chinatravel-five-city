@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-11-11T05:01:37.594079+00:00",
+  "ready": true,
+  "gate": "ALL of: 60s two-sample quiet, snapshot/coverage unchanged across two independent gate runs, model_complete, server_alias, and an explicit --accept-coverage confirmation. Quiet alone is NOT completion.",
+  "checks": {
+    "price_capture_quiet": true,
+    "snapshot_set_quiet": true,
+    "data_trees_quiet": true,
+    "quiet_window_seconds": 60,
+    "model_complete": true,
+    "server_alias": true,
+    "snapshot_stable_across_runs": true,
+    "coverage_stable_across_runs": true,
+    "coverage_explicitly_accepted": true
+  },
+  "first_sample": {
+    "run_log_bytes": 61541,
+    "items_bytes": 275924,
+    "raw_price_files": 431,
+    "snapshots": [
+      "snapshot_v10",
+      "snapshot_v11",
+      "snapshot_v12",
+      "snapshot_v13",
+      "snapshot_v14",
+      "snapshot_v15",
+      "snapshot_v16",
+      "snapshot_v17",
+      "snapshot_v5",
+      "snapshot_v6",
+      "snapshot_v7",
+      "snapshot_v8",
+      "snapshot_v9"
+    ],
+    "data_mtimes": {
+      "catalog_v1_1_20261022": 1792660876.38,
+      "xian11_sandbox": 1794330833.34,
+      "xian11_merged_sandbox": 1794330833.33
+    }
+  },
+  "second_sample": {
+    "run_log_bytes": 61541,
+    "items_bytes": 275924,
+    "raw_price_files": 431,
+    "snapshots": [
+      "snapshot_v10",
+      "snapshot_v11",
+      "snapshot_v12",
+      "snapshot_v13",
+      "snapshot_v14",
+      "snapshot_v15",
+      "snapshot_v16",
+      "snapshot_v17",
+      "snapshot_v5",
+      "snapshot_v6",
+      "snapshot_v7",
+      "snapshot_v8",
+      "snapshot_v9"
+    ],
+    "data_mtimes": {
+      "catalog_v1_1_20261022": 1792660876.38,
+      "xian11_sandbox": 1794330833.34,
+      "xian11_merged_sandbox": 1794330833.33
+    }
+  },
+  "price_coverage": {
+    "snapshot": "snapshot_v17",
+    "attraction": {
+      "price_present": 112,
+      "total": 908,
+      "pct": 12.3
+    },
+    "restaurant": {
+      "price_present": 561,
+      "total": 807,
+      "pct": 69.5
+    },
+    "accommodation": {
+      "price_present": 375,
+      "total": 929,
+      "pct": 40.4
+    }
+  },
+  "model": {
+    "ready": true,
+    "magic": "GGUF",
+    "bytes": 4610580288,
+    "expected_min": 4462000000,
+    "path": "<workdir>\\shorttrip-local\\Qwen3.5-4B-Q8_0.gguf",
+    "sha256_head": "06fd13bf97f22d44"
+  },
+  "server": {
+    "ready": true,
+    "models": [
+      "qwen3.5-4b-q8"
+    ],
+    "endpoint": "http://127.0.0.1:18080/v1"
+  },
+  "checkouts": {
+    "G1_native_v2": {
+      "cases": 121,
+      "has_arm_info": true
+    },
+    "G1_native_v3": {
+      "cases": 60,
+      "has_arm_info": true
+    },
+    "G2_ext10_v2": {
+      "cases": 121,
+      "has_arm_info": true
+    },
+    "G2_ext10_v3": {
+      "cases": 60,
+      "has_arm_info": true
+    },
+    "G3_ext11_v3": {
+      "cases": 12,
+      "has_arm_info": true
+    },
+    "G3_ext11_v4": {
+      "cases": 9,
+      "has_arm_info": true
+    },
+    "G1_native": {
+      "cases": 121,
+      "has_arm_info": true
+    },
+    "G2_ext10": {
+      "cases": 121,
+      "has_arm_info": true
+    }
+  },
+  "note": "Quiet window proves the backfill stopped; it does NOT assert a target coverage percentage. Coverage is reported for the operator to accept.",
+  "coverage_acceptance_note": "1/10 frozen sample (seed 20261111); 景点 price 12.3% / 餐厅 69.5% / 住宿 40.4% 为已知开放缺口，研究者接受"
+}

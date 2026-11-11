@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250322143700260029_00087",
+  "tag": "phase2",
+  "start_city": "Shanghai",
+  "target_city": "Shenzhen",
+  "days": 4,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=857)",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=26.8)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=5)",
+    "result_list=[]\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Meilin Reservoir\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Xinyiwei Chaoshan Rice Noodle King (Meilin Branch)\" and first_activity_seen: result=True\nresult_list.append(result)\nattraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=420)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==1)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)==\"19:28\" and activity_end_time(activity)==\"24:00\": result=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2721)",
+    "total_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=6274)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Free parking\"}&accommodation_type_set)",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Guangdong Wutong Mountain National Forest Park\", \"Dapeng Peninsula\", \"Xiaomeisha Resort\"}&attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Keep the total duration of all in-city transport segments within 857 minutes.",
+    "Keep the total walking distance within 26.8 kilometers.",
+    "Include at least 5 free attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Meilin Reservoir before dining at Xinyiwei Chaoshan Rice Noodle King (Meilin Branch). (B) Spend at least 420 minutes in total visiting attractions.",
+    "Use taxi as the primary mode for exactly 1 in-city journey.",
+    "Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) exactly from 19:28 to 24:00.",
+    "Keep all activity and transportation costs on day 1 within 2721 CNY.",
+    "Keep the combined cost of all itinerary activities and in-city transportation within 6274 CNY.",
+    "Do not include any of these hotel feature types: Free parking.",
+    "Do not include any of these attractions: Guangdong Wutong Mountain National Forest Park, Dapeng Peninsula, and Xiaomeisha Resort."
+  ],
+  "nature_language": "We are 3 people traveling from Shanghai to Shenzhen for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Keep the total duration of all in-city transport segments within 857 minutes.\n5. Keep the total walking distance within 26.8 kilometers.\n6. Include at least 5 free attractions.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Visit Meilin Reservoir before dining at Xinyiwei Chaoshan Rice Noodle King (Meilin Branch). (B) Spend at least 420 minutes in total visiting attractions.\n8. Use taxi as the primary mode for exactly 1 in-city journey.\n9. Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) exactly from 19:28 to 24:00.\n10. Keep all activity and transportation costs on day 1 within 2721 CNY.\n11. Keep the combined cost of all itinerary activities and in-city transportation within 6274 CNY.\n12. Do not include any of these hotel feature types: Free parking.\n13. Do not include any of these attractions: Guangdong Wutong Mountain National Forest Park, Dapeng Peninsula, and Xiaomeisha Resort.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"innercity_travel_time_budget\",\"walking_distance_budget\",\"free_attraction_count_minimum\",\"either_requirement\",\"inner_transport_mode_count\",\"accommodation_exact_time\",\"daily_budget\",\"total_budget\",\"forbidden_accommodation_types\",\"forbidden_attraction_names\"]",
+  "official_phase2_evaluation": true
+}

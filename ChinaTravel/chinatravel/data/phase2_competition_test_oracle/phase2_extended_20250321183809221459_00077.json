@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250321183809221459_00077",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Nanjing",
+  "days": 2,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "result_list=[]\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"00:17\")\n    outbound_intercity_found=True\nresult_list.append(result)\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({\"Nanjing University (Gulou Campus)\", \"Confucius Temple and Qinhuai River Scenic Area\", \"Stone City Ruins Park\"}<=attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Mingchao Chronicles Immersive Digital Experience Hall\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"DQ (Aolin Plaza Nanjing Store)\" and first_activity_seen: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==9)",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Korean cuisine\"}&restaurant_type_set)",
+    "result_list=[]\nday_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Red tourism sites\", \"Art museum\"}&attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Nanjing BuildHome Cinema apartment\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Pearl Spring Scenic Area\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Nanjing BuildHome Cinema apartment\":\n    if activity_start_time(activity)==\"21:40\" and activity_end_time(activity)==\"24:00\": result=True",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=660)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Stone City Ruins Park\":\n    if activity_start_time(activity)==\"19:32\" and activity_end_time(activity)==\"20:00\": result=True\nresult_list.append(result)\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Nanjing Confucius Temple Pedestrian Street\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Nanjing University (Gulou Campus)\" and seen_first: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) The outbound intercity trip must depart no later than 00:17. (B) Visit the following attractions: Nanjing University (Gulou Campus), Confucius Temple and Qinhuai River Scenic Area, and Stone City Ruins Park.",
+    "Do not use airplane for the return intercity trip.",
+    "Visit Mingchao Chronicles Immersive Digital Experience Hall before dining at DQ (Aolin Plaza Nanjing Store).",
+    "Use metro as the primary mode for exactly 9 in-city journeys.",
+    "Do not include any of these restaurant types: Korean cuisine.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit exactly 4 attractions on day 2. (B) Do not include any of these attraction types: Red tourism sites and Art museum.",
+    "Dine at Nanjing BuildHome Cinema apartment before visiting Pearl Spring Scenic Area.",
+    "Stay at Nanjing BuildHome Cinema apartment exactly from 21:40 to 24:00.",
+    "Spend at least 660 minutes in total visiting attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Stone City Ruins Park exactly from 19:32 to 20:00. (B) Visit Nanjing Confucius Temple Pedestrian Street before Nanjing University (Gulou Campus)."
+  ],
+  "nature_language": "We are 3 people traveling from Suzhou to Nanjing for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) The outbound intercity trip must depart no later than 00:17. (B) Visit the following attractions: Nanjing University (Gulou Campus), Confucius Temple and Qinhuai River Scenic Area, and Stone City Ruins Park.\n5. Do not use airplane for the return intercity trip.\n6. Visit Mingchao Chronicles Immersive Digital Experience Hall before dining at DQ (Aolin Plaza Nanjing Store).\n7. Use metro as the primary mode for exactly 9 in-city journeys.\n8. Do not include any of these restaurant types: Korean cuisine.\n9. Satisfy at least one of these two requirements (both are allowed): (A) Visit exactly 4 attractions on day 2. (B) Do not include any of these attraction types: Red tourism sites and Art museum.\n10. Dine at Nanjing BuildHome Cinema apartment before visiting Pearl Spring Scenic Area.\n11. Stay at Nanjing BuildHome Cinema apartment exactly from 21:40 to 24:00.\n12. Spend at least 660 minutes in total visiting attractions.\n13. Satisfy at least one of these two requirements (both are allowed): (A) Visit Stone City Ruins Park exactly from 19:32 to 20:00. (B) Visit Nanjing Confucius Temple Pedestrian Street before Nanjing University (Gulou Campus).",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"forbidden_return_transport\",\"cross_category_order\",\"inner_transport_mode_count\",\"forbidden_restaurant_types\",\"either_requirement\",\"cross_category_order\",\"accommodation_exact_time\",\"attraction_duration_minimum\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

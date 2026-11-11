@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_e20241028160324401047_00067",
+  "tag": "phase2",
+  "start_city": "Hangzhou",
+  "target_city": "Guangzhou",
+  "days": 1,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==1)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "inner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=49)",
+    "result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Folk Museum\" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Folk Museum\" and seen_first: result=True",
+    "result_list=[]\ntotal_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=1063)\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Uprising Martyrs' Cemetery\" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shamian Island - Riverside Square\" and seen_first: result=True",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\":\n    if activity_start_time(activity)==\"11:32\" and activity_end_time(activity)==\"12:32\": result=True",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shamian Island - Riverside Square\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Danggong Dessert Shop (Lujiang Branch)\" and first_activity_seen: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==1)",
+    "result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"airplane\"}<=intercity_transport_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Guangzhou Chimelong Resort\":\n    if activity_start_time(activity)>=\"07:20\" and activity_end_time(activity)<=\"09:10\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==5)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 1 day.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Keep the total cost of in-city transportation throughout the itinerary within 49 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Whenever taking a taxi, use 1 taxi. (B) Dine at Danggong Dessert Shop (Lujiang Branch) before visiting Guangzhou Folk Museum.",
+    "Visit Guangzhou Chimelong Resort before Guangzhou Folk Museum.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the combined cost of all itinerary activities and in-city transportation within 1063 CNY. (B) Dine at Danggong Dessert Shop (Lujiang Branch) before visiting Guangzhou Uprising Martyrs' Cemetery.",
+    "Visit Guangzhou Chimelong Resort before Shamian Island - Riverside Square.",
+    "Visit Guangzhou Chimelong Resort before dining at Danggong Dessert Shop (Lujiang Branch).",
+    "Dine at Danggong Dessert Shop (Lujiang Branch) exactly from 11:32 to 12:32.",
+    "Visit Shamian Island - Riverside Square before dining at Danggong Dessert Shop (Lujiang Branch).",
+    "Use taxi as the primary mode for exactly 1 in-city journey.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Schedule the entire visit to Guangzhou Chimelong Resort within the time window from 07:20 to 09:10.",
+    "Use metro as the primary mode for exactly 5 in-city journeys."
+  ],
+  "nature_language": "I am traveling from Hangzhou to Guangzhou for 1 day.\nRequirements:\n1. The trip must last 1 day.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Keep the total cost of in-city transportation throughout the itinerary within 49 CNY.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Whenever taking a taxi, use 1 taxi. (B) Dine at Danggong Dessert Shop (Lujiang Branch) before visiting Guangzhou Folk Museum.\n6. Visit Guangzhou Chimelong Resort before Guangzhou Folk Museum.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Keep the combined cost of all itinerary activities and in-city transportation within 1063 CNY. (B) Dine at Danggong Dessert Shop (Lujiang Branch) before visiting Guangzhou Uprising Martyrs' Cemetery.\n8. Visit Guangzhou Chimelong Resort before Shamian Island - Riverside Square.\n9. Visit Guangzhou Chimelong Resort before dining at Danggong Dessert Shop (Lujiang Branch).\n10. Dine at Danggong Dessert Shop (Lujiang Branch) exactly from 11:32 to 12:32.\n11. Visit Shamian Island - Riverside Square before dining at Danggong Dessert Shop (Lujiang Branch).\n12. Use taxi as the primary mode for exactly 1 in-city journey.\n13. Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Schedule the entire visit to Guangzhou Chimelong Resort within the time window from 07:20 to 09:10.\n14. Use metro as the primary mode for exactly 5 in-city journeys.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"innercity_budget\",\"either_requirement\",\"attraction_order\",\"either_requirement\",\"attraction_order\",\"cross_category_order\",\"restaurant_exact_time\",\"cross_category_order\",\"inner_transport_mode_count\",\"either_requirement\",\"inner_transport_mode_count\"]",
+  "official_phase2_evaluation": true
+}

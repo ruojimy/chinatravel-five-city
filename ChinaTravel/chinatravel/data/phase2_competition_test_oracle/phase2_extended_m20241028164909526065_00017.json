@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_m20241028164909526065_00017",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Shenzhen",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Shenzhen Wangye Museum\", \"Guanlan Ancient Market\"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)>=\"21:45\" and activity_end_time(activity)<=\"24:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"23:05\")",
+    "inner_city_transportation_cost=0\nfor activity in allactivities(plan):\n  inner_city_transportation_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(inner_city_transportation_cost<=230)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)==\"18:35\" and activity_end_time(activity)==\"24:00\": result=True",
+    "result_list=[]\nseen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shenzhen Wangye Museum\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Meilin Reservoir\" and seen_first: result=True\nresult_list.append(result)\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=1893)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Sentosa Hotel (Feicui)\", \"Shenzhen Century Garden Hotel (Nanshan Science and Technology Park)\"}&accommodation_name_set)",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\"}<=day_accommodation_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\", \"Qinghui Garden · Kung Fu Roast and Shunde Cuisine (Mission Hills MHmall Branch)\", \"LONFOOD Farm-to-Table (Zhuoyue Center Branch)\"}<=restaurant_name_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Gankeng Ancient Town\", \"Lotus Hill Park\"}<=day_attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit both Shenzhen Wangye Museum and Guanlan Ancient Market on day 2. (B) Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 21:45 to 24:00.",
+    "The return intercity trip must depart no earlier than 23:05.",
+    "Keep the total cost of in-city transportation throughout the itinerary within 230 CNY.",
+    "Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) exactly from 18:35 to 24:00.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Shenzhen Wangye Museum before Meilin Reservoir. (B) Keep the total accommodation cost within 1893 CNY.",
+    "Do not include any of these hotels: Sentosa Hotel (Feicui) and Shenzhen Century Garden Hotel (Nanshan Science and Technology Park).",
+    "Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) on day 2.",
+    "Day 1 must include breakfast, lunch, and dinner.",
+    "Dine at the following restaurants: Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop), Qinghui Garden · Kung Fu Roast and Shunde Cuisine (Mission Hills MHmall Branch), and LONFOOD Farm-to-Table (Zhuoyue Center Branch).",
+    "Visit both Gankeng Ancient Town and Lotus Hill Park on day 1."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Shenzhen for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Visit both Shenzhen Wangye Museum and Guanlan Ancient Market on day 2. (B) Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 21:45 to 24:00.\n5. The return intercity trip must depart no earlier than 23:05.\n6. Keep the total cost of in-city transportation throughout the itinerary within 230 CNY.\n7. Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) exactly from 18:35 to 24:00.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Visit Shenzhen Wangye Museum before Meilin Reservoir. (B) Keep the total accommodation cost within 1893 CNY.\n9. Do not include any of these hotels: Sentosa Hotel (Feicui) and Shenzhen Century Garden Hotel (Nanshan Science and Technology Park).\n10. Stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) on day 2.\n11. Day 1 must include breakfast, lunch, and dinner.\n12. Dine at the following restaurants: Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop), Qinghui Garden · Kung Fu Roast and Shunde Cuisine (Mission Hills MHmall Branch), and LONFOOD Farm-to-Table (Zhuoyue Center Branch).\n13. Visit both Gankeng Ancient Town and Lotus Hill Park on day 1.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"return_departure_earliest\",\"innercity_budget\",\"accommodation_exact_time\",\"either_requirement\",\"forbidden_accommodation_names\",\"accommodation_on_day\",\"required_meals_on_day\",\"required_restaurant_names\",\"attraction_pair_on_day\"]",
+  "official_phase2_evaluation": true
+}

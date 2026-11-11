@@ -1,0 +1,37 @@
+{
+  "uid": "phase2_extended_20250322180946178753_00071",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result_list=[]\nresult=True\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and room_count(activity)!=2: result=False\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Chuansha Park\" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Great view from the window\"}&accommodation_type_set)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=8791)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Yingdong Village\":\n    if activity_start_time(activity)>=\"09:03\" and activity_end_time(activity)<=\"10:58\": result=True\nresult_list.append(result)\nattraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lujiazui\":\n    if activity_start_time(activity)==\"14:08\" and activity_end_time(activity)==\"15:38\": result=True",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Chuansha Park\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tongji University (Siping Road Campus)\" and seen_first: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==5)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Each accommodation stay must reserve 2 rooms. (B) Dine at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) before visiting Chuansha Park.",
+    "Do not include any of these hotel feature types: Great view from the window.",
+    "Keep all activity and transportation costs on day 1 within 8791 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire visit to Yingdong Village within the time window from 09:03 to 10:58. (B) Visit exactly 10 attractions during the trip.",
+    "Visit Lujiazui exactly from 14:08 to 15:38.",
+    "Visit exactly 5 attractions on day 1.",
+    "Visit Chuansha Park before Tongji University (Siping Road Campus).",
+    "Use taxi as the primary mode for exactly 5 in-city journeys."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Each accommodation stay must reserve 2 rooms. (B) Dine at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) before visiting Chuansha Park.\n5. Do not include any of these hotel feature types: Great view from the window.\n6. Keep all activity and transportation costs on day 1 within 8791 CNY.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire visit to Yingdong Village within the time window from 09:03 to 10:58. (B) Visit exactly 10 attractions during the trip.\n8. Visit Lujiazui exactly from 14:08 to 15:38.\n9. Visit exactly 5 attractions on day 1.\n10. Visit Chuansha Park before Tongji University (Siping Road Campus).\n11. Use taxi as the primary mode for exactly 5 in-city journeys.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"forbidden_accommodation_types\",\"daily_budget\",\"either_requirement\",\"attraction_exact_time\",\"attraction_count_on_day\",\"attraction_order\",\"inner_transport_mode_count\"]",
+  "official_phase2_evaluation": true
+}

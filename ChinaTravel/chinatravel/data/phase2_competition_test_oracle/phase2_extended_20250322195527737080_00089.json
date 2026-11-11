@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250322195527737080_00089",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 2,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"University campus\"}&attraction_type_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Era of Life\", \"Site of the Second National Congress of the Communist Party of China Memorial Hall\"}<=day_attraction_name_set)",
+    "result_list=[]\nintercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"airplane\"}<=intercity_transport_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Holy Trinity Church\":\n    if activity_start_time(activity)==\"18:47\" and activity_end_time(activity)==\"20:17\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=7673)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=6)",
+    "result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(inner_city_transportation_set<={\"metro\", \"taxi\"})\nresult_list.append(result)\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Heartbreak Museum\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Bvlgari Hotel Shanghai\" and first_activity_seen: result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==5)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==6)",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Do not include any of these attraction types: University campus.",
+    "Day 1 must include breakfast, lunch, and dinner.",
+    "Visit both Era of Life and Site of the Second National Congress of the Communist Party of China Memorial Hall on day 2.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Visit Holy Trinity Church exactly from 18:47 to 20:17.",
+    "Keep all activity and transportation costs on day 1 within 7673 CNY.",
+    "Include at least 6 free attractions.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Use only metro and taxi as the primary modes of in-city journeys throughout the itinerary. (B) Visit Shanghai Heartbreak Museum before dining at Bvlgari Hotel Shanghai.",
+    "Use taxi as the primary mode for exactly 5 in-city journeys.",
+    "Visit exactly 6 attractions on day 1.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Do not use train for the outbound intercity trip."
+  ],
+  "nature_language": "I am traveling from Shenzhen to Shanghai for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Do not include any of these attraction types: University campus.\n5. Day 1 must include breakfast, lunch, and dinner.\n6. Visit both Era of Life and Site of the Second National Congress of the Communist Party of China Memorial Hall on day 2.\n7. Satisfy at least one of these two requirements (both are allowed): (A) The intercity itinerary must include airplane. (B) Visit Holy Trinity Church exactly from 18:47 to 20:17.\n8. Keep all activity and transportation costs on day 1 within 7673 CNY.\n9. Include at least 6 free attractions.\n10. Satisfy at least one of these two requirements (both are allowed): (A) Use only metro and taxi as the primary modes of in-city journeys throughout the itinerary. (B) Visit Shanghai Heartbreak Museum before dining at Bvlgari Hotel Shanghai.\n11. Use taxi as the primary mode for exactly 5 in-city journeys.\n12. Visit exactly 6 attractions on day 1.\n13. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n14. Do not use train for the outbound intercity trip.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"forbidden_attraction_types\",\"required_meals_on_day\",\"attraction_pair_on_day\",\"either_requirement\",\"daily_budget\",\"free_attraction_count_minimum\",\"either_requirement\",\"inner_transport_mode_count\",\"attraction_count_on_day\",\"forbidden_inner_transport_modes\",\"forbidden_depart_transport\"]",
+  "official_phase2_evaluation": true
+}

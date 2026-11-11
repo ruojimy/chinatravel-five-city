@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250321092432118774_00066",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Suzhou",
+  "days": 3,
+  "people_number": 5,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==5)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=5: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=5: result=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Orange Sky Golden Harvest Theater - Faith\", \"Yuantong Temple\"}<=day_attraction_name_set)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=356)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==2)",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==7)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Dayu Hot Pot (Pingjiang Wanda Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Bath Spa Korean Sauna\" and first_activity_seen: result=True",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"True Interest Garden\"}<=day_attraction_name_set)",
+    "result_list=[]\ndistinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"North Xinjiang Restaurant (Wujiang Branch)\":\n    if activity_start_time(activity)==\"11:00\" and activity_end_time(activity)==\"12:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"airplane\")\n    is_first_intercity=False",
+    "result_list=[]\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({\"Hot pot\", \"Recommended dishes\"}<=restaurant_type_set)\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({\"Cultural Landscape\"}<=attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Atour Hotel (Suzhou Jinjihu Expo Center)\", \"Atour Hotel, leqiao subway station, Guanqian Street, Suzhou\"}&accommodation_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 5 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 5 travelers.",
+    "Visit both Orange Sky Golden Harvest Theater - Faith and Yuantong Temple on day 2.",
+    "Keep the total duration of all in-city transport segments within 356 minutes.",
+    "Visit exactly 2 attractions on day 1.",
+    "Visit exactly 7 attractions during the trip.",
+    "Dine at Dayu Hot Pot (Pingjiang Wanda Branch) before visiting Bath Spa Korean Sauna.",
+    "Visit True Interest Garden on day 2.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at exactly 1 different hotel. (B) Dine at North Xinjiang Restaurant (Wujiang Branch) exactly from 11:00 to 12:00.",
+    "Visit exactly 5 attractions on day 2.",
+    "Do not use airplane for the outbound intercity trip.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Include the following restaurant types: Hot pot and Recommended dishes. (B) Include the following attraction types: Cultural Landscape.",
+    "Do not include any of these hotels: Atour Hotel (Suzhou Jinjihu Expo Center) and Atour Hotel, leqiao subway station, Guanqian Street, Suzhou."
+  ],
+  "nature_language": "We are 5 people traveling from Chongqing to Suzhou for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 5 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 5 travelers.\n4. Visit both Orange Sky Golden Harvest Theater - Faith and Yuantong Temple on day 2.\n5. Keep the total duration of all in-city transport segments within 356 minutes.\n6. Visit exactly 2 attractions on day 1.\n7. Visit exactly 7 attractions during the trip.\n8. Dine at Dayu Hot Pot (Pingjiang Wanda Branch) before visiting Bath Spa Korean Sauna.\n9. Visit True Interest Garden on day 2.\n10. Satisfy at least one of these two requirements (both are allowed): (A) Stay at exactly 1 different hotel. (B) Dine at North Xinjiang Restaurant (Wujiang Branch) exactly from 11:00 to 12:00.\n11. Visit exactly 5 attractions on day 2.\n12. Do not use airplane for the outbound intercity trip.\n13. Satisfy at least one of these two requirements (both are allowed): (A) Include the following restaurant types: Hot pot and Recommended dishes. (B) Include the following attraction types: Cultural Landscape.\n14. Do not include any of these hotels: Atour Hotel (Suzhou Jinjihu Expo Center) and Atour Hotel, leqiao subway station, Guanqian Street, Suzhou.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_pair_on_day\",\"innercity_travel_time_budget\",\"attraction_count_on_day\",\"total_attraction_count\",\"cross_category_order\",\"attraction_on_day\",\"either_requirement\",\"attraction_count_on_day\",\"forbidden_depart_transport\",\"either_requirement\",\"forbidden_accommodation_names\"]",
+  "official_phase2_evaluation": true
+}

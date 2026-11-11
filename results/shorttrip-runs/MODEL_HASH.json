@@ -1,0 +1,8 @@
+{
+ "file": "<workdir>\\shorttrip-local\\Qwen3.5-4B-Q8_0.gguf",
+ "bytes": 4610580288,
+ "sha256": "5b25856e42534b000b5e06d7cfc10c756931f4dc66a4ca6ef08d835bd233a833",
+ "base_model": "Qwen/Qwen3.5-4B",
+ "quant": "Q8_0",
+ "source": "https://huggingface.co/SoAIHQ/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q8_0.gguf"
+}

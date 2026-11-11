@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250324215820528717_00063",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Jing'an Park\":\n    if activity_start_time(activity)==\"13:30\" and activity_end_time(activity)==\"15:00\": result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==7)",
+    "result_list=[]\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"buffet\"}&restaurant_type_set)\nresult_list.append(result)\nrestaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({\"Jiangsu-Zhejiang cuisine\", \"Western cuisine\"}<=restaurant_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Sinan Mansions\" and seen_first: result=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=5713)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Jade Buddha Temple\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Leisure Lounge\" and first_activity_seen: result=True",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=795)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"University campus\", \"natural scenery\"}&attraction_type_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit Jing'an Park exactly from 13:30 to 15:00.",
+    "Use taxi as the primary mode for exactly 7 in-city journeys.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurant types: buffet. (B) Include the following restaurant types: Jiangsu-Zhejiang cuisine and Western cuisine.",
+    "Visit The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition before Sinan Mansions.",
+    "Keep all activity and transportation costs on day 2 within 5713 CNY.",
+    "Visit Jade Buddha Temple before dining at Leisure Lounge.",
+    "Spend at least 795 minutes in total visiting attractions.",
+    "Do not include any of these attraction types: University campus and natural scenery.",
+    "Day 2 must include breakfast, lunch, and dinner."
+  ],
+  "nature_language": "We are 4 people traveling from Chongqing to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit Jing'an Park exactly from 13:30 to 15:00.\n5. Use taxi as the primary mode for exactly 7 in-city journeys.\n6. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurant types: buffet. (B) Include the following restaurant types: Jiangsu-Zhejiang cuisine and Western cuisine.\n7. Visit The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition before Sinan Mansions.\n8. Keep all activity and transportation costs on day 2 within 5713 CNY.\n9. Visit Jade Buddha Temple before dining at Leisure Lounge.\n10. Spend at least 795 minutes in total visiting attractions.\n11. Do not include any of these attraction types: University campus and natural scenery.\n12. Day 2 must include breakfast, lunch, and dinner.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_exact_time\",\"inner_transport_mode_count\",\"either_requirement\",\"attraction_order\",\"daily_budget\",\"cross_category_order\",\"attraction_duration_minimum\",\"forbidden_attraction_types\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

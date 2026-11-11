@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250322181705089092_00099",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==2)",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==11)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Maglev Train\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Bund Art Museum\" and seen_first: result=True",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({\"Palan Siam Cuisine (University Road Branch)\"}<=restaurant_name_set)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tongji University (Siping Road Campus)\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"SNH48 Star Dream Theater\" and seen_first: result=True",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Tongji University (Siping Road Campus)\", \"SNH48 Star Dream Theater\"}<=day_attraction_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Imperial Banquet Chinese Restaurant\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Bund Art Museum\" and first_activity_seen: result=True",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\":\n    if activity_start_time(activity)>=\"07:45\" and activity_end_time(activity)<=\"08:35\": result=True\nresult_list.append(result)\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Shanghai LEGOLAND Discovery Center\", \"Bund Sightseeing Tunnel\"}&attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==4)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Red tourism sites\"}&attraction_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit exactly 2 attractions on day 2.",
+    "Visit exactly 11 attractions during the trip.",
+    "Visit Maglev Train before Shanghai Bund Art Museum.",
+    "Dine at the following restaurants: Palan Siam Cuisine (University Road Branch).",
+    "Visit Tongji University (Siping Road Campus) before SNH48 Star Dream Theater.",
+    "Visit both Tongji University (Siping Road Campus) and SNH48 Star Dream Theater on day 3.",
+    "Dine at Imperial Banquet Chinese Restaurant before visiting Shanghai Bund Art Museum.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) within the time window from 07:45 to 08:35. (B) Do not include any of these attractions: Shanghai LEGOLAND Discovery Center and Bund Sightseeing Tunnel.",
+    "Visit exactly 4 attractions on day 3.",
+    "Do not include any of these attraction types: Red tourism sites."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit exactly 2 attractions on day 2.\n5. Visit exactly 11 attractions during the trip.\n6. Visit Maglev Train before Shanghai Bund Art Museum.\n7. Dine at the following restaurants: Palan Siam Cuisine (University Road Branch).\n8. Visit Tongji University (Siping Road Campus) before SNH48 Star Dream Theater.\n9. Visit both Tongji University (Siping Road Campus) and SNH48 Star Dream Theater on day 3.\n10. Dine at Imperial Banquet Chinese Restaurant before visiting Shanghai Bund Art Museum.\n11. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) within the time window from 07:45 to 08:35. (B) Do not include any of these attractions: Shanghai LEGOLAND Discovery Center and Bund Sightseeing Tunnel.\n12. Visit exactly 4 attractions on day 3.\n13. Do not include any of these attraction types: Red tourism sites.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_count_on_day\",\"total_attraction_count\",\"attraction_order\",\"required_restaurant_names\",\"attraction_order\",\"attraction_pair_on_day\",\"cross_category_order\",\"either_requirement\",\"attraction_count_on_day\",\"forbidden_attraction_types\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250324221337458084_00091",
+  "tag": "phase2",
+  "start_city": "Hangzhou",
+  "target_city": "Beijing",
+  "days": 2,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==2)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Cool Xiang · Jiangnan Courtyard Restaurant · Scholar-Official Hunan Cuisine (Guomao Branch)\" and first_activity_seen: result=True",
+    "restaurant_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_cost+=activity_cost(activity)\nresult=(restaurant_cost<=2100)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"train\")",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Hot pot\"}&restaurant_type_set)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=4407)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=275)",
+    "result_list=[]\nfirst_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Wangjing SOHO\" and first_activity_seen: result=True\nresult_list.append(result)\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=({\"Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)\"}<=accommodation_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Beijing Four Seasons Hotel · Cai Yi Xuan\", \"Beijing Shangri-La Hotel · AZUR Gathering\"}&restaurant_name_set)",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)\"}<=day_accommodation_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit exactly 2 attractions during the trip.",
+    "Stay at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) before dining at Cool Xiang · Jiangnan Courtyard Restaurant · Scholar-Official Hunan Cuisine (Guomao Branch).",
+    "Keep the total dining cost within 2100 CNY.",
+    "Do not use train for the return intercity trip.",
+    "Do not include any of these restaurant types: Hot pot.",
+    "Keep all activity and transportation costs on day 2 within 4407 CNY.",
+    "Keep the total duration of all in-city transport segments within 275 minutes.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) before visiting Wangjing SOHO. (B) Stay at the following hotels: Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch).",
+    "Do not include any of these restaurants: Beijing Four Seasons Hotel · Cai Yi Xuan and Beijing Shangri-La Hotel · AZUR Gathering.",
+    "Stay at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) on day 1.",
+    "Day 2 must include breakfast and lunch."
+  ],
+  "nature_language": "We are 4 people traveling from Hangzhou to Beijing for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit exactly 2 attractions during the trip.\n5. Stay at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) before dining at Cool Xiang · Jiangnan Courtyard Restaurant · Scholar-Official Hunan Cuisine (Guomao Branch).\n6. Keep the total dining cost within 2100 CNY.\n7. Do not use train for the return intercity trip.\n8. Do not include any of these restaurant types: Hot pot.\n9. Keep all activity and transportation costs on day 2 within 4407 CNY.\n10. Keep the total duration of all in-city transport segments within 275 minutes.\n11. Satisfy at least one of these two requirements (both are allowed): (A) Dine at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) before visiting Wangjing SOHO. (B) Stay at the following hotels: Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch).\n12. Do not include any of these restaurants: Beijing Four Seasons Hotel · Cai Yi Xuan and Beijing Shangri-La Hotel · AZUR Gathering.\n13. Stay at Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch) on day 1.\n14. Day 2 must include breakfast and lunch.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"total_attraction_count\",\"cross_category_order\",\"restaurant_budget\",\"forbidden_return_transport\",\"forbidden_restaurant_types\",\"daily_budget\",\"innercity_travel_time_budget\",\"either_requirement\",\"forbidden_restaurant_names\",\"accommodation_on_day\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

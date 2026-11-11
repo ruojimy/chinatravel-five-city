@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_m20241028164754037833_00027",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==3)",
+    "attraction_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_cost+=activity_cost(activity)\nresult=(attraction_cost<=2770)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Large Eight Italy Lounge & Restaurant (1862 Fashion Art Center Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lujiazui Central Green Space\" and first_activity_seen: result=True",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"airplane\")\n    is_first_intercity=False",
+    "result_list=[]\ninner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)\nresult_list.append(result)\nattraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Cantonese cuisine\"}&restaurant_type_set)",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==3)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=2451)",
+    "result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Jin Mao Tower\"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tongji University (Siping Road Campus)\":\n    if activity_start_time(activity)==\"12:17\" and activity_end_time(activity)==\"13:47\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=7709)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Use taxi as the primary mode for exactly 3 in-city journeys.",
+    "Keep the total attraction ticket cost within 2770 CNY.",
+    "Dine at Large Eight Italy Lounge & Restaurant (1862 Fashion Art Center Branch) before visiting Lujiazui Central Green Space.",
+    "Do not use airplane for the outbound intercity trip.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not use walking as the primary mode of any in-city journey throughout the itinerary. (B) Visit exactly 10 attractions during the trip.",
+    "Do not include any of these restaurant types: Cantonese cuisine.",
+    "Visit exactly 3 attractions on day 2.",
+    "Keep all activity and transportation costs on day 2 within 2451 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Jin Mao Tower on day 1. (B) Visit Tongji University (Siping Road Campus) exactly from 12:17 to 13:47.",
+    "Keep all activity and transportation costs on day 1 within 7709 CNY.",
+    "Day 2 must include breakfast and lunch."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Use taxi as the primary mode for exactly 3 in-city journeys.\n5. Keep the total attraction ticket cost within 2770 CNY.\n6. Dine at Large Eight Italy Lounge & Restaurant (1862 Fashion Art Center Branch) before visiting Lujiazui Central Green Space.\n7. Do not use airplane for the outbound intercity trip.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Do not use walking as the primary mode of any in-city journey throughout the itinerary. (B) Visit exactly 10 attractions during the trip.\n9. Do not include any of these restaurant types: Cantonese cuisine.\n10. Visit exactly 3 attractions on day 2.\n11. Keep all activity and transportation costs on day 2 within 2451 CNY.\n12. Satisfy at least one of these two requirements (both are allowed): (A) Visit Jin Mao Tower on day 1. (B) Visit Tongji University (Siping Road Campus) exactly from 12:17 to 13:47.\n13. Keep all activity and transportation costs on day 1 within 7709 CNY.\n14. Day 2 must include breakfast and lunch.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"inner_transport_mode_count\",\"attraction_budget\",\"cross_category_order\",\"forbidden_depart_transport\",\"either_requirement\",\"forbidden_restaurant_types\",\"attraction_count_on_day\",\"daily_budget\",\"either_requirement\",\"daily_budget\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

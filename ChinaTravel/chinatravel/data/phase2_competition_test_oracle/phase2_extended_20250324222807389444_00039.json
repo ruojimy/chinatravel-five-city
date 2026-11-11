@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250324222807389444_00039",
+  "tag": "phase2",
+  "start_city": "Beijing",
+  "target_city": "Shenzhen",
+  "days": 3,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Shangwei Art Village\", \"Guanlan Ancient Market\"}<=day_attraction_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"gaga (Joy Hub City Store)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shenzhen Jewelry Museum\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"19:10\")",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Qingfeng Pigeon (Zhongke Valley Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shenzhen Jewelry Museum\" and first_activity_seen: result=True",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Butler Service\", \"Sunbathing area\"}&accommodation_type_set)",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({\"Qingfeng Pigeon (Zhongke Valley Branch)\", \"Fuxinji Pig Stomach Chicken (Dongmen Maoye Branch)\", \"Joyful Gathering (Jingtian Branch)\"}<=restaurant_name_set)",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"buffet\", \"Sichuan cuisine\"}&restaurant_type_set)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)>=\"07:55\" and activity_end_time(activity)<=\"08:40\": result=True\nresult_list.append(result)\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({\"natural scenery\"}<=attraction_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Visit both Shangwei Art Village and Guanlan Ancient Market on day 1.",
+    "Day 3 must include breakfast and lunch.",
+    "Dine at gaga (Joy Hub City Store) before visiting Shenzhen Jewelry Museum.",
+    "The return intercity trip must depart no earlier than 19:10.",
+    "Dine at Qingfeng Pigeon (Zhongke Valley Branch) before visiting Shenzhen Jewelry Museum.",
+    "Do not include any of these hotel feature types: Butler Service and Sunbathing area.",
+    "Dine at the following restaurants: Qingfeng Pigeon (Zhongke Valley Branch), Fuxinji Pig Stomach Chicken (Dongmen Maoye Branch), and Joyful Gathering (Jingtian Branch).",
+    "Do not include any of these restaurant types: buffet and Sichuan cuisine.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 07:55 to 08:40. (B) Include the following attraction types: natural scenery."
+  ],
+  "nature_language": "I am traveling from Beijing to Shenzhen for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Visit both Shangwei Art Village and Guanlan Ancient Market on day 1.\n5. Day 3 must include breakfast and lunch.\n6. Dine at gaga (Joy Hub City Store) before visiting Shenzhen Jewelry Museum.\n7. The return intercity trip must depart no earlier than 19:10.\n8. Dine at Qingfeng Pigeon (Zhongke Valley Branch) before visiting Shenzhen Jewelry Museum.\n9. Do not include any of these hotel feature types: Butler Service and Sunbathing area.\n10. Dine at the following restaurants: Qingfeng Pigeon (Zhongke Valley Branch), Fuxinji Pig Stomach Chicken (Dongmen Maoye Branch), and Joyful Gathering (Jingtian Branch).\n11. Do not include any of these restaurant types: buffet and Sichuan cuisine.\n12. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 07:55 to 08:40. (B) Include the following attraction types: natural scenery.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_pair_on_day\",\"required_meals_on_day\",\"cross_category_order\",\"return_departure_earliest\",\"cross_category_order\",\"forbidden_accommodation_types\",\"required_restaurant_names\",\"forbidden_restaurant_types\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

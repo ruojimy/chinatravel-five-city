@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250323101412557140_00006",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Ming Court at Cordis Shanghai Hongqiao\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park\" and first_activity_seen: result=True",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"buffet\"}&restaurant_type_set)",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=7.0)",
+    "day_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"SuShi Qingshe Hotel (Hanzhong Road subway station)\"}<=day_accommodation_name_set)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"The Langham, Shanghai Xintiandi · Cachet Restaurant\":\n    if activity_start_time(activity)==\"11:00\" and activity_end_time(activity)==\"12:00\": result=True\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tribute to the Master: Picasso Art Center\":\n    if activity_start_time(activity)>=\"14:46\" and activity_end_time(activity)<=\"16:41\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"metro\": transport_journey_count+=1\nresult=(transport_journey_count==8)",
+    "total_cost=0\nfor activity in allactivities(plan):\n  total_cost+=activity_cost(activity)\n  total_cost += innercity_transport_cost(activity_transports(activity))\nresult=(total_cost<=18652)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition\":\n    if activity_start_time(activity)==\"18:10\" and activity_end_time(activity)==\"19:40\": result=True\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"SuShi Qingshe Hotel (Hanzhong Road subway station)\":\n    if activity_start_time(activity)==\"21:42\" and activity_end_time(activity)==\"24:00\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Rainbow Bridge Libao Plaza\"}<=day_attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Dine at Ming Court at Cordis Shanghai Hongqiao before visiting Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park.",
+    "Do not include any of these restaurant types: buffet.",
+    "Keep the total walking distance within 7 kilometers.",
+    "Stay at SuShi Qingshe Hotel (Hanzhong Road subway station) on day 1.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at The Langham, Shanghai Xintiandi · Cachet Restaurant exactly from 11:00 to 12:00. (B) Schedule the entire visit to Tribute to the Master: Picasso Art Center within the time window from 14:46 to 16:41.",
+    "Day 2 must include breakfast, lunch, and dinner.",
+    "Use metro as the primary mode for exactly 8 in-city journeys.",
+    "Keep the combined cost of all itinerary activities and in-city transportation within 18652 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition exactly from 18:10 to 19:40. (B) Stay at SuShi Qingshe Hotel (Hanzhong Road subway station) exactly from 21:42 to 24:00.",
+    "Visit Rainbow Bridge Libao Plaza on day 1."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Dine at Ming Court at Cordis Shanghai Hongqiao before visiting Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park.\n5. Do not include any of these restaurant types: buffet.\n6. Keep the total walking distance within 7 kilometers.\n7. Stay at SuShi Qingshe Hotel (Hanzhong Road subway station) on day 1.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Dine at The Langham, Shanghai Xintiandi · Cachet Restaurant exactly from 11:00 to 12:00. (B) Schedule the entire visit to Tribute to the Master: Picasso Art Center within the time window from 14:46 to 16:41.\n9. Day 2 must include breakfast, lunch, and dinner.\n10. Use metro as the primary mode for exactly 8 in-city journeys.\n11. Keep the combined cost of all itinerary activities and in-city transportation within 18652 CNY.\n12. Satisfy at least one of these two requirements (both are allowed): (A) Visit The Vanishing Pharaoh—Immersive Exploration Experience of the Khufu Pyramid Exhibition exactly from 18:10 to 19:40. (B) Stay at SuShi Qingshe Hotel (Hanzhong Road subway station) exactly from 21:42 to 24:00.\n13. Visit Rainbow Bridge Libao Plaza on day 1.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"cross_category_order\",\"forbidden_restaurant_types\",\"walking_distance_budget\",\"accommodation_on_day\",\"either_requirement\",\"required_meals_on_day\",\"inner_transport_mode_count\",\"total_budget\",\"either_requirement\",\"attraction_on_day\"]",
+  "official_phase2_evaluation": true
+}

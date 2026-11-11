@@ -1,0 +1,41 @@
+{
+  "uid": "phase2_extended_20250322123500150175_00024",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 2,
+  "people_number": 2,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==2)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=2: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=2: result=False",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "result_list=[]\naccommodation_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_cost+=activity_cost(activity)\nresult=(accommodation_cost<=301)\nresult_list.append(result)\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Grandma Sun's Scallion Pancake Rolls\"}<=day_restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"walk\"}&inner_city_transportation_set)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=682)",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Grandma Sun's Scallion Pancake Rolls\":\n    if activity_start_time(activity)==\"17:17\" and activity_end_time(activity)==\"18:17\": result=True\nresult_list.append(result)\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Zhejiang University (Zhijiang Campus)\":\n    if activity_start_time(activity)==\"21:23\" and activity_end_time(activity)==\"22:00\": result=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 2):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=201)",
+    "result_list=[]\nday_accommodation_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='accommodation': day_accommodation_name_set.add(activity_position(activity))\nresult=({\"Baiye Homestay (West Lake Branch)\"}<=day_accommodation_name_set)\nresult_list.append(result)\naccommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({\"Media Room\"}<=accommodation_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "distinct_accommodation_names=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': distinct_accommodation_names.add(activity_position(activity))\ndistinct_accommodation_count=0\nfor accommodation_name in distinct_accommodation_names:\n  distinct_accommodation_count+=1\nresult=(distinct_accommodation_count==1)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=6)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 2 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 2 travelers.",
+    "Day 1 must include lunch and dinner.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Keep the total accommodation cost within 301 CNY. (B) Dine at Grandma Sun's Scallion Pancake Rolls on day 1.",
+    "Do not use walking as the primary mode of any in-city journey throughout the itinerary.",
+    "Keep all activity and transportation costs on day 1 within 682 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at Grandma Sun's Scallion Pancake Rolls exactly from 17:17 to 18:17. (B) Do not use airplane for the return intercity trip.",
+    "Visit Zhejiang University (Zhijiang Campus) exactly from 21:23 to 22:00.",
+    "Keep all activity and transportation costs on day 2 within 201 CNY.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 1. (B) Include the following hotel feature types: Media Room.",
+    "Stay at exactly 1 different hotel.",
+    "Include at least 6 free attractions."
+  ],
+  "nature_language": "We are 2 people traveling from Suzhou to Hangzhou for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 2 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 2 travelers.\n4. Day 1 must include lunch and dinner.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Keep the total accommodation cost within 301 CNY. (B) Dine at Grandma Sun's Scallion Pancake Rolls on day 1.\n6. Do not use walking as the primary mode of any in-city journey throughout the itinerary.\n7. Keep all activity and transportation costs on day 1 within 682 CNY.\n8. Satisfy at least one of these two requirements (both are allowed): (A) Dine at Grandma Sun's Scallion Pancake Rolls exactly from 17:17 to 18:17. (B) Do not use airplane for the return intercity trip.\n9. Visit Zhejiang University (Zhijiang Campus) exactly from 21:23 to 22:00.\n10. Keep all activity and transportation costs on day 2 within 201 CNY.\n11. Satisfy at least one of these two requirements (both are allowed): (A) Stay at Baiye Homestay (West Lake Branch) on day 1. (B) Include the following hotel feature types: Media Room.\n12. Stay at exactly 1 different hotel.\n13. Include at least 6 free attractions.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"required_meals_on_day\",\"either_requirement\",\"forbidden_inner_transport_modes\",\"daily_budget\",\"either_requirement\",\"attraction_exact_time\",\"daily_budget\",\"either_requirement\",\"distinct_accommodation_count\",\"free_attraction_count_minimum\"]",
+  "official_phase2_evaluation": true
+}

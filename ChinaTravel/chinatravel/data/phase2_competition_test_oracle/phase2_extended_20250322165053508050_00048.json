@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250322165053508050_00048",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Laxi Street Food Plaza\"}<=day_attraction_name_set)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({\"Media Room\"}<=accommodation_type_set)",
+    "result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")\nresult_list.append(result)\ninnercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=622)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "result_list=[]\naccommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"SSAW Boutique Hotel Hangzhou Xixi Park\", \"Hangzhou Blossom Water Museum Hotel\"}&accommodation_name_set)\nresult_list.append(result)\nattraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({\"Lingyin Temple\", \"Laxi Street Food Plaza\"}<=attraction_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Fuyang Dragon Scale Dam Scenic Area\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"White Pagoda Park\":\n    if activity_start_time(activity)==\"15:25\" and activity_end_time(activity)==\"16:55\": result=True",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=450)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1070)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lingyin Temple\": first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\" and first_activity_seen: result=True",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=({\"Runhexiang Small Pot Sweet Fermented Rice\"}<=restaurant_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit Laxi Street Food Plaza on day 1.",
+    "Include the following hotel feature types: Media Room.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the return intercity trip. (B) Keep the total duration of all in-city transport segments within 622 minutes.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these hotels: SSAW Boutique Hotel Hangzhou Xixi Park and Hangzhou Blossom Water Museum Hotel. (B) Visit the following attractions: Lingyin Temple and Laxi Street Food Plaza.",
+    "Dine at Baiye Homestay (West Lake Branch) before visiting Fuyang Dragon Scale Dam Scenic Area.",
+    "Visit White Pagoda Park exactly from 15:25 to 16:55.",
+    "Spend at least 450 minutes in total visiting attractions.",
+    "Keep all activity and transportation costs on day 1 within 1070 CNY.",
+    "Visit Lingyin Temple before staying at Baiye Homestay (West Lake Branch).",
+    "Dine at the following restaurants: Runhexiang Small Pot Sweet Fermented Rice.",
+    "Day 2 must include breakfast and lunch."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit Laxi Street Food Plaza on day 1.\n5. Include the following hotel feature types: Media Room.\n6. Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the return intercity trip. (B) Keep the total duration of all in-city transport segments within 622 minutes.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these hotels: SSAW Boutique Hotel Hangzhou Xixi Park and Hangzhou Blossom Water Museum Hotel. (B) Visit the following attractions: Lingyin Temple and Laxi Street Food Plaza.\n8. Dine at Baiye Homestay (West Lake Branch) before visiting Fuyang Dragon Scale Dam Scenic Area.\n9. Visit White Pagoda Park exactly from 15:25 to 16:55.\n10. Spend at least 450 minutes in total visiting attractions.\n11. Keep all activity and transportation costs on day 1 within 1070 CNY.\n12. Visit Lingyin Temple before staying at Baiye Homestay (West Lake Branch).\n13. Dine at the following restaurants: Runhexiang Small Pot Sweet Fermented Rice.\n14. Day 2 must include breakfast and lunch.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_on_day\",\"required_accommodation_types\",\"either_requirement\",\"either_requirement\",\"cross_category_order\",\"attraction_exact_time\",\"attraction_duration_minimum\",\"daily_budget\",\"cross_category_order\",\"required_restaurant_names\",\"required_meals_on_day\"]",
+  "official_phase2_evaluation": true
+}

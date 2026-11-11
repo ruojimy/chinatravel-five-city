@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250323005729070302_00034",
+  "tag": "phase2",
+  "start_city": "Nanjing",
+  "target_city": "Wuhan",
+  "days": 2,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Wuhan Police Museum\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Shuita Li's Crispy Dumplings (Shuita Branch)\" and first_activity_seen: result=True",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Wuhan Polar Ocean Park\", \"Jiufeng National Forest Park\", \"Wuhan Sightseeing Bus\"}&attraction_name_set)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=not({\"Parking lot\"}&accommodation_type_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Qingchuan Pavilion\", \"Wuhan International Convention and Exhibition Center\"}<=day_attraction_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Yiyuan Road Unique-Flavored Baked Cake (Fengshang Times Plaza Branch)\": first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop)\" and first_activity_seen: result=True",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan)\"}<=day_attraction_name_set)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=358)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Cultural Landscape\", \"Other\"}&attraction_type_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Wuhan International Convention and Exhibition Center\":\n    if activity_start_time(activity)>=\"15:00\" and activity_end_time(activity)<=\"17:00\": result=True"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 2 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit Wuhan Police Museum before dining at Shuita Li's Crispy Dumplings (Shuita Branch).",
+    "Do not include any of these attractions: Wuhan Polar Ocean Park, Jiufeng National Forest Park, and Wuhan Sightseeing Bus.",
+    "Do not include any of these hotel feature types: Parking lot.",
+    "Visit both Qingchuan Pavilion and Wuhan International Convention and Exhibition Center on day 1.",
+    "Dine at Yiyuan Road Unique-Flavored Baked Cake (Fengshang Times Plaza Branch) before staying at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop).",
+    "Visit Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan) on day 2.",
+    "Keep the total duration of all in-city transport segments within 358 minutes.",
+    "Do not include any of these attraction types: Cultural Landscape and Other.",
+    "Schedule the entire visit to Wuhan International Convention and Exhibition Center within the time window from 15:00 to 17:00."
+  ],
+  "nature_language": "We are 4 people traveling from Nanjing to Wuhan for 2 days.\nRequirements:\n1. The trip must last 2 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit Wuhan Police Museum before dining at Shuita Li's Crispy Dumplings (Shuita Branch).\n5. Do not include any of these attractions: Wuhan Polar Ocean Park, Jiufeng National Forest Park, and Wuhan Sightseeing Bus.\n6. Do not include any of these hotel feature types: Parking lot.\n7. Visit both Qingchuan Pavilion and Wuhan International Convention and Exhibition Center on day 1.\n8. Dine at Yiyuan Road Unique-Flavored Baked Cake (Fengshang Times Plaza Branch) before staying at Ivory International Youth Hostel (Wuhan University Huazhong Normal University Shop).\n9. Visit Night Tour of Qingchuan Pavilion (The Legend of Yu the Great at Qingchuan) on day 2.\n10. Keep the total duration of all in-city transport segments within 358 minutes.\n11. Do not include any of these attraction types: Cultural Landscape and Other.\n12. Schedule the entire visit to Wuhan International Convention and Exhibition Center within the time window from 15:00 to 17:00.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"cross_category_order\",\"forbidden_attraction_names\",\"forbidden_accommodation_types\",\"attraction_pair_on_day\",\"cross_category_order\",\"attraction_on_day\",\"innercity_travel_time_budget\",\"forbidden_attraction_types\",\"attraction_time_window\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,35 @@
+{
+  "uid": "phase2_extended_20250324222807389444_00040",
+  "tag": "phase2",
+  "start_city": "Beijing",
+  "target_city": "Shenzhen",
+  "days": 3,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shenzhen Jewelry Museum\" and first_activity_seen: result=True",
+    "result_list=[]\nintercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")\nresult_list.append(result)\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Pingshan Park\":\n    if activity_start_time(activity)>=\"14:02\" and activity_end_time(activity)<=\"15:52\": result=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"train\")\n    is_first_intercity=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Little Cool Hat Farm\", \"Guanlan Ancient Market\"}<=day_attraction_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop)\":\n    if activity_start_time(activity)>=\"22:15\" and activity_end_time(activity)<=\"24:00\": result=True",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==1)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "Dine at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Shenzhen Jewelry Museum.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the return intercity trip. (B) Schedule the entire visit to Pingshan Park within the time window from 14:02 to 15:52.",
+    "Day 3 must include breakfast and lunch.",
+    "Do not use train for the outbound intercity trip.",
+    "Visit both Little Cool Hat Farm and Guanlan Ancient Market on day 1.",
+    "Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 22:15 to 24:00.",
+    "Visit exactly 1 attraction on day 3."
+  ],
+  "nature_language": "I am traveling from Beijing to Shenzhen for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. Dine at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) before visiting Shenzhen Jewelry Museum.\n5. Satisfy at least one of these two requirements (both are allowed): (A) Do not use airplane for the return intercity trip. (B) Schedule the entire visit to Pingshan Park within the time window from 14:02 to 15:52.\n6. Day 3 must include breakfast and lunch.\n7. Do not use train for the outbound intercity trip.\n8. Visit both Little Cool Hat Farm and Guanlan Ancient Market on day 1.\n9. Schedule the entire stay at Overseas Chinese Town Nanyang Inn (Gankeng Ancient Town Shop) within the time window from 22:15 to 24:00.\n10. Visit exactly 1 attraction on day 3.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"cross_category_order\",\"either_requirement\",\"required_meals_on_day\",\"forbidden_depart_transport\",\"attraction_pair_on_day\",\"accommodation_time_window\",\"attraction_count_on_day\"]",
+  "official_phase2_evaluation": true
+}

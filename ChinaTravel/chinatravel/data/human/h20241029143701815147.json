@@ -1,0 +1,20 @@
+{
+  "uid": "h20241029143701815147",
+  "tag": "human",
+  "start_city": "南京",
+  "target_city": "广州",
+  "days": 2,
+  "people_number": 1,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "hard_logic_py": [
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=({'自然风光'}<=attraction_type_set)",
+    "accommodation_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) == 'accommodation': accommodation_type_set.add(accommodation_type(activity, target_city(plan)))\nresult=({'江河景房'}<=accommodation_type_set)",
+    "hotel_cost=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': hotel_cost+=activity_cost(activity)\nresult=(hotel_cost/people_count(plan)/(day_count(plan)-1)<= 700)",
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False"
+  ],
+  "nature_language": "[当前位置南京,目标位置广州,旅行人数1,旅行天数2] 我准备去广州找朋友玩两天，想看看自然风光和热门景点，并住一晚每人不超过700元的江景房，怎么规划行程",
+  "nature_language_en": "[Current location: Nanjing, Destination: Guangzhou, Number of travelers: 1, Number of travel days: 2] I plan to visit a friend in Guangzhou for two days, see natural scenery and popular attractions, and stay in a river-view room costing no more than 700 RMB per person per night."
+}

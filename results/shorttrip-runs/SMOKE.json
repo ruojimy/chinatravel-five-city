@@ -1,0 +1,13 @@
+{
+  "model": "qwen3.5-4b-q8",
+  "content": "就绪",
+  "has_think_tag": false,
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 17,
+    "total_tokens": 19,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

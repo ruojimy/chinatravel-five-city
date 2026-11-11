@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250322114324029605_00037",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Zhouping's Zongzi Shop\":\n    if activity_start_time(activity)==\"18:36\" and activity_end_time(activity)==\"19:36\": result=True\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"02:44\")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=9)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nis_first_intercity=True\nfor activity in intercity_activities:\n  if is_first_intercity:\n    result=(intercity_transport_type(activity)!=\"airplane\")\n    is_first_intercity=False",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=44.8)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Lingyin Temple\": first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\" and first_activity_seen: result=True",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=803)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\":\n    if activity_start_time(activity)>=\"22:05\" and activity_end_time(activity)<=\"24:00\": result=True",
+    "result_list=[]\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\":\n    if activity_start_time(activity)>=\"07:45\" and activity_end_time(activity)<=\"08:35\": result=True\nresult_list.append(result)\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"Zhouping's Zongzi Shop\"}<=day_restaurant_name_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at Zhouping's Zongzi Shop exactly from 18:36 to 19:36. (B) The outbound intercity trip must depart no later than 02:44.",
+    "Visit exactly 10 attractions during the trip.",
+    "Include at least 9 free attractions.",
+    "Do not use airplane for the outbound intercity trip.",
+    "Keep the total walking distance within 44.8 kilometers.",
+    "Visit Lingyin Temple before staying at Baiye Homestay (West Lake Branch).",
+    "Keep the total duration of all in-city transport segments within 803 minutes.",
+    "Schedule the entire stay at Baiye Homestay (West Lake Branch) within the time window from 22:05 to 24:00.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Baiye Homestay (West Lake Branch) within the time window from 07:45 to 08:35. (B) Dine at Zhouping's Zongzi Shop on day 1."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Dine at Zhouping's Zongzi Shop exactly from 18:36 to 19:36. (B) The outbound intercity trip must depart no later than 02:44.\n5. Visit exactly 10 attractions during the trip.\n6. Include at least 9 free attractions.\n7. Do not use airplane for the outbound intercity trip.\n8. Keep the total walking distance within 44.8 kilometers.\n9. Visit Lingyin Temple before staying at Baiye Homestay (West Lake Branch).\n10. Keep the total duration of all in-city transport segments within 803 minutes.\n11. Schedule the entire stay at Baiye Homestay (West Lake Branch) within the time window from 22:05 to 24:00.\n12. Satisfy at least one of these two requirements (both are allowed): (A) Schedule the entire meal at Baiye Homestay (West Lake Branch) within the time window from 07:45 to 08:35. (B) Dine at Zhouping's Zongzi Shop on day 1.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"total_attraction_count\",\"free_attraction_count_minimum\",\"forbidden_depart_transport\",\"walking_distance_budget\",\"cross_category_order\",\"innercity_travel_time_budget\",\"accommodation_time_window\",\"either_requirement\"]",
+  "official_phase2_evaluation": true
+}

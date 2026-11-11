@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250325015820363948_00055",
+  "tag": "phase2",
+  "start_city": "Suzhou",
+  "target_city": "Hangzhou",
+  "days": 4,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result_list=[]\nattraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Cultural Tourism Area\"}&attraction_type_set)\nresult_list.append(result)\ndaily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1061)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Lingyin Temple\", \"Hangzhou Little Iceland\"}<=day_attraction_name_set)",
+    "intercity_activities=[]\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_activities.append(activity)\nresult=False\nfor activity in intercity_activities:\n  result=(intercity_transport_type(activity)!=\"airplane\")",
+    "daily_cost=0\nfor activity in dayactivities(plan, 3):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=612)",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==3)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=608)",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Spring Dawn at Su Causeway Stele Pavilion\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Fuyang Dragon Scale Dam Scenic Area\" and seen_first: result=True",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"SSAW Boutique Hotel Hangzhou Xixi Park\", \"Hangzhou Blossom Water Museum Hotel\", \"Jinma Palace\"}&accommodation_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Baiye Homestay (West Lake Branch)\":\n    if activity_start_time(activity)>=\"07:55\" and activity_end_time(activity)<=\"08:45\": result=True",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"03:14\")\n    outbound_intercity_found=True",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=6)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these attraction types: Cultural Tourism Area. (B) Keep all activity and transportation costs on day 1 within 1061 CNY.",
+    "Visit both Lingyin Temple and Hangzhou Little Iceland on day 1.",
+    "Do not use airplane for the return intercity trip.",
+    "Keep all activity and transportation costs on day 3 within 612 CNY.",
+    "Use taxi as the primary mode for exactly 3 in-city journeys.",
+    "Keep the total duration of all in-city transport segments within 608 minutes.",
+    "Visit Spring Dawn at Su Causeway Stele Pavilion before Fuyang Dragon Scale Dam Scenic Area.",
+    "Do not include any of these hotels: SSAW Boutique Hotel Hangzhou Xixi Park, Hangzhou Blossom Water Museum Hotel, and Jinma Palace.",
+    "Schedule the entire meal at Baiye Homestay (West Lake Branch) within the time window from 07:55 to 08:45.",
+    "The outbound intercity trip must depart no later than 03:14.",
+    "Include at least 6 free attractions."
+  ],
+  "nature_language": "We are 4 people traveling from Suzhou to Hangzhou for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these attraction types: Cultural Tourism Area. (B) Keep all activity and transportation costs on day 1 within 1061 CNY.\n5. Visit both Lingyin Temple and Hangzhou Little Iceland on day 1.\n6. Do not use airplane for the return intercity trip.\n7. Keep all activity and transportation costs on day 3 within 612 CNY.\n8. Use taxi as the primary mode for exactly 3 in-city journeys.\n9. Keep the total duration of all in-city transport segments within 608 minutes.\n10. Visit Spring Dawn at Su Causeway Stele Pavilion before Fuyang Dragon Scale Dam Scenic Area.\n11. Do not include any of these hotels: SSAW Boutique Hotel Hangzhou Xixi Park, Hangzhou Blossom Water Museum Hotel, and Jinma Palace.\n12. Schedule the entire meal at Baiye Homestay (West Lake Branch) within the time window from 07:55 to 08:45.\n13. The outbound intercity trip must depart no later than 03:14.\n14. Include at least 6 free attractions.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"attraction_pair_on_day\",\"forbidden_return_transport\",\"daily_budget\",\"inner_transport_mode_count\",\"innercity_travel_time_budget\",\"attraction_order\",\"forbidden_accommodation_names\",\"restaurant_time_window\",\"outbound_departure_deadline\",\"free_attraction_count_minimum\"]",
+  "official_phase2_evaluation": true
+}

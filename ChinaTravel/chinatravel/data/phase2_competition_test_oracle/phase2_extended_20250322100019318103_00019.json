@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250322100019318103_00019",
+  "tag": "phase2",
+  "start_city": "Wuhan",
+  "target_city": "Shanghai",
+  "days": 4,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Liu Haisu Art Museum\", \"Shanghai Children's Museum\"}<=day_attraction_name_set)\nresult_list.append(result)\nresult=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"00:48\")\n    outbound_intercity_found=True\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Children's Museum\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Boyue Hotel Shanghai Air China Hongqiao Airport\" and first_activity_seen: result=True",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Crystal Orange Hotel\", \"Orange Hotel (Chongxi Road Branch, Pudong International Tourism Resort, Shanghai)\", \"Lantian Hotel\"}&accommodation_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Foreigner Street 101\":\n    if activity_start_time(activity)==\"12:07\" and activity_end_time(activity)==\"13:37\": result=True",
+    "attraction_minutes=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_minutes+=activity_time(activity)\nresult=(attraction_minutes>=720)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Jiao Tong University\": first_activity_seen=True\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Boyue Hotel Shanghai Air China Hongqiao Airport\" and first_activity_seen: result=True",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Happy Square Alla Torre Italian Handmade Pizza (Bingu Branch)\":\n    if activity_start_time(activity)==\"11:00\" and activity_end_time(activity)==\"12:00\": result=True",
+    "result_list=[]\nday_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Foreigner Street 101\"}<=day_attraction_name_set)\nresult_list.append(result)\ntotal_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=15.8)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=({\"Western cuisine\"}<=restaurant_type_set)",
+    "free_attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_cost(activity)==0: free_attraction_count+=1\nresult=(free_attraction_count>=6)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit both Liu Haisu Art Museum and Shanghai Children's Museum on day 1. (B) The outbound intercity trip must depart no later than 00:48.",
+    "Visit Shanghai Children's Museum before dining at Boyue Hotel Shanghai Air China Hongqiao Airport.",
+    "Do not include any of these hotels: Crystal Orange Hotel, Orange Hotel (Chongxi Road Branch, Pudong International Tourism Resort, Shanghai), and Lantian Hotel.",
+    "Day 1 must include breakfast, lunch, and dinner.",
+    "Visit Foreigner Street 101 exactly from 12:07 to 13:37.",
+    "Spend at least 720 minutes in total visiting attractions.",
+    "Visit Shanghai Jiao Tong University before staying at Boyue Hotel Shanghai Air China Hongqiao Airport.",
+    "Dine at Happy Square Alla Torre Italian Handmade Pizza (Bingu Branch) exactly from 11:00 to 12:00.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Visit Foreigner Street 101 on day 1. (B) Keep the total walking distance within 15.8 kilometers.",
+    "Include the following restaurant types: Western cuisine.",
+    "Include at least 6 free attractions."
+  ],
+  "nature_language": "We are 3 people traveling from Wuhan to Shanghai for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Satisfy at least one of these two requirements (both are allowed): (A) Visit both Liu Haisu Art Museum and Shanghai Children's Museum on day 1. (B) The outbound intercity trip must depart no later than 00:48.\n5. Visit Shanghai Children's Museum before dining at Boyue Hotel Shanghai Air China Hongqiao Airport.\n6. Do not include any of these hotels: Crystal Orange Hotel, Orange Hotel (Chongxi Road Branch, Pudong International Tourism Resort, Shanghai), and Lantian Hotel.\n7. Day 1 must include breakfast, lunch, and dinner.\n8. Visit Foreigner Street 101 exactly from 12:07 to 13:37.\n9. Spend at least 720 minutes in total visiting attractions.\n10. Visit Shanghai Jiao Tong University before staying at Boyue Hotel Shanghai Air China Hongqiao Airport.\n11. Dine at Happy Square Alla Torre Italian Handmade Pizza (Bingu Branch) exactly from 11:00 to 12:00.\n12. Satisfy at least one of these two requirements (both are allowed): (A) Visit Foreigner Street 101 on day 1. (B) Keep the total walking distance within 15.8 kilometers.\n13. Include the following restaurant types: Western cuisine.\n14. Include at least 6 free attractions.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"either_requirement\",\"cross_category_order\",\"forbidden_accommodation_names\",\"required_meals_on_day\",\"attraction_exact_time\",\"attraction_duration_minimum\",\"cross_category_order\",\"restaurant_exact_time\",\"either_requirement\",\"required_restaurant_types\",\"free_attraction_count_minimum\"]",
+  "official_phase2_evaluation": true
+}

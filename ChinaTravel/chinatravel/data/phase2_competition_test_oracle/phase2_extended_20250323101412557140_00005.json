@@ -1,0 +1,43 @@
+{
+  "uid": "phase2_extended_20250323101412557140_00005",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "seen_first=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Tribute to the Master: Picasso Art Center\": seen_first=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Site of the Second National Congress of the Communist Party of China Memorial Hall\" and seen_first: result=True",
+    "transport_journey_count=0\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))==\"taxi\": transport_journey_count+=1\nresult=(transport_journey_count==9)",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Sichuan cuisine\"}&restaurant_type_set)",
+    "result_list=[]\nday_restaurant_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_restaurant_name_set.add(activity_position(activity))\nresult=({\"SuShi Qingshe Hotel (Hanzhong Road subway station)\"}<=day_restaurant_name_set)\nresult_list.append(result)\nday_meal_type_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\", \"dinner\"}<=day_meal_type_set)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "total_walking_distance=0\nfor activity in allactivities(plan):\n  total_walking_distance+=innercity_transport_distance(activity_transports(activity), 'walk')\nresult=(total_walking_distance<=7.0)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"The Langham, Shanghai Xintiandi · Cachet Restaurant\" and first_activity_seen: result=True",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Chateau Star River Shanghai\"}&accommodation_name_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Sinan Mansions\", \"Site of the Second National Congress of the Communist Party of China Memorial Hall\"}<=day_attraction_name_set)",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park\", \"Rainbow Bridge Libao Plaza\"}<=day_attraction_name_set)",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Oriental Pearl Tower\", \"China Maritime Museum\"}&attraction_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit Tribute to the Master: Picasso Art Center before Site of the Second National Congress of the Communist Party of China Memorial Hall.",
+    "Use taxi as the primary mode for exactly 9 in-city journeys.",
+    "Do not include any of these restaurant types: Sichuan cuisine.",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Dine at SuShi Qingshe Hotel (Hanzhong Road subway station) on day 3. (B) Day 2 must include breakfast, lunch, and dinner.",
+    "Keep the total walking distance within 7 kilometers.",
+    "Visit Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park before dining at The Langham, Shanghai Xintiandi · Cachet Restaurant.",
+    "Do not include any of these hotels: Chateau Star River Shanghai.",
+    "Visit both Sinan Mansions and Site of the Second National Congress of the Communist Party of China Memorial Hall on day 3.",
+    "Day 3 must include breakfast and lunch.",
+    "Visit both Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park and Rainbow Bridge Libao Plaza on day 1.",
+    "Do not include any of these attractions: Oriental Pearl Tower and China Maritime Museum."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit Tribute to the Master: Picasso Art Center before Site of the Second National Congress of the Communist Party of China Memorial Hall.\n5. Use taxi as the primary mode for exactly 9 in-city journeys.\n6. Do not include any of these restaurant types: Sichuan cuisine.\n7. Satisfy at least one of these two requirements (both are allowed): (A) Dine at SuShi Qingshe Hotel (Hanzhong Road subway station) on day 3. (B) Day 2 must include breakfast, lunch, and dinner.\n8. Keep the total walking distance within 7 kilometers.\n9. Visit Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park before dining at The Langham, Shanghai Xintiandi · Cachet Restaurant.\n10. Do not include any of these hotels: Chateau Star River Shanghai.\n11. Visit both Sinan Mansions and Site of the Second National Congress of the Communist Party of China Memorial Hall on day 3.\n12. Day 3 must include breakfast and lunch.\n13. Visit both Dream Back to the Tang Dynasty Immersive Ancient-Style Theme Park and Rainbow Bridge Libao Plaza on day 1.\n14. Do not include any of these attractions: Oriental Pearl Tower and China Maritime Museum.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_order\",\"inner_transport_mode_count\",\"forbidden_restaurant_types\",\"either_requirement\",\"walking_distance_budget\",\"cross_category_order\",\"forbidden_accommodation_names\",\"attraction_pair_on_day\",\"required_meals_on_day\",\"attraction_pair_on_day\",\"forbidden_attraction_names\"]",
+  "official_phase2_evaluation": true
+}

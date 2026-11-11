@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_e20241028160312706595_00013",
+  "tag": "phase2",
+  "start_city": "Chongqing",
+  "target_city": "Suzhou",
+  "days": 1,
+  "people_number": 1,
+  "hard_logic_py": [
+    "result=(day_count(plan)==1)",
+    "result=(people_count(plan)==1)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=1: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=1: result=False",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']:\n    result=(activity_start_time(activity)>=\"10:55\")",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=not({\"Golden Rooster Lake\"}&attraction_name_set)",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Western cuisine\"}&restaurant_type_set)",
+    "inner_city_transportation_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: inner_city_transportation_set.add(innercity_transport_type(activity_transports(activity)))\nresult=not({\"taxi\"}&inner_city_transportation_set)",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"07:58\")\n    outbound_intercity_found=True",
+    "intercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane']: intercity_transport_set.add(intercity_transport_type(activity))\nresult=({\"train\"}<=intercity_transport_set)",
+    "daily_cost=0\nfor activity in dayactivities(plan, 1):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1361)",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Other\"}&attraction_type_set)",
+    "restaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Du San Zhen (Shilu Flagship Store)\"}&restaurant_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 1 day.",
+    "The plan must be for 1 traveler.",
+    "Tickets for attractions, intercity transport, and metro rides must match 1 traveler.",
+    "The return intercity trip must depart no earlier than 10:55.",
+    "Do not include any of these attractions: Golden Rooster Lake.",
+    "Do not include any of these restaurant types: Western cuisine.",
+    "Do not use taxi as the primary mode of any in-city journey throughout the itinerary.",
+    "The outbound intercity trip must depart no later than 07:58.",
+    "The intercity itinerary must include train.",
+    "Keep all activity and transportation costs on day 1 within 1361 CNY.",
+    "Do not include any of these attraction types: Other.",
+    "Do not include any of these restaurants: Du San Zhen (Shilu Flagship Store)."
+  ],
+  "nature_language": "I am traveling from Chongqing to Suzhou for 1 day.\nRequirements:\n1. The trip must last 1 day.\n2. The plan must be for 1 traveler.\n3. Tickets for attractions, intercity transport, and metro rides must match 1 traveler.\n4. The return intercity trip must depart no earlier than 10:55.\n5. Do not include any of these attractions: Golden Rooster Lake.\n6. Do not include any of these restaurant types: Western cuisine.\n7. Do not use taxi as the primary mode of any in-city journey throughout the itinerary.\n8. The outbound intercity trip must depart no later than 07:58.\n9. The intercity itinerary must include train.\n10. Keep all activity and transportation costs on day 1 within 1361 CNY.\n11. Do not include any of these attraction types: Other.\n12. Do not include any of these restaurants: Du San Zhen (Shilu Flagship Store).",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"return_departure_earliest\",\"forbidden_attraction_names\",\"forbidden_restaurant_types\",\"forbidden_inner_transport_modes\",\"outbound_departure_deadline\",\"intercity_modes_include\",\"daily_budget\",\"forbidden_attraction_types\",\"forbidden_restaurant_names\"]",
+  "official_phase2_evaluation": true
+}

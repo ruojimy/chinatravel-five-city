@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250322180946178753_00072",
+  "tag": "phase2",
+  "start_city": "Shenzhen",
+  "target_city": "Shanghai",
+  "days": 3,
+  "people_number": 4,
+  "hard_logic_py": [
+    "result=(day_count(plan)==3)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "day_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Yingdong Village\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Palan Siam Cuisine (University Road Branch)\" and first_activity_seen: result=True",
+    "attraction_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_type_set.add(attraction_type(activity, target_city(plan)))\nresult=not({\"Art museum\", \"Red tourism sites\"}&attraction_type_set)",
+    "innercity_travel_minutes=0\nfor activity in allactivities(plan):\n  innercity_travel_minutes+=innercity_transport_time(activity_transports(activity))\nresult=(innercity_travel_minutes<=709)",
+    "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Chuansha Ancient Town\", \"Pudong Airport Museum\"}<=day_attraction_name_set)",
+    "result=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation' and activity_position(activity)==\"Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station)\":\n    if activity_start_time(activity)==\"19:51\" and activity_end_time(activity)==\"24:00\": result=True",
+    "day_meal_type_set=set()\nfor activity in dayactivities(plan, 3):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: day_meal_type_set.add(activity_type(activity))\nresult=({\"breakfast\", \"lunch\"}<=day_meal_type_set)",
+    "accommodation_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='accommodation': accommodation_name_set.add(activity_position(activity))\nresult=not({\"Boyue Hotel Shanghai Air China Hongqiao Airport\", \"WOW HOTELS\", \"Wassim Hotel (Shanghai Pudong Theme Park)\"}&accommodation_name_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 3 days.",
+    "The plan must be for 4 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 4 travelers.",
+    "Visit exactly 5 attractions on day 1.",
+    "Visit Yingdong Village before dining at Palan Siam Cuisine (University Road Branch).",
+    "Do not include any of these attraction types: Art museum and Red tourism sites.",
+    "Keep the total duration of all in-city transport segments within 709 minutes.",
+    "Whenever taking a taxi, use 1 taxi.",
+    "Visit both Chuansha Ancient Town and Pudong Airport Museum on day 2.",
+    "Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 19:51 to 24:00.",
+    "Day 3 must include breakfast and lunch.",
+    "Do not include any of these hotels: Boyue Hotel Shanghai Air China Hongqiao Airport, WOW HOTELS, and Wassim Hotel (Shanghai Pudong Theme Park)."
+  ],
+  "nature_language": "We are 4 people traveling from Shenzhen to Shanghai for 3 days.\nRequirements:\n1. The trip must last 3 days.\n2. The plan must be for 4 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 4 travelers.\n4. Visit exactly 5 attractions on day 1.\n5. Visit Yingdong Village before dining at Palan Siam Cuisine (University Road Branch).\n6. Do not include any of these attraction types: Art museum and Red tourism sites.\n7. Keep the total duration of all in-city transport segments within 709 minutes.\n8. Whenever taking a taxi, use 1 taxi.\n9. Visit both Chuansha Ancient Town and Pudong Airport Museum on day 2.\n10. Stay at Jiahong Hotel (Shanghai Pudong Airport, Chuansha Metro Station) exactly from 19:51 to 24:00.\n11. Day 3 must include breakfast and lunch.\n12. Do not include any of these hotels: Boyue Hotel Shanghai Air China Hongqiao Airport, WOW HOTELS, and Wassim Hotel (Shanghai Pudong Theme Park).",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"attraction_count_on_day\",\"cross_category_order\",\"forbidden_attraction_types\",\"innercity_travel_time_budget\",\"taxi_cars\",\"attraction_pair_on_day\",\"accommodation_exact_time\",\"required_meals_on_day\",\"forbidden_accommodation_names\"]",
+  "official_phase2_evaluation": true
+}

@@ -1,0 +1,39 @@
+{
+  "uid": "phase2_extended_20250322212110159665_00016",
+  "tag": "phase2",
+  "start_city": "Wuhan",
+  "target_city": "Shanghai",
+  "days": 4,
+  "people_number": 3,
+  "hard_logic_py": [
+    "result=(day_count(plan)==4)",
+    "result=(people_count(plan)==3)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=3: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=3: result=False",
+    "attraction_count=0\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_count+=1\nresult=(attraction_count==10)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Jin Mao Tower Cloud Walk\": first_activity_seen=True\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"Palan Siam Cuisine (University Road Branch)\" and first_activity_seen: result=True",
+    "result_list=[]\nrestaurant_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_name_set.add(activity_position(activity))\nresult=not({\"Renhe Hall (Zhaojiabang Road Branch)\", \"Mercato by Jean-Georges Italian Restaurant\", \"Shanghai Peace Hotel Dragon and Phoenix Hall\"}&restaurant_name_set)\nresult_list.append(result)\nday_attraction_count=0\nfor activity in dayactivities(plan, 1):\n  if activity_type(activity)=='attraction': day_attraction_count+=1\nresult=(day_attraction_count==5)\nresult_list.append(result)\nresult=False\nfor r in result_list:\n  result=result or r",
+    "attraction_name_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity)=='attraction': attraction_name_set.add(activity_position(activity))\nresult=({\"City Sightseeing Bus\"}<=attraction_name_set)",
+    "first_activity_seen=False\nresult=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner'] and activity_position(activity)==\"HOMES Banquet (Binjiang Avenue Branch)\": first_activity_seen=True\n  if activity_type(activity)=='attraction' and activity_position(activity)==\"Shanghai Comics Museum\" and first_activity_seen: result=True",
+    "daily_cost=0\nfor activity in dayactivities(plan, 3):\n  daily_cost+=activity_cost(activity)\n  daily_cost+=innercity_transport_cost(activity_transports(activity))\nresult=(daily_cost<=1159)",
+    "day_attraction_name_set=set()\nfor activity in dayactivities(plan, 2):\n  if activity_type(activity)=='attraction': day_attraction_name_set.add(activity_position(activity))\nresult=({\"Shanghai Comics Museum\", \"Chuansha Ancient Town\"}<=day_attraction_name_set)",
+    "result=False\noutbound_intercity_found=False\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['train', 'airplane'] and not outbound_intercity_found:\n    result=(activity_start_time(activity)<=\"00:48\")\n    outbound_intercity_found=True",
+    "restaurant_type_set=set()\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['breakfast', 'lunch', 'dinner']: restaurant_type_set.add(restaurant_type(activity, target_city(plan)))\nresult=not({\"Creative Cuisine\"}&restaurant_type_set)"
+  ],
+  "hard_logic_nl": [
+    "The trip must last 4 days.",
+    "The plan must be for 3 travelers.",
+    "Tickets for attractions, intercity transport, and metro rides must match 3 travelers.",
+    "Visit exactly 10 attractions during the trip.",
+    "Visit Jin Mao Tower Cloud Walk before dining at Palan Siam Cuisine (University Road Branch).",
+    "Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurants: Renhe Hall (Zhaojiabang Road Branch), Mercato by Jean-Georges Italian Restaurant, and Shanghai Peace Hotel Dragon and Phoenix Hall. (B) Visit exactly 5 attractions on day 1.",
+    "Visit the following attractions: City Sightseeing Bus.",
+    "Dine at HOMES Banquet (Binjiang Avenue Branch) before visiting Shanghai Comics Museum.",
+    "Keep all activity and transportation costs on day 3 within 1159 CNY.",
+    "Visit both Shanghai Comics Museum and Chuansha Ancient Town on day 2.",
+    "The outbound intercity trip must depart no later than 00:48.",
+    "Do not include any of these restaurant types: Creative Cuisine."
+  ],
+  "nature_language": "We are 3 people traveling from Wuhan to Shanghai for 4 days.\nRequirements:\n1. The trip must last 4 days.\n2. The plan must be for 3 travelers.\n3. Tickets for attractions, intercity transport, and metro rides must match 3 travelers.\n4. Visit exactly 10 attractions during the trip.\n5. Visit Jin Mao Tower Cloud Walk before dining at Palan Siam Cuisine (University Road Branch).\n6. Satisfy at least one of these two requirements (both are allowed): (A) Do not include any of these restaurants: Renhe Hall (Zhaojiabang Road Branch), Mercato by Jean-Georges Italian Restaurant, and Shanghai Peace Hotel Dragon and Phoenix Hall. (B) Visit exactly 5 attractions on day 1.\n7. Visit the following attractions: City Sightseeing Bus.\n8. Dine at HOMES Banquet (Binjiang Avenue Branch) before visiting Shanghai Comics Museum.\n9. Keep all activity and transportation costs on day 3 within 1159 CNY.\n10. Visit both Shanghai Comics Museum and Chuansha Ancient Town on day 2.\n11. The outbound intercity trip must depart no later than 00:48.\n12. Do not include any of these restaurant types: Creative Cuisine.",
+  "constraint_keys": "[\"trip_days\",\"people_number\",\"tickets_match_people\",\"total_attraction_count\",\"cross_category_order\",\"either_requirement\",\"required_attraction_names\",\"cross_category_order\",\"daily_budget\",\"attraction_pair_on_day\",\"outbound_departure_deadline\",\"forbidden_restaurant_types\"]",
+  "official_phase2_evaluation": true
+}
