@@ -15,7 +15,7 @@ data/catalog_v1_1_20261022/catalog.sqlite3
 # model / binaries
 *.gguf
 shorttrip-local/
-shorttrip-runs/
+/shorttrip-runs/
 
 # runtime artifacts
 results/runs/

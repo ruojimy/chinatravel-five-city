@@ -1,0 +1,2948 @@
+{
+ "generated_at": "2026-11-11T15:12:55",
+ "cities": [
+  {
+   "city": "北京",
+   "slug": "beijing",
+   "attractions": {
+    "total": 335,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 401,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 470,
+    "missing": 0
+   }
+  },
+  {
+   "city": "上海",
+   "slug": "shanghai",
+   "attractions": {
+    "total": 360,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 403,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 484,
+    "missing": 0
+   }
+  },
+  {
+   "city": "南京",
+   "slug": "nanjing",
+   "attractions": {
+    "total": 323,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 373,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 468,
+    "missing": 0
+   }
+  },
+  {
+   "city": "苏州",
+   "slug": "suzhou",
+   "attractions": {
+    "total": 359,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 293,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 469,
+    "missing": 0
+   }
+  },
+  {
+   "city": "杭州",
+   "slug": "hangzhou",
+   "attractions": {
+    "total": 377,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 378,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 458,
+    "missing": 0
+   }
+  },
+  {
+   "city": "深圳",
+   "slug": "shenzhen",
+   "attractions": {
+    "total": 306,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 498,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 478,
+    "missing": 0
+   }
+  },
+  {
+   "city": "成都",
+   "slug": "chengdu",
+   "attractions": {
+    "total": 333,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 379,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 467,
+    "missing": 0
+   }
+  },
+  {
+   "city": "武汉",
+   "slug": "wuhan",
+   "attractions": {
+    "total": 334,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 368,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 457,
+    "missing": 0
+   }
+  },
+  {
+   "city": "广州",
+   "slug": "guangzhou",
+   "attractions": {
+    "total": 339,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 400,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 467,
+    "missing": 0
+   }
+  },
+  {
+   "city": "重庆",
+   "slug": "chongqing",
+   "attractions": {
+    "total": 347,
+    "missing": 0
+   },
+   "hotels": {
+    "total": 373,
+    "missing": 0
+   },
+   "restaurants": {
+    "total": 437,
+    "missing": 0
+   }
+  },
+  {
+   "city": "西安",
+   "slug": "xian",
+   "attractions": {
+    "total": 591,
+    "missing": 523
+   },
+   "hotels": {
+    "total": 706,
+    "missing": 691
+   },
+   "restaurants": {
+    "total": 486,
+    "missing": 463
+   }
+  }
+ ],
+ "xian_attraction_detail": {
+  "total": 591,
+  "missing": 523,
+  "family_naming": [
+   {
+    "name": "西安城墙-魁星楼",
+    "nearest": "西安城墙文昌门售票处",
+    "nearest_m": 30,
+    "family": "西安城墙 Xi'an City Wall"
+   },
+   {
+    "name": "西安城墙-42号敌楼",
+    "nearest": "西安城墙-女墙",
+    "nearest_m": 63,
+    "family": "西安城墙 Xi'an City Wall"
+   },
+   {
+    "name": "大唐西市-丝路广场",
+    "nearest": "大唐西市博物馆",
+    "nearest_m": 63,
+    "family": "大唐西市"
+   },
+   {
+    "name": "西安城墙-瓮城甜水井",
+    "nearest": "西安城墙-西门瓮城",
+    "nearest_m": 13,
+    "family": "西安城墙 Xi'an City Wall"
+   },
+   {
+    "name": "西安城墙-41号敌楼",
+    "nearest": "西安城墙-安定门南洞",
+    "nearest_m": 46,
+    "family": "西安城墙 Xi'an City Wall"
+   },
+   {
+    "name": "大雁塔广场管理处",
+    "nearest": "大雁塔北广场南停车场",
+    "nearest_m": 106,
+    "family": "大雁塔"
+   },
+   {
+    "name": "大兴善寺-观音洞",
+    "nearest": "捎钟楼撕",
+    "nearest_m": 139,
+    "family": "大兴善寺"
+   },
+   {
+    "name": "曲江池遗址公园-插座护法石狮",
+    "nearest": "曲江池遗址公园-曲江亭",
+    "nearest_m": 47,
+    "family": "曲江池遗址公园"
+   },
+   {
+    "name": "大唐芙蓉园-玉亭",
+    "nearest": "大唐芙蓉园-无双传",
+    "nearest_m": 41,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大兴善寺-天王殿",
+    "nearest": "捎钟楼撕",
+    "nearest_m": 44,
+    "family": "大兴善寺"
+   },
+   {
+    "name": "大明宫国家遗址公园-中书省政事堂",
+    "nearest": "日落大明宫三",
+    "nearest_m": 196,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "大明宫国家遗址公园-丹凤迎宾",
+    "nearest": "大明宫国家遗址公园-御道遗址",
+    "nearest_m": 132,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "南新街礼拜堂",
+    "nearest": "悦榕·栖居酒店(西安回民街钟楼地铁站店)",
+    "nearest_m": 161,
+    "family": "南新街"
+   },
+   {
+    "name": "大唐芙蓉园-大唐疆域图",
+    "nearest": "大唐芙蓉园-元功门",
+    "nearest_m": 36,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大明宫国家遗址公园-历代帝王图",
+    "nearest": "大明宫国家遗址公园-采莲图",
+    "nearest_m": 285,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "大明宫国家遗址公园-银汉门遗址",
+    "nearest": "大明宫遗址·银汉门内道路遗址标识",
+    "nearest_m": 228,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "大明宫国家遗址公园-栖霞山",
+    "nearest": "大明宫国家遗址公园-紫兰殿",
+    "nearest_m": 173,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "大明宫国家遗址公园-太液池",
+    "nearest": "大明宫景区游艇",
+    "nearest_m": 22,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "大明宫国家遗址公园-右银台门广场",
+    "nearest": "大明宫国家遗址公园-打马球",
+    "nearest_m": 44,
+    "family": "大明宫国家遗址公园"
+   },
+   {
+    "name": "西安市基督教北堂",
+    "nearest": "西安市未央区住房和城市建设局",
+    "nearest_m": 66,
+    "family": "西安市"
+   },
+   {
+    "name": "灞河西观光台",
+    "nearest": "灞河2号桥",
+    "nearest_m": 1219,
+    "family": "灞河"
+   },
+   {
+    "name": "秦始皇帝陵博物院丽山园",
+    "nearest": "秦始皇兵马俑",
+    "nearest_m": 1746,
+    "family": "秦始皇帝陵博物院"
+   },
+   {
+    "name": "灞桥生态湿地公园",
+    "nearest": "灞桥区拾光农场",
+    "nearest_m": 528,
+    "family": "灞桥"
+   },
+   {
+    "name": "西安市纺织公园",
+    "nearest": "西安市灞桥区中医医院",
+    "nearest_m": 801,
+    "family": "西安市"
+   },
+   {
+    "name": "灞桥生态湿地公园北区",
+    "nearest": "灞桥收费站(S3011绕城高速联络线东北向)",
+    "nearest_m": 1481,
+    "family": "灞桥"
+   },
+   {
+    "name": "临潼区瓜达卢佩天主堂",
+    "nearest": "临潼区卫生健康局",
+    "nearest_m": 294,
+    "family": "临潼区"
+   },
+   {
+    "name": "华清宫-海棠汤",
+    "nearest": "华清宫",
+    "nearest_m": 100,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-杨妃池",
+    "nearest": "华清宫",
+    "nearest_m": 142,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-老母殿",
+    "nearest": "华清宫-鼓楼",
+    "nearest_m": 254,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-贵妃出浴",
+    "nearest": "华清宫",
+    "nearest_m": 104,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-环园",
+    "nearest": "华清宫",
+    "nearest_m": 138,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-兵谏亭",
+    "nearest": "华清宫",
+    "nearest_m": 464,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-飞霜殿",
+    "nearest": "华清宫",
+    "nearest_m": 60,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-朝元阁",
+    "nearest": "华清宫-鼓楼",
+    "nearest_m": 223,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-玉女湖",
+    "nearest": "华清宫-钟楼",
+    "nearest_m": 108,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-九曲回廊",
+    "nearest": "华清宫",
+    "nearest_m": 39,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-牡丹桥",
+    "nearest": "华清宫-钟楼",
+    "nearest_m": 460,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-三霄殿",
+    "nearest": "华清宫-鼓楼",
+    "nearest_m": 228,
+    "family": "华清宫"
+   },
+   {
+    "name": "华清宫-香凝池",
+    "nearest": "华清宫",
+    "nearest_m": 121,
+    "family": "华清宫"
+   },
+   {
+    "name": "高陵区鹿祥公园",
+    "nearest": "高陵区教育局",
+    "nearest_m": 507,
+    "family": "高陵区"
+   },
+   {
+    "name": "西安市蓝田县天鹅湖广场",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 2982,
+    "family": "西安市"
+   },
+   {
+    "name": "西安市蓝田县电力广场",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 1366,
+    "family": "西安市"
+   },
+   {
+    "name": "大唐芙蓉园-曲江胡店浮雕柱",
+    "nearest": "大唐芙蓉园-人面桃花",
+    "nearest_m": 74,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大雁塔有凤来仪汉服馆",
+    "nearest": "大雁塔文化休闲景区-慈恩祖庭",
+    "nearest_m": 69,
+    "family": "大雁塔"
+   },
+   {
+    "name": "大唐芙蓉园-仕女馆",
+    "nearest": "大唐芙蓉园-望春阁",
+    "nearest_m": 25,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-经幢",
+    "nearest": "大唐芙蓉园-茱萸台",
+    "nearest_m": 45,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-彩霞亭",
+    "nearest": "大唐芙蓉园-观景台",
+    "nearest_m": 17,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-观音壁浮雕",
+    "nearest": "大唐芙蓉园-意愿圆满之路",
+    "nearest_m": 18,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-彩虹长廊",
+    "nearest": "大唐芙蓉园-无双传",
+    "nearest_m": 32,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-百月龙泳",
+    "nearest": "大唐芙蓉园-芳林绿堤",
+    "nearest_m": 24,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-曲江流饮",
+    "nearest": "大唐芙蓉园-凤凰池",
+    "nearest_m": 85,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-诗魂",
+    "nearest": "大唐芙蓉园-汉武泉",
+    "nearest_m": 73,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-排云柱",
+    "nearest": "大唐芙蓉园-紫云楼",
+    "nearest_m": 29,
+    "family": "大唐芙蓉园(公交站)"
+   },
+   {
+    "name": "大唐芙蓉园-北斗魁星·独占鳌头",
+    "nearest": "大唐芙蓉园-破天荒的由来",
+    "nearest_m": 4,
+    "family": "大唐芙蓉园(公交站)"
+   }
+  ],
+  "near_50m": [
+   {
+    "name": "重修荐福寺记碑(东)",
+    "nearest": "西安博物院主题邮局",
+    "nearest_m": 49
+   },
+   {
+    "name": "文昌门堂",
+    "nearest": "西安市碑林区人民检察院",
+    "nearest_m": 28
+   },
+   {
+    "name": "城墙公园",
+    "nearest": "西安城墙-16号敌楼",
+    "nearest_m": 42
+   },
+   {
+    "name": "孔庙",
+    "nearest": "西安碑林博物馆-太和元气坊",
+    "nearest_m": 9
+   },
+   {
+    "name": "敕赐荐禅寺重修记碑",
+    "nearest": "雁塔晨钟",
+    "nearest_m": 40
+   },
+   {
+    "name": "高家大院",
+    "nearest": "井观民宿(西安回民街钟楼地铁站店)",
+    "nearest_m": 34
+   },
+   {
+    "name": "都城隍庙-财神殿",
+    "nearest": "西安鼓乐博物馆",
+    "nearest_m": 24
+   },
+   {
+    "name": "高家大院-榜眼府",
+    "nearest": "井观民宿(西安回民街钟楼地铁站店)",
+    "nearest_m": 37
+   },
+   {
+    "name": "清真新寺",
+    "nearest": "西安西蓝岛客栈(钟楼回民街店)",
+    "nearest_m": 41
+   },
+   {
+    "name": "都城隍庙",
+    "nearest": "西安鼓乐博物馆",
+    "nearest_m": 9
+   },
+   {
+    "name": "文武盛地",
+    "nearest": "鼓楼(站牌)(公交站)",
+    "nearest_m": 11
+   },
+   {
+    "name": "都城隍庙-文昌阁",
+    "nearest": "西安鼓乐博物馆",
+    "nearest_m": 21
+   },
+   {
+    "name": "玄奘纪念馆",
+    "nearest": "大雁塔文化休闲景区-玄奘三藏院",
+    "nearest_m": 46
+   },
+   {
+    "name": "重阳广场",
+    "nearest": "曲江池北路南侧停车场",
+    "nearest_m": 49
+   },
+   {
+    "name": "牡丹亭",
+    "nearest": "大雁塔文化休闲景区-公孙飞剑",
+    "nearest_m": 48
+   },
+   {
+    "name": "陕西广播电视塔",
+    "nearest": "陕西自然博物馆",
+    "nearest_m": 16
+   },
+   {
+    "name": "雁塔故事",
+    "nearest": "可口可乐加乐站(大唐不夜城店)",
+    "nearest_m": 29
+   },
+   {
+    "name": "贞观广场",
+    "nearest": "大唐美食城(大唐不夜城店)",
+    "nearest_m": 31
+   },
+   {
+    "name": "中国唐苑广场",
+    "nearest": "东新街",
+    "nearest_m": 42
+   },
+   {
+    "name": "明秦王府城墙遗址",
+    "nearest": "新城区新城广场明城墙停车场",
+    "nearest_m": 32
+   },
+   {
+    "name": "汉长安城未央宫国家考古遗址公园",
+    "nearest": "汉长安城未央宫遗址公园",
+    "nearest_m": 31
+   },
+   {
+    "name": "半坡遗址-祭祀遗迹",
+    "nearest": "西安半坡博物馆售票处",
+    "nearest_m": 18
+   },
+   {
+    "name": "半坡遗址",
+    "nearest": "西安半坡博物馆",
+    "nearest_m": 9
+   },
+   {
+    "name": "秦兵马俑壹号坑大厅",
+    "nearest": "秦始皇兵马俑",
+    "nearest_m": 27
+   },
+   {
+    "name": "明圣宫",
+    "nearest": "华清宫-鼓楼",
+    "nearest_m": 22
+   },
+   {
+    "name": "南岸观景平台",
+    "nearest": "石川河阎良风景区",
+    "nearest_m": 26
+   },
+   {
+    "name": "茶叙牡丹亭(大唐不夜城店)",
+    "nearest": "富平张老八琼锅糖(总店大唐不夜城)",
+    "nearest_m": 47
+   },
+   {
+    "name": "药谷奇遇记·草本奶茶(大唐不夜城店)",
+    "nearest": "西安博物院文创店(银泰店)",
+    "nearest_m": 29
+   },
+   {
+    "name": "杏园",
+    "nearest": "大唐芙蓉园-春色满园",
+    "nearest_m": 16
+   },
+   {
+    "name": "凌烟阁二十四功臣像",
+    "nearest": "大唐芙蓉园-元功门",
+    "nearest_m": 21
+   }
+  ],
+  "absent": [
+   {
+    "name": "西安事变纪念馆张学良公馆",
+    "nearest": "西安市碑林区司法局",
+    "nearest_m": 201
+   },
+   {
+    "name": "德福门",
+    "nearest": "钟楼小奶糕(德福巷店)",
+    "nearest_m": 108
+   },
+   {
+    "name": "卧龙禅寺",
+    "nearest": "如意快捷酒店(西安碑林博物馆店)(暂停营业)",
+    "nearest_m": 70
+   },
+   {
+    "name": "基督教东新巷礼拜堂",
+    "nearest": "西安市碑林区永宁小学",
+    "nearest_m": 321
+   },
+   {
+    "name": "西安交通大学兴庆校区腾飞塔",
+    "nearest": "漫猫咖啡(兴庆宫公园店)",
+    "nearest_m": 306
+   },
+   {
+    "name": "宝庆寺塔",
+    "nearest": "西安钟楼永宁门桔子水晶酒店",
+    "nearest_m": 67
+   },
+   {
+    "name": "粉巷",
+    "nearest": "南方酒店(回民街分店)",
+    "nearest_m": 64
+   },
+   {
+    "name": "湘子庙",
+    "nearest": "西安城墙鼓楼",
+    "nearest_m": 119
+   },
+   {
+    "name": "罔极寺",
+    "nearest": "西安市碑林区劳动保障监察大队",
+    "nearest_m": 151
+   },
+   {
+    "name": "永宁西苑",
+    "nearest": "西安城墙鼓楼",
+    "nearest_m": 65
+   },
+   {
+    "name": "长乐公园",
+    "nearest": "西安市新城区人民检察院",
+    "nearest_m": 541
+   },
+   {
+    "name": "永宁园",
+    "nearest": "清莲巷",
+    "nearest_m": 277
+   },
+   {
+    "name": "西安交通大学兴庆校区东花园",
+    "nearest": "漫猫咖啡(兴庆宫公园店)",
+    "nearest_m": 313
+   },
+   {
+    "name": "环城公园(文艺北路)",
+    "nearest": "青铜馆",
+    "nearest_m": 51
+   },
+   {
+    "name": "东门里小广场",
+    "nearest": "西安市碑林区司法局",
+    "nearest_m": 115
+   },
+   {
+    "name": "西北大学太白校区实际寺纪念亭碑",
+    "nearest": "西安城墙-25号敌楼",
+    "nearest_m": 521
+   },
+   {
+    "name": "香香王宫(西安店)",
+    "nearest": "西安小雁塔桔子水晶酒店",
+    "nearest_m": 119
+   },
+   {
+    "name": "长安花谷",
+    "nearest": "艺龙万国酒店(西安钟楼博物院永宁门地铁店)",
+    "nearest_m": 333
+   },
+   {
+    "name": "西安市碑林区基督教大学东路教堂",
+    "nearest": "书院门",
+    "nearest_m": 164
+   },
+   {
+    "name": "月亮桥",
+    "nearest": "西安市莲湖区财政局",
+    "nearest_m": 119
+   },
+   {
+    "name": "西钞广场",
+    "nearest": "西安市莲湖区公共卫生服务中心",
+    "nearest_m": 933
+   },
+   {
+    "name": "日本飞机轰炸西安遗址",
+    "nearest": "西安西蓝岛客栈(钟楼回民街店)",
+    "nearest_m": 131
+   },
+   {
+    "name": "安定文化广场",
+    "nearest": "西安城墙-女墙",
+    "nearest_m": 69
+   },
+   {
+    "name": "西安牡丹苑",
+    "nearest": "莲湖区桃园路街道党群服务中心",
+    "nearest_m": 553
+   },
+   {
+    "name": "清真西寺",
+    "nearest": "轻住·荔枝雅筑酒店(西安钟鼓楼回民街店)",
+    "nearest_m": 197
+   },
+   {
+    "name": "北院门",
+    "nearest": "莲湖区城市游客服务中心",
+    "nearest_m": 74
+   },
+   {
+    "name": "大兴西路基督教礼拜堂",
+    "nearest": "西安市莲湖区双府小区",
+    "nearest_m": 889
+   },
+   {
+    "name": "无极公园",
+    "nearest": "西安城墙-25号敌楼",
+    "nearest_m": 90
+   },
+   {
+    "name": "安定园",
+    "nearest": "西安城墙-女墙",
+    "nearest_m": 525
+   },
+   {
+    "name": "丰庆公园",
+    "nearest": "标记粤菜馆",
+    "nearest_m": 571
+   },
+   {
+    "name": "金市广场",
+    "nearest": "莲湖区党校停车场",
+    "nearest_m": 153
+   },
+   {
+    "name": "西安环城公园(顺城北路西段)",
+    "nearest": "西安城墙西北城角售票处",
+    "nearest_m": 238
+   },
+   {
+    "name": "天主教西安总教区五星街圣方济各主教座堂南堂",
+    "nearest": "西安市莲湖区人民医院",
+    "nearest_m": 96
+   },
+   {
+    "name": "环城西苑公园",
+    "nearest": "西安城墙-滚木",
+    "nearest_m": 490
+   },
+   {
+    "name": "丝绸之路群雕",
+    "nearest": "莲湖区人民政府政务服务中心",
+    "nearest_m": 679
+   },
+   {
+    "name": "天主教西安教区圣安多尼堂",
+    "nearest": "西安市莲湖区公共卫生服务中心",
+    "nearest_m": 338
+   },
+   {
+    "name": "土门小树林公园",
+    "nearest": "西安市莲湖区庆安小学",
+    "nearest_m": 552
+   },
+   {
+    "name": "丝绸之路起点",
+    "nearest": "莲湖税务小区东区",
+    "nearest_m": 644
+   },
+   {
+    "name": "西安市莲湖区土门基督教礼拜堂",
+    "nearest": "西安市莲湖区公共卫生服务中心",
+    "nearest_m": 339
+   },
+   {
+    "name": "鑫苑体育运动公园",
+    "nearest": "雅逸新城2期",
+    "nearest_m": 1119
+   },
+   {
+    "name": "西安市小学习巷清真营里寺",
+    "nearest": "西安市莲湖区人民法院执行工作局",
+    "nearest_m": 82
+   },
+   {
+    "name": "莱安逸境下沉广场",
+    "nearest": "标记粤菜馆",
+    "nearest_m": 385
+   },
+   {
+    "name": "清真寺",
+    "nearest": "轻住·荔枝简筑酒店(西安回民街钟楼地铁站店)",
+    "nearest_m": 112
+   },
+   {
+    "name": "天主教西安总教区糖坊街天主堂北堂",
+    "nearest": "西安城墙-北门城楼遗址",
+    "nearest_m": 391
+   },
+   {
+    "name": "天朗城市公园",
+    "nearest": "莲湖税务小区东区",
+    "nearest_m": 441
+   },
+   {
+    "name": "开元殿",
+    "nearest": "标记粤菜馆",
+    "nearest_m": 548
+   },
+   {
+    "name": "VR主题公园(万锦城购物中心店)",
+    "nearest": "西安市莲湖区公共卫生服务中心",
+    "nearest_m": 816
+   },
+   {
+    "name": "唐秘书省遗址",
+    "nearest": "行云酒店(西安钟楼回民街店)",
+    "nearest_m": 75
+   },
+   {
+    "name": "大寨路广场",
+    "nearest": "标记粤菜馆",
+    "nearest_m": 506
+   },
+   {
+    "name": "曲江海洋极地公园海洋馆",
+    "nearest": "大唐芙蓉园-无双传",
+    "nearest_m": 347
+   },
+   {
+    "name": "木塔寺公园2期",
+    "nearest": "高新望云松间南区",
+    "nearest_m": 301
+   },
+   {
+    "name": "曲江秦二世陵遗址公园",
+    "nearest": "曲江池遗址公园路边停车场",
+    "nearest_m": 345
+   },
+   {
+    "name": "汉宣帝杜陵",
+    "nearest": "曲江池饮食街",
+    "nearest_m": 3592
+   },
+   {
+    "name": "西安植物园",
+    "nearest": "西安市雁塔区第三小学",
+    "nearest_m": 2144
+   },
+   {
+    "name": "雁鸣湖休闲公园",
+    "nearest": "灞桥区职业教育中心",
+    "nearest_m": 1748
+   },
+   {
+    "name": "如来佛",
+    "nearest": "大雁塔北广场南停车场(入口)",
+    "nearest_m": 166
+   },
+   {
+    "name": "秦二世皇帝陵",
+    "nearest": "曲江池西村",
+    "nearest_m": 329
+   },
+   {
+    "name": "中国唐苑",
+    "nearest": "西安东站",
+    "nearest_m": 3097
+   },
+   {
+    "name": "曲江寒窑遗址公园",
+    "nearest": "西安W酒店",
+    "nearest_m": 336
+   },
+   {
+    "name": "曲江青年公园",
+    "nearest": "曲江池北路东口(公交站)",
+    "nearest_m": 608
+   },
+   {
+    "name": "观景台(唐宗隆酒店西南)",
+    "nearest": "大雁塔文化休闲景区",
+    "nearest_m": 56
+   },
+   {
+    "name": "汉宣帝王皇后陵墓",
+    "nearest": "曲江池饮食街",
+    "nearest_m": 4106
+   },
+   {
+    "name": "大汉上林苑(杜陵)文化生态景区",
+    "nearest": "曲江池饮食街",
+    "nearest_m": 3386
+   },
+   {
+    "name": "曲江轻轨-寒窑站",
+    "nearest": "曲江池与老白龙的传说",
+    "nearest_m": 171
+   },
+   {
+    "name": "杜陵73号陪葬墓",
+    "nearest": "曲江池北路东口(公交站)",
+    "nearest_m": 2547
+   },
+   {
+    "name": "青华宫",
+    "nearest": "曲江池饮食街",
+    "nearest_m": 542
+   },
+   {
+    "name": "隋大兴唐长安城明德门遗址公园",
+    "nearest": "大唐不夜城酒店",
+    "nearest_m": 304
+   },
+   {
+    "name": "延平门广场",
+    "nearest": "西安高新区综合服务大厅唐延路服务站",
+    "nearest_m": 1030
+   },
+   {
+    "name": "清流湖",
+    "nearest": "大唐不夜城北广场",
+    "nearest_m": 66
+   },
+   {
+    "name": "圜丘遗址",
+    "nearest": "陕西自然博物馆售票处",
+    "nearest_m": 487
+   },
+   {
+    "name": "唐城墙遗址公园3区-唐诗迷宫",
+    "nearest": "曲江池遗址公园中和广场",
+    "nearest_m": 157
+   },
+   {
+    "name": "玄奘建塔",
+    "nearest": "彩丰楼（西安唐华华邑酒店）",
+    "nearest_m": 186
+   },
+   {
+    "name": "开元广场",
+    "nearest": "西安博物院文创店(银泰店)",
+    "nearest_m": 155
+   },
+   {
+    "name": "永阳公园",
+    "nearest": "西安高新区综合服务大厅",
+    "nearest_m": 254
+   },
+   {
+    "name": "西安人才公园",
+    "nearest": "西安高新区人才驿站",
+    "nearest_m": 155
+   },
+   {
+    "name": "唐城墙遗址公园9区",
+    "nearest": "绿能一号西安站",
+    "nearest_m": 280
+   },
+   {
+    "name": "金辉运动公园",
+    "nearest": "雁塔收费站(G3002西安绕城高速出口南三环方向)",
+    "nearest_m": 238
+   },
+   {
+    "name": "沣东·沣河生态景区",
+    "nearest": "张村希望小学",
+    "nearest_m": 5111
+   },
+   {
+    "name": "东城清真寺",
+    "nearest": "西安永兴坊环城东路亚朵酒店",
+    "nearest_m": 416
+   },
+   {
+    "name": "菩提寺",
+    "nearest": "西安交通大学(创新港校区)博物馆",
+    "nearest_m": 5607
+   },
+   {
+    "name": "生产路基督教堂",
+    "nearest": "陕西西安大明宫",
+    "nearest_m": 360
+   },
+   {
+    "name": "昆明池·七夕公园",
+    "nearest": "张村希望小学",
+    "nearest_m": 2429
+   },
+   {
+    "name": "魁星楼遗址",
+    "nearest": "沣东新城沣科花园A区",
+    "nearest_m": 4108
+   },
+   {
+    "name": "光顺门遗址",
+    "nearest": "日落大明宫三",
+    "nearest_m": 132
+   },
+   {
+    "name": "石婆庙",
+    "nearest": "雁塔区档案馆",
+    "nearest_m": 4306
+   },
+   {
+    "name": "考古探索中心·大明宫书院",
+    "nearest": "大明宫国家遗址公园-栖凤阁遗址",
+    "nearest_m": 246
+   },
+   {
+    "name": "体育运动公园",
+    "nearest": "泾渭新城出口(G6522延西高速东南向)",
+    "nearest_m": 1463
+   },
+   {
+    "name": "革命公园",
+    "nearest": "西安市新城区城市管理和综合执法局",
+    "nearest_m": 497
+   },
+   {
+    "name": "花园综合广场",
+    "nearest": "汉长安城未央宫遗址公园",
+    "nearest_m": 1783
+   },
+   {
+    "name": "汉城湖旅游风景区-汉城湖安门广场",
+    "nearest": "兴庆宫公园-湖心岛",
+    "nearest_m": 1110
+   },
+   {
+    "name": "汉城湖旅游风景区-安门码头",
+    "nearest": "兴庆宫公园-湖心岛",
+    "nearest_m": 1301
+   },
+   {
+    "name": "金水桥",
+    "nearest": "大明宫遗址·龙首支渠遗址标识",
+    "nearest_m": 127
+   },
+   {
+    "name": "东元公园",
+    "nearest": "西安市新城区人民法院",
+    "nearest_m": 967
+   },
+   {
+    "name": "长安归元寺",
+    "nearest": "沣东新城沣科花园A区",
+    "nearest_m": 981
+   },
+   {
+    "name": "沣东城市广场",
+    "nearest": "沣东新城沣科花园A区",
+    "nearest_m": 1346
+   },
+   {
+    "name": "红光公园",
+    "nearest": "莲湖区养老服务",
+    "nearest_m": 2333
+   },
+   {
+    "name": "雍光门",
+    "nearest": "西安市未央区建章路街道石化社区",
+    "nearest_m": 1657
+   },
+   {
+    "name": "沙河滩龙王庙",
+    "nearest": "西安市未央区建章路街道石化社区",
+    "nearest_m": 4429
+   },
+   {
+    "name": "沣东文化广场",
+    "nearest": "雁塔区档案馆",
+    "nearest_m": 2407
+   },
+   {
+    "name": "革命亭",
+    "nearest": "西安市新城区城市管理和综合执法局",
+    "nearest_m": 437
+   },
+   {
+    "name": "新嘉园广场",
+    "nearest": "雁塔区档案馆",
+    "nearest_m": 2112
+   },
+   {
+    "name": "健身广场",
+    "nearest": "灞桥区十里铺安居小区",
+    "nearest_m": 495
+   },
+   {
+    "name": "龙泉寺",
+    "nearest": "沣东新城沣科花园A区",
+    "nearest_m": 3714
+   },
+   {
+    "name": "望仙门遗址",
+    "nearest": "大明宫国家遗址公园游客服务中心",
+    "nearest_m": 244
+   },
+   {
+    "name": "镐京观",
+    "nearest": "雁塔区档案馆",
+    "nearest_m": 3223
+   },
+   {
+    "name": "陕西天主教神哲学院西安备修院天主堂",
+    "nearest": "未央国际",
+    "nearest_m": 1052
+   },
+   {
+    "name": "西安浐灞国家湿地公园运营管理中心",
+    "nearest": "西安市未央区第一学校",
+    "nearest_m": 983
+   },
+   {
+    "name": "浐灞城市广场",
+    "nearest": "西安市未央区人民法院执行工作局",
+    "nearest_m": 1239
+   },
+   {
+    "name": "汉清明门广场",
+    "nearest": "西安市未央区未央宫人民法庭",
+    "nearest_m": 173
+   },
+   {
+    "name": "赐恩堂",
+    "nearest": "大明宫·精筑广场停车场",
+    "nearest_m": 1410
+   },
+   {
+    "name": "F1赛艇雕塑",
+    "nearest": "灞河2号桥",
+    "nearest_m": 1115
+   },
+   {
+    "name": "浐灞国家湿地公园-湿地沙滩",
+    "nearest": "灞河东路",
+    "nearest_m": 1037
+   },
+   {
+    "name": "紫薇湖",
+    "nearest": "西安北站北广场(公交站)",
+    "nearest_m": 3518
+   },
+   {
+    "name": "西安湖",
+    "nearest": "西安北站北广场(公交站)",
+    "nearest_m": 3792
+   },
+   {
+    "name": "雕塑广场",
+    "nearest": "西安北站北广场(公交站)",
+    "nearest_m": 4451
+   },
+   {
+    "name": "薛家寨汉墓群",
+    "nearest": "未央区徐家湾街道西航第一社区",
+    "nearest_m": 484
+   },
+   {
+    "name": "渭河生态景观区",
+    "nearest": "西安北站北广场(公交站)",
+    "nearest_m": 1976
+   },
+   {
+    "name": "汉长安城霸城门遗址",
+    "nearest": "西安市未央区未央宫人民法庭",
+    "nearest_m": 1558
+   },
+   {
+    "name": "汉城湖旅游风景区大风阁",
+    "nearest": "未央区未央宫社区卫生服务中心",
+    "nearest_m": 413
+   },
+   {
+    "name": "汉城湖旅游风景区",
+    "nearest": "未央区未央宫社区卫生服务中心",
+    "nearest_m": 417
+   },
+   {
+    "name": "汉城湖旅游风景区水车码头",
+    "nearest": "西安市未央区教育局",
+    "nearest_m": 1453
+   },
+   {
+    "name": "西安渭河城市运动公园",
+    "nearest": "未央区汉城街道元鼎社区",
+    "nearest_m": 5803
+   },
+   {
+    "name": "开元公园",
+    "nearest": "未央区徐家湾街道西航第一社区",
+    "nearest_m": 484
+   },
+   {
+    "name": "汉台遗址",
+    "nearest": "未央区汉城街道元鼎社区",
+    "nearest_m": 6118
+   },
+   {
+    "name": "文化中心广场",
+    "nearest": "未央区谭家街道办红旗社区",
+    "nearest_m": 682
+   },
+   {
+    "name": "新西北清真寺",
+    "nearest": "莲湖区养老服务",
+    "nearest_m": 1001
+   },
+   {
+    "name": "汉长安城国家遗址公园前殿广场",
+    "nearest": "汉长安城未央宫遗址公园",
+    "nearest_m": 418
+   },
+   {
+    "name": "长安大学渭水校区滋兰苑广场",
+    "nearest": "未央区汉城街道元鼎社区",
+    "nearest_m": 3031
+   },
+   {
+    "name": "法照寺",
+    "nearest": "西安市未央区建章路街道石化社区",
+    "nearest_m": 2857
+   },
+   {
+    "name": "文景山公园",
+    "nearest": "西安北站北广场(公交站)",
+    "nearest_m": 750
+   },
+   {
+    "name": "桃花潭-竹影廊桥",
+    "nearest": "西安市未央区人民法院执行工作局",
+    "nearest_m": 1140
+   },
+   {
+    "name": "汉长安城章城门广场",
+    "nearest": "汉长安城未央宫遗址公园",
+    "nearest_m": 1276
+   },
+   {
+    "name": "浐灞滋水公园",
+    "nearest": "灞河2号桥",
+    "nearest_m": 1377
+   },
+   {
+    "name": "红旗广场",
+    "nearest": "未央区徐家湾街道西航第一社区",
+    "nearest_m": 689
+   },
+   {
+    "name": "未央城市广场",
+    "nearest": "未央国际",
+    "nearest_m": 473
+   },
+   {
+    "name": "西安城市运动公园",
+    "nearest": "西安市中心",
+    "nearest_m": 351
+   },
+   {
+    "name": "极乐寺(广安路)",
+    "nearest": "西安市未央区人民法院执行工作局",
+    "nearest_m": 600
+   },
+   {
+    "name": "凤城广场",
+    "nearest": "未央区汉城街道杨家社区",
+    "nearest_m": 1748
+   },
+   {
+    "name": "文景公园",
+    "nearest": "未央区城市管理综合执法局",
+    "nearest_m": 1329
+   },
+   {
+    "name": "终南山南五台景区",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 2211
+   },
+   {
+    "name": "牛头禅寺",
+    "nearest": "长安区兴国花园",
+    "nearest_m": 663
+   },
+   {
+    "name": "长安关帝庙",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 2539
+   },
+   {
+    "name": "王莽千亩荷花",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 8046
+   },
+   {
+    "name": "长安塔",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 1146
+   },
+   {
+    "name": "清凉寺",
+    "nearest": "西安市长安区第六小学",
+    "nearest_m": 1287
+   },
+   {
+    "name": "十方菩萨庙",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 4734
+   },
+   {
+    "name": "西安祥峪森林公园-大悲寺",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 6241
+   },
+   {
+    "name": "悦芽谷",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 4674
+   },
+   {
+    "name": "杨虎城将军陵园",
+    "nearest": "长安区兴国花园",
+    "nearest_m": 666
+   },
+   {
+    "name": "白鹿原·白鹿仓",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 1754
+   },
+   {
+    "name": "白鹿原影视城",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 9699
+   },
+   {
+    "name": "世博园长安花谷",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 486
+   },
+   {
+    "name": "秦岭风景区",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 21135
+   },
+   {
+    "name": "嘉午台风景区",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 11266
+   },
+   {
+    "name": "翠华山景区",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 7210
+   },
+   {
+    "name": "大秦岭广新园民族村景区",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 12095
+   },
+   {
+    "name": "九龙潭",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 8626
+   },
+   {
+    "name": "香积寺",
+    "nearest": "陕西考古博物馆",
+    "nearest_m": 1018
+   },
+   {
+    "name": "清凉山森林公园",
+    "nearest": "西安市长安区第六小学",
+    "nearest_m": 1234
+   },
+   {
+    "name": "普天禅寺",
+    "nearest": "西安高新区中电科太极西安产业园(建设中)",
+    "nearest_m": 2098
+   },
+   {
+    "name": "长安唐村",
+    "nearest": "西安关中民俗艺术博物院-西京雄镇",
+    "nearest_m": 3185
+   },
+   {
+    "name": "灵台观",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 4194
+   },
+   {
+    "name": "南山农艺园",
+    "nearest": "西安关中民俗艺术博物院",
+    "nearest_m": 4947
+   },
+   {
+    "name": "五环集团文化广场",
+    "nearest": "西安市灞桥区中医医院",
+    "nearest_m": 1516
+   },
+   {
+    "name": "张学良将军向爱国学生讲话纪念碑",
+    "nearest": "灞桥区十里铺安居小区",
+    "nearest_m": 751
+   },
+   {
+    "name": "华夏文旅海洋公园",
+    "nearest": "西安市灞桥区世博大道",
+    "nearest_m": 362
+   },
+   {
+    "name": "西安国际陆港网球运动公园",
+    "nearest": "新筑新城2期",
+    "nearest_m": 2473
+   },
+   {
+    "name": "港务区公园",
+    "nearest": "新筑新城2期",
+    "nearest_m": 2511
+   },
+   {
+    "name": "白鹿原葡萄主题公园",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 5432
+   },
+   {
+    "name": "西园",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 769
+   },
+   {
+    "name": "关中竹海",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 3587
+   },
+   {
+    "name": "灞渭生态滩区观景台",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1859
+   },
+   {
+    "name": "太白庙",
+    "nearest": "新筑新城2期",
+    "nearest_m": 3878
+   },
+   {
+    "name": "桃花潭",
+    "nearest": "西安市未央区人民法院执行工作局",
+    "nearest_m": 1535
+   },
+   {
+    "name": "高新湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1780
+   },
+   {
+    "name": "洪庆山国家森林公园",
+    "nearest": "灞临路",
+    "nearest_m": 3333
+   },
+   {
+    "name": "灞渭生态滩区",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1566
+   },
+   {
+    "name": "白鹿仓主题乐园",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 1825
+   },
+   {
+    "name": "西港广场(浐灞总部)",
+    "nearest": "灞河",
+    "nearest_m": 1338
+   },
+   {
+    "name": "启航公园",
+    "nearest": "新筑新城2期",
+    "nearest_m": 1982
+   },
+   {
+    "name": "华夏文旅西安度假区",
+    "nearest": "西安市灞桥区世博大道",
+    "nearest_m": 363
+   },
+   {
+    "name": "临潼湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 3020
+   },
+   {
+    "name": "碑林湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1785
+   },
+   {
+    "name": "祝春庙",
+    "nearest": "灞桥区消防救援局",
+    "nearest_m": 2502
+   },
+   {
+    "name": "无量庙",
+    "nearest": "灞桥区和平新村",
+    "nearest_m": 681
+   },
+   {
+    "name": "御锦城河堤公园",
+    "nearest": "灞桥区十里铺安居小区",
+    "nearest_m": 1110
+   },
+   {
+    "name": "汉薄太后南陵",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 538
+   },
+   {
+    "name": "樱桃广场",
+    "nearest": "灞桥区社会福利中心",
+    "nearest_m": 3606
+   },
+   {
+    "name": "高陵泾渭湿地观光园-浐灞湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 2566
+   },
+   {
+    "name": "曲江湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 2088
+   },
+   {
+    "name": "延安园",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 749
+   },
+   {
+    "name": "玉皇殿",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 1424
+   },
+   {
+    "name": "正法寺",
+    "nearest": "灞河东路",
+    "nearest_m": 1236
+   },
+   {
+    "name": "御锦城中央公园",
+    "nearest": "西安半坡博物馆售票处",
+    "nearest_m": 1695
+   },
+   {
+    "name": "汉中园",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 711
+   },
+   {
+    "name": "邵平店文化广场",
+    "nearest": "临潼服务区停车场",
+    "nearest_m": 1970
+   },
+   {
+    "name": "半坡遗址-小女孩墓",
+    "nearest": "西安半坡博物馆",
+    "nearest_m": 50
+   },
+   {
+    "name": "桃花潭游乐场",
+    "nearest": "西安市未央区人民法院执行工作局",
+    "nearest_m": 1728
+   },
+   {
+    "name": "西安世博园-航天植物园",
+    "nearest": "西安市灞桥区灞桥街道锦绣社区",
+    "nearest_m": 1045
+   },
+   {
+    "name": "芷阳县遗址",
+    "nearest": "临潼服务区停车场",
+    "nearest_m": 1612
+   },
+   {
+    "name": "云经寺",
+    "nearest": "西安东站",
+    "nearest_m": 679
+   },
+   {
+    "name": "西安临潼悦椿温泉",
+    "nearest": "临潼奥莱钟楼广场",
+    "nearest_m": 371
+   },
+   {
+    "name": "临潼邱家庄大圣若瑟天主堂",
+    "nearest": "西安市阎良区图书馆",
+    "nearest_m": 10000
+   },
+   {
+    "name": "秦东陵",
+    "nearest": "临潼服务区(连霍高速连云港方向)",
+    "nearest_m": 2584
+   },
+   {
+    "name": "秦兵马俑二号坑遗址大厅",
+    "nearest": "秦始皇兵马俑",
+    "nearest_m": 133
+   },
+   {
+    "name": "大唐华清城",
+    "nearest": "西安市临潼区城管局",
+    "nearest_m": 181
+   },
+   {
+    "name": "临潼博物馆",
+    "nearest": "西安市临潼区城管局",
+    "nearest_m": 376
+   },
+   {
+    "name": "田咀·芦苇荡",
+    "nearest": "秦始皇帝陵博物院",
+    "nearest_m": 6208
+   },
+   {
+    "name": "秦统一雕塑广场",
+    "nearest": "西安市临潼区环境卫生管理站",
+    "nearest_m": 1096
+   },
+   {
+    "name": "鸿门宴遗址",
+    "nearest": "临潼区职教中心",
+    "nearest_m": 809
+   },
+   {
+    "name": "鹦鹉寺公园",
+    "nearest": "临潼奥莱钟楼广场",
+    "nearest_m": 770
+   },
+   {
+    "name": "木华水清",
+    "nearest": "华清宫",
+    "nearest_m": 99
+   },
+   {
+    "name": "芷阳广场",
+    "nearest": "西安临潼旅游度假区",
+    "nearest_m": 79
+   },
+   {
+    "name": "零口桃花观赏点",
+    "nearest": "临潼区新丰小学",
+    "nearest_m": 8223
+   },
+   {
+    "name": "穆柯寨",
+    "nearest": "秦始皇帝陵博物院",
+    "nearest_m": 7368
+   },
+   {
+    "name": "姜寨遗址碑",
+    "nearest": "西安市临潼区环境卫生管理站",
+    "nearest_m": 352
+   },
+   {
+    "name": "华清宫-杨贵妃奉诏温泉宫壁画",
+    "nearest": "华清宫",
+    "nearest_m": 90
+   },
+   {
+    "name": "泰吉广场",
+    "nearest": "西安市临潼区人民检察院",
+    "nearest_m": 7600
+   },
+   {
+    "name": "光禄坊",
+    "nearest": "西安市临潼区城管局",
+    "nearest_m": 302
+   },
+   {
+    "name": "华清宫温泉古源三号出水口",
+    "nearest": "华清宫",
+    "nearest_m": 115
+   },
+   {
+    "name": "康桥寺庙",
+    "nearest": "阎良区新兴农机加油站",
+    "nearest_m": 3224
+   },
+   {
+    "name": "天主堂",
+    "nearest": "阎良街",
+    "nearest_m": 463
+   },
+   {
+    "name": "汉太上皇陵",
+    "nearest": "阎良区中医医院(公交站)",
+    "nearest_m": 1842
+   },
+   {
+    "name": "阎良公园",
+    "nearest": "阎良街与阎荆路交叉口",
+    "nearest_m": 681
+   },
+   {
+    "name": "西飞广场",
+    "nearest": "阎良11区",
+    "nearest_m": 450
+   },
+   {
+    "name": "武之望纪念碑",
+    "nearest": "阎良区新兴农机加油站",
+    "nearest_m": 4328
+   },
+   {
+    "name": "隐爬舍",
+    "nearest": "阎良区实验小学",
+    "nearest_m": 439
+   },
+   {
+    "name": "民立村天主堂",
+    "nearest": "西安市阎良区图书馆",
+    "nearest_m": 2698
+   },
+   {
+    "name": "荆山清泉",
+    "nearest": "阎良区人才公寓",
+    "nearest_m": 351
+   },
+   {
+    "name": "渭北水盆羊肉",
+    "nearest": "阎良区新兴农机加油站",
+    "nearest_m": 3191
+   },
+   {
+    "name": "欣颖水族",
+    "nearest": "阎良区城市管理局",
+    "nearest_m": 157
+   },
+   {
+    "name": "蓝天广场",
+    "nearest": "西安市阎良区体育场",
+    "nearest_m": 528
+   },
+   {
+    "name": "凤凰广场",
+    "nearest": "阎良经济开发区建设发展中心",
+    "nearest_m": 395
+   },
+   {
+    "name": "润天路口袋公园",
+    "nearest": "阎良区人才公寓",
+    "nearest_m": 753
+   },
+   {
+    "name": "地心引力蹦床主题公园",
+    "nearest": "阎良区人才公寓",
+    "nearest_m": 361
+   },
+   {
+    "name": "栎都啤酒广场",
+    "nearest": "阎良区新兴农机加油站",
+    "nearest_m": 4261
+   },
+   {
+    "name": "栎阳湖风景区",
+    "nearest": "石川河阎良风景区停车场",
+    "nearest_m": 411
+   },
+   {
+    "name": "清河滨河公园",
+    "nearest": "西安市阎良区图书馆",
+    "nearest_m": 5630
+   },
+   {
+    "name": "老寨村文化广场",
+    "nearest": "西安市阎良区水务局",
+    "nearest_m": 7736
+   },
+   {
+    "name": "奋进广场",
+    "nearest": "阎良收费站(G5京昆高速出口)",
+    "nearest_m": 198
+   },
+   {
+    "name": "阎良区关山街道长山村吉祥塔",
+    "nearest": "阎良区气象局",
+    "nearest_m": 4933
+   },
+   {
+    "name": "武味堂飞机模型",
+    "nearest": "阎良11区",
+    "nearest_m": 539
+   },
+   {
+    "name": "阎良清真寺",
+    "nearest": "阎良街与阎荆路交叉口",
+    "nearest_m": 138
+   },
+   {
+    "name": "口袋公园",
+    "nearest": "阎良区教育局",
+    "nearest_m": 393
+   },
+   {
+    "name": "时空之门南广场",
+    "nearest": "阎良区航空基地游客服务中心",
+    "nearest_m": 313
+   },
+   {
+    "name": "街心花园",
+    "nearest": "阎良区教育局",
+    "nearest_m": 334
+   },
+   {
+    "name": "富平奇树观木",
+    "nearest": "阎良区实验小学",
+    "nearest_m": 536
+   },
+   {
+    "name": "阎良村文化广场",
+    "nearest": "阎良街与阎荆路交叉口",
+    "nearest_m": 89
+   },
+   {
+    "name": "增殖放流区",
+    "nearest": "石川河阎良风景区",
+    "nearest_m": 805
+   },
+   {
+    "name": "凤凰广场-阎良区人口文化园",
+    "nearest": "阎良经济开发区建设发展中心",
+    "nearest_m": 395
+   },
+   {
+    "name": "月季园",
+    "nearest": "阎良街与阎荆路交叉口",
+    "nearest_m": 610
+   },
+   {
+    "name": "源田梦工场",
+    "nearest": "高陵南服务区(京昆高速北京方向)(建设中)",
+    "nearest_m": 5536
+   },
+   {
+    "name": "水景公园",
+    "nearest": "高陵区水务局",
+    "nearest_m": 406
+   },
+   {
+    "name": "高陵塔",
+    "nearest": "西安市高陵区第一中学",
+    "nearest_m": 200
+   },
+   {
+    "name": "通远天主堂",
+    "nearest": "西安市高陵区职业技术教育中心",
+    "nearest_m": 165
+   },
+   {
+    "name": "张白天主堂",
+    "nearest": "高陵区精神卫生中心",
+    "nearest_m": 1955
+   },
+   {
+    "name": "平安广场",
+    "nearest": "丫蛋东北铁锅炖鱼陕汽南门老店",
+    "nearest_m": 879
+   },
+   {
+    "name": "泾渭分明交汇点",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 3905
+   },
+   {
+    "name": "杨官寨遗址(不对外开放)",
+    "nearest": "丫蛋东北铁锅炖鱼陕汽南门老店",
+    "nearest_m": 1315
+   },
+   {
+    "name": "高陵泾渭湿地观光园",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 3867
+   },
+   {
+    "name": "莲湖湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1207
+   },
+   {
+    "name": "泾渭广场",
+    "nearest": "丫蛋东北铁锅炖鱼陕汽南门老店",
+    "nearest_m": 2832
+   },
+   {
+    "name": "西安市高陵区姬家基督教堂",
+    "nearest": "西安兵器展览馆",
+    "nearest_m": 2058
+   },
+   {
+    "name": "听风阁",
+    "nearest": "高陵区市场监督管理局",
+    "nearest_m": 95
+   },
+   {
+    "name": "高陵湖",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1925
+   },
+   {
+    "name": "岳华村天主堂",
+    "nearest": "西安兵器展览馆",
+    "nearest_m": 4295
+   },
+   {
+    "name": "西安泾渭湿地省级自然保护区",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1270
+   },
+   {
+    "name": "泾河入渭口桥头公园",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 2334
+   },
+   {
+    "name": "泾渭分明观景台",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 3879
+   },
+   {
+    "name": "天道泡沫雕塑",
+    "nearest": "灞桥区和平新村",
+    "nearest_m": 4936
+   },
+   {
+    "name": "大军阳台",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 1639
+   },
+   {
+    "name": "历史文化展览一厅",
+    "nearest": "西安市高陵区第一中学",
+    "nearest_m": 334
+   },
+   {
+    "name": "鹿原森林部落",
+    "nearest": "高陵区人民法院",
+    "nearest_m": 306
+   },
+   {
+    "name": "鹿苑大道牌楼",
+    "nearest": "高陵区人民法院",
+    "nearest_m": 839
+   },
+   {
+    "name": "泾渭金沙滩",
+    "nearest": "西安地铁博物馆",
+    "nearest_m": 2111
+   },
+   {
+    "name": "昭慧广场-李晟碑",
+    "nearest": "西安市高陵区第一中学",
+    "nearest_m": 260
+   },
+   {
+    "name": "鹿苑神曲",
+    "nearest": "高陵区高家公寓",
+    "nearest_m": 356
+   },
+   {
+    "name": "韶音阁",
+    "nearest": "西安市高陵区城关小学",
+    "nearest_m": 108
+   },
+   {
+    "name": "历史文化展览三厅",
+    "nearest": "西安市高陵区第一中学",
+    "nearest_m": 293
+   },
+   {
+    "name": "历史文化展览二厅",
+    "nearest": "西安市高陵区第一中学",
+    "nearest_m": 310
+   },
+   {
+    "name": "北环广场",
+    "nearest": "国家税务总局西安市高陵区税务局",
+    "nearest_m": 188
+   },
+   {
+    "name": "四季阳光七区广场",
+    "nearest": "泾渭新城出口(G6522延西高速东南向)",
+    "nearest_m": 1911
+   },
+   {
+    "name": "蓝湖九郡广场",
+    "nearest": "西安兵器展览馆",
+    "nearest_m": 2030
+   },
+   {
+    "name": "新庄礼拜点",
+    "nearest": "丫蛋东北铁锅炖鱼陕汽南门老店",
+    "nearest_m": 2788
+   },
+   {
+    "name": "金龙峡漂流戏水区",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 6140
+   },
+   {
+    "name": "白云寺",
+    "nearest": "吕家米皮老店",
+    "nearest_m": 438
+   },
+   {
+    "name": "秦萯阳宫",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 2662
+   },
+   {
+    "name": "文殊菩萨庙",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 9280
+   },
+   {
+    "name": "福慧寺",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3951
+   },
+   {
+    "name": "送子娘娘庙",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 6562
+   },
+   {
+    "name": "文庙",
+    "nearest": "钟楼(公交站)",
+    "nearest_m": 118
+   },
+   {
+    "name": "东方广场(潭滨南路)",
+    "nearest": "千家味道-八号路米皮",
+    "nearest_m": 3761
+   },
+   {
+    "name": "鄠邑区天桥湖",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 6814
+   },
+   {
+    "name": "九龙湾景区",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 8176
+   },
+   {
+    "name": "化羊古庙",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3563
+   },
+   {
+    "name": "宋村遗址",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3849
+   },
+   {
+    "name": "乡野公园",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 5150
+   },
+   {
+    "name": "重阳广场-重阳万寿宫",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 9968
+   },
+   {
+    "name": "净居寺",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 10434
+   },
+   {
+    "name": "一泓碧",
+    "nearest": "钟楼(公交站)",
+    "nearest_m": 2550
+   },
+   {
+    "name": "迎旭门",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 1769
+   },
+   {
+    "name": "鄠邑区尖山顶焦将神庙",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3934
+   },
+   {
+    "name": "慈悲莲舍",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 925
+   },
+   {
+    "name": "陕西西班牙橄榄园",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 10980
+   },
+   {
+    "name": "鸠摩罗什舍利塔",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3484
+   },
+   {
+    "name": "鄠邑区秦岭生态堡警示教育基地",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3726
+   },
+   {
+    "name": "高冠瀑布鄠邑门",
+    "nearest": "古观音禅寺-鼓楼",
+    "nearest_m": 3959
+   },
+   {
+    "name": "桦树林驿站",
+    "nearest": "鼓楼",
+    "nearest_m": 29658
+   },
+   {
+    "name": "九龙湾景区拓展会议",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 8104
+   },
+   {
+    "name": "陕西省西安市鄠邑区五竹镇红色广场",
+    "nearest": "千家味道-八号路米皮",
+    "nearest_m": 7970
+   },
+   {
+    "name": "余下惠安人口文化园-文化宫广场",
+    "nearest": "钟楼(公交站)",
+    "nearest_m": 5843
+   },
+   {
+    "name": "文化宫广场",
+    "nearest": "钟楼(公交站)",
+    "nearest_m": 260
+   },
+   {
+    "name": "鄠邑大峡谷",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 6810
+   },
+   {
+    "name": "云溪寺",
+    "nearest": "鄠邑区钟楼",
+    "nearest_m": 2990
+   },
+   {
+    "name": "草堂寺-客堂",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 3553
+   },
+   {
+    "name": "古楼广场",
+    "nearest": "钟楼(公交站)",
+    "nearest_m": 96
+   },
+   {
+    "name": "石门寺",
+    "nearest": "西安高新国家级·科技企业加速器2区",
+    "nearest_m": 4226
+   },
+   {
+    "name": "天佛寺",
+    "nearest": "千家味道-八号路米皮",
+    "nearest_m": 741
+   },
+   {
+    "name": "汤泉广场",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 8093
+   },
+   {
+    "name": "汤峪湖森林公园-龙泉寺",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 9069
+   },
+   {
+    "name": "白鹿原影视城南门广场",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 9550
+   },
+   {
+    "name": "下悟真寺",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 11197
+   },
+   {
+    "name": "汤峪温泉碧水湾",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 8622
+   },
+   {
+    "name": "王顺山国家森林公园",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 18834
+   },
+   {
+    "name": "蓝田县白鹿原生态文化观光园",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 2207
+   },
+   {
+    "name": "葛牌古镇",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 33772
+   },
+   {
+    "name": "秦家寨核桃主题公园",
+    "nearest": "蓝田新城B区",
+    "nearest_m": 9632
+   },
+   {
+    "name": "凌云洞",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 13564
+   },
+   {
+    "name": "塘子古镇旅游区",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 8963
+   },
+   {
+    "name": "终南山悟真寺",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 11534
+   },
+   {
+    "name": "白鹿原影视城白鹿塔",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 9414
+   },
+   {
+    "name": "佛山寺",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 11068
+   },
+   {
+    "name": "鲍旗寨写生基地观景台",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 7975
+   },
+   {
+    "name": "东峰山古庙会旅游景点",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 9007
+   },
+   {
+    "name": "王顺山国家森林公园-飞天瀑布",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 18984
+   },
+   {
+    "name": "山王村观景台",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 21754
+   },
+   {
+    "name": "中共蓝田特别支部纪念馆",
+    "nearest": "蓝田新城B区",
+    "nearest_m": 6115
+   },
+   {
+    "name": "三仙庙",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 424
+   },
+   {
+    "name": "白鹿原福地",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 9439
+   },
+   {
+    "name": "文公岭战斗旧址",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 39502
+   },
+   {
+    "name": "芸阁白鹿书院",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 9633
+   },
+   {
+    "name": "山间造物",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 8431
+   },
+   {
+    "name": "戏楼广场",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 3843
+   },
+   {
+    "name": "红军魂广场",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 32481
+   },
+   {
+    "name": "灞源民俗展示馆",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 36812
+   },
+   {
+    "name": "白鹿原影视城王府",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 9630
+   },
+   {
+    "name": "簸箕掌景区",
+    "nearest": "蓝田新城B区",
+    "nearest_m": 6320
+   },
+   {
+    "name": "大觉寺",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 5385
+   },
+   {
+    "name": "女娲湖",
+    "nearest": "蓝田新城B区",
+    "nearest_m": 5341
+   },
+   {
+    "name": "紫云山森林公园",
+    "nearest": "西安蓝田机场",
+    "nearest_m": 19059
+   },
+   {
+    "name": "流峪草甸",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 24260
+   },
+   {
+    "name": "箭峪岭",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 36631
+   },
+   {
+    "name": "蓝田荞麦岭",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 20051
+   },
+   {
+    "name": "观音潭景区",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 13949
+   },
+   {
+    "name": "白鹿广场",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 362
+   },
+   {
+    "name": "白鹿原·二虎剧场",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 9452
+   },
+   {
+    "name": "汉蔡文姬之墓",
+    "nearest": "蓝田新城B区",
+    "nearest_m": 1203
+   },
+   {
+    "name": "悟真寺风景区",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 11563
+   },
+   {
+    "name": "鄂豫陕苏维埃政府葛牌镇纪念馆",
+    "nearest": "蓝田新城A区",
+    "nearest_m": 33764
+   },
+   {
+    "name": "赵公明故居",
+    "nearest": "鼓楼",
+    "nearest_m": 14904
+   },
+   {
+    "name": "玉皇庙",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 3777
+   },
+   {
+    "name": "文魁星庙宇",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 9206
+   },
+   {
+    "name": "西会教堂",
+    "nearest": "鼓楼",
+    "nearest_m": 4132
+   },
+   {
+    "name": "姬家沟周文王故里",
+    "nearest": "鼓楼",
+    "nearest_m": 28534
+   },
+   {
+    "name": "宗圣宫-文始殿遗址",
+    "nearest": "鼓楼",
+    "nearest_m": 488
+   },
+   {
+    "name": "青山遗址",
+    "nearest": "鼓楼",
+    "nearest_m": 26638
+   },
+   {
+    "name": "仙游寺",
+    "nearest": "鼓楼",
+    "nearest_m": 11800
+   },
+   {
+    "name": "赵公明财神祖庙",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 1925
+   },
+   {
+    "name": "老子墓",
+    "nearest": "鼓楼",
+    "nearest_m": 4702
+   },
+   {
+    "name": "周至水街",
+    "nearest": "鼓楼",
+    "nearest_m": 13224
+   },
+   {
+    "name": "周至县天主教堂",
+    "nearest": "鼓楼",
+    "nearest_m": 14937
+   },
+   {
+    "name": "钟馗故里",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 7234
+   },
+   {
+    "name": "清凉古寺",
+    "nearest": "鼓楼",
+    "nearest_m": 18801
+   },
+   {
+    "name": "赵公明文化景区",
+    "nearest": "鼓楼",
+    "nearest_m": 1391
+   },
+   {
+    "name": "宗圣宫",
+    "nearest": "鼓楼",
+    "nearest_m": 346
+   },
+   {
+    "name": "武功县芙蓉生态湿地",
+    "nearest": "鼓楼",
+    "nearest_m": 22051
+   },
+   {
+    "name": "乐天公园",
+    "nearest": "鼓楼",
+    "nearest_m": 14798
+   },
+   {
+    "name": "万寿宫",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 6468
+   },
+   {
+    "name": "佛坪厅故城",
+    "nearest": "鼓楼",
+    "nearest_m": 61108
+   },
+   {
+    "name": "玄帝庙玉皇楼",
+    "nearest": "鼓楼",
+    "nearest_m": 25179
+   },
+   {
+    "name": "丹阳观",
+    "nearest": "鼓楼",
+    "nearest_m": 27488
+   },
+   {
+    "name": "龙泉山寨",
+    "nearest": "鼓楼",
+    "nearest_m": 15531
+   },
+   {
+    "name": "白马寺",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 7009
+   },
+   {
+    "name": "耿峪沟",
+    "nearest": "西安高新区集贤园",
+    "nearest_m": 7690
+   },
+   {
+    "name": "周城游乐园",
+    "nearest": "鼓楼",
+    "nearest_m": 26679
+   },
+   {
+    "name": "恒州村北堡文化广场",
+    "nearest": "鼓楼",
+    "nearest_m": 12200
+   },
+   {
+    "name": "周至县天台寺",
+    "nearest": "鼓楼",
+    "nearest_m": 23923
+   },
+   {
+    "name": "太白山国家森林公园-三爷海",
+    "nearest": "鼓楼",
+    "nearest_m": 53146
+   },
+   {
+    "name": "卢纶山庄遗址",
+    "nearest": "鼓楼",
+    "nearest_m": 7594
+   },
+   {
+    "name": "楼观(垂·钓·园)",
+    "nearest": "鼓楼",
+    "nearest_m": 1161
+   },
+   {
+    "name": "周至水街南广场",
+    "nearest": "鼓楼",
+    "nearest_m": 13163
+   },
+   {
+    "name": "中国周城",
+    "nearest": "鼓楼",
+    "nearest_m": 26733
+   },
+   {
+    "name": "拾愿精舍",
+    "nearest": "西安W酒店",
+    "nearest_m": 571
+   },
+   {
+    "name": "生命之树",
+    "nearest": "陕西自然博物馆",
+    "nearest_m": 315
+   },
+   {
+    "name": "梦回大唐",
+    "nearest": "大唐芙蓉园南门售票处",
+    "nearest_m": 56
+   },
+   {
+    "name": "贯梦睡眠公园",
+    "nearest": "西安市雁塔区第三小学",
+    "nearest_m": 1188
+   },
+   {
+    "name": "曲江新区生活垃圾分类主题公园",
+    "nearest": "曲江公馆·和园",
+    "nearest_m": 352
+   },
+   {
+    "name": "人鱼的洞穴",
+    "nearest": "鼓楼巷砂锅",
+    "nearest_m": 407
+   },
+   {
+    "name": "雅森研学广场",
+    "nearest": "曲江池饮食街",
+    "nearest_m": 3047
+   },
+   {
+    "name": "西安电子科技大学长安校区礼仪广场",
+    "nearest": "西安高新区管委会",
+    "nearest_m": 1134
+   },
+   {
+    "name": "西安市雁塔区基督教景新礼拜堂",
+    "nearest": "西安高新区综合服务大厅唐延路服务站",
+    "nearest_m": 1276
+   },
+   {
+    "name": "唐城墙遗址公园",
+    "nearest": "东哥紫阳蒸盆子(旺座现代城C座店)",
+    "nearest_m": 527
+   },
+   {
+    "name": "大明怀远将军园",
+    "nearest": "西安高新区新丰村民安置",
+    "nearest_m": 1089
+   },
+   {
+    "name": "奥林匹克公园",
+    "nearest": "陕西体育博物馆",
+    "nearest_m": 632
+   },
+   {
+    "name": "紫薇文化广场",
+    "nearest": "哈利德餐厅",
+    "nearest_m": 245
+   },
+   {
+    "name": "唐城墙遗址公园-隋唐长安城崇化坊",
+    "nearest": "西安市莲湖区西桃园净化小区",
+    "nearest_m": 987
+   },
+   {
+    "name": "西安电子科技大学北校区世纪广场",
+    "nearest": "西安市碑林区人民法院",
+    "nearest_m": 766
+   },
+   {
+    "name": "嘉会坊",
+    "nearest": "西安高新区综合服务大厅创业咖啡街区服务站",
+    "nearest_m": 315
+   },
+   {
+    "name": "古韵流香(万达·天樾)",
+    "nearest": "陕西体育博物馆",
+    "nearest_m": 650
+   },
+   {
+    "name": "鹦语角 鹦鹉生活馆",
+    "nearest": "高新望云松间北区(建设中)",
+    "nearest_m": 263
+   },
+   {
+    "name": "石榴花广场",
+    "nearest": "锦江之星旗舰店(西安高新区电子城店)",
+    "nearest_m": 925
+   },
+   {
+    "name": "鱼化基督教堂",
+    "nearest": "鸿基新城祥园北区",
+    "nearest_m": 1034
+   },
+   {
+    "name": "乡愁文化广场",
+    "nearest": "西安高新区细柳街道河池寨社区",
+    "nearest_m": 61
+   },
+   {
+    "name": "溪谷留香茶馆(高新云顶园旗舰店)",
+    "nearest": "西安丽思卡尔顿酒店",
+    "nearest_m": 434
+   },
+   {
+    "name": "沣惠绿道",
+    "nearest": "西安高新区喜来登酒店",
+    "nearest_m": 414
+   },
+   {
+    "name": "未来之瞳科学公园",
+    "nearest": "西安高新技术产业开发区",
+    "nearest_m": 389
+   },
+   {
+    "name": "大仁遗址公园",
+    "nearest": "高新·云熙港东区",
+    "nearest_m": 1197
+   },
+   {
+    "name": "鹤鸣湖公园",
+    "nearest": "西安高新区市政配套建设有限公司",
+    "nearest_m": 1468
+   },
+   {
+    "name": "西安创汇公园",
+    "nearest": "西安高新区细柳街道河池寨社区",
+    "nearest_m": 407
+   },
+   {
+    "name": "乐舆饵黑胶博物馆",
+    "nearest": "西安高新区综合服务大厅创业咖啡街区服务站",
+    "nearest_m": 165
+   },
+   {
+    "name": "大明怀远将军园-将军纪念堂",
+    "nearest": "西安高新区新丰村民安置",
+    "nearest_m": 1078
+   },
+   {
+    "name": "会动的清明上河图",
+    "nearest": "西安高新区中电科太极西安产业园(建设中)",
+    "nearest_m": 491
+   },
+   {
+    "name": "象园雾芽",
+    "nearest": "西安高新区综合服务大厅创业咖啡街区服务站",
+    "nearest_m": 396
+   },
+   {
+    "name": "杜康十三朝会客厅",
+    "nearest": "西安高新区细柳街道河池寨社区",
+    "nearest_m": 528
+   },
+   {
+    "name": "寻隐者不遇雕像",
+    "nearest": "高新望云松间南区",
+    "nearest_m": 503
+   },
+   {
+    "name": "沐浴星光",
+    "nearest": "西安高新区综合服务大厅创业咖啡街区服务站",
+    "nearest_m": 288
+   },
+   {
+    "name": "天主教西安总教区高新保禄堂",
+    "nearest": "西安高新区实验小学",
+    "nearest_m": 790
+   },
+   {
+    "name": "捞鱼客水族娱乐馆(西安立丰城店)",
+    "nearest": "江林新城B区",
+    "nearest_m": 736
+   },
+   {
+    "name": "唐城墙遗址公园-北广场",
+    "nearest": "西安市莲湖区西桃园净化小区",
+    "nearest_m": 897
+   },
+   {
+    "name": "宝相吉纹",
+    "nearest": "西安高新区综合服务大厅唐延路服务站",
+    "nearest_m": 832
+   },
+   {
+    "name": "西太路转角公园",
+    "nearest": "高新·云熙港东区",
+    "nearest_m": 684
+   },
+   {
+    "name": "关帝庙",
+    "nearest": "高新·云熙港西区",
+    "nearest_m": 444
+   },
+   {
+    "name": "仪祉湖景区",
+    "nearest": "吕家米皮老店",
+    "nearest_m": 608
+   },
+   {
+    "name": "西入口广场",
+    "nearest": "西安高新区喜来登酒店",
+    "nearest_m": 293
+   },
+   {
+    "name": "木塔寺偏殿遗址",
+    "nearest": "高新望云松间北区(建设中)",
+    "nearest_m": 231
+   },
+   {
+    "name": "高新区西沣路景观绿地广场",
+    "nearest": "西安高新区实验小学",
+    "nearest_m": 916
+   },
+   {
+    "name": "中心花园",
+    "nearest": "西安高新区综合服务大厅创业咖啡街区服务站",
+    "nearest_m": 192
+   },
+   {
+    "name": "仓颉造字台(不对外开放)",
+    "nearest": "西安高新区比亚迪西安研发中心(建设中)",
+    "nearest_m": 746
+   },
+   {
+    "name": "茯茶镇 中国茯茶之都",
+    "nearest": "高新区绿地世纪城社区",
+    "nearest_m": 1054
+   }
+  ]
+ },
+ "hotels": {
+  "native_10": {
+   "hotels": 3866,
+   "price_ok": 3866
+  },
+  "catalog_10": {
+   "hotels": 7732,
+   "price_ok": 7732,
+   "numbed_ok": 7732
+  },
+  "xian_main": {
+   "hotels": 706,
+   "price_ok": 318,
+   "source_value": 0,
+   "estimated": 0,
+   "unknown": 388
+  },
+  "xian_v17": null,
+  "provenance_available": false
+ },
+ "query_impact": {
+  "query_files": 90,
+  "files_with_missing": 29,
+  "by_split": {
+   "chain": 21,
+   "easy": 2,
+   "human": 1,
+   "medium": 5
+  },
+  "examples": [
+   {
+    "file": "x11c003.json",
+    "split": "chain",
+    "names": [
+     "龙泉山寨"
+    ]
+   },
+   {
+    "file": "x11c005.json",
+    "split": "chain",
+    "names": [
+     "体育运动公园"
+    ]
+   },
+   {
+    "file": "x11c007.json",
+    "split": "chain",
+    "names": [
+     "王顺山国家森林公园"
+    ]
+   },
+   {
+    "file": "x11c008.json",
+    "split": "chain",
+    "names": [
+     "健身广场"
+    ]
+   },
+   {
+    "file": "x11c009.json",
+    "split": "chain",
+    "names": [
+     "敕赐荐禅寺重修记碑"
+    ]
+   },
+   {
+    "file": "x11c011.json",
+    "split": "chain",
+    "names": [
+     "圜丘遗址"
+    ]
+   },
+   {
+    "file": "x11c014.json",
+    "split": "chain",
+    "names": [
+     "雕塑广场"
+    ]
+   },
+   {
+    "file": "x11c015.json",
+    "split": "chain",
+    "names": [
+     "卧龙禅寺"
+    ]
+   }
+  ]
+ }
+}
