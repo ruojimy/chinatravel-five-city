@@ -11,7 +11,7 @@ name,price,price_status,price_low,price_high,price_mid,confidence,n_comparables,
 西安丽晶家庭公寓,,unknown,,,,,,,,
 静雅旅馆(西安友谊路店),,unknown,,,,,,,,
 加利利连锁酒店(西安钟鼓楼大差市地铁站店),,unknown,,,,,,,,
-如家海景公寓(兴庆路1号分店),,unknown,,,,,,,,
+如家海景公寓(兴庆路1号分店),65.9,estimated_chain_cross_city,30.0,121.7,65.9,medium,19,cross_city_chain_median:如家,2026-11-11T16:53:18+08:00,
 追风者青年旅社(南稍门地铁站店),42.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 今天商务宾馆,56.0,source_value,,,,,,,2026-11-09T17:23:46+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-798130/?locale=zh-CN&curr=CNY
 鸿盛宾馆(红会医院店),39.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
@@ -22,7 +22,7 @@ name,price,price_status,price_low,price_high,price_mid,confidence,n_comparables,
 西安乐游原,,unknown,,,,,,,,
 清雅公寓(西安西京医院店),123.0,source_value,,,,,,,2026-11-09T18:02:59+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-45692319/?locale=zh-CN&curr=CNY
 此时此刻公寓式酒店,60.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
-如家公寓酒店(南稍门店),,unknown,,,,,,,,
+如家公寓酒店(南稍门店),65.9,estimated_chain_cross_city,30.0,121.7,65.9,medium,19,cross_city_chain_median:如家,2026-11-11T16:53:18+08:00,
 外联宾馆,,unknown,,,,,,,,
 金鑫宾馆(西安钟楼店),84.0,estimated,40.0,130.0,84.0,high,12,same_class_nearest_p25_p75:budget,,
 大裕招待所,55.0,source_value,,,,,,,2026-11-09T17:53:15+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-117174954/?locale=zh-CN&curr=CNY
@@ -40,7 +40,7 @@ name,price,price_status,price_low,price_high,price_mid,confidence,n_comparables,
 易休太空舱公寓(西安南门店),25.0,estimated_chain_branch,25.0,25.0,25.0,medium,1,chain_branch_median:易休太空舱,2026-11-11T16:49:21+08:00,
 易休太空舱宾馆(西安咸宁店),25.0,source_value,,,,,,,2026-11-09T17:55:54+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1210632/?locale=zh-CN&curr=CNY
 派酒店(西安明城墙和平门地铁站店),69.0,source_value,,,,,,,2026-11-09T18:02:40+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-2985893/?locale=zh-CN&curr=CNY
-汉庭酒店(西安文艺路店)(暂停营业),,unknown,,,,,,,,
+汉庭酒店(西安文艺路店)(暂停营业),76.0,estimated_chain_cross_city,43.4,109.4,76.0,medium,4,cross_city_chain_median:汉庭,2026-11-11T16:53:18+08:00,
 秦时明月酒店,,unknown,,,,,,,,
 亨韵商务快捷酒店,,unknown,,,,,,,,
 西海大厦(西安李家村万达机场大巴店),,unknown,,,,,,,,
@@ -61,7 +61,7 @@ name,price,price_status,price_low,price_high,price_mid,confidence,n_comparables,
 气象宾馆(北关正街店),,unknown,,,,,,,,
 西安钟楼清怡公寓酒店(钟楼北大街店),,unknown,,,,,,,,
 丽兹酒店(西安回民街钟楼地铁站店),,unknown,,,,,,,,
-汉庭优佳酒店(土门店),,unknown,,,,,,,,
+汉庭优佳酒店(土门店),76.0,estimated_chain_cross_city,43.4,109.4,76.0,medium,4,cross_city_chain_median:汉庭,2026-11-11T16:53:18+08:00,
 爱海蓝驿站(西安钟鼓楼回民街店),,unknown,,,,,,,,
 西安军瑞假日公寓,,unknown,,,,,,,,
 OYO西安雅鑫宾馆,43.0,source_value,,,,,,,2026-11-09T16:54:20+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-44228833/?locale=zh-CN&curr=CNY
@@ -91,7 +91,7 @@ OYU锦莱酒店,,unknown,,,,,,,,
 西安北门宾馆,90.0,estimated,50.0,110.0,90.0,high,12,same_class_nearest_p25_p75:budget,,
 西安艺术主题酒店公寓(龙首店),,unknown,,,,,,,,
 警苑饭店(洒金桥地铁站店),,unknown,,,,,,,,
-宜必思酒店(西安高新区店)(暂停营业),,unknown,,,,,,,,
+宜必思酒店(西安高新区店)(暂停营业),61.9,estimated_chain_cross_city,51.2,70.9,61.9,medium,4,cross_city_chain_median:宜必思,2026-11-11T16:53:18+08:00,
 西安三木凯撒青年旅舍(钟鼓楼回民街店),38.0,source_value,,,,,,,2026-11-09T18:10:04+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1911923/?locale=zh-CN&curr=CNY
 秦都酒店(环城西路店),,unknown,,,,,,,,
 金易时尚酒店(西安钟鼓楼回民街店),,unknown,,,,,,,,
@@ -212,7 +212,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),43.0,estimated_chain_branch,4
 锦舍公寓,,unknown,,,,,,,,
 西安拙雅酒店,,unknown,,,,,,,,
 皇城宾馆(西安长乐西苑店),87.0,source_value,,,,,,,2026-11-09T18:07:02+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1803723/?locale=zh-CN&curr=CNY
-如家快捷酒店,,unknown,,,,,,,,
+如家快捷酒店,65.9,estimated_chain_cross_city,30.0,121.7,65.9,medium,19,cross_city_chain_median:如家,2026-11-11T16:53:18+08:00,
 君驿酒店(暂停营业),,unknown,,,,,,,,
 新天地宾馆(西安苏席村店),70.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 雅舒宾馆(西安南康新村店),52.0,source_value,,,,,,,2026-11-09T18:32:19+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-1572529/?locale=zh-CN&curr=CNY
@@ -243,7 +243,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),43.0,estimated_chain_branch,4
 西部车城快捷酒店,,unknown,,,,,,,,
 西安君名主题酒店(原星空花园情侣主题酒店),,unknown,,,,,,,,
 博一酒店,,unknown,,,,,,,,
-星程酒店(西安经开区明光路店),,unknown,,,,,,,,
+星程酒店(西安经开区明光路店),71.9,estimated_chain_cross_city,42.7,149.4,71.9,medium,8,cross_city_chain_median:星程,2026-11-11T16:53:18+08:00,
 西安未央玫瑰苑宾馆,65.0,source_value,,,,,,,2026-11-09T18:14:15+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-19596250/?locale=zh-CN&curr=CNY
 金宇都宾馆(西安大明宫地铁站店),96.0,estimated,60.0,110.0,96.0,high,12,same_class_nearest_p25_p75:budget,,
 雅驿快捷酒店,,unknown,,,,,,,,
@@ -286,7 +286,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),43.0,estimated_chain_branch,4
 星月快捷宾馆,69.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 尚客优酒店(西安唐都医院半坡地铁站店),218.0,estimated_chain_branch,218.0,218.0,218.0,medium,1,chain_branch_median:尚客优,2026-11-11T16:49:21+08:00,
 青橙酒店(唐都医院|纺织城店),182.0,estimated,80.0,290.0,182.0,high,8,same_class_nearest_p25_p75:mid,,
-如家酒店(西安浐灞前海人寿金融中心店),,unknown,,,,,,,,
+如家酒店(西安浐灞前海人寿金融中心店),65.9,estimated_chain_cross_city,30.0,121.7,65.9,medium,19,cross_city_chain_median:如家,2026-11-11T16:53:18+08:00,
 东拓商务宾馆(西安洪庆地铁站店),,unknown,,,,,,,,
 尚美CC酒店(港务大道地铁站店),,unknown,,,,,,,,
 九天快捷酒店(西安田洪店),165.0,source_value,,,,,,,2026-11-09T17:23:18+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-2079142/?locale=zh-CN&curr=CNY
@@ -333,7 +333,7 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),43.0,estimated_chain_branch,4
 拾玥宾馆(西工程大·西科大临潼校区地铁站店),65.0,source_value,,,,,,,,https://restapi.amap.com/v5/place/text
 秦垣商务宾馆,110.0,estimated,100.0,130.0,110.0,high,12,same_class_nearest_p25_p75:budget,,
 西安临潼皖安酒店(西花园地铁站店),100.0,source_value,,,,,,,2026-11-09T18:10:13+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-122045588/?locale=zh-CN&curr=CNY
-宜必思酒店(西安临潼兵马俑景区店),,unknown,,,,,,,,
+宜必思酒店(西安临潼兵马俑景区店),61.9,estimated_chain_cross_city,51.2,70.9,61.9,medium,4,cross_city_chain_median:宜必思,2026-11-11T16:53:18+08:00,
 西安雅阁民宿,122.0,source_value,,,,,,,2026-11-09T18:22:20+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-66989862/?locale=zh-CN&curr=CNY
 西安大润发快捷酒店,110.0,estimated,110.0,120.0,110.0,high,10,same_class_nearest_p25_p75:budget,,
 清雅宾馆(西安西核所店),111.0,source_value,,,,,,,2026-11-09T18:06:09+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-68408711/?locale=zh-CN&curr=CNY
@@ -417,8 +417,8 @@ OYO豪庭商务酒店(西安胡家庙地铁站店),43.0,estimated_chain_branch,4
 西安丽登栎都酒店(阎良武屯中学店),143.0,source_value,,,,,,,2026-11-09T18:10:20+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-26412048/?locale=zh-CN&curr=CNY
 芷兰汤兮汤泉酒店,,unknown,,,,,,,,
 凤凰西鹿电竞民宿,111.0,source_value,,,,,,,2026-11-09T17:24:52+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-81141720/?locale=zh-CN&curr=CNY
-锦江之星酒店(西安阎良店),,unknown,,,,,,,,
-西安天域星程精品酒店,,unknown,,,,,,,,
+锦江之星酒店(西安阎良店),74.5,estimated_chain_cross_city,74.5,74.5,74.5,low,1,cross_city_chain_median:锦江之星,2026-11-11T16:53:18+08:00,
+西安天域星程精品酒店,71.9,estimated_chain_cross_city,42.7,149.4,71.9,medium,8,cross_city_chain_median:星程,2026-11-11T16:53:18+08:00,
 兰亭逸致酒店(西安航空职业技术学院阎良店),239.0,source_value,,,,,,,2026-11-09T17:24:32+08:00,https://hk.trip.com/hotels/xi-an-hotel-detail-134186625/?locale=zh-CN&curr=CNY
 云语公寓,,unknown,,,,,,,,
 西安简禾民宿(阎良客运站店),172.0,estimated,110.0,200.0,172.0,high,10,same_class_nearest_p25_p75:budget,,
@@ -577,7 +577,7 @@ ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2
 王维山庄,,unknown,,,,,,,,
 蓝田腾达商务宾馆,,unknown,,,,,,,,
 万豪宾馆,,unknown,,,,,,,,
-都市118·精选酒店(周至集贤工业园店),,unknown,,,,,,,,
+都市118·精选酒店(周至集贤工业园店),31.0,estimated_chain_cross_city,31.0,31.0,31.0,low,1,cross_city_chain_median:都市118,2026-11-11T16:53:18+08:00,
 粮贸宾馆,,unknown,,,,,,,,
 周至县马召飞天酒店,,unknown,,,,,,,,
 周至百易居民宿,,unknown,,,,,,,,
@@ -600,7 +600,7 @@ ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2
 梦栖宾馆,,unknown,,,,,,,,
 养旗商务酒店,,unknown,,,,,,,,
 尚优电竞酒店(周至集贤工业园店),,unknown,,,,,,,,
-都市118智选酒店(集贤镇比亚迪工业园店),,unknown,,,,,,,,
+都市118智选酒店(集贤镇比亚迪工业园店),31.0,estimated_chain_cross_city,31.0,31.0,31.0,low,1,cross_city_chain_median:都市118,2026-11-11T16:53:18+08:00,
 风尚酒店(西安周至比亚迪工业园店),,unknown,,,,,,,,
 雷派酒店(周至水街店),,unknown,,,,,,,,
 澜庭精选酒店(周至集贤比亚迪工业园店),,unknown,,,,,,,,
@@ -617,7 +617,7 @@ ZSMART智尚酒店(西安鄠邑交通工程学院店),114.0,source_value,,,,,,,2
 紫晨酒店(楼观镇店),,unknown,,,,,,,,
 周至果然主题酒店,,unknown,,,,,,,,
 乐居商务宾馆(周至店),,unknown,,,,,,,,
-都市118精选酒店(周至水街汽车站店),,unknown,,,,,,,,
+都市118精选酒店(周至水街汽车站店),31.0,estimated_chain_cross_city,31.0,31.0,31.0,low,1,cross_city_chain_median:都市118,2026-11-11T16:53:18+08:00,
 尚俊森酒店,,unknown,,,,,,,,
 周至德莱凯特电竞酒店(集贤比亚迪工业园店),,unknown,,,,,,,,
 爱巢酒店(周至均发南钻店),,unknown,,,,,,,,
