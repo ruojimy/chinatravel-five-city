@@ -1,0 +1,34 @@
+{
+  "source_input_sha256": "2b4780bcb391ff4c8a0e2a9b7abc0ebcf258dc6e020907262840821c5995d5a3",
+  "source_file_sha256": "5004df29ecb73a105b567b36811505d95ce41404fadc5cd1092d73c0722e8029",
+  "overlay_file_sha256": "816fd8a11d22a2bd6e672be4d6a51510b5716b6f5ac4b499b5d00b7c777aab82",
+  "applied": [
+    {
+      "train_id": "Z179",
+      "from": "北京西",
+      "to": "西安",
+      "departure": "18:20",
+      "arrival": "06:51",
+      "price": 148.5,
+      "seat": "火车硬座",
+      "status": "amap_current_context_reference",
+      "trip_date": null,
+      "availability": "unknown",
+      "source_response_sha256": "9b2facd7aa7d61e72417d12a01a1f42948ea8ddd4b0df79ee2baf43be3126336",
+      "retrieved_at_utc": "2026-11-15T12:39:10.210822+00:00"
+    }
+  ],
+  "rejected": [
+    {
+      "train_id": "G665",
+      "match_count": 1,
+      "seat": "火车二等座",
+      "seat_price_values": [
+        484.5,
+        525.0
+      ],
+      "reason": "non_unique_matching_row_or_seat_price"
+    }
+  ],
+  "boundary": "Only isolated copy modified; no travel date was provided and seat availability is unknown."
+}

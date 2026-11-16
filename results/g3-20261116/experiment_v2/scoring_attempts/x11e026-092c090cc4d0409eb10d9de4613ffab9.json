@@ -1,0 +1,9 @@
+{
+  "uid": "x11e026",
+  "split": "easy",
+  "started_or_finished_utc": "2026-11-15T17:28:39.546709+00:00",
+  "returncode": 0,
+  "stdout": "{\"uid\": \"x11e026\", \"score\": \"C:\\\\Users\\\\xiech\\\\Downloads\\\\计算机软件工程概论\\\\output\\\\luna-repair-20261115\\\\main_merge_20261115\\\\benchmark_xian_n16v2\\\\experiment_v2\\\\scores\\\\x11e026.json\", \"overall\": \"unknown\", \"conditional_zero_assumption\": {\"applied\": true, \"overall\": \"pass\", \"commonsense\": \"pass\", \"attractions\": \"pass\", \"assumptions\": [{\"day\": 2, \"name\": \"拾愿精舍\", \"planned_price\": 0.0, \"dynamic_status\": \"user_authorized_zero_assumption_after_search\", \"dynamic_evidence_path\": \"dynamic_web_prefetch.json\", \"dynamic_evidence_sha256\": \"aec55847fb01ee614d84c87d6a50ee3e72a9913f0b23c56691fdc4edc70dbb6e\", \"state\": \"unknown\", \"reason\": \"assumed_or_undated_reference_price\", \"conditional_assumption_eligible\": true}], \"boundary\": \"Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free.\"}}\n",
+  "stderr": "",
+  "score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11e026.json"
+}

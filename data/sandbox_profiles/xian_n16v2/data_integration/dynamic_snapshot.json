@@ -1,0 +1,144 @@
+{
+  "schema": "chinatravel-dynamic-snapshot-v4",
+  "frozen_at_utc": "2026-11-15T13:58:34.120530+00:00",
+  "mode": "immutable_replay",
+  "provider_budget": 4,
+  "provider_calls_used": 4,
+  "provider_state": "budget_exhausted",
+  "prefetch_sha256": "be783975c46b53792e6517c829f0249b4287faf0be60d4d3aff6ee7f1336e22e",
+  "probe_sha256": "3312da19dffae2e476d471a6e0f99e84543fec6f649db8b9925a5f8a139bf056",
+  "legacy_overlay_sha256": "2d0bff56a0aa6755121f093bcc171803036b4a84522959714ba49dc0a59db732",
+  "web_evidence_sha256": "aec55847fb01ee614d84c87d6a50ee3e72a9913f0b23c56691fdc4edc70dbb6e",
+  "travel_dates": null,
+  "availability_verified": false,
+  "transport_applied": [],
+  "transport_rejected": [
+    {
+      "uid": "Z264",
+      "from_city": "广州",
+      "to_city": "西安",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        236.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "Z230",
+      "from_city": "广州",
+      "to_city": "西安",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        217.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "Z266",
+      "from_city": "西安",
+      "to_city": "广州",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        236.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "Z232",
+      "from_city": "西安",
+      "to_city": "广州",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        217.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "K1064",
+      "from_city": "重庆",
+      "to_city": "西安",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        37.5
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "K4516",
+      "from_city": "重庆",
+      "to_city": "西安",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        75.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    },
+    {
+      "uid": "K4516",
+      "from_city": "重庆",
+      "to_city": "西安",
+      "matches": 0,
+      "seat": "火车硬座",
+      "fares": [
+        102.0
+      ],
+      "reason": "nonunique_identity_time_or_seat_price"
+    }
+  ],
+  "attraction_prices": [
+    {
+      "record_id": "attraction:xian:672",
+      "city": "西安",
+      "name": "拾愿精舍",
+      "price": 0,
+      "status": "user_authorized_zero_assumption_after_search",
+      "identity_verified": false,
+      "trip_date": null,
+      "reason": "Two specific price searches returned no matching entity or price; user authorized zero planning assumption.",
+      "evidence_path": "dynamic_web_prefetch.json",
+      "evidence_sha256": "aec55847fb01ee614d84c87d6a50ee3e72a9913f0b23c56691fdc4edc70dbb6e",
+      "searched_at": "2026-11-15 13:57:09 UTC"
+    },
+    {
+      "record_id": "attraction:xian:143",
+      "city": "西安",
+      "name": "西安牡丹苑",
+      "price": 0,
+      "status": "source_reference_no_trip_date",
+      "trip_date": null,
+      "identity_verified": "name_and_address_need_current_check",
+      "source_url": "https://xa.bendibao.com/tour/201547/51403.shtm",
+      "source_published_at": "2025-04-09 09:14",
+      "evidence_path": "dynamic_web_prefetch.json",
+      "evidence_sha256": "aec55847fb01ee614d84c87d6a50ee3e72a9913f0b23c56691fdc4edc70dbb6e",
+      "searched_at": "2026-11-15 13:57:09 UTC"
+    }
+  ],
+  "changed_train_files": [
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_西安.json",
+      "before_sha256": "62864350e43bb89052033a23e6ce437af7b1016b8f81e65e72e848083be8006c",
+      "after_sha256": "62864350e43bb89052033a23e6ce437af7b1016b8f81e65e72e848083be8006c",
+      "changed": false
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_广州.json",
+      "before_sha256": "38caaeb00fbca3809dd452bf08214d190a7fc3229e35ea9e1d42dd10f09e1d0e",
+      "after_sha256": "38caaeb00fbca3809dd452bf08214d190a7fc3229e35ea9e1d42dd10f09e1d0e",
+      "changed": false
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_西安.json",
+      "before_sha256": "3e3c4f36af96f7e1a955b970101a61ba93f5811a4318c8719442ad71cc3ec6b9",
+      "after_sha256": "3e3c4f36af96f7e1a955b970101a61ba93f5811a4318c8719442ad71cc3ec6b9",
+      "changed": false
+    }
+  ],
+  "boundary": "No live network after freeze; date-unspecified prices are conditional references, not date-specific availability."
+}

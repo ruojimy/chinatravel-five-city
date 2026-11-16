@@ -115,11 +115,18 @@ def run_arm(arm: str) -> dict:
     print(f"[{arm}] {checkout} cases={len(manifest['cases'])} workers={config['workers']}",
           flush=True)
     started = time.monotonic()
+    child_env=dict(os.environ, PYTHONDONTWRITEBYTECODE="1", PYTHONIOENCODING="utf-8",
+                   PYTHONUTF8="1", PYTHONUNBUFFERED="1")
+    profile_file=out/'sandbox_profile.json'
+    if profile_file.is_file():
+        from g3_sandbox import configure
+        profile=read(profile_file)
+        configured=configure(profile['profile'],engine=checkout,environ=child_env)
+        if configured['snapshot_sha256']!=profile['snapshot_sha256']:
+            raise RuntimeError('sandbox profile changed after checkout preparation')
     proc = subprocess.run([str(PY), "-B", "-X", "utf8", str(out / "driver.py")],
                           cwd=str(checkout),
-                          env=dict(os.environ, PYTHONDONTWRITEBYTECODE="1",
-                                   PYTHONIOENCODING="utf-8", PYTHONUTF8="1",
-                                   PYTHONUNBUFFERED="1"),
+                          env=child_env,
                           capture_output=True, text=True, encoding="utf-8", errors="replace")
     (RUNS / f"{arm}_driver_stdout.log").write_text(
         (proc.stdout or "") + "\n--- STDERR ---\n" + (proc.stderr or ""), encoding="utf-8")

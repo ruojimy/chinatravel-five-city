@@ -1,0 +1,215 @@
+{
+  "uid": "x11e012",
+  "target_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "query_sha256": "ece0842a509c1f807169b87a0c096b962de15116dfbb90eaeae320d94041ec25",
+  "plan_sha256": "bfb0637fd5113d66614a4f9f013929ade29958b098190f86029b02c004565079",
+  "scored_utc": "2026-11-15T17:13:15.837925+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "legacy_cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "legacy_messages": [],
+      "price_evidence": [],
+      "policy": "Unknown or assumed attraction price remains conditional; other definite violations remain failures."
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "fail",
+      "issues": [
+        {
+          "state": "fail",
+          "code": "activity_overlaps_previous",
+          "day": 1,
+          "activity_index": 2
+        }
+      ],
+      "policy": "day is departure day; earlier intercity end clock has at least one-day rollover unless explicit end day/date determines it",
+      "implementation": "date_timeline_v4"
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "fail",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "fail"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "44dd8d28adaf13a886454a9e9ae4b8bdcc3173f063506920847efa78a231403d",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  },
+  "superseded_time_group": {
+    "name": "Is_time_correct",
+    "state": "fail",
+    "cells": {
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 1
+    },
+    "messages": [
+      "Activities must not overlap on day 1, activity 2: {'start': '西安北', 'end': '成都东', 'start_time': '07:05', 'end_time': '11:13', 'price': 316.0, 'cost': 632.0, 'tickets': 2, 'type': 'train', 'transports': [], 'TrainID': 'D1911'}"
+    ]
+  },
+  "superseded_attraction_group": {
+    "name": "Is_attractions_correct",
+    "state": "pass",
+    "cells": {
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0
+    },
+    "messages": []
+  },
+  "conditional_zero_assumption": {
+    "applied": false,
+    "overall": "fail",
+    "commonsense": "fail",
+    "attractions": "pass",
+    "assumptions": [],
+    "boundary": "Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free."
+  },
+  "date_scoring": {
+    "policy": "native time group replaced with explicit day-number timeline; other original gates preserved",
+    "timeline_module_sha256": "d3adc58b1730d6fde81b82a23af5e8092ba03dbdce8f4871ff132a8fb94cfe21",
+    "wrapper_sha256": "aa3495c16a2a647260ff7af9ee6f5aa7380ea218908ec4e833bd25cf532521d0",
+    "scored_at_utc": "2026-11-15T17:13:16.245003+00:00",
+    "real_world_boundary": "No given travel date or verified inventory is not evidence of real-world ticket availability.",
+    "base_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e012.json.date_v4.json.base.json",
+    "base_score_sha256": "295e15a25bc8330d7b97634f56b76a4b748b72480e238387eff3ed0b2e5b8964",
+    "duration_evidence": [
+      {
+        "type": "train",
+        "id": "G322",
+        "start": "成都东",
+        "end": "西安北",
+        "matched_duration": {
+          "minutes": 189.0,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_西安.json",
+              "sha256": "739c597edfeac8003492ddb759c404290b9079e55e40bc141163245a73ee3de8"
+            }
+          ]
+        }
+      },
+      {
+        "type": "train",
+        "id": "D1911",
+        "start": "西安北",
+        "end": "成都东",
+        "matched_duration": {
+          "minutes": 247.79999999999998,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_成都.json",
+              "sha256": "20afa8a6bb9171736ceded3e3a25f4c31682d479d0ee2f77e6905f9e9c1b1cb6"
+            }
+          ]
+        }
+      }
+    ],
+    "duration_source_reader_sha256": "ea9a0cc3df4346c6ec024f9282a4ad7b5ca54acaafab19d88923c57fc656ce08",
+    "price_evidence_reader_sha256": "4122a6c1819547cf96034580c7f9480fb29404ab90f07f3c891fed04956011a1",
+    "dynamic_snapshot_path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\data_integration\\dynamic_snapshot_v2.json",
+    "dynamic_snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2"
+  }
+}

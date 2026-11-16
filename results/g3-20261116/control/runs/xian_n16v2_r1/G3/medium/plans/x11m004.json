@@ -1,0 +1,669 @@
+{
+  "people_number": 4,
+  "start_city": "西安",
+  "target_city": "苏州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安北",
+          "end": "苏州北",
+          "start_time": "11:10",
+          "end_time": "17:45",
+          "price": 700.0,
+          "cost": 2800.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G1820"
+        },
+        {
+          "position": "鼎膳·匠宴(高铁新城店)",
+          "type": "dinner",
+          "price": 597.0,
+          "cost": 2388.0,
+          "start_time": "17:50",
+          "end_time": "18:50",
+          "transports": [
+            {
+              "start": "苏州北",
+              "end": "鼎膳·匠宴(高铁新城店)",
+              "mode": "walk",
+              "start_time": "17:45",
+              "end_time": "17:50",
+              "cost": 0,
+              "distance": 0.46227843477305053,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "巷子里的阳光民宿(苏州拙政园平江路店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 498.0,
+          "cost": 1992.0,
+          "rooms": 4,
+          "start_time": "19:27",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "鼎膳·匠宴(高铁新城店)",
+              "end": "高铁苏州北站-地铁站",
+              "mode": "walk",
+              "start_time": "18:50",
+              "end_time": "18:56",
+              "cost": 0,
+              "distance": 0.5,
+              "price": 0
+            },
+            {
+              "start": "高铁苏州北站-地铁站",
+              "end": "悬桥巷-地铁站",
+              "mode": "metro",
+              "start_time": "18:56",
+              "end_time": "19:20",
+              "cost": 16.0,
+              "distance": 12.04,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "mode": "walk",
+              "start_time": "19:20",
+              "end_time": "19:27",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "苏州中国花卉植物园",
+          "type": "attraction",
+          "price": 25.0,
+          "cost": 100.0,
+          "tickets": 4,
+          "start_time": "09:21",
+          "end_time": "10:21",
+          "transports": [
+            {
+              "start": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "end": "悬桥巷-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:37",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "龙道浜-地铁站",
+              "mode": "metro",
+              "start_time": "08:37",
+              "end_time": "08:57",
+              "cost": 16.0,
+              "distance": 10.14,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "龙道浜-地铁站",
+              "end": "苏州中国花卉植物园",
+              "mode": "walk",
+              "start_time": "08:57",
+              "end_time": "09:21",
+              "cost": 0,
+              "distance": 2.05,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "奈尔宝家庭中心 （苏州大悦春风里店）",
+          "type": "attraction",
+          "price": 99.0,
+          "cost": 396.0,
+          "tickets": 4,
+          "start_time": "10:39",
+          "end_time": "11:39",
+          "transports": [
+            {
+              "start": "苏州中国花卉植物园",
+              "end": "奈尔宝家庭中心 （苏州大悦春风里店）",
+              "mode": "walk",
+              "start_time": "10:21",
+              "end_time": "10:39",
+              "cost": 0,
+              "distance": 1.517887151200472,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "大渝火锅(高铁吾悦店)",
+          "type": "lunch",
+          "price": 111.0,
+          "cost": 444.0,
+          "start_time": "12:00",
+          "end_time": "13:00",
+          "transports": [
+            {
+              "start": "奈尔宝家庭中心 （苏州大悦春风里店）",
+              "end": "龙道浜-地铁站",
+              "mode": "walk",
+              "start_time": "11:39",
+              "end_time": "11:51",
+              "cost": 0,
+              "distance": 1.07,
+              "price": 0
+            },
+            {
+              "start": "龙道浜-地铁站",
+              "end": "大湾-地铁站",
+              "mode": "metro",
+              "start_time": "11:51",
+              "end_time": "11:57",
+              "cost": 8.0,
+              "distance": 3.07,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "大湾-地铁站",
+              "end": "大渝火锅(高铁吾悦店)",
+              "mode": "walk",
+              "start_time": "11:57",
+              "end_time": "12:00",
+              "cost": 0,
+              "distance": 0.3,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "幻境世界苏州元宇宙",
+          "type": "attraction",
+          "price": 79.0,
+          "cost": 316.0,
+          "tickets": 4,
+          "start_time": "13:10",
+          "end_time": "14:40",
+          "transports": [
+            {
+              "start": "大渝火锅(高铁吾悦店)",
+              "end": "幻境世界苏州元宇宙",
+              "mode": "walk",
+              "start_time": "13:00",
+              "end_time": "13:10",
+              "cost": 0,
+              "distance": 0.9117243812139455,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "巷子里的阳光民宿(苏州拙政园平江路店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 498.0,
+          "cost": 1992.0,
+          "rooms": 4,
+          "start_time": "15:16",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "幻境世界苏州元宇宙",
+              "end": "大湾-地铁站",
+              "mode": "walk",
+              "start_time": "14:40",
+              "end_time": "14:47",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "大湾-地铁站",
+              "end": "悬桥巷-地铁站",
+              "mode": "metro",
+              "start_time": "14:47",
+              "end_time": "15:09",
+              "cost": 16.0,
+              "distance": 11.37,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "mode": "walk",
+              "start_time": "15:09",
+              "end_time": "15:16",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "澄园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "09:29",
+          "end_time": "10:29",
+          "transports": [
+            {
+              "start": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "end": "悬桥巷-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:37",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "富元路-地铁站",
+              "mode": "metro",
+              "start_time": "08:37",
+              "end_time": "08:56",
+              "cost": 16.0,
+              "distance": 9.93,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "富元路-地铁站",
+              "end": "澄园",
+              "mode": "walk",
+              "start_time": "08:56",
+              "end_time": "09:29",
+              "cost": 0,
+              "distance": 2.81,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "荷塘月色湿地公园",
+          "type": "attraction",
+          "price": 24.8,
+          "cost": 99.2,
+          "tickets": 4,
+          "start_time": "11:28",
+          "end_time": "13:58",
+          "transports": [
+            {
+              "start": "澄园",
+              "end": "富元路-地铁站",
+              "mode": "walk",
+              "start_time": "10:29",
+              "end_time": "11:02",
+              "cost": 0,
+              "distance": 2.81,
+              "price": 0
+            },
+            {
+              "start": "富元路-地铁站",
+              "end": "龙道浜-地铁站",
+              "mode": "metro",
+              "start_time": "11:02",
+              "end_time": "11:05",
+              "cost": 8.0,
+              "distance": 1.9,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "龙道浜-地铁站",
+              "end": "荷塘月色湿地公园",
+              "mode": "walk",
+              "start_time": "11:05",
+              "end_time": "11:28",
+              "cost": 0,
+              "distance": 1.99,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "来点烤肉(苏州大悦春风店)",
+          "type": "lunch",
+          "price": 80.0,
+          "cost": 320.0,
+          "start_time": "14:24",
+          "end_time": "15:24",
+          "transports": [
+            {
+              "start": "荷塘月色湿地公园",
+              "end": "来点烤肉(苏州大悦春风店)",
+              "mode": "walk",
+              "start_time": "13:58",
+              "end_time": "14:24",
+              "cost": 0,
+              "distance": 2.233315152012548,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "苏州图书馆北馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "15:36",
+          "end_time": "17:36",
+          "transports": [
+            {
+              "start": "来点烤肉(苏州大悦春风店)",
+              "end": "龙道浜-地铁站",
+              "mode": "walk",
+              "start_time": "15:24",
+              "end_time": "15:26",
+              "cost": 0,
+              "distance": 0.25,
+              "price": 0
+            },
+            {
+              "start": "龙道浜-地铁站",
+              "end": "活力岛-地铁站",
+              "mode": "metro",
+              "start_time": "15:26",
+              "end_time": "15:32",
+              "cost": 8.0,
+              "distance": 3.2,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "活力岛-地铁站",
+              "end": "苏州图书馆北馆",
+              "mode": "walk",
+              "start_time": "15:32",
+              "end_time": "15:36",
+              "cost": 0,
+              "distance": 0.37,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "火地铁板烧(高铁吾悦店)",
+          "type": "dinner",
+          "price": 104.0,
+          "cost": 416.0,
+          "start_time": "17:54",
+          "end_time": "18:54",
+          "transports": [
+            {
+              "start": "苏州图书馆北馆",
+              "end": "活力岛-地铁站",
+              "mode": "walk",
+              "start_time": "17:36",
+              "end_time": "17:40",
+              "cost": 0,
+              "distance": 0.37,
+              "price": 0
+            },
+            {
+              "start": "活力岛-地铁站",
+              "end": "大湾-地铁站",
+              "mode": "metro",
+              "start_time": "17:40",
+              "end_time": "17:51",
+              "cost": 12.0,
+              "distance": 5.61,
+              "price": 3.0,
+              "tickets": 4
+            },
+            {
+              "start": "大湾-地铁站",
+              "end": "火地铁板烧(高铁吾悦店)",
+              "mode": "walk",
+              "start_time": "17:51",
+              "end_time": "17:54",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "巷子里的阳光民宿(苏州拙政园平江路店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 498.0,
+          "cost": 1992.0,
+          "rooms": 4,
+          "start_time": "19:26",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "火地铁板烧(高铁吾悦店)",
+              "end": "大湾-地铁站",
+              "mode": "walk",
+              "start_time": "18:54",
+              "end_time": "18:57",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "大湾-地铁站",
+              "end": "悬桥巷-地铁站",
+              "mode": "metro",
+              "start_time": "18:57",
+              "end_time": "19:19",
+              "cost": 16.0,
+              "distance": 11.37,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "mode": "walk",
+              "start_time": "19:19",
+              "end_time": "19:26",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "position": "虎丘湿地公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "09:16",
+          "end_time": "11:16",
+          "transports": [
+            {
+              "start": "巷子里的阳光民宿(苏州拙政园平江路店)",
+              "end": "悬桥巷-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:37",
+              "cost": 0,
+              "distance": 0.62,
+              "price": 0
+            },
+            {
+              "start": "悬桥巷-地铁站",
+              "end": "活力岛-地铁站",
+              "mode": "metro",
+              "start_time": "08:37",
+              "end_time": "08:51",
+              "cost": 12.0,
+              "distance": 7.25,
+              "price": 3.0,
+              "tickets": 4
+            },
+            {
+              "start": "活力岛-地铁站",
+              "end": "虎丘湿地公园",
+              "mode": "walk",
+              "start_time": "08:51",
+              "end_time": "09:16",
+              "cost": 0,
+              "distance": 2.17,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "德天肥牛海鲜火锅(采莲店)",
+          "type": "lunch",
+          "price": 159.0,
+          "cost": 636.0,
+          "start_time": "11:57",
+          "end_time": "12:57",
+          "transports": [
+            {
+              "start": "虎丘湿地公园",
+              "end": "活力岛-地铁站",
+              "mode": "walk",
+              "start_time": "11:16",
+              "end_time": "11:41",
+              "cost": 0,
+              "distance": 2.17,
+              "price": 0
+            },
+            {
+              "start": "活力岛-地铁站",
+              "end": "富元路-地铁站",
+              "mode": "metro",
+              "start_time": "11:41",
+              "end_time": "11:48",
+              "cost": 8.0,
+              "distance": 3.99,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "富元路-地铁站",
+              "end": "德天肥牛海鲜火锅(采莲店)",
+              "mode": "walk",
+              "start_time": "11:48",
+              "end_time": "11:57",
+              "cost": 0,
+              "distance": 0.78,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "苏州御窑金砖博物馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "13:24",
+          "end_time": "15:54",
+          "transports": [
+            {
+              "start": "德天肥牛海鲜火锅(采莲店)",
+              "end": "富元路-地铁站",
+              "mode": "walk",
+              "start_time": "12:57",
+              "end_time": "13:06",
+              "cost": 0,
+              "distance": 0.78,
+              "price": 0
+            },
+            {
+              "start": "富元路-地铁站",
+              "end": "阳澄湖中路-地铁站",
+              "mode": "metro",
+              "start_time": "13:06",
+              "end_time": "13:14",
+              "cost": 12.0,
+              "distance": 4.08,
+              "price": 3.0,
+              "tickets": 4
+            },
+            {
+              "start": "阳澄湖中路-地铁站",
+              "end": "苏州御窑金砖博物馆",
+              "mode": "walk",
+              "start_time": "13:14",
+              "end_time": "13:24",
+              "cost": 0,
+              "distance": 0.89,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "昆山",
+          "end": "西安",
+          "start_time": "18:22",
+          "end_time": "08:42",
+          "price": 177.5,
+          "cost": 710.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [
+            {
+              "start": "苏州御窑金砖博物馆",
+              "end": "阳澄湖中路-地铁站",
+              "mode": "walk",
+              "start_time": "15:54",
+              "end_time": "16:04",
+              "cost": 0,
+              "distance": 0.89,
+              "price": 0
+            },
+            {
+              "start": "阳澄湖中路-地铁站",
+              "end": "玉山广场-地铁站",
+              "mode": "metro",
+              "start_time": "16:04",
+              "end_time": "17:06",
+              "cost": 28.0,
+              "distance": 31.48,
+              "price": 7.0,
+              "tickets": 4
+            },
+            {
+              "start": "玉山广场-地铁站",
+              "end": "昆山",
+              "mode": "walk",
+              "start_time": "17:06",
+              "end_time": "17:27",
+              "cost": 0,
+              "distance": 1.8,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z304"
+        }
+      ]
+    }
+  ]
+}

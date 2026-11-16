@@ -1,0 +1,19 @@
+{
+  "uid": "x11e005",
+  "group": "G3",
+  "split": "easy",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "agent_id": "luna-n16v2-easy",
+  "protocol": "luna-g3-main-xian-n16v2-undated",
+  "started_at_utc": "2026-11-15T17:15:04.663058+00:00",
+  "submitted_at_utc": "2026-11-15T17:17:10.408810+00:00",
+  "request_sha256": "fe1df6a3b5ff60b92a82d9c54ec5edcadd2bf0a3038d7b66a9ba14a01bec43b8",
+  "snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+  "raw_sha256": "5b2eb6d8b8bd93dd191ab3316803c85dbfd46db6a9aff1b029ffb2b951326072",
+  "trace_sha256": "bf2cec350550628eda04ac74a02548c8595e23772fb61c22445498b91ce44920",
+  "status": "blocked_by_data",
+  "parse_error": null,
+  "plan_path": null,
+  "checker_feedback_before_first_output": false
+}

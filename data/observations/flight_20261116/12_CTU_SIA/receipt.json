@@ -1,0 +1,16 @@
+{
+  "index": 12,
+  "origin": "成都",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/CTU-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:31:35.979454+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "e0fb9c78523f8c3686a373cf4144ff73e124da8b5d44cc923dbc512e960c265e",
+  "page_description": "2026-11-16成都到西安机票，共6个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "captured_single_source_reference",
+  "declared_count": 6,
+  "accepted": 6,
+  "rejected": 0
+}

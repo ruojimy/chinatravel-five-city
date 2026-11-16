@@ -1,0 +1,105 @@
+{
+  "people_number": 4,
+  "start_city": "深圳",
+  "target_city": "西安",
+  "planning_notes": [
+    "列出的城际班次与价格、餐饮和住宿价格来自无出行日期的冻结快照，不表示已订到或有余票；实际营业和价格需按出行日期确认。"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "深圳",
+          "end": "西安",
+          "TrainID": "K1348",
+          "start_time": "08:00",
+          "end_time": "13:10",
+          "arrival_day": 2,
+          "price": 243,
+          "cost": 972,
+          "tickets": 4,
+          "transports": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "lunch",
+          "position": "羊记炒酸奶",
+          "start_time": "13:21",
+          "end_time": "14:00",
+          "price": 15,
+          "cost": 60,
+          "transports": [
+            {
+              "start": "西安站",
+              "end": "羊记炒酸奶",
+              "mode": "walk",
+              "start_time": "13:10",
+              "end_time": "13:21",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.9690468432793947
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "鸿盛宾馆(红会医院店)",
+          "start_time": "14:30",
+          "end_time": "07:30",
+          "price": 39,
+          "cost": 156,
+          "rooms": 4,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "羊记炒酸奶",
+              "end": "鸿盛宾馆(红会医院店)",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:04",
+              "price": 16.26,
+              "cost": 16.26,
+              "distance": 3.3,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "深圳北",
+          "TrainID": "G837",
+          "start_time": "10:15",
+          "end_time": "19:52",
+          "price": 1048.5,
+          "cost": 4194,
+          "tickets": 4,
+          "transports": [
+            {
+              "start": "鸿盛宾馆(红会医院店)",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "08:00",
+              "end_time": "08:22",
+              "price": 61.32,
+              "cost": 61.32,
+              "distance": 14.81,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

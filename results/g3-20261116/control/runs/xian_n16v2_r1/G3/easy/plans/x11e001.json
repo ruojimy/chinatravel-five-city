@@ -1,0 +1,36 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "北京",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安北",
+          "end": "北京西",
+          "start_time": "07:07",
+          "end_time": "12:13",
+          "price": 618.0,
+          "cost": 1854.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G652"
+        },
+        {
+          "start": "北京西",
+          "end": "西安",
+          "start_time": "18:20",
+          "end_time": "06:51",
+          "price": 148.5,
+          "cost": 445.5,
+          "tickets": 3,
+          "type": "train",
+          "transports": [],
+          "TrainID": "Z179"
+        }
+      ]
+    }
+  ]
+}

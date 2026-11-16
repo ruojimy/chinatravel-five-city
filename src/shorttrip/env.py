@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import functools
 from dataclasses import dataclass
+from contextvars import ContextVar
 
 import pandas as pd
 
@@ -18,6 +19,11 @@ from chinatravel.environment.tools.attractions.apis import Attractions
 from chinatravel.environment.tools.intercity_transport.apis import IntercityTransport
 from chinatravel.environment.tools.restaurants.apis import Restaurants
 from chinatravel.environment.tools.transportation.apis import Transportation, add_time
+
+
+_FARE_CONTEXT_UNSET = object()
+_FARE_CONTEXT = ContextVar('shorttrip_official_fare_context', default=None)
+_FARE_EVIDENCE = ContextVar('shorttrip_official_fare_evidence', default=None)
 
 
 def minutes(hhmm: str) -> int:
@@ -45,6 +51,24 @@ class LegTemplate:
 
 class SandboxEnv:
     """Cached, language-fixed view of the ChinaTravel sandbox."""
+
+    @property
+    def _official_fare_context(self):
+        scoped = _FARE_CONTEXT.get()
+        return scoped[1] if scoped is not None and scoped[0] is self else {}
+
+    @_official_fare_context.setter
+    def _official_fare_context(self, value):
+        _FARE_CONTEXT.set((self, value))
+
+    @property
+    def _official_fare_evidence(self):
+        scoped = _FARE_EVIDENCE.get()
+        return scoped[1] if scoped is not None and scoped[0] is self else None
+
+    @_official_fare_evidence.setter
+    def _official_fare_evidence(self, value):
+        _FARE_EVIDENCE.set((self, value))
 
     def __init__(self, lang: str = "zh"):
         self.lang = lang
@@ -89,14 +113,34 @@ class SandboxEnv:
         self._leg_cache.clear()
         self._place_cache.clear()
 
-    def trains(self, start_city: str, end_city: str) -> list[dict]:
+    def trains(self, start_city: str, end_city: str, *, travel_date=_FARE_CONTEXT_UNSET, seat_code=_FARE_CONTEXT_UNSET) -> list[dict]:
         try:
-            table = self.intercity.select(start_city, end_city, "train")
+            ctx = getattr(self, '_official_fare_context', {})
+            # Omitted arguments preserve the skeleton planner's scoped context;
+            # explicit None opts out, so another request cannot lend its date.
+            if travel_date is _FARE_CONTEXT_UNSET and seat_code is _FARE_CONTEXT_UNSET:
+                opts = ctx.get((start_city, end_city), {})
+            elif travel_date is not _FARE_CONTEXT_UNSET and seat_code is not _FARE_CONTEXT_UNSET and travel_date and seat_code:
+                opts = {'travel_date': travel_date, 'seat_code': seat_code}
+            else:
+                opts = {}
+            if opts:
+                table = self.intercity.select(start_city, end_city, "train", **opts)
+            else:
+                table = self.intercity.select(start_city, end_city, "train")
         except Exception:
             return []
         if not isinstance(table, pd.DataFrame) or table.empty:
             return []
-        return table.to_dict("records")
+        records = table.to_dict("records")
+        evidence = getattr(self, "_official_fare_evidence", None)
+        if evidence is not None:
+            evidence.extend({k: row.get(k) for k in (
+                "TrainID", "From", "To", "CostDate", "CostSeatCode", "Cost",
+                "CostSource", "CostEvidenceSHA256", "CostEvidencePath",
+                "CostAvailability", "CostActualPurchasePrice", "CostAsOfUTC", "PublishedEvidenceSHA256", "PublishedEvidencePath", "DisplayPrice", "DisplayAvailabilityAtObservation", "DisplayObservedAtUTC", "DisplayEvidenceSHA256", "DisplayEvidencePath", "DisplayEndpointEvidence", "DisplayCollectorSHA256")}
+                for row in records if row.get("CostSource") in ("12306_official_published_reference", "12306_official_display_observed"))
+        return records
 
     def flights(self, start_city: str, end_city: str) -> list[dict]:
         try:

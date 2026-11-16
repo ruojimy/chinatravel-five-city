@@ -1,0 +1,42 @@
+{
+  "uid": "x11m004",
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "input_sha256": "5c8af11ee7a220b5e73069cb545ec3a2767a9cd3e690fcf6f9744ce0d3ce6d0c",
+  "planning_query_sha256": "6701864200961d9ec5c390a3bb8527ef06532e491b9d199fbe3dced50a1490ee",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "ff177c85117493af15234ff389f7c4ee0905e8ff8833d402962b6fe8b5cc5106",
+  "evaluations": 10,
+  "moves": [
+    "hotel:巷子里的阳光民宿(苏州拙政园平江路店)"
+  ],
+  "reason": null,
+  "plan_sha256": "30ac55ceabb96a55be2c49924429bed5a01dc4819807271414f1ce0a1838d68d",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": false,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "Inappropriate Meal Times",
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 5,
+    "hard_total": 7,
+    "hard_expected": 7,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": false,
+  "score_sha256": "ae0ce11afece7e356822466777cd63a3cb26e5be99235c3a0489e71d1f6c9c60",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 4.021,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

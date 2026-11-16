@@ -1,4 +1,5 @@
 import pandas as pd
+from chinatravel.environment.planning_access import scoped_frame
 from pandas import DataFrame
 from typing import Callable
 import os
@@ -21,7 +22,7 @@ class Restaurants:
         curdir = os.path.dirname(os.path.realpath(__file__))
         for city in city_list:
             path = os.path.join(curdir, base_path, city, "restaurants_" + city + ".csv")
-            self.data[city] = pd.read_csv(path)
+            self.data[city] = scoped_frame(pd.read_csv(path), 'restaurant', city, self.lang)
 
         self.key_type_tuple_list_map = {}
         for city in city_list:
@@ -50,7 +51,7 @@ class Restaurants:
     def select(self, city: str, key, func: Callable) -> DataFrame:
         if key not in self.data[city].keys():
             return "Key not found."
-        bool_list = [func(x) for x in self.data[city][key]]
+        bool_list = [False if pd.isna(x) else bool(func(x)) for x in self.data[city][key]]
         return self.data[city][bool_list]
 
     def id_is_open(self, city: str, id: int, time: str) -> bool:
@@ -92,7 +93,7 @@ class Restaurants:
         return tmp[tmp["distance"] <= dist].head(topk)
 
     def restaurants_with_recommended_food(self, city: str, food: str):
-        return self.data[city][self.data[city]["recommendedfood"].str.contains(food)]
+        return self.data[city][self.data[city]["recommendedfood"].str.contains(food, na=False)]
 
     def get_cuisine_list(self, city: str):
         return self.cuisine_list_map[city]

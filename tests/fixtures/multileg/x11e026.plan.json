@@ -1,0 +1,100 @@
+{
+  "people_number": 1,
+  "start_city": "重庆",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "23:59",
+          "end_time": "10:56",
+          "start": "重庆西",
+          "end": "西安",
+          "TrainID": "K4516",
+          "arrival_day": 2,
+          "price": 102,
+          "tickets": 1,
+          "cost": 102,
+          "transports": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "11:00",
+          "end_time": "15:26",
+          "position": "拾愿精舍",
+          "price": 0,
+          "tickets": 1,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "西安站",
+              "end": "拾愿精舍",
+              "mode": "walk",
+              "start_time": "11:00",
+              "end_time": "12:48",
+              "price": 0,
+              "cost": 0,
+              "distance": 9.04878369066791
+            },
+            {
+              "start": "拾愿精舍",
+              "end": "时代宾馆(西安西京医院店)",
+              "mode": "walk",
+              "start_time": "14:00",
+              "end_time": "15:26",
+              "price": 0,
+              "cost": 0,
+              "distance": 7.180634215091246
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "15:26",
+          "end_time": "10:01",
+          "position": "时代宾馆(西安西京医院店)",
+          "price": 144,
+          "rooms": 1,
+          "room_type": 1,
+          "cost": 144,
+          "transports": [
+            {
+              "start": "时代宾馆(西安西京医院店)",
+              "end": "西安站",
+              "mode": "walk",
+              "start_time": "09:30",
+              "end_time": "10:01",
+              "price": 0,
+              "cost": 0,
+              "distance": 2.663895800617354
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "11:54",
+          "end_time": "23:15",
+          "start": "西安",
+          "end": "重庆西",
+          "TrainID": "K4518",
+          "price": 102,
+          "tickets": 1,
+          "cost": 102,
+          "transports": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The requested 西安牡丹园 is present in catalog search as attraction:xian:143 (coordinates 34.25025,108.884135), but route lookup from 西安站 to this attraction returned available=false and no legs. The retry using coordinate strings also failed to create a Point, so no connected route is grounded.",
+    "The required 乾州豆腐脑(长安南路华东店) was found at restaurant:xian:530, but its L3 preflight returned conditional_unknown; dynamic_access.status=not_prefetched_budget_exhausted. Its static 14 yuan price is visible, but the frozen snapshot did not resolve its cuisine or recommended food dynamically.",
+    "The selected train route has static snapshot observations, not date-specific availability. The Beijing→Xi'an record Z179 departs 18:20 and arrives 06:51 next day at 148.5 yuan; the Xi'an→Beijing record G652 departs 07:07 at 618 yuan. Both need current date/availability verification, and the public request supplies no date."
+  ]
+}

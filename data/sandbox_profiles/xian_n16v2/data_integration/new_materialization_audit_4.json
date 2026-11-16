@@ -1,0 +1,341 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "0d8975a91bd79cfacb7edda9f5f931ae1ea3a3418d4c040109523544c0446dae",
+  "parent_snapshot_sha256": "89c65353c33ff2eb25d733454d0db2c17650bcbca01d8db456f3b3c9084bd56f",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "ab331cde4be4195b64b3c02036040439ae2bed8be9ee822e0f5f3da274df7138"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "7a71079f9b5b626519c294d1c6ce016c999ad0d4d316ddd22a6a17d5ecdd1b26"
+    },
+    {
+      "id": 3,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "979f53577fd28b722863746ef6d221848c8913d57196c326951be885ea5ea1e9"
+    },
+    {
+      "id": 4,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "8156b302f86e9df81431dc253cdbc02ed109723b5010b5b4f8c8f3cc253bf14e"
+    }
+  ],
+  "accepted_trains": [
+    {
+      "from_city": "西安",
+      "to_city": "武汉",
+      "record": {
+        "TrainID": "Z232",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "武昌",
+        "BeginTime": "20:01",
+        "EndTime": "05:57",
+        "Duration": 9.93,
+        "Cost": 119
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:35.177790+00:00",
+      "source_raw_sha256": "ab331cde4be4195b64b3c02036040439ae2bed8be9ee822e0f5f3da274df7138",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "武汉",
+          "name": "武昌",
+          "provider_id": "B001B15YCV",
+          "position": [
+            30.528545,
+            114.317603
+          ]
+        }
+      ]
+    },
+    {
+      "from_city": "武汉",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z230",
+        "TrainType": "普速",
+        "From": "武昌",
+        "To": "西安",
+        "BeginTime": "22:54",
+        "EndTime": "08:56",
+        "Duration": 10.03,
+        "Cost": 119
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:36.288655+00:00",
+      "source_raw_sha256": "7a71079f9b5b626519c294d1c6ce016c999ad0d4d316ddd22a6a17d5ecdd1b26",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "武汉",
+          "name": "武昌",
+          "provider_id": "B001B15YCV",
+          "position": [
+            30.528545,
+            114.317603
+          ],
+          "reference_distance_m": 0.0
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "深圳",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z230",
+        "TrainType": "普速",
+        "From": "深圳东",
+        "To": "西安",
+        "BeginTime": "09:33",
+        "EndTime": "08:56",
+        "Duration": 23.38,
+        "Cost": 236
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:37.374851+00:00",
+      "source_raw_sha256": "979f53577fd28b722863746ef6d221848c8913d57196c326951be885ea5ea1e9",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 3,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "深圳",
+          "name": "深圳东",
+          "provider_id": "B02F38MIAX",
+          "position": [
+            22.601897,
+            114.11986
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "深圳",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "K1348",
+        "TrainType": "普速",
+        "From": "深圳",
+        "To": "西安",
+        "BeginTime": "08:00",
+        "EndTime": "13:10",
+        "Duration": 29.17,
+        "Cost": 243
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:37.374851+00:00",
+      "source_raw_sha256": "979f53577fd28b722863746ef6d221848c8913d57196c326951be885ea5ea1e9",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 3,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "深圳",
+          "name": "深圳",
+          "provider_id": "B02F30A89U",
+          "position": [
+            22.531951,
+            114.117716
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "深圳",
+      "record": {
+        "TrainID": "Z232",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "深圳东",
+        "BeginTime": "20:01",
+        "EndTime": "19:19",
+        "Duration": 23.3,
+        "Cost": 236
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:38.458541+00:00",
+      "source_raw_sha256": "8156b302f86e9df81431dc253cdbc02ed109723b5010b5b4f8c8f3cc253bf14e",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 4,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "深圳",
+          "name": "深圳东",
+          "provider_id": "B02F38MIAX",
+          "position": [
+            22.601897,
+            114.11986
+          ],
+          "reference_distance_m": 0.0
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "深圳",
+      "record": {
+        "TrainID": "K1350",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "深圳",
+        "BeginTime": "14:30",
+        "EndTime": "20:06",
+        "Duration": 29.6,
+        "Cost": 243
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:19:38.458541+00:00",
+      "source_raw_sha256": "8156b302f86e9df81431dc253cdbc02ed109723b5010b5b4f8c8f3cc253bf14e",
+      "evidence_path": "new_capture_4.sqlite3",
+      "source_row_id": 4,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "深圳",
+          "name": "深圳",
+          "provider_id": "B02F30A89U",
+          "position": [
+            22.531951,
+            114.117716
+          ],
+          "reference_distance_m": 0.0
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "call_id": 1,
+      "train_id": "G406",
+      "reason": "seat_fare_missing_or_conflicting",
+      "values": [
+        479.5,
+        518.0
+      ]
+    },
+    {
+      "call_id": 2,
+      "train_id": "G404",
+      "reason": "seat_fare_missing_or_conflicting",
+      "values": [
+        502.5,
+        545.0
+      ]
+    }
+  ],
+  "changed_direct_files": {
+    "expanded/G3_ext11/chinatravel/environment/database/poi/wuhan/poi.json": "9264ff931f0cfc65e598f476d2e132fba1616192ffffde5c7c6529dfc7ef8faf",
+    "expanded/G3_ext11/chinatravel/environment/database/poi/shenzhen/poi.json": "834432219c029c91e7cfc397c9567a67add9d4b9e78c8a14491ad3064693050f",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_武汉.json": "cd93c85ecb2d2a26e143cba2daf84bd7734ff6cd2451321c4e32dec3d87871ab",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_武汉_to_西安.json": "5ddf11fde3531c7414e778a61056326f0b4d372bdf760cf9cbc12f6178d8956f",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_深圳_to_西安.json": "e50fff569436aa393b9b334f211371f8ed39c6b4ec3917c2ca77c46fb2e005c5",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_深圳.json": "26d4dd037aa3d5d6c8604ea43ecba1fc49e932fbcdcd9bf753f36c049eb56007"
+  },
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets."
+}

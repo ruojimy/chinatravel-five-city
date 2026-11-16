@@ -1,0 +1,9 @@
+{
+  "uid": "x11h007",
+  "split": "human",
+  "started_or_finished_utc": "2026-11-15T17:38:45.972419+00:00",
+  "returncode": 0,
+  "stdout": "{\"uid\": \"x11h007\", \"score\": \"C:\\\\Users\\\\xiech\\\\Downloads\\\\计算机软件工程概论\\\\output\\\\luna-repair-20261115\\\\main_merge_20261115\\\\benchmark_xian_n16v2\\\\experiment_v2\\\\scores\\\\x11h007.json\", \"overall\": \"pass\", \"conditional_zero_assumption\": {\"applied\": false, \"overall\": \"pass\", \"commonsense\": \"pass\", \"attractions\": \"pass\", \"assumptions\": [], \"boundary\": \"Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free.\"}}\n",
+  "stderr": "",
+  "score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11h007.json"
+}

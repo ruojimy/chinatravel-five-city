@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 from pandas import DataFrame
+from chinatravel.environment.airports import airport_matches, airport_display
 from chinatravel.environment.language import CITY_NAMES, normalize_lang, relative_database_path
 
 
@@ -10,6 +11,18 @@ def time2float(time_str):
 
 
 class IntercityTransport:
+    def reference_flights(self, start_city, end_city, travel_date=None):
+        """Expose dated third-party offers as references, never as booked flights."""
+        root = os.environ.get('CT_FLIGHT_REFERENCE_ROOT')
+        if not root or not travel_date:
+            return []
+        import sys
+        runtime = os.environ.get('CT_SANDBOX_RUNTIME_DIR')
+        if runtime and runtime not in sys.path:
+            sys.path.insert(0, runtime)
+        from flight_reference import lookup
+        return lookup(root, start_city, end_city, travel_date)
+
     def __init__(self, path: str = None, lang=None):
         self.lang = normalize_lang(lang)
         curdir = os.path.dirname(os.path.realpath(__file__))
@@ -41,42 +54,72 @@ class IntercityTransport:
                 ] = train_df
 
     def select(
-        self, start_city, end_city, intercity_type, earliest_leave_time="00:00"
+        self, start_city, end_city, intercity_type, earliest_leave_time="00:00", *, travel_date=None, seat_code=None
     ) -> DataFrame:
         if intercity_type not in ["train", "airplane"]:
             return "only support intercity_type in ['train','airplane']"
-        res = self._select(start_city, end_city, intercity_type)
+        res = self._select(start_city, end_city, intercity_type, travel_date=travel_date, seat_code=seat_code)
         bool_list = [False] * len(res)
+        earliest = time2float(earliest_leave_time)
         for i in range(len(res)):
-            if time2float(res.loc[i, "BeginTime"]) >= time2float(earliest_leave_time):
-                bool_list[i] = True
+            try:
+                begin, end = res.loc[i, "BeginTime"], res.loc[i, "EndTime"]
+                cost, duration = res.loc[i, "Cost"], res.loc[i, "Duration"]
+                # A missing price becomes NaN rather than a fabricated zero;
+                # planners that require a budget see only eligible rows.
+                if pd.isna(cost) or pd.isna(duration) or duration <= 0:
+                    continue
+                begin_float, end_float = time2float(begin), time2float(end)
+                if not (0 <= begin_float <= 24 and 0 <= end_float <= 24):
+                    continue
+                bool_list[i] = begin_float >= earliest
+            except (AttributeError, TypeError, ValueError, KeyError):
+                continue
         return res[bool_list]
 
-    def _select(self, start_city, end_city, intercity_type) -> DataFrame:
+    def _select(self, start_city, end_city, intercity_type, *, travel_date=None, seat_code=None) -> DataFrame:
         # intercity_type=='train' | 'airplane'
         if intercity_type == "airplane":
 
             if len(self.airplane_df) == 0:
-                return None
+                return self.airplane_df.copy()
 
-            filtered_flights = self.airplane_df[
-                (self.airplane_df["From"].str.contains(start_city))
-                & (self.airplane_df["To"].str.contains(end_city))
-            ]
+            mask = self.airplane_df.apply(
+                lambda row: airport_matches(row.get("From"), start_city, row.get("FromName"))
+                and airport_matches(row.get("To"), end_city, row.get("ToName")), axis=1)
+            filtered_flights = self.airplane_df[mask].copy()
+            # Preserve the source code while providing the source-supplied airport
+            # name to the planner, POI routing and official verifier consistently.
+            for key in ("From", "To"):
+                name_key = key + "Name"
+                if name_key in filtered_flights:
+                    original = filtered_flights[key].copy()
+                    filtered_flights[key + "Original"] = original
+                    filtered_flights[key] = [airport_display(v, n) for v, n in
+                                             zip(original, filtered_flights[name_key])]
+
+            for key in ("Cost", "Duration"):
+                if key in filtered_flights:
+                    numeric = pd.to_numeric(filtered_flights[key], errors="coerce")
+                    filtered_flights[key] = numeric.where(numeric >= 0)
             sorted_flights = filtered_flights.sort_values(by="BeginTime").reset_index(
                 drop=True
             )
             return sorted_flights
         if intercity_type == "train":
 
-            if len(self.train_df_dict[(start_city, end_city)]) == 0:
-                return None
-
-            filtered_trains = self.train_df_dict[(start_city, end_city)]
-            sorted_trains = filtered_trains.sort_values(by="BeginTime").reset_index(
-                drop=True
-            )
-            return sorted_trains
+            filtered_trains = self.train_df_dict[(start_city, end_city)].copy()
+            for key in ("Cost", "Duration"):
+                if key in filtered_trains:
+                    numeric = pd.to_numeric(filtered_trains[key], errors="coerce")
+                    filtered_trains[key] = numeric.where(numeric >= 0)
+            if travel_date and seat_code:
+                from chinatravel.environment.official_fare_runtime import apply
+                filtered_trains = apply(filtered_trains, travel_date=travel_date, seat_code=seat_code,
+                                        origin_city=start_city, destination_city=end_city, add_new=True)
+            if filtered_trains.empty:
+                return filtered_trains
+            return filtered_trains.sort_values(by="BeginTime").reset_index(drop=True)
 
 
 if __name__ == "__main__":

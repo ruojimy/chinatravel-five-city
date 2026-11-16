@@ -1,0 +1,7 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "For the requested 3-day relaxed trip, the only observed outbound fare is MU2303 at 07:00–09:40 (580 CNY per ticket), and the direct priced Guangzhou→Xi'an services are Z264 at 09:26–07:42 and Z230 at 11:10–08:56. Returning on day 3 by either train would add an arrival bucket on day 4, beyond the requested 3 days; returning early enough to arrive by day 3 leaves only the first day for sightseeing.",
+    "The Guangzhou→Xi'an flights with departures before 19:00 appear only as conditional rows with missing prices. With no trip date and no return fare, I cannot form a complete grounded round trip that meets the time and relaxed-pace constraints. All observed services also have unknown date-specific availability."
+  ]
+}

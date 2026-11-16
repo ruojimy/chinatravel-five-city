@@ -1,0 +1,183 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "上海",
+  "planning_note": "Train fares and accommodation are frozen-snapshot reference values. The sandbox has no trip date or seat/room availability confirmation; these numbers are not a booking confirmation.",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "21:10",
+          "end_time": "12:15",
+          "start": "西安",
+          "end": "上海",
+          "TrainID": "Z42",
+          "arrival_day": 2,
+          "price": 180.5,
+          "tickets": 3,
+          "cost": 541.5,
+          "transports": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "16:09",
+          "end_time": "17:45",
+          "position": "外滩",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "上海站",
+              "end": "上海蓝天宾馆",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:41",
+              "price": 32.63,
+              "cost": 32.63,
+              "distance": 7.98,
+              "cars": 1
+            },
+            {
+              "start": "上海蓝天宾馆",
+              "end": "外滩",
+              "mode": "taxi",
+              "start_time": "16:00",
+              "end_time": "16:09",
+              "price": 27.17,
+              "cost": 27.17,
+              "distance": 6.42,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "dinner",
+          "start_time": "18:14",
+          "end_time": "19:00",
+          "position": "大壶春(四川中路店)",
+          "price": 29,
+          "cost": 87,
+          "transports": [
+            {
+              "start": "外滩",
+              "end": "大壶春(四川中路店)",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:14",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.2240225830097313
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "19:11",
+          "end_time": "08:00",
+          "position": "上海蓝天宾馆",
+          "price": 613,
+          "rooms": 2,
+          "room_type": 2,
+          "cost": 1226,
+          "transports": [
+            {
+              "start": "大壶春(四川中路店)",
+              "end": "上海蓝天宾馆",
+              "mode": "taxi",
+              "start_time": "19:00",
+              "end_time": "19:11",
+              "price": 31.21,
+              "cost": 31.21,
+              "distance": 7.57,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "breakfast",
+          "start_time": "08:11",
+          "end_time": "08:50",
+          "position": "大壶春(四川中路店)",
+          "price": 29,
+          "cost": 87,
+          "transports": [
+            {
+              "start": "上海蓝天宾馆",
+              "end": "大壶春(四川中路店)",
+              "mode": "taxi",
+              "start_time": "08:00",
+              "end_time": "08:11",
+              "price": 31.21,
+              "cost": 31.21,
+              "distance": 7.57,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "start_time": "09:14",
+          "end_time": "16:30",
+          "position": "外滩",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "大壶春(四川中路店)",
+              "end": "外滩",
+              "mode": "walk",
+              "start_time": "09:00",
+              "end_time": "09:14",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.2240225830097313
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start_time": "18:33",
+          "end_time": "09:19",
+          "start": "上海",
+          "end": "西安",
+          "TrainID": "Z164",
+          "arrival_day": 4,
+          "price": 180.5,
+          "tickets": 3,
+          "cost": 541.5,
+          "transports": [
+            {
+              "start": "外滩",
+              "end": "上海站",
+              "mode": "taxi",
+              "start_time": "16:30",
+              "end_time": "16:36",
+              "price": 18.72,
+              "cost": 18.72,
+              "distance": 4.01,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": []
+    }
+  ]
+}

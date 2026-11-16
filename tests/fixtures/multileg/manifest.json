@@ -1,0 +1,12 @@
+[
+  {
+    "uid": "x11e026",
+    "plan_sha256": "d31515ac3f5a42a6e928e5bd9ad77949d6cc373d0e4fc3f40abab6cc440330cd",
+    "query": "city and party-size fields only"
+  },
+  {
+    "uid": "x11h004",
+    "plan_sha256": "1d5a18acbd072b2c5a870f8aa922527ef07d2f546e24f6ec1ec31dfb4d19009c",
+    "query": "city and party-size fields only"
+  }
+]

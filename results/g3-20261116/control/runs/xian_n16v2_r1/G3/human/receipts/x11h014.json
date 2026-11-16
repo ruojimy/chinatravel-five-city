@@ -1,0 +1,18 @@
+{
+  "uid": "x11h014",
+  "group": "G3",
+  "split": "human",
+  "cohort": "full",
+  "input_sha256": "d83428fc2b7b752d5d7981f969f9bb26e70bd5e8af475fda2427e050735b5d17",
+  "planning_query_sha256": "0369be5fb9ca0f6186a94189b51be83229345ddf09bfd0aadb220d80e04e7b9a",
+  "built": false,
+  "all_ok": null,
+  "error": null,
+  "private_audit_sha256": "b24bd3277060f3a8da318af25d5d4a0991ff64d56ef15184dabfd87c37f9cf94",
+  "evaluations": 0,
+  "moves": [],
+  "reason": "no seed",
+  "status": "no_plan",
+  "elapsed_seconds": 0.521,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

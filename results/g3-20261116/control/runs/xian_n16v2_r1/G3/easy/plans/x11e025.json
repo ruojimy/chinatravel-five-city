@@ -1,0 +1,664 @@
+{
+  "people_number": 2,
+  "start_city": "深圳",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "深圳",
+          "end": "西安",
+          "start_time": "08:00",
+          "end_time": "13:10",
+          "price": 243.0,
+          "cost": 486.0,
+          "tickets": 2,
+          "type": "train",
+          "transports": [],
+          "TrainID": "K1348"
+        },
+        {
+          "position": "众家灯火煎饼·家常菜(卜蜂中心店)",
+          "type": "lunch",
+          "price": 37.0,
+          "cost": 74.0,
+          "start_time": "13:30",
+          "end_time": "14:30",
+          "transports": [
+            {
+              "start": "西安",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "13:10",
+              "end_time": "13:13",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "市中医医院-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "13:13",
+              "end_time": "13:27",
+              "cost": 6.0,
+              "distance": 7.1,
+              "price": 3.0,
+              "tickets": 2
+            },
+            {
+              "start": "市中医医院-地铁站-地铁站",
+              "end": "众家灯火煎饼·家常菜(卜蜂中心店)",
+              "mode": "walk",
+              "start_time": "13:27",
+              "end_time": "13:30",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "大明宫国家遗址公园",
+          "type": "attraction",
+          "price": 60.0,
+          "cost": 120.0,
+          "tickets": 2,
+          "start_time": "14:52",
+          "end_time": "16:52",
+          "transports": [
+            {
+              "start": "众家灯火煎饼·家常菜(卜蜂中心店)",
+              "end": "市中医医院-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "14:30",
+              "end_time": "14:33",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "市中医医院-地铁站-地铁站",
+              "end": "含元殿-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "14:33",
+              "end_time": "14:44",
+              "cost": 6.0,
+              "distance": 5.97,
+              "price": 3.0,
+              "tickets": 2
+            },
+            {
+              "start": "含元殿-地铁站-地铁站",
+              "end": "大明宫国家遗址公园",
+              "mode": "walk",
+              "start_time": "14:44",
+              "end_time": "14:52",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "西安钟楼",
+          "type": "attraction",
+          "price": 30.0,
+          "cost": 60.0,
+          "tickets": 2,
+          "start_time": "17:07",
+          "end_time": "17:52",
+          "transports": [
+            {
+              "start": "大明宫国家遗址公园",
+              "end": "含元殿-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "16:52",
+              "end_time": "17:00",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            },
+            {
+              "start": "含元殿-地铁站-地铁站",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "17:00",
+              "end_time": "17:07",
+              "cost": 4.0,
+              "distance": 3.82,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "西安钟楼",
+              "mode": "walk",
+              "start_time": "17:07",
+              "end_time": "17:07",
+              "cost": 0,
+              "distance": 0.07,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "羊记炒酸奶",
+          "type": "dinner",
+          "price": 15.0,
+          "cost": 30.0,
+          "start_time": "17:57",
+          "end_time": "18:57",
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "17:52",
+              "end_time": "17:52",
+              "cost": 0,
+              "distance": 0.07,
+              "price": 0
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "五路口地铁站E东南口-地铁站",
+              "mode": "metro",
+              "start_time": "17:52",
+              "end_time": "17:55",
+              "cost": 4.0,
+              "distance": 1.76,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "五路口地铁站E东南口-地铁站",
+              "end": "羊记炒酸奶",
+              "mode": "walk",
+              "start_time": "17:55",
+              "end_time": "17:57",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "易休太空舱宾馆(西安咸宁店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 25.0,
+          "cost": 50.0,
+          "rooms": 2,
+          "start_time": "19:12",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "羊记炒酸奶",
+              "end": "五路口地铁站E东南口-地铁站",
+              "mode": "walk",
+              "start_time": "18:57",
+              "end_time": "18:59",
+              "cost": 0,
+              "distance": 0.19,
+              "price": 0
+            },
+            {
+              "start": "五路口地铁站E东南口-地铁站",
+              "end": "长乐门地铁站C2口-地铁站",
+              "mode": "metro",
+              "start_time": "18:59",
+              "end_time": "19:02",
+              "cost": 4.0,
+              "distance": 1.62,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "长乐门地铁站C2口-地铁站",
+              "end": "易休太空舱宾馆(西安咸宁店)",
+              "mode": "walk",
+              "start_time": "19:02",
+              "end_time": "19:12",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "兴庆宫公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 2,
+          "start_time": "08:47",
+          "end_time": "09:47",
+          "transports": [
+            {
+              "start": "易休太空舱宾馆(西安咸宁店)",
+              "end": "长乐门地铁站C2口-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:40",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            },
+            {
+              "start": "长乐门地铁站C2口-地铁站",
+              "end": "交通大学·兴庆宫-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "08:40",
+              "end_time": "08:42",
+              "cost": 4.0,
+              "distance": 1.33,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "交通大学·兴庆宫-地铁站-地铁站",
+              "end": "兴庆宫公园",
+              "mode": "walk",
+              "start_time": "08:42",
+              "end_time": "08:47",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "西安碑林博物馆",
+          "type": "attraction",
+          "price": 85.0,
+          "cost": 170.0,
+          "tickets": 2,
+          "start_time": "10:07",
+          "end_time": "11:37",
+          "transports": [
+            {
+              "start": "兴庆宫公园",
+              "end": "交通大学·兴庆宫-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "09:47",
+              "end_time": "09:52",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            },
+            {
+              "start": "交通大学·兴庆宫-地铁站-地铁站",
+              "end": "永宁门-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "09:52",
+              "end_time": "09:59",
+              "cost": 4.0,
+              "distance": 3.72,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "永宁门-地铁站-地铁站",
+              "end": "西安碑林博物馆",
+              "mode": "walk",
+              "start_time": "09:59",
+              "end_time": "10:07",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "赵家腊汁肉(乐居都会店)",
+          "type": "lunch",
+          "price": 13.0,
+          "cost": 26.0,
+          "start_time": "11:59",
+          "end_time": "12:59",
+          "transports": [
+            {
+              "start": "西安碑林博物馆",
+              "end": "永宁门-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "11:37",
+              "end_time": "11:45",
+              "cost": 0,
+              "distance": 0.75,
+              "price": 0
+            },
+            {
+              "start": "永宁门-地铁站-地铁站",
+              "end": "长乐门地铁站C1口-地铁站",
+              "mode": "metro",
+              "start_time": "11:45",
+              "end_time": "11:50",
+              "cost": 4.0,
+              "distance": 2.86,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "长乐门地铁站C1口-地铁站",
+              "end": "赵家腊汁肉(乐居都会店)",
+              "mode": "walk",
+              "start_time": "11:50",
+              "end_time": "11:59",
+              "cost": 0,
+              "distance": 0.8,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "青龙寺",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 2,
+          "start_time": "13:20",
+          "end_time": "14:20",
+          "transports": [
+            {
+              "start": "赵家腊汁肉(乐居都会店)",
+              "end": "长乐门地铁站C1口-地铁站",
+              "mode": "walk",
+              "start_time": "12:59",
+              "end_time": "13:08",
+              "cost": 0,
+              "distance": 0.8,
+              "price": 0
+            },
+            {
+              "start": "长乐门地铁站C1口-地铁站",
+              "end": "青龙寺-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "13:08",
+              "end_time": "13:15",
+              "cost": 4.0,
+              "distance": 3.56,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "青龙寺-地铁站-地铁站",
+              "end": "青龙寺",
+              "mode": "walk",
+              "start_time": "13:15",
+              "end_time": "13:20",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "易休太空舱宾馆(西安咸宁店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 25.0,
+          "cost": 50.0,
+          "rooms": 2,
+          "start_time": "14:42",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "青龙寺",
+              "end": "青龙寺-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "14:20",
+              "end_time": "14:25",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            },
+            {
+              "start": "青龙寺-地铁站-地铁站",
+              "end": "长乐门地铁站C2口-地铁站",
+              "mode": "metro",
+              "start_time": "14:25",
+              "end_time": "14:32",
+              "cost": 4.0,
+              "distance": 3.52,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "长乐门地铁站C2口-地铁站",
+              "end": "易休太空舱宾馆(西安咸宁店)",
+              "mode": "walk",
+              "start_time": "14:32",
+              "end_time": "14:42",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "西安鼓楼",
+          "type": "attraction",
+          "price": 30.0,
+          "cost": 60.0,
+          "tickets": 2,
+          "start_time": "08:48",
+          "end_time": "09:33",
+          "transports": [
+            {
+              "start": "易休太空舱宾馆(西安咸宁店)",
+              "end": "长乐门地铁站C2口-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:40",
+              "cost": 0,
+              "distance": 0.84,
+              "price": 0
+            },
+            {
+              "start": "长乐门地铁站C2口-地铁站",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "08:40",
+              "end_time": "08:45",
+              "cost": 4.0,
+              "distance": 2.71,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "西安鼓楼",
+              "mode": "walk",
+              "start_time": "08:45",
+              "end_time": "08:48",
+              "cost": 0,
+              "distance": 0.32,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "西安博物院",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 2,
+          "start_time": "09:44",
+          "end_time": "10:44",
+          "transports": [
+            {
+              "start": "西安鼓楼",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "09:33",
+              "end_time": "09:36",
+              "cost": 0,
+              "distance": 0.32,
+              "price": 0
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "南稍门地铁站F口-地铁站",
+              "mode": "metro",
+              "start_time": "09:36",
+              "end_time": "09:40",
+              "cost": 4.0,
+              "distance": 2.14,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "南稍门地铁站F口-地铁站",
+              "end": "西安博物院",
+              "mode": "walk",
+              "start_time": "09:40",
+              "end_time": "09:44",
+              "cost": 0,
+              "distance": 0.39,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "回民街",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 2,
+          "start_time": "10:57",
+          "end_time": "12:27",
+          "transports": [
+            {
+              "start": "西安博物院",
+              "end": "南稍门地铁站F口-地铁站",
+              "mode": "walk",
+              "start_time": "10:44",
+              "end_time": "10:48",
+              "cost": 0,
+              "distance": 0.39,
+              "price": 0
+            },
+            {
+              "start": "南稍门地铁站F口-地铁站",
+              "end": "广济街-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "10:48",
+              "end_time": "10:52",
+              "cost": 4.0,
+              "distance": 2.11,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "广济街-地铁站-地铁站",
+              "end": "回民街",
+              "mode": "walk",
+              "start_time": "10:52",
+              "end_time": "10:57",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "农夫馋嘴麻辣香锅(东关店)",
+          "type": "lunch",
+          "price": 17.0,
+          "cost": 34.0,
+          "start_time": "12:46",
+          "end_time": "13:46",
+          "transports": [
+            {
+              "start": "回民街",
+              "end": "广济街-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "12:27",
+              "end_time": "12:32",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            },
+            {
+              "start": "广济街-地铁站-地铁站",
+              "end": "长乐门地铁站C1口-地铁站",
+              "mode": "metro",
+              "start_time": "12:32",
+              "end_time": "12:38",
+              "cost": 4.0,
+              "distance": 3.36,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "长乐门地铁站C1口-地铁站",
+              "end": "农夫馋嘴麻辣香锅(东关店)",
+              "mode": "walk",
+              "start_time": "12:38",
+              "end_time": "12:46",
+              "cost": 0,
+              "distance": 0.68,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "西安",
+          "end": "深圳东",
+          "start_time": "20:01",
+          "end_time": "19:19",
+          "price": 236.0,
+          "cost": 472.0,
+          "tickets": 2,
+          "type": "train",
+          "transports": [
+            {
+              "start": "农夫馋嘴麻辣香锅(东关店)",
+              "end": "长乐门地铁站C1口-地铁站",
+              "mode": "walk",
+              "start_time": "13:46",
+              "end_time": "13:54",
+              "cost": 0,
+              "distance": 0.68,
+              "price": 0
+            },
+            {
+              "start": "长乐门地铁站C1口-地铁站",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "13:54",
+              "end_time": "13:58",
+              "cost": 4.0,
+              "distance": 2.23,
+              "price": 2.0,
+              "tickets": 2
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "西安",
+              "mode": "walk",
+              "start_time": "13:58",
+              "end_time": "14:01",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z232"
+        }
+      ]
+    }
+  ]
+}

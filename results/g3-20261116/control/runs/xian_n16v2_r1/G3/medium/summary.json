@@ -1,0 +1,33 @@
+{
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "queries": 15,
+  "outcomes": {
+    "fail": 8,
+    "pass": 1,
+    "no_plan": 6
+  },
+  "built": 9,
+  "definite_passes": 1,
+  "definite_failures": 8,
+  "unknown_or_no_plan": 6,
+  "receipts": [
+    "receipts/x11m001.json",
+    "receipts/x11m002.json",
+    "receipts/x11m003.json",
+    "receipts/x11m004.json",
+    "receipts/x11m005.json",
+    "receipts/x11m006.json",
+    "receipts/x11m007.json",
+    "receipts/x11m008.json",
+    "receipts/x11m009.json",
+    "receipts/x11m010.json",
+    "receipts/x11m011.json",
+    "receipts/x11m012.json",
+    "receipts/x11m013.json",
+    "receipts/x11m014.json",
+    "receipts/x11m015.json"
+  ],
+  "finished_utc": "2026-11-15T17:13:27.302074+00:00"
+}

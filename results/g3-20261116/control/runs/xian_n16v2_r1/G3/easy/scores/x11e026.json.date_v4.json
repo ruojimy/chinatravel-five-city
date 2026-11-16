@@ -1,0 +1,348 @@
+{
+  "uid": "x11e026",
+  "target_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "query_sha256": "58b095eb386979a183cb006af2c92936695c8d7f540f613fd6e18acaf8788b65",
+  "plan_sha256": "941dea11284ab77978391006fc86ad8cc643a496233a35ae3dfb148495a2cb04",
+  "scored_utc": "2026-11-15T17:14:01.059056+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "legacy_cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "legacy_messages": [],
+      "price_evidence": [
+        {
+          "day": 1,
+          "name": "大明宫国家遗址公园",
+          "planned_price": 60.0,
+          "source_price": 60.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 1,
+          "name": "西安钟楼",
+          "planned_price": 30.0,
+          "source_price": 30.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 1,
+          "name": "回民街",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 2,
+          "name": "兴庆宫公园",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 2,
+          "name": "西安碑林博物馆",
+          "planned_price": 85.0,
+          "source_price": 85.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 2,
+          "name": "青龙寺",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 3,
+          "name": "西安鼓楼",
+          "planned_price": 30.0,
+          "source_price": 30.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 3,
+          "name": "西安博物院",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        }
+      ],
+      "policy": "Unknown or assumed attraction price remains conditional; other definite violations remain failures."
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "fail",
+      "cells": {
+        "Unavailable Inner-City Transport": 1,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [
+        "segment 1: Incorrect infomation of transport 西安 -> 大明宫国家遗址公园  [{'start': '西安', 'end': '西安站地铁站C口-地铁站', 'mode': 'walk', 'start_time': '10:56', 'end_time': '10:59', 'cost': 0, 'distance': 0.26, 'price': 0}], Tool: [{'start': '西安', 'end': '西安站地铁站C口', 'mode': 'walk', 'start_time': '10:56', 'end_time': '10:59', 'cost': 0, 'distance': 0.26}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 大明宫国家遗址公园  [{'start': '西安站地铁站C口-地铁站', 'end': '含元殿-地铁站-地铁站', 'mode': 'metro', 'start_time': '10:59', 'end_time': '11:01', 'cost': 2.0, 'distance': 1.31, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '西安站地铁站C口', 'end': '含元殿-地铁站', 'mode': 'metro', 'start_time': '10:59', 'end_time': '11:01', 'cost': 2, 'distance': 1.31}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 大明宫国家遗址公园  [{'start': '西安站地铁站C口-地铁站', 'end': '含元殿-地铁站-地铁站', 'mode': 'metro', 'start_time': '10:59', 'end_time': '11:01', 'cost': 2.0, 'distance': 1.31, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '西安站地铁站C口', 'end': '含元殿-地铁站', 'mode': 'metro', 'start_time': '10:59', 'end_time': '11:01', 'cost': 2, 'distance': 1.31}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 大明宫国家遗址公园  [{'start': '含元殿-地铁站-地铁站', 'end': '大明宫国家遗址公园', 'mode': 'walk', 'start_time': '11:01', 'end_time': '11:09', 'cost': 0, 'distance': 0.7, 'price': 0}], Tool: [{'start': '含元殿-地铁站', 'end': '大明宫国家遗址公园', 'mode': 'walk', 'start_time': '11:01', 'end_time': '11:09', 'cost': 0, 'distance': 0.7}]",
+        "segment 1: Incorrect infomation of transport 大明宫国家遗址公园 -> 重庆纸包鱼(新城店)  [{'start': '大明宫国家遗址公园', 'end': '含元殿-地铁站-地铁站', 'mode': 'walk', 'start_time': '13:09', 'end_time': '13:17', 'cost': 0, 'distance': 0.7, 'price': 0}], Tool: [{'start': '大明宫国家遗址公园', 'end': '含元殿-地铁站', 'mode': 'walk', 'start_time': '13:09', 'end_time': '13:17', 'cost': 0, 'distance': 0.7}]",
+        "segment 1: Incorrect infomation of transport 大明宫国家遗址公园 -> 重庆纸包鱼(新城店)  [{'start': '含元殿-地铁站-地铁站', 'end': '西安站地铁站C口-地铁站', 'mode': 'metro', 'start_time': '13:17', 'end_time': '13:19', 'cost': 2.0, 'distance': 1.31, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '含元殿-地铁站', 'end': '西安站地铁站C口', 'mode': 'metro', 'start_time': '13:17', 'end_time': '13:19', 'cost': 2, 'distance': 1.31}]",
+        "segment 1: Incorrect infomation of transport 大明宫国家遗址公园 -> 重庆纸包鱼(新城店)  [{'start': '含元殿-地铁站-地铁站', 'end': '西安站地铁站C口-地铁站', 'mode': 'metro', 'start_time': '13:17', 'end_time': '13:19', 'cost': 2.0, 'distance': 1.31, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '含元殿-地铁站', 'end': '西安站地铁站C口', 'mode': 'metro', 'start_time': '13:17', 'end_time': '13:19', 'cost': 2, 'distance': 1.31}]",
+        "segment 1: Incorrect infomation of transport 大明宫国家遗址公园 -> 重庆纸包鱼(新城店)  [{'start': '西安站地铁站C口-地铁站', 'end': '重庆纸包鱼(新城店)', 'mode': 'walk', 'start_time': '13:19', 'end_time': '13:22', 'cost': 0, 'distance': 0.28, 'price': 0}], Tool: [{'start': '西安站地铁站C口', 'end': '重庆纸包鱼(新城店)', 'mode': 'walk', 'start_time': '13:19', 'end_time': '13:22', 'cost': 0, 'distance': 0.28}]",
+        "segment 1: Incorrect infomation of transport 回民街 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '回民街', 'end': '广济街-地铁站-地铁站', 'mode': 'walk', 'start_time': '16:51', 'end_time': '16:56', 'cost': 0, 'distance': 0.44, 'price': 0}], Tool: [{'start': '回民街', 'end': '广济街-地铁站', 'mode': 'walk', 'start_time': '16:51', 'end_time': '16:56', 'cost': 0, 'distance': 0.44}]",
+        "segment 1: Incorrect infomation of transport 回民街 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '广济街-地铁站-地铁站', 'end': '长乐门地铁站C2口-地铁站', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:02', 'cost': 2.0, 'distance': 3.44, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '广济街-地铁站', 'end': '长乐门地铁站C2口', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:02', 'cost': 2, 'distance': 3.44}]",
+        "segment 1: Incorrect infomation of transport 回民街 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '广济街-地铁站-地铁站', 'end': '长乐门地铁站C2口-地铁站', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:02', 'cost': 2.0, 'distance': 3.44, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '广济街-地铁站', 'end': '长乐门地铁站C2口', 'mode': 'metro', 'start_time': '16:56', 'end_time': '17:02', 'cost': 2, 'distance': 3.44}]",
+        "segment 1: Incorrect infomation of transport 回民街 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '长乐门地铁站C2口-地铁站', 'end': '易休太空舱宾馆(西安咸宁店)', 'mode': 'walk', 'start_time': '17:02', 'end_time': '17:12', 'cost': 0, 'distance': 0.84, 'price': 0}], Tool: [{'start': '长乐门地铁站C2口', 'end': '易休太空舱宾馆(西安咸宁店)', 'mode': 'walk', 'start_time': '17:02', 'end_time': '17:12', 'cost': 0, 'distance': 0.84}]",
+        "segment 1: Incorrect infomation of transport 易休太空舱宾馆(西安咸宁店) -> 兴庆宫公园  [{'start': '易休太空舱宾馆(西安咸宁店)', 'end': '长乐门地铁站C2口-地铁站', 'mode': 'walk', 'start_time': '08:30', 'end_time': '08:40', 'cost': 0, 'distance': 0.84, 'price': 0}], Tool: [{'start': '易休太空舱宾馆(西安咸宁店)', 'end': '长乐门地铁站C2口', 'mode': 'walk', 'start_time': '08:30', 'end_time': '08:40', 'cost': 0, 'distance': 0.84}]",
+        "segment 1: Incorrect infomation of transport 易休太空舱宾馆(西安咸宁店) -> 兴庆宫公园  [{'start': '长乐门地铁站C2口-地铁站', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'metro', 'start_time': '08:40', 'end_time': '08:42', 'cost': 2.0, 'distance': 1.33, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '长乐门地铁站C2口', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'metro', 'start_time': '08:40', 'end_time': '08:42', 'cost': 2, 'distance': 1.33}]",
+        "segment 1: Incorrect infomation of transport 易休太空舱宾馆(西安咸宁店) -> 兴庆宫公园  [{'start': '长乐门地铁站C2口-地铁站', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'metro', 'start_time': '08:40', 'end_time': '08:42', 'cost': 2.0, 'distance': 1.33, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '长乐门地铁站C2口', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'metro', 'start_time': '08:40', 'end_time': '08:42', 'cost': 2, 'distance': 1.33}]",
+        "segment 1: Incorrect infomation of transport 易休太空舱宾馆(西安咸宁店) -> 兴庆宫公园  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '兴庆宫公园', 'mode': 'walk', 'start_time': '08:42', 'end_time': '08:47', 'cost': 0, 'distance': 0.44, 'price': 0}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '兴庆宫公园', 'mode': 'walk', 'start_time': '08:42', 'end_time': '08:47', 'cost': 0, 'distance': 0.44}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 西安碑林博物馆  [{'start': '兴庆宫公园', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'walk', 'start_time': '09:47', 'end_time': '09:52', 'cost': 0, 'distance': 0.44, 'price': 0}], Tool: [{'start': '兴庆宫公园', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'walk', 'start_time': '09:47', 'end_time': '09:52', 'cost': 0, 'distance': 0.44}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 西安碑林博物馆  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '永宁门-地铁站-地铁站', 'mode': 'metro', 'start_time': '09:52', 'end_time': '09:59', 'cost': 2.0, 'distance': 3.72, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '永宁门-地铁站', 'mode': 'metro', 'start_time': '09:52', 'end_time': '09:59', 'cost': 2, 'distance': 3.72}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 西安碑林博物馆  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '永宁门-地铁站-地铁站', 'mode': 'metro', 'start_time': '09:52', 'end_time': '09:59', 'cost': 2.0, 'distance': 3.72, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '永宁门-地铁站', 'mode': 'metro', 'start_time': '09:52', 'end_time': '09:59', 'cost': 2, 'distance': 3.72}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 西安碑林博物馆  [{'start': '永宁门-地铁站-地铁站', 'end': '西安碑林博物馆', 'mode': 'walk', 'start_time': '09:59', 'end_time': '10:07', 'cost': 0, 'distance': 0.75, 'price': 0}], Tool: [{'start': '永宁门-地铁站', 'end': '西安碑林博物馆', 'mode': 'walk', 'start_time': '09:59', 'end_time': '10:07', 'cost': 0, 'distance': 0.75}]",
+        "segment 1: Incorrect infomation of transport 西安碑林博物馆 -> 赵家腊汁肉(乐居都会店)  [{'start': '西安碑林博物馆', 'end': '永宁门-地铁站-地铁站', 'mode': 'walk', 'start_time': '11:37', 'end_time': '11:45', 'cost': 0, 'distance': 0.75, 'price': 0}], Tool: [{'start': '西安碑林博物馆', 'end': '永宁门-地铁站', 'mode': 'walk', 'start_time': '11:37', 'end_time': '11:45', 'cost': 0, 'distance': 0.75}]",
+        "segment 1: Incorrect infomation of transport 西安碑林博物馆 -> 赵家腊汁肉(乐居都会店)  [{'start': '永宁门-地铁站-地铁站', 'end': '长乐门地铁站C1口-地铁站', 'mode': 'metro', 'start_time': '11:45', 'end_time': '11:50', 'cost': 2.0, 'distance': 2.86, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '永宁门-地铁站', 'end': '长乐门地铁站C1口', 'mode': 'metro', 'start_time': '11:45', 'end_time': '11:50', 'cost': 2, 'distance': 2.86}]",
+        "segment 1: Incorrect infomation of transport 西安碑林博物馆 -> 赵家腊汁肉(乐居都会店)  [{'start': '永宁门-地铁站-地铁站', 'end': '长乐门地铁站C1口-地铁站', 'mode': 'metro', 'start_time': '11:45', 'end_time': '11:50', 'cost': 2.0, 'distance': 2.86, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '永宁门-地铁站', 'end': '长乐门地铁站C1口', 'mode': 'metro', 'start_time': '11:45', 'end_time': '11:50', 'cost': 2, 'distance': 2.86}]",
+        "segment 1: Incorrect infomation of transport 西安碑林博物馆 -> 赵家腊汁肉(乐居都会店)  [{'start': '长乐门地铁站C1口-地铁站', 'end': '赵家腊汁肉(乐居都会店)', 'mode': 'walk', 'start_time': '11:50', 'end_time': '11:59', 'cost': 0, 'distance': 0.8, 'price': 0}], Tool: [{'start': '长乐门地铁站C1口', 'end': '赵家腊汁肉(乐居都会店)', 'mode': 'walk', 'start_time': '11:50', 'end_time': '11:59', 'cost': 0, 'distance': 0.8}]",
+        "segment 1: Incorrect infomation of transport 赵家腊汁肉(乐居都会店) -> 青龙寺  [{'start': '赵家腊汁肉(乐居都会店)', 'end': '长乐门地铁站C1口-地铁站', 'mode': 'walk', 'start_time': '12:59', 'end_time': '13:08', 'cost': 0, 'distance': 0.8, 'price': 0}], Tool: [{'start': '赵家腊汁肉(乐居都会店)', 'end': '长乐门地铁站C1口', 'mode': 'walk', 'start_time': '12:59', 'end_time': '13:08', 'cost': 0, 'distance': 0.8}]",
+        "segment 1: Incorrect infomation of transport 赵家腊汁肉(乐居都会店) -> 青龙寺  [{'start': '长乐门地铁站C1口-地铁站', 'end': '青龙寺-地铁站-地铁站', 'mode': 'metro', 'start_time': '13:08', 'end_time': '13:15', 'cost': 2.0, 'distance': 3.56, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '长乐门地铁站C1口', 'end': '青龙寺-地铁站', 'mode': 'metro', 'start_time': '13:08', 'end_time': '13:15', 'cost': 2, 'distance': 3.56}]",
+        "segment 1: Incorrect infomation of transport 赵家腊汁肉(乐居都会店) -> 青龙寺  [{'start': '长乐门地铁站C1口-地铁站', 'end': '青龙寺-地铁站-地铁站', 'mode': 'metro', 'start_time': '13:08', 'end_time': '13:15', 'cost': 2.0, 'distance': 3.56, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '长乐门地铁站C1口', 'end': '青龙寺-地铁站', 'mode': 'metro', 'start_time': '13:08', 'end_time': '13:15', 'cost': 2, 'distance': 3.56}]",
+        "segment 1: Incorrect infomation of transport 赵家腊汁肉(乐居都会店) -> 青龙寺  [{'start': '青龙寺-地铁站-地铁站', 'end': '青龙寺', 'mode': 'walk', 'start_time': '13:15', 'end_time': '13:20', 'cost': 0, 'distance': 0.47, 'price': 0}], Tool: [{'start': '青龙寺-地铁站', 'end': '青龙寺', 'mode': 'walk', 'start_time': '13:15', 'end_time': '13:20', 'cost': 0, 'distance': 0.47}]",
+        "segment 1: Incorrect infomation of transport 青龙寺 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '青龙寺', 'end': '青龙寺-地铁站-地铁站', 'mode': 'walk', 'start_time': '14:20', 'end_time': '14:25', 'cost': 0, 'distance': 0.47, 'price': 0}], Tool: [{'start': '青龙寺', 'end': '青龙寺-地铁站', 'mode': 'walk', 'start_time': '14:20', 'end_time': '14:25', 'cost': 0, 'distance': 0.47}]",
+        "segment 1: Incorrect infomation of transport 青龙寺 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '青龙寺-地铁站-地铁站', 'end': '长乐门地铁站C2口-地铁站', 'mode': 'metro', 'start_time': '14:25', 'end_time': '14:32', 'cost': 2.0, 'distance': 3.52, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '青龙寺-地铁站', 'end': '长乐门地铁站C2口', 'mode': 'metro', 'start_time': '14:25', 'end_time': '14:32', 'cost': 2, 'distance': 3.52}]",
+        "segment 1: Incorrect infomation of transport 青龙寺 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '青龙寺-地铁站-地铁站', 'end': '长乐门地铁站C2口-地铁站', 'mode': 'metro', 'start_time': '14:25', 'end_time': '14:32', 'cost': 2.0, 'distance': 3.52, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '青龙寺-地铁站', 'end': '长乐门地铁站C2口', 'mode': 'metro', 'start_time': '14:25', 'end_time': '14:32', 'cost': 2, 'distance': 3.52}]",
+        "segment 1: Incorrect infomation of transport 青龙寺 -> 易休太空舱宾馆(西安咸宁店)  [{'start': '长乐门地铁站C2口-地铁站', 'end': '易休太空舱宾馆(西安咸宁店)', 'mode': 'walk', 'start_time': '14:32', 'end_time': '14:42', 'cost': 0, 'distance': 0.84, 'price': 0}], Tool: [{'start': '长乐门地铁站C2口', 'end': '易休太空舱宾馆(西安咸宁店)', 'mode': 'walk', 'start_time': '14:32', 'end_time': '14:42', 'cost': 0, 'distance': 0.84}]",
+        "segment 1: Incorrect infomation of transport 西安鼓楼 -> 西安博物院  [{'start': '西安鼓楼', 'end': '钟楼地铁站C口-地铁站', 'mode': 'walk', 'start_time': '09:33', 'end_time': '09:36', 'cost': 0, 'distance': 0.32, 'price': 0}], Tool: [{'start': '西安鼓楼', 'end': '钟楼地铁站C口', 'mode': 'walk', 'start_time': '09:33', 'end_time': '09:36', 'cost': 0, 'distance': 0.32}]",
+        "segment 1: Incorrect infomation of transport 西安鼓楼 -> 西安博物院  [{'start': '钟楼地铁站C口-地铁站', 'end': '南稍门地铁站F口-地铁站', 'mode': 'metro', 'start_time': '09:36', 'end_time': '09:40', 'cost': 2.0, 'distance': 2.14, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '钟楼地铁站C口', 'end': '南稍门地铁站F口', 'mode': 'metro', 'start_time': '09:36', 'end_time': '09:40', 'cost': 2, 'distance': 2.14}]",
+        "segment 1: Incorrect infomation of transport 西安鼓楼 -> 西安博物院  [{'start': '钟楼地铁站C口-地铁站', 'end': '南稍门地铁站F口-地铁站', 'mode': 'metro', 'start_time': '09:36', 'end_time': '09:40', 'cost': 2.0, 'distance': 2.14, 'price': 2.0, 'tickets': 1}], Tool: [{'start': '钟楼地铁站C口', 'end': '南稍门地铁站F口', 'mode': 'metro', 'start_time': '09:36', 'end_time': '09:40', 'cost': 2, 'distance': 2.14}]",
+        "segment 1: Incorrect infomation of transport 西安鼓楼 -> 西安博物院  [{'start': '南稍门地铁站F口-地铁站', 'end': '西安博物院', 'mode': 'walk', 'start_time': '09:40', 'end_time': '09:44', 'cost': 0, 'distance': 0.39, 'price': 0}], Tool: [{'start': '南稍门地铁站F口', 'end': '西安博物院', 'mode': 'walk', 'start_time': '09:40', 'end_time': '09:44', 'cost': 0, 'distance': 0.39}]",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result"
+      ]
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "fail",
+      "issues": [
+        {
+          "state": "fail",
+          "code": "activity_overlaps_previous",
+          "day": 1,
+          "activity_index": 2
+        },
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 1,
+          "activity_index": 2,
+          "detail": 1
+        },
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 1,
+          "activity_index": 2,
+          "detail": 2
+        },
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 1,
+          "activity_index": 2,
+          "detail": 3
+        }
+      ],
+      "policy": "day is departure day; earlier intercity end clock has at least one-day rollover unless explicit end day/date determines it",
+      "implementation": "date_timeline_v4"
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "fail",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "fail"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "ba0bd17474024ecd2eac6b40c1c69e38d16defdc6df2924544792bc0702f2292",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  },
+  "superseded_time_group": {
+    "name": "Is_time_correct",
+    "state": "pass",
+    "cells": {
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 0
+    },
+    "messages": []
+  },
+  "superseded_attraction_group": {
+    "name": "Is_attractions_correct",
+    "state": "pass",
+    "cells": {
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0
+    },
+    "messages": []
+  },
+  "conditional_zero_assumption": {
+    "applied": false,
+    "overall": "fail",
+    "commonsense": "fail",
+    "attractions": "pass",
+    "assumptions": [],
+    "boundary": "Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free."
+  },
+  "date_scoring": {
+    "policy": "native time group replaced with explicit day-number timeline; other original gates preserved",
+    "timeline_module_sha256": "d3adc58b1730d6fde81b82a23af5e8092ba03dbdce8f4871ff132a8fb94cfe21",
+    "wrapper_sha256": "aa3495c16a2a647260ff7af9ee6f5aa7380ea218908ec4e833bd25cf532521d0",
+    "scored_at_utc": "2026-11-15T17:14:01.775441+00:00",
+    "real_world_boundary": "No given travel date or verified inventory is not evidence of real-world ticket availability.",
+    "base_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e026.json.date_v4.json.base.json",
+    "base_score_sha256": "7d317544a33cb211578c55f3354896c86f03edb8bed6e22ad0b6afd43b81b318",
+    "duration_evidence": [
+      {
+        "type": "train",
+        "id": "K4516",
+        "start": "重庆西",
+        "end": "西安",
+        "matched_duration": {
+          "minutes": 657.0,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_西安.json",
+              "sha256": "e2614e4eb10c1fb6260cca87aef2fdd7d327c2323286c5d358a83a60bdbcbd7e"
+            }
+          ]
+        }
+      },
+      {
+        "type": "train",
+        "id": "K4518",
+        "start": "西安",
+        "end": "重庆西",
+        "matched_duration": {
+          "minutes": 681.0,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+              "sha256": "4e4a5a8f53d11d3b1fddbd24eb5fbce2711d0e1881cad43d35249d78eca0f349"
+            }
+          ]
+        }
+      }
+    ],
+    "duration_source_reader_sha256": "ea9a0cc3df4346c6ec024f9282a4ad7b5ca54acaafab19d88923c57fc656ce08",
+    "price_evidence_reader_sha256": "4122a6c1819547cf96034580c7f9480fb29404ab90f07f3c891fed04956011a1",
+    "dynamic_snapshot_path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\data_integration\\dynamic_snapshot_v2.json",
+    "dynamic_snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2"
+  }
+}

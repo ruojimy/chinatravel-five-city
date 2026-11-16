@@ -1,0 +1,159 @@
+{
+  "source_sqlite_sha256": "4560e5c129b09d5f6c5279b461de3c4e5fd7f57c44575cb464830c3e5e6ec143",
+  "parent_snapshot_sha256": "ced5373a5023e6d6eedca55a2e9b0d3729870146dc766779fe001409edd4dade",
+  "entity_overlays": [
+    {
+      "record_id": "attraction:xian:8",
+      "city": "西安",
+      "name": "回民街",
+      "source_csv_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+      "fields": {
+        "lat": 34.264587,
+        "lon": 108.936378
+      },
+      "field_provenance": {
+        "lat": "amap_same_name_city_poi",
+        "lon": "amap_same_name_city_poi"
+      },
+      "coordinate_system": "GCJ02",
+      "provider_poi_id": "B001D140J1",
+      "provider_url": "https://www.amap.com/place/B001D140J1",
+      "captured_at_utc": "2026-11-15T14:36:13.871762+00:00",
+      "source_raw_sha256": "461cf99bcd9392a9e7d428a7a13b667e54950c968a46273fa3dd90ded4bc075e",
+      "evidence_path": "live_capture/dynamic_live.sqlite3",
+      "source_row_id": 1,
+      "status": "single_provider_conditionally_verified",
+      "prior_reference_position": [
+        34.2638,
+        108.934
+      ],
+      "prior_reference_distance_m": 235.0,
+      "boundary": "Identity and coordinate match only; current opening, booking and other fields are not inferred."
+    }
+  ],
+  "trains_added": [
+    {
+      "from_city": "西安",
+      "to_city": "重庆",
+      "record": {
+        "TrainID": "K4518",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "重庆西",
+        "BeginTime": "11:54",
+        "EndTime": "23:15",
+        "Duration": 11.35,
+        "Cost": 102
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T14:36:14.981321+00:00",
+      "source_raw_sha256": "c48c2f7c329caeaa259f9149dd14c2ecfdca6b98e10dd3eacb24ea3143ae2d15",
+      "evidence_path": "live_capture/dynamic_live.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    },
+    {
+      "from_city": "成都",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "G322",
+        "TrainType": "高铁",
+        "From": "成都东",
+        "To": "西安北",
+        "BeginTime": "06:56",
+        "EndTime": "10:05",
+        "Duration": 3.15,
+        "Cost": 285
+      },
+      "seat": "火车二等座",
+      "observation_time_utc": "2026-11-15T14:36:17.189865+00:00",
+      "source_raw_sha256": "e873dd010f37c0cb3290de0015ebf0626f212f762bebf58814ad0ed32d35e496",
+      "evidence_path": "live_capture/dynamic_live.sqlite3",
+      "source_row_id": 4,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    }
+  ],
+  "stations_changed": [
+    {
+      "city": "成都",
+      "name": "成都东",
+      "position": [
+        30.628779,
+        104.140947
+      ],
+      "provider_id": "B001C80DL2",
+      "source_raw_sha256": "e873dd010f37c0cb3290de0015ebf0626f212f762bebf58814ad0ed32d35e496"
+    },
+    {
+      "city": "成都",
+      "name": "成都东站",
+      "position": [
+        30.628779,
+        104.140947
+      ],
+      "provider_id": "B001C80DL2",
+      "source_raw_sha256": "d9278a65ef63e7144eeb528ab44f05709a139de8efe9caac6dc1a395e4ac4cee"
+    }
+  ],
+  "rejections": [
+    {
+      "record_id": "attraction:xian:8",
+      "field": "opening_hours",
+      "source_value": [
+        "10:00",
+        "23:00"
+      ],
+      "provider_value": "24小时营业",
+      "reason": "conflicting_operating_hours_no_override"
+    },
+    {
+      "id": "D1711",
+      "reason": "seat_price_missing_or_ambiguous",
+      "values": [
+        279.5,
+        302.0
+      ]
+    },
+    {
+      "id": "C6022",
+      "reason": "not_direct_between_requested_cities"
+    },
+    {
+      "id": "G1836",
+      "reason": "not_direct_between_requested_cities"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_重庆.json",
+      "before_sha256": "cb282c23551fbbf1d91bbc3417a273b6ec57ddeafc1c40f8b98b6ca318debf04",
+      "after_sha256": "4e4a5a8f53d11d3b1fddbd24eb5fbce2711d0e1881cad43d35249d78eca0f349"
+    },
+    {
+      "path": "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_成都_to_西安.json",
+      "before_sha256": "2e459418a8df1ac526b45ad71f5d273fde076549e738a72f53a25c316e088c9c",
+      "after_sha256": "739c597edfeac8003492ddb759c404290b9079e55e40bc141163245a73ee3de8"
+    },
+    {
+      "path": "expanded/G3_ext11/chinatravel/environment/database/poi/xian/poi.json",
+      "before_sha256": "2d819791b0af4c0ae69da778b84236fd0d28bb77874f805aeb530777f40e6ec4",
+      "after_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7"
+    },
+    {
+      "path": "expanded/G3_ext11/chinatravel/environment/database/poi/chongqing/poi.json",
+      "before_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+      "after_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362"
+    },
+    {
+      "path": "expanded/G3_ext11/chinatravel/environment/database/poi/chengdu/poi.json",
+      "before_sha256": "cc94c3394c5bf94d0ba9c4b625be93f570c936b1a293471971098aa2ad70f1cc",
+      "after_sha256": "e17fea55c8ec3f9555bc50b8cff4ece36f6063d5615d0d0ab407fab094086d31"
+    }
+  ],
+  "entity_csv_was_not_modified": true,
+  "boundary": "Single-provider observations and no travel date: conditional benchmark references, not proof of real-world availability."
+}

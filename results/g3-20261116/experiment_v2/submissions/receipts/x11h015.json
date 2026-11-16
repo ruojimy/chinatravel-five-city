@@ -1,0 +1,19 @@
+{
+  "uid": "x11h015",
+  "group": "G3",
+  "split": "human",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "agent_id": "luna-n16v2-human",
+  "protocol": "luna-g3-main-xian-n16v2-undated",
+  "started_at_utc": "2026-11-15T17:27:18.521203+00:00",
+  "submitted_at_utc": "2026-11-15T17:30:41.406147+00:00",
+  "request_sha256": "8055c576cf1f55c3b8156d8e5adf7150ccb8c765e98ca13ed29b7da11652248b",
+  "snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+  "raw_sha256": "edf649367df9c48b05de7afc220b37e7bbd1fb82d8082f8f86a1f6b2b6c7080c",
+  "trace_sha256": "52bad616e964b9eca9ef7ce7d05eaeb4d395fd4ce623b2584b43f3d42acdf5c1",
+  "status": "submitted_first_draft",
+  "parse_error": null,
+  "plan_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\nativeplans\\x11h015.json",
+  "checker_feedback_before_first_output": false
+}

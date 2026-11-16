@@ -256,12 +256,18 @@ def inject_11th(database: Path, checkout: Path) -> dict:
     # register the city (data-layer only; no planner logic touched)
     lang = checkout / "chinatravel/environment/language.py"
     text = lang.read_text(encoding="utf-8")
-    if '"xian"' not in text:
-        text = text.replace('    "chongqing",\n]', '    "chongqing",\n    "xian",\n]')
-    if '"西安"' not in text:
-        text = text.replace('"广州", "重庆"]', '"广州", "重庆", "西安"]')
-    if "Xi'an" not in text:
-        text = text.replace('        "Chongqing",\n    ]', '        "Chongqing",\n        "Xi\'an",\n    ]')
+    profile_condition = "if os.environ.get('CHINATRAVEL_PROFILE') == 'expanded11':"
+    if profile_condition in text:
+        # Legacy generated G3 checkouts need Xi'an without changing the native
+        # default of the shared source tree. Do not append the city twice.
+        text = text.replace(profile_condition, 'if True:  # legacy generated G3 checkout')
+    else:
+        if '"xian"' not in text:
+            text = text.replace('    "chongqing",\n]', '    "chongqing",\n    "xian",\n]')
+        if '"西安"' not in text:
+            text = text.replace('"广州", "重庆"]', '"广州", "重庆", "西安"]')
+        if "Xi'an" not in text:
+            text = text.replace('        "Chongqing",\n    ]', '        "Chongqing",\n        "Xi\'an",\n    ]')
     lang.write_text(text, encoding="utf-8")
     return {"copied_files": copied, "train_pairs_added": added,
             "skipped_due_to_concurrent_rebuild": skipped,
@@ -337,9 +343,12 @@ def write_config_manifest(checkout: Path, cases: list, arm: str) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", choices=["G1", "G2", "G3"], default=None)
+    ap.add_argument("--g3-profile", type=Path,
+                    help="Use a verified immutable eleven-city snapshot for G3")
     args = ap.parse_args()
     RUNS.mkdir(parents=True, exist_ok=True)
-    ensure_catalog()
+    if not (args.only == 'G3' and args.g3_profile):
+        ensure_catalog()
     native = sample_native()
     xian = sample_xian11()
     # Keep the earlier 1/5 freeze for the record; this run writes a new file.
@@ -366,9 +375,14 @@ def main() -> int:
         copy_checkout(checkout)
         database = checkout / "chinatravel/environment/database"
         info = {}
-        if arm in ("G2", "G3"):
+        if arm in ("G2", "G3") and not (arm == 'G3' and args.g3_profile):
             info["extended_10"] = export_extended_10(database)
-        if arm == "G3":
+        if arm == "G3" and args.g3_profile:
+            from g3_sandbox import configure
+            checked=configure(args.g3_profile,engine=checkout,environ={})
+            info['verified_g3_profile']=checked
+            save(checkout/'experiments/c_only/sandbox_profile.json',checked)
+        elif arm == "G3":
             info["xian11"] = inject_11th(database, checkout)
         samples = native if arm in ("G1", "G2") else xian
         source = QUERIES if arm in ("G1", "G2") else QUERIES / "xian11"

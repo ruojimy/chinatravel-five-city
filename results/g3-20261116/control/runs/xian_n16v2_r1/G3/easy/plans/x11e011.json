@@ -1,0 +1,68 @@
+{
+  "people_number": 1,
+  "start_city": "北京",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "北京西",
+          "end": "西安",
+          "start_time": "18:20",
+          "end_time": "06:51",
+          "price": 148.5,
+          "cost": 148.5,
+          "tickets": 1,
+          "type": "train",
+          "transports": [],
+          "TrainID": "Z179"
+        },
+        {
+          "start": "西安北",
+          "end": "北京西",
+          "start_time": "09:10",
+          "end_time": "13:30",
+          "price": 618.0,
+          "cost": 618.0,
+          "tickets": 1,
+          "type": "train",
+          "transports": [
+            {
+              "start": "西安",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "06:51",
+              "end_time": "06:54",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "西安北站(地铁站)-地铁站",
+              "mode": "metro",
+              "start_time": "06:54",
+              "end_time": "07:17",
+              "cost": 4.0,
+              "distance": 11.6,
+              "price": 4.0,
+              "tickets": 1
+            },
+            {
+              "start": "西安北站(地铁站)-地铁站",
+              "end": "西安北",
+              "mode": "walk",
+              "start_time": "07:17",
+              "end_time": "07:22",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            }
+          ],
+          "TrainID": "G366"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "protocol": "luna-g3-main-xian-n16v2-undated",
+  "created_utc": "2026-11-15T16:48:56.888862+00:00",
+  "source_manifest_sha256": "7194ca79a78217b23ba27826f33c8a02abdd2570c6ec2a7f92d0345fb037203f",
+  "samples": {
+    "easy": [
+      {
+        "uid": "x11e014",
+        "source_sha256": "6649af5d497f55a87e7dd0f194e0045ad9caad29a150a048b54e2598e769704d",
+        "request_sha256": "591a66055bb9419a21a70897a132a24af258038375e7fb4157a75e2c4fdfd3ac"
+      },
+      {
+        "uid": "x11e005",
+        "source_sha256": "26220b6a593d1a4a28c9de777e9d7d3959a03d91712188d3d55d8e39915f8560",
+        "request_sha256": "fe1df6a3b5ff60b92a82d9c54ec5edcadd2bf0a3038d7b66a9ba14a01bec43b8"
+      },
+      {
+        "uid": "x11e026",
+        "source_sha256": "eb389bd50e95d1dfc2bc16182a932fd5dce7fc9f02daffc5f963103754e78c68",
+        "request_sha256": "3314c49f6481892b54570eb6a0568cc6f06abc71e7813580f825d812a67cc55a"
+      },
+      {
+        "uid": "x11e013",
+        "source_sha256": "a03e573aea56098914eafef65957fee4b3587bb09913ee049c1ca2b61aec5038",
+        "request_sha256": "f68d7719d97f12e8bfae4742fb45cec56a9ec21cc87ee474241959af8da1d685"
+      },
+      {
+        "uid": "x11e021",
+        "source_sha256": "7b35b6ff4fb1ce616e88af339340885ade56aca60325cc6e18fe0b7be9e64422",
+        "request_sha256": "0b8ca8aecc5be6fa8b208179a3f1d890074ba6cb38a3e91fd8b1bb0b3d94555c"
+      },
+      {
+        "uid": "x11e018",
+        "source_sha256": "fd2b71103ac33a2376a70b74c6601ef9d2ae201c45da130baadff620767d17a9",
+        "request_sha256": "1aacd370dac608fba28ada2e8692de11f2fccbf11569f0dc9980ef9263aa8e89"
+      }
+    ],
+    "medium": [
+      {
+        "uid": "x11m001",
+        "source_sha256": "519fb337bc217788aa607e50085ee1e1e28bfa6be49ef194a2274a72dc17903b",
+        "request_sha256": "22c3ca463d93449c5053f4e6c1da546bbd534b2ceb6fcd20e66381dfc538d332"
+      },
+      {
+        "uid": "x11m011",
+        "source_sha256": "65291571183c01288420a623a6bf003a1709f7ea03bc7520a842ccff688344cb",
+        "request_sha256": "cc450de16906db2576da97c3a2f7ac14437586607965edb7934391a62dec0691"
+      },
+      {
+        "uid": "x11m007",
+        "source_sha256": "ca095cd95fac1daac223f1f66a105d6f9917ab3b58e75bf25d291e4833933568",
+        "request_sha256": "005d8c053844baf74baf5cd48dd8d719fb2b96ff42752b7b8da887771e2ffd60"
+      },
+      {
+        "uid": "x11m013",
+        "source_sha256": "2d51bf11d5101f07244c8df9b30a56460615581f6f473a09efc3c3a710962d8b",
+        "request_sha256": "57abf7d9929792b1f983b4156543c22f6cf0da2ed82d79dfafc8c87375c22c5f"
+      },
+      {
+        "uid": "x11m003",
+        "source_sha256": "205b843123053c9dade22258a063d07719cf9d905894e11fea15b10d07dfe2b4",
+        "request_sha256": "f04b14a57faa51da5466f1f909abcdbe8e2a69757f0dd80270b37e87f86bc9d3"
+      },
+      {
+        "uid": "x11m014",
+        "source_sha256": "c611a0d9dad16b4272ddff5452ba03805794685b59f26073e70afa9e62439f3a",
+        "request_sha256": "30c816d1695270f157e0b7c8024054dbb5c16b7d5f00772560a112f7ad19ce14"
+      }
+    ],
+    "human": [
+      {
+        "uid": "x11h009",
+        "source_sha256": "60e12955acd19be7195afe9dc1f065f82685552e13cb63418348990d1be9817c",
+        "request_sha256": "dff7830d61f6bb5fa03b54f6f56cbbc06998ad18e1da3ee07a21bb20e0ae3ff5"
+      },
+      {
+        "uid": "x11h001",
+        "source_sha256": "ab9c0140690dcd85c9f472939f9406141d72a668fdcf70253540bfb7ddef36d6",
+        "request_sha256": "3bb505e40a02f52eb8442f884e9db541424f3a9a7fe363694a05f7e69c68398b"
+      },
+      {
+        "uid": "x11h004",
+        "source_sha256": "fcc0c55e9fed82130b5d24b90fcd9829ffae95b7f88bc8369e006271241fcc2f",
+        "request_sha256": "65247829b682cd3dc514b3d3d3c0b2ff2d9e3dab501475c75509dd986faf006e"
+      },
+      {
+        "uid": "x11h012",
+        "source_sha256": "43826603baa0823ccd2eb1be835945cae6c7d343c6d7ba87883003b6823bd3ac",
+        "request_sha256": "a7fef4d7c4469137899b858b4297577e795ca6286dfbdbb3408392cd7eb71265"
+      },
+      {
+        "uid": "x11h015",
+        "source_sha256": "21fcea3159b26e0ecc191e6120ff83e0c1ff772633d8145f57b30f2ec82aa861",
+        "request_sha256": "8055c576cf1f55c3b8156d8e5adf7150ccb8c765e98ca13ed29b7da11652248b"
+      },
+      {
+        "uid": "x11h007",
+        "source_sha256": "e31bcc492500d0e627e60c657a5b7acba4f28c6124382f0d62ae6d21effe906c",
+        "request_sha256": "402b962f09969bf8be9d51a96af9c6476c33663747bc8d6f76b2912e17e732e5"
+      }
+    ]
+  },
+  "boundary": "Same selected UIDs as prior benchmark; no hidden labels in public request."
+}

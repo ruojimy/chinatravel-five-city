@@ -8,12 +8,24 @@ which is what makes the loop self-verifying.
 """
 from __future__ import annotations
 
+import math
 import re
 from dataclasses import dataclass, field
 
 from .checker import CheckReport, check_plan, hard_vector
 from .env import SandboxEnv, minutes
 from .scheduler import extract_content, find_record, lookup_row, schedule
+
+
+def _required_price(row: dict) -> float:
+    """Never repair a missing or invalid price into a free item."""
+    try:
+        value = float(row["price"])
+    except (KeyError, TypeError, ValueError) as exc:
+        raise ValueError("price is unknown") from exc
+    if not math.isfinite(value) or value < 0:
+        raise ValueError("price is unknown")
+    return value
 
 NAME_RE = re.compile(r'activity_position\(activity\)\s*==\s*"([^"]+)"')
 SET_RE = re.compile(r'\{([^{}]*)\}\s*<=\s*(\w+)')
@@ -594,17 +606,17 @@ class RepairEngine:
                 if requirements.room_type is not None and kind == "accommodation":
                     activity["room_type"] = requirements.room_type
                 if kind == "accommodation":
-                    activity["cost"] = float(activity.get("price", 0)) * float(activity.get("rooms", 1))
+                    activity["cost"] = _required_price(activity) * float(activity.get("rooms", 1))
                 if kind in ("attraction", "train", "airplane"):
-                    activity["cost"] = float(activity.get("price", 0)) * float(activity.get("tickets", 1))
+                    activity["cost"] = _required_price(activity) * float(activity.get("tickets", 1))
                 if kind in ("lunch", "dinner", "breakfast"):
-                    activity["cost"] = float(activity.get("price", 0)) * people
+                    activity["cost"] = _required_price(activity) * people
                 for transport in activity.get("transports", []):
                     if transport.get("mode") == "metro":
                         if requirements.tickets is not None:
                             transport["tickets"] = requirements.tickets
-                        transport["cost"] = float(transport.get("price", 0)) * float(transport.get("tickets", 1))
+                        transport["cost"] = _required_price(transport) * float(transport.get("tickets", 1))
                     elif transport.get("mode") == "taxi":
                         if requirements.cars is not None:
                             transport["cars"] = requirements.cars
-                        transport["cost"] = float(transport.get("price", 0)) * float(transport.get("cars", 1))
+                        transport["cost"] = _required_price(transport) * float(transport.get("cars", 1))

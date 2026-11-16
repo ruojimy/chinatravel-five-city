@@ -13,6 +13,7 @@ the same query always yields the same plan.
 """
 from __future__ import annotations
 
+import math
 import re
 from dataclasses import dataclass, field
 
@@ -129,11 +130,19 @@ def _hhmm(text: str) -> int | None:
         return None
 
 
-def _price(row: dict | None) -> float:
+def _known_nonnegative(value) -> bool:
     try:
-        return float((row or {}).get("price", 0) or 0)
+        value = float(value)
     except (TypeError, ValueError):
-        return 0.0
+        return False
+    return math.isfinite(value) and value >= 0
+
+
+def _price(row: dict | None) -> float:
+    value = (row or {}).get("price")
+    if not _known_nonnegative(value):
+        raise ValueError("price is unknown")
+    return float(value)
 
 
 class ConstraintPlannerV2:
@@ -223,7 +232,8 @@ class ConstraintPlannerV2:
         if table is None or table.empty:
             return pd.DataFrame()
         frame = table.copy()
-        frame["price"] = pd.to_numeric(frame["price"], errors="coerce").fillna(0)
+        frame["price"] = pd.to_numeric(frame["price"], errors="coerce")
+        frame = frame[frame["price"].map(_known_nonnegative)]
         return frame
 
     def _meal_kind(self, city: str, name: str) -> str:
@@ -243,12 +253,20 @@ class ConstraintPlannerV2:
         return best_kind
 
     def _leg(self, frm: str, to: str, mode: str, *, reverse: bool = False,
-             window: tuple[int, int] | None = None) -> dict | None:
-        pool = self.env.flights(frm, to) if mode == "airplane" else self.env.trains(frm, to)
+             window: tuple[int, int] | None = None,
+             travel_date: str | None = None, seat_code: str | None = None) -> dict | None:
+        if mode == "airplane":
+            pool = self.env.flights(frm, to)
+        else:
+            # Explicit None opts out of any skeleton-planner fare context.
+            pool = self.env.trains(frm, to, travel_date=travel_date, seat_code=seat_code)
         if not pool:
             return None
         rows = [r for r in pool if str(r.get("type", mode)) in (mode, "train" if mode == "train" else mode)]
         rows = rows or list(pool)
+        rows = [r for r in rows if _known_nonnegative(r.get("Cost"))]
+        if not rows:
+            return None
         if window is not None:
             low, high = window
             filtered = [r for r in rows if low <= (minutes(r["BeginTime"]) or 0) <= high]
@@ -256,10 +274,10 @@ class ConstraintPlannerV2:
         if reverse:
             rows.sort(key=lambda r: -(minutes(r["BeginTime"]) or 0))
         else:
-            rows.sort(key=lambda r: (minutes(r["BeginTime"]) or 0, float(r.get("Cost", 0))))
+            rows.sort(key=lambda r: (minutes(r["BeginTime"]) or 0, float(r["Cost"])))
         pick = rows[0]
         leg = {key: pick.get(key) for key in ("From", "To", "BeginTime", "EndTime", "Cost")}
-        leg["Cost"] = float(pick.get("Cost", 0))
+        leg["Cost"] = float(pick["Cost"])
         # The plan schema keys the leg by TrainID for trains and FlightID for flights;
         # an empty id makes the official checker reject the whole intercity event.
         if mode == "airplane":
@@ -285,8 +303,11 @@ class ConstraintPlannerV2:
             go_window = None
             if req.go_window:
                 go_window = (minutes(req.go_window[0]) or 0, minutes(req.go_window[1]) or 24 * 60)
-            go = self._leg(start, city, mode, window=go_window)
-            back = self._leg(city, start, mode, reverse=True)
+            seat = query.get("train_seat_code")
+            go = self._leg(start, city, mode, window=go_window,
+                           travel_date=query.get("outbound_date"), seat_code=seat)
+            back = self._leg(city, start, mode, reverse=True,
+                             travel_date=query.get("return_date"), seat_code=seat)
             if go is None or back is None:
                 continue
             candidate = self._copy(state)

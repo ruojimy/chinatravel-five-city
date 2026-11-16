@@ -1,0 +1,158 @@
+{
+  "people_number": 4,
+  "start_city": "西安",
+  "target_city": "上海",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安北",
+          "end": "上海虹桥",
+          "start_time": "08:51",
+          "end_time": "14:43",
+          "price": 870.0,
+          "cost": 3480.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G89"
+        },
+        {
+          "position": "虹桥丽宝广场",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "14:53",
+          "end_time": "16:23",
+          "transports": [
+            {
+              "start": "上海虹桥",
+              "end": "虹桥丽宝广场",
+              "mode": "walk",
+              "start_time": "14:43",
+              "end_time": "14:53",
+              "cost": 0,
+              "distance": 0.8857397559263699,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "梦回大唐古风沉浸式乐园",
+          "type": "attraction",
+          "price": 468.0,
+          "cost": 1872.0,
+          "tickets": 4,
+          "start_time": "16:24",
+          "end_time": "17:24",
+          "transports": [
+            {
+              "start": "虹桥丽宝广场",
+              "end": "梦回大唐古风沉浸式乐园",
+              "mode": "walk",
+              "start_time": "16:23",
+              "end_time": "16:24",
+              "cost": 0,
+              "distance": 0.16281745072690673,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "上海虹桥康得思酒店·明阁",
+          "type": "dinner",
+          "price": 829.0,
+          "cost": 3316.0,
+          "start_time": "17:34",
+          "end_time": "18:34",
+          "transports": [
+            {
+              "start": "梦回大唐古风沉浸式乐园",
+              "end": "上海虹桥康得思酒店·明阁",
+              "mode": "walk",
+              "start_time": "17:24",
+              "end_time": "17:34",
+              "cost": 0,
+              "distance": 0.8622749453546643,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "唯庭酒店(上海徐家汇交大店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 345.0,
+          "cost": 1380.0,
+          "rooms": 4,
+          "start_time": "19:02",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "上海虹桥康得思酒店·明阁",
+              "end": "虹桥火车站-地铁站",
+              "mode": "walk",
+              "start_time": "18:34",
+              "end_time": "18:37",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            },
+            {
+              "start": "虹桥火车站-地铁站",
+              "end": "宜山路-地铁站",
+              "mode": "metro",
+              "start_time": "18:37",
+              "end_time": "18:57",
+              "cost": 16.0,
+              "distance": 10.35,
+              "price": 4.0,
+              "tickets": 4
+            },
+            {
+              "start": "宜山路-地铁站",
+              "end": "唯庭酒店(上海徐家汇交大店)",
+              "mode": "walk",
+              "start_time": "18:57",
+              "end_time": "19:02",
+              "cost": 0,
+              "distance": 0.47,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "start": "上海虹桥",
+          "end": "西安北",
+          "start_time": "08:55",
+          "end_time": "14:34",
+          "price": 756.0,
+          "cost": 3024.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [
+            {
+              "start": "唯庭酒店(上海徐家汇交大店)",
+              "end": "上海虹桥",
+              "mode": "taxi",
+              "start_time": "08:30",
+              "end_time": "08:46",
+              "cost": 42.86,
+              "distance": 10.7,
+              "price": 42.86,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G94"
+        }
+      ]
+    }
+  ]
+}

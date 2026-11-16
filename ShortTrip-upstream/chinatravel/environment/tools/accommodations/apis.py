@@ -1,4 +1,5 @@
 import pandas as pd
+from chinatravel.environment.planning_access import scoped_frame
 from pandas import DataFrame
 from typing import Callable
 from geopy.distance import geodesic
@@ -25,7 +26,7 @@ class Accommodations:
         ]
         self.data = {}
         for i, city in enumerate(city_list):
-            self.data[city] = pd.read_csv(data_path_list[i]).dropna()
+            self.data[city] = scoped_frame(pd.read_csv(data_path_list[i]), 'accommodation', city, self.lang)
         self.key_type_tuple_list = {}
         for city in city_list:
             self.key_type_tuple_list[city] = []
@@ -49,7 +50,7 @@ class Accommodations:
     def select(self, city, key, func: Callable) -> DataFrame:
         if key not in self.data[city].keys():
             return "Key not found."
-        bool_list = [func(x) for x in self.data[city][key]]
+        bool_list = [False if pd.isna(x) else bool(func(x)) for x in self.data[city][key]]
         return self.data[city][bool_list]
 
     def nearby(self, city, point: str, topk: int = None, dist: float = 5) -> DataFrame:

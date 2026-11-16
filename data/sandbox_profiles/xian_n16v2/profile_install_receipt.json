@@ -1,0 +1,11 @@
+{
+  "installed_utc": "2026-11-15T16:23:51.561380+00:00",
+  "source": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\amap_xian_gap_candidate6",
+  "source_snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+  "installed_snapshot_sha256": "a36125283631e2a730025ad0739090c957e775eaafbdf49a78aae57a507645b1",
+  "inventory_sha256": "e6a5061a2a24abc316b4782ede8f63ce8a372cf717e20ccde7a99924997daae4",
+  "inventory_files": 501,
+  "legacy_anchors_added": false,
+  "boundary": "Immutable source-evidence profile; date-specific fares and availability remain conditional.",
+  "public_export_note": "Sanitized public copy; original local frozen snapshot retained unchanged."
+}

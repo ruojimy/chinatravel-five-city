@@ -1,0 +1,175 @@
+{
+  "people_number": 5,
+  "start_city": "成都",
+  "target_city": "西安",
+  "notes": [
+    "All schedules, fares, hotel rates, attraction prices, and local fares are frozen-snapshot planning references; no trip date was supplied, so date-specific availability and prices are unknown. This is not a booking confirmation.",
+    "大雁塔's L2 dynamic lookup returned not_prefetched_budget_exhausted; its displayed position, hours, and 10-yuan price remain static benchmark references. 回民街's lookup found a single-provider conditional identity/coordinate match, but the hours conflict is unresolved; the planned visit window 10:00–12:00 falls within both returned time ranges. Its zero price is only the static catalog value, not a verified free admission price.",
+    "Check out by 08:00 on day 3 and keep luggage with the group while visiting 回民街; no luggage-storage service was verified."
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "成都东",
+          "end": "西安北",
+          "TrainID": "G322",
+          "start_time": "06:56",
+          "end_time": "10:05",
+          "price": 285,
+          "tickets": 5,
+          "cost": 1425,
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "position": "大兴善寺",
+          "start_time": "11:15",
+          "end_time": "12:30",
+          "price": 0,
+          "tickets": 5,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "大兴善寺",
+              "mode": "taxi",
+              "start_time": "10:30",
+              "end_time": "10:54",
+              "price": 69.35,
+              "cost": 138.7,
+              "distance": 16.59,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "真情宾馆(西安钟鼓楼店)",
+          "start_time": "14:00",
+          "end_time": "08:00",
+          "price": 184,
+          "room_type": 1,
+          "rooms": 5,
+          "cost": 920,
+          "transports": [
+            {
+              "start": "大兴善寺",
+              "end": "真情宾馆(西安钟鼓楼店)",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:34",
+              "price": 16.26,
+              "cost": 32.52,
+              "distance": 3.3,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "大雁塔",
+          "start_time": "10:30",
+          "end_time": "13:00",
+          "price": 10,
+          "tickets": 5,
+          "cost": 50,
+          "transports": [
+            {
+              "start": "真情宾馆(西安钟鼓楼店)",
+              "end": "大雁塔",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:06",
+              "price": 20.66,
+              "cost": 41.32,
+              "distance": 4.56,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "真情宾馆(西安钟鼓楼店)",
+          "start_time": "13:36",
+          "end_time": "08:00",
+          "price": 184,
+          "room_type": 1,
+          "rooms": 5,
+          "cost": 920,
+          "transports": [
+            {
+              "start": "大雁塔",
+              "end": "真情宾馆(西安钟鼓楼店)",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "13:36",
+              "price": 20.66,
+              "cost": 41.32,
+              "distance": 4.56,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "回民街",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "price": 0,
+          "tickets": 5,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "真情宾馆(西安钟鼓楼店)",
+              "end": "回民街",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:01",
+              "price": 11,
+              "cost": 22,
+              "distance": 0.87,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "airplane",
+          "start": "西安咸阳国际机场",
+          "end": "成都天府国际机场",
+          "FlightID": "3U6532",
+          "start_time": "21:20",
+          "end_time": "22:55",
+          "price": 330,
+          "tickets": 5,
+          "cost": 1650,
+          "transports": [
+            {
+              "start": "回民街",
+              "end": "西安咸阳国际机场",
+              "mode": "taxi",
+              "start_time": "18:00",
+              "end_time": "18:39",
+              "price": 113.69,
+              "cost": 227.38,
+              "distance": 26.44,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

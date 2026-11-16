@@ -1,0 +1,8 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The train observations G92 (西安→南京, 08:51–13:32, 600 yuan) and G94 (南京→西安, 09:56–14:34, 600 yuan) are marked dynamic_observation_no_trip_date with availability unknown; no travel date was supplied, so these do not establish bookable tickets.",
+    "A Sichuan restaurant, 成都袁记(太平南路店), was found in the catalog at 55 yuan per person. However, both goto from 夫子庙 to this restaurant and goto from the selected hotel to the restaurant returned available=false and no legs, so its local journey cannot be grounded in the frozen route tool.",
+    "The selected one-room hotel has a static snapshot price of 306 yuan per night. Its stay dates and availability are not verified. The snapshot does not provide a complete date-specific cost basis for the requested 2000 yuan total-budget plan."
+  ]
+}

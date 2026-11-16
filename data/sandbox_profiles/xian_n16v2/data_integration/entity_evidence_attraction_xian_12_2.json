@@ -1,0 +1,90 @@
+{
+  "schema": "chinatravel-entity-evidence-v1",
+  "record_id": "attraction:xian:12",
+  "city": "西安",
+  "kind": "attraction",
+  "name": "西安碑林博物馆",
+  "journal": "entity_capture_2.sqlite3",
+  "journal_sha256": "d8725aab951dc3f54dca34af4a324d4b3262f476da6c415f3e3fce213bd4ad75",
+  "observations": [
+    {
+      "call_id": 1,
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=4627&c=View&m=home",
+      "host": "www.beilin-museum.com",
+      "source_group": "西安碑林博物馆官网",
+      "independence_status": "not_established",
+      "at_utc": "2026-11-15T15:45:54.151570+00:00",
+      "raw_sha256": "cc23161b3eddbea762a24147cf3a39a20bfbdaa90c22776d7c1d206a161ba6a7",
+      "purpose": "ticket_price",
+      "extracted": {
+        "status": "identity_matched",
+        "name": "西安碑林博物馆",
+        "city": "西安",
+        "kind": "attraction",
+        "source_id": "https://www.beilin-museum.com/index.php?a=index&aid=4627&c=View&m=home",
+        "offers": [
+          {
+            "price": 85.0,
+            "currency": "CNY",
+            "offer": {
+              "name": "官方全票",
+              "price": "85",
+              "priceCurrency": "CNY",
+              "validFrom": "2025-05-12",
+              "validThrough": "2027-05-11"
+            }
+          }
+        ],
+        "discarded": [],
+        "hours": [
+          {
+            "days": [],
+            "opens": "9:00",
+            "closes": "18:30",
+            "validFrom": "2025-05-12",
+            "validThrough": "2027-05-11"
+          }
+        ],
+        "parser": "beilin_museum_notice_4627",
+        "source_published": "2025-05-06"
+      }
+    },
+    {
+      "call_id": 3,
+      "url": "https://wlj.xa.gov.cn/wbdw/bwgjs/1.html",
+      "host": "wlj.xa.gov.cn",
+      "source_group": "西安市文化和旅游局",
+      "independence_status": "not_established",
+      "at_utc": "2026-11-15T15:45:55.788403+00:00",
+      "raw_sha256": "281d7cded424bfc10b1590a9c03bd229e31717e48b806c5d697606454f04acf7",
+      "purpose": "opening_hours",
+      "extracted": {
+        "status": "identity_matched",
+        "name": "西安碑林博物馆",
+        "city": "西安",
+        "kind": "attraction",
+        "source_id": "https://wlj.xa.gov.cn/wbdw/bwgjs/1.html",
+        "offers": [],
+        "discarded": [],
+        "hours": [],
+        "noncanonical_hours": "08:00-18:30(3月1日-6月30日,9月1日-11月30日 周一-周日) ；08:00-19:00(7月1日-8月31日 周一-周日)； 08:00-18:00(12月1日-次年2月28日 周一-周日)",
+        "time_ranges": [
+          [
+            "08:00",
+            "18:30"
+          ],
+          [
+            "08:00",
+            "19:00"
+          ],
+          [
+            "08:00",
+            "18:00"
+          ]
+        ],
+        "parser": "xian_culture_bureau_museum_table",
+        "source_published": "2026-05-19"
+      }
+    }
+  ]
+}

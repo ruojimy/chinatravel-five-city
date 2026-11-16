@@ -1,0 +1,6 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The requested restaurant was found in the Xi'an catalog with a static listed price of 89 yuan per person and hours 17:00–02:00. I cannot ground the requested two-day trip around that dinner and a return to Guangzhou: the priced outbound trains Z264/Z230 reach Xi'an at 07:42/08:56 the next day, while the priced return flight MU2303 leaves at 07:00 and return train G409 leaves at 07:25, both before that arrival. Priced return trains Z232/Z266 leave after the requested dinner but arrive the following day, beyond the two-day limit. All faster same-day outbound records and same-day post-dinner return flights have Cost=null, so their fares cannot be supplied. No travel date or seat availability was provided."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "project": "<workspace>/output\\shorttrip-luna-20261113\\runs\\G3_ext11",
+  "workers": 1,
+  "model": "qwen3.5-4b-q8",
+  "base_url": "http://127.0.0.1:18080/v1",
+  "seed": 20261111
+}

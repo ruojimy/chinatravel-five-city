@@ -1,0 +1,8 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The public hotel request requires an indoor swimming pool. catalog_search for accommodation in 重庆 with text 室内泳池 returned zero records. A broader 泳池 search returned 17 properties whose exposed feature values say 泳池 or 私人泳池, not 室内泳池; the required indoor-pool feature is not established.",
+    "The 西安→重庆 and 重庆→西安 train lookups each returned one direct priced record (K4518 and K4516 at 102 yuan) but mark the observation dynamic_observation_no_trip_date, needs_live_verification=true, and availability unknown. No travel date was supplied, so neither is a date-specific bookable fare or seat confirmation.",
+    "The requested historical-site category is discoverable in 重庆's catalog (for example 重庆湖广会馆 and 磁器口古镇), but completing the required stay cannot be grounded without a hotel meeting the indoor-pool condition and date-specific intercity fare/availability."
+  ]
+}

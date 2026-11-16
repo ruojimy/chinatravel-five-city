@@ -1,0 +1,16 @@
+{
+  "index": 10,
+  "origin": "深圳",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/SZX-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:31:26.874520+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "90d6b49e6d0b28ff2a96f639da1da48afe47d917a90664d2ce34fe8c1aa2a338",
+  "page_description": "2026-11-16深圳到西安机票，共2个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "captured_single_source_reference",
+  "declared_count": 2,
+  "accepted": 2,
+  "rejected": 0
+}

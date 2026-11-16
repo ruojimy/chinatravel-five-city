@@ -1,0 +1,180 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "南京",
+  "notes": [
+    "The train schedules and prices, hotel price, attraction prices, and local fares are frozen-snapshot planning references. No trip date was supplied, so train availability and date-specific prices are unknown; this is not a booking confirmation.",
+    "Hotel budget reference: 379 CNY per room per night × 2 rooms = 758 CNY per night, or about 252.67 CNY per person per night for 3 travelers. The catalog row lists room_type 2."
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "南京南",
+          "TrainID": "G92",
+          "start_time": "08:51",
+          "end_time": "13:32",
+          "price": 600,
+          "tickets": 3,
+          "cost": 1800,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "position": "南京南站逸扉酒店",
+          "start_time": "14:00",
+          "end_time": "08:00",
+          "price": 379,
+          "room_type": 2,
+          "rooms": 2,
+          "cost": 758,
+          "transports": [
+            {
+              "start": "南京南站",
+              "end": "南京南站逸扉酒店",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:00",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.46,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "玄武湖景区",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "南京南站逸扉酒店",
+              "end": "玄武湖景区",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:18",
+              "price": 51.5,
+              "cost": 51.5,
+              "distance": 12.62,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "南京南站逸扉酒店",
+          "start_time": "14:18",
+          "end_time": "08:00",
+          "price": 379,
+          "room_type": 2,
+          "rooms": 2,
+          "cost": 758,
+          "transports": [
+            {
+              "start": "玄武湖景区",
+              "end": "南京南站逸扉酒店",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:18",
+              "price": 51.5,
+              "cost": 51.5,
+              "distance": 12.62,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "钟山风景名胜区",
+          "start_time": "09:30",
+          "end_time": "12:30",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "南京南站逸扉酒店",
+              "end": "钟山风景名胜区",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:19",
+              "price": 51.83,
+              "cost": 51.83,
+              "distance": 12.69,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "南京南站逸扉酒店",
+          "start_time": "14:19",
+          "end_time": "07:30",
+          "price": 379,
+          "room_type": 2,
+          "rooms": 2,
+          "cost": 758,
+          "transports": [
+            {
+              "start": "钟山风景名胜区",
+              "end": "南京南站逸扉酒店",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:19",
+              "price": 51.83,
+              "cost": 51.83,
+              "distance": 12.69,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "type": "train",
+          "start": "南京南",
+          "end": "西安北",
+          "TrainID": "G94",
+          "start_time": "09:56",
+          "end_time": "14:34",
+          "price": 600,
+          "tickets": 3,
+          "cost": 1800,
+          "transports": [
+            {
+              "start": "南京南站逸扉酒店",
+              "end": "南京南站",
+              "mode": "taxi",
+              "start_time": "09:15",
+              "end_time": "09:15",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.46,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

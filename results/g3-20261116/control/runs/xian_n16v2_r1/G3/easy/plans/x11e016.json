@@ -1,0 +1,151 @@
+{
+  "people_number": 3,
+  "start_city": "南京",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "南京南",
+          "end": "西安北",
+          "start_time": "09:56",
+          "end_time": "14:34",
+          "price": 600.0,
+          "cost": 1800.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G94"
+        },
+        {
+          "position": "汉阳陵",
+          "type": "attraction",
+          "price": 70.0,
+          "cost": 210.0,
+          "tickets": 3,
+          "start_time": "15:44",
+          "end_time": "17:44",
+          "transports": [
+            {
+              "start": "西安北",
+              "end": "西安北站(地铁站)-地铁站",
+              "mode": "walk",
+              "start_time": "14:34",
+              "end_time": "14:39",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            },
+            {
+              "start": "西安北站(地铁站)-地铁站",
+              "end": "草滩-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "14:39",
+              "end_time": "14:44",
+              "cost": 6.0,
+              "distance": 2.88,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "草滩-地铁站-地铁站",
+              "end": "汉阳陵",
+              "mode": "walk",
+              "start_time": "14:44",
+              "end_time": "15:44",
+              "cost": 0,
+              "distance": 5.01,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "四至茶舍",
+          "type": "dinner",
+          "price": 91.0,
+          "cost": 273.0,
+          "start_time": "18:57",
+          "end_time": "19:57",
+          "transports": [
+            {
+              "start": "汉阳陵",
+              "end": "草滩-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "17:44",
+              "end_time": "18:44",
+              "cost": 0,
+              "distance": 5.01,
+              "price": 0
+            },
+            {
+              "start": "草滩-地铁站-地铁站",
+              "end": "北苑地铁站B西南口-地铁站",
+              "mode": "metro",
+              "start_time": "18:44",
+              "end_time": "18:52",
+              "cost": 9.0,
+              "distance": 4.35,
+              "price": 3.0,
+              "tickets": 3
+            },
+            {
+              "start": "北苑地铁站B西南口-地铁站",
+              "end": "四至茶舍",
+              "mode": "walk",
+              "start_time": "18:52",
+              "end_time": "18:57",
+              "cost": 0,
+              "distance": 0.46,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "西安",
+          "end": "南京",
+          "start_time": "21:41",
+          "end_time": "09:40",
+          "price": 152.5,
+          "cost": 457.5,
+          "tickets": 3,
+          "type": "train",
+          "transports": [
+            {
+              "start": "四至茶舍",
+              "end": "北苑地铁站B西南口-地铁站",
+              "mode": "walk",
+              "start_time": "19:57",
+              "end_time": "20:02",
+              "cost": 0,
+              "distance": 0.46,
+              "price": 0
+            },
+            {
+              "start": "北苑地铁站B西南口-地铁站",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "20:02",
+              "end_time": "20:21",
+              "cost": 12.0,
+              "distance": 9.54,
+              "price": 4.0,
+              "tickets": 3
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "西安",
+              "mode": "walk",
+              "start_time": "20:21",
+              "end_time": "20:24",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z306"
+        }
+      ]
+    }
+  ]
+}

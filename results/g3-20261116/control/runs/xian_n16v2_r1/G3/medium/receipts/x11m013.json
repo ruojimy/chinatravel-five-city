@@ -1,0 +1,42 @@
+{
+  "uid": "x11m013",
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "input_sha256": "2d51bf11d5101f07244c8df9b30a56460615581f6f473a09efc3c3a710962d8b",
+  "planning_query_sha256": "ef0cd09072b4261c7223efe9beaab042dd27943546bb28bd5029af9dc7945de6",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "a331b75540d22c87df93bdbeb7fcbe9fd4e62c839543c4dacc48fbee7ac1cedd",
+  "evaluations": 10,
+  "moves": [
+    "restaurant_type:重庆纸包鱼(新城店)->可多鱼鲜鱼火锅 d0"
+  ],
+  "reason": null,
+  "plan_sha256": "970d7587a464821f82f76d5d31bded1c9443f503bd7ecf9c266f8a6dc916febd",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": false,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "Unavailable Inner-City Transport",
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 5,
+    "hard_total": 7,
+    "hard_expected": 7,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": false,
+  "score_sha256": "21d272754685ed23f049ab63e8b002d91d4972b04a61aa370e03c3a32caf4ca7",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 3.703,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

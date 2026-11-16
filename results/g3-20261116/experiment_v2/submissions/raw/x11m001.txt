@@ -1,0 +1,8 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The outbound airplane lookup for 杭州萧山国际机场 to 西安咸阳国际机场 returned no priced records. All four conditional flight candidates (CCA8507, HU6362, CHH6362, CBJ5301) have Cost=null; no date was supplied and no fare or seat availability can be grounded.",
+    "The return airplane lookup for 西安咸阳国际机场 to 杭州萧山国际机场 returned no priced records. All nine conditional candidates have Cost=null, and seven also lack EndTime and Duration; no date was supplied and no fare or seat availability can be grounded.",
+    "The requested butler-service hotel was found as accommodation:xian:2 (Sofitel Legend People's Grand Hotel Xian), but its preflight returned conditional_unknown and dynamic_access.status=not_prefetched_budget_exhausted; its 1440 yuan static snapshot reference is not date-specific and cannot ground a bookable stay."
+  ]
+}

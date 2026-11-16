@@ -1,0 +1,650 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "南京",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安北",
+          "end": "南京南",
+          "start_time": "08:51",
+          "end_time": "13:32",
+          "price": 600.0,
+          "cost": 1800.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G92"
+        },
+        {
+          "position": "开通CAFE&BOOK(喜马拉雅店)",
+          "type": "lunch",
+          "price": 41.0,
+          "cost": 123.0,
+          "start_time": "13:46",
+          "end_time": "14:46",
+          "transports": [
+            {
+              "start": "南京南",
+              "end": "南京南站-地铁站",
+              "mode": "walk",
+              "start_time": "13:32",
+              "end_time": "13:35",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "宏运大道-地铁站",
+              "mode": "metro",
+              "start_time": "13:35",
+              "end_time": "13:37",
+              "cost": 6.0,
+              "distance": 1.43,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "宏运大道-地铁站",
+              "end": "开通CAFE&BOOK(喜马拉雅店)",
+              "mode": "walk",
+              "start_time": "13:37",
+              "end_time": "13:46",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南京沃德喜马拉雅冰雪乐园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "15:09",
+          "end_time": "15:54",
+          "transports": [
+            {
+              "start": "开通CAFE&BOOK(喜马拉雅店)",
+              "end": "宏运大道-地铁站",
+              "mode": "walk",
+              "start_time": "14:46",
+              "end_time": "14:55",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            },
+            {
+              "start": "宏运大道-地铁站",
+              "end": "明发广场-地铁站",
+              "mode": "metro",
+              "start_time": "14:55",
+              "end_time": "14:58",
+              "cost": 6.0,
+              "distance": 1.96,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "明发广场-地铁站",
+              "end": "南京沃德喜马拉雅冰雪乐园",
+              "mode": "walk",
+              "start_time": "14:58",
+              "end_time": "15:09",
+              "cost": 0,
+              "distance": 0.98,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "战神突击真枪射击馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "16:19",
+          "end_time": "19:19",
+          "transports": [
+            {
+              "start": "南京沃德喜马拉雅冰雪乐园",
+              "end": "明发广场-地铁站",
+              "mode": "walk",
+              "start_time": "15:54",
+              "end_time": "16:05",
+              "cost": 0,
+              "distance": 0.98,
+              "price": 0
+            },
+            {
+              "start": "明发广场-地铁站",
+              "end": "河定桥-地铁站",
+              "mode": "metro",
+              "start_time": "16:05",
+              "end_time": "16:11",
+              "cost": 6.0,
+              "distance": 3.33,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "战神突击真枪射击馆",
+              "mode": "walk",
+              "start_time": "16:11",
+              "end_time": "16:19",
+              "cost": 0,
+              "distance": 0.71,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "曼美轻居酒店(南京南站河定桥地铁站店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 105.0,
+          "cost": 315.0,
+          "rooms": 3,
+          "start_time": "19:27",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "战神突击真枪射击馆",
+              "end": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "mode": "walk",
+              "start_time": "19:19",
+              "end_time": "19:27",
+              "cost": 0,
+              "distance": 0.7184820300846811,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "百家湖",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "08:35",
+          "end_time": "10:05",
+          "transports": [
+            {
+              "start": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "end": "河定桥-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:32",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "胜太路-地铁站",
+              "mode": "metro",
+              "start_time": "08:32",
+              "end_time": "08:33",
+              "cost": 6.0,
+              "distance": 0.95,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "胜太路-地铁站",
+              "end": "百家湖",
+              "mode": "walk",
+              "start_time": "08:33",
+              "end_time": "08:35",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "江宁博物馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "10:18",
+          "end_time": "12:48",
+          "transports": [
+            {
+              "start": "百家湖",
+              "end": "胜太路-地铁站",
+              "mode": "walk",
+              "start_time": "10:05",
+              "end_time": "10:07",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            },
+            {
+              "start": "胜太路-地铁站",
+              "end": "东山-地铁站",
+              "mode": "metro",
+              "start_time": "10:07",
+              "end_time": "10:11",
+              "cost": 6.0,
+              "distance": 2.39,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "东山-地铁站",
+              "end": "江宁博物馆",
+              "mode": "walk",
+              "start_time": "10:11",
+              "end_time": "10:18",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南京银城皇冠假日酒店·百家楼中餐厅",
+          "type": "lunch",
+          "price": 231.0,
+          "cost": 693.0,
+          "start_time": "13:02",
+          "end_time": "14:02",
+          "transports": [
+            {
+              "start": "江宁博物馆",
+              "end": "东山-地铁站",
+              "mode": "walk",
+              "start_time": "12:48",
+              "end_time": "12:55",
+              "cost": 0,
+              "distance": 0.59,
+              "price": 0
+            },
+            {
+              "start": "东山-地铁站",
+              "end": "胜太路-地铁站",
+              "mode": "metro",
+              "start_time": "12:55",
+              "end_time": "12:59",
+              "cost": 6.0,
+              "distance": 2.39,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "胜太路-地铁站",
+              "end": "南京银城皇冠假日酒店·百家楼中餐厅",
+              "mode": "walk",
+              "start_time": "12:59",
+              "end_time": "13:02",
+              "cost": 0,
+              "distance": 0.31,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "九龙湖公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "14:20",
+          "end_time": "15:20",
+          "transports": [
+            {
+              "start": "南京银城皇冠假日酒店·百家楼中餐厅",
+              "end": "胜太路-地铁站",
+              "mode": "walk",
+              "start_time": "14:02",
+              "end_time": "14:05",
+              "cost": 0,
+              "distance": 0.31,
+              "price": 0
+            },
+            {
+              "start": "胜太路-地铁站",
+              "end": "九龙湖-地铁站",
+              "mode": "metro",
+              "start_time": "14:05",
+              "end_time": "14:11",
+              "cost": 6.0,
+              "distance": 3.05,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "九龙湖-地铁站",
+              "end": "九龙湖公园",
+              "mode": "walk",
+              "start_time": "14:11",
+              "end_time": "14:20",
+              "cost": 0,
+              "distance": 0.83,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "曼美轻居酒店(南京南站河定桥地铁站店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 105.0,
+          "cost": 315.0,
+          "rooms": 3,
+          "start_time": "15:38",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "九龙湖公园",
+              "end": "九龙湖-地铁站",
+              "mode": "walk",
+              "start_time": "15:20",
+              "end_time": "15:29",
+              "cost": 0,
+              "distance": 0.83,
+              "price": 0
+            },
+            {
+              "start": "九龙湖-地铁站",
+              "end": "河定桥-地铁站",
+              "mode": "metro",
+              "start_time": "15:29",
+              "end_time": "15:36",
+              "cost": 6.0,
+              "distance": 4.0,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "mode": "walk",
+              "start_time": "15:36",
+              "end_time": "15:38",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "position": "九龙湖",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "08:47",
+          "end_time": "10:17",
+          "transports": [
+            {
+              "start": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "end": "河定桥-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:32",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "九龙湖-地铁站",
+              "mode": "metro",
+              "start_time": "08:32",
+              "end_time": "08:39",
+              "cost": 6.0,
+              "distance": 4.0,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "九龙湖-地铁站",
+              "end": "九龙湖",
+              "mode": "walk",
+              "start_time": "08:39",
+              "end_time": "08:47",
+              "cost": 0,
+              "distance": 0.69,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南京民间抗日战争博物馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "10:47",
+          "end_time": "12:17",
+          "transports": [
+            {
+              "start": "九龙湖",
+              "end": "九龙湖-地铁站",
+              "mode": "walk",
+              "start_time": "10:17",
+              "end_time": "10:25",
+              "cost": 0,
+              "distance": 0.69,
+              "price": 0
+            },
+            {
+              "start": "九龙湖-地铁站",
+              "end": "软件大道-地铁站",
+              "mode": "metro",
+              "start_time": "10:25",
+              "end_time": "10:41",
+              "cost": 9.0,
+              "distance": 8.05,
+              "price": 3.0,
+              "tickets": 3
+            },
+            {
+              "start": "软件大道-地铁站",
+              "end": "南京民间抗日战争博物馆",
+              "mode": "walk",
+              "start_time": "10:41",
+              "end_time": "10:47",
+              "cost": 0,
+              "distance": 0.55,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南京景枫万豪酒店·万豪中餐厅",
+          "type": "lunch",
+          "price": 433.0,
+          "cost": 1299.0,
+          "start_time": "12:42",
+          "end_time": "13:42",
+          "transports": [
+            {
+              "start": "南京民间抗日战争博物馆",
+              "end": "软件大道-地铁站",
+              "mode": "walk",
+              "start_time": "12:17",
+              "end_time": "12:23",
+              "cost": 0,
+              "distance": 0.55,
+              "price": 0
+            },
+            {
+              "start": "软件大道-地铁站",
+              "end": "百家湖-地铁站",
+              "mode": "metro",
+              "start_time": "12:23",
+              "end_time": "12:36",
+              "cost": 9.0,
+              "distance": 6.62,
+              "price": 3.0,
+              "tickets": 3
+            },
+            {
+              "start": "百家湖-地铁站",
+              "end": "南京景枫万豪酒店·万豪中餐厅",
+              "mode": "walk",
+              "start_time": "12:36",
+              "end_time": "12:42",
+              "cost": 0,
+              "distance": 0.51,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "雨花台",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "14:09",
+          "end_time": "15:39",
+          "transports": [
+            {
+              "start": "南京景枫万豪酒店·万豪中餐厅",
+              "end": "百家湖-地铁站",
+              "mode": "walk",
+              "start_time": "13:42",
+              "end_time": "13:48",
+              "cost": 0,
+              "distance": 0.51,
+              "price": 0
+            },
+            {
+              "start": "百家湖-地铁站",
+              "end": "雨花门-地铁站",
+              "mode": "metro",
+              "start_time": "13:48",
+              "end_time": "14:04",
+              "cost": 9.0,
+              "distance": 8.41,
+              "price": 3.0,
+              "tickets": 3
+            },
+            {
+              "start": "雨花门-地铁站",
+              "end": "雨花台",
+              "mode": "walk",
+              "start_time": "14:04",
+              "end_time": "14:09",
+              "cost": 0,
+              "distance": 0.42,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "曼美轻居酒店(南京南站河定桥地铁站店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 105.0,
+          "cost": 315.0,
+          "rooms": 3,
+          "start_time": "15:58",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "雨花台",
+              "end": "雨花门-地铁站",
+              "mode": "walk",
+              "start_time": "15:39",
+              "end_time": "15:44",
+              "cost": 0,
+              "distance": 0.42,
+              "price": 0
+            },
+            {
+              "start": "雨花门-地铁站",
+              "end": "河定桥-地铁站",
+              "mode": "metro",
+              "start_time": "15:44",
+              "end_time": "15:56",
+              "cost": 9.0,
+              "distance": 6.3,
+              "price": 3.0,
+              "tickets": 3
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "mode": "walk",
+              "start_time": "15:56",
+              "end_time": "15:58",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "start": "南京南",
+          "end": "西安北",
+          "start_time": "09:56",
+          "end_time": "14:34",
+          "price": 600.0,
+          "cost": 1800.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [
+            {
+              "start": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "end": "河定桥-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:32",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "南京南站-地铁站",
+              "mode": "metro",
+              "start_time": "08:32",
+              "end_time": "08:38",
+              "cost": 6.0,
+              "distance": 3.04,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "南京南",
+              "mode": "walk",
+              "start_time": "08:38",
+              "end_time": "08:41",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            }
+          ],
+          "TrainID": "G94"
+        }
+      ]
+    }
+  ]
+}

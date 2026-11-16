@@ -1,0 +1,3086 @@
+{
+  "probe_file_sha256": "3312da19dffae2e476d471a6e0f99e84543fec6f649db8b9925a5f8a139bf056",
+  "coordinate_evidence_file": "<workspace>/output\\luna-repair-20261115\\tier_policy_v3\\amap_sample_prefetch_20261115.json",
+  "coordinate_evidence_sha256": "f11e360f0d098884e8ce63b0fbbfbbced2b2f170f449c4730e2e9d12b40a04c8",
+  "provider_call_budget": 4,
+  "probe_calls": 1,
+  "route_calls": 3,
+  "stopped": null,
+  "events": [
+    {
+      "from_city": "广州",
+      "to_city": "西安",
+      "endpoint": "https://restapi.amap.com/v5/direction/transit/integrated",
+      "params": {
+        "origin": "113.269097,22.988344",
+        "destination": "108.938757,34.376660",
+        "city1": "020",
+        "city2": "029",
+        "strategy": "0",
+        "show_fields": "cost",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T13:56:12.094261+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "raw_sha256": "a2c86c3903409d50f3c0deb97d19bfff92d4e103037aafb3846c55dfba628343",
+      "response": {
+        "status": "1",
+        "info": "OK",
+        "infocode": "10000",
+        "route": {
+          "origin": "113.269097,22.988344",
+          "destination": "108.938757,34.376660",
+          "distance": "1688750",
+          "cost": {},
+          "transits": [
+            {
+              "cost": {
+                "duration": "89340",
+                "transit_fee": "247.000000"
+              },
+              "distance": "2028677",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "walking": {
+                    "destination": "113.269562,22.989094",
+                    "distance": "315",
+                    "origin": "113.268730,22.988359",
+                    "cost": {
+                      "duration": "547"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行92米右转",
+                        "road": "",
+                        "distance": "92"
+                      },
+                      {
+                        "instruction": "步行2米到达目的地",
+                        "road": "",
+                        "distance": "2"
+                      },
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行221米到达广州南站",
+                        "road": "",
+                        "distance": "221"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "广州南站",
+                          "id": "440100023308002",
+                          "location": "113.269565,22.989093",
+                          "entrance": {
+                            "name": "B口",
+                            "location": "113.267954,22.987933"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "昌岗",
+                          "id": "440100023308010",
+                          "location": "113.277109,23.090093"
+                        },
+                        "name": "地铁2号线(广州南站--嘉禾望岗)",
+                        "id": "440100023308",
+                        "type": "地铁线路",
+                        "distance": "13188",
+                        "cost": {
+                          "duration": "1410"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0600",
+                        "end_time": "",
+                        "station_end_time": "2330",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "石壁",
+                            "id": "440100023308003",
+                            "location": "113.277964,22.994136"
+                          },
+                          {
+                            "name": "会江",
+                            "id": "440100023308004",
+                            "location": "113.286394,23.013047"
+                          },
+                          {
+                            "name": "南浦",
+                            "id": "440100023308005",
+                            "location": "113.293154,23.032929"
+                          },
+                          {
+                            "name": "洛溪",
+                            "id": "440100023308006",
+                            "location": "113.298665,23.042896"
+                          },
+                          {
+                            "name": "南洲",
+                            "id": "440100023308007",
+                            "location": "113.297851,23.064026"
+                          },
+                          {
+                            "name": "东晓南",
+                            "id": "440100023308008",
+                            "location": "113.294174,23.071333"
+                          },
+                          {
+                            "name": "江泰路",
+                            "id": "440100023308009",
+                            "location": "113.280570,23.082231"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.276199,23.090092",
+                    "distance": "79",
+                    "origin": "113.277107,23.090092",
+                    "cost": {
+                      "duration": "216"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行158米到达昌岗",
+                        "road": "",
+                        "distance": "158"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "昌岗",
+                          "id": "440100023048011",
+                          "location": "113.276196,23.090089"
+                        },
+                        "arrival_stop": {
+                          "name": "石潭",
+                          "id": "440100023048025",
+                          "location": "113.241010,23.187843",
+                          "exit": {
+                            "name": "出入口",
+                            "location": "113.243627,23.191393"
+                          }
+                        },
+                        "name": "地铁8号线(万胜围--滘心)",
+                        "id": "440100023048",
+                        "type": "地铁线路",
+                        "distance": "13756",
+                        "cost": {
+                          "duration": "1710"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0610",
+                        "station_start_time": "0613",
+                        "end_time": "2300",
+                        "station_end_time": "2318",
+                        "via_num": "13",
+                        "via_stops": [
+                          {
+                            "name": "宝岗大道",
+                            "id": "440100023048012",
+                            "location": "113.269700,23.086027"
+                          },
+                          {
+                            "name": "沙园",
+                            "id": "440100023048013",
+                            "location": "113.260584,23.088625"
+                          },
+                          {
+                            "name": "凤凰新村",
+                            "id": "440100023048014",
+                            "location": "113.255994,23.094705"
+                          },
+                          {
+                            "name": "同福西",
+                            "id": "440100023048015",
+                            "location": "113.252372,23.101689"
+                          },
+                          {
+                            "name": "文化公园",
+                            "id": "440100023048016",
+                            "location": "113.249954,23.108980"
+                          },
+                          {
+                            "name": "华林寺",
+                            "id": "440100023048017",
+                            "location": "113.247232,23.117839"
+                          },
+                          {
+                            "name": "陈家祠",
+                            "id": "440100023048018",
+                            "location": "113.246541,23.127034"
+                          },
+                          {
+                            "name": "彩虹桥",
+                            "id": "440100023048019",
+                            "location": "113.245314,23.133892"
+                          },
+                          {
+                            "name": "西村",
+                            "id": "440100023048020",
+                            "location": "113.241929,23.141086"
+                          },
+                          {
+                            "name": "鹅掌坦",
+                            "id": "440100023048021",
+                            "location": "113.235802,23.156818"
+                          },
+                          {
+                            "name": "同德",
+                            "id": "440100023048022",
+                            "location": "113.234705,23.163525"
+                          },
+                          {
+                            "name": "上步",
+                            "id": "440100023048023",
+                            "location": "113.235759,23.170978"
+                          },
+                          {
+                            "name": "聚龙",
+                            "id": "440100023048024",
+                            "location": "113.238723,23.181111"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.243622,23.191389",
+                    "distance": "606",
+                    "origin": "113.241013,23.187838",
+                    "cost": {
+                      "duration": "716"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行606米直行",
+                        "road": "",
+                        "distance": "606"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101013105796",
+                    "time": "80160",
+                    "name": "Z264(广州白云-拉萨)",
+                    "trip": "Z264",
+                    "distance": "1984340",
+                    "type": "Z字头的直达特快火车",
+                    "departure_stop": {
+                      "id": "B0FFLHQPEP",
+                      "name": "广州白云",
+                      "location": "113.246341 23.190910",
+                      "adcode": "440111",
+                      "time": "0926",
+                      "start": "1"
+                    },
+                    "arrival_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "0742",
+                      "end": "0"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "428.0"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "741.0"
+                      },
+                      {
+                        "code": "火车硬座",
+                        "cost": "236.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "236.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.966217,34.278728",
+                    "distance": "387",
+                    "origin": "108.964081,34.276932",
+                    "cost": {
+                      "duration": "466"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行17米左转上阶梯",
+                        "road": "",
+                        "distance": "17"
+                      },
+                      {
+                        "instruction": "步行62米直行出阶梯",
+                        "road": "",
+                        "distance": "62"
+                      },
+                      {
+                        "instruction": "步行68米右转",
+                        "road": "",
+                        "distance": "68"
+                      },
+                      {
+                        "instruction": "步行78米到达目的地",
+                        "road": "",
+                        "distance": "78"
+                      },
+                      {
+                        "instruction": "步行1米",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行162米到达西安站",
+                        "road": "",
+                        "distance": "162"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安站",
+                          "id": "610100020614015",
+                          "location": "108.966224,34.278729",
+                          "entrance": {
+                            "name": "出入口",
+                            "location": "108.965038,34.278111"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "西安北站",
+                          "id": "610100020614024",
+                          "location": "108.938768,34.379390",
+                          "exit": {
+                            "name": "B西南口",
+                            "location": "108.938243,34.378773"
+                          }
+                        },
+                        "name": "地铁4号线(航天新城--西安北站)",
+                        "id": "610100020614",
+                        "type": "地铁线路",
+                        "distance": "15540",
+                        "cost": {
+                          "duration": "1800"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0634",
+                        "end_time": "2300",
+                        "station_end_time": "2334",
+                        "via_num": "12",
+                        "via_stops": [
+                          {
+                            "name": "含元殿",
+                            "id": "610100020614035",
+                            "location": "108.971511,34.287635"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020614017",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020614036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020614037",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020614038",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020614039",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020614040",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "行政中心",
+                            "id": "610100020614041",
+                            "location": "108.947329,34.340983"
+                          },
+                          {
+                            "name": "文景路",
+                            "id": "610100020614042",
+                            "location": "108.936728,34.340979"
+                          },
+                          {
+                            "name": "凤城九路",
+                            "id": "610100020614043",
+                            "location": "108.929772,34.348858"
+                          },
+                          {
+                            "name": "凤城十二路",
+                            "id": "610100020614044",
+                            "location": "108.929745,34.359027"
+                          },
+                          {
+                            "name": "元鼎路",
+                            "id": "610100020614045",
+                            "location": "108.929701,34.367160"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.938904,34.376335",
+                    "distance": "466",
+                    "origin": "108.938766,34.379387",
+                    "cost": {
+                      "duration": "574"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行116米",
+                        "road": "",
+                        "distance": "116"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行95米左转上阶梯",
+                        "road": "",
+                        "distance": "95"
+                      },
+                      {
+                        "instruction": "步行22米左转出阶梯",
+                        "road": "",
+                        "distance": "22"
+                      },
+                      {
+                        "instruction": "步行214米右转",
+                        "road": "",
+                        "distance": "214"
+                      },
+                      {
+                        "instruction": "步行19米到达目的地",
+                        "road": "",
+                        "distance": "19"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            },
+            {
+              "cost": {
+                "duration": "90240",
+                "transit_fee": "232.000000"
+              },
+              "distance": "1970527",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "walking": {
+                    "destination": "113.269562,22.989094",
+                    "distance": "315",
+                    "origin": "113.268730,22.988359",
+                    "cost": {
+                      "duration": "547"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行92米右转",
+                        "road": "",
+                        "distance": "92"
+                      },
+                      {
+                        "instruction": "步行2米到达目的地",
+                        "road": "",
+                        "distance": "2"
+                      },
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行221米到达广州南站",
+                        "road": "",
+                        "distance": "221"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "广州南站",
+                          "id": "440100023308002",
+                          "location": "113.269565,22.989093",
+                          "entrance": {
+                            "name": "B口",
+                            "location": "113.267954,22.987933"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "嘉禾望岗",
+                          "id": "440100023308025",
+                          "location": "113.289243,23.237460"
+                        },
+                        "name": "地铁2号线(广州南站--嘉禾望岗)",
+                        "id": "440100023308",
+                        "type": "地铁线路",
+                        "distance": "30942",
+                        "cost": {
+                          "duration": "3330"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0600",
+                        "end_time": "",
+                        "station_end_time": "2330",
+                        "via_num": "22",
+                        "via_stops": [
+                          {
+                            "name": "石壁",
+                            "id": "440100023308003",
+                            "location": "113.277964,22.994136"
+                          },
+                          {
+                            "name": "会江",
+                            "id": "440100023308004",
+                            "location": "113.286394,23.013047"
+                          },
+                          {
+                            "name": "南浦",
+                            "id": "440100023308005",
+                            "location": "113.293154,23.032929"
+                          },
+                          {
+                            "name": "洛溪",
+                            "id": "440100023308006",
+                            "location": "113.298665,23.042896"
+                          },
+                          {
+                            "name": "南洲",
+                            "id": "440100023308007",
+                            "location": "113.297851,23.064026"
+                          },
+                          {
+                            "name": "东晓南",
+                            "id": "440100023308008",
+                            "location": "113.294174,23.071333"
+                          },
+                          {
+                            "name": "江泰路",
+                            "id": "440100023308009",
+                            "location": "113.280570,23.082231"
+                          },
+                          {
+                            "name": "昌岗",
+                            "id": "440100023308010",
+                            "location": "113.277109,23.090093"
+                          },
+                          {
+                            "name": "江南西",
+                            "id": "440100023308011",
+                            "location": "113.273918,23.097214"
+                          },
+                          {
+                            "name": "市二宫",
+                            "id": "440100023308012",
+                            "location": "113.269890,23.105996"
+                          },
+                          {
+                            "name": "海珠广场",
+                            "id": "440100023308013",
+                            "location": "113.265743,23.114265"
+                          },
+                          {
+                            "name": "公园前",
+                            "id": "440100023308014",
+                            "location": "113.264183,23.125419"
+                          },
+                          {
+                            "name": "纪念堂",
+                            "id": "440100023308015",
+                            "location": "113.263413,23.132701"
+                          },
+                          {
+                            "name": "越秀公园",
+                            "id": "440100023308016",
+                            "location": "113.261503,23.139768"
+                          },
+                          {
+                            "name": "广州火车站",
+                            "id": "440100023308017",
+                            "location": "113.256512,23.148339"
+                          },
+                          {
+                            "name": "三元里",
+                            "id": "440100023308018",
+                            "location": "113.256851,23.159402"
+                          },
+                          {
+                            "name": "飞翔公园",
+                            "id": "440100023308019",
+                            "location": "113.263635,23.168833"
+                          },
+                          {
+                            "name": "白云公园",
+                            "id": "440100023308020",
+                            "location": "113.270966,23.181613"
+                          },
+                          {
+                            "name": "白云文化广场",
+                            "id": "440100023308021",
+                            "location": "113.275602,23.189574"
+                          },
+                          {
+                            "name": "萧岗",
+                            "id": "440100023308022",
+                            "location": "113.280697,23.198580"
+                          },
+                          {
+                            "name": "江夏",
+                            "id": "440100023308023",
+                            "location": "113.283451,23.211301"
+                          },
+                          {
+                            "name": "黄边",
+                            "id": "440100023308024",
+                            "location": "113.287376,23.221645"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.289238,23.237457",
+                    "distance": "120",
+                    "origin": "113.289238,23.237457",
+                    "cost": {
+                      "duration": "191"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达嘉禾望岗",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "嘉禾望岗",
+                          "id": "440100023032011",
+                          "location": "113.289243,23.237460"
+                        },
+                        "arrival_stop": {
+                          "name": "高增",
+                          "id": "440100023032014",
+                          "location": "113.295504,23.355162"
+                        },
+                        "name": "地铁3号线(体育西路--机场北(T2))",
+                        "id": "440100023032",
+                        "type": "地铁线路",
+                        "distance": "14110",
+                        "cost": {
+                          "duration": "990"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0600",
+                        "end_time": "2330",
+                        "station_end_time": "2353",
+                        "via_num": "2",
+                        "via_stops": [
+                          {
+                            "name": "龙归",
+                            "id": "440100023032012",
+                            "location": "113.300834,23.288736"
+                          },
+                          {
+                            "name": "人和",
+                            "id": "440100023032013",
+                            "location": "113.295995,23.335224"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.295502,23.355160",
+                    "distance": "70",
+                    "origin": "113.295502,23.355160",
+                    "cost": {
+                      "duration": "240"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达高增",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "高增",
+                          "id": "900000043871012",
+                          "location": "113.295504,23.355162"
+                        },
+                        "arrival_stop": {
+                          "name": "广州北站",
+                          "id": "900000043871020",
+                          "location": "113.201568,23.376419",
+                          "exit": {
+                            "name": "C口",
+                            "location": "113.202705,23.376806"
+                          }
+                        },
+                        "name": "地铁9号线(高增--飞鹅岭)",
+                        "id": "900000043871",
+                        "type": "地铁线路",
+                        "distance": "14460",
+                        "cost": {
+                          "duration": "1440"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0606",
+                        "end_time": "",
+                        "station_end_time": "2315",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "清塘",
+                            "id": "900000043871013",
+                            "location": "113.262858,23.372206"
+                          },
+                          {
+                            "name": "清布",
+                            "id": "900000043871014",
+                            "location": "113.250989,23.378122"
+                          },
+                          {
+                            "name": "莲塘",
+                            "id": "900000043871015",
+                            "location": "113.245149,23.389101"
+                          },
+                          {
+                            "name": "马鞍山公园",
+                            "id": "900000043871016",
+                            "location": "113.237792,23.399457"
+                          },
+                          {
+                            "name": "花都广场",
+                            "id": "900000043871017",
+                            "location": "113.222628,23.401307"
+                          },
+                          {
+                            "name": "花果山公园",
+                            "id": "900000043871018",
+                            "location": "113.218389,23.387119"
+                          },
+                          {
+                            "name": "花城路",
+                            "id": "900000043871019",
+                            "location": "113.212740,23.379622"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.201881,23.376871",
+                    "distance": "437",
+                    "origin": "113.201569,23.376419",
+                    "cost": {
+                      "duration": "507"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行167米左转",
+                        "road": "",
+                        "distance": "167"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行197米向右前方直行",
+                        "road": "",
+                        "distance": "197"
+                      },
+                      {
+                        "instruction": "步行15米右转",
+                        "road": "",
+                        "distance": "15"
+                      },
+                      {
+                        "instruction": "步行58米左转到达目的地",
+                        "road": "",
+                        "distance": "58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101018983720",
+                    "time": "78360",
+                    "name": "Z230(深圳东-西宁)",
+                    "trip": "Z230",
+                    "distance": "1893680",
+                    "type": "Z字头的直达特快火车",
+                    "departure_stop": {
+                      "id": "B00140UERW",
+                      "name": "广州北",
+                      "location": "113.203846 23.377273",
+                      "adcode": "440114",
+                      "time": "1110",
+                      "start": "0"
+                    },
+                    "arrival_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "0856",
+                      "end": "0"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬座",
+                        "cost": "217.0"
+                      },
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "397.0"
+                      },
+                      {
+                        "code": "火车硬卧上铺",
+                        "cost": "370.0"
+                      },
+                      {
+                        "code": "火车硬卧中铺",
+                        "cost": "383.0"
+                      },
+                      {
+                        "code": "火车软卧上铺",
+                        "cost": "667.0"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "693.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "217.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.966217,34.278728",
+                    "distance": "387",
+                    "origin": "108.964081,34.276932",
+                    "cost": {
+                      "duration": "466"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行17米左转上阶梯",
+                        "road": "",
+                        "distance": "17"
+                      },
+                      {
+                        "instruction": "步行62米直行出阶梯",
+                        "road": "",
+                        "distance": "62"
+                      },
+                      {
+                        "instruction": "步行68米右转",
+                        "road": "",
+                        "distance": "68"
+                      },
+                      {
+                        "instruction": "步行78米到达目的地",
+                        "road": "",
+                        "distance": "78"
+                      },
+                      {
+                        "instruction": "步行1米",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行162米到达西安站",
+                        "road": "",
+                        "distance": "162"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安站",
+                          "id": "610100020614015",
+                          "location": "108.966224,34.278729",
+                          "entrance": {
+                            "name": "出入口",
+                            "location": "108.965038,34.278111"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "西安北站",
+                          "id": "610100020614024",
+                          "location": "108.938768,34.379390",
+                          "exit": {
+                            "name": "B西南口",
+                            "location": "108.938243,34.378773"
+                          }
+                        },
+                        "name": "地铁4号线(航天新城--西安北站)",
+                        "id": "610100020614",
+                        "type": "地铁线路",
+                        "distance": "15540",
+                        "cost": {
+                          "duration": "1800"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0634",
+                        "end_time": "2300",
+                        "station_end_time": "2334",
+                        "via_num": "12",
+                        "via_stops": [
+                          {
+                            "name": "含元殿",
+                            "id": "610100020614035",
+                            "location": "108.971511,34.287635"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020614017",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020614036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020614037",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020614038",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020614039",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020614040",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "行政中心",
+                            "id": "610100020614041",
+                            "location": "108.947329,34.340983"
+                          },
+                          {
+                            "name": "文景路",
+                            "id": "610100020614042",
+                            "location": "108.936728,34.340979"
+                          },
+                          {
+                            "name": "凤城九路",
+                            "id": "610100020614043",
+                            "location": "108.929772,34.348858"
+                          },
+                          {
+                            "name": "凤城十二路",
+                            "id": "610100020614044",
+                            "location": "108.929745,34.359027"
+                          },
+                          {
+                            "name": "元鼎路",
+                            "id": "610100020614045",
+                            "location": "108.929701,34.367160"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.938904,34.376335",
+                    "distance": "466",
+                    "origin": "108.938766,34.379387",
+                    "cost": {
+                      "duration": "574"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行116米",
+                        "road": "",
+                        "distance": "116"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行95米左转上阶梯",
+                        "road": "",
+                        "distance": "95"
+                      },
+                      {
+                        "instruction": "步行22米左转出阶梯",
+                        "road": "",
+                        "distance": "22"
+                      },
+                      {
+                        "instruction": "步行214米右转",
+                        "road": "",
+                        "distance": "214"
+                      },
+                      {
+                        "instruction": "步行19米到达目的地",
+                        "road": "",
+                        "distance": "19"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            }
+          ]
+        },
+        "count": "2"
+      }
+    },
+    {
+      "from_city": "西安",
+      "to_city": "广州",
+      "endpoint": "https://restapi.amap.com/v5/direction/transit/integrated",
+      "params": {
+        "origin": "108.938757,34.376660",
+        "destination": "113.269097,22.988344",
+        "city1": "029",
+        "city2": "020",
+        "strategy": "0",
+        "show_fields": "cost",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T13:56:13.565768+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "raw_sha256": "375bb4da7f195a1f44304ae3b31f5c01eea6259cee18d1cc8f94aa65f5870073",
+      "response": {
+        "status": "1",
+        "info": "OK",
+        "infocode": "10000",
+        "route": {
+          "origin": "108.938757,34.376660",
+          "destination": "113.269097,22.988344",
+          "distance": "1688750",
+          "cost": {},
+          "transits": [
+            {
+              "cost": {
+                "duration": "89160",
+                "transit_fee": "247.000000"
+              },
+              "distance": "2048901",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "walking": {
+                    "destination": "108.938820,34.375404",
+                    "distance": "170",
+                    "origin": "108.938896,34.376331",
+                    "cost": {
+                      "duration": "208"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行19米右转",
+                        "road": "",
+                        "distance": "19"
+                      },
+                      {
+                        "instruction": "步行41米右转",
+                        "road": "",
+                        "distance": "41"
+                      },
+                      {
+                        "instruction": "步行36米直行",
+                        "road": "",
+                        "distance": "36"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行74米到达西安北站",
+                        "road": "",
+                        "distance": "74"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安北站",
+                          "id": "610100021499002",
+                          "location": "108.938821,34.375403",
+                          "entrance": {
+                            "name": "东1入口",
+                            "location": "108.938859,34.375934"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "行政中心",
+                          "id": "610100021499005",
+                          "location": "108.947329,34.340983"
+                        },
+                        "name": "地铁2号线(草滩--常宁宫)",
+                        "id": "610100021499",
+                        "type": "地铁线路",
+                        "distance": "3990",
+                        "cost": {
+                          "duration": "630"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0600",
+                        "end_time": "2350",
+                        "station_end_time": "2355",
+                        "via_num": "2",
+                        "via_stops": [
+                          {
+                            "name": "北苑",
+                            "id": "610100021499003",
+                            "location": "108.945214,34.362016"
+                          },
+                          {
+                            "name": "凤城十路",
+                            "id": "610100021499004",
+                            "location": "108.947695,34.352431"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.947327,34.340981",
+                    "distance": "35",
+                    "origin": "108.947327,34.340981",
+                    "cost": {
+                      "duration": "119"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达行政中心",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "行政中心",
+                          "id": "610100020613031",
+                          "location": "108.947329,34.340983"
+                        },
+                        "arrival_stop": {
+                          "name": "西安站",
+                          "id": "610100020613013",
+                          "location": "108.966224,34.278729",
+                          "exit": {
+                            "name": "C口",
+                            "location": "108.965576,34.277222"
+                          }
+                        },
+                        "name": "地铁4号线(西安北站--航天新城)",
+                        "id": "610100020613",
+                        "type": "地铁线路",
+                        "distance": "9180",
+                        "cost": {
+                          "duration": "1200"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0610",
+                        "end_time": "2300",
+                        "station_end_time": "2310",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020613032",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020613033",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020613034",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020613035",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020613036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020613011",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "含元殿",
+                            "id": "610100020613037",
+                            "location": "108.971511,34.287635"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.962769,34.276928",
+                    "distance": "483",
+                    "origin": "108.966217,34.278728",
+                    "cost": {
+                      "duration": "481"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行196米直行",
+                        "road": "",
+                        "distance": "196"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行30米右转",
+                        "road": "",
+                        "distance": "30"
+                      },
+                      {
+                        "instruction": "步行257米到达目的地",
+                        "road": "",
+                        "distance": "257"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101013105522",
+                    "time": "80760",
+                    "name": "Z266(拉萨-广州白云)",
+                    "trip": "Z266",
+                    "distance": "2006412",
+                    "type": "Z字头的直达特快火车",
+                    "departure_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "2147",
+                      "start": "0"
+                    },
+                    "arrival_stop": {
+                      "id": "B0FFLHQPEP",
+                      "name": "广州白云",
+                      "location": "113.246341 23.190910",
+                      "adcode": "440111",
+                      "time": "2013",
+                      "end": "1"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "428.0"
+                      },
+                      {
+                        "code": "火车硬座",
+                        "cost": "236.0"
+                      },
+                      {
+                        "code": "火车硬卧上铺",
+                        "cost": "399.0"
+                      },
+                      {
+                        "code": "火车硬卧中铺",
+                        "cost": "414.0"
+                      },
+                      {
+                        "code": "火车软卧上铺",
+                        "cost": "708.0"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "741.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "236.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "广州白云站",
+                          "id": "900000099788021",
+                          "location": "113.248226,23.191920",
+                          "entrance": {
+                            "name": "H入口",
+                            "location": "113.244511,23.191369"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "聚龙",
+                          "id": "900000099788022",
+                          "location": "113.238723,23.181111"
+                        },
+                        "name": "地铁12号线(广州体育馆--浔峰岗)",
+                        "id": "900000099788",
+                        "type": "地铁线路",
+                        "distance": "2151",
+                        "cost": {
+                          "duration": "420"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0609",
+                        "end_time": "2339",
+                        "station_end_time": "2348",
+                        "via_num": "0",
+                        "via_stops": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.238716,23.181110",
+                    "distance": "126",
+                    "origin": "113.238716,23.181110",
+                    "cost": {
+                      "duration": "212"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达聚龙",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "聚龙",
+                          "id": "440100023047022",
+                          "location": "113.238723,23.181111"
+                        },
+                        "arrival_stop": {
+                          "name": "昌岗",
+                          "id": "440100023047005",
+                          "location": "113.276196,23.090089"
+                        },
+                        "name": "地铁8号线(滘心--万胜围)",
+                        "id": "440100023047",
+                        "type": "地铁线路",
+                        "distance": "12960",
+                        "cost": {
+                          "duration": "1650"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0611",
+                        "end_time": "2300",
+                        "station_end_time": "2311",
+                        "via_num": "12",
+                        "via_stops": [
+                          {
+                            "name": "上步",
+                            "id": "440100023047023",
+                            "location": "113.235759,23.170978"
+                          },
+                          {
+                            "name": "同德",
+                            "id": "440100023047024",
+                            "location": "113.234705,23.163525"
+                          },
+                          {
+                            "name": "鹅掌坦",
+                            "id": "440100023047025",
+                            "location": "113.235802,23.156818"
+                          },
+                          {
+                            "name": "西村",
+                            "id": "440100023047026",
+                            "location": "113.241929,23.141086"
+                          },
+                          {
+                            "name": "彩虹桥",
+                            "id": "440100023047027",
+                            "location": "113.245314,23.133892"
+                          },
+                          {
+                            "name": "陈家祠",
+                            "id": "440100023047028",
+                            "location": "113.246541,23.127034"
+                          },
+                          {
+                            "name": "华林寺",
+                            "id": "440100023047029",
+                            "location": "113.247232,23.117839"
+                          },
+                          {
+                            "name": "文化公园",
+                            "id": "440100023047015",
+                            "location": "113.249954,23.108980"
+                          },
+                          {
+                            "name": "同福西",
+                            "id": "440100023047016",
+                            "location": "113.252372,23.101689"
+                          },
+                          {
+                            "name": "凤凰新村",
+                            "id": "440100023047002",
+                            "location": "113.255994,23.094705"
+                          },
+                          {
+                            "name": "沙园",
+                            "id": "440100023047003",
+                            "location": "113.260584,23.088625"
+                          },
+                          {
+                            "name": "宝岗大道",
+                            "id": "440100023047004",
+                            "location": "113.269700,23.086027"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.277107,23.090096",
+                    "distance": "72",
+                    "origin": "113.276192,23.090086",
+                    "cost": {
+                      "duration": "232"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行158米到达昌岗",
+                        "road": "",
+                        "distance": "158"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "昌岗",
+                          "id": "440100023309017",
+                          "location": "113.277109,23.090093"
+                        },
+                        "arrival_stop": {
+                          "name": "广州南站",
+                          "id": "440100023309025",
+                          "location": "113.269565,22.989093",
+                          "exit": {
+                            "name": "D出口",
+                            "location": "113.268705,22.988390"
+                          }
+                        },
+                        "name": "地铁2号线(嘉禾望岗--广州南站)",
+                        "id": "440100023309",
+                        "type": "地铁线路",
+                        "distance": "13188",
+                        "cost": {
+                          "duration": "1290"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0624",
+                        "end_time": "",
+                        "station_end_time": "0004",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "江泰路",
+                            "id": "440100023309018",
+                            "location": "113.280570,23.082231"
+                          },
+                          {
+                            "name": "东晓南",
+                            "id": "440100023309019",
+                            "location": "113.294174,23.071333"
+                          },
+                          {
+                            "name": "南洲",
+                            "id": "440100023309020",
+                            "location": "113.297851,23.064026"
+                          },
+                          {
+                            "name": "洛溪",
+                            "id": "440100023309021",
+                            "location": "113.298665,23.042896"
+                          },
+                          {
+                            "name": "南浦",
+                            "id": "440100023309022",
+                            "location": "113.293154,23.032929"
+                          },
+                          {
+                            "name": "会江",
+                            "id": "440100023309023",
+                            "location": "113.286394,23.013047"
+                          },
+                          {
+                            "name": "石壁",
+                            "id": "440100023309024",
+                            "location": "113.277964,22.994136"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.268730,22.988363",
+                    "distance": "134",
+                    "origin": "113.269562,22.989094",
+                    "cost": {
+                      "duration": "194"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行130米左转",
+                        "road": "",
+                        "distance": "130"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行4米到达目的地",
+                        "road": "",
+                        "distance": "4"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            },
+            {
+              "cost": {
+                "duration": "88920",
+                "transit_fee": "232.000000"
+              },
+              "distance": "1967807",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "walking": {
+                    "destination": "108.938820,34.375404",
+                    "distance": "170",
+                    "origin": "108.938896,34.376331",
+                    "cost": {
+                      "duration": "208"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行19米右转",
+                        "road": "",
+                        "distance": "19"
+                      },
+                      {
+                        "instruction": "步行41米右转",
+                        "road": "",
+                        "distance": "41"
+                      },
+                      {
+                        "instruction": "步行36米直行",
+                        "road": "",
+                        "distance": "36"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行74米到达西安北站",
+                        "road": "",
+                        "distance": "74"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安北站",
+                          "id": "610100021499002",
+                          "location": "108.938821,34.375403",
+                          "entrance": {
+                            "name": "东1入口",
+                            "location": "108.938859,34.375934"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "行政中心",
+                          "id": "610100021499005",
+                          "location": "108.947329,34.340983"
+                        },
+                        "name": "地铁2号线(草滩--常宁宫)",
+                        "id": "610100021499",
+                        "type": "地铁线路",
+                        "distance": "3990",
+                        "cost": {
+                          "duration": "630"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0600",
+                        "end_time": "2350",
+                        "station_end_time": "2355",
+                        "via_num": "2",
+                        "via_stops": [
+                          {
+                            "name": "北苑",
+                            "id": "610100021499003",
+                            "location": "108.945214,34.362016"
+                          },
+                          {
+                            "name": "凤城十路",
+                            "id": "610100021499004",
+                            "location": "108.947695,34.352431"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.947327,34.340981",
+                    "distance": "35",
+                    "origin": "108.947327,34.340981",
+                    "cost": {
+                      "duration": "119"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达行政中心",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "行政中心",
+                          "id": "610100020613031",
+                          "location": "108.947329,34.340983"
+                        },
+                        "arrival_stop": {
+                          "name": "西安站",
+                          "id": "610100020613013",
+                          "location": "108.966224,34.278729",
+                          "exit": {
+                            "name": "C口",
+                            "location": "108.965576,34.277222"
+                          }
+                        },
+                        "name": "地铁4号线(西安北站--航天新城)",
+                        "id": "610100020613",
+                        "type": "地铁线路",
+                        "distance": "9180",
+                        "cost": {
+                          "duration": "1200"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0610",
+                        "end_time": "2300",
+                        "station_end_time": "2310",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020613032",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020613033",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020613034",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020613035",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020613036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020613011",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "含元殿",
+                            "id": "610100020613037",
+                            "location": "108.971511,34.287635"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.962769,34.276928",
+                    "distance": "483",
+                    "origin": "108.966217,34.278728",
+                    "cost": {
+                      "duration": "481"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行196米直行",
+                        "road": "",
+                        "distance": "196"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行30米右转",
+                        "road": "",
+                        "distance": "30"
+                      },
+                      {
+                        "instruction": "步行257米到达目的地",
+                        "road": "",
+                        "distance": "257"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101020714627",
+                    "time": "77880",
+                    "name": "Z232(西宁-深圳东)",
+                    "trip": "Z232",
+                    "distance": "1893680",
+                    "type": "Z字头的直达特快火车",
+                    "departure_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "2001",
+                      "start": "0"
+                    },
+                    "arrival_stop": {
+                      "id": "B00140UERW",
+                      "name": "广州北",
+                      "location": "113.203846 23.377273",
+                      "adcode": "440114",
+                      "time": "1739",
+                      "end": "0"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬座",
+                        "cost": "217.0"
+                      },
+                      {
+                        "code": "火车硬卧上铺",
+                        "cost": "370.0"
+                      },
+                      {
+                        "code": "火车硬卧中铺",
+                        "cost": "383.0"
+                      },
+                      {
+                        "code": "火车软卧上铺",
+                        "cost": "667.0"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "667.0"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "693.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "217.0"
+                      },
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "370.0"
+                      },
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "397.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.201569,23.376419",
+                    "distance": "448",
+                    "origin": "113.201843,23.376966",
+                    "cost": {
+                      "duration": "517"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行14米右转",
+                        "road": "",
+                        "distance": "14"
+                      },
+                      {
+                        "instruction": "步行55米左转",
+                        "road": "",
+                        "distance": "55"
+                      },
+                      {
+                        "instruction": "步行15米直行",
+                        "road": "",
+                        "distance": "15"
+                      },
+                      {
+                        "instruction": "步行197米左转",
+                        "road": "",
+                        "distance": "197"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行167米到达广州北站",
+                        "road": "",
+                        "distance": "167"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "广州北站",
+                          "id": "900000043839003",
+                          "location": "113.201568,23.376419",
+                          "entrance": {
+                            "name": "C口",
+                            "location": "113.202705,23.376806"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "高增",
+                          "id": "900000043839010",
+                          "location": "113.295504,23.355162"
+                        },
+                        "name": "地铁9号线(飞鹅岭--高增)",
+                        "id": "900000043839",
+                        "type": "地铁线路",
+                        "distance": "14460",
+                        "cost": {
+                          "duration": "1560"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0605",
+                        "end_time": "",
+                        "station_end_time": "2235",
+                        "via_num": "7",
+                        "via_stops": [
+                          {
+                            "name": "花城路",
+                            "id": "900000043839004",
+                            "location": "113.212740,23.379622"
+                          },
+                          {
+                            "name": "花果山公园",
+                            "id": "900000043839005",
+                            "location": "113.218389,23.387119"
+                          },
+                          {
+                            "name": "花都广场",
+                            "id": "900000043839006",
+                            "location": "113.222628,23.401307"
+                          },
+                          {
+                            "name": "马鞍山公园",
+                            "id": "900000043839007",
+                            "location": "113.237792,23.399457"
+                          },
+                          {
+                            "name": "莲塘",
+                            "id": "900000043839008",
+                            "location": "113.245149,23.389101"
+                          },
+                          {
+                            "name": "清布",
+                            "id": "900000043839009",
+                            "location": "113.250989,23.378122"
+                          },
+                          {
+                            "name": "清塘",
+                            "id": "900000043839011",
+                            "location": "113.262858,23.372206"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.295502,23.355160",
+                    "distance": "64",
+                    "origin": "113.295502,23.355160",
+                    "cost": {
+                      "duration": "225"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达高增",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "高增",
+                          "id": "440100023031003",
+                          "location": "113.295504,23.355162"
+                        },
+                        "arrival_stop": {
+                          "name": "嘉禾望岗",
+                          "id": "440100023031006",
+                          "location": "113.289243,23.237460"
+                        },
+                        "name": "地铁3号线(机场北(T2)--体育西路)",
+                        "id": "440100023031",
+                        "type": "地铁线路",
+                        "distance": "14110",
+                        "cost": {
+                          "duration": "990"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0605",
+                        "end_time": "2315",
+                        "station_end_time": "2320",
+                        "via_num": "2",
+                        "via_stops": [
+                          {
+                            "name": "人和",
+                            "id": "440100023031004",
+                            "location": "113.295995,23.335224"
+                          },
+                          {
+                            "name": "龙归",
+                            "id": "440100023031005",
+                            "location": "113.300834,23.288736"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.289238,23.237457",
+                    "distance": "111",
+                    "origin": "113.289238,23.237457",
+                    "cost": {
+                      "duration": "133"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行1米到达嘉禾望岗",
+                        "road": "",
+                        "distance": "1"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "嘉禾望岗",
+                          "id": "440100023309002",
+                          "location": "113.289243,23.237460"
+                        },
+                        "arrival_stop": {
+                          "name": "广州南站",
+                          "id": "440100023309025",
+                          "location": "113.269565,22.989093",
+                          "exit": {
+                            "name": "D出口",
+                            "location": "113.268705,22.988390"
+                          }
+                        },
+                        "name": "地铁2号线(嘉禾望岗--广州南站)",
+                        "id": "440100023309",
+                        "type": "地铁线路",
+                        "distance": "30942",
+                        "cost": {
+                          "duration": "3030"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "",
+                        "station_start_time": "0600",
+                        "end_time": "",
+                        "station_end_time": "2335",
+                        "via_num": "22",
+                        "via_stops": [
+                          {
+                            "name": "黄边",
+                            "id": "440100023309003",
+                            "location": "113.287376,23.221645"
+                          },
+                          {
+                            "name": "江夏",
+                            "id": "440100023309004",
+                            "location": "113.283451,23.211301"
+                          },
+                          {
+                            "name": "萧岗",
+                            "id": "440100023309005",
+                            "location": "113.280697,23.198580"
+                          },
+                          {
+                            "name": "白云文化广场",
+                            "id": "440100023309006",
+                            "location": "113.275602,23.189574"
+                          },
+                          {
+                            "name": "白云公园",
+                            "id": "440100023309007",
+                            "location": "113.270966,23.181613"
+                          },
+                          {
+                            "name": "飞翔公园",
+                            "id": "440100023309008",
+                            "location": "113.263635,23.168833"
+                          },
+                          {
+                            "name": "三元里",
+                            "id": "440100023309009",
+                            "location": "113.256851,23.159402"
+                          },
+                          {
+                            "name": "广州火车站",
+                            "id": "440100023309010",
+                            "location": "113.256512,23.148339"
+                          },
+                          {
+                            "name": "越秀公园",
+                            "id": "440100023309011",
+                            "location": "113.261503,23.139768"
+                          },
+                          {
+                            "name": "纪念堂",
+                            "id": "440100023309012",
+                            "location": "113.263413,23.132701"
+                          },
+                          {
+                            "name": "公园前",
+                            "id": "440100023309013",
+                            "location": "113.264183,23.125419"
+                          },
+                          {
+                            "name": "海珠广场",
+                            "id": "440100023309014",
+                            "location": "113.265743,23.114265"
+                          },
+                          {
+                            "name": "市二宫",
+                            "id": "440100023309015",
+                            "location": "113.269890,23.105996"
+                          },
+                          {
+                            "name": "江南西",
+                            "id": "440100023309016",
+                            "location": "113.273918,23.097214"
+                          },
+                          {
+                            "name": "昌岗",
+                            "id": "440100023309017",
+                            "location": "113.277109,23.090093"
+                          },
+                          {
+                            "name": "江泰路",
+                            "id": "440100023309018",
+                            "location": "113.280570,23.082231"
+                          },
+                          {
+                            "name": "东晓南",
+                            "id": "440100023309019",
+                            "location": "113.294174,23.071333"
+                          },
+                          {
+                            "name": "南洲",
+                            "id": "440100023309020",
+                            "location": "113.297851,23.064026"
+                          },
+                          {
+                            "name": "洛溪",
+                            "id": "440100023309021",
+                            "location": "113.298665,23.042896"
+                          },
+                          {
+                            "name": "南浦",
+                            "id": "440100023309022",
+                            "location": "113.293154,23.032929"
+                          },
+                          {
+                            "name": "会江",
+                            "id": "440100023309023",
+                            "location": "113.286394,23.013047"
+                          },
+                          {
+                            "name": "石壁",
+                            "id": "440100023309024",
+                            "location": "113.277964,22.994136"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "113.268730,22.988363",
+                    "distance": "134",
+                    "origin": "113.269562,22.989094",
+                    "cost": {
+                      "duration": "194"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行130米左转",
+                        "road": "",
+                        "distance": "130"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行4米到达目的地",
+                        "road": "",
+                        "distance": "4"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            }
+          ]
+        },
+        "count": "2"
+      }
+    },
+    {
+      "from_city": "重庆",
+      "to_city": "西安",
+      "endpoint": "https://restapi.amap.com/v5/direction/transit/integrated",
+      "params": {
+        "origin": "106.550953,29.609378",
+        "destination": "108.938757,34.376660",
+        "city1": "023",
+        "city2": "029",
+        "strategy": "0",
+        "show_fields": "cost",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T13:56:15.046306+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "raw_sha256": "0383460bcbbbfbc960e916bc136e68fd41f490af1790dcc5b91ea54cc28255e5",
+      "response": {
+        "status": "1",
+        "info": "OK",
+        "infocode": "10000",
+        "route": {
+          "origin": "106.550953,29.609378",
+          "destination": "108.938757,34.376660",
+          "distance": "755281",
+          "cost": {},
+          "transits": [
+            {
+              "cost": {
+                "duration": "40380",
+                "transit_fee": "116.500000"
+              },
+              "distance": "789288",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "railway": {
+                    "id": "101013086893",
+                    "time": "9600",
+                    "name": "K1064(重庆北-哈尔滨西)",
+                    "trip": "K1064",
+                    "distance": "239053",
+                    "type": "K字头的快车火车",
+                    "departure_stop": {
+                      "id": "B001781ZYX",
+                      "name": "重庆北",
+                      "location": "106.550953 29.609378",
+                      "adcode": "500157",
+                      "time": "2302",
+                      "start": "1"
+                    },
+                    "arrival_stop": {
+                      "id": "B03320086I",
+                      "name": "达州",
+                      "location": "107.452874 31.198045",
+                      "adcode": "511702",
+                      "time": "0142",
+                      "end": "0"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "91.5"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "37.5"
+                      },
+                      {
+                        "code": "火车软卧下铺",
+                        "cost": "131.5"
+                      },
+                      {
+                        "code": "火车硬座",
+                        "cost": "37.5"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101021484561",
+                    "time": "24360",
+                    "name": "K4516(重庆西-西安)",
+                    "trip": "K4516",
+                    "distance": "533841",
+                    "type": "K字头的快车火车",
+                    "departure_stop": {
+                      "id": "B03320086I",
+                      "name": "达州",
+                      "location": "107.452874 31.198045",
+                      "adcode": "511702",
+                      "time": "0410",
+                      "start": "0"
+                    },
+                    "arrival_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "1056",
+                      "end": "1"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬座",
+                        "cost": "75.0"
+                      },
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "142.0"
+                      },
+                      {
+                        "code": "火车硬卧中铺",
+                        "cost": "138.0"
+                      },
+                      {
+                        "code": "火车硬卧上铺",
+                        "cost": "133.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "75.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.966217,34.278728",
+                    "distance": "387",
+                    "origin": "108.964081,34.276932",
+                    "cost": {
+                      "duration": "466"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行17米左转上阶梯",
+                        "road": "",
+                        "distance": "17"
+                      },
+                      {
+                        "instruction": "步行62米直行出阶梯",
+                        "road": "",
+                        "distance": "62"
+                      },
+                      {
+                        "instruction": "步行68米右转",
+                        "road": "",
+                        "distance": "68"
+                      },
+                      {
+                        "instruction": "步行78米到达目的地",
+                        "road": "",
+                        "distance": "78"
+                      },
+                      {
+                        "instruction": "步行1米",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行162米到达西安站",
+                        "road": "",
+                        "distance": "162"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安站",
+                          "id": "610100020614015",
+                          "location": "108.966224,34.278729",
+                          "entrance": {
+                            "name": "出入口",
+                            "location": "108.965038,34.278111"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "西安北站",
+                          "id": "610100020614024",
+                          "location": "108.938768,34.379390",
+                          "exit": {
+                            "name": "B西南口",
+                            "location": "108.938243,34.378773"
+                          }
+                        },
+                        "name": "地铁4号线(航天新城--西安北站)",
+                        "id": "610100020614",
+                        "type": "地铁线路",
+                        "distance": "15540",
+                        "cost": {
+                          "duration": "1800"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0634",
+                        "end_time": "2300",
+                        "station_end_time": "2334",
+                        "via_num": "12",
+                        "via_stops": [
+                          {
+                            "name": "含元殿",
+                            "id": "610100020614035",
+                            "location": "108.971511,34.287635"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020614017",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020614036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020614037",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020614038",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020614039",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020614040",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "行政中心",
+                            "id": "610100020614041",
+                            "location": "108.947329,34.340983"
+                          },
+                          {
+                            "name": "文景路",
+                            "id": "610100020614042",
+                            "location": "108.936728,34.340979"
+                          },
+                          {
+                            "name": "凤城九路",
+                            "id": "610100020614043",
+                            "location": "108.929772,34.348858"
+                          },
+                          {
+                            "name": "凤城十二路",
+                            "id": "610100020614044",
+                            "location": "108.929745,34.359027"
+                          },
+                          {
+                            "name": "元鼎路",
+                            "id": "610100020614045",
+                            "location": "108.929701,34.367160"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.938904,34.376335",
+                    "distance": "466",
+                    "origin": "108.938766,34.379387",
+                    "cost": {
+                      "duration": "574"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行116米",
+                        "road": "",
+                        "distance": "116"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行95米左转上阶梯",
+                        "road": "",
+                        "distance": "95"
+                      },
+                      {
+                        "instruction": "步行22米左转出阶梯",
+                        "road": "",
+                        "distance": "22"
+                      },
+                      {
+                        "instruction": "步行214米右转",
+                        "road": "",
+                        "distance": "214"
+                      },
+                      {
+                        "instruction": "步行19米到达目的地",
+                        "road": "",
+                        "distance": "19"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            },
+            {
+              "cost": {
+                "duration": "47880",
+                "transit_fee": "112.000000"
+              },
+              "distance": "812382",
+              "walking_distance": "",
+              "nightflag": "",
+              "segments": [
+                {
+                  "walking": {
+                    "destination": "106.549278,29.606823",
+                    "distance": "675",
+                    "origin": "106.552330,29.608004",
+                    "cost": {
+                      "duration": "706"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行102米右转",
+                        "road": "",
+                        "distance": "102"
+                      },
+                      {
+                        "instruction": "步行87米向右后方直行",
+                        "road": "",
+                        "distance": "87"
+                      },
+                      {
+                        "instruction": "步行60米直行上阶梯",
+                        "road": "",
+                        "distance": "60"
+                      },
+                      {
+                        "instruction": "步行35米左转出阶梯",
+                        "road": "",
+                        "distance": "35"
+                      },
+                      {
+                        "instruction": "步行131米右转",
+                        "road": "",
+                        "distance": "131"
+                      },
+                      {
+                        "instruction": "步行19米到达目的地",
+                        "road": "",
+                        "distance": "19"
+                      },
+                      {
+                        "instruction": "步行1米右转",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行241米到达重庆北站南广场",
+                        "road": "",
+                        "distance": "241"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "重庆北站南广场",
+                          "id": "900000055078020",
+                          "location": "106.549272,29.606820",
+                          "entrance": {
+                            "name": "7号口",
+                            "location": "106.551222,29.607211"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "重庆西站",
+                          "id": "900000055078042",
+                          "location": "106.439385,29.500105"
+                        },
+                        "name": "轨道交通环线外环(二郎--二郎)",
+                        "id": "900000055078",
+                        "type": "地铁线路",
+                        "distance": "20160",
+                        "cost": {
+                          "duration": "3120"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0614",
+                        "station_start_time": "0610",
+                        "end_time": "2230",
+                        "station_end_time": "2333",
+                        "via_num": "13",
+                        "via_stops": [
+                          {
+                            "name": "民安大道",
+                            "id": "900000055078034",
+                            "location": "106.528416,29.608711"
+                          },
+                          {
+                            "name": "洪湖东路",
+                            "id": "900000055078021",
+                            "location": "106.512520,29.607648"
+                          },
+                          {
+                            "name": "动步公园",
+                            "id": "900000055078022",
+                            "location": "106.505348,29.603940"
+                          },
+                          {
+                            "name": "冉家坝",
+                            "id": "900000055078023",
+                            "location": "106.498821,29.598628"
+                          },
+                          {
+                            "name": "体育公园",
+                            "id": "900000055078024",
+                            "location": "106.487642,29.598616"
+                          },
+                          {
+                            "name": "南桥寺",
+                            "id": "900000055078025",
+                            "location": "106.482436,29.590358"
+                          },
+                          {
+                            "name": "玉带山",
+                            "id": "900000055078026",
+                            "location": "106.476308,29.580575"
+                          },
+                          {
+                            "name": "重庆大学",
+                            "id": "900000055078027",
+                            "location": "106.463616,29.568332"
+                          },
+                          {
+                            "name": "沙坪坝",
+                            "id": "900000055078028",
+                            "location": "106.459326,29.555441"
+                          },
+                          {
+                            "name": "天星桥",
+                            "id": "900000055078029",
+                            "location": "106.458834,29.541700"
+                          },
+                          {
+                            "name": "重庆图书馆",
+                            "id": "900000055078030",
+                            "location": "106.455786,29.532534"
+                          },
+                          {
+                            "name": "凤鸣山",
+                            "id": "900000055078040",
+                            "location": "106.449365,29.524457"
+                          },
+                          {
+                            "name": "上桥",
+                            "id": "900000055078041",
+                            "location": "106.442419,29.517693"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "railway": {
+                    "id": "101021484561",
+                    "time": "39420",
+                    "name": "K4516(重庆西-西安)",
+                    "trip": "K4516",
+                    "distance": "775154",
+                    "type": "K字头的快车火车",
+                    "departure_stop": {
+                      "id": "B0FFG05MUM",
+                      "name": "重庆西",
+                      "location": "106.437901 29.500386",
+                      "adcode": "500106",
+                      "time": "2359",
+                      "start": "1"
+                    },
+                    "arrival_stop": {
+                      "id": "B001D08UZ3",
+                      "name": "西安",
+                      "location": "108.962723 34.278498",
+                      "adcode": "610102",
+                      "time": "1056",
+                      "end": "1"
+                    },
+                    "spaces": [
+                      {
+                        "code": "火车硬卧下铺",
+                        "cost": "190.0"
+                      },
+                      {
+                        "code": "火车硬卧上铺",
+                        "cost": "178.0"
+                      },
+                      {
+                        "code": "火车硬卧中铺",
+                        "cost": "184.0"
+                      },
+                      {
+                        "code": "火车无座",
+                        "cost": "102.0"
+                      },
+                      {
+                        "code": "火车硬座",
+                        "cost": "102.0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.966217,34.278728",
+                    "distance": "387",
+                    "origin": "108.964081,34.276932",
+                    "cost": {
+                      "duration": "466"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行17米左转上阶梯",
+                        "road": "",
+                        "distance": "17"
+                      },
+                      {
+                        "instruction": "步行62米直行出阶梯",
+                        "road": "",
+                        "distance": "62"
+                      },
+                      {
+                        "instruction": "步行68米右转",
+                        "road": "",
+                        "distance": "68"
+                      },
+                      {
+                        "instruction": "步行78米到达目的地",
+                        "road": "",
+                        "distance": "78"
+                      },
+                      {
+                        "instruction": "步行1米",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行162米到达西安站",
+                        "road": "",
+                        "distance": "162"
+                      }
+                    ]
+                  },
+                  "bus": {
+                    "buslines": [
+                      {
+                        "departure_stop": {
+                          "name": "西安站",
+                          "id": "610100020614015",
+                          "location": "108.966224,34.278729",
+                          "entrance": {
+                            "name": "出入口",
+                            "location": "108.965038,34.278111"
+                          }
+                        },
+                        "arrival_stop": {
+                          "name": "西安北站",
+                          "id": "610100020614024",
+                          "location": "108.938768,34.379390",
+                          "exit": {
+                            "name": "B西南口",
+                            "location": "108.938243,34.378773"
+                          }
+                        },
+                        "name": "地铁4号线(航天新城--西安北站)",
+                        "id": "610100020614",
+                        "type": "地铁线路",
+                        "distance": "15540",
+                        "cost": {
+                          "duration": "1800"
+                        },
+                        "bus_time_tips": "",
+                        "bustimetag": "0",
+                        "start_time": "0600",
+                        "station_start_time": "0634",
+                        "end_time": "2300",
+                        "station_end_time": "2334",
+                        "via_num": "12",
+                        "via_stops": [
+                          {
+                            "name": "含元殿",
+                            "id": "610100020614035",
+                            "location": "108.971511,34.287635"
+                          },
+                          {
+                            "name": "大明宫",
+                            "id": "610100020614017",
+                            "location": "108.971493,34.296786"
+                          },
+                          {
+                            "name": "大明宫北",
+                            "id": "610100020614036",
+                            "location": "108.971554,34.308233"
+                          },
+                          {
+                            "name": "余家寨",
+                            "id": "610100020614037",
+                            "location": "108.971604,34.318640"
+                          },
+                          {
+                            "name": "百花村",
+                            "id": "610100020614038",
+                            "location": "108.971649,34.326490"
+                          },
+                          {
+                            "name": "常青路",
+                            "id": "610100020614039",
+                            "location": "108.971646,34.335511"
+                          },
+                          {
+                            "name": "市中医医院",
+                            "id": "610100020614040",
+                            "location": "108.960559,34.341012"
+                          },
+                          {
+                            "name": "行政中心",
+                            "id": "610100020614041",
+                            "location": "108.947329,34.340983"
+                          },
+                          {
+                            "name": "文景路",
+                            "id": "610100020614042",
+                            "location": "108.936728,34.340979"
+                          },
+                          {
+                            "name": "凤城九路",
+                            "id": "610100020614043",
+                            "location": "108.929772,34.348858"
+                          },
+                          {
+                            "name": "凤城十二路",
+                            "id": "610100020614044",
+                            "location": "108.929745,34.359027"
+                          },
+                          {
+                            "name": "元鼎路",
+                            "id": "610100020614045",
+                            "location": "108.929701,34.367160"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "walking": {
+                    "destination": "108.938904,34.376335",
+                    "distance": "466",
+                    "origin": "108.938766,34.379387",
+                    "cost": {
+                      "duration": "574"
+                    },
+                    "steps": [
+                      {
+                        "instruction": "步行116米",
+                        "road": "",
+                        "distance": "116"
+                      },
+                      {
+                        "instruction": "步行1米到达目的地",
+                        "road": "",
+                        "distance": "1"
+                      },
+                      {
+                        "instruction": "步行95米左转上阶梯",
+                        "road": "",
+                        "distance": "95"
+                      },
+                      {
+                        "instruction": "步行22米左转出阶梯",
+                        "road": "",
+                        "distance": "22"
+                      },
+                      {
+                        "instruction": "步行214米右转",
+                        "road": "",
+                        "distance": "214"
+                      },
+                      {
+                        "instruction": "步行19米到达目的地",
+                        "road": "",
+                        "distance": "19"
+                      }
+                    ]
+                  }
+                },
+                {}
+              ]
+            }
+          ]
+        },
+        "count": "2"
+      }
+    }
+  ],
+  "date_context": "The benchmark does not specify travel dates. No date was sent; observations are conditional and do not establish trip-date schedule or seat availability."
+}

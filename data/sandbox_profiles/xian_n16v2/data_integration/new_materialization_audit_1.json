@@ -1,0 +1,144 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "cb3489916726e1ca3306c9222d2e33ec2f3fcc492a8b7f68236322ef1ca3b0fa",
+  "parent_snapshot_sha256": "fafd650c98d8726875db0ff6122b6b41ea5045337142429d037c3ef35440b109",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "577534335e3c65c9b95865c5399f8f0b8b856446175932ec29fecb3db534558d"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "262bbeb0f8b35e3f4ab87c8d654bcee97ef6409ab977b5551f7aaf2e560f9347"
+    },
+    {
+      "id": 3,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "8cf766104b76cbb43e2813d922c90d10767695f2a707e4c9577b7545a1515f55"
+    },
+    {
+      "id": 4,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "8199d12b4c3727d43933e35d64ac2cf34a27bbbf0751ad334f8ffbbd2235e5fc"
+    }
+  ],
+  "accepted_trains": [
+    {
+      "from_city": "杭州",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z594",
+        "TrainType": "普速",
+        "From": "杭州",
+        "To": "西安",
+        "BeginTime": "10:46",
+        "EndTime": "04:33",
+        "Duration": 17.78,
+        "Cost": 173.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T15:30:50.683865+00:00",
+      "source_raw_sha256": "262bbeb0f8b35e3f4ab87c8d654bcee97ef6409ab977b5551f7aaf2e560f9347",
+      "evidence_path": "new_capture_1.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "杭州",
+          "name": "杭州",
+          "provider_id": "B023B07ERI",
+          "position": [
+            30.243482,
+            120.18286
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "杭州",
+      "record": {
+        "TrainID": "K390",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "杭州",
+        "BeginTime": "11:00",
+        "EndTime": "05:26",
+        "Duration": 18.43,
+        "Cost": 173.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T15:30:51.758062+00:00",
+      "source_raw_sha256": "8cf766104b76cbb43e2813d922c90d10767695f2a707e4c9577b7545a1515f55",
+      "evidence_path": "new_capture_1.sqlite3",
+      "source_row_id": 3,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "杭州",
+          "name": "杭州",
+          "provider_id": "B023B07ERI",
+          "position": [
+            30.243482,
+            120.18286
+          ],
+          "reference_distance_m": 0.0
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "call_id": 2,
+      "reason": "transfer_or_no_rail",
+      "rail_legs": 2
+    },
+    {
+      "call_id": 3,
+      "reason": "transfer_or_no_rail",
+      "rail_legs": 2
+    }
+  ],
+  "changed_direct_files": {
+    "expanded/G3_ext11/chinatravel/environment/database/poi/hangzhou/poi.json": "1651eb0aed1dc228355c7bf1539847bdfafa4d33d883f25b2eff2ad1682cba3a",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_杭州_to_西安.json": "5a9cf79350a47a7f90315eb56e272ee88a4ab601f743c7c167d75d1d41b84566",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_杭州.json": "6c71b6ab87cec15661ea363c4a8467de61e3ed8a79fcdaa03dad145061a6bb07"
+  },
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets."
+}

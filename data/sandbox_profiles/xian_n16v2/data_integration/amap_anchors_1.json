@@ -1,0 +1,33 @@
+{
+  "schema": "amap-verified-anchor-v1",
+  "anchors": {
+    "杭州": {
+      "city": "杭州",
+      "name": "杭州东站",
+      "code": "0571",
+      "location": "120.212605,30.290846",
+      "provider_poi_id": "B023B08WDR",
+      "source_journal": "new_capture_1.sqlite3",
+      "source_journal_sha256": "cb3489916726e1ca3306c9222d2e33ec2f3fcc492a8b7f68236322ef1ca3b0fa",
+      "source_call_id": 1,
+      "source_raw_sha256": "577534335e3c65c9b95865c5399f8f0b8b856446175932ec29fecb3db534558d",
+      "observed_at_utc": "2026-11-15T15:30:49.545044+00:00",
+      "status": "single_provider_coordinate_reference",
+      "coordinate_system": "GCJ02"
+    },
+    "南京": {
+      "city": "南京",
+      "name": "南京南站",
+      "code": "025",
+      "location": "118.798034,31.968763",
+      "provider_poi_id": "B00190YPLY",
+      "source_journal": "new_capture_1.sqlite3",
+      "source_journal_sha256": "cb3489916726e1ca3306c9222d2e33ec2f3fcc492a8b7f68236322ef1ca3b0fa",
+      "source_call_id": 4,
+      "source_raw_sha256": "8199d12b4c3727d43933e35d64ac2cf34a27bbbf0751ad334f8ffbbd2235e5fc",
+      "observed_at_utc": "2026-11-15T15:30:52.757413+00:00",
+      "status": "single_provider_coordinate_reference",
+      "coordinate_system": "GCJ02"
+    }
+  }
+}

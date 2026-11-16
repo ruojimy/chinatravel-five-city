@@ -1,0 +1,42 @@
+{
+  "uid": "x11m001",
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "input_sha256": "519fb337bc217788aa607e50085ee1e1e28bfa6be49ef194a2274a72dc17903b",
+  "planning_query_sha256": "fc1a55f478bc1799c6e5ca53962014ff05e557db74a6b241dda01eec32e20e78",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "1223aa5d3ef3595e2ef4749127cc9d3f21422d97c2cbde3f515b7d099cb290ef",
+  "evaluations": 6,
+  "moves": [
+    "hotel:西安索菲特传奇酒店（人民大厦）"
+  ],
+  "reason": null,
+  "plan_sha256": "47b8f226073b2b2dc6c13d8e61a14670b91ff23ec2becd151a4eaec5ec15b60d",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": false,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "Unavailable Inner-City Transport",
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 5,
+    "hard_total": 7,
+    "hard_expected": 7,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": false,
+  "score_sha256": "ee2250e8615e90f5f1b1078f214e2f27fa2b40d995d92d8c7a63afc52387a9d3",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 4.824,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

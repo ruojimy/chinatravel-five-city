@@ -1,0 +1,235 @@
+{
+  "uid": "x11h015",
+  "target_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "query_sha256": "08458c1c4fa916d2591ee3e81c257be300af225f1d3e30fe641bf08f7390dd66",
+  "plan_sha256": "790b15a7a5db0b4bc1febf23499ee7dad2fc24e2181aa0d4d7639b4b89871a30",
+  "scored_utc": "2026-11-15T17:35:17.002688+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "legacy_cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "legacy_messages": [],
+      "price_evidence": [
+        {
+          "day": 2,
+          "name": "外滩",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "4c73db61bc9a4fbbdae42c3d119031824503c2ca6465f33aa547ec5d9231a8ec",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 3,
+          "name": "豫园",
+          "planned_price": 40.0,
+          "source_price": 40.0,
+          "source_file_sha256": "4c73db61bc9a4fbbdae42c3d119031824503c2ca6465f33aa547ec5d9231a8ec",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 4,
+          "name": "上海博物馆",
+          "planned_price": 0.0,
+          "source_price": 0.0,
+          "source_file_sha256": "4c73db61bc9a4fbbdae42c3d119031824503c2ca6465f33aa547ec5d9231a8ec",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        }
+      ],
+      "policy": "Unknown or assumed attraction price remains conditional; other definite violations remain failures."
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "pass",
+      "issues": [],
+      "policy": "day is departure day; earlier intercity end clock has at least one-day rollover unless explicit end day/date determines it",
+      "implementation": "date_timeline_v4"
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "pass"
+  },
+  "hard": {
+    "state": "pass",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "overall": "pass",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "8aaa6ac6e2b0a7ba70f9e2589eec0cde8fe7f43d52cc2bb0a2b4a95befc9fd2d",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  },
+  "superseded_time_group": {
+    "name": "Is_time_correct",
+    "state": "fail",
+    "cells": {
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 1
+    },
+    "messages": [
+      "Activities must cost time: {'type': 'accommodation', 'position': '和颐至尊酒店(上海人民广场南京路步行街店)', 'start_time': '15:23', 'end_time': '08:00', 'price': 523, 'room_type': 1, 'rooms': 1, 'cost': 523, 'transports': [{'start': '上海虹桥站', 'end': '和颐至尊酒店(上海人民广场南京路步行街店)', 'mode': 'taxi', 'start_time': '15:00', 'end_time': '15:23', 'price': 65.52, 'cost': 65.52, 'distance': 15.74, 'cars': 1}]}",
+      "Activities must cost time: {'type': 'accommodation', 'position': '和颐至尊酒店(上海人民广场南京路步行街店)', 'start_time': '12:33', 'end_time': '08:00', 'price': 523, 'room_type': 1, 'rooms': 1, 'cost': 523, 'transports': [{'start': '外滩', 'end': '和颐至尊酒店(上海人民广场南京路步行街店)', 'mode': 'taxi', 'start_time': '12:30', 'end_time': '12:33', 'price': 11.75, 'cost': 11.75, 'distance': 2.01, 'cars': 1}]}",
+      "Activities must cost time: {'type': 'accommodation', 'position': '和颐至尊酒店(上海人民广场南京路步行街店)', 'start_time': '12:33', 'end_time': '08:00', 'price': 523, 'room_type': 1, 'rooms': 1, 'cost': 523, 'transports': [{'start': '豫园', 'end': '和颐至尊酒店(上海人民广场南京路步行街店)', 'mode': 'taxi', 'start_time': '12:30', 'end_time': '12:33', 'price': 11.85, 'cost': 11.85, 'distance': 2.04, 'cars': 1}]}",
+      "Activities must cost time: {'type': 'accommodation', 'position': '和颐至尊酒店(上海人民广场南京路步行街店)', 'start_time': '12:30', 'end_time': '07:00', 'price': 523, 'room_type': 1, 'rooms': 1, 'cost': 523, 'transports': [{'start': '上海博物馆', 'end': '和颐至尊酒店(上海人民广场南京路步行街店)', 'mode': 'taxi', 'start_time': '12:30', 'end_time': '12:30', 'price': 11, 'cost': 11, 'distance': 0.46, 'cars': 1}]}"
+    ]
+  },
+  "superseded_attraction_group": {
+    "name": "Is_attractions_correct",
+    "state": "pass",
+    "cells": {
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0
+    },
+    "messages": []
+  },
+  "conditional_zero_assumption": {
+    "applied": false,
+    "overall": "pass",
+    "commonsense": "pass",
+    "attractions": "pass",
+    "assumptions": [],
+    "boundary": "Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free."
+  },
+  "date_scoring": {
+    "policy": "native time group replaced with explicit day-number timeline; other original gates preserved",
+    "timeline_module_sha256": "d3adc58b1730d6fde81b82a23af5e8092ba03dbdce8f4871ff132a8fb94cfe21",
+    "wrapper_sha256": "aa3495c16a2a647260ff7af9ee6f5aa7380ea218908ec4e833bd25cf532521d0",
+    "scored_at_utc": "2026-11-15T17:35:17.415224+00:00",
+    "real_world_boundary": "No given travel date or verified inventory is not evidence of real-world ticket availability.",
+    "base_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11h015.json.date_v4.json.base.json",
+    "base_score_sha256": "6bfafa164c0ac3a84ee483895570b5cd988743cfad48d259cd402e3afef66229",
+    "duration_evidence": [
+      {
+        "type": "train",
+        "id": "G89",
+        "start": "西安北",
+        "end": "上海虹桥",
+        "matched_duration": {
+          "minutes": 352.2,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_上海.json",
+              "sha256": "ed944f391314b5781f90e4874b366a45c8e022b707f0618bbc69ef76b046a922"
+            }
+          ]
+        }
+      },
+      {
+        "type": "train",
+        "id": "G94",
+        "start": "上海虹桥",
+        "end": "西安北",
+        "matched_duration": {
+          "minutes": 339.0,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+              "sha256": "6edcd3ff5b5007efa08a6bbebb8047497af39fedbe59f34eb1eafc35b7a3f32b"
+            }
+          ]
+        }
+      }
+    ],
+    "duration_source_reader_sha256": "ea9a0cc3df4346c6ec024f9282a4ad7b5ca54acaafab19d88923c57fc656ce08",
+    "price_evidence_reader_sha256": "4122a6c1819547cf96034580c7f9480fb29404ab90f07f3c891fed04956011a1",
+    "dynamic_snapshot_path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\data_integration\\dynamic_snapshot_v2.json",
+    "dynamic_snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2"
+  }
+}

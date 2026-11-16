@@ -1,0 +1,39 @@
+{
+  "uid": "x11m003",
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "input_sha256": "205b843123053c9dade22258a063d07719cf9d905894e11fea15b10d07dfe2b4",
+  "planning_query_sha256": "407840d932109b03683e3200d0c01ed64c7b36bcae8ed5c47565a1e7445c3d13",
+  "built": true,
+  "all_ok": true,
+  "error": null,
+  "private_audit_sha256": "4ad570d368de47b84a0316893cc4c80c0ffd4a1c7835b3beb1235527db5c497c",
+  "evaluations": 6,
+  "moves": [
+    "restaurant_type:开通CAFE&BOOK(喜马拉雅店)->四川酒家(太平南路店) d0"
+  ],
+  "reason": null,
+  "plan_sha256": "0aae6a5bc8fcadafb7910c1250f97a1dc33ff196908f678d8edcdc634d7f8e4f",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": true,
+    "hard_ok": true,
+    "all_ok": true,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [],
+    "checker_error": null,
+    "hard_pass": 7,
+    "hard_total": 7,
+    "hard_expected": 7,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": true,
+  "hard_ok": true,
+  "score_sha256": "6da541f13e54d33b761680ef2bceab0731c49794d4f444ed9800c1528b2e0d31",
+  "unresolved_requirements_count": 0,
+  "status": "pass",
+  "elapsed_seconds": 6.09,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

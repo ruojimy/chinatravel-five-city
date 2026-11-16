@@ -1,0 +1,12 @@
+{
+  "uid": "x11e018",
+  "group": "G3",
+  "split": "easy",
+  "agent_id": "luna-n16v2-easy",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "started_at_utc": "2026-11-15T17:25:01.723417+00:00",
+  "request_sha256": "1aacd370dac608fba28ada2e8692de11f2fccbf11569f0dc9980ef9263aa8e89",
+  "snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+  "status": "started_before_request_returned"
+}

@@ -1,0 +1,108 @@
+{
+  "people_number": 1,
+  "start_city": "重庆",
+  "target_city": "西安",
+  "planning_notes": [
+    "拾愿精舍的0元票价是实际未查到票价后工具允许的规划假设，不代表确认免费。列出的城际票价与班次来自无出行日期的冻结快照；席位可用性未知。"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "重庆西",
+          "end": "西安",
+          "TrainID": "K4516",
+          "start_time": "23:59",
+          "end_time": "10:56",
+          "arrival_day": 2,
+          "price": 102,
+          "cost": 102,
+          "tickets": 1,
+          "transports": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "拾愿精舍",
+          "start_time": "11:09",
+          "end_time": "13:00",
+          "price": 0,
+          "cost": 0,
+          "tickets": 1,
+          "price_note": "0元规划假设：工具返回已实际搜索但未找到匹配票价；不代表确认免费。",
+          "transports": [
+            {
+              "start": "西安站",
+              "end": "拾愿精舍",
+              "mode": "taxi",
+              "start_time": "10:56",
+              "end_time": "11:09",
+              "price": 36.37,
+              "cost": 36.37,
+              "distance": 9.05,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "今天商务宾馆",
+          "start_time": "14:00",
+          "end_time": "08:30",
+          "price": 56,
+          "cost": 56,
+          "rooms": 1,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "拾愿精舍",
+              "end": "今天商务宾馆",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:07",
+              "price": 22.39,
+              "cost": 22.39,
+              "distance": 5.05,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安",
+          "end": "重庆西",
+          "TrainID": "K4518",
+          "start_time": "11:54",
+          "end_time": "23:15",
+          "price": 102,
+          "cost": 102,
+          "tickets": 1,
+          "transports": [
+            {
+              "start": "今天商务宾馆",
+              "end": "西安站",
+              "mode": "taxi",
+              "start_time": "09:30",
+              "end_time": "09:37",
+              "price": 22.64,
+              "cost": 22.64,
+              "distance": 5.12,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

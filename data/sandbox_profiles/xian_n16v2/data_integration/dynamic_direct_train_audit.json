@@ -1,0 +1,178 @@
+{
+  "source_path": "dynamic_prefetch_results.json",
+  "source_sha256": "be783975c46b53792e6517c829f0249b4287faf0be60d4d3aff6ee7f1336e22e",
+  "trains_added": [
+    {
+      "from_city": "广州",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z264",
+        "TrainType": "普速",
+        "From": "广州白云",
+        "To": "西安",
+        "BeginTime": "09:26",
+        "EndTime": "07:42",
+        "Duration": 22.27,
+        "Cost": 236
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T13:56:12.094261+00:00",
+      "source_raw_sha256": "a2c86c3903409d50f3c0deb97d19bfff92d4e103037aafb3846c55dfba628343",
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    },
+    {
+      "from_city": "广州",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z230",
+        "TrainType": "普速",
+        "From": "广州北",
+        "To": "西安",
+        "BeginTime": "11:10",
+        "EndTime": "08:56",
+        "Duration": 21.77,
+        "Cost": 217
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T13:56:12.094261+00:00",
+      "source_raw_sha256": "a2c86c3903409d50f3c0deb97d19bfff92d4e103037aafb3846c55dfba628343",
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    },
+    {
+      "from_city": "西安",
+      "to_city": "广州",
+      "record": {
+        "TrainID": "Z266",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "广州白云",
+        "BeginTime": "21:47",
+        "EndTime": "20:13",
+        "Duration": 22.43,
+        "Cost": 236
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T13:56:13.565768+00:00",
+      "source_raw_sha256": "375bb4da7f195a1f44304ae3b31f5c01eea6259cee18d1cc8f94aa65f5870073",
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    },
+    {
+      "from_city": "西安",
+      "to_city": "广州",
+      "record": {
+        "TrainID": "Z232",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "广州北",
+        "BeginTime": "20:01",
+        "EndTime": "17:39",
+        "Duration": 21.63,
+        "Cost": 217
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T13:56:13.565768+00:00",
+      "source_raw_sha256": "375bb4da7f195a1f44304ae3b31f5c01eea6259cee18d1cc8f94aa65f5870073",
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    },
+    {
+      "from_city": "重庆",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "K4516",
+        "TrainType": "普速",
+        "From": "重庆西",
+        "To": "西安",
+        "BeginTime": "23:59",
+        "EndTime": "10:56",
+        "Duration": 10.95,
+        "Cost": 102
+      },
+      "seat": "火车硬座",
+      "observation_time_utc": "2026-11-15T13:56:15.046306+00:00",
+      "source_raw_sha256": "0383460bcbbbfbc960e916bc136e68fd41f490af1790dcc5b91ea54cc28255e5",
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference"
+    }
+  ],
+  "stations_added": [
+    {
+      "city": "广州",
+      "name": "广州白云",
+      "position": [
+        23.19091,
+        113.246341
+      ],
+      "source_raw_sha256": "a2c86c3903409d50f3c0deb97d19bfff92d4e103037aafb3846c55dfba628343"
+    },
+    {
+      "city": "广州",
+      "name": "广州北",
+      "position": [
+        23.377273,
+        113.203846
+      ],
+      "source_raw_sha256": "a2c86c3903409d50f3c0deb97d19bfff92d4e103037aafb3846c55dfba628343"
+    },
+    {
+      "city": "重庆",
+      "name": "重庆西",
+      "position": [
+        29.500386,
+        106.437901
+      ],
+      "source_raw_sha256": "0383460bcbbbfbc960e916bc136e68fd41f490af1790dcc5b91ea54cc28255e5"
+    }
+  ],
+  "rejections": [
+    {
+      "id": "K1064",
+      "reason": "not_direct_between_requested_cities"
+    },
+    {
+      "id": "K4516",
+      "reason": "not_direct_between_requested_cities"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_西安.json",
+      "before_sha256": "62864350e43bb89052033a23e6ce437af7b1016b8f81e65e72e848083be8006c",
+      "after_sha256": "006f0f4c6e73080ccbb9e34a2e27afa14304c0d8ebbec1de8731ee569222f8b2"
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_广州.json",
+      "before_sha256": "38caaeb00fbca3809dd452bf08214d190a7fc3229e35ea9e1d42dd10f09e1d0e",
+      "after_sha256": "a98b9c794caaa7a3b54bcc40fd65d02019b55615a48b0ae4326697f0385b7949"
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_西安.json",
+      "before_sha256": "3e3c4f36af96f7e1a955b970101a61ba93f5811a4318c8719442ad71cc3ec6b9",
+      "after_sha256": "e2614e4eb10c1fb6260cca87aef2fdd7d327c2323286c5d358a83a60bdbcbd7e"
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\poi\\guangzhou\\poi.json",
+      "before_sha256": "3021df4f061877cf178003d4b8ee9cef696008e366f711f622377db2a1be97e0",
+      "after_sha256": "a9bf0675c9dc95c792f30fc069ae6f1c6645f0197a783a9b8964fe25a0d61ded"
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\poi\\xian\\poi.json",
+      "before_sha256": "2d819791b0af4c0ae69da778b84236fd0d28bb77874f805aeb530777f40e6ec4",
+      "after_sha256": "2d819791b0af4c0ae69da778b84236fd0d28bb77874f805aeb530777f40e6ec4"
+    },
+    {
+      "path": "expanded\\G3_ext11\\chinatravel\\environment\\database\\poi\\chongqing\\poi.json",
+      "before_sha256": "2b6171b2e2fc052bd1454a10188e3dbaf161d64c12b27e33b3418d6ab99e42a7",
+      "after_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362"
+    }
+  ],
+  "boundary": "No query trip date specified; current-context schedules/fares are conditional, not date-specific or proof of availability."
+}

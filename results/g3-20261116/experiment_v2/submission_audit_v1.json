@@ -1,0 +1,600 @@
+{
+  "created_utc": "2026-11-15T17:39:05.136515+00:00",
+  "boundary": "Trace counts are observations, not a proof of feasibility or infeasibility.",
+  "rows": [
+    {
+      "uid": "x11e014",
+      "split": "easy",
+      "status": "blocked_by_data",
+      "tool_calls": 11,
+      "failed_tool_calls": 6,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "广州",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 8,
+          "reference_records": 8,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "广州"
+          },
+          "priced_records": 4,
+          "conditional_records": 15,
+          "reference_records": 15,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e014.txt",
+      "trace": "submissions/traces/x11e014.jsonl"
+    },
+    {
+      "uid": "x11e005",
+      "split": "easy",
+      "status": "blocked_by_data",
+      "tool_calls": 7,
+      "failed_tool_calls": 1,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "杭州"
+          },
+          "priced_records": 1,
+          "conditional_records": 24,
+          "reference_records": 24,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "杭州",
+            "to_city": "西安"
+          },
+          "priced_records": 1,
+          "conditional_records": 18,
+          "reference_records": 18,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e005.txt",
+      "trace": "submissions/traces/x11e005.jsonl"
+    },
+    {
+      "uid": "x11e026",
+      "split": "easy",
+      "status": "submitted_first_draft",
+      "tool_calls": 9,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "重庆",
+            "to_city": "西安"
+          },
+          "priced_records": 1,
+          "conditional_records": 5,
+          "reference_records": 5,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "重庆"
+          },
+          "priced_records": 1,
+          "conditional_records": 7,
+          "reference_records": 7,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e026.txt",
+      "trace": "submissions/traces/x11e026.jsonl"
+    },
+    {
+      "uid": "x11e013",
+      "split": "easy",
+      "status": "submitted_first_draft",
+      "tool_calls": 12,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "重庆",
+            "to_city": "西安"
+          },
+          "priced_records": 1,
+          "conditional_records": 5,
+          "reference_records": 5,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "重庆"
+          },
+          "priced_records": 1,
+          "conditional_records": 7,
+          "reference_records": 7,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e013.txt",
+      "trace": "submissions/traces/x11e013.jsonl"
+    },
+    {
+      "uid": "x11e021",
+      "split": "easy",
+      "status": "blocked_by_data",
+      "tool_calls": 4,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "广州",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 8,
+          "reference_records": 8,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "广州"
+          },
+          "priced_records": 4,
+          "conditional_records": 15,
+          "reference_records": 15,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e021.txt",
+      "trace": "submissions/traces/x11e021.jsonl"
+    },
+    {
+      "uid": "x11e018",
+      "split": "easy",
+      "status": "submitted_first_draft",
+      "tool_calls": 8,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "深圳",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 12,
+          "reference_records": 12,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "深圳"
+          },
+          "priced_records": 4,
+          "conditional_records": 22,
+          "reference_records": 22,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11e018.txt",
+      "trace": "submissions/traces/x11e018.jsonl"
+    },
+    {
+      "uid": "x11m001",
+      "split": "medium",
+      "status": "blocked_by_data",
+      "tool_calls": 16,
+      "failed_tool_calls": 9,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "杭州",
+            "to_city": "西安",
+            "mode": "airplane"
+          },
+          "priced_records": 0,
+          "conditional_records": 4,
+          "reference_records": 4,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "杭州",
+            "mode": "airplane"
+          },
+          "priced_records": 0,
+          "conditional_records": 9,
+          "reference_records": 9,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11m001.txt",
+      "trace": "submissions/traces/x11m001.jsonl"
+    },
+    {
+      "uid": "x11m011",
+      "split": "medium",
+      "status": "blocked_by_data",
+      "tool_calls": 6,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "重庆",
+            "mode": "train"
+          },
+          "priced_records": 1,
+          "conditional_records": 3,
+          "reference_records": 3,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "重庆",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 1,
+          "conditional_records": 3,
+          "reference_records": 3,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11m011.txt",
+      "trace": "submissions/traces/x11m011.jsonl"
+    },
+    {
+      "uid": "x11m007",
+      "split": "medium",
+      "status": "blocked_by_data",
+      "tool_calls": 10,
+      "failed_tool_calls": 3,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "武汉",
+            "mode": "train"
+          },
+          "priced_records": 1,
+          "conditional_records": 34,
+          "reference_records": 34,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "武汉",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 1,
+          "conditional_records": 40,
+          "reference_records": 40,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11m007.txt",
+      "trace": "submissions/traces/x11m007.jsonl"
+    },
+    {
+      "uid": "x11m013",
+      "split": "medium",
+      "status": "blocked_by_data",
+      "tool_calls": 10,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "北京",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 1,
+          "conditional_records": 36,
+          "reference_records": 36,
+          "dynamic_status": "not_prefetched_budget_exhausted"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "北京",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 36,
+          "reference_records": 36,
+          "dynamic_status": "not_prefetched_budget_exhausted"
+        }
+      ],
+      "raw": "submissions/raw/x11m013.txt",
+      "trace": "submissions/traces/x11m013.jsonl"
+    },
+    {
+      "uid": "x11m003",
+      "split": "medium",
+      "status": "blocked_by_data",
+      "tool_calls": 11,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "南京",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 1,
+          "reference_records": 1,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "南京",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 7,
+          "reference_records": 7,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11m003.txt",
+      "trace": "submissions/traces/x11m003.jsonl"
+    },
+    {
+      "uid": "x11m014",
+      "split": "medium",
+      "status": "submitted_first_draft",
+      "tool_calls": 18,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "上海",
+            "mode": "train"
+          },
+          "priced_records": 3,
+          "conditional_records": 33,
+          "reference_records": 33,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "上海",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 32,
+          "reference_records": 32,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "上海",
+            "mode": "airplane"
+          },
+          "priced_records": 2,
+          "conditional_records": 21,
+          "reference_records": 21,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "上海",
+            "to_city": "西安",
+            "mode": "airplane"
+          },
+          "priced_records": 0,
+          "conditional_records": 34,
+          "reference_records": 34,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11m014.txt",
+      "trace": "submissions/traces/x11m014.jsonl"
+    },
+    {
+      "uid": "x11h009",
+      "split": "human",
+      "status": "blocked_by_data",
+      "tool_calls": 19,
+      "failed_tool_calls": 6,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "杭州",
+            "to_city": "西安"
+          },
+          "priced_records": 1,
+          "conditional_records": 18,
+          "reference_records": 18,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "杭州"
+          },
+          "priced_records": 1,
+          "conditional_records": 24,
+          "reference_records": 24,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11h009.txt",
+      "trace": "submissions/traces/x11h009.jsonl"
+    },
+    {
+      "uid": "x11h001",
+      "split": "human",
+      "status": "blocked_by_data",
+      "tool_calls": 8,
+      "failed_tool_calls": 1,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "苏州"
+          },
+          "priced_records": 2,
+          "conditional_records": 3,
+          "reference_records": 3,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "苏州",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 3,
+          "reference_records": 3,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11h001.txt",
+      "trace": "submissions/traces/x11h001.jsonl"
+    },
+    {
+      "uid": "x11h004",
+      "split": "human",
+      "status": "blocked_by_data",
+      "tool_calls": 4,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "广州"
+          },
+          "priced_records": 4,
+          "conditional_records": 15,
+          "reference_records": 15,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "广州",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 8,
+          "reference_records": 8,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11h004.txt",
+      "trace": "submissions/traces/x11h004.jsonl"
+    },
+    {
+      "uid": "x11h012",
+      "split": "human",
+      "status": "submitted_first_draft",
+      "tool_calls": 12,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "南京",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 1,
+          "reference_records": 1,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "南京",
+            "to_city": "西安",
+            "mode": "train"
+          },
+          "priced_records": 2,
+          "conditional_records": 7,
+          "reference_records": 7,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11h012.txt",
+      "trace": "submissions/traces/x11h012.jsonl"
+    },
+    {
+      "uid": "x11h015",
+      "split": "human",
+      "status": "submitted_first_draft",
+      "tool_calls": 12,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "上海"
+          },
+          "priced_records": 5,
+          "conditional_records": 54,
+          "reference_records": 54,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "上海",
+            "to_city": "西安"
+          },
+          "priced_records": 2,
+          "conditional_records": 66,
+          "reference_records": 66,
+          "dynamic_status": "prefetched"
+        }
+      ],
+      "raw": "submissions/raw/x11h015.txt",
+      "trace": "submissions/traces/x11h015.jsonl"
+    },
+    {
+      "uid": "x11h007",
+      "split": "human",
+      "status": "submitted_first_draft",
+      "tool_calls": 19,
+      "failed_tool_calls": 0,
+      "intercity_searches": [
+        {
+          "arguments": {
+            "from_city": "成都",
+            "to_city": "西安"
+          },
+          "priced_records": 1,
+          "conditional_records": 63,
+          "reference_records": 63,
+          "dynamic_status": "prefetched"
+        },
+        {
+          "arguments": {
+            "from_city": "西安",
+            "to_city": "成都"
+          },
+          "priced_records": 2,
+          "conditional_records": 77,
+          "reference_records": 77,
+          "dynamic_status": "not_prefetched_budget_exhausted"
+        }
+      ],
+      "raw": "submissions/raw/x11h007.txt",
+      "trace": "submissions/traces/x11h007.jsonl"
+    }
+  ]
+}

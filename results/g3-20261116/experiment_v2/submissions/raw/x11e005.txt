@@ -1,0 +1,6 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The available priced outbound train K390 leaves Xi'an at 11:00 and reaches Hangzhou at 05:26 the next day. The only priced direct return train Z594 leaves Hangzhou at 10:46 and reaches Xi'an at 04:33 the following day, beyond the requested two-day itinerary. The faster return trains and listed flights have Cost=null, so I cannot provide a grounded fare for a return within day 2. Although the frozen walk tool returned a 5.52 km route between Hangzhou Station and West Lake Scenic Area taking 66 minutes each way, the intercity return is the blocking lookup. No travel date or actual seat availability was supplied."
+  ]
+}

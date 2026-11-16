@@ -19,6 +19,15 @@ from .env import SandboxEnv, hhmm, minutes
 from .plan import DayBuilder, ceil_div, itinerary
 
 
+def _known_cost(record: dict) -> bool:
+    """A missing, negative or nonfinite fare is unknown, never free."""
+    try:
+        value = float(record["Cost"])
+    except (KeyError, TypeError, ValueError):
+        return False
+    return bool(np.isfinite(value) and value >= 0)
+
+
 @dataclass
 class PlannerOptions:
     max_attractions_per_day: int = 3
@@ -70,8 +79,22 @@ class SkeletonPlanner:
         target_city = query["target_city"]
         days = int(query["days"])
 
-        gos = self._pick_intercity(start_city, target_city, window=self.options.go_window)
-        backs = self._pick_intercity(target_city, start_city, window=None, reverse=True)
+        # Only opt into dated published fares when each direction's dates and
+        # desired seat were explicitly provided on the public query.
+        self.env._official_fare_context = {}
+        self.env._official_fare_evidence = []
+        seat = query.get("train_seat_code")
+        if seat in ("O", "1"):
+            for a, b, field in ((start_city, target_city, "outbound_date"),
+                                (target_city, start_city, "return_date")):
+                if query.get(field):
+                    self.env._official_fare_context[(a, b)] = {
+                        "travel_date": query[field], "seat_code": seat}
+        try:
+            gos = self._pick_intercity(start_city, target_city, window=self.options.go_window)
+            backs = self._pick_intercity(target_city, start_city, window=None, reverse=True)
+        finally:
+            self.env._official_fare_context = {}
         if not gos or not backs:
             self.last_reason = "no intercity option"
             return PlanResult(None, None, 0)
@@ -131,7 +154,9 @@ class SkeletonPlanner:
         trains = self.env.trains(frm, to)
         if not trains:
             return []
-        pool = list(trains)
+        pool = [record for record in trains if _known_cost(record)]
+        if not pool:
+            return []
         if window is not None:
             low, high = window
             filtered = [t for t in pool if low <= minutes(t["BeginTime"]) <= high]
@@ -189,7 +214,10 @@ class SkeletonPlanner:
         if frame.empty:
             return []
         work = frame.copy()
-        work["price"] = pd.to_numeric(work["price"], errors="coerce").fillna(0)
+        work["price"] = pd.to_numeric(work["price"], errors="coerce")
+        work = work[work["price"].notna() & np.isfinite(work["price"]) & (work["price"] >= 0)]
+        if work.empty:
+            return []
         order_by = getattr(self.options, "order_by", "distance")
         if anchor:
             distances = self._distance_km(city, anchor, [str(x) for x in work["name"]])
@@ -429,7 +457,16 @@ class SkeletonPlanner:
                 seconds = self.env.trip_seconds(builder.city, builder.position, name, "taxi")
             if seconds is None or seconds * 60 > self.options.max_leg_seconds_attraction:
                 return False
-        duration = max(45, int(round(float(row["recommendmintime"]) * 60)))
+        try:
+            recommended = float(row.get("recommendmintime"))
+        except (TypeError, ValueError):
+            recommended = float("nan")
+        # An absent recommendation is not a reason to discard a visible POI.
+        # Use the planner's own configured visit duration as a scheduling choice;
+        # do not write it back or attribute it to the source record.
+        duration = (max(45, int(round(recommended * 60)))
+                    if np.isfinite(recommended) and recommended > 0
+                    else int(self.options.attraction_minutes))
         if not _window_allows(row, minutes(builder.time), duration):
             return False
         if not affordable(duration):

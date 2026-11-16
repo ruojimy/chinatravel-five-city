@@ -1,0 +1,6 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The one-day request cannot be grounded with an observed priced outbound connection that gets four travelers from Guangzhou to Xi'an early enough to visit the requested business-district attraction and return within the same day. The only directly priced outbound records returned were Z264 (09:26–07:42, 22.27 hours, arrival next day) and Z230 (11:10–08:56, 21.77 hours, arrival next day); neither fits a one-day visit. Same-day high-speed trains G843, G405, and G915 and the listed outbound flights were returned with Cost=null, so no fare can be stated. The reverse search also does not establish a same-day round trip; its priced direct options depart Xi'an at 07:00 by MU2303 or later by train. No date or seat availability was provided."
+  ]
+}

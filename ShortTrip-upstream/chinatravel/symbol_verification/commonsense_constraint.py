@@ -89,6 +89,15 @@ def return_info_test(flag, info):
     return flag
 
 
+def _same_train_station(city, observed, recorded):
+    if observed == recorded:
+        return True
+    from pathlib import Path
+    from chinatravel.environment.station_aliases import compare
+    root = Path(__file__).resolve().parents[2]
+    return compare(root, city, observed, recorded, station_context=True)['state'] == 'pass'
+
+
 def Is_activity_grounded(symbolic_input, plan_json, verbose=False):
 
     table_statistics = pd.DataFrame(columns=['Invalid or ungrounded activity entity'])
@@ -114,6 +123,16 @@ def Is_activity_grounded(symbolic_input, plan_json, verbose=False):
         return table_statistics, error_info
 
     last_day_idx = len(plan) - 1
+    # An overnight return may arrive on an otherwise empty final day. The
+    # departure still is the last activity, but only an explicitly declared
+    # arrival on that final day justifies trailing empty day buckets.
+    nonempty = [i for i, bucket in enumerate(plan) if isinstance(bucket, dict)
+                and isinstance(bucket.get('activities'), list) and bucket['activities']]
+    if nonempty and nonempty[-1] < last_day_idx:
+        last_activity = plan[nonempty[-1]]['activities'][-1]
+        if (isinstance(last_activity, dict) and last_activity.get('type') in _INTERCITY_ACTIVITY_TYPES
+                and last_activity.get('arrival_day') == plan[-1].get('day')):
+            last_day_idx = nonempty[-1]
     for day_idx, day_plan_i in enumerate(plan):
         activities = day_plan_i.get("activities", []) if isinstance(day_plan_i, dict) else []
         if not isinstance(activities, list):
@@ -177,6 +196,35 @@ def Is_activity_grounded(symbolic_input, plan_json, verbose=False):
     return table_statistics, error_info
 
 
+def _select_dated_intercity(symbolic_input, plan_day, origin, destination, mode, date_field):
+    """Select one leg with explicit departure date and seat; legacy calls unchanged."""
+    from datetime import date, timedelta
+    travel_date = symbolic_input.get(date_field)
+    seat = symbolic_input.get('train_seat_code')
+    if mode != 'train' or travel_date is None:
+        return intercity_transport.select(origin, destination, mode)
+    if travel_date is None or seat not in ('O', '1'):
+        raise LookupError('Dated train fare requires departure date and seat code')
+    try:
+        parsed = date.fromisoformat(travel_date)
+        if parsed.isoformat() != travel_date:
+            raise ValueError('non-canonical date')
+        start = symbolic_input.get('start_date')
+        if start is not None:
+            start_parsed = date.fromisoformat(start)
+            if start_parsed.isoformat() != start:
+                raise ValueError('non-canonical start date')
+            day = plan_day.get('day')
+            if isinstance(day, bool) or not isinstance(day, int) or day < 1:
+                raise ValueError('invalid itinerary departure day')
+            if start_parsed + timedelta(days=day-1) != parsed:
+                raise ValueError('departure date conflicts with itinerary day')
+    except (ValueError, TypeError, OverflowError) as exc:
+        raise LookupError('Unverified intercity departure date: ' + str(exc)) from exc
+    return intercity_transport.select(origin, destination, mode,
+                                      travel_date=travel_date, seat_code=seat)
+
+
 def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
     
     # print("input: ", symbolic_input)
@@ -198,6 +246,15 @@ def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
     
     first_day_plan=plan_json["itinerary"][0]
     last_day_plan=plan_json["itinerary"][-1]
+    if not last_day_plan.get('activities'):
+        nonempty=[bucket for bucket in plan_json['itinerary']
+                  if isinstance(bucket,dict) and isinstance(bucket.get('activities'),list)
+                  and bucket['activities']]
+        if nonempty:
+            last_activity=nonempty[-1]['activities'][-1]
+            if (isinstance(last_activity,dict) and last_activity.get('type') in _INTERCITY_ACTIVITY_TYPES
+                    and last_activity.get('arrival_day') == last_day_plan.get('day')):
+                last_day_plan=nonempty[-1]
 
     target_city=symbolic_input['target_city']
     start_pos=symbolic_input['start_city']
@@ -241,7 +298,7 @@ def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
 
     table_statistics.loc[0] = [0, 0, 0, 0]
 
-    go_df=intercity_transport.select(start_pos,target_city,go_type)
+    go_df=_select_dated_intercity(symbolic_input,first_day_plan,start_pos,target_city,go_type,'outbound_date')
 
     if not ("start" in go_intercity_transport_plan and "end" in go_intercity_transport_plan):
         # return return_info(False, "intercity-transport should provide start and end position.")
@@ -311,7 +368,9 @@ def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
                 error_info.append("Iintercity train (Go) should provide the valid TrainID.")
                 break
 
-            if go_intercity_transport_plan['TrainID']==row['TrainID']  and go_intercity_transport_plan['start']==row['From'] and go_intercity_transport_plan['end']==row['To']:
+            if (go_intercity_transport_plan['TrainID']==row['TrainID']
+                    and _same_train_station(start_pos,go_intercity_transport_plan['start'],row['From'])
+                    and _same_train_station(target_city,go_intercity_transport_plan['end'],row['To'])):
                 go_flag=1
                 try: 
                     go_intercity_transport_plan['start_time']
@@ -355,7 +414,7 @@ def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
         error_info.append("No information found given transport ID.")
 
     
-    back_df=intercity_transport.select(target_city,start_pos,back_type)
+    back_df=_select_dated_intercity(symbolic_input,last_day_plan,target_city,start_pos,back_type,'return_date')
 
     back_flag=0
     
@@ -413,7 +472,9 @@ def Is_intercity_transport_correct(symbolic_input, plan_json, verbose=False):
                 break
                 
             
-            if back_intercity_transport_plan['TrainID']==row['TrainID'] and back_intercity_transport_plan['start']==row['From'] and back_intercity_transport_plan['end']==row['To']:
+            if (back_intercity_transport_plan['TrainID']==row['TrainID']
+                    and _same_train_station(target_city,back_intercity_transport_plan['start'],row['From'])
+                    and _same_train_station(start_pos,back_intercity_transport_plan['end'],row['To'])):
                 back_flag=1
                 try: 
                     back_intercity_transport_plan['start_time']
@@ -839,15 +900,21 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
     try: 
         plan_json["itinerary"]
     except: 
-        table_statistics.loc[0] = [1, 1, 1]
+        table_statistics.loc[0, :] = 1
         error_info = ["Error plan type, must be python dict"]
         return table_statistics, error_info
 
     table_statistics.loc[0] = [0, 0, 0]
 
     plan = plan_json["itinerary"]
-    for day_plan_i in plan:
-        for activity_i in day_plan_i["activities"]:
+    for day_index, day_plan_i in enumerate(plan):
+        for activity_index, activity_i in enumerate(day_plan_i["activities"]):
+            # A leg attached to the outbound train/flight happens in the
+            # origin; later local legs are in the destination for this contract.
+            route_city = (symbolic_input['start_city']
+                          if day_index == 0 and activity_index == 0
+                          and activity_i.get('type') in _INTERCITY_ACTIVITY_TYPES
+                          else target_city)
 
             if "transports" in activity_i:
                 
@@ -863,8 +930,9 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                     transport_i[0]["start_time"]
                     transport_i[-1]["end_time"]
                 except:
-                    table_statistics.loc[0] = [1, 1, 1]
+                    table_statistics.loc[0, :] = 1
                     error_info.append("Key Error: [start, end, start_time, end_time]")
+                    continue
                 
                 source_poi = transport_i[0]["start"]
                 target_poi = transport_i[-1]["end"]
@@ -879,12 +947,11 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                 
                 if (len(transport_i)==3):
                     try:
-                        tools_return = innercity_transport.goto(city=target_city, start=source_poi, end=target_poi, start_time=start_time, transport_type="metro", verbose=False)
-                    except:
-                        table_statistics.loc[0] = [1, 1, 1]
-                        error_info.append("GoTo error city [{}], start [{}], end [{}], start_time [{}], transport_type [metro]".format(target_city, source_poi, target_poi, start_time))
-                        continue
-
+                        tools_return = innercity_transport.goto(city=route_city, start=source_poi, end=target_poi, start_time=start_time, transport_type="metro", verbose=False)
+                    except Exception as exc:
+                        raise LookupError("TRANSPORT_LOOKUP_UNAVAILABLE: metro route lookup failed") from exc
+                    if not isinstance(tools_return, list) or len(tools_return) != len(transport_i):
+                        raise LookupError("TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result")
 
                     for idx, trans_ii in enumerate(transport_i):
                         
@@ -934,19 +1001,19 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                                 trans_ii['tickets']
                                 trans_ii['cost']
                                 if abs(trans_ii['price'] * trans_ii['tickets'] - trans_ii['cost']) > .1:
-                                    table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                    table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                     error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=price*tickets] ".format(trans_ii))
                             except:
-                                table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                 error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=price*tickets] ".format(trans_ii))
                         elif trans_ii['mode'] == 'walk':
                             try:
                                 trans_ii['cost']
                                 if trans_ii['cost']!= 0:
-                                    table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                    table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                     error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=0] ".format(trans_ii))
                             except:
-                                table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                 error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=0] ".format(trans_ii))
 
                     try:
@@ -960,14 +1027,11 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                 elif len(transport_i)==1 and transport_i[0]["mode"] in ["walk", "taxi"]:
 
                     try:
-                        tools_return = innercity_transport.goto(city=target_city, start=source_poi, end=target_poi, start_time=start_time, transport_type=transport_i[0]["mode"], verbose=False)
-                        if not isinstance(tools_return, list):
-                            table_statistics.loc[0] = [1, 1, 1]
-                            error_info.append("Can not find a path of transport {} -> {}".format(source_poi, target_poi))
-                    except:
-                        table_statistics.loc[0] = [1, 1, 1]
-                        error_info.append("GoTo error city [{}], start [{}], end [{}], start_time [{}], transport_type [metro]".format(target_city, source_poi, target_poi, start_time))
-                        continue
+                        tools_return = innercity_transport.goto(city=route_city, start=source_poi, end=target_poi, start_time=start_time, transport_type=transport_i[0]["mode"], verbose=False)
+                        if not isinstance(tools_return, list) or len(tools_return) != len(transport_i):
+                            raise LookupError("route has no comparable result")
+                    except Exception as exc:
+                        raise LookupError("TRANSPORT_LOOKUP_UNAVAILABLE: local route lookup failed or unavailable") from exc
                     for idx, trans_ii in enumerate(transport_i):
                         try:
                             if trans_ii["start"] != tools_return[idx]["start"]:
@@ -988,7 +1052,7 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                                 error_info.append("Incorrect duration infomation of transport {} -> {}".format(source_poi, target_poi) + "  [{}], Tool: [{}]".format(trans_ii, tools_return[idx]))
                             
                         except:
-                            table_statistics.loc[0,  'Incorrect Duration Information of Inner-City Transport'] = 1
+                            table_statistics.loc[0,  'Incorrect Information of Inner-City Transporton on price, distance, and duration'] = 1
                             error_info.append("Incorrect duration infomation of transport {} -> {}".format(source_poi, target_poi) + "  [{}], Tool: [{}]".format(trans_ii, tools_return[idx]))
 
 
@@ -1013,23 +1077,23 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
                             try:
                                 trans_ii['cost']
                                 if trans_ii['cost']!= 0:
-                                    table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                    table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                     error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=0] ".format(trans_ii))
                             except:
-                                table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                 error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=0] ".format(trans_ii))
                         elif trans_ii['mode'] == 'taxi':
                             try:
                                 trans_ii['cost']
                                 trans_ii['cars']
                                 if abs(trans_ii['price'] * trans_ii['cars'] - trans_ii['cost']) > .1:
-                                    table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                    table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                     error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=price*cars] ".format(trans_ii))
                             except:
-                                table_statistics.loc[0,  'Incorrect cost information of Inner-City Transport'] = 1
+                                table_statistics.loc[0,  'Inccorrect cost information of Inner-City Transport'] = 1
                                 error_info.append("Incorrect cost information of transport {} -> {}".format(source_poi, target_poi) + "  [{}], [cost=price*cars] ".format(trans_ii))
                 else:
-                    table_statistics.loc[0] = [1, 1, 1]
+                    table_statistics.loc[0, :] = 1
                     error_info.append("Metro transport should be three-stages, Taxi or walk should be one-stage. {} -> {}".format(source_poi, target_poi))
 
                 # print("passed")
@@ -1041,6 +1105,12 @@ def Is_transport_correct(symbolic_input, plan_json, verbose=False):
             print(error_info)
             print(table_statistics)
     return table_statistics, error_info
+
+# Reuse the native checker as a per-segment evidence gate for connected routes.
+_single_segment_Is_transport_correct = Is_transport_correct
+def Is_transport_correct(symbolic_input, plan_json, verbose=False):
+    from chinatravel.symbol_verification.multileg_transport import check
+    return check(symbolic_input, plan_json, _single_segment_Is_transport_correct, verbose)
 
 def time_compare_if_earlier_equal(time_1, time_2):
 
@@ -1235,6 +1305,21 @@ def Is_space_correct(symbolic_input, plan_json, verbose=False):
             print(error_info)
             print(table_statistics)
     return table_statistics, error_info
+
+
+_legacy_Is_space_correct = Is_space_correct
+def Is_space_correct(symbolic_input, plan_json, verbose=False):
+    """Use evidence-backed train-station equivalence for the shared sandbox."""
+    from pathlib import Path
+    from chinatravel.environment.station_aliases import validate_space
+    root = Path(__file__).resolve().parents[2]
+    result = validate_space(symbolic_input, plan_json, root)
+    table = pd.DataFrame(columns=['Invalid Transport information across positions'])
+    table.loc[0] = [0 if result['state'] == 'pass' else 1]
+    messages = [str(item) for item in result['issues']]
+    if verbose:
+        print('Space state:', result['state'], messages)
+    return table, messages
 
 
 def func_commonsense_constraints(symbolic_input, plan_json, verbose=False, lang=None):

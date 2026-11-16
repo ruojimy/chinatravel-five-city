@@ -1,3 +1,6 @@
+import os
+from pathlib import Path
+
 CITY_SLUGS = [
     "beijing",
     "shanghai",
@@ -27,6 +30,13 @@ CITY_NAMES = {
     ],
 }
 
+# The native ten-city profile is the default. Xi'an is opt-in and the profile
+# must be chosen before importing the environment or its singleton checkers.
+_PROFILE = os.environ.get('CHINATRAVEL_PROFILE')
+if _PROFILE == 'expanded11':
+    CITY_SLUGS.append('xian')
+    CITY_NAMES['zh'].append('西安')
+    CITY_NAMES['en'].append("Xi'an")
 
 def normalize_lang(lang=None, en_version=False):
     if en_version:
@@ -54,6 +64,10 @@ def database_dirname(lang):
 
 
 def relative_database_path(lang, *parts):
+    configured = os.environ.get('CHINATRAVEL_DATABASE_ROOT_EN' if normalize_lang(lang) == 'en'
+                                else 'CHINATRAVEL_DATABASE_ROOT')
+    if configured:
+        return str(Path(configured).resolve().joinpath(*parts))
     dirname = database_dirname(lang)
     suffix = "/".join(parts)
     return "../../{}/{}".format(dirname, suffix).rstrip("/")

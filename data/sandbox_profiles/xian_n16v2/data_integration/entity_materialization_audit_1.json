@@ -1,0 +1,31 @@
+{
+  "schema": "entity-materialization-audit-v1",
+  "trip_date": null,
+  "entities": [
+    {
+      "record_id": "attraction:xian:12",
+      "outcomes": [
+        {
+          "field": "price",
+          "status": "matches_benchmark_source_reference"
+        },
+        {
+          "field": "opening_hours",
+          "status": "matches_benchmark_days_unconfirmed"
+        }
+      ],
+      "evidence": "entity_evidence_attraction_xian_12_1.json"
+    }
+  ],
+  "rejections": [
+    {
+      "call_id": 2,
+      "reason": "identity_missing_or_ambiguous"
+    },
+    {
+      "call_id": 3,
+      "reason": "identity_missing_or_ambiguous"
+    }
+  ],
+  "boundary": "Schema.org values are source observations, not confirmed bookings; field conflicts remain unresolved."
+}

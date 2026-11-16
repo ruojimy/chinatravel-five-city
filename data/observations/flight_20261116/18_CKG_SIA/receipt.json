@@ -1,0 +1,16 @@
+{
+  "index": 18,
+  "origin": "重庆",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/CKG-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:32:03.460864+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "fad690479e2678bd3ee6b15f0dc943f1f15b86def48bfd0816506c8bd32bd48c",
+  "page_description": "2026-11-16重庆到西安机票，共8个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "captured_single_source_reference",
+  "declared_count": 8,
+  "accepted": 8,
+  "rejected": 0
+}

@@ -1,0 +1,220 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "南京",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安北",
+          "end": "南京南",
+          "start_time": "08:51",
+          "end_time": "13:32",
+          "price": 600.0,
+          "cost": 1800.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [],
+          "TrainID": "G92"
+        },
+        {
+          "position": "开通CAFE&BOOK(喜马拉雅店)",
+          "type": "lunch",
+          "price": 41.0,
+          "cost": 123.0,
+          "start_time": "13:46",
+          "end_time": "14:46",
+          "transports": [
+            {
+              "start": "南京南",
+              "end": "南京南站-地铁站",
+              "mode": "walk",
+              "start_time": "13:32",
+              "end_time": "13:35",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "宏运大道-地铁站",
+              "mode": "metro",
+              "start_time": "13:35",
+              "end_time": "13:37",
+              "cost": 6.0,
+              "distance": 1.43,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "宏运大道-地铁站",
+              "end": "开通CAFE&BOOK(喜马拉雅店)",
+              "mode": "walk",
+              "start_time": "13:37",
+              "end_time": "13:46",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南京沃德喜马拉雅冰雪乐园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "15:09",
+          "end_time": "15:54",
+          "transports": [
+            {
+              "start": "开通CAFE&BOOK(喜马拉雅店)",
+              "end": "宏运大道-地铁站",
+              "mode": "walk",
+              "start_time": "14:46",
+              "end_time": "14:55",
+              "cost": 0,
+              "distance": 0.77,
+              "price": 0
+            },
+            {
+              "start": "宏运大道-地铁站",
+              "end": "明发广场-地铁站",
+              "mode": "metro",
+              "start_time": "14:55",
+              "end_time": "14:58",
+              "cost": 6.0,
+              "distance": 1.96,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "明发广场-地铁站",
+              "end": "南京沃德喜马拉雅冰雪乐园",
+              "mode": "walk",
+              "start_time": "14:58",
+              "end_time": "15:09",
+              "cost": 0,
+              "distance": 0.98,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "战神突击真枪射击馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 3,
+          "start_time": "16:19",
+          "end_time": "19:19",
+          "transports": [
+            {
+              "start": "南京沃德喜马拉雅冰雪乐园",
+              "end": "明发广场-地铁站",
+              "mode": "walk",
+              "start_time": "15:54",
+              "end_time": "16:05",
+              "cost": 0,
+              "distance": 0.98,
+              "price": 0
+            },
+            {
+              "start": "明发广场-地铁站",
+              "end": "河定桥-地铁站",
+              "mode": "metro",
+              "start_time": "16:05",
+              "end_time": "16:11",
+              "cost": 6.0,
+              "distance": 3.33,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "战神突击真枪射击馆",
+              "mode": "walk",
+              "start_time": "16:11",
+              "end_time": "16:19",
+              "cost": 0,
+              "distance": 0.71,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "曼美轻居酒店(南京南站河定桥地铁站店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 105.0,
+          "cost": 315.0,
+          "rooms": 3,
+          "start_time": "19:27",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "战神突击真枪射击馆",
+              "end": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "mode": "walk",
+              "start_time": "19:19",
+              "end_time": "19:27",
+              "cost": 0,
+              "distance": 0.7184820300846811,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "start": "南京南",
+          "end": "西安北",
+          "start_time": "09:56",
+          "end_time": "14:34",
+          "price": 600.0,
+          "cost": 1800.0,
+          "tickets": 3,
+          "type": "train",
+          "transports": [
+            {
+              "start": "曼美轻居酒店(南京南站河定桥地铁站店)",
+              "end": "河定桥-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:32",
+              "cost": 0,
+              "distance": 0.24,
+              "price": 0
+            },
+            {
+              "start": "河定桥-地铁站",
+              "end": "南京南站-地铁站",
+              "mode": "metro",
+              "start_time": "08:32",
+              "end_time": "08:38",
+              "cost": 6.0,
+              "distance": 3.04,
+              "price": 2.0,
+              "tickets": 3
+            },
+            {
+              "start": "南京南站-地铁站",
+              "end": "南京南",
+              "mode": "walk",
+              "start_time": "08:38",
+              "end_time": "08:41",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            }
+          ],
+          "TrainID": "G94"
+        }
+      ]
+    }
+  ]
+}

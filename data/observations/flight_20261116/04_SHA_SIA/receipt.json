@@ -1,0 +1,14 @@
+{
+  "index": 4,
+  "origin": "上海",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/SHA-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:30:12.644573+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "e95a8f15f39e3b855aa45670962b81f610561ee0f03709a36a18f665cf309d9f",
+  "page_description": "2026-11-16上海到西安机票，共84个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "flight_count_mismatch_quarantine",
+  "declared_count": 84
+}

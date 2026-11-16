@@ -1,0 +1,7 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The required stop 拾愿精舍 could not be grounded: catalog_search for 苏州 attractions returned no records, and reference_search for the same name and city also returned no records. Its location, identity, and visit details remain unavailable, so I cannot schedule a verified visit.",
+    "Both intercity directions have only date-unknown reference services with availability unknown. The conditional train rows in both directions have no fare; the returned priced rows are references, not verified bookable trips."
+  ]
+}

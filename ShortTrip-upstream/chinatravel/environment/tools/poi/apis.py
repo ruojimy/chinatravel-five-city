@@ -30,6 +30,11 @@ class Poi:
         city_cn_list = city_names(self.lang)
         for i, city in enumerate(city_list):
             self.data[city_cn_list[i]] = self.data.pop(city)
+        if self.lang == "zh":
+            from chinatravel.environment.planning_access import blocked_poi_names
+            for city in city_cn_list:
+                for name in blocked_poi_names(city):
+                    self.data[city].pop(name, None)
         self.city_cn_list = city_cn_list
         self.city_list = city_list
 
@@ -41,6 +46,13 @@ class Poi:
         try:
             return city_data[name]
         except KeyError:
+            if self.lang == "zh":
+                from pathlib import Path
+                from chinatravel.environment.station_aliases import resolve_for_poi
+                root = Path(__file__).resolve().parents[4]
+                resolved = resolve_for_poi(root, city, name, city_data)
+                if resolved is not None:
+                    return city_data[resolved]
             return f"No such point in the city. Check the point name: {name}."
 
 

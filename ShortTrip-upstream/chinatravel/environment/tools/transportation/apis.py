@@ -1,6 +1,10 @@
 import os
 import json
 import heapq
+import math
+import statistics
+from hashlib import sha256
+from pathlib import Path
 from geopy.distance import geodesic
 from geographiclib.geodesic import Geodesic
 
@@ -8,17 +12,68 @@ from chinatravel.environment.tools.poi.apis import Poi
 from chinatravel.environment.language import CITY_SLUGS, city_names, normalize_lang, relative_database_path
 
 
-def get_lines_and_stations(city, SUBWAY_PATH):
+def _city_poi_reference(city, subway_path):
+    """Use the local same-city POI median only as a coarse sanity boundary."""
+    path=Path(subway_path).resolve().parent.parent/'poi'/city/'poi.json'
+    if not path.is_file():return None
+    raw=path.read_bytes()
+    rows=json.loads(raw.decode('utf-8-sig'))
+    positions=[]
+    for row in rows:
+        p=row.get('position') if isinstance(row,dict) else None
+        if not isinstance(p,(list,tuple)) or len(p)!=2:continue
+        try:lat,lon=map(float,p)
+        except (TypeError,ValueError):continue
+        if math.isfinite(lat) and math.isfinite(lon) and 15<=lat<=55 and 70<=lon<=140:
+            positions.append((lat,lon))
+    if len(positions)<10:return None
+    return {'latitude':statistics.median(p[0] for p in positions),
+            'longitude':statistics.median(p[1] for p in positions),
+            'count':len(positions),'source_sha256':sha256(raw).hexdigest(),
+            'method':'same-city POI median; coarse +/-2 latitude and +/-3 longitude degrees'}
+
+
+def _normalize_station_position(raw_position, reference):
+    """Return unique China/city-consistent ordering, or preserve unknown."""
+    result={'raw_position':raw_position,'state':'unknown','coordinate_order':None,
+            'normalized_position':None,'reference':reference}
+    if not isinstance(raw_position,str) or reference is None:
+        result['reason']='missing_raw_coordinate_or_city_reference';return result
+    try:
+        a,b=map(float,raw_position.split(','))
+    except (ValueError,TypeError):
+        result['reason']='invalid_coordinate';return result
+    if not math.isfinite(a) or not math.isfinite(b):
+        result['reason']='nonfinite_coordinate';return result
+    candidates=[]
+    for order,lat,lon in [('latitude_longitude',a,b),('longitude_latitude',b,a)]:
+        if (15<=lat<=55 and 70<=lon<=140
+                and abs(lat-reference['latitude'])<=2 and abs(lon-reference['longitude'])<=3):
+            candidates.append((order,lat,lon))
+    if len(candidates)!=1:
+        result['reason']='city_coordinate_order_ambiguous_or_out_of_range';return result
+    order,lat,lon=candidates[0]
+    result.update(state='accepted',coordinate_order=order,normalized_position=[lat,lon],
+                  reason='unique_china_and_same_city_poi_bounds')
+    return result
+
+
+def get_lines_and_stations(city, SUBWAY_PATH, evidence_out=None):
     stations_all = []
     metro_lines = {}
-    with open(SUBWAY_PATH, "r", encoding="utf-8") as file:
-        subway_data = json.load(file)
+    raw=Path(SUBWAY_PATH).read_bytes()
+    subway_data=json.loads(raw.decode('utf-8-sig'))
+    reference=_city_poi_reference(city,SUBWAY_PATH)
+    source_sha=sha256(raw).hexdigest()
     for line in subway_data[city]:
         metro_lines[line["name"]] = []
         for station in line["stations"]:
-            lat, lon = map(float, station["position"].split(","))
+            evidence=_normalize_station_position(station.get('position'),reference)
+            evidence.update(city=city,line=line['name'],name=station.get('name'),source_sha256=source_sha)
+            if evidence_out is not None:evidence_out.append(evidence)
             metro_lines[line["name"]].append(station["name"])
-            stations_all.append({"name": station["name"], "position": (lon, lat)})
+            if evidence['state']=='accepted':
+                stations_all.append({"name": station["name"], "position": tuple(evidence['normalized_position'])})
     station_to_line = {}
     for line, stations in metro_lines.items():
         for station in stations:
@@ -163,9 +218,11 @@ class Transportation:
         self.city_stations_dict = {}
         self.city_lines_dict = {}
         self.city_station_to_line = {}
+        self.station_coordinate_evidence = {}
         for city in self.city_list:
+            self.station_coordinate_evidence[city] = []
             stations_all, metro_lines, station_to_line = get_lines_and_stations(
-                city, SUBWAY_PATH
+                city, SUBWAY_PATH, self.station_coordinate_evidence[city]
             )
             self.city_stations_dict[city] = stations_all
             self.city_lines_dict[city] = metro_lines
@@ -262,6 +319,8 @@ class Transportation:
                 locationB_name,
                 locationB,
             )
+            if not stationA or not stationB:
+                return "No solution: station coordinates unavailable"
             if stationA == stationB:
                 if verbose:
                     print("Too near. Walk.")
@@ -277,6 +336,8 @@ class Transportation:
             shortest_path = find_shortest_path(
                 graph, stationA["name"], stationB["name"]
             )
+            if not shortest_path:
+                return "No solution: disconnected subway graph"
             if stationA and stationB:
                 distance_between_stations = geodesic(
                     stationA["position"], stationB["position"]
@@ -296,7 +357,7 @@ class Transportation:
                 transports.append(
                     {
                         "start": locationA_name,
-                        "end": stationA["name"] + self._metro_station_suffix(),
+                        "end": self._station_name(stationA["name"]),
                         "mode": "walk",
                         "start_time": start_time,
                         "end_time": end_timeA,
@@ -306,8 +367,8 @@ class Transportation:
                 )
                 transports.append(
                     {
-                        "start": stationA["name"] + self._metro_station_suffix(),
-                        "end": stationB["name"] + self._metro_station_suffix(),
+                        "start": self._station_name(stationA["name"]),
+                        "end": self._station_name(stationB["name"]),
                         "mode": "metro",
                         "start_time": end_timeA,
                         "end_time": end_timeB,
@@ -317,7 +378,7 @@ class Transportation:
                 )
                 transports.append(
                     {
-                        "start": stationB["name"] + self._metro_station_suffix(),
+                        "start": self._station_name(stationB["name"]),
                         "end": locationB_name,
                         "mode": "walk",
                         "start_time": end_timeB,
@@ -329,16 +390,16 @@ class Transportation:
                 if verbose:
                     print(
                         "Walk: From starting point to metro {}, Distance: {}.".format(
-                            stationA["name"] + self._metro_station_suffix(), distanceA
+                            self._station_name(stationA["name"]), distanceA
                         )
                     )
                     print(
-                        f"Subway: From {stationA['name'] + self._metro_station_suffix()} to {stationB['name'] + self._metro_station_suffix()}: {' -> '.join(shortest_path)}"
+                        f"Subway: From {self._station_name(stationA['name'])} to {self._station_name(stationB['name'])}: {' -> '.join(shortest_path)}"
                     )
                     print("The cost of subway: {}¥".format(cost))
                     print(
                         "Walk: From metro {} to ending point,  Distance: {}.".format(
-                            stationB["name"] + self._metro_station_suffix(), distanceB
+                            self._station_name(stationB["name"]), distanceB
                         )
                     )
                 return transports
@@ -347,3 +408,8 @@ class Transportation:
 
     def _metro_station_suffix(self):
         return "-Metro Station" if self.lang == "en" else "-地铁站"
+
+    def _station_name(self,name):
+        suffix=self._metro_station_suffix()
+        if name.endswith(suffix) or (self.lang!='en' and '地铁站' in name):return name
+        return name+suffix

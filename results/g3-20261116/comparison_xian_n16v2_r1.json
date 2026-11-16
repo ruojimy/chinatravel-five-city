@@ -1,0 +1,387 @@
+{
+  "snapshot_utc": "2026-11-15T17:38:52.083177+00:00",
+  "groups": {
+    "easy": {
+      "target": 6,
+      "model_terminal": 6,
+      "model_score_counts": {
+        "unknown": 1,
+        "pass": 2
+      },
+      "model_conditional_score_counts": {
+        "pass": 3
+      },
+      "rule_conditional_score_counts": {
+        "fail": 6
+      },
+      "model_assumptions_applied": 1,
+      "rule_assumptions_applied": 0,
+      "model_unscored_terminal": 3,
+      "rule_status_counts": {
+        "fail": 6
+      },
+      "both_definite": 2,
+      "model_pass_on_both_definite": 2,
+      "rule_pass_on_both_definite": 0,
+      "cases": [
+        {
+          "uid": "x11e014",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e014.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e014.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e014.json"
+        },
+        {
+          "uid": "x11e005",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e005.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e005.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e005.json"
+        },
+        {
+          "uid": "x11e026",
+          "model_status": "submitted_first_draft",
+          "model_score": "unknown",
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": "pass",
+          "model_assumption_applied": true,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e026.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11e026.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e026.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e026.json"
+        },
+        {
+          "uid": "x11e013",
+          "model_status": "submitted_first_draft",
+          "model_score": "pass",
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": "pass",
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e013.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11e013.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e013.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e013.json"
+        },
+        {
+          "uid": "x11e021",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e021.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e021.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e021.json"
+        },
+        {
+          "uid": "x11e018",
+          "model_status": "submitted_first_draft",
+          "model_score": "pass",
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": "pass",
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11e018.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11e018.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\receipts\\x11e018.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e018.json"
+        }
+      ]
+    },
+    "medium": {
+      "target": 6,
+      "model_terminal": 6,
+      "model_score_counts": {
+        "fail": 1
+      },
+      "model_conditional_score_counts": {
+        "fail": 1
+      },
+      "rule_conditional_score_counts": {
+        "fail": 4,
+        "pass": 1
+      },
+      "model_assumptions_applied": 0,
+      "rule_assumptions_applied": 0,
+      "model_unscored_terminal": 5,
+      "rule_status_counts": {
+        "fail": 4,
+        "no_plan": 1,
+        "pass": 1
+      },
+      "both_definite": 1,
+      "model_pass_on_both_definite": 0,
+      "rule_pass_on_both_definite": 0,
+      "cases": [
+        {
+          "uid": "x11m001",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m001.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m001.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\scores\\x11m001.json"
+        },
+        {
+          "uid": "x11m011",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "no_plan",
+          "rule_score": null,
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": null,
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m011.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m011.json",
+          "rule_score_path": null
+        },
+        {
+          "uid": "x11m007",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m007.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m007.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\scores\\x11m007.json"
+        },
+        {
+          "uid": "x11m013",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m013.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m013.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\scores\\x11m013.json"
+        },
+        {
+          "uid": "x11m003",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "pass",
+          "rule_score": "pass",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "pass",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m003.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m003.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\scores\\x11m003.json"
+        },
+        {
+          "uid": "x11m014",
+          "model_status": "submitted_first_draft",
+          "model_score": "fail",
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": "fail",
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11m014.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11m014.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\receipts\\x11m014.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\scores\\x11m014.json"
+        }
+      ]
+    },
+    "human": {
+      "target": 6,
+      "model_terminal": 6,
+      "model_score_counts": {
+        "unknown": 1,
+        "pass": 2
+      },
+      "model_conditional_score_counts": {
+        "unknown": 1,
+        "pass": 2
+      },
+      "rule_conditional_score_counts": {
+        "fail": 2,
+        "pass": 2
+      },
+      "model_assumptions_applied": 0,
+      "rule_assumptions_applied": 0,
+      "model_unscored_terminal": 3,
+      "rule_status_counts": {
+        "fail": 2,
+        "no_plan": 2,
+        "pass": 2
+      },
+      "both_definite": 1,
+      "model_pass_on_both_definite": 1,
+      "rule_pass_on_both_definite": 1,
+      "cases": [
+        {
+          "uid": "x11h009",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h009.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h009.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\scores\\x11h009.json"
+        },
+        {
+          "uid": "x11h001",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "fail",
+          "rule_score": "fail",
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": "fail",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h001.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h001.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\scores\\x11h001.json"
+        },
+        {
+          "uid": "x11h004",
+          "model_status": "blocked_by_data",
+          "model_score": null,
+          "rule_status": "no_plan",
+          "rule_score": null,
+          "model_conditional_score": null,
+          "model_assumption_applied": false,
+          "rule_conditional_score": null,
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h004.json",
+          "score": null,
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h004.json",
+          "rule_score_path": null
+        },
+        {
+          "uid": "x11h012",
+          "model_status": "submitted_first_draft",
+          "model_score": "unknown",
+          "rule_status": "pass",
+          "rule_score": "pass",
+          "model_conditional_score": "unknown",
+          "model_assumption_applied": false,
+          "rule_conditional_score": "pass",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h012.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11h012.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h012.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\scores\\x11h012.json"
+        },
+        {
+          "uid": "x11h015",
+          "model_status": "submitted_first_draft",
+          "model_score": "pass",
+          "rule_status": "pass",
+          "rule_score": "pass",
+          "model_conditional_score": "pass",
+          "model_assumption_applied": false,
+          "rule_conditional_score": "pass",
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h015.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11h015.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h015.json",
+          "rule_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\scores\\x11h015.json"
+        },
+        {
+          "uid": "x11h007",
+          "model_status": "submitted_first_draft",
+          "model_score": "pass",
+          "rule_status": "no_plan",
+          "rule_score": null,
+          "model_conditional_score": "pass",
+          "model_assumption_applied": false,
+          "rule_conditional_score": null,
+          "rule_assumption_applied": false,
+          "receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\submissions\\receipts\\x11h007.json",
+          "score": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\experiment_v2\\scores\\x11h007.json",
+          "rule_receipt": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\receipts\\x11h007.json",
+          "rule_score_path": null
+        }
+      ]
+    }
+  },
+  "boundary": "Model and rule share frozen snapshot. P34 reads private constraints and checker feedback while Luna does not. Unknown, blocked and no-plan are not automatically failures; date-specific real-world availability is not established. This comparison uses original undated questions; dated real-world observations are not trip-date proof.",
+  "full_rule": {
+    "easy": {
+      "queries": 30,
+      "outcomes": {
+        "fail": 22,
+        "no_plan": 6,
+        "pass": 1,
+        "checker_indeterminate": 1
+      },
+      "summary_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\summary.json"
+    },
+    "medium": {
+      "queries": 15,
+      "outcomes": {
+        "fail": 8,
+        "pass": 1,
+        "no_plan": 6
+      },
+      "summary_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\medium\\summary.json"
+    },
+    "human": {
+      "queries": 15,
+      "outcomes": {
+        "fail": 8,
+        "no_plan": 5,
+        "pass": 2
+      },
+      "summary_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\human\\summary.json"
+    }
+  }
+}

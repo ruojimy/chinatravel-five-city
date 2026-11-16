@@ -1,0 +1,229 @@
+{
+  "people_number": 1,
+  "start_city": "西安",
+  "target_city": "上海",
+  "notes": [
+    "The train schedules and fares, hotel price, attraction prices, and local fares are frozen-snapshot planning references. No trip date was supplied; date-specific prices and availability are unknown, so this is not a booking confirmation."
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "上海虹桥",
+          "TrainID": "G89",
+          "start_time": "08:51",
+          "end_time": "14:43",
+          "price": 870,
+          "tickets": 1,
+          "cost": 870,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "position": "和颐至尊酒店(上海人民广场南京路步行街店)",
+          "start_time": "15:23",
+          "end_time": "08:00",
+          "price": 523,
+          "room_type": 1,
+          "rooms": 1,
+          "cost": 523,
+          "transports": [
+            {
+              "start": "上海虹桥站",
+              "end": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "mode": "taxi",
+              "start_time": "15:00",
+              "end_time": "15:23",
+              "price": 65.52,
+              "cost": 65.52,
+              "distance": 15.74,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "外滩",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "price": 0,
+          "tickets": 1,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "end": "外滩",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:03",
+              "price": 11.75,
+              "cost": 11.75,
+              "distance": 2.01,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "和颐至尊酒店(上海人民广场南京路步行街店)",
+          "start_time": "12:33",
+          "end_time": "08:00",
+          "price": 523,
+          "room_type": 1,
+          "rooms": 1,
+          "cost": 523,
+          "transports": [
+            {
+              "start": "外滩",
+              "end": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:33",
+              "price": 11.75,
+              "cost": 11.75,
+              "distance": 2.01,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "豫园",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "price": 40,
+          "tickets": 1,
+          "cost": 40,
+          "transports": [
+            {
+              "start": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "end": "豫园",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:03",
+              "price": 11.85,
+              "cost": 11.85,
+              "distance": 2.04,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "和颐至尊酒店(上海人民广场南京路步行街店)",
+          "start_time": "12:33",
+          "end_time": "08:00",
+          "price": 523,
+          "room_type": 1,
+          "rooms": 1,
+          "cost": 523,
+          "transports": [
+            {
+              "start": "豫园",
+              "end": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:33",
+              "price": 11.85,
+              "cost": 11.85,
+              "distance": 2.04,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "上海博物馆",
+          "start_time": "09:30",
+          "end_time": "12:00",
+          "price": 0,
+          "tickets": 1,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "end": "上海博物馆",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:00",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.46,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "和颐至尊酒店(上海人民广场南京路步行街店)",
+          "start_time": "12:30",
+          "end_time": "07:00",
+          "price": 523,
+          "room_type": 1,
+          "rooms": 1,
+          "cost": 523,
+          "transports": [
+            {
+              "start": "上海博物馆",
+              "end": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:30",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.46,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "activities": [
+        {
+          "type": "train",
+          "start": "上海虹桥",
+          "end": "西安北",
+          "TrainID": "G94",
+          "start_time": "08:55",
+          "end_time": "14:34",
+          "price": 756,
+          "tickets": 1,
+          "cost": 756,
+          "transports": [
+            {
+              "start": "和颐至尊酒店(上海人民广场南京路步行街店)",
+              "end": "上海虹桥站",
+              "mode": "taxi",
+              "start_time": "08:00",
+              "end_time": "08:23",
+              "price": 65.52,
+              "cost": 65.52,
+              "distance": 15.74,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

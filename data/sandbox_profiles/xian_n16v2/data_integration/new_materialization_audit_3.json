@@ -1,0 +1,23 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "0ffcc7033d3c9c1209ad31be66a6b2f36db6aaf431e879c48df1b2131ce4c6e6",
+  "parent_snapshot_sha256": "d4356de7a5e5a5ef633e45b3121a48fe16f00f7638d0c8870b5722f4e4ce0fa8",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "c310e22ae6bc1299630f3c1f9a155195ebc3d9ef822662186d73ba6971dad920"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "ecb537cc5b4f543fdae3c6a4d843af06fe637a7f6713ed69d1406ad4be45df7a"
+    }
+  ],
+  "accepted_trains": [],
+  "rejected": [],
+  "changed_direct_files": {},
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets."
+}

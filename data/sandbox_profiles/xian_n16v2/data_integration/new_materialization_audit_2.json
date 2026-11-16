@@ -1,0 +1,226 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "a221a41b3eca0fc144f6be6d2185059dedcc795a043ca11cf49d215614aabc6a",
+  "parent_snapshot_sha256": "bedc6f439c3a3820f0f6e38257ba3638b5596dd40220c9c361899ab99ad6366c",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "dce8716939edbc4eb1702bcc295283a71fc81221e3ed860939ff3ccc19720b3d"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "e549c37f124cef02b84186a133aa3317a1f9ab98c7d81123745bde5498df194b"
+    },
+    {
+      "id": 3,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "734e0eafe5bb4ce6e4f25fab97288cd98c3b61a3f551d5511bd9422b530a4a6d"
+    },
+    {
+      "id": 4,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "ecb537cc5b4f543fdae3c6a4d843af06fe637a7f6713ed69d1406ad4be45df7a"
+    }
+  ],
+  "accepted_trains": [
+    {
+      "from_city": "西安",
+      "to_city": "南京",
+      "record": {
+        "TrainID": "Z306",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "南京",
+        "BeginTime": "21:41",
+        "EndTime": "09:40",
+        "Duration": 11.98,
+        "Cost": 152.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:17:32.885001+00:00",
+      "source_raw_sha256": "dce8716939edbc4eb1702bcc295283a71fc81221e3ed860939ff3ccc19720b3d",
+      "evidence_path": "new_capture_2.sqlite3",
+      "source_row_id": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "南京",
+          "name": "南京",
+          "provider_id": "B001905HYA",
+          "position": [
+            32.087125,
+            118.79751
+          ]
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "南京",
+      "record": {
+        "TrainID": "G92",
+        "TrainType": "高铁",
+        "From": "西安北",
+        "To": "南京南",
+        "BeginTime": "08:51",
+        "EndTime": "13:32",
+        "Duration": 4.68,
+        "Cost": 600
+      },
+      "seat": "火车二等座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:17:32.885001+00:00",
+      "source_raw_sha256": "dce8716939edbc4eb1702bcc295283a71fc81221e3ed860939ff3ccc19720b3d",
+      "evidence_path": "new_capture_2.sqlite3",
+      "source_row_id": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安北",
+          "provider_id": "B001D09TZP",
+          "position": [
+            34.37666,
+            108.938757
+          ],
+          "reference_distance_m": 435.9
+        },
+        {
+          "city": "南京",
+          "name": "南京南",
+          "provider_id": "B00190YPLY",
+          "position": [
+            31.968763,
+            118.798034
+          ]
+        }
+      ]
+    },
+    {
+      "from_city": "南京",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z304",
+        "TrainType": "普速",
+        "From": "南京",
+        "To": "西安",
+        "BeginTime": "20:48",
+        "EndTime": "08:42",
+        "Duration": 11.9,
+        "Cost": 152.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:17:33.904935+00:00",
+      "source_raw_sha256": "e549c37f124cef02b84186a133aa3317a1f9ab98c7d81123745bde5498df194b",
+      "evidence_path": "new_capture_2.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "南京",
+          "name": "南京",
+          "provider_id": "B001905HYA",
+          "position": [
+            32.087125,
+            118.79751
+          ],
+          "reference_distance_m": 0.0
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "南京",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "G94",
+        "TrainType": "高铁",
+        "From": "南京南",
+        "To": "西安北",
+        "BeginTime": "09:56",
+        "EndTime": "14:34",
+        "Duration": 4.63,
+        "Cost": 600
+      },
+      "seat": "火车二等座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:17:33.904935+00:00",
+      "source_raw_sha256": "e549c37f124cef02b84186a133aa3317a1f9ab98c7d81123745bde5498df194b",
+      "evidence_path": "new_capture_2.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "南京",
+          "name": "南京南",
+          "provider_id": "B00190YPLY",
+          "position": [
+            31.968763,
+            118.798034
+          ],
+          "reference_distance_m": 0.0
+        },
+        {
+          "city": "西安",
+          "name": "西安北",
+          "provider_id": "B001D09TZP",
+          "position": [
+            34.37666,
+            108.938757
+          ],
+          "reference_distance_m": 435.9
+        }
+      ]
+    }
+  ],
+  "rejected": [],
+  "changed_direct_files": {
+    "expanded/G3_ext11/chinatravel/environment/database/poi/nanjing/poi.json": "ed03b14a4180cc694fbdb999c2e3e60bd30d14a13190e43640c7f427acc7d88b",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_南京.json": "b434658cc4a6b73bc69a1ebfca5b1d2551d93db3754223f365641266a384f29d",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_南京_to_西安.json": "28649525505be71c5d5d264ee6c207ce61e220dd7d2fba1de349ec6183390c05"
+  },
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets."
+}

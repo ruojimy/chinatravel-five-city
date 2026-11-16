@@ -1,0 +1,235 @@
+{
+  "people_number": 4,
+  "start_city": "广州",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "广州白云",
+          "end": "西安",
+          "start_time": "09:26",
+          "end_time": "07:42",
+          "price": 236.0,
+          "cost": 944.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "Z264"
+        },
+        {
+          "position": "兴庆宫公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "07:57",
+          "end_time": "08:57",
+          "transports": [
+            {
+              "start": "西安",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "07:42",
+              "end_time": "07:45",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "交通大学·兴庆宫-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "07:45",
+              "end_time": "07:52",
+              "cost": 8.0,
+              "distance": 3.53,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "交通大学·兴庆宫-地铁站-地铁站",
+              "end": "兴庆宫公园",
+              "mode": "walk",
+              "start_time": "07:52",
+              "end_time": "07:57",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "大明宫国家遗址公园",
+          "type": "attraction",
+          "price": 60.0,
+          "cost": 240.0,
+          "tickets": 4,
+          "start_time": "09:18",
+          "end_time": "11:18",
+          "transports": [
+            {
+              "start": "兴庆宫公园",
+              "end": "交通大学·兴庆宫-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "08:57",
+              "end_time": "09:02",
+              "cost": 0,
+              "distance": 0.44,
+              "price": 0
+            },
+            {
+              "start": "交通大学·兴庆宫-地铁站-地铁站",
+              "end": "含元殿-地铁站-地铁站",
+              "mode": "metro",
+              "start_time": "09:02",
+              "end_time": "09:10",
+              "cost": 12.0,
+              "distance": 4.35,
+              "price": 3.0,
+              "tickets": 4
+            },
+            {
+              "start": "含元殿-地铁站-地铁站",
+              "end": "大明宫国家遗址公园",
+              "mode": "walk",
+              "start_time": "09:10",
+              "end_time": "09:18",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "重庆纸包鱼(新城店)",
+          "type": "lunch",
+          "price": 41.0,
+          "cost": 164.0,
+          "start_time": "11:31",
+          "end_time": "12:31",
+          "transports": [
+            {
+              "start": "大明宫国家遗址公园",
+              "end": "含元殿-地铁站-地铁站",
+              "mode": "walk",
+              "start_time": "11:18",
+              "end_time": "11:26",
+              "cost": 0,
+              "distance": 0.7,
+              "price": 0
+            },
+            {
+              "start": "含元殿-地铁站-地铁站",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "11:26",
+              "end_time": "11:28",
+              "cost": 8.0,
+              "distance": 1.31,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "重庆纸包鱼(新城店)",
+              "mode": "walk",
+              "start_time": "11:28",
+              "end_time": "11:31",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "西安钟楼",
+          "type": "attraction",
+          "price": 30.0,
+          "cost": 120.0,
+          "tickets": 4,
+          "start_time": "12:39",
+          "end_time": "13:24",
+          "transports": [
+            {
+              "start": "重庆纸包鱼(新城店)",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "12:31",
+              "end_time": "12:34",
+              "cost": 0,
+              "distance": 0.28,
+              "price": 0
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "12:34",
+              "end_time": "12:39",
+              "cost": 8.0,
+              "distance": 2.55,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "西安钟楼",
+              "mode": "walk",
+              "start_time": "12:39",
+              "end_time": "12:39",
+              "cost": 0,
+              "distance": 0.07,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "西安",
+          "end": "广州白云",
+          "start_time": "21:47",
+          "end_time": "20:13",
+          "price": 236.0,
+          "cost": 944.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "钟楼地铁站C口-地铁站",
+              "mode": "walk",
+              "start_time": "13:24",
+              "end_time": "13:24",
+              "cost": 0,
+              "distance": 0.07,
+              "price": 0
+            },
+            {
+              "start": "钟楼地铁站C口-地铁站",
+              "end": "西安站地铁站C口-地铁站",
+              "mode": "metro",
+              "start_time": "13:24",
+              "end_time": "13:29",
+              "cost": 8.0,
+              "distance": 2.55,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "西安站地铁站C口-地铁站",
+              "end": "西安",
+              "mode": "walk",
+              "start_time": "13:29",
+              "end_time": "13:32",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z266"
+        }
+      ]
+    }
+  ]
+}

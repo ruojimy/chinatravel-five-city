@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from .env import SandboxEnv, minutes
 from .plan import DayBuilder, ceil_div, itinerary
+from .duration_choice import visit_minutes
 
 
 def find_record(records: list[dict], **fields) -> dict | None:
@@ -29,7 +30,7 @@ def extract_content(env: SandboxEnv, plan: dict) -> dict:
         "To": first.get("end", ""),
         "BeginTime": first["start_time"],
         "EndTime": first["end_time"],
-        "Cost": first.get("price", 0),
+        "Cost": first.get("price"),
         "type": first.get("type", "train"),
     }
     back = {
@@ -38,7 +39,7 @@ def extract_content(env: SandboxEnv, plan: dict) -> dict:
         "To": last.get("end", ""),
         "BeginTime": last["start_time"],
         "EndTime": last["end_time"],
-        "Cost": last.get("price", 0),
+        "Cost": last.get("price"),
         "type": last.get("type", "train"),
     }
     content: dict[int, list[tuple[str, str]]] = {}
@@ -112,7 +113,7 @@ def schedule(
                 row = lookup_row(env.attraction_table(city), name)
                 if row is None:
                     continue
-                duration = max(45, int(round(float(row["recommendmintime"]) * 60)))
+                duration = visit_minutes(row)
                 if not fits(duration, name):
                     continue
                 builder.add_attraction(row, duration_min=duration)

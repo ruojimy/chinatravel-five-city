@@ -1,0 +1,33 @@
+{
+  "schema": "amap-verified-anchor-v1",
+  "anchors": {
+    "苏州": {
+      "city": "苏州",
+      "name": "苏州站",
+      "code": "0512",
+      "location": "120.610870,31.329683",
+      "provider_poi_id": "B0200172JB",
+      "source_journal": "new_capture_5.sqlite3",
+      "source_journal_sha256": "aea96ac575f90d31363dbb3ec0e51d99620a86d5d6d8afec20369c175ca7e118",
+      "source_call_id": 1,
+      "source_raw_sha256": "07024e984db15f05ac2a2a626e6f1ed036f4e8eabaf09dcaa62d6a4d642cb37d",
+      "observed_at_utc": "2026-11-15T16:20:32.288377+00:00",
+      "status": "single_provider_coordinate_reference",
+      "coordinate_system": "GCJ02"
+    },
+    "上海": {
+      "city": "上海",
+      "name": "上海虹桥站",
+      "code": "021",
+      "location": "121.320081,31.193964",
+      "provider_poi_id": "B00155MPRL",
+      "source_journal": "new_capture_5.sqlite3",
+      "source_journal_sha256": "aea96ac575f90d31363dbb3ec0e51d99620a86d5d6d8afec20369c175ca7e118",
+      "source_call_id": 2,
+      "source_raw_sha256": "311e408d8f2ce9f2441be0422b96b2b817dcc749ecc474932828f056f183beda",
+      "observed_at_utc": "2026-11-15T16:20:33.385666+00:00",
+      "status": "single_provider_coordinate_reference",
+      "coordinate_system": "GCJ02"
+    }
+  }
+}

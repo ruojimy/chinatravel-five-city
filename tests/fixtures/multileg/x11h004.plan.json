@@ -1,0 +1,136 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "广州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "airplane",
+          "start_time": "07:00",
+          "end_time": "09:40",
+          "cost": 1740,
+          "price": 580,
+          "tickets": 3,
+          "start": "西安咸阳国际机场",
+          "end": "广州白云国际机场",
+          "FlightID": "MU2303",
+          "transports": [
+            {
+              "start": "西安",
+              "end": "西安咸阳国际机场",
+              "mode": "taxi",
+              "start_time": "05:00",
+              "end_time": "05:39",
+              "price": 114.62,
+              "cost": 114.62,
+              "distance": 26.65,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "start_time": "10:45",
+          "end_time": "12:15",
+          "cost": 447,
+          "price": 149,
+          "tickets": 3,
+          "position": "广州塔",
+          "transports": [
+            {
+              "start": "广州白云国际机场",
+              "end": "广州塔",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:45",
+              "price": 132.03,
+              "cost": 132.03,
+              "distance": 30.52,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "start_time": "12:31",
+          "end_time": "13:30",
+          "cost": 417,
+          "price": 139,
+          "position": "一哥澳门豆捞·澳门风打边炉(高德置地店)",
+          "transports": [
+            {
+              "start": "广州塔",
+              "end": "一哥澳门豆捞·澳门风打边炉(高德置地店)",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:31",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.9,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "14:02",
+          "end_time": "08:15",
+          "cost": 1197,
+          "price": 399,
+          "rooms": 3,
+          "room_type": 1,
+          "position": "城迹酒店(广州正佳太古汇石牌桥地铁站店)",
+          "transports": [
+            {
+              "start": "一哥澳门豆捞·澳门风打边炉(高德置地店)",
+              "end": "城迹酒店(广州正佳太古汇石牌桥地铁站店)",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:02",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.36,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "11:10",
+          "end_time": "08:56",
+          "arrival_day": 3,
+          "cost": 651,
+          "price": 217,
+          "tickets": 3,
+          "start": "广州北",
+          "end": "西安",
+          "TrainID": "Z230",
+          "transports": [
+            {
+              "start": "城迹酒店(广州正佳太古汇石牌桥地铁站店)",
+              "end": "广州北站",
+              "mode": "taxi",
+              "start_time": "08:30",
+              "end_time": "09:15",
+              "price": 130.66,
+              "cost": 130.66,
+              "distance": 30.21,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": []
+    }
+  ]
+}

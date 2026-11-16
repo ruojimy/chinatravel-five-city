@@ -1,0 +1,7 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "A complete 5-person stay needs an accommodation connection, but goto from 西安站 to the catalog-listed 西安钟楼诺富特酒店 at 05:00 returned available=false with 'Endpoint coordinates require dynamic verification; provider not wired.' No grounded local transfer to the hotel is available in this snapshot.",
+    "The route candidates have no trip date and availability is unknown. The direct trains returned for 杭州→西安 (Z594) and 西安→杭州 (K390) are date-unknown references, not verified bookable services."
+  ]
+}

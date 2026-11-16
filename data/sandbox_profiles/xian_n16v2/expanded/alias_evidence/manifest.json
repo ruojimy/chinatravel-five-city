@@ -1,0 +1,304 @@
+{
+  "files": [
+    {
+      "path": "database/attractions/beijing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\beijing\\attractions.csv",
+      "sha256": "e1f384acd54303041d386c8abf119ae16674841cda079cb248ce3aa3fdd7eddf"
+    },
+    {
+      "path": "database/restaurants/beijing/restaurants_beijing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\beijing\\restaurants_beijing.csv",
+      "sha256": "264be9a32348d7f98a1b9ae4fe8f309b70f8f4f08b513c7a65d2ba28d589e413"
+    },
+    {
+      "path": "database/accommodations/beijing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\beijing\\accommodations.csv",
+      "sha256": "b48f3d5576d60aac51071b3cb4435e5def18b2b00ed25a4a2b34d8543e123194"
+    },
+    {
+      "path": "database/attractions/shanghai/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\shanghai\\attractions.csv",
+      "sha256": "323ea61d9422edb0e935ca819c8660be017fc14d031f2c462d456b0034b61d7b"
+    },
+    {
+      "path": "database/restaurants/shanghai/restaurants_shanghai.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\shanghai\\restaurants_shanghai.csv",
+      "sha256": "a9ef7c3dcd791f9c679928f5db055cc1472ca6e7c6419f3d539768361d57cc2a"
+    },
+    {
+      "path": "database/accommodations/shanghai/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\shanghai\\accommodations.csv",
+      "sha256": "14ebeffe075efb2d0ba060837a73ddde997bf8afad7e79d9cf0ed4a9be47df6f"
+    },
+    {
+      "path": "database/attractions/nanjing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\nanjing\\attractions.csv",
+      "sha256": "2520d8aee10e9c6b84facd3b1b2a9b11836aa66e7c4cd91cb0509f3e275df08c"
+    },
+    {
+      "path": "database/restaurants/nanjing/restaurants_nanjing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\nanjing\\restaurants_nanjing.csv",
+      "sha256": "238ff75809bebbc2166bae9db6f4ecda991c5771bde77e79788e7d0da8ee5d24"
+    },
+    {
+      "path": "database/accommodations/nanjing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\nanjing\\accommodations.csv",
+      "sha256": "657951ada973394e842451ec7bb2529a66632ca63de89322a6fe4776d6ec80ab"
+    },
+    {
+      "path": "database/attractions/suzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\suzhou\\attractions.csv",
+      "sha256": "2f6300639a75a8a3594fa1ed68597dfdcf7274c51f9799a2d2d90f1db964f079"
+    },
+    {
+      "path": "database/restaurants/suzhou/restaurants_suzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\suzhou\\restaurants_suzhou.csv",
+      "sha256": "f66071954604f1f9318f3bb6b7ac7fba051783279abf4a8c6e9d723106653ff1"
+    },
+    {
+      "path": "database/accommodations/suzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\suzhou\\accommodations.csv",
+      "sha256": "e3c6a68e12e03b55737fb7b45828fe46efa6912217d3de12f71decd0b438e41d"
+    },
+    {
+      "path": "database/attractions/hangzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\hangzhou\\attractions.csv",
+      "sha256": "e208779f8e3b5d1fba2e9c1293c8a09c336c70b57dac90ed3c53209fc31fc0c6"
+    },
+    {
+      "path": "database/restaurants/hangzhou/restaurants_hangzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\hangzhou\\restaurants_hangzhou.csv",
+      "sha256": "0e4e6148e45c2432123457dd57cdcc0294b8af1b2522d999f06172e33848adb9"
+    },
+    {
+      "path": "database/accommodations/hangzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\hangzhou\\accommodations.csv",
+      "sha256": "844e32ee235545c24d31d58eade392b40879a73a77bb983b8ca06b08dfaafc1a"
+    },
+    {
+      "path": "database/attractions/shenzhen/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\shenzhen\\attractions.csv",
+      "sha256": "001aa18995b37403e63b24eb1ba38e9f7ae2ec8614c0a343809298f285d2317c"
+    },
+    {
+      "path": "database/restaurants/shenzhen/restaurants_shenzhen.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\shenzhen\\restaurants_shenzhen.csv",
+      "sha256": "c1adf97293e968c20afe618406e1943b9f262f79453d4b2e19a025a48ad48038"
+    },
+    {
+      "path": "database/accommodations/shenzhen/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\shenzhen\\accommodations.csv",
+      "sha256": "5e0c0e401420c6fa4711893465c8afa4f05947390e350f243de3008c963d415b"
+    },
+    {
+      "path": "database/attractions/chengdu/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\chengdu\\attractions.csv",
+      "sha256": "9f93e7f491494c4ceb32938945b87e6fa214773ce3f0d0b9412496e900723fdb"
+    },
+    {
+      "path": "database/restaurants/chengdu/restaurants_chengdu.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\chengdu\\restaurants_chengdu.csv",
+      "sha256": "aee043d83c37cdec6937500a95c04c4d695e05c16f26df99876b5a7571df870f"
+    },
+    {
+      "path": "database/accommodations/chengdu/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\chengdu\\accommodations.csv",
+      "sha256": "c554810aa62f55df306105b1b93959ca71ca4ea9e29be7709d730664c67567cc"
+    },
+    {
+      "path": "database/attractions/wuhan/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\wuhan\\attractions.csv",
+      "sha256": "85a7baf41fe6f5a1ae630eb66a88c7e8c204bee57db00b8deb8b632669b5e062"
+    },
+    {
+      "path": "database/restaurants/wuhan/restaurants_wuhan.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\wuhan\\restaurants_wuhan.csv",
+      "sha256": "0cc4388460c477f9a23265f9b60493f8dac904e43a9fee807514f6e24e83d6f4"
+    },
+    {
+      "path": "database/accommodations/wuhan/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\wuhan\\accommodations.csv",
+      "sha256": "3886e45c906faf200dee25cc206b1e87f252fcdc98079ac7ef6b4a9cba0e30a5"
+    },
+    {
+      "path": "database/attractions/guangzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\guangzhou\\attractions.csv",
+      "sha256": "00f4d6984a82eef86df818b89d47a9b6c28b50246b83985c90f7d58f569c0bb0"
+    },
+    {
+      "path": "database/restaurants/guangzhou/restaurants_guangzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\guangzhou\\restaurants_guangzhou.csv",
+      "sha256": "b02acf3ba100404cb87cd1b35ca42587052441109bc9deedcca63a329dcc1bc9"
+    },
+    {
+      "path": "database/accommodations/guangzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\guangzhou\\accommodations.csv",
+      "sha256": "97c5c7125f97e76c16560532e2a59d30514982bcc8361bd2151b5d2635b2c0db"
+    },
+    {
+      "path": "database/attractions/chongqing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\attractions\\chongqing\\attractions.csv",
+      "sha256": "b2aa26f18d4cc8bec1a42ae823318d87aebc4a08f9814b7e6df245d43ed2a99e"
+    },
+    {
+      "path": "database/restaurants/chongqing/restaurants_chongqing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\restaurants\\chongqing\\restaurants_chongqing.csv",
+      "sha256": "f0f5cde31667a09adbd5145a8435eaedebb14410dc402f026348a4ea59d75ed3"
+    },
+    {
+      "path": "database/accommodations/chongqing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database\\accommodations\\chongqing\\accommodations.csv",
+      "sha256": "a431fc16c2948fa84da5e741b9a62acd6b99cb317abd425f060e7b7959e21bf1"
+    },
+    {
+      "path": "database_en/attractions/beijing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\beijing\\attractions.csv",
+      "sha256": "fb5806c225732f522fb483a50e555a15d45f32b2b9a7d7e516861a4b302070ad"
+    },
+    {
+      "path": "database_en/restaurants/beijing/restaurants_beijing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\beijing\\restaurants_beijing.csv",
+      "sha256": "1f97c870f0adf4055ac971f4467b2178e45323647d611c59387ef2e614d0644e"
+    },
+    {
+      "path": "database_en/accommodations/beijing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\beijing\\accommodations.csv",
+      "sha256": "785182e00c40422f43c196c18021c9f5d439b783da78b5a58d9048aa31d98dfb"
+    },
+    {
+      "path": "database_en/attractions/shanghai/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\shanghai\\attractions.csv",
+      "sha256": "971da537c38e45e4f4fef8266b02378a7a680bafeead8399da7a27cf064fda88"
+    },
+    {
+      "path": "database_en/restaurants/shanghai/restaurants_shanghai.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\shanghai\\restaurants_shanghai.csv",
+      "sha256": "598e68485e7ad1f202f56083f9094b9215c19b5f30ed6954068b0580e49b5e8e"
+    },
+    {
+      "path": "database_en/accommodations/shanghai/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\shanghai\\accommodations.csv",
+      "sha256": "d5a3113586955947461ed5581d017412a3ea3c4d37640431a15fa0961143354c"
+    },
+    {
+      "path": "database_en/attractions/nanjing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\nanjing\\attractions.csv",
+      "sha256": "1f0864ebb101e60ca763baa34d6d9c96fc837114bf38969e4c8b4bbc3ff5841c"
+    },
+    {
+      "path": "database_en/restaurants/nanjing/restaurants_nanjing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\nanjing\\restaurants_nanjing.csv",
+      "sha256": "920b25d575bbea372ecc62a7ffa078ce2aa64aae5baa110e522b87fed4725b1a"
+    },
+    {
+      "path": "database_en/accommodations/nanjing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\nanjing\\accommodations.csv",
+      "sha256": "9b30cccd3b0948240584648c48833a918d2eb9317413c514bf859834bd9db09d"
+    },
+    {
+      "path": "database_en/attractions/suzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\suzhou\\attractions.csv",
+      "sha256": "f62d1917809a4fe2790e441489277d59dff7e0383eb88fe2c0147e520090b1c4"
+    },
+    {
+      "path": "database_en/restaurants/suzhou/restaurants_suzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\suzhou\\restaurants_suzhou.csv",
+      "sha256": "0292ef6fff31980832c7582af78589720816250b637764ccfcf34ea2d9fea9ff"
+    },
+    {
+      "path": "database_en/accommodations/suzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\suzhou\\accommodations.csv",
+      "sha256": "29971b6523d95efc59902e53a57dd0628c8a7d55ed41070a7593e3558d1bca45"
+    },
+    {
+      "path": "database_en/attractions/hangzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\hangzhou\\attractions.csv",
+      "sha256": "c5997cfe1e85cb58edf834f1973e34b3a24e771e311784e0ad2be74cd00d60d3"
+    },
+    {
+      "path": "database_en/restaurants/hangzhou/restaurants_hangzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\hangzhou\\restaurants_hangzhou.csv",
+      "sha256": "b7e03af09ec9943356d5b0f17363e2c9afe9ae9ee406214cc3be4a4bb11477ac"
+    },
+    {
+      "path": "database_en/accommodations/hangzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\hangzhou\\accommodations.csv",
+      "sha256": "d15c4a944c9e0aa5427d64a350fbb629514dbafc769ae286eef934e470272947"
+    },
+    {
+      "path": "database_en/attractions/shenzhen/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\shenzhen\\attractions.csv",
+      "sha256": "ac985e4cc519866af5dc204ee68eec2ce682971363721af33baac173f7e9ffb1"
+    },
+    {
+      "path": "database_en/restaurants/shenzhen/restaurants_shenzhen.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\shenzhen\\restaurants_shenzhen.csv",
+      "sha256": "b7ad458c202ccc8fd87d7e354aeded006d0e0a779ad22668a4958f2e9e9e46af"
+    },
+    {
+      "path": "database_en/accommodations/shenzhen/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\shenzhen\\accommodations.csv",
+      "sha256": "09bcf8d86cb1a7c4d601e6b1535304ae68e1065dac970e2d3b46aca8dc9dcca7"
+    },
+    {
+      "path": "database_en/attractions/chengdu/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\chengdu\\attractions.csv",
+      "sha256": "2e89c86b11efd1b706dc7628932c33e8489c341416a2ebe240fa51517402367e"
+    },
+    {
+      "path": "database_en/restaurants/chengdu/restaurants_chengdu.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\chengdu\\restaurants_chengdu.csv",
+      "sha256": "cab892c87db947b2a10a7db261f847c17e3f3f5fed08895e8cfdfe626733a0f3"
+    },
+    {
+      "path": "database_en/accommodations/chengdu/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\chengdu\\accommodations.csv",
+      "sha256": "7598c2e5c88fb30917e775d6e932f9f11ce6072d2eb3b939bf97a86a33c0abed"
+    },
+    {
+      "path": "database_en/attractions/wuhan/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\wuhan\\attractions.csv",
+      "sha256": "fe65c4bd909a7cd69f2b94385cdb2de4ed4c3ad15b1cc6578872fe695b54a8e7"
+    },
+    {
+      "path": "database_en/restaurants/wuhan/restaurants_wuhan.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\wuhan\\restaurants_wuhan.csv",
+      "sha256": "307fd73cfdeeed2c2945d0dd50a64b899fd500102c0effedf21f250c76a2d9d5"
+    },
+    {
+      "path": "database_en/accommodations/wuhan/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\wuhan\\accommodations.csv",
+      "sha256": "0bb04d93a9a059c2f55c5d475aa8d0f5c7693947ee4db4167ca59b553e3d3fd5"
+    },
+    {
+      "path": "database_en/attractions/guangzhou/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\guangzhou\\attractions.csv",
+      "sha256": "c8d3cf8c5f241448a6be95260cf365dfbc718b2d99f9edb1c0782f5061ea9214"
+    },
+    {
+      "path": "database_en/restaurants/guangzhou/restaurants_guangzhou.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\guangzhou\\restaurants_guangzhou.csv",
+      "sha256": "8108a492ff58cf30566fd609c78ded212a51194f5923ec7edd6c6deed0faaa1a"
+    },
+    {
+      "path": "database_en/accommodations/guangzhou/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\guangzhou\\accommodations.csv",
+      "sha256": "66a7f98e6db56436a9b401bf52ad1fa6113052ee51ef0a205f4044f3a0604c3b"
+    },
+    {
+      "path": "database_en/attractions/chongqing/attractions.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\attractions\\chongqing\\attractions.csv",
+      "sha256": "6da18891bd12145e1c8705881653893542151da6e8bd5a5fd9e5fa481805305b"
+    },
+    {
+      "path": "database_en/restaurants/chongqing/restaurants_chongqing.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\restaurants\\chongqing\\restaurants_chongqing.csv",
+      "sha256": "7e89fc9c446e902425e6344b17e9c76ac1383b57950dad400b5a763edcae34ef"
+    },
+    {
+      "path": "database_en/accommodations/chongqing/accommodations.csv",
+      "source": "<workspace>/reproduction\\ChinaTravel\\chinatravel\\environment\\database_en\\accommodations\\chongqing\\accommodations.csv",
+      "sha256": "8f8d967f459cd28d6aa0a5cef77c79f73201960c86307cab7732f5b16c62d352"
+    }
+  ]
+}

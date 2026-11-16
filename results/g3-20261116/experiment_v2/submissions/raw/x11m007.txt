@@ -1,0 +1,8 @@
+{
+  "status": "blocked_by_data",
+  "reasons": [
+    "The outbound-after-12:00 train lookup returned Z232, 20:01–05:57 next day, at a 119 yuan observed fare. The return lookup returned Z230, 22:54–08:56 next day, at a 119 yuan observed fare. Both observations are marked dynamic_observation_no_trip_date, needs_live_verification=true, and availability unknown; the supplied question has no travel date, so date-specific tickets cannot be grounded.",
+    "The local route lookup from 武昌站 to 水云岚酒店(武汉江汉路步行街店) returned available=false and no legs, with a point-creation error. No connected journey from the overnight train arrival to the lodging was established.",
+    "The listed Wuhan hotel and food/attraction values are static benchmark snapshot data. They do not establish date-specific lodging availability or current prices, so a complete budget-grounded itinerary cannot be claimed from this response."
+  ]
+}

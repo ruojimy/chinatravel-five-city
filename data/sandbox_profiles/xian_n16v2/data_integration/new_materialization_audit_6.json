@@ -1,0 +1,377 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "b54361e4b6f09339fb3ec14218c8a6dfc720a7b384329a98c08992b19aac6451",
+  "parent_snapshot_sha256": "175bdda98cde3b1b417570a74de05c8d4177d987b6ddd6dc12829e5c051be52f",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "a49aca18787512e6b09193b31d04a2b311ef12097738ba8f9b8a2368792f2906"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "e9c35425001c74b5c640cfa6696df3dd38e3ad7dd7313cb3437e0c1b855f2324"
+    },
+    {
+      "id": 3,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "b26f7dd836de78b20fdaff96c64d4abbdfcca52463963e82aac3e78503848e62"
+    },
+    {
+      "id": 4,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "dde2496f21aab36fcf6dcf8e28cfe0dc017fef2c23e9f018c670183f412647df"
+    }
+  ],
+  "accepted_trains": [
+    {
+      "from_city": "西安",
+      "to_city": "苏州",
+      "record": {
+        "TrainID": "Z42",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "苏州",
+        "BeginTime": "21:10",
+        "EndTime": "11:14",
+        "Duration": 14.07,
+        "Cost": 173.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:27.978773+00:00",
+      "source_raw_sha256": "a49aca18787512e6b09193b31d04a2b311ef12097738ba8f9b8a2368792f2906",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "苏州",
+          "name": "苏州",
+          "provider_id": "B0200172JB",
+          "position": [
+            31.329683,
+            120.61087
+          ]
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "苏州",
+      "record": {
+        "TrainID": "G1820",
+        "TrainType": "高铁",
+        "From": "西安北",
+        "To": "苏州北",
+        "BeginTime": "11:10",
+        "EndTime": "17:45",
+        "Duration": 6.58,
+        "Cost": 700
+      },
+      "seat": "火车二等座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:27.978773+00:00",
+      "source_raw_sha256": "a49aca18787512e6b09193b31d04a2b311ef12097738ba8f9b8a2368792f2906",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安北",
+          "provider_id": "B001D09TZP",
+          "position": [
+            34.37666,
+            108.938757
+          ],
+          "reference_distance_m": 435.9
+        },
+        {
+          "city": "苏州",
+          "name": "苏州北",
+          "provider_id": "B020015V08",
+          "position": [
+            31.421546,
+            120.644306
+          ]
+        }
+      ]
+    },
+    {
+      "from_city": "苏州",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z164",
+        "TrainType": "普速",
+        "From": "苏州",
+        "To": "西安",
+        "BeginTime": "19:24",
+        "EndTime": "09:19",
+        "Duration": 13.92,
+        "Cost": 173.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:29.078123+00:00",
+      "source_raw_sha256": "e9c35425001c74b5c640cfa6696df3dd38e3ad7dd7313cb3437e0c1b855f2324",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "苏州",
+          "name": "苏州",
+          "provider_id": "B0200172JB",
+          "position": [
+            31.329683,
+            120.61087
+          ],
+          "reference_distance_m": 0.0
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "苏州",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z304",
+        "TrainType": "普速",
+        "From": "昆山",
+        "To": "西安",
+        "BeginTime": "18:22",
+        "EndTime": "08:42",
+        "Duration": 14.33,
+        "Cost": 177.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:29.078123+00:00",
+      "source_raw_sha256": "e9c35425001c74b5c640cfa6696df3dd38e3ad7dd7313cb3437e0c1b855f2324",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 2,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "苏州",
+          "name": "昆山",
+          "provider_id": "B020001CIT",
+          "position": [
+            31.366195,
+            120.957331
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "上海",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "G94",
+        "TrainType": "高铁",
+        "From": "上海虹桥",
+        "To": "西安北",
+        "BeginTime": "08:55",
+        "EndTime": "14:34",
+        "Duration": 5.65,
+        "Cost": 756
+      },
+      "seat": "火车二等座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:30.117453+00:00",
+      "source_raw_sha256": "b26f7dd836de78b20fdaff96c64d4abbdfcca52463963e82aac3e78503848e62",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 3,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "new_direct_train",
+      "station_evidence": [
+        {
+          "city": "上海",
+          "name": "上海虹桥",
+          "provider_id": "B00155MPRL",
+          "position": [
+            31.193964,
+            121.320081
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安北",
+          "provider_id": "B001D09TZP",
+          "position": [
+            34.37666,
+            108.938757
+          ],
+          "reference_distance_m": 435.9
+        }
+      ]
+    },
+    {
+      "from_city": "上海",
+      "to_city": "西安",
+      "record": {
+        "TrainID": "Z164",
+        "TrainType": "普速",
+        "From": "上海",
+        "To": "西安",
+        "BeginTime": "18:33",
+        "EndTime": "09:19",
+        "Duration": 14.77,
+        "Cost": 180.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:30.117453+00:00",
+      "source_raw_sha256": "b26f7dd836de78b20fdaff96c64d4abbdfcca52463963e82aac3e78503848e62",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 3,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "上海",
+          "name": "上海",
+          "provider_id": "B00155KSDE",
+          "position": [
+            31.24965,
+            121.455768
+          ]
+        },
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        }
+      ]
+    },
+    {
+      "from_city": "西安",
+      "to_city": "上海",
+      "record": {
+        "TrainID": "Z42",
+        "TrainType": "普速",
+        "From": "西安",
+        "To": "上海",
+        "BeginTime": "21:10",
+        "EndTime": "12:15",
+        "Duration": 15.08,
+        "Cost": 180.5
+      },
+      "seat": "火车硬座",
+      "currency": "CNY",
+      "currency_basis": "Amap mainland China seat-fare context",
+      "observation_time_utc": "2026-11-15T16:21:31.223248+00:00",
+      "source_raw_sha256": "dde2496f21aab36fcf6dcf8e28cfe0dc017fef2c23e9f018c670183f412647df",
+      "evidence_path": "new_capture_6.sqlite3",
+      "source_row_id": 4,
+      "trip_date": null,
+      "availability": "unknown",
+      "status": "new_amap_conditional_reference",
+      "action": "existing_exact_fare_fill",
+      "station_evidence": [
+        {
+          "city": "西安",
+          "name": "西安",
+          "provider_id": "B001D08UZ3",
+          "position": [
+            34.278498,
+            108.962723
+          ],
+          "reference_distance_m": 433.3
+        },
+        {
+          "city": "上海",
+          "name": "上海",
+          "provider_id": "B00155KSDE",
+          "position": [
+            31.24965,
+            121.455768
+          ],
+          "reference_distance_m": 0.0
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "call_id": 4,
+      "train_id": "G96",
+      "reason": "seat_fare_missing_or_conflicting",
+      "values": [
+        732.0,
+        756.0
+      ]
+    }
+  ],
+  "changed_direct_files": {
+    "expanded/G3_ext11/chinatravel/environment/database/poi/suzhou/poi.json": "6fd44bbfd36f441a2860f6ec5eab4783c0ee3127e31965f19b7e5d00e5a395db",
+    "expanded/G3_ext11/chinatravel/environment/database/poi/shanghai/poi.json": "d802b36a047de414c827de21795f4eee53cf239a84d3e1fe7a951c3c71c20448",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_苏州.json": "34f6c63cec51d9f6925db21e068a3fccf6c7541086b2023a1d58ecb148524ee1",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_苏州_to_西安.json": "08998a1e1927dc58d84d592325718ad45617dfac23f6404160a0f719d28b4d1f",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_上海_to_西安.json": "6edcd3ff5b5007efa08a6bbebb8047497af39fedbe59f34eb1eafc35b7a3f32b",
+    "expanded/G3_ext11/chinatravel/environment/database/intercity_transport/train/from_西安_to_上海.json": "ed944f391314b5781f90e4874b366a45c8e022b707f0618bbc69ef76b046a922"
+  },
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets."
+}

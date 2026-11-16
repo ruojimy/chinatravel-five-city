@@ -1,0 +1,261 @@
+{
+  "uid": "x11e009",
+  "target_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "query_sha256": "9a231608bc1be3ecccad64f760f1811cb6fb85a39f5da8e69e5f3b75415c6ff3",
+  "plan_sha256": "7cef5d4dced3c62742e44d59419dedce096e325b4c997a95d641635e8c7bbe12",
+  "scored_utc": "2026-11-15T17:13:05.479937+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "legacy_cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "legacy_messages": [],
+      "price_evidence": [
+        {
+          "day": 2,
+          "name": "苏州中国花卉植物园",
+          "planned_price": 25.0,
+          "source_price": 25.0,
+          "source_file_sha256": "6c81cf710b02f1f81ab8e38b5b61edafa0c5ff11863eb92f469c7eec838c0166",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 2,
+          "name": "奈尔宝家庭中心 （苏州大悦春风里店）",
+          "planned_price": 99.0,
+          "source_price": 99.0,
+          "source_file_sha256": "6c81cf710b02f1f81ab8e38b5b61edafa0c5ff11863eb92f469c7eec838c0166",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        },
+        {
+          "day": 2,
+          "name": "幻境世界苏州元宇宙",
+          "planned_price": 79.0,
+          "source_price": 79.0,
+          "source_file_sha256": "6c81cf710b02f1f81ab8e38b5b61edafa0c5ff11863eb92f469c7eec838c0166",
+          "state": "pass",
+          "reason": "matches_frozen_source"
+        }
+      ],
+      "policy": "Unknown or assumed attraction price remains conditional; other definite violations remain failures."
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "fail",
+      "issues": [
+        {
+          "state": "fail",
+          "code": "activity_exceeds_trip_days",
+          "day": 2,
+          "activity_index": 5,
+          "detail": {
+            "requested_days": 2
+          }
+        }
+      ],
+      "policy": "day is departure day; earlier intercity end clock has at least one-day rollover unless explicit end day/date determines it",
+      "implementation": "date_timeline_v4"
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "issues": [],
+      "station_alias_evidence": [],
+      "policy": "Native spatial contract, with verified same-city train-station aliases and unknown for missing alias evidence.",
+      "implementation": "station_alias_space_v5"
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "pass",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "caadbd84aefb5bd0f3183bcf674f271e69deb7691f5e03a687635ce9902bc3de",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  },
+  "superseded_time_group": {
+    "name": "Is_time_correct",
+    "state": "pass",
+    "cells": {
+      "Invalid duration information of each activity": 0,
+      "Does not follow Chronological Order": 0
+    },
+    "messages": []
+  },
+  "superseded_attraction_group": {
+    "name": "Is_attractions_correct",
+    "state": "pass",
+    "cells": {
+      "Unavailable attractions": 0,
+      "Visiting attraction in their closed time": 0,
+      "Repeated attraction Choices": 0,
+      "Incorrect price Information of attraction": 0,
+      "Incorrect cost Information of attraction": 0
+    },
+    "messages": []
+  },
+  "conditional_zero_assumption": {
+    "applied": false,
+    "overall": "fail",
+    "commonsense": "fail",
+    "attractions": "pass",
+    "assumptions": [],
+    "boundary": "Conditional benchmark result under user-authorized zero after documented searches; does not establish that a real attraction is free."
+  },
+  "date_scoring": {
+    "policy": "native time group replaced with explicit day-number timeline; other original gates preserved",
+    "timeline_module_sha256": "d3adc58b1730d6fde81b82a23af5e8092ba03dbdce8f4871ff132a8fb94cfe21",
+    "wrapper_sha256": "aa3495c16a2a647260ff7af9ee6f5aa7380ea218908ec4e833bd25cf532521d0",
+    "scored_at_utc": "2026-11-15T17:13:06.086671+00:00",
+    "real_world_boundary": "No given travel date or verified inventory is not evidence of real-world ticket availability.",
+    "base_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e009.json.date_v4.json.base.json",
+    "base_score_sha256": "df168e897d5484a77cb28288e84c770a1e184acc53d3a53c5afd90774e08278b",
+    "duration_evidence": [
+      {
+        "type": "train",
+        "id": "G1820",
+        "start": "西安北",
+        "end": "苏州北",
+        "matched_duration": {
+          "minutes": 394.8,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_苏州.json",
+              "sha256": "34f6c63cec51d9f6925db21e068a3fccf6c7541086b2023a1d58ecb148524ee1"
+            }
+          ]
+        }
+      },
+      {
+        "type": "train",
+        "id": "Z164",
+        "start": "苏州",
+        "end": "西安",
+        "matched_duration": {
+          "minutes": 835.2,
+          "matches": 1,
+          "source_files": [
+            {
+              "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_西安.json",
+              "sha256": "08998a1e1927dc58d84d592325718ad45617dfac23f6404160a0f719d28b4d1f"
+            }
+          ]
+        }
+      }
+    ],
+    "duration_source_reader_sha256": "ea9a0cc3df4346c6ec024f9282a4ad7b5ca54acaafab19d88923c57fc656ce08",
+    "price_evidence_reader_sha256": "4122a6c1819547cf96034580c7f9480fb29404ab90f07f3c891fed04956011a1",
+    "dynamic_snapshot_path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\data_integration\\dynamic_snapshot_v2.json",
+    "dynamic_snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2"
+  },
+  "superseded_space_group": {
+    "name": "Is_space_correct",
+    "state": "pass",
+    "cells": {
+      "Invalid Transport information across positions": 0
+    },
+    "messages": []
+  },
+  "station_scoring": {
+    "policy": "Native spatial contract, with verified same-city train-station aliases and unknown for missing alias evidence.",
+    "station_module_sha256": "4e41c4dc0126fe0c8e8f185a7f50bd2810ec1bbc4c29628f2cbc311c2ea244ca",
+    "space_gate_sha256": "86be72097bba2e12896aae3f38e9b263665955787b672186c34912035137474b",
+    "wrapper_sha256": "96a9857a30cb24c28d62d6e34b3a84ae1c9a6b264f900ce3e22554ea198bb2c3",
+    "scored_at_utc": "2026-11-15T17:13:06.176200+00:00",
+    "v4_score_path": "<workspace>/output\\luna-repair-20261115\\main_merge_20261115\\benchmark_xian_n16v2\\control\\runs\\xian_n16v2_r1\\G3\\easy\\scores\\x11e009.json.date_v4.json",
+    "v4_score_sha256": "78d8ecf91a1a79166dd2700cae971c6f7c05add3cb78d2418a6cf921f0024356"
+  }
+}

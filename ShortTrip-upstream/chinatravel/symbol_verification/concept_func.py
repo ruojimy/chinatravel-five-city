@@ -257,7 +257,9 @@ def innercity_transport_end_time(transports):
     return transports[len(transports) - 1]["end_time"]
 
 def intercity_transport_origin(activity):
-    city_list=["上海", "北京", "深圳", "广州", "重庆", "成都", "杭州", "武汉", "南京","苏州", "Shanghai", "Beijing", "Shenzhen", "Guangzhou", "Chongqing", "Chengdu", "Hangzhou", "Wuhan", "Nanjing","Suzhou"]
+    if activity.get("start") == "XIY" and "西安" in CITY_NAMES["zh"]:
+        return CITY_NAMES[_current_lang][CITY_NAMES["zh"].index("西安")]
+    city_list = CITY_NAMES["zh"] + CITY_NAMES["en"]
     if "start" in activity:
         for city in city_list:
             if city in activity["start"]:
@@ -265,7 +267,9 @@ def intercity_transport_origin(activity):
     return ""
 
 def intercity_transport_destination(activity):
-    city_list=["上海", "北京", "深圳", "广州", "重庆", "成都", "杭州", "武汉", "南京","苏州", "Shanghai", "Beijing", "Shenzhen", "Guangzhou", "Chongqing", "Chengdu", "Hangzhou", "Wuhan", "Nanjing","Suzhou"]
+    if activity.get("end") == "XIY" and "西安" in CITY_NAMES["zh"]:
+        return CITY_NAMES[_current_lang][CITY_NAMES["zh"].index("西安")]
+    city_list = CITY_NAMES["zh"] + CITY_NAMES["en"]
     if "end" in activity:
         for city in city_list:
             if city in activity["end"]:

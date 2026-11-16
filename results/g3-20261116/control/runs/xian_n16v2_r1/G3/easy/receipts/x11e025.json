@@ -1,0 +1,42 @@
+{
+  "uid": "x11e025",
+  "group": "G3",
+  "split": "easy",
+  "cohort": "full",
+  "input_sha256": "9db3d9249c1ab89f520c0dd20548d9727c51c31d95f88d1c5a570abc19028d57",
+  "planning_query_sha256": "c0eb0ec9a35397c1c9afd2796795d17c5134c07172241764e4612026406d22af",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "28591bae7e5f3c4b60b3d5bdf96694b1fd81dd74872a8823973439dd26bc8fc7",
+  "evaluations": 12,
+  "moves": [
+    "restaurant_type:重庆纸包鱼(新城店)->众家灯火煎饼·家常菜(卜蜂中心店) d0"
+  ],
+  "reason": null,
+  "plan_sha256": "3e1d628c999817be5b6044d5e586e5b52bf273e44667a768a4c7a7a091491389",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": true,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "Unavailable Inner-City Transport",
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 4,
+    "hard_total": 4,
+    "hard_expected": 4,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": true,
+  "score_sha256": "3cbbae3c4896c7b08bb35b5a47441c9e6d0b08af62cf6ada15d08d50b34166c4",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 3.971,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,57 @@
+{
+  "arm": "G3",
+  "extended_10": {
+    "attraction": {
+      "rows": 6818,
+      "gap_fields_filled": 0
+    },
+    "restaurant": {
+      "rows": 9285,
+      "gap_fields_filled": 2500
+    },
+    "accommodation": {
+      "rows": 7532,
+      "gap_fields_filled": 0
+    },
+    "disclosure": "POI / subway / intercity tables are kept from the upstream release: query DSLs reference exact TrainID/FlightID and the official loaders require that exact file layout."
+  },
+  "xian11": {
+    "copied_files": [
+      "attractions/xian/attractions.csv",
+      "restaurants/xian/restaurant_price_provenance.csv",
+      "restaurants/xian/restaurants_xian.csv",
+      "accommodations/xian/accommodations.csv",
+      "accommodations/xian/dynamic_price_queue.csv",
+      "accommodations/xian/price_cached_trip_adoption.csv",
+      "accommodations/xian/price_chain_branch_estimates.csv",
+      "accommodations/xian/price_cross_city_estimates.csv",
+      "accommodations/xian/price_estimates_supplement.csv",
+      "accommodations/xian/price_provenance.csv",
+      "poi/xian/poi.json",
+      "poi/xian/poi.json.bak_20261111",
+      "poi/xian/poi_index_manifest.json"
+    ],
+    "train_pairs_added": 20,
+    "skipped_due_to_concurrent_rebuild": [],
+    "city_registered": "xian / 西安 / Xi'an",
+    "data_source_note": "data/xian11_merged_sandbox is rebuilt by the parallel gap-fill line (snapshot_v16, grading standard v1); regenerate this checkout after that line goes quiet."
+  },
+  "cases": 9,
+  "chain_excluded": [
+    {
+      "uid": "x11c002",
+      "split": "chain",
+      "reason": "shorttrip-dynamic-v1 multi-city contract is incompatible with ShortTrip's single-target planner"
+    },
+    {
+      "uid": "x11c017",
+      "split": "chain",
+      "reason": "shorttrip-dynamic-v1 multi-city contract is incompatible with ShortTrip's single-target planner"
+    },
+    {
+      "uid": "x11c025",
+      "split": "chain",
+      "reason": "shorttrip-dynamic-v1 multi-city contract is incompatible with ShortTrip's single-target planner"
+    }
+  ]
+}

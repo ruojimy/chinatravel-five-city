@@ -1,0 +1,36 @@
+{
+  "people_number": 4,
+  "start_city": "重庆",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "重庆西",
+          "end": "西安",
+          "start_time": "23:59",
+          "end_time": "10:56",
+          "price": 102.0,
+          "cost": 408.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "K4516"
+        },
+        {
+          "start": "西安",
+          "end": "重庆西",
+          "start_time": "11:54",
+          "end_time": "23:15",
+          "price": 102.0,
+          "cost": 408.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "K4518"
+        }
+      ]
+    }
+  ]
+}

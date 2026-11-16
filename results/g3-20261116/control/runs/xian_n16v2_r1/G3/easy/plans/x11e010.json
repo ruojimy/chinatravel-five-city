@@ -1,0 +1,325 @@
+{
+  "people_number": 4,
+  "start_city": "西安",
+  "target_city": "武汉",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安",
+          "end": "武昌",
+          "start_time": "20:01",
+          "end_time": "05:57",
+          "price": 119.0,
+          "cost": 476.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "Z232"
+        },
+        {
+          "position": "楚望台",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "06:00",
+          "end_time": "07:00",
+          "transports": [
+            {
+              "start": "武昌",
+              "end": "楚望台",
+              "mode": "walk",
+              "start_time": "05:57",
+              "end_time": "06:00",
+              "cost": 0,
+              "distance": 0.2535362536821349,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "起义门",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "07:03",
+          "end_time": "07:48",
+          "transports": [
+            {
+              "start": "楚望台",
+              "end": "起义门",
+              "mode": "walk",
+              "start_time": "07:00",
+              "end_time": "07:03",
+              "cost": 0,
+              "distance": 0.30711021690295753,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "紫阳公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "07:56",
+          "end_time": "10:26",
+          "transports": [
+            {
+              "start": "起义门",
+              "end": "武昌火车站-地铁站",
+              "mode": "walk",
+              "start_time": "07:48",
+              "end_time": "07:51",
+              "cost": 0,
+              "distance": 0.27,
+              "price": 0
+            },
+            {
+              "start": "武昌火车站-地铁站",
+              "end": "首义路-地铁站",
+              "mode": "metro",
+              "start_time": "07:51",
+              "end_time": "07:52",
+              "cost": 8.0,
+              "distance": 0.83,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "首义路-地铁站",
+              "end": "紫阳公园",
+              "mode": "walk",
+              "start_time": "07:52",
+              "end_time": "07:56",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "铭雅酒店公寓(武汉楚河汉街地铁站店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 76.0,
+          "cost": 304.0,
+          "rooms": 4,
+          "start_time": "10:39",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "紫阳公园",
+              "end": "首义路-地铁站",
+              "mode": "walk",
+              "start_time": "10:26",
+              "end_time": "10:30",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            },
+            {
+              "start": "首义路-地铁站",
+              "end": "楚河汉街-地铁站",
+              "mode": "metro",
+              "start_time": "10:30",
+              "end_time": "10:37",
+              "cost": 8.0,
+              "distance": 3.87,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "楚河汉街-地铁站",
+              "end": "铭雅酒店公寓(武汉楚河汉街地铁站店)",
+              "mode": "walk",
+              "start_time": "10:37",
+              "end_time": "10:39",
+              "cost": 0,
+              "distance": 0.22,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "楚河汉街",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "08:38",
+          "end_time": "09:38",
+          "transports": [
+            {
+              "start": "铭雅酒店公寓(武汉楚河汉街地铁站店)",
+              "end": "楚河汉街-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:32",
+              "cost": 0,
+              "distance": 0.22,
+              "price": 0
+            },
+            {
+              "start": "楚河汉街-地铁站",
+              "end": "青鱼嘴-地铁站",
+              "mode": "metro",
+              "start_time": "08:32",
+              "end_time": "08:34",
+              "cost": 8.0,
+              "distance": 1.36,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "青鱼嘴-地铁站",
+              "end": "楚河汉街",
+              "mode": "walk",
+              "start_time": "08:34",
+              "end_time": "08:38",
+              "cost": 0,
+              "distance": 0.37,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "汉街",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "09:38",
+          "end_time": "10:23",
+          "transports": [
+            {
+              "start": "楚河汉街",
+              "end": "汉街",
+              "mode": "walk",
+              "start_time": "09:38",
+              "end_time": "09:38",
+              "cost": 0,
+              "distance": 0.018798247589770178,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "武汉杜莎夫人蜡像馆",
+          "type": "attraction",
+          "price": 120.0,
+          "cost": 480.0,
+          "tickets": 4,
+          "start_time": "10:29",
+          "end_time": "12:59",
+          "transports": [
+            {
+              "start": "汉街",
+              "end": "武汉杜莎夫人蜡像馆",
+              "mode": "walk",
+              "start_time": "10:23",
+              "end_time": "10:29",
+              "cost": 0,
+              "distance": 0.5310504076563923,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "苏梅花园(汉街hi thai店)",
+          "type": "lunch",
+          "price": 107.0,
+          "cost": 428.0,
+          "start_time": "13:07",
+          "end_time": "14:07",
+          "transports": [
+            {
+              "start": "武汉杜莎夫人蜡像馆",
+              "end": "青鱼嘴-地铁站",
+              "mode": "walk",
+              "start_time": "12:59",
+              "end_time": "13:02",
+              "cost": 0,
+              "distance": 0.29,
+              "price": 0
+            },
+            {
+              "start": "青鱼嘴-地铁站",
+              "end": "楚河汉街-地铁站",
+              "mode": "metro",
+              "start_time": "13:02",
+              "end_time": "13:04",
+              "cost": 8.0,
+              "distance": 1.36,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "楚河汉街-地铁站",
+              "end": "苏梅花园(汉街hi thai店)",
+              "mode": "walk",
+              "start_time": "13:04",
+              "end_time": "13:07",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "武昌",
+          "end": "西安",
+          "start_time": "22:54",
+          "end_time": "08:56",
+          "price": 119.0,
+          "cost": 476.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [
+            {
+              "start": "苏梅花园(汉街hi thai店)",
+              "end": "楚河汉街-地铁站",
+              "mode": "walk",
+              "start_time": "14:07",
+              "end_time": "14:10",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            },
+            {
+              "start": "楚河汉街-地铁站",
+              "end": "武昌火车站-地铁站",
+              "mode": "metro",
+              "start_time": "14:10",
+              "end_time": "14:17",
+              "cost": 8.0,
+              "distance": 3.52,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "武昌火车站-地铁站",
+              "end": "武昌",
+              "mode": "walk",
+              "start_time": "14:17",
+              "end_time": "14:20",
+              "cost": 0,
+              "distance": 0.26,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z230"
+        }
+      ]
+    }
+  ]
+}

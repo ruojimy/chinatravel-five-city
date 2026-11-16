@@ -1,0 +1,15 @@
+{
+  "index": 15,
+  "origin": "西安",
+  "destination": "广州",
+  "url": "https://m.ly.com/travel/flight/SIA-CAN?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:31:49.787102+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "a2769d63970702e2ba78bace7488755d365cb2ce028d1493962151019008e774",
+  "page_description": "2026-11-16西安到广州机票，共55个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "raw_captured_partial_jsonld_awaiting_card_audit",
+  "declared_count": 55,
+  "structured_items": 10
+}

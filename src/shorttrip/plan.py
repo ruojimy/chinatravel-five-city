@@ -10,6 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from .env import SandboxEnv, hhmm, minutes
+from .duration_choice import visit_minutes
 
 
 def ceil_div(a: int, b: int) -> int:
@@ -117,7 +118,7 @@ class DayBuilder:
         if legs is None:
             return False
         arrive = legs[-1]["end_time"] if legs else self.time
-        duration = duration_min or int(round(float(row["recommendmintime"]) * 60)) or 90
+        duration = duration_min or visit_minutes(row)
         start_time = max(minutes(arrive), minutes(str(row["opentime"])))
         end_time = start_time + duration
         close = _close_minutes(str(row["opentime"]), str(row["endtime"]))

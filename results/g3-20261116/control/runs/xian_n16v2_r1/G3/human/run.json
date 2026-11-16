@@ -1,0 +1,73 @@
+{
+  "group": "G3",
+  "split": "human",
+  "cohort": "full",
+  "start_utc": "2026-11-15T17:12:32.117991+00:00",
+  "sample_manifest_sha256": "7194ca79a78217b23ba27826f33c8a02abdd2570c6ec2a7f92d0345fb037203f",
+  "clone_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "modules": {
+    "chinatravel.environment.tools.attractions.apis": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\environment\\tools\\attractions\\apis.py",
+      "sha256": "0fc6a8778607bb6628345956afdeb1ce6159a9696122a62655c58c36f665d6ca"
+    },
+    "chinatravel.environment.tools.restaurants.apis": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\environment\\tools\\restaurants\\apis.py",
+      "sha256": "db1d31e675c8075067347d2dd2be6a4b87886a152b3dd224a0c6934bf4ecb2df"
+    },
+    "chinatravel.environment.tools.accommodations.apis": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\environment\\tools\\accommodations\\apis.py",
+      "sha256": "29f4aee9d55847a99874f12410a0dc8a99cc723a133d6bf58f4cfc890c178008"
+    },
+    "chinatravel.environment.tools.intercity_transport.apis": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\environment\\tools\\intercity_transport\\apis.py",
+      "sha256": "b956fbf7160e377f53c16d79c64145b03349894229f42a5243f3aab272310517"
+    },
+    "chinatravel.environment.tools.transportation.apis": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\environment\\tools\\transportation\\apis.py",
+      "sha256": "326524ded455622d7548d1013f8cabdc37318e0e37f49de4322c4717c78ca0a1"
+    },
+    "chinatravel.evaluation.commonsense_constraint": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\evaluation\\commonsense_constraint.py",
+      "sha256": "521bf879f5879dbc5bb86fceb75d09c9145c80d67caf95cd3ff38d6b99c80b31"
+    },
+    "chinatravel.evaluation.schema_constraint": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\evaluation\\schema_constraint.py",
+      "sha256": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea"
+    },
+    "chinatravel.symbol_verification.commonsense_constraint": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\symbol_verification\\commonsense_constraint.py",
+      "sha256": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376"
+    },
+    "chinatravel.symbol_verification.hard_constraint": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream\\chinatravel\\symbol_verification\\hard_constraint.py",
+      "sha256": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510"
+    }
+  },
+  "p34_source_root": "<workspace>/chinatravel-five-city-luna-20261115\\src",
+  "p34_modules": {
+    "shorttrip.checker": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\src\\shorttrip\\checker.py",
+      "sha256": "098444cb13f0e39a985958d1d8cd1036aef69ca8f3dcc20e60bb33818a280045"
+    },
+    "shorttrip.env": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\src\\shorttrip\\env.py",
+      "sha256": "f3dc2564fff5b7c59655d6ff4066f2b1d2fb08ee26df39217a263de0d66e324d"
+    },
+    "shorttrip.planner_v2": {
+      "path": "<workspace>/chinatravel-five-city-luna-20261115\\src\\shorttrip\\planner_v2.py",
+      "sha256": "e62594ca51c98c6c5a10e75b2dd485be658c70baa7e56223a40fdd59118d5174"
+    }
+  },
+  "schema_sha256": "6bd2ab0da6930e9d3593034e24b53ab7c6d345063ad4e81f4114e1afb4d5c439",
+  "database": {
+    "path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database",
+    "files": 165,
+    "tree_sha256": "28ed263f1596a1844055db7c6609886854fe598ea84a22970df10a3af60cf2ad"
+  },
+  "private_query_dir": "<workspace>/output\\luna-repair-20261115\\evaluator\\private_g3_queries_v3",
+  "private_audit_dir": "<workspace>/output\\luna-repair-20261115\\evaluator\\private_g3_audits_v3",
+  "independent_scorer_sha256": "ea789c16c85e6a217fabbf78e73429c3621f4e1e03e04e890a37cb13a6c045d3",
+  "max_evaluations": 60,
+  "cases": 15,
+  "fairness": "P34 reads private hard_logic_py and uses checker feedback during search; Luna does not."
+}

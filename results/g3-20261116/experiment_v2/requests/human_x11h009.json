@@ -1,0 +1,342 @@
+{
+  "protocol": "luna-g3-main-xian-n16v2-undated",
+  "group": "G3",
+  "uid": "x11h009",
+  "split": "human",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "system_prompt": "You are the gpt-6-luna high-reasoning travel planner in a blinded experiment.\nConstruct one complete native-schema travel itinerary using this public question and the supplied read-only sandbox tools. Do not read hidden constraints, scores, another case, past attempts, or the rule planner. You personally choose the places and itinerary; do not invoke an automated planner.\n\nBrowse the catalog first; for a chosen L2/L3 record, call catalog_entity or catalog_preflight and inspect its dynamic evidence and failures. For intercity travel inspect records and conditional_records for BOTH directions, honoring the requested transport mode and departure windows. The dynamic snapshot was captured before this planning attempt; not_prefetched means not searched in this frozen snapshot, not that no real-world record exists. A source marked current-context, assumed, conflicting or date-unknown is not a verified bookable fare. No query here supplies a specific travel date; never supply a travel_date argument to a tool or claim that an observation date is the travel date or that seats are available.\n\nTool output may be long: use the runner's --compact option for intercity_search, inspect every returned priced record, and inspect the complete trace when conditional previews are insufficient. Evidence-supported station aliases may be used by goto; preserve the actual names it returns and do not assume unrelated same-name places are equivalent.\n\nEach activity's transports list is the connected local journey immediately before that activity, in chronological order. Multiple walk/taxi legs and complete walk-metro-walk segments may be combined; each leg must be returned by goto, connect to the next leg, and finish before the activity starts. Do not place a later trip after an activity inside that activity's transports list.\n\nUser policy: where an attraction ticket price was actually searched for and not found, a tool may provide a clearly labeled 0-yuan planning assumption. Never call that verified free or apply it to transit, lodging, or food. Do not create a zero assumption from not_prefetched, a search not actually attempted, or a location mismatch. Preserve the evidence or failure receipt in the tool trace. Unknown price, position, or date-sensitive information must not be asserted as source-confirmed.\n\nAccommodation rooms and room_type correspond to the row's numbed, and cost is nightly price times rooms. For intercity and attractions, tickets must cover the party and cost equals price times tickets. A taxi leg has integer cars and cost equals its per-car price times cars; metro tickets cover the party. Local goto is a frozen, available local route tool, separate from a live Amap request. Chronology and spatial continuity apply to all activity and transit legs. itinerary[].day denotes an activity's 1-based departure day. The native hard-constraint day_count counts itinerary day buckets: include exactly the requested number of consecutive day buckets, including an empty final bucket if that day only contains arrival from an overnight service. For an overnight train or plane, end_time remains HH:MM and add integer arrival_day (1-based); for example a day-1 18:20 departure arriving 06:51 next day uses arrival_day=2, and later activities are placed on day 2. For an overnight hotel stay, an end clock earlier than its start clock denotes checkout the next day. If a source provides an arrival hour greater than 24, preserve its original evidence but express the plan as HH:MM plus arrival_day. Never schedule another activity after arrival in the prior day or extend past the requested last day. If recommended visit duration is absent, select a reasonable positive visit interval as a planning decision, not as a sourced recommendation.\n\nCatalog main-path records are discoverable even when optional fields are unknown; a record can remain conditional for a particular budget or route. If critical information prevents any grounded schema-valid itinerary, return {\"status\":\"blocked_by_data\",\"reasons\":[...]} with specific unsuccessful lookups, not a guessed route or price. Preserve the first response and full tool trace. Do not read evaluator feedback or revise a submitted plan. The experiment is a scoped frozen-snapshot benchmark, not proof of a real future booking.",
+  "public_query": {
+    "uid": "x11h009",
+    "tag": "human",
+    "start_city": "杭州",
+    "target_city": "西安",
+    "days": 5,
+    "people_number": 5,
+    "limit_rooms": false,
+    "limits_room_type": false,
+    "nature_language": "[当前位置杭州,目标位置西安,旅行人数5,旅行天数5] 尽量少折腾，返程12:00之前出发。帮我规划一下。",
+    "nature_language_en": "Currently in 杭州. five of us want to travel to 西安 for 5 day(s); return before 12:00. Please provide a travel plan.",
+    "xian11": {
+      "city_role": "target",
+      "translation": "controlled_template",
+      "native_compatible": true
+    }
+  },
+  "output_schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "people_number": {
+        "type": "integer"
+      },
+      "start_city": {
+        "type": "string"
+      },
+      "target_city": {
+        "type": "string"
+      },
+      "itinerary": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "day": {
+              "type": "integer"
+            },
+            "activities": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "airplane",
+                      "attraction",
+                      "lunch",
+                      "dinner",
+                      "breakfast",
+                      "accommodation",
+                      "train"
+                    ]
+                  },
+                  "start_time": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$"
+                  },
+                  "end_time": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$"
+                  },
+                  "cost": {
+                    "type": "number"
+                  },
+                  "price": {
+                    "type": "number"
+                  },
+                  "tickets": {
+                    "type": "integer"
+                  },
+                  "position": {
+                    "type": "string"
+                  },
+                  "transports": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "start": {
+                          "type": "string"
+                        },
+                        "end": {
+                          "type": "string"
+                        },
+                        "mode": {
+                          "type": "string",
+                          "enum": [
+                            "walk",
+                            "metro",
+                            "taxi"
+                          ]
+                        },
+                        "start_time": {
+                          "type": "string",
+                          "pattern": "^\\d{2}:\\d{2}$"
+                        },
+                        "end_time": {
+                          "type": "string",
+                          "pattern": "^\\d{2}:\\d{2}$"
+                        },
+                        "cost": {
+                          "type": "number"
+                        },
+                        "price": {
+                          "type": "number"
+                        },
+                        "distance": {
+                          "type": "number"
+                        },
+                        "tickets": {
+                          "type": "integer"
+                        },
+                        "cars": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "start",
+                        "end",
+                        "mode",
+                        "start_time",
+                        "end_time",
+                        "price",
+                        "cost",
+                        "distance"
+                      ],
+                      "allOf": [
+                        {
+                          "if": {
+                            "properties": {
+                              "mode": {
+                                "const": "taxi"
+                              }
+                            },
+                            "required": [
+                              "mode"
+                            ]
+                          },
+                          "then": {
+                            "required": [
+                              "cars"
+                            ]
+                          }
+                        },
+                        {
+                          "if": {
+                            "properties": {
+                              "mode": {
+                                "const": "metro"
+                              }
+                            },
+                            "required": [
+                              "mode"
+                            ]
+                          },
+                          "then": {
+                            "required": [
+                              "tickets"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "room_type": {
+                    "type": "integer"
+                  },
+                  "rooms": {
+                    "type": "integer"
+                  },
+                  "FlightID": {
+                    "type": "string"
+                  },
+                  "TrainID": {
+                    "type": "string"
+                  },
+                  "arrival_day": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "1-based arrival day for overnight intercity activity; departure day is the enclosing day."
+                  }
+                },
+                "required": [
+                  "type",
+                  "start_time",
+                  "end_time",
+                  "cost",
+                  "price",
+                  "transports"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "airplane",
+                            "train"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ]
+                    },
+                    "then": {
+                      "required": [
+                        "start",
+                        "end"
+                      ],
+                      "not": {
+                        "required": [
+                          "position"
+                        ]
+                      }
+                    },
+                    "else": {
+                      "required": [
+                        "position"
+                      ],
+                      "not": {
+                        "anyOf": [
+                          {
+                            "required": [
+                              "start"
+                            ]
+                          },
+                          {
+                            "required": [
+                              "end"
+                            ]
+                          },
+                          {
+                            "required": [
+                              "FlightID"
+                            ]
+                          },
+                          {
+                            "required": [
+                              "TrainID"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "airplane"
+                        }
+                      }
+                    },
+                    "then": {
+                      "required": [
+                        "FlightID"
+                      ]
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "train"
+                        }
+                      }
+                    },
+                    "then": {
+                      "required": [
+                        "TrainID"
+                      ]
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "attraction",
+                            "train",
+                            "airplane"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ]
+                    },
+                    "then": {
+                      "required": [
+                        "tickets"
+                      ]
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "accommodation"
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ]
+                    },
+                    "then": {
+                      "required": [
+                        "rooms",
+                        "room_type"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "day",
+            "activities"
+          ]
+        }
+      }
+    },
+    "required": [
+      "people_number",
+      "start_city",
+      "target_city",
+      "itinerary"
+    ]
+  }
+}

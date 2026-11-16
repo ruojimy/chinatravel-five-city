@@ -1,0 +1,13 @@
+{
+  "returncode": 0,
+  "stdout": "{\"uid\": \"x11h012\", \"v4\": \"pass\", \"overall\": \"pass\", \"space\": \"pass\", \"conditional_zero\": \"pass\", \"score\": \"C:\\\\Users\\\\xiech\\\\Downloads\\\\计算机软件工程概论\\\\output\\\\luna-repair-20261115\\\\main_merge_20261115\\\\nanjing_station_evidence_stage\\\\replay_h012_v2\\\\score.json\"}\n",
+  "stderr": "",
+  "input_sha256": {
+    "query": "b18d28a6870ef74e4324118aba52b7091061b45824c7fc31ca3fc46a84bd3684",
+    "audit": "c07f1d8fc2d2dde79bdfd7b9c1dbc2120ae793b5d78dfee361a04cf24a4eadbb",
+    "plan": "32301ba78dd2575768db7a954154e572a9e8d21bcf0fa2e8e4ddaae7bc4d3874",
+    "snapshot": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+    "alias_code": "c168311aacbbb59b0c9048a1f20f7ae336032a9f4153b2e7f62c49c464ce37a8"
+  },
+  "boundary": "Diagnostic replay after alias fix; original frozen benchmark score unchanged."
+}

@@ -1,0 +1,1762 @@
+{
+  "source_sha256": "7066073951dce28bddbe326de0af888e28d8c212f77515a18ada87b85056b5a5",
+  "grade_file_sha256": "367fbd806f180117aac8cc674d8c48467bd85ca59cfc7e3f254ed7c0221f47e6",
+  "csv_sha256": "d2506c6c2093bc7c8fa65c2d629566063125819b9801c42e832827f030e9ca85",
+  "price_provenance_sha256": "2a1b3ff717b2f5d6301f85b946fbe2a5d41d969f2af95ea2a65f0d150bdfd1cd",
+  "source_path": "<workspace>/reproduction\\results\\xian_gapfill_20261109\\snapshot_v17\\catalog.sqlite3",
+  "grade_path": "<workspace>/output\\luna-repair-20261115\\dynamic_v4\\expanded\\xian_grade_evidence_v3.json",
+  "csv_path": "<workspace>/output\\luna-repair-20261115\\dynamic_v4\\expanded\\G3_ext11\\chinatravel\\environment\\database\\accommodations\\xian\\accommodations.csv",
+  "price_provenance_path": "<workspace>/chinatravel-five-city-luna-20261115\\data\\xian11_merged_sandbox\\accommodations\\xian\\price_provenance.csv",
+  "unmatched_count": 36,
+  "unique_identity_count": 36,
+  "historic_grades": {
+    "L3": 36
+  },
+  "csv_price_status_counts": {
+    "source_value": 14,
+    "estimated_chain_cross_city": 14,
+    "estimated_hostel_comparable": 2,
+    "estimated_chain_branch": 6
+  },
+  "records": [
+    {
+      "csv_id": "2",
+      "name": "西安索菲特传奇酒店（人民大厦）",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "p30:dc7d03080185295b0dff5913d32c",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "evidence_id": "p30-evidence:1803521f9900ed0f8709a75365eb6857fcf80015443ad889b59e65aa303d292c",
+        "invalidated_value": null,
+        "observed_at": null,
+        "previous_native_value": 1200.0,
+        "quote": "¥ 1200 – 1550 每晚",
+        "reason": "starting_or_range_lower_bound_not_exact",
+        "source_id": "p30:00d9a538be1266f97b42a933",
+        "source_url": "https://visitxian.cn/zh-CN/hotels/sofitel-legend-peoples-grand-xian",
+        "status": "unknown",
+        "status_original": "invalidated_lodging_lower_bound_as_exact",
+        "valid_until": null
+      },
+      "csv_price": "1440.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安索菲特传奇酒店（人民大厦）",
+          "price": "1440.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:unknown",
+          "observed_at": "2026-11-09",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-839111/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "9",
+      "name": "维也纳国际酒店西安北站店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "p30:6304164b74c323189d7d25aa0247",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "evidence_id": "p30-evidence:03d33ef45f4c1eb23f73a34cd0136922a0b7ed976204906d3ceff44b32189c03",
+        "observed_at": null,
+        "source_id": "p30:7dbbc97a00ca88203e659dbf",
+        "source_url": "urn:shorttrip:p30-local-proxy",
+        "status": "unknown",
+        "valid_until": null
+      },
+      "csv_price": "191.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "维也纳国际酒店西安北站店",
+          "price": "191.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:unknown",
+          "observed_at": "2026-11-09",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-12046096/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "67",
+      "name": "如家海景公寓(兴庆路1号分店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:96a6bb571efe4326281e41e8",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            150
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "65.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "如家海景公寓(兴庆路1号分店)",
+          "price": "65.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "30.0",
+          "price_high": "121.7",
+          "price_mid": "65.9",
+          "confidence": "medium",
+          "n_comparables": "19",
+          "method": "cross_city_chain_median:如家",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "78",
+      "name": "如家公寓酒店(南稍门店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:d26ffd4a35eb36fce9b6c9b2",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            40,
+            140
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "65.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "如家公寓酒店(南稍门店)",
+          "price": "65.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "30.0",
+          "price_high": "121.7",
+          "price_mid": "65.9",
+          "confidence": "medium",
+          "n_comparables": "19",
+          "method": "cross_city_chain_median:如家",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "90",
+      "name": "木木夕青年旅舍(西安钟楼店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:9ca7cdf04e8029a43b891f8a",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            40,
+            130
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "38.0",
+      "csv_price_status": "estimated_hostel_comparable",
+      "subsequent_provenance_matches": [
+        {
+          "name": "木木夕青年旅舍(西安钟楼店)",
+          "price": "38.0",
+          "price_status": "estimated_hostel_comparable",
+          "price_low": "25.0",
+          "price_high": "42.0",
+          "price_mid": "38.0",
+          "confidence": "medium",
+          "n_comparables": "5",
+          "method": "chain_branch_median:hostel",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "93",
+      "name": "易休太空舱公寓(西安南门店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:f0dceb768513f6c65aa088bc",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            40,
+            130
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "25.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "易休太空舱公寓(西安南门店)",
+          "price": "25.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "25.0",
+          "price_high": "25.0",
+          "price_mid": "25.0",
+          "confidence": "medium",
+          "n_comparables": "1",
+          "method": "chain_branch_median:易休太空舱",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "96",
+      "name": "汉庭酒店(西安文艺路店)(暂停营业)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:173ba0ea00ad2679ceff46f6",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            40,
+            140
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "76.0",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "汉庭酒店(西安文艺路店)(暂停营业)",
+          "price": "76.0",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "43.4",
+          "price_high": "109.4",
+          "price_mid": "76.0",
+          "confidence": "medium",
+          "n_comparables": "4",
+          "method": "cross_city_chain_median:汉庭",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "106",
+      "name": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:1a6c706fa5557912b80a4a32",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            40,
+            140
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "38.0",
+      "csv_price_status": "estimated_hostel_comparable",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安·梦想家青年旅舍(南稍门地铁口草场坡店)",
+          "price": "38.0",
+          "price_status": "estimated_hostel_comparable",
+          "price_low": "25.0",
+          "price_high": "42.0",
+          "price_mid": "38.0",
+          "confidence": "medium",
+          "n_comparables": "5",
+          "method": "chain_branch_median:hostel",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "117",
+      "name": "汉庭优佳酒店(土门店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:5625d75c9201f2bbf5ea5cec",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            50,
+            110
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "76.0",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "汉庭优佳酒店(土门店)",
+          "price": "76.0",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "43.4",
+          "price_high": "109.4",
+          "price_mid": "76.0",
+          "confidence": "medium",
+          "n_comparables": "4",
+          "method": "cross_city_chain_median:汉庭",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "136",
+      "name": "布丁酒店(西安钟楼回民街明城墙店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:fa84377883349ad91f9e9901",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            80,
+            270
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "70.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "布丁酒店(西安钟楼回民街明城墙店)",
+          "price": "70.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "63.0",
+          "price_high": "86.0",
+          "price_mid": "70.0",
+          "confidence": "medium",
+          "n_comparables": "3",
+          "method": "chain_branch_median:布丁",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "147",
+      "name": "宜必思酒店(西安高新区店)(暂停营业)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:b158af5f2b055d290752a82d",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            100,
+            310
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "61.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "宜必思酒店(西安高新区店)(暂停营业)",
+          "price": "61.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "51.2",
+          "price_high": "70.9",
+          "price_mid": "61.9",
+          "confidence": "medium",
+          "n_comparables": "4",
+          "method": "cross_city_chain_median:宜必思",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "151",
+      "name": "布丁酒店(西安钟鼓楼回民街北大街十字店)(暂停营业)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:41bc259edd3ce0743c30fa15",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            80,
+            210
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "70.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "布丁酒店(西安钟鼓楼回民街北大街十字店)(暂停营业)",
+          "price": "70.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "63.0",
+          "price_high": "86.0",
+          "price_mid": "70.0",
+          "confidence": "medium",
+          "n_comparables": "3",
+          "method": "chain_branch_median:布丁",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "215",
+      "name": "OYO豪庭商务酒店(西安胡家庙地铁站店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:4d2ee2622736acc5780e9d2d",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            80,
+            160
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_test/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "43.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "OYO豪庭商务酒店(西安胡家庙地铁站店)",
+          "price": "43.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "43.0",
+          "price_high": "43.0",
+          "price_mid": "43.0",
+          "confidence": "medium",
+          "n_comparables": "1",
+          "method": "chain_branch_median:oyo",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "221",
+      "name": "西安书友理想国主题青年旅舍大明宫遗址公园店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:d51dfb0ff758def38182564f",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            70,
+            140
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "41.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安书友理想国主题青年旅舍大明宫遗址公园店",
+          "price": "41.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:price_range_starting",
+          "observed_at": "2026-11-11T16:40:15+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-5982271/?locale=zh-CN&curr=CNY&checkin=2026-11-20&checkout=2026-11-21"
+        }
+      ]
+    },
+    {
+      "csv_id": "268",
+      "name": "如家快捷酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:ca1e7dd4a94a08eff94c59ee",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            120
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "65.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "如家快捷酒店",
+          "price": "65.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "30.0",
+          "price_high": "121.7",
+          "price_mid": "65.9",
+          "confidence": "medium",
+          "n_comparables": "19",
+          "method": "cross_city_chain_median:如家",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "299",
+      "name": "星程酒店(西安经开区明光路店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:43f9d25b694a3d55c755e426",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            70,
+            210
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "71.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "星程酒店(西安经开区明光路店)",
+          "price": "71.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "42.7",
+          "price_high": "149.4",
+          "price_mid": "71.9",
+          "confidence": "medium",
+          "n_comparables": "8",
+          "method": "cross_city_chain_median:星程",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "306",
+      "name": "布丁酒店(西安郭杜十字店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:38a58384069e5912a1c65913",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            90,
+            380
+          ],
+          "n_comparables": 7,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "70.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "布丁酒店(西安郭杜十字店)",
+          "price": "70.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "63.0",
+          "price_high": "86.0",
+          "price_mid": "70.0",
+          "confidence": "medium",
+          "n_comparables": "3",
+          "method": "chain_branch_median:布丁",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "340",
+      "name": "尚客优酒店(西安唐都医院半坡地铁站店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:bbc848d2e255b58fc26a5122",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            90,
+            320
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "218.0",
+      "csv_price_status": "estimated_chain_branch",
+      "subsequent_provenance_matches": [
+        {
+          "name": "尚客优酒店(西安唐都医院半坡地铁站店)",
+          "price": "218.0",
+          "price_status": "estimated_chain_branch",
+          "price_low": "218.0",
+          "price_high": "218.0",
+          "price_mid": "218.0",
+          "confidence": "medium",
+          "n_comparables": "1",
+          "method": "chain_branch_median:尚客优",
+          "observed_at": "2026-11-11T16:49:21+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "342",
+      "name": "如家酒店(西安浐灞前海人寿金融中心店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:c0cfb9e5c42a63bb230a3ed4",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            80,
+            150
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "65.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "如家酒店(西安浐灞前海人寿金融中心店)",
+          "price": "65.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "30.0",
+          "price_high": "121.7",
+          "price_mid": "65.9",
+          "confidence": "medium",
+          "n_comparables": "19",
+          "method": "cross_city_chain_median:如家",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "355",
+      "name": "西安悦享精品酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:35d26c1410231a48c469e8e1",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            120,
+            260
+          ],
+          "n_comparables": 3,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 80406422
+        }
+      },
+      "csv_price": "137.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安悦享精品酒店",
+          "price": "137.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:17:52+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-80406422/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "361",
+      "name": "西安庆丰商务宾馆",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:57882b174a37670357200633",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            170
+          ],
+          "n_comparables": 6,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 109439262
+        }
+      },
+      "csv_price": "117.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安庆丰商务宾馆",
+          "price": "117.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:17:40+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-109439262/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "371",
+      "name": "瑞诚假日酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:34f0f485ffd7292a35655713",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            120,
+            260
+          ],
+          "n_comparables": 3,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 125813000
+        }
+      },
+      "csv_price": "181.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "瑞诚假日酒店",
+          "price": "181.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:03:21+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-125813000/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "389",
+      "name": "宜必思酒店(西安临潼兵马俑景区店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:d5f5d7b2aaceab38408c0c59",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            100,
+            240
+          ],
+          "n_comparables": 10,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "61.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "宜必思酒店(西安临潼兵马俑景区店)",
+          "price": "61.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "51.2",
+          "price_high": "70.9",
+          "price_mid": "61.9",
+          "confidence": "medium",
+          "n_comparables": "4",
+          "method": "cross_city_chain_median:宜必思",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "413",
+      "name": "非哈酒店(西工程大西科大临潼校区地铁站店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:363b44ce84bef8ec14179e40",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            100,
+            230
+          ],
+          "n_comparables": 7,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 123259026
+        }
+      },
+      "csv_price": "158.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "非哈酒店(西工程大西科大临潼校区地铁站店)",
+          "price": "158.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:32:40+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-123259026/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "473",
+      "name": "锦江之星酒店(西安阎良店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:6bf2a9dc157fa33132a1ebb9",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            120,
+            250
+          ],
+          "n_comparables": 12,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "74.5",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "锦江之星酒店(西安阎良店)",
+          "price": "74.5",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "74.5",
+          "price_high": "74.5",
+          "price_mid": "74.5",
+          "confidence": "low",
+          "n_comparables": "1",
+          "method": "cross_city_chain_median:锦江之星",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "474",
+      "name": "西安天域星程精品酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:3581b189a3a9dfedd0be331b",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            80,
+            200
+          ],
+          "n_comparables": 11,
+          "confidence": "low",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "71.9",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安天域星程精品酒店",
+          "price": "71.9",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "42.7",
+          "price_high": "149.4",
+          "price_mid": "71.9",
+          "confidence": "medium",
+          "n_comparables": "8",
+          "method": "cross_city_chain_median:星程",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "528",
+      "name": "西安博豪快捷酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:50eaad15a6781314d9e37676",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            140
+          ],
+          "n_comparables": 1,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 1950717
+        }
+      },
+      "csv_price": "98.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安博豪快捷酒店",
+          "price": "98.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:11:26+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-1950717/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "529",
+      "name": "西安赛庭商务宾馆",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:44d6a0fdb73024b2b6c0a8f6",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            90
+          ],
+          "n_comparables": 6,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 104677639
+        }
+      },
+      "csv_price": "135.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安赛庭商务宾馆",
+          "price": "135.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:21:23+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-104677639/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "539",
+      "name": "西安永佳宾馆",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:6ed5b48b131d11dc52676de5",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            120,
+            270
+          ],
+          "n_comparables": 7,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 72175357
+        }
+      },
+      "csv_price": "91.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安永佳宾馆",
+          "price": "91.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:19:30+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-72175357/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "572",
+      "name": "馨悦宾馆(西安长安大街店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:21728a0269f615b9667b3503",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            60,
+            170
+          ],
+          "n_comparables": 4,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 106388688
+        }
+      },
+      "csv_price": "98.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "馨悦宾馆(西安长安大街店)",
+          "price": "98.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:32:55+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-106388688/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "580",
+      "name": "西安柏羽酒店",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:a9d0834cfaccd4e9a20714e4",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:budget",
+          "hotel_class": "budget",
+          "range": [
+            120,
+            270
+          ],
+          "n_comparables": 7,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 6663069
+        }
+      },
+      "csv_price": "227.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安柏羽酒店",
+          "price": "227.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:14:37+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-6663069/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "633",
+      "name": "都市118·精选酒店(周至集贤工业园店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:e2025bca67acd80bba0c9f82",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            120,
+            240
+          ],
+          "n_comparables": 0,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "31.0",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "都市118·精选酒店(周至集贤工业园店)",
+          "price": "31.0",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "31.0",
+          "price_high": "31.0",
+          "price_mid": "31.0",
+          "confidence": "low",
+          "n_comparables": "1",
+          "method": "cross_city_chain_median:都市118",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "656",
+      "name": "都市118智选酒店(集贤镇比亚迪工业园店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:9c8e07397fcc4cfda8647dcf",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            120,
+            240
+          ],
+          "n_comparables": 0,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "31.0",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "都市118智选酒店(集贤镇比亚迪工业园店)",
+          "price": "31.0",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "31.0",
+          "price_high": "31.0",
+          "price_mid": "31.0",
+          "confidence": "low",
+          "n_comparables": "1",
+          "method": "cross_city_chain_median:都市118",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "673",
+      "name": "都市118精选酒店(周至水街汽车站店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:605854c881ad1f4dd2ecb612",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_city_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            120,
+            240
+          ],
+          "n_comparables": 0,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": "no_candidate",
+          "hotel_id": null
+        }
+      },
+      "csv_price": "31.0",
+      "csv_price_status": "estimated_chain_cross_city",
+      "subsequent_provenance_matches": [
+        {
+          "name": "都市118精选酒店(周至水街汽车站店)",
+          "price": "31.0",
+          "price_status": "estimated_chain_cross_city",
+          "price_low": "31.0",
+          "price_high": "31.0",
+          "price_mid": "31.0",
+          "confidence": "low",
+          "n_comparables": "1",
+          "method": "cross_city_chain_median:都市118",
+          "observed_at": "2026-11-11T16:53:18+08:00",
+          "source_url": ""
+        }
+      ]
+    },
+    {
+      "csv_id": "720",
+      "name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:40a781cda0171fbadc66ed9b",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:luxury",
+          "hotel_class": "luxury",
+          "range": [
+            540,
+            1200
+          ],
+          "n_comparables": 6,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripA/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 420032
+        }
+      },
+      "csv_price": "776.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "西安威斯汀大酒店(大雁塔大唐不夜城店)",
+          "price": "776.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:unknown",
+          "observed_at": "2026-11-09T18:12:30+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-420032/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    },
+    {
+      "csv_id": "756",
+      "name": "金舟酒店(西安比亚迪阳光天地店)",
+      "source_name_matches": 1,
+      "source_name_and_coordinate_matches": 1,
+      "source_record_id": "xian:6d7bcdbdd627669b0dd2fdd4",
+      "historic_grade": "L3",
+      "historic_price": null,
+      "historic_price_provenance": {
+        "source_id": null,
+        "source_url": null,
+        "observed_at": null,
+        "status": "unknown",
+        "evidence_id": null,
+        "quote": null,
+        "valid_until": null,
+        "basis": "estimate_not_adopted",
+        "estimate": {
+          "method": "same_class_nearest_p25_p75:mid",
+          "hotel_class": "mid",
+          "range": [
+            130,
+            340
+          ],
+          "n_comparables": 4,
+          "confidence": "medium",
+          "attempt_ref": "results/xian_gapfill_20261109/staging/hotel_batch_tripB/run_log.jsonl",
+          "attempt_type": null,
+          "hotel_id": 1229678
+        }
+      },
+      "csv_price": "161.0",
+      "csv_price_status": "source_value",
+      "subsequent_provenance_matches": [
+        {
+          "name": "金舟酒店(西安比亚迪阳光天地店)",
+          "price": "161.0",
+          "price_status": "source_value",
+          "price_low": "",
+          "price_high": "",
+          "price_mid": "",
+          "confidence": "",
+          "n_comparables": "",
+          "method": "trip_com:starting_average_price",
+          "observed_at": "2026-11-09T18:28:04+08:00",
+          "source_url": "https://hk.trip.com/hotels/xi-an-hotel-detail-1229678/?locale=zh-CN&curr=CNY"
+        }
+      ]
+    }
+  ]
+}

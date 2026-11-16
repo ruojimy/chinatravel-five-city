@@ -1,0 +1,14 @@
+{
+  "index": 7,
+  "origin": "西安",
+  "destination": "杭州",
+  "url": "https://m.ly.com/travel/flight/SIA-HGH?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:30:26.244085+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "c6c826a60eed9dcfb1815db10a7c2a196a74b8c49971b12e2c1354cacfa13986",
+  "page_description": "2026-11-16西安到杭州机票，共61个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "flight_count_mismatch_quarantine",
+  "declared_count": 61
+}

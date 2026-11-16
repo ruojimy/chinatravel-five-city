@@ -1,0 +1,92 @@
+[
+  {
+    "case": "easy_1_C_r1",
+    "base_case": "easy_1",
+    "group": "C",
+    "repetition": 1,
+    "split": "easy",
+    "uid": "t20241206164116321945",
+    "query": "queries/easy_1.json"
+  },
+  {
+    "case": "easy_2_C_r1",
+    "base_case": "easy_2",
+    "group": "C",
+    "repetition": 1,
+    "split": "easy",
+    "uid": "t20241206172253793024",
+    "query": "queries/easy_2.json"
+  },
+  {
+    "case": "easy_3_C_r1",
+    "base_case": "easy_3",
+    "group": "C",
+    "repetition": 1,
+    "split": "easy",
+    "uid": "m20241028164825618732",
+    "query": "queries/easy_3.json"
+  },
+  {
+    "case": "easy_4_C_r1",
+    "base_case": "easy_4",
+    "group": "C",
+    "repetition": 1,
+    "split": "easy",
+    "uid": "m20241028164940013894",
+    "query": "queries/easy_4.json"
+  },
+  {
+    "case": "easy_5_C_r1",
+    "base_case": "easy_5",
+    "group": "C",
+    "repetition": 1,
+    "split": "easy",
+    "uid": "e20241028160504916405",
+    "query": "queries/easy_5.json"
+  },
+  {
+    "case": "human_1_C_r1",
+    "base_case": "human_1",
+    "group": "C",
+    "repetition": 1,
+    "split": "human",
+    "uid": "h20241029143727719855",
+    "query": "queries/human_1.json"
+  },
+  {
+    "case": "human_2_C_r1",
+    "base_case": "human_2",
+    "group": "C",
+    "repetition": 1,
+    "split": "human",
+    "uid": "h20241029143653372872",
+    "query": "queries/human_2.json"
+  },
+  {
+    "case": "human_3_C_r1",
+    "base_case": "human_3",
+    "group": "C",
+    "repetition": 1,
+    "split": "human",
+    "uid": "h20241029143551657496",
+    "query": "queries/human_3.json"
+  },
+  {
+    "case": "human_4_C_r1",
+    "base_case": "human_4",
+    "group": "C",
+    "repetition": 1,
+    "split": "human",
+    "uid": "h20241029143811168339",
+    "query": "queries/human_4.json"
+  },
+  {
+    "case": "human_5_C_r1",
+    "base_case": "human_5",
+    "group": "C",
+    "repetition": 1,
+    "split": "human",
+    "uid": "h20241029143659983667",
+    "query": "queries/human_5.json"
+  }
+]

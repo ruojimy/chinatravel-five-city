@@ -1,0 +1,40 @@
+{
+  "uid": "x11e017",
+  "group": "G3",
+  "split": "easy",
+  "cohort": "full",
+  "input_sha256": "0edaa5ba701c9cc8e7025561df1a5e884c0404108ab5cf5d7d9956ad6b6dcb6d",
+  "planning_query_sha256": "9f21105c733ee66f3be5a781edd17f5647e656d3d0d6198f8a743984195b0036",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "1b532cae98863bdd69be3868a416cbea43e900d42e101ae8a698db52f836234a",
+  "evaluations": 8,
+  "moves": [],
+  "reason": null,
+  "plan_sha256": "7a8214c795b6290009a7728e654d0765a55a282d5aa704157766ea12e2d4c0a7",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": false,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "Unavailable Inner-City Transport",
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 3,
+    "hard_total": 4,
+    "hard_expected": 4,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": false,
+  "score_sha256": "88b9c466ba8a20df8654159c521fe89fcb53e112bea2939c650c9dc53511c1f6",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 3.405,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "dynamic-materialization-audit-v1",
+  "journal_sha256": "aea96ac575f90d31363dbb3ec0e51d99620a86d5d6d8afec20369c175ca7e118",
+  "parent_snapshot_sha256": "8398f1dbacd6244e28ee2ca6c4fc0a7756c4593d7955e68c33122c9055b29946",
+  "calls": [
+    {
+      "id": 1,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "07024e984db15f05ac2a2a626e6f1ed036f4e8eabaf09dcaa62d6a4d642cb37d"
+    },
+    {
+      "id": 2,
+      "status": "ok",
+      "error": null,
+      "raw_sha256": "311e408d8f2ce9f2441be0422b96b2b817dcc749ecc474932828f056f183beda"
+    }
+  ],
+  "accepted_trains": [],
+  "rejected": [],
+  "changed_direct_files": {},
+  "boundary": "Date-unspecified seat fares are conditional benchmark references, not bookings. Transfer legs and route totals are not direct train tickets.",
+  "public_export_note": "One unrelated city request omitted; original unredacted evidence retained locally."
+}

@@ -1,0 +1,14 @@
+{
+  "index": 2,
+  "origin": "北京",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:30:03.185898+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "d4584136879961698b580010c0fba7a2a329c6ded4758f69c742b8ebd6999edb",
+  "page_description": "2026-11-16北京到西安机票，共88个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "flight_count_mismatch_quarantine",
+  "declared_count": 88
+}

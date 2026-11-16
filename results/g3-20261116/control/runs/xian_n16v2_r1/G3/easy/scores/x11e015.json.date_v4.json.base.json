@@ -1,0 +1,149 @@
+{
+  "uid": "x11e015",
+  "target_root": "<workspace>/chinatravel-five-city-luna-20261115\\ShortTrip-upstream",
+  "query_sha256": "b5e647d0f366defcf6b58c9d9234d768b2f712aa1a62aca86e67439c170fc76b",
+  "plan_sha256": "20b96f71e3985ac97739374cd1efcfa5d7a0b977f21ab28d6d8fb701a1dbebd0",
+  "scored_utc": "2026-11-15T17:13:25.744889+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "fail",
+      "cells": {
+        "Unavailable Inner-City Transport": 1,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [
+        "segment 1: Incorrect infomation of transport 西安 -> 汉长安城未央宫遗址公园  [{'start': '西安', 'end': '西安站地铁站C口-地铁站', 'mode': 'walk', 'start_time': '04:33', 'end_time': '04:36', 'cost': 0, 'distance': 0.26, 'price': 0}], Tool: [{'start': '西安', 'end': '西安站地铁站C口', 'mode': 'walk', 'start_time': '04:33', 'end_time': '04:36', 'cost': 0, 'distance': 0.26}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 汉长安城未央宫遗址公园  [{'start': '西安站地铁站C口-地铁站', 'end': '皂河地铁站A西北口-地铁站', 'mode': 'metro', 'start_time': '04:36', 'end_time': '04:56', 'cost': 16.0, 'distance': 10.45, 'price': 4.0, 'tickets': 4}], Tool: [{'start': '西安站地铁站C口', 'end': '皂河地铁站A西北口', 'mode': 'metro', 'start_time': '04:36', 'end_time': '04:56', 'cost': 4, 'distance': 10.45}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 汉长安城未央宫遗址公园  [{'start': '西安站地铁站C口-地铁站', 'end': '皂河地铁站A西北口-地铁站', 'mode': 'metro', 'start_time': '04:36', 'end_time': '04:56', 'cost': 16.0, 'distance': 10.45, 'price': 4.0, 'tickets': 4}], Tool: [{'start': '西安站地铁站C口', 'end': '皂河地铁站A西北口', 'mode': 'metro', 'start_time': '04:36', 'end_time': '04:56', 'cost': 4, 'distance': 10.45}]",
+        "segment 1: Incorrect infomation of transport 西安 -> 汉长安城未央宫遗址公园  [{'start': '皂河地铁站A西北口-地铁站', 'end': '汉长安城未央宫遗址公园', 'mode': 'walk', 'start_time': '04:56', 'end_time': '05:22', 'cost': 0, 'distance': 2.19, 'price': 0}], Tool: [{'start': '皂河地铁站A西北口', 'end': '汉长安城未央宫遗址公园', 'mode': 'walk', 'start_time': '04:56', 'end_time': '05:22', 'cost': 0, 'distance': 2.19}]",
+        "segment 1: Incorrect infomation of transport 汉长安城未央宫遗址公园 -> 兴庆宫公园  [{'start': '汉长安城未央宫遗址公园', 'end': '皂河地铁站A西北口-地铁站', 'mode': 'walk', 'start_time': '06:22', 'end_time': '06:48', 'cost': 0, 'distance': 2.19, 'price': 0}], Tool: [{'start': '汉长安城未央宫遗址公园', 'end': '皂河地铁站A西北口', 'mode': 'walk', 'start_time': '06:22', 'end_time': '06:48', 'cost': 0, 'distance': 2.19}]",
+        "segment 1: Incorrect infomation of transport 汉长安城未央宫遗址公园 -> 兴庆宫公园  [{'start': '皂河地铁站A西北口-地铁站', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'metro', 'start_time': '06:48', 'end_time': '07:13', 'cost': 16.0, 'distance': 12.97, 'price': 4.0, 'tickets': 4}], Tool: [{'start': '皂河地铁站A西北口', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'metro', 'start_time': '06:48', 'end_time': '07:13', 'cost': 4, 'distance': 12.97}]",
+        "segment 1: Incorrect infomation of transport 汉长安城未央宫遗址公园 -> 兴庆宫公园  [{'start': '皂河地铁站A西北口-地铁站', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'metro', 'start_time': '06:48', 'end_time': '07:13', 'cost': 16.0, 'distance': 12.97, 'price': 4.0, 'tickets': 4}], Tool: [{'start': '皂河地铁站A西北口', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'metro', 'start_time': '06:48', 'end_time': '07:13', 'cost': 4, 'distance': 12.97}]",
+        "segment 1: Incorrect infomation of transport 汉长安城未央宫遗址公园 -> 兴庆宫公园  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '兴庆宫公园', 'mode': 'walk', 'start_time': '07:13', 'end_time': '07:18', 'cost': 0, 'distance': 0.44, 'price': 0}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '兴庆宫公园', 'mode': 'walk', 'start_time': '07:13', 'end_time': '07:18', 'cost': 0, 'distance': 0.44}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 广仁寺  [{'start': '兴庆宫公园', 'end': '交通大学·兴庆宫-地铁站-地铁站', 'mode': 'walk', 'start_time': '08:18', 'end_time': '08:23', 'cost': 0, 'distance': 0.44, 'price': 0}], Tool: [{'start': '兴庆宫公园', 'end': '交通大学·兴庆宫-地铁站', 'mode': 'walk', 'start_time': '08:18', 'end_time': '08:23', 'cost': 0, 'distance': 0.44}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 广仁寺  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '玉祥门地铁站D东北口-地铁站', 'mode': 'metro', 'start_time': '08:23', 'end_time': '08:35', 'cost': 12.0, 'distance': 6.39, 'price': 3.0, 'tickets': 4}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '玉祥门地铁站D东北口', 'mode': 'metro', 'start_time': '08:23', 'end_time': '08:35', 'cost': 3, 'distance': 6.39}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 广仁寺  [{'start': '交通大学·兴庆宫-地铁站-地铁站', 'end': '玉祥门地铁站D东北口-地铁站', 'mode': 'metro', 'start_time': '08:23', 'end_time': '08:35', 'cost': 12.0, 'distance': 6.39, 'price': 3.0, 'tickets': 4}], Tool: [{'start': '交通大学·兴庆宫-地铁站', 'end': '玉祥门地铁站D东北口', 'mode': 'metro', 'start_time': '08:23', 'end_time': '08:35', 'cost': 3, 'distance': 6.39}]",
+        "segment 1: Incorrect infomation of transport 兴庆宫公园 -> 广仁寺  [{'start': '玉祥门地铁站D东北口-地铁站', 'end': '广仁寺', 'mode': 'walk', 'start_time': '08:35', 'end_time': '08:42', 'cost': 0, 'distance': 0.62, 'price': 0}], Tool: [{'start': '玉祥门地铁站D东北口', 'end': '广仁寺', 'mode': 'walk', 'start_time': '08:35', 'end_time': '08:42', 'cost': 0, 'distance': 0.62}]",
+        "segment 1: Incorrect infomation of transport 广仁寺 -> 祥龙宾馆(西安徐家庄店)  [{'start': '广仁寺', 'end': '玉祥门地铁站D东北口-地铁站', 'mode': 'walk', 'start_time': '09:27', 'end_time': '09:34', 'cost': 0, 'distance': 0.62, 'price': 0}], Tool: [{'start': '广仁寺', 'end': '玉祥门地铁站D东北口', 'mode': 'walk', 'start_time': '09:27', 'end_time': '09:34', 'cost': 0, 'distance': 0.62}]",
+        "segment 1: Incorrect infomation of transport 广仁寺 -> 祥龙宾馆(西安徐家庄店)  [{'start': '玉祥门地铁站D东北口-地铁站', 'end': '科技路-地铁站-地铁站', 'mode': 'metro', 'start_time': '09:34', 'end_time': '09:43', 'cost': 12.0, 'distance': 4.62, 'price': 3.0, 'tickets': 4}], Tool: [{'start': '玉祥门地铁站D东北口', 'end': '科技路-地铁站', 'mode': 'metro', 'start_time': '09:34', 'end_time': '09:43', 'cost': 3, 'distance': 4.62}]",
+        "segment 1: Incorrect infomation of transport 广仁寺 -> 祥龙宾馆(西安徐家庄店)  [{'start': '玉祥门地铁站D东北口-地铁站', 'end': '科技路-地铁站-地铁站', 'mode': 'metro', 'start_time': '09:34', 'end_time': '09:43', 'cost': 12.0, 'distance': 4.62, 'price': 3.0, 'tickets': 4}], Tool: [{'start': '玉祥门地铁站D东北口', 'end': '科技路-地铁站', 'mode': 'metro', 'start_time': '09:34', 'end_time': '09:43', 'cost': 3, 'distance': 4.62}]",
+        "segment 1: Incorrect infomation of transport 广仁寺 -> 祥龙宾馆(西安徐家庄店)  [{'start': '科技路-地铁站-地铁站', 'end': '祥龙宾馆(西安徐家庄店)', 'mode': 'walk', 'start_time': '09:43', 'end_time': '09:49', 'cost': 0, 'distance': 0.58, 'price': 0}], Tool: [{'start': '科技路-地铁站', 'end': '祥龙宾馆(西安徐家庄店)', 'mode': 'walk', 'start_time': '09:43', 'end_time': '09:49', 'cost': 0, 'distance': 0.58}]",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 1: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result"
+      ]
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 0
+      },
+      "messages": []
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "fail",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "fail"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "e97a149d050b819ff3d67015e2eaf5b3f08324b81de8148599725a83860080b0",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "9eb0e5b6559fff11a086abf45ebc66e78a1ea21db730aa1b8b54617f7a75f376",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  }
+}

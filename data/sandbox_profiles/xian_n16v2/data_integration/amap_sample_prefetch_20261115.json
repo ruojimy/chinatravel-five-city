@@ -1,0 +1,355 @@
+{
+  "kind": "bounded_sample_route_prefetch",
+  "max_calls": 10,
+  "event_count": 4,
+  "stopped": "provider_status_or_transport_failure",
+  "endpoints": {
+    "西安": {
+      "name": "西安北站",
+      "code": "029",
+      "location": "108.938757,34.376660"
+    },
+    "广州": {
+      "name": "广州南站",
+      "code": "020",
+      "location": "113.269097,22.988344"
+    },
+    "重庆": {
+      "name": "重庆北站",
+      "code": "023",
+      "location": "106.550953,29.609378"
+    }
+  },
+  "events": [
+    {
+      "endpoint": "https://restapi.amap.com/v5/place/text",
+      "params": {
+        "keywords": "西安北站",
+        "region": "西安",
+        "city_limit": "true",
+        "page_size": "5",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T12:40:23.774661+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "response_sha256": "63e149ec5243ea93a88df9c24450928a87328d24ea4f2576a384499e767b8520",
+      "response": {
+        "count": "5",
+        "infocode": "10000",
+        "pois": [
+          {
+            "parent": "",
+            "address": "草滩街道元朔大道",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "交通设施服务;火车站;火车站",
+            "typecode": "150200",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "西安北站",
+            "location": "108.938757,34.376660",
+            "id": "B001D09TZP"
+          },
+          {
+            "parent": "",
+            "address": "182路;200路;263路;264路;329路;523路;530路;840路;841路;866路;882路;884路;泾渭定制3号线",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "交通设施服务;公交车站;公交车站相关",
+            "typecode": "150700",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "西安北站北广场(公交站)",
+            "location": "108.937175,34.380875",
+            "id": "BV11105330"
+          },
+          {
+            "parent": "B001D09TZP",
+            "address": "元朔路西安北站F1层",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "交通设施服务;火车站;出站口",
+            "typecode": "150203",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "西安北站(北出站口)",
+            "location": "108.938045,34.378368",
+            "id": "B0FFIMYSFZ"
+          },
+          {
+            "parent": "B001D09TZP",
+            "address": "元朔路西安北站(西安北站地铁站南出口步行410米)",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "交通设施服务;停车场;公共停车场",
+            "typecode": "150904",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "西安北站南广场地下停车场",
+            "location": "108.939851,34.371889",
+            "id": "B001D0WF5F"
+          },
+          {
+            "parent": "B001D09TZP",
+            "address": "西安北站地铁站西1出口旁",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "交通设施服务;火车站;进站口/检票口",
+            "typecode": "150202",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "西安北站(西进站口)",
+            "location": "108.937687,34.375688",
+            "id": "B0HUVZ2NRU"
+          }
+        ],
+        "status": "1",
+        "info": "OK"
+      }
+    },
+    {
+      "endpoint": "https://restapi.amap.com/v5/place/text",
+      "params": {
+        "keywords": "广州南站",
+        "region": "广州",
+        "city_limit": "true",
+        "page_size": "5",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T12:40:23.961986+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "response_sha256": "1588883cc6208784bb77c4de6a0d86695627862f964e3de1e66b9063ec7be8cc",
+      "response": {
+        "count": "5",
+        "infocode": "10000",
+        "pois": [
+          {
+            "parent": "",
+            "address": "石山大道南中15号",
+            "distance": "",
+            "pcode": "440000",
+            "adcode": "440113",
+            "pname": "广东省",
+            "cityname": "广州市",
+            "type": "交通设施服务;火车站;火车站",
+            "typecode": "150200",
+            "adname": "番禺区",
+            "citycode": "020",
+            "name": "广州南站",
+            "location": "113.269097,22.988344",
+            "id": "B00140VAP3"
+          },
+          {
+            "parent": "",
+            "address": "22号线;2号线;7号线;佛山2号线",
+            "distance": "",
+            "pcode": "440000",
+            "adcode": "440113",
+            "pname": "广东省",
+            "cityname": "广州市",
+            "type": "交通设施服务;地铁站;地铁站",
+            "typecode": "150500",
+            "adname": "番禺区",
+            "citycode": "020",
+            "name": "广州南站(地铁站)",
+            "location": "113.269810,22.988771",
+            "id": "BV10019725"
+          },
+          {
+            "parent": "",
+            "address": "201路;301A路;佛201路;佛211路;佛K330路/K330路快线;南沙K7路;夜102路;夜20路;夜61路;夜79路;桂11路;番100路;番129路;番99路;番夜5路",
+            "distance": "",
+            "pcode": "440000",
+            "adcode": "440113",
+            "pname": "广东省",
+            "cityname": "广州市",
+            "type": "交通设施服务;公交车站;公交车站相关",
+            "typecode": "150700",
+            "adname": "番禺区",
+            "citycode": "020",
+            "name": "广州南站总站(公交站)",
+            "location": "113.268179,22.985778",
+            "id": "BV11358289"
+          },
+          {
+            "parent": "B00140VAP3",
+            "address": "南站北路广州南站3层(广州南站地铁站B口旁)",
+            "distance": "",
+            "pcode": "440000",
+            "adcode": "440113",
+            "pname": "广东省",
+            "cityname": "广州市",
+            "type": "交通设施服务;火车站;进站口/检票口",
+            "typecode": "150202",
+            "adname": "番禺区",
+            "citycode": "020",
+            "name": "广州南站(西进站口)",
+            "location": "113.267499,22.987781",
+            "id": "B00141S12R"
+          },
+          {
+            "parent": "B00140VAP3",
+            "address": "石壁街道广州南站南站南路",
+            "distance": "",
+            "pcode": "440000",
+            "adcode": "440113",
+            "pname": "广东省",
+            "cityname": "广州市",
+            "type": "交通设施服务;停车场;公共停车场",
+            "typecode": "150904",
+            "adname": "番禺区",
+            "citycode": "020",
+            "name": "广州南站P1快速接送区",
+            "location": "113.271698,22.987706",
+            "id": "B0FFJMO8B9"
+          }
+        ],
+        "status": "1",
+        "info": "OK"
+      }
+    },
+    {
+      "endpoint": "https://restapi.amap.com/v5/place/text",
+      "params": {
+        "keywords": "重庆北站",
+        "region": "重庆",
+        "city_limit": "true",
+        "page_size": "5",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T12:40:24.164879+00:00",
+      "status": "1",
+      "infocode": "10000",
+      "info": "OK",
+      "response_sha256": "73052f720ad0188c2073709a790727dfeeda9720ddf26543c4ca0e07e2080f6b",
+      "response": {
+        "count": "5",
+        "infocode": "10000",
+        "pois": [
+          {
+            "parent": "",
+            "address": "昆仑大道51号附8号",
+            "distance": "",
+            "pcode": "500000",
+            "adcode": "500157",
+            "pname": "重庆市",
+            "cityname": "重庆市",
+            "type": "交通设施服务;火车站;火车站",
+            "typecode": "150200",
+            "adname": "两江新区",
+            "citycode": "023",
+            "name": "重庆北站",
+            "location": "106.550953,29.609378",
+            "id": "B001781ZYX"
+          },
+          {
+            "parent": "B001781ZYX",
+            "address": "昆仑大道51号(重庆北站北广场地铁站3号口步行90米)",
+            "distance": "",
+            "pcode": "500000",
+            "adcode": "500157",
+            "pname": "重庆市",
+            "cityname": "重庆市",
+            "type": "交通设施服务;火车站;进站口/检票口",
+            "typecode": "150202",
+            "adname": "两江新区",
+            "citycode": "023",
+            "name": "重庆北站(北进站口)",
+            "location": "106.551254,29.611190",
+            "id": "B0FFGFW2I6"
+          },
+          {
+            "parent": "B001781ZYX",
+            "address": "昆仑大道51号附8号重庆北站B1层",
+            "distance": "",
+            "pcode": "500000",
+            "adcode": "500157",
+            "pname": "重庆市",
+            "cityname": "重庆市",
+            "type": "交通设施服务;火车站;出站口",
+            "typecode": "150203",
+            "adname": "两江新区",
+            "citycode": "023",
+            "name": "重庆北站(北出站口)",
+            "location": "106.551948,29.611162",
+            "id": "B0FFG8EY7X"
+          },
+          {
+            "parent": "",
+            "address": "10号线;3号线;环线",
+            "distance": "",
+            "pcode": "500000",
+            "adcode": "500157",
+            "pname": "重庆市",
+            "cityname": "重庆市",
+            "type": "交通设施服务;地铁站;地铁站",
+            "typecode": "150500",
+            "adname": "两江新区",
+            "citycode": "023",
+            "name": "重庆北站南广场(地铁站)",
+            "location": "106.549272,29.606820",
+            "id": "BV10049260"
+          },
+          {
+            "parent": "",
+            "address": "中铁二院昆仑大道46号",
+            "distance": "",
+            "pcode": "500000",
+            "adcode": "500157",
+            "pname": "重庆市",
+            "cityname": "重庆市",
+            "type": "交通设施服务;长途汽车站;长途汽车站",
+            "typecode": "150400",
+            "adname": "两江新区",
+            "citycode": "023",
+            "name": "重庆北站南广场汽车站",
+            "location": "106.546154,29.605985",
+            "id": "B001785F5M"
+          }
+        ],
+        "status": "1",
+        "info": "OK"
+      }
+    },
+    {
+      "endpoint": "https://restapi.amap.com/v5/place/text",
+      "params": {
+        "keywords": "杭州东站",
+        "region": "杭州",
+        "city_limit": "true",
+        "page_size": "5",
+        "output": "JSON"
+      },
+      "retrieved_at_utc": "2026-11-15T12:40:24.340117+00:00",
+      "status": "0",
+      "infocode": "10021",
+      "info": "CUQPS_HAS_EXCEEDED_THE_LIMIT",
+      "response_sha256": "73bac21e8b72047a866e22542b36ac162968aeaf0493b5b8d742a7217acce3f5",
+      "response": {
+        "status": "0",
+        "info": "CUQPS_HAS_EXCEEDED_THE_LIMIT",
+        "infocode": "10021"
+      }
+    }
+  ],
+  "boundary": "No trip date was specified in these benchmark queries; results are current-context references, not date-specific or verified availability."
+}

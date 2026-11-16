@@ -1,4 +1,5 @@
 import pandas as pd
+from chinatravel.environment.planning_access import scoped_frame
 from pandas import DataFrame
 from typing import Callable
 import os
@@ -30,7 +31,7 @@ class Attractions:
 
         self.data = {}
         for i, city in enumerate(city_list):
-            self.data[city] = pd.read_csv(data_path_list[i])
+            self.data[city] = scoped_frame(pd.read_csv(data_path_list[i]), 'attraction', city, self.lang)
         self.key_type_tuple_list_map = {}
         for city in city_list:
             self.key_type_tuple_list_map[city] = []
@@ -58,7 +59,7 @@ class Attractions:
     def select(self, city: str, key, func: Callable) -> DataFrame:
         if key not in self.data[city].keys():
             return "Key not found."
-        bool_list = [func(x) for x in self.data[city][key]]
+        bool_list = [False if pd.isna(x) else bool(func(x)) for x in self.data[city][key]]
         return self.data[city][bool_list]
 
     def id_is_open(self, city: str, id: int, time: str) -> bool:

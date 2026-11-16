@@ -1,0 +1,221 @@
+{
+  "people_number": 4,
+  "start_city": "西安",
+  "target_city": "杭州",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "start": "西安",
+          "end": "杭州",
+          "start_time": "11:00",
+          "end_time": "05:26",
+          "price": 173.5,
+          "cost": 694.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [],
+          "TrainID": "K390"
+        },
+        {
+          "position": "鼓楼",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "05:31",
+          "end_time": "08:01",
+          "transports": [
+            {
+              "start": "杭州",
+              "end": "鼓楼",
+              "mode": "walk",
+              "start_time": "05:26",
+              "end_time": "05:31",
+              "cost": 0,
+              "distance": 0.47824915908768517,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "胡雪岩故居",
+          "type": "attraction",
+          "price": 20.0,
+          "cost": 80.0,
+          "tickets": 4,
+          "start_time": "08:02",
+          "end_time": "09:32",
+          "transports": [
+            {
+              "start": "鼓楼",
+              "end": "胡雪岩故居",
+              "mode": "walk",
+              "start_time": "08:01",
+              "end_time": "08:02",
+              "cost": 0,
+              "distance": 0.1393746134977975,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "南宋德寿宫遗址博物馆",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "09:33",
+          "end_time": "10:18",
+          "transports": [
+            {
+              "start": "胡雪岩故居",
+              "end": "南宋德寿宫遗址博物馆",
+              "mode": "walk",
+              "start_time": "09:32",
+              "end_time": "09:33",
+              "cost": 0,
+              "distance": 0.12160768000291423,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "position": "杭州马可波罗滨湖酒店(西湖湖滨店)",
+          "type": "accommodation",
+          "room_type": 1,
+          "price": 232.0,
+          "cost": 928.0,
+          "rooms": 4,
+          "start_time": "10:25",
+          "end_time": "24:00",
+          "transports": [
+            {
+              "start": "南宋德寿宫遗址博物馆",
+              "end": "城站-地铁站",
+              "mode": "walk",
+              "start_time": "10:18",
+              "end_time": "10:19",
+              "cost": 0,
+              "distance": 0.1,
+              "price": 0
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "定安路-地铁站",
+              "mode": "metro",
+              "start_time": "10:19",
+              "end_time": "10:21",
+              "cost": 8.0,
+              "distance": 1.26,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "定安路-地铁站",
+              "end": "杭州马可波罗滨湖酒店(西湖湖滨店)",
+              "mode": "walk",
+              "start_time": "10:21",
+              "end_time": "10:25",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "position": "杭州西湖风景名胜区-一公园",
+          "type": "attraction",
+          "price": 0.0,
+          "cost": 0.0,
+          "tickets": 4,
+          "start_time": "08:41",
+          "end_time": "09:26",
+          "transports": [
+            {
+              "start": "杭州马可波罗滨湖酒店(西湖湖滨店)",
+              "end": "定安路-地铁站",
+              "mode": "walk",
+              "start_time": "08:30",
+              "end_time": "08:34",
+              "cost": 0,
+              "distance": 0.41,
+              "price": 0
+            },
+            {
+              "start": "定安路-地铁站",
+              "end": "龙翔桥-地铁站",
+              "mode": "metro",
+              "start_time": "08:34",
+              "end_time": "08:36",
+              "cost": 8.0,
+              "distance": 1.03,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "杭州西湖风景名胜区-一公园",
+              "mode": "walk",
+              "start_time": "08:36",
+              "end_time": "08:41",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            }
+          ]
+        },
+        {
+          "start": "杭州",
+          "end": "西安",
+          "start_time": "10:46",
+          "end_time": "04:33",
+          "price": 173.5,
+          "cost": 694.0,
+          "tickets": 4,
+          "type": "train",
+          "transports": [
+            {
+              "start": "杭州西湖风景名胜区-一公园",
+              "end": "龙翔桥-地铁站",
+              "mode": "walk",
+              "start_time": "09:26",
+              "end_time": "09:31",
+              "cost": 0,
+              "distance": 0.48,
+              "price": 0
+            },
+            {
+              "start": "龙翔桥-地铁站",
+              "end": "城站-地铁站",
+              "mode": "metro",
+              "start_time": "09:31",
+              "end_time": "09:34",
+              "cost": 8.0,
+              "distance": 1.96,
+              "price": 2.0,
+              "tickets": 4
+            },
+            {
+              "start": "城站-地铁站",
+              "end": "杭州",
+              "mode": "walk",
+              "start_time": "09:34",
+              "end_time": "09:36",
+              "cost": 0,
+              "distance": 0.23,
+              "price": 0
+            }
+          ],
+          "TrainID": "Z594"
+        }
+      ]
+    }
+  ]
+}

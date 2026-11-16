@@ -1,0 +1,16 @@
+{
+  "index": 14,
+  "origin": "武汉",
+  "destination": "西安",
+  "url": "https://m.ly.com/travel/flight/WUH-SIA?date=2026-11-16",
+  "requested_date": "2026-11-16",
+  "observed_at_utc": "2026-11-15T16:31:45.383902+00:00",
+  "boundary": "Third-party displayed fare; booking fees, current inventory, airline confirmation and final amount unknown.",
+  "http_status": 200,
+  "raw_sha256": "fa8f00cd2df0bde051763733407843757f8172102914a7daf1ab6adc4048ed29",
+  "page_description": "2026-11-16武汉到西安机票，共2个航班，提供航班时刻、票价、机型、准点率等信息，数据仅供参考，以航司实际为准。",
+  "status": "captured_single_source_reference",
+  "declared_count": 2,
+  "accepted": 2,
+  "rejected": 0
+}

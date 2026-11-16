@@ -1,0 +1,39 @@
+{
+  "uid": "x11m007",
+  "group": "G3",
+  "split": "medium",
+  "cohort": "full",
+  "input_sha256": "ca095cd95fac1daac223f1f66a105d6f9917ab3b58e75bf25d291e4833933568",
+  "planning_query_sha256": "30acd55b384220d347d2849d9dc76fd40c5507386872e2be08a7265bc68852d2",
+  "built": true,
+  "all_ok": false,
+  "error": null,
+  "private_audit_sha256": "522f90873d64bec8a5e09762e510cc841d9190d855c949a164666a71f4aeecb1",
+  "evaluations": 20,
+  "moves": [],
+  "reason": null,
+  "plan_sha256": "c45f4efba2980277bf41b17c4393cc5d2958c99514b601b1b756fea8e831cd17",
+  "search_report": {
+    "schema_ok": true,
+    "commonsense_ok": false,
+    "hard_ok": false,
+    "all_ok": false,
+    "unresolved_requirements_count": 0,
+    "commonsense_violations": [
+      "date_timeline_fail"
+    ],
+    "checker_error": null,
+    "hard_pass": 6,
+    "hard_total": 7,
+    "hard_expected": 7,
+    "hard_evaluation_complete": true
+  },
+  "schema_ok": true,
+  "commonsense_ok": false,
+  "hard_ok": false,
+  "score_sha256": "c1d8b6efd5b1b86227a17dbb36bf835d76e06156d56fcf98b444627c11443caa",
+  "unresolved_requirements_count": 0,
+  "status": "fail",
+  "elapsed_seconds": 5.035,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
