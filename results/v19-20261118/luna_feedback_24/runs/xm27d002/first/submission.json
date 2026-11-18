@@ -1,0 +1,99 @@
+{
+  "utc": "2026-11-18T12:06:50.869420+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "plan": {
+      "start_city": "广州",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "tickets": 3,
+              "start_time": "06:18",
+              "end": "厦门北站",
+              "TrainID": "G3017",
+              "type": "train",
+              "cost": 907.5,
+              "start": "广州南站",
+              "price": 302.5,
+              "transports": [],
+              "end_time": "09:36"
+            },
+            {
+              "tickets": 3,
+              "price": 0,
+              "end_time": "12:15",
+              "cost": 0,
+              "transports": [
+                {
+                  "distance": 3.6,
+                  "price": 17.28,
+                  "end": "南普陀寺",
+                  "end_time": "10:35",
+                  "mode": "taxi",
+                  "cars": 1,
+                  "start_time": "10:30",
+                  "start": "厦门站",
+                  "cost": 17.28
+                }
+              ],
+              "type": "attraction",
+              "start_time": "10:40",
+              "position": "南普陀寺"
+            },
+            {
+              "position": "鹭江1号中餐厅闽南茶海鲜(101剧场店)",
+              "end_time": "14:00",
+              "price": 67,
+              "cost": 201,
+              "transports": [
+                {
+                  "distance": 4.49,
+                  "price": 20.42,
+                  "end": "鹭江1号中餐厅闽南茶海鲜(101剧场店)",
+                  "end_time": "13:06",
+                  "mode": "taxi",
+                  "cars": 1,
+                  "start_time": "13:00",
+                  "start": "南普陀寺",
+                  "cost": 20.42
+                }
+              ],
+              "start_time": "13:10",
+              "type": "lunch"
+            },
+            {
+              "tickets": 3,
+              "start_time": "19:54",
+              "end": "广州南站",
+              "TrainID": "G3019",
+              "type": "train",
+              "cost": 907.5,
+              "start": "厦门北站",
+              "price": 302.5,
+              "transports": [
+                {
+                  "distance": 17.99,
+                  "price": 75.67,
+                  "end": "厦门北站",
+                  "end_time": "14:26",
+                  "mode": "taxi",
+                  "cars": 1,
+                  "start_time": "14:00",
+                  "start": "鹭江1号中餐厅闽南茶海鲜(101剧场店)",
+                  "cost": 75.67
+                }
+              ],
+              "end_time": "23:18"
+            }
+          ]
+        }
+      ],
+      "people_number": 3,
+      "target_city": "厦门"
+    },
+    "notes": "采用沙盒所列历史参考车次与票价（非指定日期余票保证）；市内出租车路线和费用为冻结图估算，厦门人文景点南普陀寺票价按目录0元条件假设；午餐按目录人均历史参考价×3。当天返程前留出充足候车缓冲。",
+    "status": "submitted_first_draft"
+  }
+}

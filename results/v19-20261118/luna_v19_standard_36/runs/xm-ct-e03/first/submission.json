@@ -1,0 +1,155 @@
+{
+  "utc": "2026-11-18T14:23:39.235803+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "条件静态两日行程；G3027/G3028票价为历史参考，实际出行日期和余票未知。住宿按目录单床历史价500元/间夜、4间估算，现价与房型库存未核实。南普陀寺门票价字段缺失，按授权零元条件假设。去返市区的主程使用已查询地铁路线，POI步行接驳亦按沙盒路线。",
+    "plan": {
+      "people_number": 4,
+      "start_city": "南京",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:58",
+              "end_time": "13:05",
+              "cost": 2186,
+              "price": 546.5,
+              "tickets": 4,
+              "TrainID": "G3027",
+              "start": "南京南站",
+              "end": "厦门北站",
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "15:30",
+              "end_time": "08:30",
+              "cost": 2000,
+              "price": 500,
+              "rooms": 4,
+              "room_type": 1,
+              "position": "瑞颐大酒店",
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "厦门北-地铁站",
+                  "mode": "walk",
+                  "start_time": "14:00",
+                  "end_time": "14:01",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.1
+                },
+                {
+                  "start": "厦门北-地铁站",
+                  "end": "镇海路-地铁站",
+                  "mode": "metro",
+                  "start_time": "14:01",
+                  "end_time": "14:56",
+                  "price": 6,
+                  "cost": 24,
+                  "distance": 27.75,
+                  "tickets": 4
+                },
+                {
+                  "start": "镇海路-地铁站",
+                  "end": "瑞颐大酒店",
+                  "mode": "walk",
+                  "start_time": "14:56",
+                  "end_time": "15:00",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:30",
+              "end_time": "10:30",
+              "cost": 0,
+              "price": 0,
+              "tickets": 4,
+              "position": "南普陀寺",
+              "transports": [
+                {
+                  "start": "瑞颐大酒店",
+                  "end": "南普陀寺",
+                  "mode": "walk",
+                  "start_time": "09:00",
+                  "end_time": "09:24",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 2.0468306096735853
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start_time": "13:25",
+              "end_time": "19:14",
+              "cost": 2186,
+              "price": 546.5,
+              "tickets": 4,
+              "TrainID": "G3028",
+              "start": "厦门北站",
+              "end": "南京南站",
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "瑞颐大酒店",
+                  "mode": "walk",
+                  "start_time": "10:30",
+                  "end_time": "10:54",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 2.0468306096735853
+                },
+                {
+                  "start": "瑞颐大酒店",
+                  "end": "镇海路-地铁站",
+                  "mode": "walk",
+                  "start_time": "11:00",
+                  "end_time": "11:04",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.4
+                },
+                {
+                  "start": "镇海路-地铁站",
+                  "end": "厦门北-地铁站",
+                  "mode": "metro",
+                  "start_time": "11:04",
+                  "end_time": "12:31",
+                  "price": 8,
+                  "cost": 32,
+                  "distance": 43.83,
+                  "tickets": 4
+                },
+                {
+                  "start": "厦门北-地铁站",
+                  "end": "厦门北站",
+                  "mode": "walk",
+                  "start_time": "12:31",
+                  "end_time": "12:32",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

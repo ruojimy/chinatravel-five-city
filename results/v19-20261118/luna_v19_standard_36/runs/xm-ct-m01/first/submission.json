@@ -1,0 +1,155 @@
+{
+  "utc": "2026-11-18T14:27:21.765480+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "上海",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:20",
+              "end_time": "13:47",
+              "cost": 1260,
+              "price": 630,
+              "tickets": 2,
+              "TrainID": "G3091",
+              "start": "上海虹桥站",
+              "end": "厦门北站",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "15:00",
+              "end_time": "17:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "沙坡尾",
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:33",
+                  "cost": 94.68,
+                  "price": 94.68,
+                  "distance": 22.22,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "08:00",
+              "cost": 109,
+              "price": 109,
+              "rooms": 1,
+              "room_type": 1,
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "walk",
+                  "start_time": "18:00",
+                  "end_time": "18:05",
+                  "cost": 0,
+                  "price": 0,
+                  "distance": 0.4616134262087982
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "10:00",
+              "end_time": "16:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "中山路步行街",
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "中山路步行街",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:03",
+                  "cost": 12.7,
+                  "price": 12.7,
+                  "distance": 2.28,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "05:00",
+              "cost": 109,
+              "price": 109,
+              "rooms": 1,
+              "room_type": 1,
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "transports": [
+                {
+                  "start": "中山路步行街",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:03",
+                  "cost": 12.7,
+                  "price": 12.7,
+                  "distance": 2.28,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "07:18",
+              "end_time": "14:02",
+              "cost": 1220,
+              "price": 610,
+              "tickets": 2,
+              "TrainID": "G3756",
+              "start": "厦门北站",
+              "end": "上海松江站",
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "05:00",
+                  "end_time": "05:33",
+                  "cost": 94.99,
+                  "price": 94.99,
+                  "distance": 22.29,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "只使用本题公开查询的目录与车次；市内 subway 线路查询对酒店—沙坡尾/中山路无解，故按查询到的步行和 taxi 路线接驳。厦门大学沙坡尾店价格109元/间/晚、单床数1是历史/床数代理，不证明当前房型或库存；景点快照票价为零，按条件零价计。车票及 goto 报价均非实际出行日供给。未安排餐饮，预算小计不含餐费。"
+  }
+}

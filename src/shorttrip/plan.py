@@ -11,6 +11,7 @@ from dataclasses import dataclass, field
 
 from .env import SandboxEnv, hhmm, minutes
 from .duration_choice import visit_minutes
+from .opening_hours import earliest_visit
 
 
 def ceil_div(a: int, b: int) -> int:
@@ -119,14 +120,13 @@ class DayBuilder:
             return False
         arrive = legs[-1]["end_time"] if legs else self.time
         duration = duration_min or visit_minutes(row)
-        start_time = max(minutes(arrive), minutes(str(row["opentime"])))
-        end_time = start_time + duration
-        close = _close_minutes(str(row["opentime"]), str(row["endtime"]))
-        if end_time > close:
-            end_time = close
-        end_time = min(end_time, self.day_cutoff)
-        if end_time - start_time < 30:
+        try:
+            slot = earliest_visit(row, minutes(arrive), duration, self.day_cutoff)
+        except (ValueError, KeyError, TypeError):
             return False
+        if slot is None:
+            return False
+        start_time, end_time = slot
         price = float(row["price"])
         activity = {
             "position": name,
@@ -146,14 +146,13 @@ class DayBuilder:
         if legs is None:
             return False
         arrive = legs[-1]["end_time"] if legs else self.time
-        start_time = max(minutes(arrive), minutes(str(row["opentime"])))
-        end_time = start_time + duration_min
-        close = _close_minutes(str(row["opentime"]), str(row["endtime"]))
-        if end_time > close:
-            end_time = close
-        end_time = min(end_time, self.day_cutoff)
-        if end_time - start_time < 30:
+        try:
+            slot = earliest_visit(row, minutes(arrive), duration_min, self.day_cutoff)
+        except (ValueError, KeyError, TypeError):
             return False
+        if slot is None:
+            return False
+        start_time, end_time = slot
         price = float(row["price"])
         activity = {
             "position": name,

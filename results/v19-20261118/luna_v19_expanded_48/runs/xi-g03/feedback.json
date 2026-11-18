@@ -1,0 +1,8 @@
+{
+  "first_sha256": "b21d85d265cd393a589b8938720e109a1894572daf71cc99a118de4425570d92",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已分别查询广州→西安和西安→广州飞机。去程候选航班均无Cost；返程只有MU2303有可核验单价580元/人。必须乘飞机且预算上限7000元，缺少去程票价，无法核验往返交通和总额是否在预算内。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

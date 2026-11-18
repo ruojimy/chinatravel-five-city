@@ -1,0 +1,20 @@
+{
+  "first_sha256": "1e9bda1d88e4c53dfc3cbb759d26d7691c95ad6bc1facb4573ffd0a55b4a8162",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_transport_correct",
+      "state": "fail",
+      "messages": [
+        "segment 1: Incorrect duration infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]",
+        "segment 1: Incorrect price infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]",
+        "segment 1: Incorrect distance infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]"
+      ],
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+        "Inccorrect cost information of Inner-City Transport": 0
+      }
+    }
+  ]
+}

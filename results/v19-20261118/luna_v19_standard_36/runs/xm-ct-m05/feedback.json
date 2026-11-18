@@ -1,0 +1,8 @@
+{
+  "first_sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已按北京→厦门和厦门→北京查询 airplane，两个方向的 records 均没有带 Cost 的航班；可见航班只在 unpriced_preview 中，无法按 schema 填写往返 airplane cost 或核算预算。快照无 travel_date，不能补造金额。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

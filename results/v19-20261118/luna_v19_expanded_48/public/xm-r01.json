@@ -1,0 +1,11 @@
+{
+  "uid": "xm-r01",
+  "tag": "medium",
+  "start_city": "杭州",
+  "target_city": "厦门",
+  "days": 2,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "杭州出发两人坐火车往返厦门，一共2天。第一天07:00至08:00发车，第二天16:00后发车、23:00前赶回杭州，中间在厦门住一晚并游览。"
+}

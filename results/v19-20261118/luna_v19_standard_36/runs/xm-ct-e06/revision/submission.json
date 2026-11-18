@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:35:02.547743+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已核对本题去返方向航班均缺票价；铁路不符合明确选择飞机的要求，保留数据阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20",
+  "feedback_sha256": "4e7f84242b74f45c24197b87209c9d4fb8bcb8b7e7d004a444cd2305cee34362"
+}

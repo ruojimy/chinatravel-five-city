@@ -1,0 +1,32 @@
+[
+ {
+  "TrainID": "G409",
+  "TrainType": "高铁",
+  "From": "西安北",
+  "To": "广州南",
+  "BeginTime": "07:25",
+  "EndTime": "14:47",
+  "Duration": 7.37,
+  "Cost": 1052.0
+ },
+ {
+  "TrainID": "Z266",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "广州白云",
+  "BeginTime": "21:47",
+  "EndTime": "20:13",
+  "Duration": 22.43,
+  "Cost": 236
+ },
+ {
+  "TrainID": "Z232",
+  "TrainType": "普速",
+  "From": "西安",
+  "To": "广州北",
+  "BeginTime": "20:01",
+  "EndTime": "17:39",
+  "Duration": 21.63,
+  "Cost": 217
+ }
+]

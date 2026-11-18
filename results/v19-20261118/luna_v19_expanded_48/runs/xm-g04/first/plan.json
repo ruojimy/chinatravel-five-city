@@ -1,0 +1,63 @@
+{
+  "people_number": 2,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "10:00",
+          "end_time": "11:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [],
+          "position": "中山路步行街",
+          "tickets": 2
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:35",
+          "end_time": "12:30",
+          "cost": 48,
+          "price": 24,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "黄则和花生汤(中山路店)",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:34",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.3702018719251149
+            }
+          ],
+          "position": "黄则和花生汤(中山路店)"
+        },
+        {
+          "type": "attraction",
+          "start_time": "13:00",
+          "end_time": "15:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "黄则和花生汤(中山路店)",
+              "end": "沙坡尾",
+              "mode": "walk",
+              "start_time": "12:30",
+              "end_time": "12:55",
+              "price": 0,
+              "cost": 0,
+              "distance": 2.151119823772586
+            }
+          ],
+          "position": "沙坡尾",
+          "tickets": 2
+        }
+      ]
+    }
+  ]
+}

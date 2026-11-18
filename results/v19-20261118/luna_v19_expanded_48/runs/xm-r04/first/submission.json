@@ -1,0 +1,112 @@
+{
+  "utc": "2026-11-18T13:38:12.366259+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "北京",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "16:12",
+              "end_time": "10:09",
+              "cost": 1002,
+              "price": 501,
+              "transports": [],
+              "TrainID": "D131",
+              "start": "北京丰台站",
+              "end": "厦门北站",
+              "tickets": 2,
+              "arrival_day": 2
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "11:30",
+              "end_time": "14:30",
+              "cost": 0,
+              "price": 0,
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "南普陀寺",
+                  "mode": "taxi",
+                  "start_time": "10:45",
+                  "end_time": "11:17",
+                  "price": 93.34,
+                  "cost": 93.34,
+                  "distance": 21.92,
+                  "cars": 1
+                }
+              ],
+              "position": "南普陀寺",
+              "tickets": 2
+            },
+            {
+              "type": "accommodation",
+              "start_time": "16:30",
+              "end_time": "08:00",
+              "cost": 218,
+              "price": 109,
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "16:00",
+                  "end_time": "16:00",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 0.58,
+                  "cars": 1
+                }
+              ],
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "rooms": 2,
+              "room_type": 1
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "10:43",
+              "end_time": "22:13",
+              "cost": 2371.0,
+              "price": 1185.5,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "08:30",
+                  "end_time": "09:03",
+                  "price": 94.99,
+                  "cost": 94.99,
+                  "distance": 22.29,
+                  "cars": 1
+                }
+              ],
+              "TrainID": "G1528",
+              "start": "厦门北站",
+              "end": "北京南站",
+              "tickets": 2
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件评测：城际票价为沙盒给出的 2026-11-16 历史参考，不代表出行日班次库存或折扣；市内交通按 G3 冻结静态图估算时间和费用，不构成实时地图路况证明。住宿采用目录历史预算价及每间 1 床的容量代理，按人数安排房间；实际房型、日期价格和余量未知。景点目录未提供入场价时按题面允许的零元条件假设。"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:17:07.376142+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "修订阶段补查钟楼↔同盛祥步行goto，两向均因同盛祥端点坐标需动态核验且provider未接入而不可用；同盛祥为题面指定餐馆，无法如实接驳，保留数据阻塞。"
+  },
+  "first_sha256": "71a439a3ec616bf6b852d64f01f1e6a267f64ca0250ebb86f7575c0a8cb136f0",
+  "feedback_sha256": "eb6088672e9772581d018cd9115e705ad61c82869b6acc01a2c37d14a9f2b829"
+}

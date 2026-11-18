@@ -1,0 +1,98 @@
+{
+  "people_number": 2,
+  "start_city": "杭州",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "07:03",
+          "end_time": "12:59",
+          "cost": 711.0,
+          "price": 355.5,
+          "transports": [],
+          "TrainID": "D3211",
+          "start": "杭州东站",
+          "end": "厦门北站",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:15",
+          "end_time": "17:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "中山路步行街",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "14:00",
+              "price": 86.19,
+              "cost": 86.19,
+              "distance": 20.33,
+              "cars": 1
+            }
+          ],
+          "position": "中山路步行街",
+          "tickets": 2
+        },
+        {
+          "type": "accommodation",
+          "start_time": "18:30",
+          "end_time": "08:00",
+          "cost": 218,
+          "price": 109,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "18:00",
+              "end_time": "18:03",
+              "price": 12.7,
+              "cost": 12.7,
+              "distance": 2.28,
+              "cars": 1
+            }
+          ],
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "rooms": 2,
+          "room_type": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "17:06",
+          "end_time": "22:52",
+          "cost": 711.0,
+          "price": 355.5,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "14:30",
+              "end_time": "15:03",
+              "price": 94.99,
+              "cost": 94.99,
+              "distance": 22.29,
+              "cars": 1
+            }
+          ],
+          "TrainID": "D3212",
+          "start": "厦门北站",
+          "end": "杭州东站",
+          "tickets": 2
+        }
+      ]
+    }
+  ]
+}

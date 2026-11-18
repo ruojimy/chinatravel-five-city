@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-18T13:20:06.887127+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 3,
+              "transports": [],
+              "type": "attraction",
+              "start_time": "09:00",
+              "position": "秦始皇兵马俑",
+              "price": 120,
+              "end_time": "12:30",
+              "cost": 360
+            },
+            {
+              "tickets": 3,
+              "transports": [
+                {
+                  "mode": "taxi",
+                  "price": 148.62,
+                  "cars": 1,
+                  "end": "大雁塔",
+                  "distance": 34.2,
+                  "start_time": "13:00",
+                  "end_time": "13:51",
+                  "cost": 148.62,
+                  "start": "秦始皇兵马俑"
+                }
+              ],
+              "type": "attraction",
+              "start_time": "14:00",
+              "position": "大雁塔",
+              "price": 10,
+              "end_time": "16:00",
+              "cost": 30
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "target_city": "西安",
+      "people_number": 3,
+      "start_city": "西安"
+    },
+    "notes": "静态快照核对兵马俑和大雁塔票价及开放时间；出租路线按三人查询，离线图估价非实时路线；未核实当日票务。"
+  }
+}

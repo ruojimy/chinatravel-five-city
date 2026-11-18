@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:45:10.034725+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "复核了正确码头方向的两日map_departures和鼓浪屿晴宿room_options，仍无精确船班或可核验房间；渡轮不能编码成原生行程腿，保留数据阻塞。"
+  },
+  "first_sha256": "11c2a526b493670ea6b7746074563d7129b1a43d4bb58729b52719282459c45e",
+  "feedback_sha256": "751d71a36658d89361b1178a05f400c15531facb6c7b0b384cec36a7aba2100a"
+}

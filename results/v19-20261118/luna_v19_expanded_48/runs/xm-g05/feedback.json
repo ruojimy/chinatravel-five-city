@@ -1,0 +1,10 @@
+{
+  "first_sha256": "11c2a526b493670ea6b7746074563d7129b1a43d4bb58729b52719282459c45e",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "题目要求第1天到鼓浪屿乘船并在岛上过夜，第2天乘船回本岛，且船票与住宿必须能在行程中核验。厦门ferry_reference返回东渡客运码头↔鼓浪屿三丘田码头、参考往返票价35元/人及约20分钟，但availability=unknown且can_build_native_itinerary_leg=false。",
+    "对正确方向和码头调用map_departures（第1天去程、第2天返程）均返回空记录，无法为题面指定的两天选到可核验的精确船班。原工具仅有walk/taxi/metro路线和train/airplane城际活动类型，不能把渡轮原样写成合规行程腿。",
+    "查询鼓浪屿晴宿精品客栈的room_options只返回historical_reference、official_rooms为空、availability=unknown；目录79元历史代理价不证明四人可订房型或出行日余量。因此也不能核验题目要求的岛上住宿。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

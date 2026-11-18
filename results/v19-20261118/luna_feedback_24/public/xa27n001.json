@@ -1,0 +1,11 @@
+{
+  "uid": "xa27n001",
+  "tag": "medium",
+  "start_city": "北京",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "2人从北京坐火车去西安，包含往返总共3天。第1天18:00后上车，次日到西安后再安排吃饭和一处景点，住一晚；第3天当天返回北京。"
+}

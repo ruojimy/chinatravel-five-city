@@ -1,0 +1,133 @@
+{
+  "utc": "2026-11-18T12:11:19.750634+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "start_city": "厦门",
+      "people_number": 2,
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "transports": [
+                {
+                  "start_time": "09:30",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "distance": 4.42,
+                  "cost": 20.16,
+                  "price": 20.16,
+                  "end_time": "09:36",
+                  "start": "厦门站",
+                  "cars": 1
+                }
+              ],
+              "cost": 0,
+              "end_time": "12:00",
+              "type": "attraction",
+              "tickets": 2,
+              "price": 0,
+              "start_time": "10:00",
+              "position": "沙坡尾"
+            },
+            {
+              "position": "沙坡尾62号鱼港",
+              "end_time": "13:15",
+              "start_time": "12:15",
+              "type": "lunch",
+              "cost": 154,
+              "transports": [
+                {
+                  "start_time": "12:00",
+                  "end": "沙坡尾62号鱼港",
+                  "mode": "taxi",
+                  "distance": 0.01,
+                  "cost": 11.0,
+                  "price": 11.0,
+                  "end_time": "12:00",
+                  "start": "沙坡尾",
+                  "cars": 1
+                }
+              ],
+              "price": 77
+            },
+            {
+              "transports": [
+                {
+                  "start_time": "14:00",
+                  "end": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+                  "mode": "taxi",
+                  "distance": 2.31,
+                  "cost": 12.79,
+                  "price": 12.79,
+                  "end_time": "14:03",
+                  "start": "沙坡尾62号鱼港",
+                  "cars": 1
+                }
+              ],
+              "rooms": 1,
+              "cost": 140,
+              "end_time": "09:00",
+              "type": "accommodation",
+              "price": 140,
+              "start_time": "22:00",
+              "position": "心远电竞酒店(厦门中山路步行街轮渡码头店)"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "transports": [
+                {
+                  "start_time": "09:30",
+                  "end": "中山路步行街",
+                  "mode": "taxi",
+                  "distance": 0.44,
+                  "cost": 11.0,
+                  "price": 11.0,
+                  "end_time": "09:30",
+                  "start": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+                  "cars": 1
+                }
+              ],
+              "cost": 0,
+              "end_time": "12:00",
+              "type": "attraction",
+              "tickets": 2,
+              "price": 0,
+              "start_time": "09:45",
+              "position": "中山路步行街"
+            },
+            {
+              "position": "黄则和花生汤(中山路店)",
+              "end_time": "13:00",
+              "start_time": "12:10",
+              "type": "lunch",
+              "cost": 48,
+              "transports": [
+                {
+                  "start_time": "11:00",
+                  "end": "黄则和花生汤(中山路店)",
+                  "mode": "taxi",
+                  "distance": 0.37,
+                  "cost": 11.0,
+                  "price": 11.0,
+                  "end_time": "11:00",
+                  "start": "中山路步行街",
+                  "cars": 1
+                }
+              ],
+              "price": 24
+            }
+          ]
+        }
+      ],
+      "target_city": "厦门"
+    },
+    "notes": "包含沙坡尾户外开放街区与中山路步行街本体，各日安排餐饮及接驳。景点按目录缺票价的授权设0元条件值。酒店140元为历史预算参考，官方房型与当前余量未核实；room_options无可采纳的房型，双人入住需确认。起始接驳以厦门站为示例，实际市内起点不同需改接驳。路线为冻结图估算。"
+  }
+}

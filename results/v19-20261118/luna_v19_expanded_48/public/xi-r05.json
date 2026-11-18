@@ -1,0 +1,11 @@
+{
+  "uid": "xi-r05",
+  "tag": "medium",
+  "start_city": "北京",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "我们两人北京往返西安，总共3天。第1天20:00–21:00乘夜车，第2天到西安后游览并住一晚，第3天17:00后乘火车，当天回北京。"
+}

@@ -1,0 +1,11 @@
+{
+  "first_sha256": "b02fbc4c2a8c4db72597f420220b4007c2cf17acd87952931fc56eb283a36a12",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "required_attraction_types"
+    }
+  ]
+}

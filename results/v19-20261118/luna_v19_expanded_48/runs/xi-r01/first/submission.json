@@ -1,0 +1,98 @@
+{
+  "utc": "2026-11-18T13:31:42.781849+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 3,
+      "start_city": "重庆",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start": "重庆西",
+              "end": "西安北",
+              "TrainID": "G3782",
+              "start_time": "06:41",
+              "end_time": "12:26",
+              "price": 482,
+              "cost": 1446,
+              "tickets": 3,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "start_time": "13:00",
+              "end_time": "13:45",
+              "position": "西安饭庄",
+              "price": 128,
+              "cost": 384,
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安饭庄",
+                  "mode": "taxi",
+                  "start_time": "12:35",
+                  "end_time": "12:54",
+                  "price": 52.98,
+                  "cost": 52.98,
+                  "distance": 12.95,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "14:05",
+              "end_time": "15:00",
+              "position": "西安钟楼",
+              "price": 30,
+              "cost": 90,
+              "tickets": 3,
+              "transports": [
+                {
+                  "start": "西安饭庄",
+                  "end": "西安钟楼",
+                  "mode": "walk",
+                  "start_time": "13:50",
+                  "end_time": "14:01",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.9912391442492667
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start": "西安北",
+              "end": "重庆西",
+              "TrainID": "G3781",
+              "start_time": "16:34",
+              "end_time": "22:44",
+              "price": 482,
+              "cost": 1446,
+              "tickets": 3,
+              "transports": [
+                {
+                  "start": "西安钟楼",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "15:15",
+                  "end_time": "15:34",
+                  "price": 52.5,
+                  "cost": 52.5,
+                  "distance": 12.85,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "车票和餐饮为静态历史目录口径：G3782/G3781各482元/人，西安饭庄128元/人；车票库存和实际日价格未知。市内出租车/步行为G3离线图估算。"
+  }
+}

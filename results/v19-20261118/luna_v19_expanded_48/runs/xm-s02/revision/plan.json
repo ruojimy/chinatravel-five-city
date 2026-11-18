@@ -1,0 +1,64 @@
+{
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "tickets": 3,
+          "end_time": "09:20",
+          "cost": 0,
+          "type": "attraction",
+          "start_time": "09:00",
+          "transports": [],
+          "price": 0,
+          "position": "嘉庚公园-鳌亭"
+        },
+        {
+          "tickets": 3,
+          "end_time": "11:15",
+          "cost": 0,
+          "type": "attraction",
+          "start_time": "10:00",
+          "transports": [
+            {
+              "end_time": "09:38",
+              "cost": 0,
+              "distance": 0.7408232346604272,
+              "end": "龙舟池",
+              "mode": "walk",
+              "start": "嘉庚公园-鳌亭",
+              "price": 0,
+              "start_time": "09:30"
+            }
+          ],
+          "price": 0,
+          "position": "龙舟池"
+        },
+        {
+          "type": "lunch",
+          "price": 60,
+          "cost": 180,
+          "start_time": "12:00",
+          "transports": [
+            {
+              "mode": "taxi",
+              "end_time": "11:37",
+              "cost": 23.08,
+              "cars": 1,
+              "distance": 5.25,
+              "start": "龙舟池",
+              "price": 23.08,
+              "end": "绿茶餐厅(厦门集美大悦城店)",
+              "start_time": "11:30"
+            }
+          ],
+          "end_time": "13:00",
+          "position": "绿茶餐厅(厦门集美大悦城店)"
+        }
+      ],
+      "day": 1
+    }
+  ],
+  "people_number": 3
+}

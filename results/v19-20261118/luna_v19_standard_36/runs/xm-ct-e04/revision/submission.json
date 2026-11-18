@@ -1,0 +1,136 @@
+{
+  "utc": "2026-11-18T14:34:09.410121+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "修正末日接驳终点为返程车次实际出发站厦门站，使用本题修订阶段goto查询结果；其余条件价格与未知项说明保持不变。",
+    "plan": {
+      "people_number": 2,
+      "start_city": "广州",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:18",
+              "end_time": "09:36",
+              "cost": 605,
+              "price": 302.5,
+              "tickets": 2,
+              "TrainID": "G3017",
+              "start": "广州南站",
+              "end": "厦门北站",
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "10:45",
+              "end_time": "09:00",
+              "cost": 1000,
+              "price": 500,
+              "rooms": 2,
+              "room_type": 1,
+              "position": "瑞颐大酒店",
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "瑞颐大酒店",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:31",
+                  "price": 88.18,
+                  "cost": 88.18,
+                  "distance": 20.77,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:30",
+              "end_time": "16:30",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "南普陀寺",
+              "transports": [
+                {
+                  "start": "瑞颐大酒店",
+                  "end": "南普陀寺",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:03",
+                  "price": 11.86,
+                  "cost": 11.86,
+                  "distance": 2.05,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "17:30",
+              "end_time": "05:30",
+              "cost": 1000,
+              "price": 500,
+              "rooms": 2,
+              "room_type": 1,
+              "position": "瑞颐大酒店",
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "瑞颐大酒店",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:03",
+                  "price": 11.86,
+                  "cost": 11.86,
+                  "distance": 2.05,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "07:00",
+              "end_time": "11:03",
+              "cost": 616,
+              "price": 308,
+              "tickets": 2,
+              "TrainID": "G1329",
+              "start": "厦门站",
+              "end": "广州新塘站",
+              "transports": [
+                {
+                  "start": "瑞颐大酒店",
+                  "end": "厦门站",
+                  "mode": "taxi",
+                  "start_time": "06:00",
+                  "end_time": "06:06",
+                  "price": 19.57,
+                  "cost": 19.57,
+                  "distance": 4.25,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_sha256": "3e8bfef62309f3f87bf616ae2abd746f5911883575a80a6d1fbf4ab7291664fd",
+  "feedback_sha256": "d8ca37c237c62e15b66d5d276785b3774eb9b8a19b9b80dc3d918bc801681fbb"
+}

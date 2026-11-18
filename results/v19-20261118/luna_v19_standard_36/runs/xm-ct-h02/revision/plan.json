@@ -1,0 +1,194 @@
+{
+  "people_number": 5,
+  "start_city": "北京",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G981",
+          "start": "北京南站",
+          "end": "厦门北站",
+          "start_time": "08:46",
+          "end_time": "19:57",
+          "price": 1185.5,
+          "cost": 5927.5,
+          "tickets": 5,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "start_time": "21:03",
+          "end_time": "08:00",
+          "price": 109,
+          "cost": 327,
+          "rooms": 3,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "20:30",
+              "end_time": "21:03",
+              "price": 94.99,
+              "cost": 189.98,
+              "distance": 22.29,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "南普陀寺",
+          "start_time": "09:30",
+          "end_time": "11:45",
+          "price": 0,
+          "cost": 0,
+          "tickets": 5,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "南普陀寺",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:00",
+              "price": 11,
+              "cost": 22,
+              "distance": 0.58,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "position": "春吉烧肉粽(沙坡尾店)",
+          "start_time": "12:10",
+          "end_time": "12:50",
+          "price": 28,
+          "cost": 140,
+          "transports": [
+            {
+              "start": "南普陀寺",
+              "end": "春吉烧肉粽(沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "12:00",
+              "end_time": "12:01",
+              "price": 11,
+              "cost": 22,
+              "distance": 0.82,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "start_time": "13:04",
+          "end_time": "08:00",
+          "price": 109,
+          "cost": 327,
+          "rooms": 3,
+          "transports": [
+            {
+              "start": "春吉烧肉粽(沙坡尾店)",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:00",
+              "price": 11,
+              "cost": 22,
+              "distance": 0.4,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "狐尾山公园-和美园",
+          "start_time": "09:30",
+          "end_time": "11:45",
+          "price": 0,
+          "cost": 0,
+          "tickets": 5,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "狐尾山公园-和美园",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:08",
+              "price": 24.95,
+              "cost": 49.9,
+              "distance": 5.79,
+              "cars": 2
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "start_time": "13:08",
+          "end_time": "07:00",
+          "price": 109,
+          "cost": 327,
+          "rooms": 3,
+          "transports": [
+            {
+              "start": "狐尾山公园-和美园",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:08",
+              "price": 24.95,
+              "cost": 49.9,
+              "distance": 5.79,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G966",
+          "start": "厦门北站",
+          "end": "北京南站",
+          "start_time": "09:32",
+          "end_time": "21:18",
+          "price": 1078.5,
+          "cost": 5392.5,
+          "tickets": 5,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "08:30",
+              "end_time": "09:03",
+              "price": 94.99,
+              "cost": 189.98,
+              "distance": 22.29,
+              "cars": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "people_number": 2,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "嘉庚公园",
+          "start_time": "09:00",
+          "end_time": "10:00",
+          "price": 0,
+          "tickets": 2,
+          "cost": 0,
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "position": "龙舟池",
+          "start_time": "10:09",
+          "end_time": "11:15",
+          "price": 0,
+          "tickets": 2,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "嘉庚公园",
+              "end": "龙舟池",
+              "mode": "walk",
+              "start_time": "10:00",
+              "end_time": "10:09",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.8304591862836017
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "position": "绿茶餐厅(厦门集美大悦城店)",
+          "start_time": "12:33",
+          "end_time": "13:30",
+          "price": 60,
+          "cost": 120,
+          "transports": [
+            {
+              "start": "龙舟池",
+              "end": "绿茶餐厅(厦门集美大悦城店)",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "12:33",
+              "price": 0,
+              "cost": 0,
+              "distance": 5.250369882398681
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

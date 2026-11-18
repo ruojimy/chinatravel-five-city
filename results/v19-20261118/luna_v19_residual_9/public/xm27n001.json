@@ -1,0 +1,11 @@
+{
+  "uid": "xm27n001",
+  "tag": "medium",
+  "start_city": "北京",
+  "target_city": "厦门",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "两人从北京坐火车往返厦门，含在途总共3天。去程第1天16:00至17:00之间出发，第2天抵厦后住一晚并安排景点，第3天抵达北京。"
+}

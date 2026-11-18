@@ -1,0 +1,106 @@
+{
+  "utc": "2026-11-18T14:27:22.059892+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "广州",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:18",
+              "end_time": "09:36",
+              "cost": 1210,
+              "price": 302.5,
+              "tickets": 4,
+              "TrainID": "G3017",
+              "start": "广州南站",
+              "end": "厦门北站",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "11:00",
+              "end_time": "17:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 4,
+              "position": "沙坡尾",
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:33",
+                  "cost": 94.68,
+                  "price": 94.68,
+                  "distance": 22.22,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "10:00",
+              "cost": 1277.94,
+              "price": 638.97,
+              "rooms": 2,
+              "room_type": 2,
+              "position": "厦门磐基希尔顿酒店",
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "厦门磐基希尔顿酒店",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:08",
+                  "cost": 25.52,
+                  "price": 25.52,
+                  "distance": 5.95,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "11:09",
+              "end_time": "15:16",
+              "cost": 1184,
+              "price": 296,
+              "tickets": 4,
+              "TrainID": "D3315",
+              "start": "厦门北站",
+              "end": "广州新塘站",
+              "transports": [
+                {
+                  "start": "厦门磐基希尔顿酒店",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:26",
+                  "cost": 75.24,
+                  "price": 75.24,
+                  "distance": 17.9,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "仅用本题公开目录、往返车次、Hilton room_options 历史报价和 goto 路线。Hilton 双床豪华客房的官方历史报价为2026-10-24至25每间638.97元、2张床、2成人，乘以2间并用于条件预算；日期已过、无当前库存或价格保证。沙坡尾按户外开放街区及零价景点快照条件计。离线路线报价不是现实路线证明。未安排餐饮，预算小计不含餐费。"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-18T13:05:32.763568+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:30",
+              "end_time": "11:20",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "嘉庚公园-鳌亭",
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:45",
+              "end_time": "12:45",
+              "cost": 120,
+              "price": 60,
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "transports": [
+                {
+                  "start": "嘉庚公园-鳌亭",
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "mode": "taxi",
+                  "start_time": "11:30",
+                  "end_time": "11:38",
+                  "price": 25.18,
+                  "cost": 25.18,
+                  "distance": 5.85,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "13:10",
+              "end_time": "15:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "龙舟池",
+              "transports": [
+                {
+                  "start": "绿茶餐厅(厦门集美大悦城店)",
+                  "end": "龙舟池",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:07",
+                  "price": 23.08,
+                  "cost": 23.08,
+                  "distance": 5.25,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "将题目所说嘉庚公园落到目录内有时段信息的园内实体“嘉庚公园-鳌亭”（目录静态快照为08:00–22:00）；它是嘉庚公园内景点。该实体及龙舟池的票价都未提供，依题目授权仅作0元条件假设，实际票价未知。龙舟池目录显示全天，但开放时段是时效未知的历史参考。绿茶餐厅静态参考人均60元，营业时段覆盖午餐；实际日期库存/价格未知。两段市内出租车由 goto 查询，都是G3静态图距离估价而非实时路线证明；map_departures无试跑接驳报价。"
+  },
+  "first_sha256": "4bc73b4bd1f54cb630b8f70c70d04c2ce5d07db794c8befa0251b43657339d92",
+  "feedback_sha256": "ce6c6abd27649f861afa249bc596bea4f130edd312c21f1c00dbb8e45b0095bb"
+}

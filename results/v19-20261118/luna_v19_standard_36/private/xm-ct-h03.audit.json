@@ -1,0 +1,27 @@
+{
+  "uid": "xm-ct-h03",
+  "scorer_query_sha256": "675d1e9cff971a24cc1ef01946c0fa2ef4ace65d678847f05994f627aa88f50b",
+  "unresolved_requirements": [],
+  "clauses": [
+    {
+      "repaired_index": 0,
+      "key": "room_count"
+    },
+    {
+      "repaired_index": 1,
+      "key": "total_budget"
+    },
+    {
+      "repaired_index": 2,
+      "key": "trip_days"
+    },
+    {
+      "repaired_index": 3,
+      "key": "people_number"
+    },
+    {
+      "repaired_index": 4,
+      "key": "taxi_cars"
+    }
+  ]
+}

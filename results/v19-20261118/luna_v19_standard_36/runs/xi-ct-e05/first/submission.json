@@ -1,0 +1,78 @@
+{
+  "utc": "2026-11-18T14:22:19.493092+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "条件静态一日往返；G3925/G3864历史票价为2026-11-16参考，出行日期及余票未知。景点未提供票价，按协议授权零元假设。城市接驳采用沙盒出租车估时估价；未暴露的餐饮价不做估算。",
+    "plan": {
+      "people_number": 1,
+      "start_city": "武汉",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "10:01",
+              "end_time": "12:58",
+              "cost": 453,
+              "price": 453,
+              "tickets": 1,
+              "TrainID": "G3925",
+              "start": "汉口",
+              "end": "西安东",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "14:00",
+              "end_time": "17:45",
+              "cost": 0,
+              "price": 0,
+              "tickets": 1,
+              "position": "城墙公园",
+              "transports": [
+                {
+                  "start": "西安东站",
+                  "end": "城墙公园",
+                  "mode": "taxi",
+                  "start_time": "13:30",
+                  "end_time": "13:46",
+                  "price": 43.21,
+                  "cost": 43.21,
+                  "distance": 10.78,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start_time": "19:25",
+              "end_time": "22:37",
+              "cost": 453,
+              "price": 453,
+              "tickets": 1,
+              "TrainID": "G3864",
+              "start": "西安东",
+              "end": "汉口",
+              "transports": [
+                {
+                  "start": "城墙公园",
+                  "end": "西安东站",
+                  "mode": "taxi",
+                  "start_time": "18:00",
+                  "end_time": "18:16",
+                  "price": 43.21,
+                  "cost": 43.21,
+                  "distance": 10.78,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

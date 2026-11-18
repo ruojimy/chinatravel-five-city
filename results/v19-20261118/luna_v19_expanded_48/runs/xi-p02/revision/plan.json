@@ -1,0 +1,117 @@
+{
+  "people_number": 4,
+  "start_city": "苏州",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "苏州北",
+          "end": "西安北",
+          "TrainID": "G1970",
+          "start_time": "06:34",
+          "end_time": "13:20",
+          "price": 822,
+          "cost": 3288,
+          "tickets": 4,
+          "transports": []
+        },
+        {
+          "type": "lunch",
+          "start_time": "13:56",
+          "end_time": "14:30",
+          "position": "同盛祥(凤城五路店)",
+          "price": 42,
+          "cost": 168,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安北站",
+              "mode": "walk",
+              "start_time": "13:28",
+              "end_time": "13:32",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.17
+            },
+            {
+              "start": "西安北站",
+              "end": "凤城五路",
+              "mode": "metro",
+              "start_time": "13:32",
+              "end_time": "13:45",
+              "price": 2,
+              "cost": 8,
+              "distance": 5.24,
+              "tickets": 4
+            },
+            {
+              "start": "凤城五路",
+              "end": "同盛祥(凤城五路店)",
+              "mode": "walk",
+              "start_time": "13:45",
+              "end_time": "13:56",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.66
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "14:51",
+          "end_time": "08:00",
+          "position": "西安索菲特人民大厦",
+          "price": 491,
+          "cost": 1964,
+          "rooms": 4,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "同盛祥(凤城五路店)",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "14:40",
+              "end_time": "14:51",
+              "price": 30.4,
+              "cost": 30.4,
+              "distance": 7.34,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "苏州北",
+          "TrainID": "G1942",
+          "start_time": "15:56",
+          "end_time": "23:25",
+          "price": 812,
+          "cost": 3248,
+          "tickets": 4,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "14:30",
+              "end_time": "14:48",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

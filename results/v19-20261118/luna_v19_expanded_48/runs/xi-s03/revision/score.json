@@ -1,0 +1,158 @@
+{
+  "uid": "xi-s03",
+  "target_root": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v19_maps\\engine",
+  "query_sha256": "a40da3cc8549e3f9bd09ae810026dedfda3c9e514f831ac154ef98722eb3b3b4",
+  "plan_sha256": "db7a5300f2b3428b8d566924678dd1933612a213115606850739e04708455e43",
+  "scored_utc": "2026-11-18T13:44:47.944644+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "messages": [
+        "Conditional zero assumption for missing attraction ticket: 日本飞机轰炸西安遗址"
+      ],
+      "conditional_assumptions": [
+        "Conditional zero assumption for missing attraction ticket: 日本飞机轰炸西安遗址"
+      ]
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": [
+        "Conditional room type derived from benchmark bed field: 西安索菲特人民大厦"
+      ],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "pass"
+  },
+  "hard": {
+    "state": "fail",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "fail",
+        "evaluator": "grounded_place_clauses"
+      },
+      {
+        "index": 3,
+        "state": "pass"
+      },
+      {
+        "index": 4,
+        "state": "pass"
+      },
+      {
+        "index": 5,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "requested_places": {
+    "state": "pass",
+    "items": [],
+    "boundary": "Name/alias match is not proof of opening, geographic identity, ferry or real-world access."
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "b62fec261c1db22a992c98aba3accfd26e34ee5a3a4ee3386d7de7c359eb54b1",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  }
+}

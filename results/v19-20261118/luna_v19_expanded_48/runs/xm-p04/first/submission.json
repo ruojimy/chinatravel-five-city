@@ -1,0 +1,71 @@
+{
+  "utc": "2026-11-18T13:38:45.256627+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:00",
+              "end_time": "11:00",
+              "cost": 0,
+              "price": 0,
+              "transports": [],
+              "position": "南普陀寺",
+              "tickets": 4
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:45",
+              "end_time": "12:30",
+              "cost": 144,
+              "price": 36,
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "阿呆姜母鸭(大同路店)",
+                  "mode": "walk",
+                  "start_time": "11:15",
+                  "end_time": "11:44",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 2.4270315117251755
+                }
+              ],
+              "position": "阿呆姜母鸭(大同路店)"
+            },
+            {
+              "type": "attraction",
+              "start_time": "12:45",
+              "end_time": "15:00",
+              "cost": 0,
+              "price": 0,
+              "transports": [
+                {
+                  "start": "阿呆姜母鸭(大同路店)",
+                  "end": "中山路步行街",
+                  "mode": "walk",
+                  "start_time": "12:30",
+                  "end_time": "12:34",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.3991090110097619
+                }
+              ],
+              "position": "中山路步行街",
+              "tickets": 4
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件评测：城际票价为沙盒给出的 2026-11-16 历史参考，不代表出行日班次库存或折扣；市内交通按 G3 冻结静态图估算时间和费用，不构成实时地图路况证明。住宿采用目录历史预算价及每间 1 床的容量代理，按人数安排房间；实际房型、日期价格和余量未知。景点目录未提供入场价时按题面允许的零元条件假设。"
+  }
+}

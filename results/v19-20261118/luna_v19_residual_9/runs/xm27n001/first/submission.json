@@ -1,0 +1,134 @@
+{
+  "utc": "2026-11-18T13:03:35.304534+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "北京",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "16:12",
+              "end_time": "10:09",
+              "arrival_day": 2,
+              "cost": 1002,
+              "price": 501,
+              "tickets": 2,
+              "TrainID": "D131",
+              "start": "北京丰台站",
+              "end": "厦门北站",
+              "transports": []
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "11:00",
+              "end_time": "11:15",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "中山路步行街",
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "中山路步行街",
+                  "mode": "taxi",
+                  "start_time": "10:30",
+                  "end_time": "11:00",
+                  "cost": 86.19,
+                  "price": 86.19,
+                  "distance": 20.33,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "11:30",
+              "end_time": "15:30",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "厦门园林植物园-厦门国防园",
+              "transports": [
+                {
+                  "start": "中山路步行街",
+                  "end": "厦门园林植物园-厦门国防园",
+                  "mode": "taxi",
+                  "start_time": "11:15",
+                  "end_time": "11:19",
+                  "cost": 14.06,
+                  "price": 14.06,
+                  "distance": 2.67,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "07:00",
+              "cost": 638.97,
+              "price": 638.97,
+              "rooms": 1,
+              "room_type": 2,
+              "position": "厦门磐基希尔顿酒店",
+              "transports": [
+                {
+                  "start": "厦门园林植物园-厦门国防园",
+                  "end": "厦门磐基希尔顿酒店",
+                  "mode": "taxi",
+                  "start_time": "16:00",
+                  "end_time": "16:05",
+                  "cost": 18.21,
+                  "price": 18.21,
+                  "distance": 3.86,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "09:32",
+              "end_time": "21:18",
+              "cost": 2157,
+              "price": 1078.5,
+              "tickets": 2,
+              "TrainID": "G966",
+              "start": "厦门北站",
+              "end": "北京南站",
+              "transports": [
+                {
+                  "start": "厦门磐基希尔顿酒店",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "07:30",
+                  "end_time": "07:56",
+                  "cost": 75.24,
+                  "price": 75.24,
+                  "distance": 17.9,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "去程D131按沙盒时长第2天10:09抵厦，满足第2天安排景点并住宿一晚；回程G966第3天09:32出发、21:18抵京。票价是2026-11-16历史参考，非实际日期库存。住宿取希尔顿静态历史参考638.97元/间夜，原记录对应2026-10-24至25两成人一间；房价与库存不能代表实际出行日。厦门北站至市内和后续出租车均为离线拓扑估算。中山路目录票价为0；国防园子项无票价，按协议允许以0元作条件假设并按2张计，真实票价和库存未知。"
+  }
+}

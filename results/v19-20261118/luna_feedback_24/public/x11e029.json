@@ -1,0 +1,17 @@
+{
+  "uid": "x11e029",
+  "tag": "easy",
+  "start_city": "杭州",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置杭州。我们两个人想去西安玩3天，住1间房，请给我一个旅行规划。",
+  "nature_language_en": "Currently in 杭州. we two want to travel to 西安 for 3 day(s); book 1 room(s). Please provide a travel plan.",
+  "xian11": {
+    "city_role": "target",
+    "translation": "controlled_template",
+    "native_compatible": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "first_sha256": "4bc73b4bd1f54cb630b8f70c70d04c2ce5d07db794c8befa0251b43657339d92",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_attractions_correct",
+      "state": "fail",
+      "messages": [
+        "No information found given attraction [嘉庚公园]"
+      ],
+      "cells": {
+        "Unavailable attractions": 1,
+        "Visiting attraction in their closed time": 1,
+        "Repeated attraction Choices": 1,
+        "Incorrect price Information of attraction": 1,
+        "Incorrect cost Information of attraction": 1
+      }
+    }
+  ]
+}

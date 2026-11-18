@@ -1,0 +1,124 @@
+{
+  "people_number": 2,
+  "start_city": "杭州",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G1874",
+          "start": "杭州东",
+          "end": "西安北",
+          "start_time": "06:26",
+          "end_time": "14:22",
+          "price": 819.5,
+          "cost": 1639,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "position": "西安索菲特人民大厦",
+          "start_time": "15:00",
+          "end_time": "08:00",
+          "price": 491,
+          "cost": 491,
+          "rooms": 1,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "14:30",
+              "end_time": "14:48",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "大兴善寺",
+          "start_time": "09:06",
+          "end_time": "11:00",
+          "price": 0,
+          "cost": 0,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "大兴善寺",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:06",
+              "price": 20.85,
+              "cost": 20.85,
+              "distance": 4.61,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "西安索菲特人民大厦",
+          "start_time": "16:06",
+          "end_time": "08:00",
+          "price": 491,
+          "cost": 491,
+          "rooms": 1,
+          "transports": [
+            {
+              "start": "大兴善寺",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "16:00",
+              "end_time": "16:06",
+              "price": 20.85,
+              "cost": 20.85,
+              "distance": 4.61,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G1876",
+          "start": "西安北",
+          "end": "杭州东",
+          "start_time": "15:37",
+          "end_time": "23:26",
+          "price": 819.5,
+          "cost": 1639,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "13:48",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

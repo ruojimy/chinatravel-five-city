@@ -1,0 +1,70 @@
+{
+  "people_number": 1,
+  "start_city": "成都",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:09",
+          "end_time": "09:31",
+          "cost": 316,
+          "price": 316,
+          "tickets": 1,
+          "TrainID": "D1998",
+          "start": "成都东",
+          "end": "西安北",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "10:30",
+          "end_time": "18:00",
+          "cost": 0,
+          "price": 0,
+          "tickets": 1,
+          "position": "城墙公园",
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "城墙公园",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:20",
+              "price": 56.63,
+              "cost": 56.63,
+              "distance": 13.76,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start_time": "19:58",
+          "end_time": "23:27",
+          "cost": 316,
+          "price": 316,
+          "tickets": 1,
+          "TrainID": "G3417",
+          "start": "西安北",
+          "end": "成都东",
+          "transports": [
+            {
+              "start": "城墙公园",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "18:30",
+              "end_time": "18:50",
+              "price": 56.63,
+              "cost": 56.63,
+              "distance": 13.76,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "target_city": "西安",
+  "people_number": 2,
+  "start_city": "成都",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "tickets": 2,
+          "price": 316,
+          "end_time": "09:31",
+          "start_time": "06:09",
+          "start": "成都东",
+          "transports": [],
+          "end": "西安北",
+          "type": "train",
+          "TrainID": "D1998",
+          "cost": 632
+        },
+        {
+          "price": 85,
+          "position": "西安碑林博物馆",
+          "end_time": "14:00",
+          "cost": 170,
+          "tickets": 2,
+          "transports": [
+            {
+              "cars": 1,
+              "mode": "taxi",
+              "end_time": "10:20",
+              "start_time": "10:00",
+              "start": "西安北站",
+              "distance": 13.55,
+              "end": "西安碑林博物馆",
+              "cost": 55.69,
+              "price": 55.69
+            }
+          ],
+          "start_time": "10:30",
+          "type": "attraction"
+        },
+        {
+          "price": 491,
+          "position": "西安索菲特人民大厦",
+          "rooms": 1,
+          "end_time": "09:00",
+          "cost": 491,
+          "transports": [
+            {
+              "cars": 1,
+              "mode": "taxi",
+              "end_time": "14:32",
+              "start_time": "14:30",
+              "start": "西安碑林博物馆",
+              "distance": 1.41,
+              "end": "西安索菲特人民大厦",
+              "cost": 11,
+              "price": 11
+            }
+          ],
+          "start_time": "21:00",
+          "type": "accommodation"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "cost": 256,
+          "price": 128,
+          "transports": [
+            {
+              "cars": 1,
+              "mode": "taxi",
+              "end_time": "11:00",
+              "start_time": "11:00",
+              "start": "西安索菲特人民大厦",
+              "distance": 0.64,
+              "end": "西安饭庄",
+              "cost": 11,
+              "price": 11
+            }
+          ],
+          "start_time": "11:15",
+          "type": "lunch",
+          "position": "西安饭庄",
+          "end_time": "12:00"
+        },
+        {
+          "tickets": 2,
+          "price": 316,
+          "end_time": "17:53",
+          "start_time": "14:01",
+          "start": "西安北",
+          "transports": [
+            {
+              "cars": 1,
+              "mode": "taxi",
+              "end_time": "13:04",
+              "start_time": "12:45",
+              "start": "西安饭庄",
+              "distance": 12.95,
+              "end": "西安北站",
+              "cost": 52.98,
+              "price": 52.98
+            }
+          ],
+          "end": "成都东",
+          "type": "train",
+          "TrainID": "G1887",
+          "cost": 632
+        }
+      ]
+    }
+  ]
+}

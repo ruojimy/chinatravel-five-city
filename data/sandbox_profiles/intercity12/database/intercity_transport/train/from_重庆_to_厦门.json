@@ -1,0 +1,410 @@
+[
+ {
+  "TrainID": "D2378",
+  "From": "重庆北站",
+  "To": "厦门北站",
+  "BeginTime": "06:01",
+  "EndTime": "19:55",
+  "Duration": 13.9,
+  "TrainType": "高铁",
+  "Cost": null,
+  "TravelDate": null,
+  "ReferenceDate": "2026-11-14",
+  "ReferenceOnly": true,
+  "ReferenceState": "historic_12306_reference_date_not_current",
+  "HistoricalCost": null,
+  "CostAvailability": "unknown",
+  "CostActualPurchasePrice": "unknown",
+  "ReferenceAuthority": "carrier_published_schedule",
+  "ReferenceRecordID": "xian:121e847f7e0a169a30786c80",
+  "ReferenceSourceLocator": {
+   "raw_path": "results/xiamen_wave2_20261113_1937/raw_api/12306/train_2026-11-14_CQW_XMS.json",
+   "locator": "2026-11-14 CQW->XMS direct",
+   "quote": "D2378",
+   "date_text": null
+  },
+  "RawEvidencePath": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_CQW_XMS.json",
+  "RawEvidenceSHA256": "9639dc7441c677b4aa00382ce5621555dd79bbf43c576914099145a42bbfa2ee",
+  "ReferenceRetrievedAt": "2026-11-13T22:01:41+08:00",
+  "FieldProvenance": {
+   "TrainID": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "TrainType": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "From": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "To": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "BeginTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "EndTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "Duration": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:5db4fd69b00d353205cdb92e9cc6afe3fcbba4e7",
+    "quote": "D2378",
+    "valid_until": null
+   },
+   "Cost": {
+    "source_id": null,
+    "source_url": null,
+    "observed_at": null,
+    "status": "unknown",
+    "evidence_id": null,
+    "quote": null,
+    "valid_until": null
+   }
+  }
+ },
+ {
+  "TrainID": "K403",
+  "From": "重庆西站",
+  "To": "厦门北站",
+  "BeginTime": "22:58",
+  "EndTime": "06:25",
+  "Duration": 31.45,
+  "TrainType": "普速",
+  "Cost": null,
+  "TravelDate": null,
+  "ReferenceDate": "2026-11-14",
+  "ReferenceOnly": true,
+  "ReferenceState": "historic_12306_reference_date_not_current",
+  "HistoricalCost": null,
+  "CostAvailability": "unknown",
+  "CostActualPurchasePrice": "unknown",
+  "ReferenceAuthority": "carrier_published_schedule",
+  "ReferenceRecordID": "xian:b0ab740fc4f9be2ab027a511",
+  "ReferenceSourceLocator": {
+   "raw_path": "results/xiamen_wave2_20261113_1937/raw_api/12306/train_2026-11-14_CQW_XMS.json",
+   "locator": "2026-11-14 CQW->XMS direct",
+   "quote": "K403",
+   "date_text": null
+  },
+  "RawEvidencePath": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_CQW_XMS.json",
+  "RawEvidenceSHA256": "9639dc7441c677b4aa00382ce5621555dd79bbf43c576914099145a42bbfa2ee",
+  "ReferenceRetrievedAt": "2026-11-13T22:01:41+08:00",
+  "FieldProvenance": {
+   "TrainID": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "TrainType": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "From": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "To": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "BeginTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "EndTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "Duration": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:747494a643f7a9882536e1f5d6a10dc604962b11",
+    "quote": "K403",
+    "valid_until": null
+   },
+   "Cost": {
+    "source_id": null,
+    "source_url": null,
+    "observed_at": null,
+    "status": "unknown",
+    "evidence_id": null,
+    "quote": null,
+    "valid_until": null
+   }
+  }
+ },
+ {
+  "TrainID": "G2371",
+  "From": "重庆西站",
+  "To": "厦门北站",
+  "BeginTime": "08:05",
+  "EndTime": "20:51",
+  "Duration": 12.77,
+  "TrainType": "高铁",
+  "Cost": null,
+  "TravelDate": null,
+  "ReferenceDate": "2026-11-14",
+  "ReferenceOnly": true,
+  "ReferenceState": "historic_12306_reference_date_not_current",
+  "HistoricalCost": null,
+  "CostAvailability": "unknown",
+  "CostActualPurchasePrice": "unknown",
+  "ReferenceAuthority": "carrier_published_schedule",
+  "ReferenceRecordID": "xian:cf30b30eda42efbe0bf19642",
+  "ReferenceSourceLocator": {
+   "raw_path": "results/xiamen_wave2_20261113_1937/raw_api/12306/train_2026-11-14_CQW_XMS.json",
+   "locator": "2026-11-14 CQW->XMS direct",
+   "quote": "G2371",
+   "date_text": null
+  },
+  "RawEvidencePath": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_CQW_XMS.json",
+  "RawEvidenceSHA256": "9639dc7441c677b4aa00382ce5621555dd79bbf43c576914099145a42bbfa2ee",
+  "ReferenceRetrievedAt": "2026-11-13T22:01:41+08:00",
+  "FieldProvenance": {
+   "TrainID": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "TrainType": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "From": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "To": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "BeginTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "EndTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "Duration": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:c9596aebf1c015d64a1dec51bad81aff00b0b966",
+    "quote": "G2371",
+    "valid_until": null
+   },
+   "Cost": {
+    "source_id": null,
+    "source_url": null,
+    "observed_at": null,
+    "status": "unknown",
+    "evidence_id": null,
+    "quote": null,
+    "valid_until": null
+   }
+  }
+ },
+ {
+  "TrainID": "D2234",
+  "From": "重庆北站",
+  "To": "厦门北站",
+  "BeginTime": "08:30",
+  "EndTime": "22:09",
+  "Duration": 13.65,
+  "TrainType": "高铁",
+  "Cost": null,
+  "TravelDate": null,
+  "ReferenceDate": "2026-11-15",
+  "ReferenceOnly": true,
+  "ReferenceState": "historic_12306_reference_date_not_current",
+  "HistoricalCost": null,
+  "CostAvailability": "unknown",
+  "CostActualPurchasePrice": "unknown",
+  "ReferenceAuthority": "carrier_published_schedule",
+  "ReferenceRecordID": "xian:ebe5b1f0b8f97d29680d0e00",
+  "ReferenceSourceLocator": {
+   "raw_path": "results/xiamen_wave2_20261113_1937/raw_api/12306/train_2026-11-15_CQW_XMS.json",
+   "locator": "2026-11-15 CQW->XMS direct",
+   "quote": "D2234",
+   "date_text": null
+  },
+  "RawEvidencePath": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-15_CQW_XMS.json",
+  "RawEvidenceSHA256": "1fc421a9de00adb64dc019fded3e8f606d0bd882081fc8f0e51943d6e63b52f2",
+  "ReferenceRetrievedAt": "2026-11-13T22:01:41+08:00",
+  "FieldProvenance": {
+   "TrainID": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "TrainType": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "From": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "To": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "BeginTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "EndTime": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "Duration": {
+    "source_id": "xian-src:7b07cb7bd9ad137d",
+    "source_url": "https://kyfw.12306.cn/otn/leftTicket/init",
+    "observed_at": null,
+    "status": "source_value",
+    "evidence_id": "xian-evidence:0ebb29fc0e5614e3813a4f496dfed1df97201f91",
+    "quote": "D2234",
+    "valid_until": null
+   },
+   "Cost": {
+    "source_id": null,
+    "source_url": null,
+    "observed_at": null,
+    "status": "unknown",
+    "evidence_id": null,
+    "quote": null,
+    "valid_until": null
+   }
+  }
+ }
+]

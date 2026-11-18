@@ -1,0 +1,8 @@
+{
+  "first_sha256": "6400616b4f642a62983f88f8ff4bfc4e3618455f377172526b50a1b2405a7c31",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查询杭州—厦门及厦门—杭州往返航班，结果均无可用records且无票价，无法核验题目要求的往返航班时刻和票价。票价是城际活动必填金额，不能推测。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

@@ -1,0 +1,204 @@
+{
+  "utc": "2026-11-18T14:34:28.768153+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 5,
+      "start_city": "北京",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G981",
+              "start": "北京南站",
+              "end": "厦门北站",
+              "start_time": "08:46",
+              "end_time": "19:57",
+              "price": 1185.5,
+              "cost": 5927.5,
+              "tickets": 5,
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "start_time": "21:03",
+              "end_time": "08:00",
+              "price": 109,
+              "cost": 327,
+              "rooms": 3,
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "20:30",
+                  "end_time": "21:03",
+                  "price": 94.99,
+                  "cost": 189.98,
+                  "distance": 22.29,
+                  "cars": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "南普陀寺",
+              "start_time": "09:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "tickets": 5,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "南普陀寺",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:00",
+                  "price": 11,
+                  "cost": 22,
+                  "distance": 0.58,
+                  "cars": 2
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "春吉烧肉粽(沙坡尾店)",
+              "start_time": "12:10",
+              "end_time": "12:50",
+              "price": 28,
+              "cost": 140,
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "春吉烧肉粽(沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "end_time": "12:01",
+                  "price": 11,
+                  "cost": 22,
+                  "distance": 0.82,
+                  "cars": 2
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "start_time": "13:04",
+              "end_time": "08:00",
+              "price": 109,
+              "cost": 327,
+              "rooms": 3,
+              "transports": [
+                {
+                  "start": "春吉烧肉粽(沙坡尾店)",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:00",
+                  "price": 11,
+                  "cost": 22,
+                  "distance": 0.4,
+                  "cars": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "狐尾山公园-和美园",
+              "start_time": "09:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "tickets": 5,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "狐尾山公园-和美园",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:08",
+                  "price": 24.95,
+                  "cost": 49.9,
+                  "distance": 5.79,
+                  "cars": 2
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "start_time": "13:08",
+              "end_time": "07:00",
+              "price": 109,
+              "cost": 327,
+              "rooms": 3,
+              "transports": [
+                {
+                  "start": "狐尾山公园-和美园",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:08",
+                  "price": 24.95,
+                  "cost": 49.9,
+                  "distance": 5.79,
+                  "cars": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G966",
+              "start": "厦门北站",
+              "end": "北京南站",
+              "start_time": "09:32",
+              "end_time": "21:18",
+              "price": 1078.5,
+              "cost": 5392.5,
+              "tickets": 5,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "08:30",
+                  "end_time": "09:03",
+                  "price": 94.99,
+                  "cost": 189.98,
+                  "distance": 22.29,
+                  "cars": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件性静态沙盒行程。车次与票价来自该题本次 intercity_search，历史票价只作无日期预算参考，实际日期班次、票价、库存未核实；市内出租车 legs 是 G3 离线图估算，不构成真实道路证据，需按人数使用 cars。住宿及餐饮价格为目录历史/快照参考，不能证明实际日期价格、房型或余量；厦门 room_options 未提供可采信房型或当前库存，房间数是规划成本假设（xm-ct-h03按题面两间房）。景点缺票价按协议使用0元条件假设，需出行前核实。只列一顿有目录人均价的午餐，不含其他餐食、未录入的门票或个人消费。目录没有人流证据，“较清静”只是场所类型选择，不保证人少。 Revision: replaced the venue with a same-UID catalog match containing hours and a supported price; updated its route. "
+  },
+  "first_sha256": "21a2c65b01c724e02ca01988a90a058d901db90d39d1712f49854b323d1afc9e",
+  "feedback_sha256": "ad5e98375e31bfd1693d8f16360591636879fb8070a87ef1078d65bdc93c411b"
+}

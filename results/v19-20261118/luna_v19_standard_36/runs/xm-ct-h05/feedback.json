@@ -1,0 +1,22 @@
+{
+  "first_sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_restaurants_correct",
+      "state": "fail",
+      "messages": [
+        "No information found given restaurant [海鲜生海景餐厅]"
+      ],
+      "cells": {
+        "Unavailable Restruants": 1,
+        "Visiting Restruants in their closed time": 1,
+        "Repeated Restruants Choices": 1,
+        "Incorrect price Information of Restruants": 1,
+        "Incorrect cost Information of Restruants": 1,
+        "Inappropriate Meal Times": 1,
+        "Repeated Meal Types in One Day": 1
+      }
+    }
+  ]
+}

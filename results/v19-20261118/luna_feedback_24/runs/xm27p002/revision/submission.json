@@ -1,0 +1,135 @@
+{
+  "utc": "2026-11-18T12:16:08.622644+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "按反馈将中山路步行街至黄则和的接驳改为12:00发车，与景点结束时间衔接，12:10用餐。景点按目录0元条件值；酒店140元为历史预算参考，房型与现存余量未知，双人入住需确认。起始接驳以厦门站为示例；路线为冻结图估算。",
+    "status": "submitted_first_draft",
+    "plan": {
+      "start_city": "厦门",
+      "people_number": 2,
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "cost": 0,
+              "position": "沙坡尾",
+              "price": 0,
+              "start_time": "10:00",
+              "transports": [
+                {
+                  "end": "沙坡尾",
+                  "cost": 20.16,
+                  "cars": 1,
+                  "start": "厦门站",
+                  "end_time": "09:36",
+                  "price": 20.16,
+                  "mode": "taxi",
+                  "start_time": "09:30",
+                  "distance": 4.42
+                }
+              ],
+              "end_time": "12:00",
+              "type": "attraction",
+              "tickets": 2
+            },
+            {
+              "cost": 154,
+              "start_time": "12:15",
+              "end_time": "13:15",
+              "transports": [
+                {
+                  "end": "沙坡尾62号鱼港",
+                  "cost": 11.0,
+                  "cars": 1,
+                  "start": "沙坡尾",
+                  "end_time": "12:00",
+                  "price": 11.0,
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "distance": 0.01
+                }
+              ],
+              "type": "lunch",
+              "price": 77,
+              "position": "沙坡尾62号鱼港"
+            },
+            {
+              "cost": 140,
+              "position": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+              "price": 140,
+              "start_time": "22:00",
+              "transports": [
+                {
+                  "end": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+                  "cost": 12.79,
+                  "cars": 1,
+                  "start": "沙坡尾62号鱼港",
+                  "end_time": "14:03",
+                  "price": 12.79,
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "distance": 2.31
+                }
+              ],
+              "end_time": "09:00",
+              "type": "accommodation",
+              "rooms": 1
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "cost": 0,
+              "position": "中山路步行街",
+              "price": 0,
+              "start_time": "09:45",
+              "transports": [
+                {
+                  "end": "中山路步行街",
+                  "cost": 11.0,
+                  "cars": 1,
+                  "start": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+                  "end_time": "09:30",
+                  "price": 11.0,
+                  "mode": "taxi",
+                  "start_time": "09:30",
+                  "distance": 0.44
+                }
+              ],
+              "end_time": "12:00",
+              "type": "attraction",
+              "tickets": 2
+            },
+            {
+              "cost": 48,
+              "start_time": "12:10",
+              "end_time": "13:00",
+              "transports": [
+                {
+                  "end": "黄则和花生汤(中山路店)",
+                  "cost": 11.0,
+                  "cars": 1,
+                  "start": "中山路步行街",
+                  "end_time": "12:00",
+                  "price": 11.0,
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "distance": 0.37
+                }
+              ],
+              "type": "lunch",
+              "price": 24,
+              "position": "黄则和花生汤(中山路店)"
+            }
+          ]
+        }
+      ],
+      "target_city": "厦门"
+    }
+  },
+  "first_sha256": "29645b9a48da34b7b9fe8ccd84a2b297baad4562fed696372af43143dab7407c",
+  "feedback_sha256": "06ebc3ed9e6aa8af992892139d743e2909a6fcd07f623b3bd6c3085cbf36bd3f"
+}

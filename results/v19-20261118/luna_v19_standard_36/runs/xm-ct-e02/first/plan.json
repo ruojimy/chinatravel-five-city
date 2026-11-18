@@ -1,0 +1,98 @@
+{
+  "people_number": 3,
+  "start_city": "上海",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:20",
+          "end_time": "13:47",
+          "cost": 1890,
+          "price": 630,
+          "tickets": 3,
+          "TrainID": "G3091",
+          "start": "上海虹桥站",
+          "end": "厦门北站",
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "start_time": "14:40",
+          "end_time": "08:30",
+          "cost": 1500,
+          "price": 500,
+          "rooms": 3,
+          "room_type": 1,
+          "position": "瑞颐大酒店",
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "瑞颐大酒店",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:31",
+              "price": 88.18,
+              "cost": 88.18,
+              "distance": 20.77,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:30",
+          "end_time": "13:30",
+          "cost": 0,
+          "price": 0,
+          "tickets": 3,
+          "position": "南普陀寺",
+          "transports": [
+            {
+              "start": "瑞颐大酒店",
+              "end": "南普陀寺",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:03",
+              "price": 11.86,
+              "cost": 11.86,
+              "distance": 2.05,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start_time": "15:27",
+          "end_time": "22:53",
+          "cost": 1392,
+          "price": 464,
+          "tickets": 3,
+          "TrainID": "D3108",
+          "start": "厦门北站",
+          "end": "上海南站",
+          "transports": [
+            {
+              "start": "南普陀寺",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:32",
+              "price": 93.34,
+              "cost": 93.34,
+              "distance": 21.92,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

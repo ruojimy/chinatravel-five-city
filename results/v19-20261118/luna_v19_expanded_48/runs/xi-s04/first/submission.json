@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-18T13:20:07.064848+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 2,
+              "transports": [],
+              "type": "attraction",
+              "start_time": "09:00",
+              "position": "陕西历史博物馆",
+              "price": 0,
+              "end_time": "12:50",
+              "cost": 0
+            },
+            {
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "陕西历史博物馆",
+                  "end": "大雁塔",
+                  "distance": 0.9933014864751171,
+                  "start_time": "13:00",
+                  "mode": "walk",
+                  "price": 0,
+                  "end_time": "13:11",
+                  "cost": 0
+                }
+              ],
+              "type": "attraction",
+              "start_time": "13:30",
+              "position": "大雁塔",
+              "price": 10,
+              "end_time": "16:00",
+              "cost": 20
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "target_city": "西安",
+      "people_number": 2,
+      "start_city": "西安"
+    },
+    "notes": "静态快照核对陕西历史博物馆与大雁塔。历史博物馆票价按沙盒记录的0元条件假设；步行路线为离线图估时，不代表实时路线；未核实当日票务。"
+  }
+}

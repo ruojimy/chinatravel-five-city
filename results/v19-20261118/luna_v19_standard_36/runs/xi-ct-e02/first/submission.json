@@ -1,0 +1,106 @@
+{
+  "utc": "2026-11-18T14:15:50.137461+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "条件静态方案；G1970/G1942票价为2026-11-16历史参考，实际出行日期、票价及余票未知。住宿按目录单床历史价1440元/间夜、3间估算，实际房型与库存未核实。景点目录无门票价，按协议授权零元条件假设。餐饮价未暴露故未虚构。城内接驳为沙盒静态估时估价。",
+    "plan": {
+      "people_number": 3,
+      "start_city": "上海",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:09",
+              "end_time": "13:20",
+              "cost": 2610,
+              "price": 870,
+              "tickets": 3,
+              "TrainID": "G1970",
+              "start": "上海虹桥",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "14:30",
+              "end_time": "10:00",
+              "cost": 4320,
+              "price": 1440,
+              "rooms": 3,
+              "room_type": 1,
+              "position": "西安索菲特传奇酒店（人民大厦）",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:18",
+                  "price": 50.06,
+                  "cost": 50.06,
+                  "distance": 12.3,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "10:30",
+              "end_time": "13:30",
+              "cost": 0,
+              "price": 0,
+              "tickets": 3,
+              "position": "城墙公园",
+              "transports": [
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "城墙公园",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.53,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start_time": "15:56",
+              "end_time": "23:57",
+              "cost": 2598,
+              "price": 866,
+              "tickets": 3,
+              "TrainID": "G1942",
+              "start": "西安北",
+              "end": "上海虹桥",
+              "transports": [
+                {
+                  "start": "城墙公园",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:20",
+                  "price": 56.63,
+                  "cost": 56.63,
+                  "distance": 13.76,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

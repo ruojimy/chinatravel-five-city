@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:42:49.592189+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "首稿通过反馈的指定要求核对，保留原计划。"
+  },
+  "first_sha256": "8b37b00d183f8c1e679ca9403b71da8e88a1a71c701a91ed03578f245688363c",
+  "feedback_sha256": "11d87baaef2ac6684e718d4ddab63b26917dc7342f818f6b1779ede40fb0c92f"
+}

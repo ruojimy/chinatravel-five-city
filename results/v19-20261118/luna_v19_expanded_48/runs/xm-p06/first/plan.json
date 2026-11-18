@@ -1,0 +1,63 @@
+{
+  "people_number": 3,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "08:30",
+          "end_time": "09:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [],
+          "position": "龙舟池",
+          "tickets": 3
+        },
+        {
+          "type": "attraction",
+          "start_time": "09:15",
+          "end_time": "11:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "龙舟池",
+              "end": "集美学村牌坊",
+              "mode": "walk",
+              "start_time": "09:00",
+              "end_time": "09:06",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.5489002657223828
+            }
+          ],
+          "position": "集美学村牌坊",
+          "tickets": 3
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:45",
+          "end_time": "12:45",
+          "cost": 186,
+          "price": 62,
+          "transports": [
+            {
+              "start": "集美学村牌坊",
+              "end": "银亭海鲜餐厅(集美学村店)",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.2884923117016431
+            }
+          ],
+          "position": "银亭海鲜餐厅(集美学村店)"
+        }
+      ]
+    }
+  ]
+}

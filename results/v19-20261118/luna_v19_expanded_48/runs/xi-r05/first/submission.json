@@ -1,0 +1,112 @@
+{
+  "utc": "2026-11-18T13:35:43.109002+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "北京",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start": "北京西",
+              "end": "西安",
+              "TrainID": "D19",
+              "start_time": "20:41",
+              "end_time": "08:35",
+              "arrival_day": 2,
+              "price": 370,
+              "cost": 740,
+              "tickets": 2,
+              "transports": []
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:05",
+              "end_time": "10:30",
+              "position": "西安钟楼",
+              "price": 30,
+              "cost": 60,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "西安站",
+                  "end": "西安钟楼",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:03",
+                  "price": 13.18,
+                  "cost": 13.18,
+                  "distance": 2.42,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "17:01",
+              "end_time": "08:00",
+              "position": "西安索菲特人民大厦",
+              "price": 491,
+              "cost": 982,
+              "rooms": 2,
+              "room_type": 1,
+              "transports": [
+                {
+                  "start": "西安钟楼",
+                  "end": "西安索菲特人民大厦",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.32,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start": "西安北",
+              "end": "北京西",
+              "TrainID": "G370",
+              "start_time": "19:00",
+              "end_time": "23:17",
+              "price": 618,
+              "cost": 1236,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "西安索菲特人民大厦",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "18:00",
+                  "end_time": "18:18",
+                  "price": 50.37,
+                  "cost": 50.37,
+                  "distance": 12.37,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "D19夜车历史参考370元/人（首日20:41出发，次日08:35抵达）；回程G370参考618元/人，第三日19:00出发并当日23:17抵北京。钟楼30元/人；人民大厦索菲特历史目录价491元/间晚，按1床代理安排2间。实际房型/库存及出行日价格未知，接驳为G3离线估算。"
+  }
+}

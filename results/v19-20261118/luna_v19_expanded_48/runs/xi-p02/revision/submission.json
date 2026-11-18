@@ -1,0 +1,127 @@
+{
+  "utc": "2026-11-18T13:44:09.640683+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "苏州",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start": "苏州北",
+              "end": "西安北",
+              "TrainID": "G1970",
+              "start_time": "06:34",
+              "end_time": "13:20",
+              "price": 822,
+              "cost": 3288,
+              "tickets": 4,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "start_time": "13:56",
+              "end_time": "14:30",
+              "position": "同盛祥(凤城五路店)",
+              "price": 42,
+              "cost": 168,
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安北站",
+                  "mode": "walk",
+                  "start_time": "13:28",
+                  "end_time": "13:32",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.17
+                },
+                {
+                  "start": "西安北站",
+                  "end": "凤城五路",
+                  "mode": "metro",
+                  "start_time": "13:32",
+                  "end_time": "13:45",
+                  "price": 2,
+                  "cost": 8,
+                  "distance": 5.24,
+                  "tickets": 4
+                },
+                {
+                  "start": "凤城五路",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "walk",
+                  "start_time": "13:45",
+                  "end_time": "13:56",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.66
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "14:51",
+              "end_time": "08:00",
+              "position": "西安索菲特人民大厦",
+              "price": 491,
+              "cost": 1964,
+              "rooms": 4,
+              "room_type": 1,
+              "transports": [
+                {
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "西安索菲特人民大厦",
+                  "mode": "taxi",
+                  "start_time": "14:40",
+                  "end_time": "14:51",
+                  "price": 30.4,
+                  "cost": 30.4,
+                  "distance": 7.34,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "train",
+              "start": "西安北",
+              "end": "苏州北",
+              "TrainID": "G1942",
+              "start_time": "15:56",
+              "end_time": "23:25",
+              "price": 812,
+              "cost": 3248,
+              "tickets": 4,
+              "transports": [
+                {
+                  "start": "西安索菲特人民大厦",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "14:30",
+                  "end_time": "14:48",
+                  "price": 50.37,
+                  "cost": 50.37,
+                  "distance": 12.37,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "同盛祥凤城五路店目录价42元/人；G1970参考822元/人，G1942参考812元/人。按固定Amap地铁日程13:28离开北站、13:56抵店，午餐于13:56开始，结束时间延至14:30；符合11:00–14:00午餐开始窗口。人民大厦索菲特历史目录价491元/间晚，按1床容量代理安排4间；实际房型/库存及出行日价格未知。接驳来自固定Amap和G3离线图。"
+  },
+  "first_sha256": "e5772e926b028893354ba9c14675ed335bf55016d3e8d4ad981b7cac22dbeb10",
+  "feedback_sha256": "597719077b8efe945468f6afc3afd1c63c3b6680035dbf525713c5d89c8c329d"
+}

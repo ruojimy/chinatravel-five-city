@@ -1,0 +1,120 @@
+{
+  "utc": "2026-11-18T12:09:21.084912+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "选用静态目录户外开放街区沙坡尾及环岛路海滩，景点缺门票价按统一沙盒授权作零元条件假设；餐馆与酒店采用目录历史价，实际出行日营业、房价、房型和库存未知。酒店按2间×146元/间夜计，未把床数代理当作已确认房型。路线为冻结图估算，不是实时证明；两天餐馆不同。",
+    "plan": {
+      "people_number": 3,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "沙坡尾",
+              "start_time": "09:00",
+              "end_time": "11:00",
+              "price": 0,
+              "tickets": 3,
+              "cost": 0,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "position": "乌糖沙茶面(民族路店)",
+              "start_time": "11:09",
+              "end_time": "12:00",
+              "price": 41,
+              "cost": 123,
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "乌糖沙茶面(民族路店)",
+                  "mode": "walk",
+                  "start_time": "11:00",
+                  "end_time": "11:09",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.8002663399478139
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+              "start_time": "12:33",
+              "end_time": "08:00",
+              "price": 146,
+              "rooms": 2,
+              "cost": 292,
+              "transports": [
+                {
+                  "start": "乌糖沙茶面(民族路店)",
+                  "end": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+                  "mode": "taxi",
+                  "start_time": "12:30",
+                  "end_time": "12:33",
+                  "price": 13.78,
+                  "cost": 13.78,
+                  "distance": 2.59,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "环岛路海滩",
+              "start_time": "09:30",
+              "end_time": "11:15",
+              "price": 0,
+              "tickets": 3,
+              "cost": 0,
+              "transports": [
+                {
+                  "start": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+                  "end": "环岛路海滩",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:05",
+                  "price": 17.97,
+                  "cost": 17.97,
+                  "distance": 3.79,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "黄则和花生汤(中山路店)",
+              "start_time": "11:35",
+              "end_time": "12:20",
+              "price": 24,
+              "cost": 72,
+              "transports": [
+                {
+                  "start": "环岛路海滩",
+                  "end": "黄则和花生汤(中山路店)",
+                  "mode": "taxi",
+                  "start_time": "11:30",
+                  "end_time": "11:35",
+                  "price": 17.45,
+                  "cost": 17.45,
+                  "distance": 3.64,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

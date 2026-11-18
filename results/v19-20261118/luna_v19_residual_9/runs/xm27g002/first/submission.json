@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:03:49.248448+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "已调用厦门 ferry_reference：工具返回运营方已发布参考为东渡客运码头—鼓浪屿三丘田码头，往返票价参考每人35元、单程约20分钟，去程时段07:30–17:30、回程07:40–17:40；但同一工具明确标记 availability=unknown 且 can_build_native_itinerary_leg=false。原生行程 schema 的活动类型没有 ferry，transports 也只允许 walk、metro、taxi，无法按要求准确写出必须的去程和次日返程渡轮腿或对应时刻成本。故无法在限定沙盒格式内核实并生成完整有效行程。"
+    ]
+  }
+}

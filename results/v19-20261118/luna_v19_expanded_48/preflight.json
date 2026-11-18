@@ -1,0 +1,821 @@
+{
+  "profile": {
+    "profile": "xiamen12_historical_v19_maps",
+    "path": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v19_maps",
+    "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+    "boundary": "Undated historical benchmark with exact dated Amap transfer samples. Intercity fares, live availability and unrecorded routes remain unknown."
+  },
+  "boundary": "候选车次满足题目时窗，市内活动可行性另由完整评分确认。",
+  "rail": {
+    "xi-r01": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "07:30",
+          1,
+          "23:59"
+        ],
+        [
+          1,
+          "16:30",
+          "23:59",
+          1,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        2,
+        3
+      ],
+      "pairs": 6,
+      "longest_dwell_pair": [
+        317,
+        {
+          "TrainID": "G3782",
+          "From": "重庆西",
+          "To": "西安北",
+          "BeginTime": "06:41",
+          "EndTime": "12:26",
+          "Cost": 482,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "D1991",
+          "From": "西安北",
+          "To": "重庆西",
+          "BeginTime": "17:43",
+          "EndTime": "22:57",
+          "Cost": 315,
+          "departure_day": 1,
+          "arrival_day": 1
+        }
+      ]
+    },
+    "xi-r02": {
+      "windows": [
+        [
+          1,
+          "09:30",
+          "11:00",
+          1,
+          "23:59"
+        ],
+        [
+          1,
+          "19:00",
+          "23:59",
+          1,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        5,
+        1
+      ],
+      "pairs": 5,
+      "longest_dwell_pair": [
+        387,
+        {
+          "TrainID": "G3925",
+          "From": "汉口",
+          "To": "西安东",
+          "BeginTime": "10:01",
+          "EndTime": "12:58",
+          "Cost": 453,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G3864",
+          "From": "西安东",
+          "To": "汉口",
+          "BeginTime": "19:25",
+          "EndTime": "22:37",
+          "Cost": 453,
+          "departure_day": 1,
+          "arrival_day": 1
+        }
+      ]
+    },
+    "xi-r03": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "08:00",
+          1,
+          "23:59"
+        ],
+        [
+          1,
+          "19:00",
+          "23:59",
+          1,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        9,
+        6
+      ],
+      "pairs": 54,
+      "longest_dwell_pair": [
+        627,
+        {
+          "TrainID": "D1998",
+          "From": "成都东",
+          "To": "西安北",
+          "BeginTime": "06:09",
+          "EndTime": "09:31",
+          "Cost": 316,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G3417",
+          "From": "西安北",
+          "To": "成都东",
+          "BeginTime": "19:58",
+          "EndTime": "23:27",
+          "Cost": 316,
+          "departure_day": 1,
+          "arrival_day": 1
+        }
+      ]
+    },
+    "xi-r04": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "07:00",
+          1,
+          "23:59"
+        ],
+        [
+          2,
+          "15:30",
+          "23:59",
+          2,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        2,
+        2
+      ],
+      "pairs": 4,
+      "longest_dwell_pair": [
+        1596,
+        {
+          "TrainID": "G1970",
+          "From": "苏州北",
+          "To": "西安北",
+          "BeginTime": "06:34",
+          "EndTime": "13:20",
+          "Cost": 822,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G1942",
+          "From": "西安北",
+          "To": "苏州北",
+          "BeginTime": "15:56",
+          "EndTime": "23:25",
+          "Cost": 812,
+          "departure_day": 2,
+          "arrival_day": 2
+        }
+      ]
+    },
+    "xi-r05": {
+      "windows": [
+        [
+          1,
+          "20:00",
+          "21:00",
+          2,
+          "23:59"
+        ],
+        [
+          3,
+          "17:00",
+          "23:59",
+          3,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        3,
+        3
+      ],
+      "pairs": 9,
+      "longest_dwell_pair": [
+        2077,
+        {
+          "TrainID": "D43",
+          "From": "北京西",
+          "To": "西安",
+          "BeginTime": "20:29",
+          "EndTime": "08:23",
+          "Cost": 370,
+          "departure_day": 1,
+          "arrival_day": 2
+        },
+        {
+          "TrainID": "G370",
+          "From": "西安北",
+          "To": "北京西",
+          "BeginTime": "19:00",
+          "EndTime": "23:17",
+          "Cost": 618,
+          "departure_day": 3,
+          "arrival_day": 3
+        }
+      ]
+    },
+    "xi-r06": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "23:59",
+          1,
+          "23:59"
+        ],
+        [
+          2,
+          "21:00",
+          "23:59",
+          3,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        15,
+        4
+      ],
+      "pairs": 60,
+      "longest_dwell_pair": [
+        1941,
+        {
+          "TrainID": "G1970",
+          "From": "南京南",
+          "To": "西安北",
+          "BeginTime": "07:38",
+          "EndTime": "13:20",
+          "Cost": 683,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "Z306",
+          "From": "西安",
+          "To": "南京",
+          "BeginTime": "21:41",
+          "EndTime": "09:40",
+          "Cost": 152.5,
+          "departure_day": 2,
+          "arrival_day": 3
+        }
+      ]
+    },
+    "xm-r01": {
+      "windows": [
+        [
+          1,
+          "07:00",
+          "08:00",
+          1,
+          "23:59"
+        ],
+        [
+          2,
+          "16:00",
+          "23:59",
+          2,
+          "23:00"
+        ]
+      ],
+      "surviving_direction_counts": [
+        6,
+        4
+      ],
+      "pairs": 24,
+      "longest_dwell_pair": [
+        1705,
+        {
+          "TrainID": "G1621",
+          "From": "杭州东站",
+          "To": "厦门北站",
+          "BeginTime": "07:09",
+          "EndTime": "12:47",
+          "Cost": 422,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G1640",
+          "From": "厦门北站",
+          "To": "杭州东站",
+          "BeginTime": "17:12",
+          "EndTime": "22:34",
+          "Cost": 493,
+          "departure_day": 2,
+          "arrival_day": 2
+        }
+      ]
+    },
+    "xm-r02": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "07:00",
+          1,
+          "23:59"
+        ],
+        [
+          1,
+          "19:45",
+          "23:59",
+          1,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        2,
+        2
+      ],
+      "pairs": 4,
+      "longest_dwell_pair": [
+        644,
+        {
+          "TrainID": "G3020",
+          "From": "深圳北站",
+          "To": "厦门北站",
+          "BeginTime": "06:51",
+          "EndTime": "09:36",
+          "Cost": 228,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "D667",
+          "From": "厦门北站",
+          "To": "深圳北站",
+          "BeginTime": "20:20",
+          "EndTime": "23:26",
+          "Cost": 228,
+          "departure_day": 1,
+          "arrival_day": 1
+        }
+      ]
+    },
+    "xm-r03": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "07:00",
+          1,
+          "23:59"
+        ],
+        [
+          1,
+          "19:15",
+          "23:59",
+          1,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        1,
+        2
+      ],
+      "pairs": 2,
+      "longest_dwell_pair": [
+        618,
+        {
+          "TrainID": "G3017",
+          "From": "广州南站",
+          "To": "厦门北站",
+          "BeginTime": "06:18",
+          "EndTime": "09:36",
+          "Cost": 302.5,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G3019",
+          "From": "厦门北站",
+          "To": "广州南站",
+          "BeginTime": "19:54",
+          "EndTime": "23:18",
+          "Cost": 302.5,
+          "departure_day": 1,
+          "arrival_day": 1
+        }
+      ]
+    },
+    "xm-r04": {
+      "windows": [
+        [
+          1,
+          "16:00",
+          "17:00",
+          2,
+          "23:59"
+        ],
+        [
+          3,
+          "10:00",
+          "23:59",
+          3,
+          "23:00"
+        ]
+      ],
+      "surviving_direction_counts": [
+        2,
+        1
+      ],
+      "pairs": 2,
+      "longest_dwell_pair": [
+        1474,
+        {
+          "TrainID": "D131",
+          "From": "北京丰台站",
+          "To": "厦门北站",
+          "BeginTime": "16:12",
+          "EndTime": "10:09",
+          "Cost": 501,
+          "departure_day": 1,
+          "arrival_day": 2
+        },
+        {
+          "TrainID": "G1528",
+          "From": "厦门北站",
+          "To": "北京南站",
+          "BeginTime": "10:43",
+          "EndTime": "22:13",
+          "Cost": 1185.5,
+          "departure_day": 3,
+          "arrival_day": 3
+        }
+      ]
+    },
+    "xm-r05": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "23:59",
+          1,
+          "23:59"
+        ],
+        [
+          2,
+          "23:15",
+          "23:59",
+          3,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        23,
+        3
+      ],
+      "pairs": 69,
+      "longest_dwell_pair": [
+        2027,
+        {
+          "TrainID": "G3091",
+          "From": "上海虹桥站",
+          "To": "厦门北站",
+          "BeginTime": "06:20",
+          "EndTime": "13:47",
+          "Cost": 630,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G900",
+          "From": "厦门北站",
+          "To": "上海虹桥站",
+          "BeginTime": "23:34",
+          "EndTime": "06:58",
+          "Cost": 466,
+          "departure_day": 2,
+          "arrival_day": 3
+        }
+      ]
+    },
+    "xm-r06": {
+      "windows": [
+        [
+          1,
+          "00:00",
+          "07:00",
+          1,
+          "23:59"
+        ],
+        [
+          2,
+          "14:30",
+          "23:59",
+          2,
+          "23:59"
+        ]
+      ],
+      "surviving_direction_counts": [
+        4,
+        1
+      ],
+      "pairs": 4,
+      "longest_dwell_pair": [
+        1598,
+        {
+          "TrainID": "G3027",
+          "From": "南京南站",
+          "To": "厦门北站",
+          "BeginTime": "06:58",
+          "EndTime": "13:05",
+          "Cost": 546.5,
+          "departure_day": 1,
+          "arrival_day": 1
+        },
+        {
+          "TrainID": "G1656",
+          "From": "厦门北站",
+          "To": "南京南站",
+          "BeginTime": "15:43",
+          "EndTime": "22:36",
+          "Cost": 634,
+          "departure_day": 2,
+          "arrival_day": 2
+        }
+      ]
+    }
+  },
+  "evidence_controls": {
+    "xi-g01": {
+      "flights_mandatory": true,
+      "flights": [
+        {
+          "from": "杭州",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 4
+        },
+        {
+          "from": "西安",
+          "to": "杭州",
+          "admitted": 0,
+          "unpriced_reference_count": 9
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xi-g02": {
+      "flights_mandatory": false,
+      "flights": [
+        {
+          "from": "杭州",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 4
+        },
+        {
+          "from": "西安",
+          "to": "杭州",
+          "admitted": 0,
+          "unpriced_reference_count": 9
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xi-g03": {
+      "flights_mandatory": true,
+      "flights": [
+        {
+          "from": "广州",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 5
+        },
+        {
+          "from": "西安",
+          "to": "广州",
+          "admitted": 1,
+          "unpriced_reference_count": 15
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xi-g04": {
+      "flights_mandatory": false,
+      "flights": [
+        {
+          "from": "广州",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 5
+        },
+        {
+          "from": "西安",
+          "to": "广州",
+          "admitted": 1,
+          "unpriced_reference_count": 15
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xi-g05": {
+      "flights_mandatory": true,
+      "flights": [
+        {
+          "from": "武汉",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 2
+        },
+        {
+          "from": "西安",
+          "to": "武汉",
+          "admitted": 0,
+          "unpriced_reference_count": 3
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xi-g06": {
+      "flights_mandatory": false,
+      "flights": [
+        {
+          "from": "武汉",
+          "to": "西安",
+          "admitted": 0,
+          "unpriced_reference_count": 2
+        },
+        {
+          "from": "西安",
+          "to": "武汉",
+          "admitted": 0,
+          "unpriced_reference_count": 3
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xm-g01": {
+      "flights_mandatory": true,
+      "flights": [
+        {
+          "from": "杭州",
+          "to": "厦门",
+          "admitted": 0,
+          "unpriced_reference_count": 0
+        },
+        {
+          "from": "厦门",
+          "to": "杭州",
+          "admitted": 0,
+          "unpriced_reference_count": 0
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xm-g02": {
+      "flights_mandatory": false,
+      "flights": [
+        {
+          "from": "杭州",
+          "to": "厦门",
+          "admitted": 0,
+          "unpriced_reference_count": 0
+        },
+        {
+          "from": "厦门",
+          "to": "杭州",
+          "admitted": 0,
+          "unpriced_reference_count": 0
+        }
+      ],
+      "priced_round_trip_present": false
+    },
+    "xm-g03": {
+      "ferry_mandatory": true,
+      "ferry_reference": {
+        "city": "厦门",
+        "destination_area": "鼓浪屿",
+        "mode": "ferry",
+        "outbound": {
+          "start": "东渡客运码头",
+          "end": "鼓浪屿三丘田码头",
+          "published_first": "07:30",
+          "published_last": "17:30"
+        },
+        "return": {
+          "start": "鼓浪屿三丘田码头",
+          "end": "东渡客运码头",
+          "published_first": "07:40",
+          "published_last": "17:40"
+        },
+        "published_return_ticket_from_cny_per_person": 35,
+        "published_crossing_minutes_approx": 20,
+        "availability": "unknown",
+        "status": "operator_published_reference",
+        "timetable_source": "https://xmferry.com/xwzx/zxgg/32752.htm",
+        "notice_date": "2026-10-31",
+        "fare_source": "https://xmferry.com/mtjjt/sqtmt/hxjpj/30640.htm",
+        "can_build_native_itinerary_leg": false
+      }
+    },
+    "xm-g04": {
+      "ferry_mandatory": false,
+      "ferry_reference": {
+        "city": "厦门",
+        "destination_area": "鼓浪屿",
+        "mode": "ferry",
+        "outbound": {
+          "start": "东渡客运码头",
+          "end": "鼓浪屿三丘田码头",
+          "published_first": "07:30",
+          "published_last": "17:30"
+        },
+        "return": {
+          "start": "鼓浪屿三丘田码头",
+          "end": "东渡客运码头",
+          "published_first": "07:40",
+          "published_last": "17:40"
+        },
+        "published_return_ticket_from_cny_per_person": 35,
+        "published_crossing_minutes_approx": 20,
+        "availability": "unknown",
+        "status": "operator_published_reference",
+        "timetable_source": "https://xmferry.com/xwzx/zxgg/32752.htm",
+        "notice_date": "2026-10-31",
+        "fare_source": "https://xmferry.com/mtjjt/sqtmt/hxjpj/30640.htm",
+        "can_build_native_itinerary_leg": false
+      }
+    },
+    "xm-g05": {
+      "ferry_mandatory": true,
+      "ferry_reference": {
+        "city": "厦门",
+        "destination_area": "鼓浪屿",
+        "mode": "ferry",
+        "outbound": {
+          "start": "东渡客运码头",
+          "end": "鼓浪屿三丘田码头",
+          "published_first": "07:30",
+          "published_last": "17:30"
+        },
+        "return": {
+          "start": "鼓浪屿三丘田码头",
+          "end": "东渡客运码头",
+          "published_first": "07:40",
+          "published_last": "17:40"
+        },
+        "published_return_ticket_from_cny_per_person": 35,
+        "published_crossing_minutes_approx": 20,
+        "availability": "unknown",
+        "status": "operator_published_reference",
+        "timetable_source": "https://xmferry.com/xwzx/zxgg/32752.htm",
+        "notice_date": "2026-10-31",
+        "fare_source": "https://xmferry.com/mtjjt/sqtmt/hxjpj/30640.htm",
+        "can_build_native_itinerary_leg": false
+      }
+    },
+    "xm-g06": {
+      "ferry_mandatory": false,
+      "ferry_reference": {
+        "city": "厦门",
+        "destination_area": "鼓浪屿",
+        "mode": "ferry",
+        "outbound": {
+          "start": "东渡客运码头",
+          "end": "鼓浪屿三丘田码头",
+          "published_first": "07:30",
+          "published_last": "17:30"
+        },
+        "return": {
+          "start": "鼓浪屿三丘田码头",
+          "end": "东渡客运码头",
+          "published_first": "07:40",
+          "published_last": "17:40"
+        },
+        "published_return_ticket_from_cny_per_person": 35,
+        "published_crossing_minutes_approx": 20,
+        "availability": "unknown",
+        "status": "operator_published_reference",
+        "timetable_source": "https://xmferry.com/xwzx/zxgg/32752.htm",
+        "notice_date": "2026-10-31",
+        "fare_source": "https://xmferry.com/mtjjt/sqtmt/hxjpj/30640.htm",
+        "can_build_native_itinerary_leg": false
+      }
+    }
+  }
+}

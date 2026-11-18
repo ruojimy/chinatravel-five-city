@@ -1,0 +1,11 @@
+{
+  "uid": "xi-g04",
+  "tag": "medium",
+  "start_city": "广州",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "广州三人西安往返三天，车或飞机均可，但两段票价都必须有依据。至少安排一个景点和住宿，下午以后出发。"
+}

@@ -1,0 +1,120 @@
+{
+  "utc": "2026-11-18T12:09:21.235915+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "景点、餐馆及酒店均来自本题冻结目录；酒店源价格68元/间夜是静态目录值，实际日期价格、库存与房间容量未核实，按3人使用2间计价但不把目录床数代理写成已确认房型。步行/出租车为冻结图估算，不是实时路线证明；不重复餐馆。",
+    "plan": {
+      "people_number": 3,
+      "start_city": "西安",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "西安碑林博物馆",
+              "start_time": "09:00",
+              "end_time": "11:00",
+              "price": 85,
+              "tickets": 3,
+              "cost": 255,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "position": "东关老葫芦头泡馍(更新小区店)",
+              "start_time": "11:29",
+              "end_time": "12:20",
+              "price": 23,
+              "cost": 69,
+              "transports": [
+                {
+                  "start": "西安碑林博物馆",
+                  "end": "东关老葫芦头泡馍(更新小区店)",
+                  "mode": "walk",
+                  "start_time": "11:00",
+                  "end_time": "11:29",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 2.4458646634799552
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "宜家假日旅游民宿酒店(钟楼回民街店)",
+              "start_time": "12:44",
+              "end_time": "08:00",
+              "price": 68,
+              "rooms": 2,
+              "cost": 136,
+              "transports": [
+                {
+                  "start": "东关老葫芦头泡馍(更新小区店)",
+                  "end": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "mode": "taxi",
+                  "start_time": "12:40",
+                  "end_time": "12:44",
+                  "price": 15.06,
+                  "cost": 15.06,
+                  "distance": 2.96,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "大雁塔",
+              "start_time": "09:30",
+              "end_time": "11:15",
+              "price": 10,
+              "tickets": 3,
+              "cost": 30,
+              "transports": [
+                {
+                  "start": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "end": "大雁塔",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:08",
+                  "price": 24.28,
+                  "cost": 24.28,
+                  "distance": 5.59,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "皇城巷葫芦头泡馍(大明宫店)",
+              "start_time": "11:45",
+              "end_time": "12:30",
+              "price": 31,
+              "cost": 93,
+              "transports": [
+                {
+                  "start": "大雁塔",
+                  "end": "皇城巷葫芦头泡馍(大明宫店)",
+                  "mode": "taxi",
+                  "start_time": "11:30",
+                  "end_time": "11:45",
+                  "price": 41.42,
+                  "cost": 41.42,
+                  "distance": 10.38,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

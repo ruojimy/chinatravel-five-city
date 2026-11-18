@@ -1,0 +1,10 @@
+{
+  "schema": "intercity12-profile-v1",
+  "base_profile": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2",
+  "base_snapshot_sha256": "a36125283631e2a730025ad0739090c957e775eaafbdf49a78aae57a507645b1",
+  "inventory_sha256": "f06a09d9c9cbf591c4dc5a7fa0ba5ba95210af63fb162f7adfb188a1580019f8",
+  "xiamen_reference_rows": 379,
+  "xiamen_directions": 22,
+  "boundary": "Xiamen entities, POI and metro are not provided; raw date/price remain unknown.",
+  "public_export": "Normalized historical transport rows; raw provider captures retained locally."
+}

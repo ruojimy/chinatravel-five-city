@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-18T13:29:32.929862+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "使用有独立记录、可规划的公园内鳌亭作为嘉庚公园游览点，另到集美学村牌坊；公园根记录缺少开放时间和价格，故不用其作行程实体。两景点未暴露票价，按允许的零元条件假设；午餐人均价及出租离线估价取静态快照，供给未核实。",
+    "status": "submitted_first_draft",
+    "plan": {
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "start_time": "09:00",
+              "price": 0,
+              "transports": [],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "10:30",
+              "cost": 0,
+              "position": "嘉庚公园-鳌亭"
+            },
+            {
+              "start_time": "10:45",
+              "price": 0,
+              "transports": [
+                {
+                  "start_time": "10:00",
+                  "price": 0,
+                  "mode": "walk",
+                  "start": "嘉庚公园-鳌亭",
+                  "end_time": "10:15",
+                  "cost": 0,
+                  "distance": 1.2782817849631052,
+                  "end": "集美学村牌坊"
+                }
+              ],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "11:15",
+              "cost": 0,
+              "position": "集美学村牌坊"
+            },
+            {
+              "price": 60,
+              "end_time": "13:00",
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "type": "lunch",
+              "cost": 120,
+              "transports": [
+                {
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "distance": 4.75,
+                  "start_time": "11:30",
+                  "start": "集美学村牌坊",
+                  "end_time": "11:37",
+                  "price": 21.32,
+                  "cost": 21.32,
+                  "cars": 1,
+                  "mode": "taxi"
+                }
+              ],
+              "start_time": "12:00"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "start_city": "厦门",
+      "people_number": 2
+    }
+  }
+}

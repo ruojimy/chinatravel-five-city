@@ -1,0 +1,8 @@
+{
+  "first_sha256": "e5772e926b028893354ba9c14675ed335bf55016d3e8d4ad981b7cac22dbeb10",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查苏州→西安列车，最早可于第1天抵达西安北的合适直达车G1970为06:34→13:20；题目要求13:28由西安北站出站后按冻结Amap地铁路线前往同盛祥凤城五路店，路线需13:28→13:56。按协议午餐必须在11:00–14:00，抵店仅余4分钟，无法安排可行午餐时段。更晚同日到达车G1802于13:51抵达，赶不上13:28指定接驳；因此现有记录无法同时满足指定车站时点、地铁接驳与午餐时段。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

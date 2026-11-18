@@ -1,0 +1,24 @@
+{
+  "first_sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_transport_correct",
+      "state": "fail",
+      "messages": [
+        "legs 1 and 2 have different endpoints",
+        "TRANSPORT_LOOKUP_UNAVAILABLE: segment 2: LookupError: TRANSPORT_LOOKUP_UNAVAILABLE: metro route has no comparable result"
+      ],
+      "cells": {
+        "Unavailable Inner-City Transport": 1,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      }
+    },
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "innercity_modes"
+    }
+  ]
+}

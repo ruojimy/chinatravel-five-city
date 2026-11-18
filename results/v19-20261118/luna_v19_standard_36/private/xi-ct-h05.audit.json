@@ -1,0 +1,19 @@
+{
+  "uid": "xi-ct-h05",
+  "scorer_query_sha256": "f6fb4d11f7fe1f7ee3614a36bcff44ec3705b919a3cbe4ec2109e079cffe7bc7",
+  "unresolved_requirements": [],
+  "clauses": [
+    {
+      "repaired_index": 0,
+      "key": "trip_days"
+    },
+    {
+      "repaired_index": 1,
+      "key": "people_number"
+    },
+    {
+      "repaired_index": 2,
+      "key": "taxi_cars"
+    }
+  ]
+}

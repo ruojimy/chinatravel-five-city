@@ -1,0 +1,8 @@
+{
+  "first_sha256": "cdf558b180e3240d83f7dab2c2dda35887b560850e1d41a99262b3bc5be8024b",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "厦门渡轮参考显示本岛东渡客运码头↔鼓浪屿三丘田码头可参考票价35元/人，约20分钟，运营时刻可查，但工具标注can_build_native_itinerary_leg=false；当前schema仅支持train/airplane城际与walk/metro/taxi市内transports，不能如实表示必需的渡轮活动及两端接驳。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

@@ -1,0 +1,17 @@
+{
+  "uid": "x11e012",
+  "tag": "easy",
+  "start_city": "成都",
+  "target_city": "西安",
+  "days": 1,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置成都。我们两个人想去西安玩1天，想去山由之cafe&meal(小寨店)吃饭，请给我一个旅行规划。",
+  "nature_language_en": "Currently in 成都. we two want to travel to 西安 for 1 day(s); want to eat at 山由之cafe&meal(小寨店). Please provide a travel plan.",
+  "xian11": {
+    "city_role": "target",
+    "translation": "controlled_template",
+    "native_compatible": true
+  }
+}

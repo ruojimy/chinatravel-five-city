@@ -23,6 +23,8 @@ REPOSITORY = BASE.parents[1]
 ROOTS = {'G3': Path(os.environ.get('CT_SANDBOX_ENGINE_ROOT', REPOSITORY / 'ShortTrip-upstream'))}
 CITIES = {'北京':'beijing','上海':'shanghai','南京':'nanjing','苏州':'suzhou','杭州':'hangzhou',
           '深圳':'shenzhen','成都':'chengdu','武汉':'wuhan','广州':'guangzhou','重庆':'chongqing','西安':'xian'}
+if os.environ.get('CHINATRAVEL_PROFILE') == 'expanded12':
+    CITIES['厦门'] = 'xiamen'
 FOLDERS = {'attraction':'attractions','restaurant':'restaurants','accommodation':'accommodations'}
 NUMERIC = {'lat','lon','price','recommendmintime','recommendmaxtime','numbed','Cost','Duration'}
 SIGNATURE = {'attraction':('lat','lon','price','opentime','endtime','recommendmintime','recommendmaxtime'),
@@ -133,6 +135,8 @@ class Sandbox:
     def _file(self, kind, city):
         if kind not in FOLDERS or city not in self.cities:
             raise ValueError('unsupported kind or city')
+        if city == '厦门' and os.environ.get('CHINATRAVEL_PROFILE') == 'expanded12':
+            raise NotImplementedError('Xiamen entity data is unknown in the intercity-only expanded12 profile')
         slug = self.cities[city]
         basename = f'restaurants_{slug}.csv' if kind == 'restaurant' else FOLDERS[kind] + '.csv'
         return self.db / FOLDERS[kind] / slug / basename

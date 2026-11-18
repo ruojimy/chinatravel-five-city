@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:38:54.116692+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "鼓浪屿 ferry_reference 已返回东渡客运码头→鼓浪屿三丘田码头与返向船班窗口、约 20 分钟航程及往返票价参考 35 元/人，但 availability=unknown 且 can_build_native_itinerary_leg=false；schema 不能记录船舶活动/船腿，无法按题意提交两段可记录的渡轮行程。"
+    ]
+  }
+}

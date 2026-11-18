@@ -1,0 +1,44 @@
+{
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "tickets": 2,
+          "end_time": "11:30",
+          "transports": [],
+          "start_time": "09:00",
+          "position": "陕西历史博物馆",
+          "cost": 0,
+          "type": "attraction",
+          "price": 0
+        },
+        {
+          "tickets": 2,
+          "end_time": "14:00",
+          "transports": [
+            {
+              "start_time": "12:00",
+              "end_time": "12:07",
+              "end": "日本飞机轰炸西安遗址",
+              "mode": "taxi",
+              "price": 21.77,
+              "start": "陕西历史博物馆",
+              "cost": 21.77,
+              "cars": 1,
+              "distance": 4.88
+            }
+          ],
+          "start_time": "12:30",
+          "position": "日本飞机轰炸西安遗址",
+          "cost": 0,
+          "type": "attraction",
+          "price": 0
+        }
+      ],
+      "day": 1
+    }
+  ],
+  "start_city": "西安",
+  "people_number": 2
+}

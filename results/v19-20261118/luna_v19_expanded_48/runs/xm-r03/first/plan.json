@@ -1,0 +1,91 @@
+{
+  "people_number": 2,
+  "start_city": "广州",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:18",
+          "end_time": "09:36",
+          "cost": 605.0,
+          "price": 302.5,
+          "transports": [],
+          "TrainID": "G3017",
+          "start": "广州南站",
+          "end": "厦门北站",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "10:40",
+          "end_time": "12:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "中山路步行街",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:30",
+              "price": 86.19,
+              "cost": 86.19,
+              "distance": 20.33,
+              "cars": 1
+            }
+          ],
+          "position": "中山路步行街",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "13:00",
+          "end_time": "16:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "沙坡尾",
+              "mode": "walk",
+              "start_time": "12:30",
+              "end_time": "12:54",
+              "price": 0,
+              "cost": 0,
+              "distance": 2.026573596591506
+            }
+          ],
+          "position": "沙坡尾",
+          "tickets": 2
+        },
+        {
+          "type": "train",
+          "start_time": "19:54",
+          "end_time": "23:18",
+          "cost": 605.0,
+          "price": 302.5,
+          "transports": [
+            {
+              "start": "沙坡尾",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "17:30",
+              "end_time": "18:03",
+              "price": 94.68,
+              "cost": 94.68,
+              "distance": 22.22,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G3019",
+          "start": "厦门北站",
+          "end": "广州南站",
+          "tickets": 2
+        }
+      ]
+    }
+  ]
+}

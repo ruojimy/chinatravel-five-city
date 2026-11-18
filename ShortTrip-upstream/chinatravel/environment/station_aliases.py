@@ -57,8 +57,20 @@ def _nanjing_anchor_evidence(db, city, left, right, la, lb, train_evidence, expe
         value = os.environ.get('CT_SANDBOX_PROFILE_ROOT')
         if not value: return None
         profile = Path(value).resolve()
+        base_db = (profile/'expanded/G3_ext11/chinatravel/environment/database').resolve()
         actual_db = Path(db).resolve()
-        if actual_db != (profile/'expanded/G3_ext11/chinatravel/environment/database').resolve(): return None
+        extra_inventory = None
+        if actual_db != base_db:
+            # The intercity-only 12-city profile copies these 11-city files;
+            # require its installed inventory and base snapshot to match too.
+            extra_profile = (profile.parent/'intercity12').resolve()
+            if os.environ.get('CHINATRAVEL_PROFILE') != 'expanded12' or actual_db != extra_profile/'database': return None
+            receipt = json.loads((extra_profile/'receipt.json').read_text(encoding='utf-8'))
+            inventory_bytes = (extra_profile/'inventory.json').read_bytes()
+            if (receipt.get('schema') != 'intercity12-profile-v1' or
+                receipt.get('base_snapshot_sha256') != expected['snapshot'] or
+                _sha(inventory_bytes) != receipt.get('inventory_sha256')): return None
+            extra_inventory = json.loads(inventory_bytes)
         evidence = profile/'data_integration'
         def checked(path, digest):
             raw = path.read_bytes()
@@ -83,6 +95,9 @@ def _nanjing_anchor_evidence(db, city, left, right, la, lb, train_evidence, expe
             relative_db = path.resolve().relative_to(actual_db)
             rel = (Path('expanded/G3_ext11/chinatravel/environment/database')/relative_db).as_posix()
             checked(path, inventory[rel])
+            if extra_inventory is not None:
+                extra_rel = (Path('database')/relative_db).as_posix()
+                if extra_inventory.get(extra_rel) != inventory[rel]: return None
         if _sha(train_path.read_bytes()) != train_evidence['sha256']: return None
         with closing(sqlite3.connect((evidence/'new_capture_1.sqlite3').resolve().as_uri()+'?mode=ro', uri=True)) as connection:
             rows = connection.execute('SELECT at_utc,status,meta_json,raw_sha256,response_json FROM calls WHERE id=4').fetchall()

@@ -1,0 +1,40 @@
+{
+  "first_sha256": "338b09460bcb35649ee2e1955597274b15cf02f3df26b992ed4e0f6ec8cd14e7",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_transport_correct",
+      "state": "fail",
+      "messages": [
+        "route ends after activity starts"
+      ],
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+        "Inccorrect cost information of Inner-City Transport": 0
+      }
+    },
+    {
+      "check": "Is_time_correct",
+      "state": "fail",
+      "messages": [
+        {
+          "state": "fail",
+          "code": "transport_ends_after_activity_starts",
+          "day": 1,
+          "activity_index": 2,
+          "detail": 1
+        }
+      ],
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 1
+      }
+    },
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "required_attraction_types"
+    }
+  ]
+}

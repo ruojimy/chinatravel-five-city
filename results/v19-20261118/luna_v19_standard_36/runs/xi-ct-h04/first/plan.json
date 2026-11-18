@@ -1,0 +1,194 @@
+{
+  "people_number": 3,
+  "start_city": "广州",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G404",
+          "start": "广州南站",
+          "end": "西安北",
+          "start_time": "09:49",
+          "end_time": "16:50",
+          "price": 974,
+          "cost": 2922,
+          "tickets": 3,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "position": "派酒店(西安明城墙和平门地铁站店)",
+          "start_time": "17:51",
+          "end_time": "08:00",
+          "price": 69,
+          "cost": 138,
+          "rooms": 2,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "派酒店(西安明城墙和平门地铁站店)",
+              "mode": "taxi",
+              "start_time": "17:30",
+              "end_time": "17:51",
+              "price": 57.79,
+              "cost": 57.79,
+              "distance": 14.02,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "兴庆宫公园",
+          "start_time": "09:30",
+          "end_time": "11:45",
+          "price": 0,
+          "cost": 0,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "派酒店(西安明城墙和平门地铁站店)",
+              "end": "兴庆宫公园",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:02",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.62,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "position": "咪咪小面",
+          "start_time": "12:10",
+          "end_time": "12:50",
+          "price": 28,
+          "cost": 84,
+          "transports": [
+            {
+              "start": "兴庆宫公园",
+              "end": "咪咪小面",
+              "mode": "taxi",
+              "start_time": "12:00",
+              "end_time": "12:02",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.74,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "派酒店(西安明城墙和平门地铁站店)",
+          "start_time": "13:01",
+          "end_time": "08:00",
+          "price": 69,
+          "cost": 138,
+          "rooms": 2,
+          "transports": [
+            {
+              "start": "咪咪小面",
+              "end": "派酒店(西安明城墙和平门地铁站店)",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:01",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.27,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "广仁寺",
+          "start_time": "09:30",
+          "end_time": "11:45",
+          "price": 0,
+          "cost": 0,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "派酒店(西安明城墙和平门地铁站店)",
+              "end": "广仁寺",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:06",
+              "price": 20.76,
+              "cost": 20.76,
+              "distance": 4.59,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "派酒店(西安明城墙和平门地铁站店)",
+          "start_time": "13:06",
+          "end_time": "08:00",
+          "price": 69,
+          "cost": 138,
+          "rooms": 2,
+          "transports": [
+            {
+              "start": "广仁寺",
+              "end": "派酒店(西安明城墙和平门地铁站店)",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:06",
+              "price": 20.76,
+              "cost": 20.76,
+              "distance": 4.59,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "activities": [
+        {
+          "type": "train",
+          "TrainID": "G840",
+          "start": "西安北",
+          "end": "广州南站",
+          "start_time": "10:15",
+          "end_time": "19:12",
+          "price": 974,
+          "cost": 2922,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "派酒店(西安明城墙和平门地铁站店)",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:21",
+              "price": 57.79,
+              "cost": 57.79,
+              "distance": 14.02,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

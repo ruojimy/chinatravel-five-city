@@ -1,0 +1,17 @@
+{
+  "uid": "x11h003",
+  "tag": "human",
+  "start_city": "重庆",
+  "target_city": "西安",
+  "days": 1,
+  "people_number": 4,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "[当前位置重庆,目标位置西安,旅行人数4,旅行天数1] 希望能玩得舒服些，帮忙推荐一条合适的路线。帮我规划一下。",
+  "nature_language_en": "Currently in 重庆. four of us want to travel to 西安 for 1 day(s). Please provide a travel plan.",
+  "xian11": {
+    "city_role": "target",
+    "translation": "controlled_template",
+    "native_compatible": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "people_number": 2,
+  "start_city": "武汉",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "武汉",
+          "end": "西安北",
+          "TrainID": "G3180",
+          "start_time": "09:42",
+          "end_time": "14:01",
+          "price": 545,
+          "cost": 1090,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:40",
+          "end_time": "16:45",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "14:15",
+              "end_time": "14:34",
+              "price": 52.5,
+              "cost": 52.5,
+              "distance": 12.85,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "dinner",
+          "start_time": "17:15",
+          "end_time": "18:00",
+          "position": "西安饭庄",
+          "price": 128,
+          "cost": 256,
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "西安饭庄",
+              "mode": "walk",
+              "start_time": "17:00",
+              "end_time": "17:11",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.9912391442492667
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start": "西安东",
+          "end": "汉口",
+          "TrainID": "G3864",
+          "start_time": "19:25",
+          "end_time": "22:37",
+          "price": 453,
+          "cost": 906,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安饭庄",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "18:00",
+              "end_time": "18:19",
+              "price": 52.98,
+              "cost": 52.98,
+              "distance": 12.95,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "utc": "2026-11-18T14:20:00.843870+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "条件静态三日行程；G404/G2239为2026-11-16历史票价参考，行程日期与余票未知。目录住宿单床价1440元/间夜，以2间、2晚估算；实际房型、现价和库存未核实。景点无票价，按协议授权零元条件假设；餐饮价未暴露未造价。市内使用静态沙盒出租车估价。",
+    "plan": {
+      "people_number": 2,
+      "start_city": "广州",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "09:49",
+              "end_time": "16:50",
+              "cost": 1948,
+              "price": 974,
+              "tickets": 2,
+              "TrainID": "G404",
+              "start": "广州南站",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "17:30",
+              "end_time": "09:00",
+              "cost": 2880,
+              "price": 1440,
+              "rooms": 2,
+              "room_type": 1,
+              "position": "西安索菲特传奇酒店（人民大厦）",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:18",
+                  "price": 50.06,
+                  "cost": 50.06,
+                  "distance": 12.3,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "10:30",
+              "end_time": "15:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "城墙公园",
+              "transports": [
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "城墙公园",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.53,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "15:30",
+              "end_time": "05:00",
+              "cost": 2880,
+              "price": 1440,
+              "rooms": 2,
+              "room_type": 1,
+              "position": "西安索菲特传奇酒店（人民大厦）",
+              "transports": [
+                {
+                  "start": "城墙公园",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "taxi",
+                  "start_time": "15:00",
+                  "end_time": "15:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.53,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "07:38",
+              "end_time": "20:31",
+              "cost": 2110,
+              "price": 1055,
+              "tickets": 2,
+              "TrainID": "G2239",
+              "start": "西安北",
+              "end": "广州南站",
+              "transports": [
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "06:00",
+                  "end_time": "06:18",
+                  "price": 50.06,
+                  "cost": 50.06,
+                  "distance": 12.3,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

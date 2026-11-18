@@ -1,0 +1,37 @@
+{
+  "first_sha256": "e1f77b056bd05b9bc8f133ce79eabd1e0839d6f0e3119da84fab834cdfbfbe29",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_time_correct",
+      "state": "fail",
+      "messages": [
+        {
+          "state": "fail",
+          "code": "activity_overlaps_previous",
+          "day": 1,
+          "activity_index": 2,
+          "detail": {
+            "starts_at_minute": 600,
+            "previous_ends_at_minute": 645
+          }
+        },
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 1,
+          "activity_index": 2,
+          "detail": {
+            "leg": 1,
+            "departs_at_minute": 570,
+            "previous_ends_at_minute": 645
+          }
+        }
+      ],
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 1
+      }
+    }
+  ]
+}

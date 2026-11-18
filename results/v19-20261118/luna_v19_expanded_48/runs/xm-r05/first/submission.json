@@ -1,0 +1,111 @@
+{
+  "utc": "2026-11-18T13:38:31.041160+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 3,
+      "start_city": "上海",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:20",
+              "end_time": "13:47",
+              "cost": 1890,
+              "price": 630,
+              "transports": [],
+              "TrainID": "G3091",
+              "start": "上海虹桥站",
+              "end": "厦门北站",
+              "tickets": 3
+            },
+            {
+              "type": "accommodation",
+              "start_time": "15:30",
+              "end_time": "08:00",
+              "cost": 327,
+              "price": 109,
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "14:30",
+                  "end_time": "15:03",
+                  "price": 94.99,
+                  "cost": 94.99,
+                  "distance": 22.29,
+                  "cars": 1
+                }
+              ],
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "rooms": 3,
+              "room_type": 1
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "13:15",
+              "end_time": "20:30",
+              "cost": 0,
+              "price": 0,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:00",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 0.46,
+                  "cars": 1
+                }
+              ],
+              "position": "沙坡尾",
+              "tickets": 3
+            },
+            {
+              "type": "train",
+              "start_time": "23:18",
+              "end_time": "06:42",
+              "cost": 1479,
+              "price": 493,
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "21:00",
+                  "end_time": "21:33",
+                  "price": 94.68,
+                  "cost": 94.68,
+                  "distance": 22.22,
+                  "cars": 1
+                }
+              ],
+              "TrainID": "D942",
+              "start": "厦门北站",
+              "end": "上海虹桥站",
+              "tickets": 3,
+              "arrival_day": 3
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": []
+        }
+      ]
+    },
+    "notes": "条件评测：城际票价为沙盒给出的 2026-11-16 历史参考，不代表出行日班次库存或折扣；市内交通按 G3 冻结静态图估算时间和费用，不构成实时地图路况证明。住宿采用目录历史预算价及每间 1 床的容量代理，按人数安排房间；实际房型、日期价格和余量未知。景点目录未提供入场价时按题面允许的零元条件假设。 返程 D942 的冻结时长跨夜，按 day 2 发车、day 3 06:42 到达记录。"
+  }
+}

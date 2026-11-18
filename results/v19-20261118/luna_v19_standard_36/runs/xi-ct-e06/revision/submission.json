@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:35:01.469132+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已核对本题去返向 airplane 证据，票价字段仍缺；不造价，保留数据阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967",
+  "feedback_sha256": "07a1f136570dd68a92e82f5a76a94f2e9d176d28bd71162e14c7c9e4ebd03a85"
+}

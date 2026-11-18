@@ -33,10 +33,15 @@ CITY_NAMES = {
 # The native ten-city profile is the default. Xi'an is opt-in and the profile
 # must be chosen before importing the environment or its singleton checkers.
 _PROFILE = os.environ.get('CHINATRAVEL_PROFILE')
-if _PROFILE == 'expanded11':
+if _PROFILE in ('expanded11', 'expanded12'):
     CITY_SLUGS.append('xian')
     CITY_NAMES['zh'].append('西安')
     CITY_NAMES['en'].append("Xi'an")
+if _PROFILE == 'expanded12':
+    CITY_SLUGS.append('xiamen')
+    CITY_NAMES['zh'].append('厦门')
+    CITY_NAMES['en'].append('Xiamen')
+
 
 def normalize_lang(lang=None, en_version=False):
     if en_version:

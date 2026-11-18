@@ -1,0 +1,79 @@
+{
+  "utc": "2026-11-18T13:20:43.771563+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "静态快照核对陕西历史博物馆、碑林博物馆和酒店历史代理价；景点零价为允许的条件假设。酒店每间房每晚491元、每晚2间；实际房型、库存和出行日价格未核实。出租为离线图估时/估价，不代表实时路线。",
+    "plan": {
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "position": "陕西历史博物馆",
+              "transports": [],
+              "start_time": "09:00",
+              "type": "attraction",
+              "price": 0,
+              "cost": 0,
+              "end_time": "12:00",
+              "tickets": 4
+            },
+            {
+              "position": "西安索菲特人民大厦",
+              "rooms": 2,
+              "transports": [
+                {
+                  "price": 20.84,
+                  "end": "西安索菲特人民大厦",
+                  "distance": 4.61,
+                  "end_time": "17:06",
+                  "cost": 20.84,
+                  "start": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "cars": 1,
+                  "start_time": "17:00"
+                }
+              ],
+              "start_time": "21:00",
+              "type": "accommodation",
+              "price": 491,
+              "cost": 982,
+              "end_time": "08:00"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "position": "西安碑林博物馆",
+              "transports": [
+                {
+                  "price": 11,
+                  "end": "西安碑林博物馆",
+                  "distance": 1.41,
+                  "end_time": "09:02",
+                  "cost": 11,
+                  "start": "西安索菲特人民大厦",
+                  "mode": "taxi",
+                  "cars": 1,
+                  "start_time": "09:00"
+                }
+              ],
+              "start_time": "09:30",
+              "type": "attraction",
+              "price": 85,
+              "cost": 340,
+              "end_time": "12:00",
+              "tickets": 4
+            }
+          ]
+        }
+      ],
+      "people_number": 4,
+      "start_city": "西安",
+      "target_city": "西安"
+    },
+    "status": "submitted_first_draft"
+  }
+}

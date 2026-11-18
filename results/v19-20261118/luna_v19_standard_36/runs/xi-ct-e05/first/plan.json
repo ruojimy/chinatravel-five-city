@@ -1,0 +1,70 @@
+{
+  "people_number": 1,
+  "start_city": "武汉",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "10:01",
+          "end_time": "12:58",
+          "cost": 453,
+          "price": 453,
+          "tickets": 1,
+          "TrainID": "G3925",
+          "start": "汉口",
+          "end": "西安东",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:00",
+          "end_time": "17:45",
+          "cost": 0,
+          "price": 0,
+          "tickets": 1,
+          "position": "城墙公园",
+          "transports": [
+            {
+              "start": "西安东站",
+              "end": "城墙公园",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "13:46",
+              "price": 43.21,
+              "cost": 43.21,
+              "distance": 10.78,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start_time": "19:25",
+          "end_time": "22:37",
+          "cost": 453,
+          "price": 453,
+          "tickets": 1,
+          "TrainID": "G3864",
+          "start": "西安东",
+          "end": "汉口",
+          "transports": [
+            {
+              "start": "城墙公园",
+              "end": "西安东站",
+              "mode": "taxi",
+              "start_time": "18:00",
+              "end_time": "18:16",
+              "price": 43.21,
+              "cost": 43.21,
+              "distance": 10.78,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

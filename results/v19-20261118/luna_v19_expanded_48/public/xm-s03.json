@@ -1,0 +1,11 @@
+{
+  "uid": "xm-s03",
+  "tag": "medium",
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "days": 2,
+  "people_number": 4,
+  "limit_rooms": true,
+  "limits_room_type": false,
+  "nature_language": "四人在厦门玩两天。想去嘉庚公园和沙坡尾，两天之间住一晚，每晚2间房。把次日退房到第一处活动的接驳连好。"
+}

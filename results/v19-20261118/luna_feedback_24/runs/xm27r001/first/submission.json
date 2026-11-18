@@ -1,0 +1,191 @@
+{
+  "utc": "2026-11-18T12:12:35.740226+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "中山路步行街",
+              "start_time": "09:00",
+              "end_time": "12:00",
+              "price": 0,
+              "cost": 0,
+              "tickets": 4,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "position": "黄则和花生汤(中山路店)",
+              "start_time": "12:04",
+              "end_time": "13:00",
+              "price": 24,
+              "cost": 96,
+              "transports": [
+                {
+                  "start": "中山路步行街",
+                  "end": "黄则和花生汤(中山路店)",
+                  "mode": "walk",
+                  "start_time": "12:00",
+                  "end_time": "12:04",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.3702018719251149
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "厦门磐基希尔顿酒店",
+              "start_time": "20:00",
+              "end_time": "08:00",
+              "price": 638.97,
+              "cost": 1277.94,
+              "rooms": 2,
+              "room_type": 2,
+              "transports": [
+                {
+                  "start": "黄则和花生汤(中山路店)",
+                  "end": "厦门磐基希尔顿酒店",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:08",
+                  "price": 24.01,
+                  "cost": 24.01,
+                  "distance": 5.52,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "南普陀寺",
+              "start_time": "09:07",
+              "end_time": "11:30",
+              "price": 0,
+              "cost": 0,
+              "tickets": 4,
+              "transports": [
+                {
+                  "start": "厦门磐基希尔顿酒店",
+                  "end": "南普陀寺",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:07",
+                  "price": 22.82,
+                  "cost": 22.82,
+                  "distance": 5.18,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "阿呆姜母鸭(大同路店)",
+              "start_time": "12:03",
+              "end_time": "13:00",
+              "price": 36,
+              "cost": 144,
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "阿呆姜母鸭(大同路店)",
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "end_time": "12:03",
+                  "price": 13.19,
+                  "cost": 13.19,
+                  "distance": 2.43,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "厦门磐基希尔顿酒店",
+              "start_time": "20:00",
+              "end_time": "08:00",
+              "price": 638.97,
+              "cost": 1277.94,
+              "rooms": 2,
+              "room_type": 2,
+              "transports": [
+                {
+                  "start": "阿呆姜母鸭(大同路店)",
+                  "end": "厦门磐基希尔顿酒店",
+                  "mode": "taxi",
+                  "start_time": "13:30",
+                  "end_time": "13:37",
+                  "price": 21.7,
+                  "cost": 21.7,
+                  "distance": 4.86,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "沙坡尾",
+              "start_time": "09:08",
+              "end_time": "11:30",
+              "price": 0,
+              "cost": 0,
+              "tickets": 4,
+              "transports": [
+                {
+                  "start": "厦门磐基希尔顿酒店",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:08",
+                  "price": 25.52,
+                  "cost": 25.52,
+                  "distance": 5.95,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "乌糖沙茶面(民族路店)",
+              "start_time": "12:09",
+              "end_time": "13:00",
+              "price": 41,
+              "cost": 164,
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "乌糖沙茶面(民族路店)",
+                  "mode": "walk",
+                  "start_time": "12:00",
+                  "end_time": "12:09",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.8002663399478139
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "三天景点和餐馆均不同。每晚2间房，单价取厦门磐基希尔顿酒店目录638.97元，按历史的2成人1间条件报价作参考，总额1277.94元/晚；两间实际可订价格与库存未知，room_type=2仅使用目录床数代理。景点票价缺失，依授权作零价条件假设。静态交通路线含车辆数，不代表实时道路或车辆供给。"
+  }
+}

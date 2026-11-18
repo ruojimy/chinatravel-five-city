@@ -1,0 +1,8 @@
+{
+  "first_sha256": "0db60db895e27ced76b4c94c5706210fc4899d5fd08b6a497625e3bfbd9d8543",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查重庆→西安及西安→重庆的飞机和火车。去程飞机MU2262（10:25–11:50）有时刻但无票价，回程最早列出的MU2267为15:25–17:10且同样无票价；火车去程最早06:41–12:26，返程最早07:38出发，不能组成同一日往返。题目仅给1天且未明确单程，按一日往返规划需要的两段飞机均缺票价，而规则不允许虚构交通费用，无法提交合规的一日往返行程。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

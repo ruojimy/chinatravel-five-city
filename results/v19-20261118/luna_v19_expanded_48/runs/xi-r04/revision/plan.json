@@ -1,0 +1,98 @@
+{
+  "people_number": 2,
+  "start_city": "苏州",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "苏州北",
+          "end": "西安北",
+          "TrainID": "G1970",
+          "start_time": "06:34",
+          "end_time": "13:20",
+          "price": 822,
+          "cost": 1644,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:00",
+          "end_time": "16:30",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "13:49",
+              "price": 52.5,
+              "cost": 52.5,
+              "distance": 12.85,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "17:01",
+          "end_time": "08:00",
+          "position": "西安索菲特人民大厦",
+          "price": 491,
+          "cost": 982,
+          "rooms": 2,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "17:00",
+              "end_time": "17:01",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.32,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "苏州北",
+          "TrainID": "G466",
+          "start_time": "15:43",
+          "end_time": "22:36",
+          "price": 812,
+          "cost": 1624,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "14:30",
+              "end_time": "14:48",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

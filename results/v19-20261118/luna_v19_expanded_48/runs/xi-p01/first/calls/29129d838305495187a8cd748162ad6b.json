@@ -1,0 +1,37 @@
+{
+  "phase": "first",
+  "tool": "map_departures",
+  "args": {
+    "city": "西安"
+  },
+  "utc": "2026-11-18T13:19:31.168101+00:00",
+  "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "result": {
+    "records": [
+      {
+        "city": "西安",
+        "start": "西安北站",
+        "end": "同盛祥(凤城五路店)",
+        "mode": "metro",
+        "departure": "13:28",
+        "departure_at": "2026-11-19T13:28:00+08:00",
+        "provider": "amap",
+        "evidence_id": "amap-raw:b1346eedf7a95320ca58f4b4d3ea77ba3f1109cb61eafa84336f4559a51b8a3c",
+        "day": 1
+      },
+      {
+        "city": "西安",
+        "start": "西安钟楼",
+        "end": "西安北站",
+        "mode": "metro",
+        "departure": "13:15",
+        "departure_at": "2026-11-20T13:15:00+08:00",
+        "provider": "amap",
+        "evidence_id": "amap-raw:bca49dd36556930424e252ebd467fbfb0fc71dc93525dc5d58b89226a6051f1e",
+        "day": 2
+      }
+    ],
+    "scope": "Frozen transfer quotes for the evaluation trial",
+    "trip_date_known": false
+  }
+}

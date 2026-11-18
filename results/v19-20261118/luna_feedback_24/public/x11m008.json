@@ -1,0 +1,17 @@
+{
+  "uid": "x11m008",
+  "tag": "medium",
+  "start_city": "广州",
+  "target_city": "西安",
+  "days": 4,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置广州。我们两个人想去西安玩4天，往返坐飞机，预算5000元，每天预算不超过5000元，去程12:00之后出发，请给我一个旅行规划。",
+  "nature_language_en": "Currently in 广州. we two want to travel to 西安 for 4 day(s); travel by airplane both ways, with a budget of 5000 RMB, with a daily budget under 5000 RMB, depart after 12:00. Please provide a travel plan.",
+  "xian11": {
+    "city_role": "target",
+    "translation": "controlled_template",
+    "native_compatible": true
+  }
+}

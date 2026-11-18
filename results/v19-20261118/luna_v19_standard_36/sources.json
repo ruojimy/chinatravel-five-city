@@ -1,0 +1,562 @@
+{
+  "method": "ChinaTravel standard split anchors, paired by destination; Chinese and English destination retargeted.",
+  "source_anchors_per_split": 6,
+  "cases": {
+    "xi-ct-e01": {
+      "source_uid": "e20241028160306588034",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/e20241028160306588034.json",
+      "sha256": "2a52ad35bfb804bb26c6d05f6877a19fd0902b95e65bc7ef4525e24d24af8d7a",
+      "original_destination": "重庆",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-e01": {
+      "source_uid": "e20241028160306588034",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/e20241028160306588034.json",
+      "sha256": "2a52ad35bfb804bb26c6d05f6877a19fd0902b95e65bc7ef4525e24d24af8d7a",
+      "original_destination": "重庆",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-e02": {
+      "source_uid": "t20241206171912934521",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206171912934521.json",
+      "sha256": "003267f857a00d7dbcd37488fdee29b648b7e5f465e4b04db2918ab1a5859e45",
+      "original_destination": "苏州",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "intercity_modes",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-e02": {
+      "source_uid": "t20241206171912934521",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206171912934521.json",
+      "sha256": "003267f857a00d7dbcd37488fdee29b648b7e5f465e4b04db2918ab1a5859e45",
+      "original_destination": "苏州",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "intercity_modes",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-e03": {
+      "source_uid": "t20241206171925565020",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206171925565020.json",
+      "sha256": "f5f34abcfd36c241993da899c7b30d4d2b6d9016cee4a2f69783649b2c8ca25d",
+      "original_destination": "深圳",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "tickets_match_people",
+        "taxi_cars",
+        "innercity_modes"
+      ]
+    },
+    "xm-ct-e03": {
+      "source_uid": "t20241206171925565020",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206171925565020.json",
+      "sha256": "f5f34abcfd36c241993da899c7b30d4d2b6d9016cee4a2f69783649b2c8ca25d",
+      "original_destination": "深圳",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "tickets_match_people",
+        "taxi_cars",
+        "innercity_modes"
+      ]
+    },
+    "xi-ct-e04": {
+      "source_uid": "t20241206211714064780",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206211714064780.json",
+      "sha256": "3e59fdbe99d29aa4885e70f62954b9a31fd44bb133ae6f7fca544ed24b686b06",
+      "original_destination": "深圳",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "tickets_match_people",
+        "taxi_cars",
+        "innercity_modes"
+      ]
+    },
+    "xm-ct-e04": {
+      "source_uid": "t20241206211714064780",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206211714064780.json",
+      "sha256": "3e59fdbe99d29aa4885e70f62954b9a31fd44bb133ae6f7fca544ed24b686b06",
+      "original_destination": "深圳",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "tickets_match_people",
+        "taxi_cars",
+        "innercity_modes"
+      ]
+    },
+    "xi-ct-e05": {
+      "source_uid": "e20241028160317745984",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/e20241028160317745984.json",
+      "sha256": "97f3aa7ce3798e2c3df8366cd2da84108150dc819a31f8fd5653d8715766a5f8",
+      "original_destination": "成都",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-e05": {
+      "source_uid": "e20241028160317745984",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/e20241028160317745984.json",
+      "sha256": "97f3aa7ce3798e2c3df8366cd2da84108150dc819a31f8fd5653d8715766a5f8",
+      "original_destination": "成都",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-e06": {
+      "source_uid": "t20241206211714065984",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206211714065984.json",
+      "sha256": "6eb9b2fb56dbe097a83b51d95beb747e67e269ea952cd9a2e89f9eefc4c6e638",
+      "original_destination": "武汉",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "intercity_modes",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-e06": {
+      "source_uid": "t20241206211714065984",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/easy/t20241206211714065984.json",
+      "sha256": "6eb9b2fb56dbe097a83b51d95beb747e67e269ea952cd9a2e89f9eefc4c6e638",
+      "original_destination": "武汉",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "intercity_modes",
+        "tickets_match_people",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m01": {
+      "source_uid": "e20241028160842228543",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160842228543.json",
+      "sha256": "f2faa2ddeb5d679edc8215d9473631b023a9cd313adf72d92e4386fde86a2320",
+      "original_destination": "北京",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "innercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m01": {
+      "source_uid": "e20241028160842228543",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160842228543.json",
+      "sha256": "f2faa2ddeb5d679edc8215d9473631b023a9cd313adf72d92e4386fde86a2320",
+      "original_destination": "北京",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "innercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m02": {
+      "source_uid": "e20241028160951725307",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160951725307.json",
+      "sha256": "d50c52259dce52eb4ebe35369fd9a1c913e9a9c48f3bc74cfdcb68cab0fe7c04",
+      "original_destination": "北京",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "intercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m02": {
+      "source_uid": "e20241028160951725307",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160951725307.json",
+      "sha256": "d50c52259dce52eb4ebe35369fd9a1c913e9a9c48f3bc74cfdcb68cab0fe7c04",
+      "original_destination": "北京",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "intercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m03": {
+      "source_uid": "e20241028160848776495",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160848776495.json",
+      "sha256": "43ac348e4c2b00bcf138f83d8f8c2e10c51a4ae99d7ffb4a7cb70866dde8677c",
+      "original_destination": "杭州",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "intercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m03": {
+      "source_uid": "e20241028160848776495",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160848776495.json",
+      "sha256": "43ac348e4c2b00bcf138f83d8f8c2e10c51a4ae99d7ffb4a7cb70866dde8677c",
+      "original_destination": "杭州",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "intercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m04": {
+      "source_uid": "e20241028160851829629",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160851829629.json",
+      "sha256": "fb80560b33a1271ce0ae816cde69a255ffb3d690cfcb80f6a2a9eab68055c927",
+      "original_destination": "南京",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "innercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m04": {
+      "source_uid": "e20241028160851829629",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028160851829629.json",
+      "sha256": "fb80560b33a1271ce0ae816cde69a255ffb3d690cfcb80f6a2a9eab68055c927",
+      "original_destination": "南京",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "innercity_modes",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m05": {
+      "source_uid": "e20241028161145339341",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028161145339341.json",
+      "sha256": "64f1f23146cf262ee2b1378c738b4d26d58c2b452a4d536fcb683a647c408b8a",
+      "original_destination": "深圳",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "intercity_modes",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m05": {
+      "source_uid": "e20241028161145339341",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028161145339341.json",
+      "sha256": "64f1f23146cf262ee2b1378c738b4d26d58c2b452a4d536fcb683a647c408b8a",
+      "original_destination": "深圳",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "intercity_modes",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-m06": {
+      "source_uid": "e20241028161208995433",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028161208995433.json",
+      "sha256": "332055d158660eade29cb2bce37162394d5aa548281c9917c6de5f433b247bb4",
+      "original_destination": "杭州",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "intercity_modes",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-m06": {
+      "source_uid": "e20241028161208995433",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/medium/e20241028161208995433.json",
+      "sha256": "332055d158660eade29cb2bce37162394d5aa548281c9917c6de5f433b247bb4",
+      "original_destination": "杭州",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "total_budget",
+        "tickets_match_people",
+        "room_count",
+        "room_type",
+        "intercity_modes",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h01": {
+      "source_uid": "h20241029143447759844",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143447759844.json",
+      "sha256": "854d8cfcda06166e508c374e98dbb34c8c623fb54d9d7787dcc27a48f389db9d",
+      "original_destination": "苏州",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h01": {
+      "source_uid": "h20241029143447759844",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143447759844.json",
+      "sha256": "854d8cfcda06166e508c374e98dbb34c8c623fb54d9d7787dcc27a48f389db9d",
+      "original_destination": "苏州",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h02": {
+      "source_uid": "h20241029143845365386",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143845365386.json",
+      "sha256": "2829a5a3feb4ab326671463d9234bb467b65cd9f1c2fe8a70cbdfb2e2ce3b93e",
+      "original_destination": "重庆",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h02": {
+      "source_uid": "h20241029143845365386",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143845365386.json",
+      "sha256": "2829a5a3feb4ab326671463d9234bb467b65cd9f1c2fe8a70cbdfb2e2ce3b93e",
+      "original_destination": "重庆",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h03": {
+      "source_uid": "h20241029143915014327",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143915014327.json",
+      "sha256": "0132f14bed958a610d4471a67ec70385f3582ccb0600b2017b60483d7072d280",
+      "original_destination": "北京",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "room_count",
+        "total_budget",
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h03": {
+      "source_uid": "h20241029143915014327",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143915014327.json",
+      "sha256": "0132f14bed958a610d4471a67ec70385f3582ccb0600b2017b60483d7072d280",
+      "original_destination": "北京",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "room_count",
+        "total_budget",
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h04": {
+      "source_uid": "h20241029143743586105",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143743586105.json",
+      "sha256": "64222f603caf846c48d96a539fb628655ae8bcf9f6e54b82830a3ae4feab8404",
+      "original_destination": "武汉",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h04": {
+      "source_uid": "h20241029143743586105",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143743586105.json",
+      "sha256": "64222f603caf846c48d96a539fb628655ae8bcf9f6e54b82830a3ae4feab8404",
+      "original_destination": "武汉",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h05": {
+      "source_uid": "h20241029143602442546",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143602442546.json",
+      "sha256": "852b2b70d60aeaa5cd6193cc33135ccfb6fd3d9e89f5ddbe1733e21e4ac0313f",
+      "original_destination": "广州",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h05": {
+      "source_uid": "h20241029143602442546",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143602442546.json",
+      "sha256": "852b2b70d60aeaa5cd6193cc33135ccfb6fd3d9e89f5ddbe1733e21e4ac0313f",
+      "original_destination": "广州",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xi-ct-h06": {
+      "source_uid": "h20241029143844076573",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143844076573.json",
+      "sha256": "c383ead540504e67390b8ace963944a3656648bb1c0eb321c3451f20f697f0f2",
+      "original_destination": "上海",
+      "adapted_destination": "西安",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    },
+    "xm-ct-h06": {
+      "source_uid": "h20241029143844076573",
+      "source_path": "chinatravel-five-city-luna-20261115/data/query_sets/human/h20241029143844076573.json",
+      "sha256": "c383ead540504e67390b8ace963944a3656648bb1c0eb321c3451f20f697f0f2",
+      "original_destination": "上海",
+      "adapted_destination": "厦门",
+      "original_hard_logic_preserved": true,
+      "constraint_keys": [
+        "trip_days",
+        "people_number",
+        "taxi_cars"
+      ]
+    }
+  }
+}

@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 from datetime import datetime,timedelta
 from urllib.parse import parse_qs,urlsplit
 import hashlib,json,re
-CITIES={'西安':('SIA',{'XIY'}),'北京':('BJS',{'PEK','PKX'}),
+CITIES={'西安':('SIA',{'XIY'}),'厦门':('XMN',{'XMN'}),'北京':('BJS',{'PEK','PKX'}),
         '上海':('SHA',{'SHA','PVG'}),'南京':('NKG',{'NKG'}),'杭州':('HGH',{'HGH'}),
         '深圳':('SZX',{'SZX'}),'成都':('CTU',{'CTU','TFU'}),'武汉':('WUH',{'WUH'}),
         '广州':('CAN',{'CAN'}),'重庆':('CKG',{'CKG'})}

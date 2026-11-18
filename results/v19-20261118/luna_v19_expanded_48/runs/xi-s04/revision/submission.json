@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-18T13:43:11.079183+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "plan": {
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 2,
+              "end_time": "11:30",
+              "transports": [],
+              "start_time": "09:00",
+              "position": "陕西历史博物馆",
+              "cost": 0,
+              "type": "attraction",
+              "price": 0
+            },
+            {
+              "tickets": 2,
+              "end_time": "14:00",
+              "transports": [
+                {
+                  "start_time": "12:00",
+                  "end_time": "12:07",
+                  "end": "日本飞机轰炸西安遗址",
+                  "mode": "taxi",
+                  "price": 21.77,
+                  "start": "陕西历史博物馆",
+                  "cost": 21.77,
+                  "cars": 1,
+                  "distance": 4.88
+                }
+              ],
+              "start_time": "12:30",
+              "position": "日本飞机轰炸西安遗址",
+              "cost": 0,
+              "type": "attraction",
+              "price": 0
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "start_city": "西安",
+      "people_number": 2
+    },
+    "notes": "按反馈补入目录明确标为type=110200的日本飞机轰炸西安遗址，坐标和开放时间完整；陕西历史博物馆保留。该遗址缺票价，按允许的零元条件假设。出租接驳为离线图估价。",
+    "status": "submitted_first_draft"
+  },
+  "first_sha256": "81e1d77c4c6c0052b1c2b976bad16ebc71cf80f5fe87f505e96ed691b5ef180a",
+  "feedback_sha256": "70a49adab7167fbbb212af474d0d743df8c6b157c9b3ffff14cee00ccbf93ea1"
+}

@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-18T13:29:33.876000+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "嘉庚公园用有独立记录的鳌亭作为景点；公园根记录缺少计划所需时间与价格，故不作为行程实体。南普陀寺静态记录注明历史古迹。鳌亭未知票价按允许的零元条件假设；出租估价来自离线图，不代表实时路线。",
+    "status": "submitted_first_draft",
+    "plan": {
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "start_time": "09:00",
+              "price": 0,
+              "transports": [],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "11:30",
+              "cost": 0,
+              "position": "嘉庚公园-鳌亭"
+            },
+            {
+              "start_time": "13:45",
+              "price": 0,
+              "transports": [
+                {
+                  "end": "南普陀寺",
+                  "distance": 13.89,
+                  "start_time": "13:00",
+                  "start": "嘉庚公园-鳌亭",
+                  "end_time": "13:20",
+                  "price": 57.19,
+                  "cost": 57.19,
+                  "cars": 1,
+                  "mode": "taxi"
+                }
+              ],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "16:00",
+              "cost": 0,
+              "position": "南普陀寺"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "start_city": "厦门",
+      "people_number": 2
+    }
+  }
+}

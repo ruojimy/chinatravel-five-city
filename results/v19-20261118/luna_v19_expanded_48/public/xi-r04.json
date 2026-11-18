@@ -1,0 +1,11 @@
+{
+  "uid": "xi-r04",
+  "tag": "medium",
+  "start_city": "苏州",
+  "target_city": "西安",
+  "days": 2,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "两个人苏州往返西安，火车，连往返共两天。第一天上午7点前坐车，到西安玩并住一晚。第二天下午15:30以后从西安发车并当天抵苏州。"
+}

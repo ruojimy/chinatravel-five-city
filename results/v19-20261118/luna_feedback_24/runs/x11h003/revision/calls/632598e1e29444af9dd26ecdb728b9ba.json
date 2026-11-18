@@ -1,0 +1,3053 @@
+{
+  "phase": "revision",
+  "tool": "intercity_search",
+  "args": {
+    "from_city": "西安",
+    "to_city": "重庆",
+    "mode": "any"
+  },
+  "utc": "2026-11-18T12:14:58.488519+00:00",
+  "receipt_sha256": "de13024ee282a1968cfac4faf70f1edc3960b6be607d432adeda9ae263cde0ac",
+  "result": {
+    "records": [
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:0:K691",
+          "kind": "train",
+          "city": "",
+          "name": "K691",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:0:K691",
+            "name": "K691",
+            "data": {
+              "TrainID": "K691",
+              "TrainType": "普速",
+              "From": "西安东",
+              "To": "重庆西",
+              "BeginTime": "07:17",
+              "EndTime": "17:35",
+              "Duration": 10.3,
+              "Cost": 102,
+              "BenchmarkHistoricalCost": 102.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "1",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "1",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安东",
+                  "西安东站"
+                ],
+                "canonical": "西安东站",
+                "position": [
+                  34.21519722,
+                  109.05899444
+                ],
+                "positions": [
+                  [
+                    34.21519722,
+                    109.05899444
+                  ],
+                  [
+                    34.21519722,
+                    109.05899444
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+                  "sha256": "a5994db714441f449a1acbc1b4bf326b43dbe92f7898e86f0a7af6c8999324c1",
+                  "train_id": "K507",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:1:G2239",
+          "kind": "train",
+          "city": "",
+          "name": "G2239",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:1:G2239",
+            "name": "G2239",
+            "data": {
+              "TrainID": "G2239",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "07:38",
+              "EndTime": "13:11",
+              "Duration": 5.55,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:2:G3739",
+          "kind": "train",
+          "city": "",
+          "name": "G3739",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:2:G3739",
+            "name": "G3739",
+            "data": {
+              "TrainID": "G3739",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "08:07",
+              "EndTime": "13:39",
+              "Duration": 5.533333333333333,
+              "Cost": 488,
+              "BenchmarkHistoricalCost": 488.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:3:D714",
+          "kind": "train",
+          "city": "",
+          "name": "D714",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:3:D714",
+            "name": "D714",
+            "data": {
+              "TrainID": "D714",
+              "TrainType": "高铁",
+              "From": "西安",
+              "To": "重庆西",
+              "BeginTime": "09:09",
+              "EndTime": "18:20",
+              "Duration": 9.183333333333334,
+              "Cost": 232,
+              "BenchmarkHistoricalCost": 232.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安",
+                  "西安站"
+                ],
+                "canonical": "西安站",
+                "position": [
+                  34.2786,
+                  108.958
+                ],
+                "positions": [
+                  [
+                    34.2786,
+                    108.958
+                  ],
+                  [
+                    34.2786,
+                    108.958
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "D92",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:4:D715",
+          "kind": "train",
+          "city": "",
+          "name": "D715",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:4:D715",
+            "name": "D715",
+            "data": {
+              "TrainID": "D715",
+              "TrainType": "高铁",
+              "From": "西安东",
+              "To": "重庆西",
+              "BeginTime": "09:41",
+              "EndTime": "18:20",
+              "Duration": 8.65,
+              "Cost": 222,
+              "BenchmarkHistoricalCost": 222.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安东",
+                  "西安东站"
+                ],
+                "canonical": "西安东站",
+                "position": [
+                  34.21519722,
+                  109.05899444
+                ],
+                "positions": [
+                  [
+                    34.21519722,
+                    109.05899444
+                  ],
+                  [
+                    34.21519722,
+                    109.05899444
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+                  "sha256": "a5994db714441f449a1acbc1b4bf326b43dbe92f7898e86f0a7af6c8999324c1",
+                  "train_id": "K507",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:5:G3359",
+          "kind": "train",
+          "city": "",
+          "name": "G3359",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:5:G3359",
+            "name": "G3359",
+            "data": {
+              "TrainID": "G3359",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "09:41",
+              "EndTime": "14:56",
+              "Duration": 5.25,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:6:Z139",
+          "kind": "train",
+          "city": "",
+          "name": "Z139",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:6:Z139",
+            "name": "Z139",
+            "data": {
+              "TrainID": "Z139",
+              "TrainType": "普速",
+              "From": "西安东",
+              "To": "重庆西",
+              "BeginTime": "10:06",
+              "EndTime": "20:40",
+              "Duration": 10.566666666666666,
+              "Cost": 102,
+              "BenchmarkHistoricalCost": 102.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "1",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "1",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安东",
+                  "西安东站"
+                ],
+                "canonical": "西安东站",
+                "position": [
+                  34.21519722,
+                  109.05899444
+                ],
+                "positions": [
+                  [
+                    34.21519722,
+                    109.05899444
+                  ],
+                  [
+                    34.21519722,
+                    109.05899444
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+                  "sha256": "a5994db714441f449a1acbc1b4bf326b43dbe92f7898e86f0a7af6c8999324c1",
+                  "train_id": "K507",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:7:G1517",
+          "kind": "train",
+          "city": "",
+          "name": "G1517",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:7:G1517",
+            "name": "G1517",
+            "data": {
+              "TrainID": "G1517",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "10:11",
+              "EndTime": "16:09",
+              "Duration": 5.966666666666667,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:8:G3351",
+          "kind": "train",
+          "city": "",
+          "name": "G3351",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:8:G3351",
+            "name": "G3351",
+            "data": {
+              "TrainID": "G3351",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "11:05",
+              "EndTime": "16:20",
+              "Duration": 5.25,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:9:K4518",
+          "kind": "train",
+          "city": "",
+          "name": "K4518",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:9:K4518",
+            "name": "K4518",
+            "data": {
+              "TrainID": "K4518",
+              "TrainType": "普速",
+              "From": "西安",
+              "To": "重庆西",
+              "BeginTime": "11:54",
+              "EndTime": "23:15",
+              "Duration": 11.35,
+              "Cost": 102,
+              "BenchmarkHistoricalCost": null,
+              "BenchmarkFareDate": null,
+              "BenchmarkFareSeat": null,
+              "BenchmarkFareSource": null,
+              "BenchmarkFareEvidenceSHA256": null,
+              "BenchmarkFareEvidencePath": null,
+              "BenchmarkFareStatus": null,
+              "ArrivalDayOffset": null,
+              "BenchmarkHistoricalScheduleOnly": null,
+              "CostSource": null,
+              "CostDate": null,
+              "CostSeatCode": null,
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": true,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "dynamic_observation_no_trip_date",
+            "needs_live_verification": true,
+            "notice": "Direct train and seat fare from Amap; query travel date and actual seat availability remain unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安",
+                  "西安站"
+                ],
+                "canonical": "西安站",
+                "position": [
+                  34.2786,
+                  108.958
+                ],
+                "positions": [
+                  [
+                    34.2786,
+                    108.958
+                  ],
+                  [
+                    34.2786,
+                    108.958
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "D92",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "dynamic_train_evidence": {
+              "from_city": "西安",
+              "to_city": "重庆",
+              "record": {
+                "TrainID": "K4518",
+                "TrainType": "普速",
+                "From": "西安",
+                "To": "重庆西",
+                "BeginTime": "11:54",
+                "EndTime": "23:15",
+                "Duration": 11.35,
+                "Cost": 102
+              },
+              "seat": "火车硬座",
+              "observation_time_utc": "2026-11-15T14:36:14.981321+00:00",
+              "source_raw_sha256": "c48c2f7c329caeaa259f9149dd14c2ecfdca6b98e10dd3eacb24ea3143ae2d15",
+              "evidence_path": "live_capture/dynamic_live.sqlite3",
+              "source_row_id": 2,
+              "trip_date": null,
+              "availability": "unknown",
+              "status": "new_amap_conditional_reference"
+            }
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:10:G2207",
+          "kind": "train",
+          "city": "",
+          "name": "G2207",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:10:G2207",
+            "name": "G2207",
+            "data": {
+              "TrainID": "G2207",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "12:51",
+              "EndTime": "18:11",
+              "Duration": 5.333333333333333,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:11:G1833",
+          "kind": "train",
+          "city": "",
+          "name": "G1833",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:11:G1833",
+            "name": "G1833",
+            "data": {
+              "TrainID": "G1833",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "13:16",
+              "EndTime": "18:45",
+              "Duration": 5.483333333333333,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:12:G3209",
+          "kind": "train",
+          "city": "",
+          "name": "G3209",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:12:G3209",
+            "name": "G3209",
+            "data": {
+              "TrainID": "G3209",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "13:32",
+              "EndTime": "19:18",
+              "Duration": 5.7666666666666675,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:13:G1831",
+          "kind": "train",
+          "city": "",
+          "name": "G1831",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:13:G1831",
+            "name": "G1831",
+            "data": {
+              "TrainID": "G1831",
+              "TrainType": "G",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "13:38",
+              "EndTime": "19:02",
+              "Duration": 5.4,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": null,
+              "BenchmarkHistoricalScheduleOnly": null,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:14:G1887",
+          "kind": "train",
+          "city": "",
+          "name": "G1887",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:14:G1887",
+            "name": "G1887",
+            "data": {
+              "TrainID": "G1887",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "14:01",
+              "EndTime": "19:31",
+              "Duration": 5.5,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:15:G1975",
+          "kind": "train",
+          "city": "",
+          "name": "G1975",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:15:G1975",
+            "name": "G1975",
+            "data": {
+              "TrainID": "G1975",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "14:33",
+              "EndTime": "19:54",
+              "Duration": 5.35,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:16:G1307",
+          "kind": "train",
+          "city": "",
+          "name": "G1307",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:16:G1307",
+            "name": "G1307",
+            "data": {
+              "TrainID": "G1307",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "15:24",
+              "EndTime": "20:44",
+              "Duration": 5.333333333333333,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:17:G3898",
+          "kind": "train",
+          "city": "",
+          "name": "G3898",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:17:G3898",
+            "name": "G3898",
+            "data": {
+              "TrainID": "G3898",
+              "TrainType": "高铁",
+              "From": "西安东",
+              "To": "重庆北站",
+              "BeginTime": "15:36",
+              "EndTime": "21:12",
+              "Duration": 5.6,
+              "Cost": 659,
+              "BenchmarkHistoricalCost": 659.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安东",
+                  "西安东站"
+                ],
+                "canonical": "西安东站",
+                "position": [
+                  34.21519722,
+                  109.05899444
+                ],
+                "positions": [
+                  [
+                    34.21519722,
+                    109.05899444
+                  ],
+                  [
+                    34.21519722,
+                    109.05899444
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+                  "sha256": "a5994db714441f449a1acbc1b4bf326b43dbe92f7898e86f0a7af6c8999324c1",
+                  "train_id": "K507",
+                  "field": "To"
+                }
+              },
+              "to": null
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:18:D1711",
+          "kind": "train",
+          "city": "",
+          "name": "D1711",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:18:D1711",
+            "name": "D1711",
+            "data": {
+              "TrainID": "D1711",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆北站",
+              "BeginTime": "15:49",
+              "EndTime": "21:04",
+              "Duration": 5.25,
+              "Cost": 313,
+              "BenchmarkHistoricalCost": 313.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": null
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:19:G2233",
+          "kind": "train",
+          "city": "",
+          "name": "G2233",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:19:G2233",
+            "name": "G2233",
+            "data": {
+              "TrainID": "G2233",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "16:22",
+              "EndTime": "22:11",
+              "Duration": 5.816666666666666,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:20:G3781",
+          "kind": "train",
+          "city": "",
+          "name": "G3781",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:20:G3781",
+            "name": "G3781",
+            "data": {
+              "TrainID": "G3781",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "16:34",
+              "EndTime": "22:44",
+              "Duration": 6.166666666666667,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:21:G1835",
+          "kind": "train",
+          "city": "",
+          "name": "G1835",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:21:G1835",
+            "name": "G1835",
+            "data": {
+              "TrainID": "G1835",
+              "TrainType": "高铁",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "17:09",
+              "EndTime": "22:29",
+              "Duration": 5.333333333333333,
+              "Cost": 482,
+              "BenchmarkHistoricalCost": 482.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 0.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:22:D1991",
+          "kind": "train",
+          "city": "",
+          "name": "D1991",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:22:D1991",
+            "name": "D1991",
+            "data": {
+              "TrainID": "D1991",
+              "TrainType": "D",
+              "From": "西安北",
+              "To": "重庆西",
+              "BeginTime": "17:43",
+              "EndTime": "22:57",
+              "Duration": 5.23,
+              "Cost": 315,
+              "BenchmarkHistoricalCost": 315.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "O",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": null,
+              "BenchmarkHistoricalScheduleOnly": null,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "O",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安北",
+                  "西安北站"
+                ],
+                "canonical": "西安北站",
+                "position": [
+                  34.3766,
+                  108.934
+                ],
+                "positions": [
+                  [
+                    34.3766,
+                    108.934
+                  ],
+                  [
+                    34.3766,
+                    108.934
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+                  "sha256": "32c62dd4b5307bab0651e7f5436568451b73d212208d8cf3188af0f6333927ea",
+                  "train_id": "G1970",
+                  "field": "To"
+                }
+              },
+              "to": {
+                "city": "重庆",
+                "names": [
+                  "重庆西",
+                  "重庆西站"
+                ],
+                "canonical": "重庆西站",
+                "position": [
+                  29.500386,
+                  106.437901
+                ],
+                "positions": [
+                  [
+                    29.500386,
+                    106.437901
+                  ],
+                  [
+                    29.500192,
+                    106.438015
+                  ]
+                ],
+                "distance_m": 24.229,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\chongqing\\poi.json",
+                "poi_sha256": "a2d3b4aec4d05d45406c571a32a4d03e8d99d7f227977a5e97b16afd6b922362",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+                  "sha256": "c953552982fab2bc06b469008cbc18025d558e648683bf1dd60745e0f021fa02",
+                  "train_id": "D1991",
+                  "field": "To"
+                }
+              }
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      },
+      {
+        "mode": "train",
+        "record": {
+          "record_id": "train:23:K507",
+          "kind": "train",
+          "city": "",
+          "name": "K507",
+          "payload": {
+            "schema_version": "repaired-expanded-transport-v1",
+            "language": "zh",
+            "kind": "train",
+            "record_id": "train:23:K507",
+            "name": "K507",
+            "data": {
+              "TrainID": "K507",
+              "TrainType": "普速",
+              "From": "西安东",
+              "To": "重庆北站",
+              "BeginTime": "23:06",
+              "EndTime": "08:28",
+              "Duration": 9.366666666666667,
+              "Cost": 102,
+              "BenchmarkHistoricalCost": 102.0,
+              "BenchmarkFareDate": "2026-11-16",
+              "BenchmarkFareSeat": "1",
+              "BenchmarkFareSource": "12306_official_published_reference",
+              "BenchmarkFareEvidenceSHA256": "2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f",
+              "BenchmarkFareEvidencePath": "benchmark12_evidence/12306/2744b309b7c07c35b2353301d002e42919e17f6566ec13268a3dd18fc963c30f/response.bin",
+              "BenchmarkFareStatus": "historical_conditional_not_travel_date_or_availability",
+              "ArrivalDayOffset": 1.0,
+              "BenchmarkHistoricalScheduleOnly": 1.0,
+              "CostSource": "12306_historical_benchmark_reference",
+              "CostDate": "2026-11-16",
+              "CostSeatCode": "1",
+              "CostAvailability": null,
+              "CostActualPurchasePrice": null
+            },
+            "unknown_fields": [],
+            "static_budget_eligible": false,
+            "dynamic_lookup": "not_run_frozen_sandbox",
+            "source_updated_at": null,
+            "freshness_status": "historical_conditional_benchmark",
+            "needs_live_verification": true,
+            "notice": "Historical 12306 published fare for the recorded date/seat, used only as an undated conditional benchmark reference. Actual trip date, fare, sale and availability are unknown.",
+            "station_aliases": {
+              "from": {
+                "city": "西安",
+                "names": [
+                  "西安东",
+                  "西安东站"
+                ],
+                "canonical": "西安东站",
+                "position": [
+                  34.21519722,
+                  109.05899444
+                ],
+                "positions": [
+                  [
+                    34.21519722,
+                    109.05899444
+                  ],
+                  [
+                    34.21519722,
+                    109.05899444
+                  ]
+                ],
+                "distance_m": 0.0,
+                "position_tolerance_m": 25,
+                "identity_basis": "unique city POIs, train endpoint, suffix and proximity; inferred",
+                "poi_file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\poi\\xian\\poi.json",
+                "poi_sha256": "6d062980e1d443ad7be0aebbfa9e3b091cf6c9e567a34e9a61f1998ca57a28d7",
+                "train_evidence": {
+                  "file": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+                  "sha256": "a5994db714441f449a1acbc1b4bf326b43dbe92f7898e86f0a7af6c8999324c1",
+                  "train_id": "K507",
+                  "field": "To"
+                }
+              },
+              "to": null
+            },
+            "historical_benchmark_budget_eligible": true
+          },
+          "evidence_status": "benchmark_only",
+          "source_updated_at": null,
+          "needs_live_verification": true
+        }
+      }
+    ],
+    "returned": 24,
+    "reference_records": [
+      {
+        "mode": "train",
+        "name": "G3766",
+        "from": "西安北",
+        "to": "重庆北",
+        "status": "reference_only",
+        "missing_fields": [
+          "Cost"
+        ],
+        "dynamic_needed": true,
+        "dynamic_lookup": "not_run_frozen_sandbox"
+      },
+      {
+        "mode": "airplane",
+        "name": "MU2261",
+        "from": "西安咸阳国际机场",
+        "to": "重庆江北国际机场",
+        "status": "reference_only",
+        "missing_fields": [
+          "Cost"
+        ],
+        "dynamic_needed": true,
+        "dynamic_lookup": "not_run_frozen_sandbox"
+      },
+      {
+        "mode": "airplane",
+        "name": "CZ2304",
+        "from": "西安咸阳国际机场",
+        "to": "重庆江北国际机场",
+        "status": "reference_only",
+        "missing_fields": [
+          "Cost"
+        ],
+        "dynamic_needed": true,
+        "dynamic_lookup": "not_run_frozen_sandbox"
+      },
+      {
+        "mode": "airplane",
+        "name": "MU2267",
+        "from": "西安咸阳国际机场",
+        "to": "重庆江北国际机场",
+        "status": "reference_only",
+        "missing_fields": [
+          "Cost"
+        ],
+        "dynamic_needed": true,
+        "dynamic_lookup": "not_run_frozen_sandbox"
+      },
+      {
+        "mode": "airplane",
+        "name": "CES2267",
+        "from": "西安咸阳国际机场",
+        "to": "重庆江北国际机场",
+        "status": "reference_only",
+        "missing_fields": [
+          "Cost"
+        ],
+        "dynamic_needed": true,
+        "dynamic_lookup": "not_run_frozen_sandbox"
+      }
+    ],
+    "conditional_records": [
+      {
+        "mode": "train",
+        "name": "G3766",
+        "data": {
+          "TrainID": "G3766",
+          "TrainType": "G",
+          "From": "西安北",
+          "To": "重庆北",
+          "BeginTime": "08:02",
+          "EndTime": "13:34",
+          "Duration": 5.53,
+          "Cost": null,
+          "BenchmarkHistoricalCost": null,
+          "BenchmarkFareDate": null,
+          "BenchmarkFareSeat": null,
+          "BenchmarkFareSource": null,
+          "BenchmarkFareEvidenceSHA256": null,
+          "BenchmarkFareEvidencePath": null,
+          "BenchmarkFareStatus": null,
+          "ArrivalDayOffset": null,
+          "BenchmarkHistoricalScheduleOnly": null,
+          "CostSource": null,
+          "CostDate": null,
+          "CostSeatCode": null,
+          "CostAvailability": null,
+          "CostActualPurchasePrice": null
+        },
+        "status": "visible_but_fields_unresolved",
+        "missing_fields": [
+          "Cost"
+        ],
+        "notice": "Known fields remain visible; missing fields cannot be used as verified values."
+      },
+      {
+        "mode": "airplane",
+        "name": "MU2261",
+        "data": {
+          "FlightID": "MU2261",
+          "From": "西安咸阳国际机场",
+          "To": "重庆江北国际机场",
+          "BeginTime": "07:40",
+          "EndTime": "09:10",
+          "Duration": 1.5,
+          "Cost": null,
+          "FromRaw": "西安咸阳国际机场",
+          "ToRaw": "重庆江北国际机场",
+          "FromName": "西安咸阳国际机场",
+          "ToName": "重庆江北国际机场",
+          "FromOriginal": "XIY",
+          "ToOriginal": "CKG"
+        },
+        "status": "visible_but_fields_unresolved",
+        "missing_fields": [
+          "Cost"
+        ],
+        "notice": "Known fields remain visible; missing fields cannot be used as verified values."
+      },
+      {
+        "mode": "airplane",
+        "name": "CZ2304",
+        "data": {
+          "FlightID": "CZ2304",
+          "From": "西安咸阳国际机场",
+          "To": "重庆江北国际机场",
+          "BeginTime": "10:55",
+          "EndTime": "12:25",
+          "Duration": 1.5,
+          "Cost": null,
+          "FromRaw": "西安咸阳国际机场",
+          "ToRaw": "重庆江北国际机场",
+          "FromName": "西安咸阳国际机场",
+          "ToName": "重庆江北国际机场",
+          "FromOriginal": "XIY",
+          "ToOriginal": "CKG"
+        },
+        "status": "visible_but_fields_unresolved",
+        "missing_fields": [
+          "Cost"
+        ],
+        "notice": "Known fields remain visible; missing fields cannot be used as verified values."
+      },
+      {
+        "mode": "airplane",
+        "name": "MU2267",
+        "data": {
+          "FlightID": "MU2267",
+          "From": "西安咸阳国际机场",
+          "To": "重庆江北国际机场",
+          "BeginTime": "15:25",
+          "EndTime": "17:10",
+          "Duration": 1.75,
+          "Cost": null,
+          "FromRaw": "西安咸阳国际机场",
+          "ToRaw": "重庆江北国际机场",
+          "FromName": "西安咸阳国际机场",
+          "ToName": "重庆江北国际机场",
+          "FromOriginal": "XIY",
+          "ToOriginal": "CKG"
+        },
+        "status": "visible_but_fields_unresolved",
+        "missing_fields": [
+          "Cost"
+        ],
+        "notice": "Known fields remain visible; missing fields cannot be used as verified values."
+      },
+      {
+        "mode": "airplane",
+        "name": "CES2267",
+        "data": {
+          "FlightID": "CES2267",
+          "From": "西安咸阳国际机场",
+          "To": "重庆江北国际机场",
+          "BeginTime": "15:32",
+          "EndTime": "16:50",
+          "Duration": 1.3,
+          "Cost": null,
+          "FromRaw": "西安咸阳国际机场",
+          "ToRaw": "重庆江北国际机场",
+          "FromName": "西安咸阳国际机场",
+          "ToName": "重庆江北国际机场",
+          "FromOriginal": "XIY",
+          "ToOriginal": "CKG"
+        },
+        "status": "visible_but_fields_unresolved",
+        "missing_fields": [
+          "Cost"
+        ],
+        "notice": "Known fields remain visible; missing fields cannot be used as verified values."
+      }
+    ],
+    "conditional_total": 5,
+    "reference_total": 5,
+    "source": "G3 repaired static transport API",
+    "errors": [],
+    "dynamic_lookup_performed": false,
+    "real_world_availability": false,
+    "dynamic_access": {
+      "triggered": true,
+      "mode": "frozen_snapshot_replay",
+      "status": "prefetched",
+      "requested_mode": "any",
+      "provider": "amap",
+      "provider_calls_used": 4,
+      "provider_budget": 4,
+      "snapshot_sha256": "6c3d34f6c233db1919a78b78bbd2eb9abd78340b7bbcf5728b07a40f30b66be2",
+      "provider_stages": [
+        {
+          "stage": "v4_prefetch",
+          "calls_used": 4,
+          "budget": 4
+        },
+        {
+          "stage": "v5_prefetch",
+          "calls_used": 4,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 4,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 4,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 2,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 4,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 3,
+          "budget": 4
+        },
+        {
+          "stage": "incremental_amap_rail",
+          "calls_used": 4,
+          "budget": 4
+        }
+      ],
+      "provider_total_calls_used": 29,
+      "direct_train_count": 1,
+      "trip_date": null,
+      "availability": "unknown",
+      "notice": "Airfare is not inferred from a public-transport route; unprefetched fields remain unknown."
+    }
+  }
+}

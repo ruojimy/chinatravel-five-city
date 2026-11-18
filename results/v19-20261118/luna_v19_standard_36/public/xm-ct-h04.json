@@ -1,0 +1,12 @@
+{
+  "uid": "xm-ct-h04",
+  "tag": "human",
+  "start_city": "广州",
+  "target_city": "厦门",
+  "days": 4,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "[当前位置广州,目标位置厦门,旅行人数3,旅行天数4] 我们想去厦门玩4天，请帮我规划一下行程。旅游安排不要太紧凑，尽可能舒适一些。交通尽可能便利。",
+  "nature_language_en": "[Current location: Guangzhou, Destination: Xiamen, Number of travelers: 3, Travel days: 4] We want to visit Xiamen for 4 days. Please help us plan the itinerary. The travel schedule should not be too tight and should be as comfortable as possible. Transportation should be as convenient as possible."
+}

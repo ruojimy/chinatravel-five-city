@@ -1,0 +1,63 @@
+{
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "tickets": 2,
+          "transports": [],
+          "type": "attraction",
+          "start_time": "09:00",
+          "position": "西安碑林博物馆",
+          "price": 85,
+          "end_time": "11:45",
+          "cost": 170
+        },
+        {
+          "start_time": "12:30",
+          "end_time": "13:30",
+          "price": 40,
+          "cost": 80,
+          "position": "清真拉菲尔鱼庄(回民街店)",
+          "transports": [
+            {
+              "start": "西安碑林博物馆",
+              "end": "清真拉菲尔鱼庄(回民街店)",
+              "distance": 2.0067970532050383,
+              "start_time": "12:00",
+              "mode": "walk",
+              "price": 0,
+              "end_time": "12:24",
+              "cost": 0
+            }
+          ],
+          "type": "lunch"
+        },
+        {
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "清真拉菲尔鱼庄(回民街店)",
+              "end": "回民街",
+              "distance": 0.49423964424703243,
+              "start_time": "13:30",
+              "mode": "walk",
+              "price": 0,
+              "end_time": "13:35",
+              "cost": 0
+            }
+          ],
+          "type": "attraction",
+          "start_time": "14:00",
+          "position": "回民街",
+          "price": 0,
+          "end_time": "15:30",
+          "cost": 0
+        }
+      ],
+      "day": 1
+    }
+  ],
+  "target_city": "西安",
+  "people_number": 2,
+  "start_city": "西安"
+}

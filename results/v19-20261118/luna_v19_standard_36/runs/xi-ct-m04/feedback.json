@@ -1,0 +1,8 @@
+{
+  "first_sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已按杭州→西安、西安→杭州查询火车。可见的低价去程 K308 为 02:27→22:24（票价 173.5），次日可见返程最早 D114 00:33 出发，或 K306 06:45 出发并于第三天 03:21 到达；在总行程仅 2 个日历天时，去程抵达已晚于景点营业时间，返程选项又不能留出可用游览时段。更便宜的候选无法组成有可用游览时间的两日往返安排，因此无法给出满足“去西安玩两天”的可执行行程。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

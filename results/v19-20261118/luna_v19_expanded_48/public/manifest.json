@@ -1,0 +1,349 @@
+{
+  "model": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "profile": "xiamen12_historical_v19_maps",
+  "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "cases": {
+    "xi-r01": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "c4986d1d96d3cfd2e6062bf0aff1377c6141ea58572362751b9cd58925164b80",
+      "query_sha256": "da893978f7bc296c236b7ee9813fcb08bac7c6eb4135512b3016f077d31d9ef8",
+      "audit_sha256": "5696d8528e2e59c28722a1ca4476ac158f6423c9c35fe900ee4de155035d7d5b"
+    },
+    "xi-r02": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "66bac32c7806de6ac76b6ccedde3ce9f05d566047b3797d5e9a3e3c0c276ee02",
+      "query_sha256": "4db1decc07cf75552a3d4db718fb5d868cf0f2a27757997dd9305493f29e76f7",
+      "audit_sha256": "359fa91499471c6855a09a72a29e83a89a39655dd65360e06147d62e6f7c41b2"
+    },
+    "xi-r03": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "d14450ab4dc26e6b887d33d1dab63725835d76ead5c64f16f2cec6cb09b07d85",
+      "query_sha256": "b8add07222b14e7e0a3868bb7bf0ba274a6cbaa3b8d70356b1bc18c516d1e32d",
+      "audit_sha256": "08d826f7026b8d2dcda8325232d422087eef494f9b515d8ab7987cae73957964"
+    },
+    "xi-r04": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "b0654176c3ee1d1e913ca6b0ecd3791f1ddb6130d57f9ad9d391f29d665db5db",
+      "query_sha256": "ebe94fd4e1b36e6bcc9d17db6bd4cdfc1f7e7a7daf7f71eb5d525b06e95e1555",
+      "audit_sha256": "732b72ac1f30f6bee737717777d389bd62a271be8478bf02a62fb51521c31ea5"
+    },
+    "xi-r05": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "3e09518a5531bb1a90ff5492aa7fd4876ad2ff154559c1b857f49e07ac20e017",
+      "query_sha256": "98a28d8e6166609a3ff09230f64c55d8c5d6987cf126961c3c60f39825fabc00",
+      "audit_sha256": "4c4afd8d5297b7972e6780e15a0362502500be00bb16a26b421676047c9ce4b6"
+    },
+    "xi-r06": {
+      "city": "xian",
+      "family": "rail_timing",
+      "public_sha256": "05e17d884192551e60573a445c927cc389228817eb09790440b155f67e6212d4",
+      "query_sha256": "37302e1a66152f56e34985c6ca8657437c07db98c2fb2777fb9ed15281c4fa49",
+      "audit_sha256": "e3bcff25c4fa71a10d9152da61a2730512d4fbea85b29f4dd1a7fc5257c459c9"
+    },
+    "xm-r01": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "7f65ae5179881518347919e5b755692cb669485ff732df5ebda79ba47f6ec726",
+      "query_sha256": "f2295dae5ed5e5d0995bf937d659d0c88afd75f4d9347535f97e6fecae669f2b",
+      "audit_sha256": "bce6670ef5f2ab1e27836bcf70e0d4398f9526774b676b4f43c878311f2599e3"
+    },
+    "xm-r02": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "863646e8d937d0f28bc32d40e0a9882112b777533d2560886eed3413125586dd",
+      "query_sha256": "4008902298acaccf6be87e9a17976ed79310a87e476cbc21f1220d61c932e926",
+      "audit_sha256": "18deca97623e92e6b92fdfd67347c5c331728df1646c4b713f52e37d7fd3687d"
+    },
+    "xm-r03": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "f0b8fa4a47ffb4d43a8bdec8ad8e549a058bf1b4b389f6809435ac6fb5a214a8",
+      "query_sha256": "89956e0145521c78e69c99b2615bebfb4fb793d3100d3fdffd625789cc7cb4d1",
+      "audit_sha256": "f414951ca8ee535b70b2e94977efb11f757a83b06ffe8653cae17322d16f77db"
+    },
+    "xm-r04": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "7598540b941e769c85a2bdc8aa511d9ee042fa0f9a326821f68ec981a494aee2",
+      "query_sha256": "bd0b0685319333dff0689dcc70d2a42fa04a95cc961c86ebd51b84c640870bf0",
+      "audit_sha256": "b74a7835ba3ec50302f1ad39a0e98ad2783740855c20536d3bbea73e0bc5f7f4"
+    },
+    "xm-r05": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "362075f50148ead469aba3c0d6da7f87ca24dbc46d56c65c77827c5cc3e7e175",
+      "query_sha256": "8976147a34211067e7d1742d77193062851088e2294ff5ccaed4439ad6c51d3c",
+      "audit_sha256": "5b5a34628df4ad40f835e313a478b0abccd49747b6fc0397bac37ca9a933feae"
+    },
+    "xm-r06": {
+      "city": "xiamen",
+      "family": "rail_timing",
+      "public_sha256": "0b019f955c9b149d70f1ed57f99799a291505a5b9c87f5027db53e31ac50c0a6",
+      "query_sha256": "08e364573b31985e9e8d447133b3fbff9690253a8aec576a20d9f5b8993b410f",
+      "audit_sha256": "a74f37ddf71604ecbb8822c5da9d31ece1df4d02992e2a26d33792e36f5bcbb7"
+    },
+    "xi-p01": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "d90a3b090218b25fbc4a9b212872cf9d3997e3ee3d159f78a3b62c6c059c1ab1",
+      "query_sha256": "964c3b534326fa226b3e8a2a17b02afa02a5e49a3fb5f883c105eaf44f47cea5",
+      "audit_sha256": "cbe8502105826a2de48b0509ef6dc1306722096564169114590c686892868867"
+    },
+    "xi-p02": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "c4062476463081e87564d50e852d3adfe6cb338abea719eb21703652310273cc",
+      "query_sha256": "fbe729dcc5b21635e31ce2e8713e77dc9d903954ffe50f3a3436b2751b9c25e4",
+      "audit_sha256": "698ffeccda7a47770eab006c67f3e5d04d969112509a2ae09bc5d1d577d83602"
+    },
+    "xi-p03": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "56d628fe027c6b1e4ae1e237d34aea1e530afd9ce35f6bd17e923e98923cd92b",
+      "query_sha256": "31329d30c3999cd884aed73586812c264920a028f744a0502fa6c55df37147f9",
+      "audit_sha256": "f3c81c2a778095bf1511faca31a0e456e1af2404cde58ce1fd90726dc9759aa7"
+    },
+    "xi-p04": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "d2945f99242a6fca66e2943b80cb8236074b54a3a6a0c12b218ea28963edc8ca",
+      "query_sha256": "980cbf513ad9dc8f572141fb15d48e22d5748a730c96cd042b10d327bba8c948",
+      "audit_sha256": "1e3028870467f37f7f149fae7bd4f2d1ff52d5f2aaf5a523437aa9e9e8f80a71"
+    },
+    "xi-p05": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "2313e97f21445a2c86cf27414002490a8a1d0610accc9ad39fb3bdd347318972",
+      "query_sha256": "2afb7519e537b66d7478d3cf0f0e81e59afb6c8fdfce38437ae4aca8d3fda472",
+      "audit_sha256": "b0ef4b5dd4880b4bfa198a3e7f92eabf7e32ac2318245e1886a832bc466455c3"
+    },
+    "xi-p06": {
+      "city": "xian",
+      "family": "place_connection",
+      "public_sha256": "05f5e1810ced7794aa7bea189236026fe6567a26073d08ce3df97994ffb98e8f",
+      "query_sha256": "4934de976971d84733c6450584f27922e4b9fe40d8ecf02ea4a9f82ef613b812",
+      "audit_sha256": "827dbe63d736273740ff3ae60c46ae138e087a34ad0aacc93278c1903e39ff73"
+    },
+    "xm-p01": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "889ba453d4443f3af685e9fb74b701342edfb3c7ae2c3aef409a6109f6f35814",
+      "query_sha256": "9a77a921b4d37de7d72396ec91015c8cbf77abf6502238911de1db5ea5515c02",
+      "audit_sha256": "fcf8ab9a77cd93dbf46c691b95786e278bfbe04814aad9e62161d981f922304d"
+    },
+    "xm-p02": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "8d071d8668e6d6f42314e996d8aff91e5a509c1d944839fcd4efa997a1ecf800",
+      "query_sha256": "0ea7430d1f6746cdc5d1fa1c1fc47b0d7ed6e796f4b612e58d7b82db724d5602",
+      "audit_sha256": "7e9b2740b84aa88f813451ba46bc7c11bcda03488dd26088bad0a79284542c20"
+    },
+    "xm-p03": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "2acfa4e009a73d5650048bb373ebbde33eb9aac1821101bd5b2dc669c180a7be",
+      "query_sha256": "b1bde1d733b89d9714093732fd214baf4940b2d78b7549739c8131659a7b4845",
+      "audit_sha256": "a5a17e59547a39420548a09186ec1a192af78462c0f706ff354650a9de1b95b0"
+    },
+    "xm-p04": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "60fffe0b7a024b59bb0f52f503ce7a3f6170dc83fa513d4f196f682b1a9b4f93",
+      "query_sha256": "60abbbf68ef0dfc297ed05680d73a925c3513613baab750ca8caa38111f7c698",
+      "audit_sha256": "d2d2f083f6fe365238231a90af65b833aa8359911e967c644cfeef4a992cad30"
+    },
+    "xm-p05": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "bbbb257504d054f3fe225dbdb7ffbf2508fe60fbeb5ee82a21d3aafafb5c6fdd",
+      "query_sha256": "2e22d4dbc87228e060bc663d7bffd917fbddd0d2f6fa3a1519caba9760db9b6e",
+      "audit_sha256": "38d796146cb0b17e33449579ca2612470d40047708da7f0430551a703871daf2"
+    },
+    "xm-p06": {
+      "city": "xiamen",
+      "family": "place_connection",
+      "public_sha256": "d1fcf77d165f9b452dc2a048c9c1cdbf1a03cb6e9aeb8affc36f4524fd300484",
+      "query_sha256": "9dbab1f0d6cc50a80a0010fb5cf67b478739ae49a4be4a77bdd027adf29420b4",
+      "audit_sha256": "4a335ef456bf1a9d128adf07edf9f72f286981286de631cf7b8622bee4c017f1"
+    },
+    "xi-s01": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "dede3dc56e440f48a39a2c1018b87d45bc55be1dc78691d08c79a05a9c12da5b",
+      "query_sha256": "e8ef43ddcfeabe6cbafa48c08ffbec6d01e99b961012138ed13063e3a5a7c26f",
+      "audit_sha256": "c325689dae8297c04b563953b0241d5969cdeafe666fdcf8e66d23b918213b5e"
+    },
+    "xi-s02": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "0a9cde2721b17d5f4d21aec9a134eacd680d9eeb7cfc90b968bf30b59e6ae9bf",
+      "query_sha256": "3e26d10fdcc05b6f9a93dfea3a52da416f7bbbeefff77bd3dccdffd355c7e5b2",
+      "audit_sha256": "644c00b910c88439513e7000f65c7667851408bf39ef761caa3b1e7b785b9e50"
+    },
+    "xi-s03": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "828e8b79d5d6dd9f2518729ad6a2619d7819d5db3481083a608c8308110ad649",
+      "query_sha256": "a40da3cc8549e3f9bd09ae810026dedfda3c9e514f831ac154ef98722eb3b3b4",
+      "audit_sha256": "b62fec261c1db22a992c98aba3accfd26e34ee5a3a4ee3386d7de7c359eb54b1"
+    },
+    "xi-s04": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "398958d844e581bbd1db4b52af6c3804e02cc86902c210b45226c6a69a3ac788",
+      "query_sha256": "ed063a6521e4502593ab8d2eae3f4011626c2e2f145f3f8295169f976a73a433",
+      "audit_sha256": "4ee84ea6ce042d91051012c0a02296fadb4f7d0040533ffb576ed0bc9ab29f69"
+    },
+    "xi-s05": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "2ec777cc654e9019f078b31caa3ea019f6bc21f682589dc7ffb91c479063ad02",
+      "query_sha256": "07231fe84b2dc5aad38c2d6e2dd9f7d7625e19137ea26bd1ad92d5b143c91025",
+      "audit_sha256": "f326f8972b5e7bf8ec42d2503c19040097de9622d850472ab4ebe8d97f60b38f"
+    },
+    "xi-s06": {
+      "city": "xian",
+      "family": "attraction_semantics",
+      "public_sha256": "bf051ec38ff6b582e16b213c3d3ba8c545bb646ff619a3670d58087fbef87dc9",
+      "query_sha256": "c71703f814413849f3eaccae38e53bd0ae94c9de02bef25b12361b344d0b7464",
+      "audit_sha256": "6269d8743318daa24aa91d567a66658fe6175b9739b06ddcfe6573439a2df689"
+    },
+    "xm-s01": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "d16b7faee1d9c58d69c95428d1aa41092495d534283e88810f86f528325207e3",
+      "query_sha256": "8da270d7f8ef39914076471b1770faee8b3fe271ecbdddc56f355d777051d25d",
+      "audit_sha256": "3fe266207551094f2b31630ab27e97a9844faa8b34c83218d9165be3dff9b990"
+    },
+    "xm-s02": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "a578b86ef3830c7b5d2a22b51099a33f9489e55ea38785f18661cc4df82a40b1",
+      "query_sha256": "e43bfc9bd9f89875f6c5c040ec2d3c0074d9df9018ca07a2baf44deacf0f94ca",
+      "audit_sha256": "fea8b6e47123015226f388d74766e4a4b973b70d33e40ae63be7dd13e9da7fce"
+    },
+    "xm-s03": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "04373a5c07c75f06aca530212fe2bba978c5af0e581d7026522b8d7f7205b17d",
+      "query_sha256": "4eb036ffedf4b37c67452b6af114c2a4b005a00eb276ce65aff184dba5e76270",
+      "audit_sha256": "7bcf94477073b39ff5e30cb0c07bc1cf05bb25684a3d20680e06a4f34a3d7173"
+    },
+    "xm-s04": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "530e77035603f3270ef3f2341ab4b7096cdfc349ed668c3fe6598dfa677b9ad5",
+      "query_sha256": "3008e604dcd22bf920a7e9bb276ee65e85f92476a8bc7ed7c3c70103deb5733d",
+      "audit_sha256": "2b8b72f16c9f5f62c57385724411bedfe31b3bd9caef1894b998f771e260c10c"
+    },
+    "xm-s05": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "b1dd23b447141dcb94d450814388997fe251a581e2e847025eb8c2e0708dff86",
+      "query_sha256": "8110bbabe45b1220896c084242ed548586c1de3de50441a3aab5c0a60167a974",
+      "audit_sha256": "1719e2928539401485a1832a4437d0141c7151aabe55a44f7248fc969e3ba6c1"
+    },
+    "xm-s06": {
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "public_sha256": "3da9768b60b51decbe6e5ed13a19885493100de3491df90309c9e4244c3b1652",
+      "query_sha256": "41c41970385baff4cb0d671fa2df0de4c10cb20a46e98778c109d570edeb5500",
+      "audit_sha256": "2af3c83b2a82c79f8dc437a03270b0d1dae8abc326fb30d8605941c49d65c850"
+    },
+    "xi-g01": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "ee7ccc3c6c0e26668195edbe61965d5574ca5d82c149f52d5b7f0fa2b5efa2e8",
+      "query_sha256": "6a5b65810126814ec962f67ba5b172ec71e525ba1c1a587c5a560dcd6969f905",
+      "audit_sha256": "4beab2d3065700decc5c415666e3262fedff9d8d18b7579ce4bdc0898dc964d5"
+    },
+    "xi-g02": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "b7bb9fe35da7c9de6a1e0083bc9a2a1198aa462b6f90f5d067bea7ffd2f5da5a",
+      "query_sha256": "afdb01705a0c6f39d64374e21315b02125d5be56c1c32e44bfd05d6b0945cd1a",
+      "audit_sha256": "27ed445f85e2e6e1eb0f31db619102121acf6006b6c1a8e44e60f9cb30a1128d"
+    },
+    "xi-g03": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "8408137dbbf5844ea6f6e53e93ed00d13465f251932e39d28a4fcb559cf2d13b",
+      "query_sha256": "c33259a4a72b566c5ad763bd97bb053f05932cee1b53474304adc802e964e70d",
+      "audit_sha256": "b7e67a11c350b238f17cd11a5c63f55d7acd0ce66b00d1ef752700cec76b4921"
+    },
+    "xi-g04": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "a844db496c2867621fa6931307ea6fb9750e23b3416bb48cc777fed440af16d2",
+      "query_sha256": "747586ee05c987c3544e5b1f35a6bf300b009a66c2f8916fa003f98d75c949c5",
+      "audit_sha256": "c74ac286beb5d51e1fee8b619304f2727190079f17bd70eae69602c434a92617"
+    },
+    "xi-g05": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "95555a224e82447633f98e5b0a5c059815dc712b767a6c655c69af4065d42c55",
+      "query_sha256": "2f0b797c0dd5583edad551fd4a79b3074300e6a5db68544a225ecf41b8f17f7c",
+      "audit_sha256": "01b8f4dc438e8f8f8243df95d01687576d670ceae086d4576b297f75806c0728"
+    },
+    "xi-g06": {
+      "city": "xian",
+      "family": "evidence_boundary",
+      "public_sha256": "9356ae8391b346df2650b8fe367773df2ab322c0f0d1f4e6c840166a022e0d48",
+      "query_sha256": "843703e9660a18c233d3ade4802ebb3a3dbba65b87d426840c555ea3ef344975",
+      "audit_sha256": "0c713b3a6ee04df5b2068c5fcae92245392b4f8b45663c1a757ba8ea8b80943d"
+    },
+    "xm-g01": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "99ff735d2408dd5bffe23abee0dfedfaad9697afb7003c273096c040fc705784",
+      "query_sha256": "273932e386cb650a010587d187794d184fcc4b55e9290e4d42fa833fac5d3510",
+      "audit_sha256": "d837ddf8c9695eb5d9046961eba46171ff638a5ebbb4aeb2775cbc88c388023e"
+    },
+    "xm-g02": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "dea06969d90325f31e0b7c941ce3e90a3a2ab912d59e8c06d1de8767a0fcbf1f",
+      "query_sha256": "0e1672d3cc3122d91d149b163cc0005b9626ffbd94c2f31dbf29025b807ec3a2",
+      "audit_sha256": "069883e5a3933a984fc57d27d76a9c7bc235a0b608bf3eae0cba7eadc51cb734"
+    },
+    "xm-g03": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "4e6f677444dd70cc0095f33695315df5d17ce1c3cadc1710d599988e56a40d0b",
+      "query_sha256": "f82a8d4a5b783c739107bc19a82811c614443054e075be4c3479fb90f24ff40c",
+      "audit_sha256": "c2cb6b855e10d12490f620357c0ba90ccea330cf2a79f9308bb7ba8926068203"
+    },
+    "xm-g04": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "a295834e71f4ea0c609f0b4fdf184d5f2885c2f38a0c57b41ad2da06900d20fd",
+      "query_sha256": "ba5a9a091dd77aef6917398a6c1f88d40ccd99978148dd4abb29d3bb5465f763",
+      "audit_sha256": "50837c011796f59c7e6a88b712bfbb5fe29aea7e0a1dadb7c0ede5af82924847"
+    },
+    "xm-g05": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "ea745eb15f0cb4e0e7fcc1b8a609525e2e2f8f4a851a3c2bd7a339744015dd12",
+      "query_sha256": "03f56b38bf5eee19a6978364e15594982f59195730ddd8ae98348cfb9d6281af",
+      "audit_sha256": "37a2ff2072d08a44e4f2761c6f4013a451c21bb9113df20ed7f3bb5094bca2dd"
+    },
+    "xm-g06": {
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "public_sha256": "66770f2d5ffc461e73300afd859feb19f5586afa8061cc2c660ed6d3325e5d05",
+      "query_sha256": "56588b66506f13e88d50f3b27e74190751ecf1c3127341af0c3f45e57eb7bb98",
+      "audit_sha256": "b18637462576fe81e31fb4bdf58d57bb0af5ae2d17870538e64537936a669a67"
+    }
+  },
+  "runner_sha256": "fbc77e26a7474174feeaf055a330a375fad914ddeb59f7616d983a615ec59db0",
+  "protocol_sha256": "2f7d21133db6e8d0f5af21545aadc46b6703f5c60b815b1d1467373ca17fd977",
+  "schema_sha256": "fd14aa218f9057bf9c46e2efe6bfc41f129c47036316a1e4c547b0eedd194ea0",
+  "rubric_coverage_completed": true,
+  "trial_start_date": "2026-11-19"
+}

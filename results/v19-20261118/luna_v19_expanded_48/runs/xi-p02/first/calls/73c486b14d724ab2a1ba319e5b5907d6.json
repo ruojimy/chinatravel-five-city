@@ -1,0 +1,63 @@
+{
+  "phase": "first",
+  "tool": "goto",
+  "args": {
+    "city": "西安",
+    "start": "西安北站",
+    "end": "同盛祥(凤城五路店)",
+    "mode": "metro",
+    "departure": "13:28",
+    "people_number": 4,
+    "day": 1
+  },
+  "utc": "2026-11-18T13:20:17.121875+00:00",
+  "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "result": {
+    "city": "西安",
+    "start": "西安北站",
+    "end": "同盛祥(凤城五路店)",
+    "mode": "metro",
+    "departure": "13:28",
+    "people_number": 4,
+    "available": true,
+    "legs": [
+      {
+        "start": "西安北站",
+        "end": "西安北站",
+        "mode": "walk",
+        "start_time": "13:28",
+        "end_time": "13:32",
+        "distance": 0.17,
+        "cost": 0,
+        "price": 0
+      },
+      {
+        "start": "西安北站",
+        "end": "凤城五路",
+        "mode": "metro",
+        "start_time": "13:32",
+        "end_time": "13:45",
+        "distance": 5.24,
+        "cost": 8.0,
+        "price": 2.0,
+        "tickets": 4
+      },
+      {
+        "start": "凤城五路",
+        "end": "同盛祥(凤城五路店)",
+        "mode": "walk",
+        "start_time": "13:45",
+        "end_time": "13:56",
+        "distance": 0.66,
+        "cost": 0,
+        "price": 0
+      }
+    ],
+    "error": null,
+    "source": "Amap dated public-transit estimate",
+    "route_scope": "exact endpoints and supplied Asia/Shanghai departure",
+    "real_world_route_proof": false,
+    "departure_at": "2026-11-19T13:28:00+08:00",
+    "evidence_id": "amap-raw:b1346eedf7a95320ca58f4b4d3ea77ba3f1109cb61eafa84336f4559a51b8a3c"
+  }
+}

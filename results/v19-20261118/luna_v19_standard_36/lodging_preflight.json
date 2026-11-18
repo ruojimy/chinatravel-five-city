@@ -1,0 +1,97 @@
+{
+  "profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "scope": "Historical scoreable catalog price/bed proxies; live availability unknown",
+  "cities": {
+    "西安": {
+      "rows_with_historical_price_and_position": 248,
+      "beds": {
+        "1": {
+          "count": 225,
+          "lowest_catalog_examples": [
+            {
+              "name": "易休太空舱宾馆(西安咸宁店)",
+              "price": 25.0,
+              "numbed": 1
+            },
+            {
+              "name": "万客来宾馆",
+              "price": 25.0,
+              "numbed": 1
+            },
+            {
+              "name": "自在森林青年旅社(大雁塔大唐不夜城店)",
+              "price": 25.0,
+              "numbed": 1
+            }
+          ]
+        },
+        "2": {
+          "count": 22,
+          "lowest_catalog_examples": [
+            {
+              "name": "長·安丨Boutique·铁通精品商务酒店(西安小寨电子科技大学店)",
+              "price": 84.0,
+              "numbed": 2
+            },
+            {
+              "name": "皇城宾馆(西安长乐西苑店)",
+              "price": 87.0,
+              "numbed": 2
+            },
+            {
+              "name": "星宸之家酒店(金鹿尚居西门1店)",
+              "price": 93.0,
+              "numbed": 2
+            }
+          ]
+        }
+      }
+    },
+    "厦门": {
+      "rows_with_historical_price_and_position": 296,
+      "beds": {
+        "1": {
+          "count": 291,
+          "lowest_catalog_examples": [
+            {
+              "name": "厦门安达仕酒店",
+              "price": 1.0,
+              "numbed": 1.0
+            },
+            {
+              "name": "六便士青年旅舍(厦门火车站地铁口店)",
+              "price": 40.0,
+              "numbed": 1.0
+            },
+            {
+              "name": "厦门瑞家公寓",
+              "price": 48.0,
+              "numbed": 1.0
+            }
+          ]
+        },
+        "2": {
+          "count": 5,
+          "lowest_catalog_examples": [
+            {
+              "name": "厦门日航酒店",
+              "price": 458.0,
+              "numbed": 2.0
+            },
+            {
+              "name": "厦门帝元维多利亚大酒店",
+              "price": 525.0,
+              "numbed": 2.0
+            },
+            {
+              "name": "厦门国际会议中心酒店",
+              "price": 580.0,
+              "numbed": 2.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "public_profile_receipt_sha256": "960bd888a9b8609b112c56d51b15bbca8ece90efb5057c67751606304763d0da"
+}

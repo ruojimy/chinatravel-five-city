@@ -1,0 +1,109 @@
+{
+  "people_number": 3,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "沙坡尾",
+          "start_time": "09:00",
+          "end_time": "11:00",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": []
+        },
+        {
+          "type": "lunch",
+          "position": "乌糖沙茶面(民族路店)",
+          "start_time": "11:09",
+          "end_time": "12:00",
+          "price": 41,
+          "cost": 123,
+          "transports": [
+            {
+              "start": "沙坡尾",
+              "end": "乌糖沙茶面(民族路店)",
+              "mode": "walk",
+              "start_time": "11:00",
+              "end_time": "11:09",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.8002663399478139
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "position": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+          "start_time": "12:31",
+          "end_time": "08:00",
+          "price": 146,
+          "rooms": 2,
+          "cost": 292,
+          "transports": [
+            {
+              "start": "乌糖沙茶面(民族路店)",
+              "end": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:31",
+              "price": 0,
+              "cost": 0,
+              "distance": 2.5941358656255957
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "环岛路海滩",
+          "start_time": "09:00",
+          "end_time": "11:15",
+          "price": 0,
+          "tickets": 3,
+          "cost": 0,
+          "transports": [
+            {
+              "start": "汉庭优佳酒店(厦门植物园白鹭洲路店)",
+              "end": "环岛路海滩",
+              "mode": "walk",
+              "start_time": "08:00",
+              "end_time": "08:45",
+              "price": 0,
+              "cost": 0,
+              "distance": 3.790764721173698
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "position": "黄则和花生汤(中山路店)",
+          "start_time": "12:13",
+          "end_time": "13:00",
+          "price": 24,
+          "cost": 72,
+          "transports": [
+            {
+              "start": "环岛路海滩",
+              "end": "黄则和花生汤(中山路店)",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "12:13",
+              "price": 0,
+              "cost": 0,
+              "distance": 3.6418621060194534
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

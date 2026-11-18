@@ -1,0 +1,130 @@
+{
+  "utc": "2026-11-18T13:06:28.000348+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 3,
+      "start_city": "成都",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:09",
+              "end_time": "09:31",
+              "cost": 948,
+              "price": 316,
+              "tickets": 3,
+              "TrainID": "D1998",
+              "start": "成都东",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "10:30",
+              "end_time": "12:30",
+              "cost": 255,
+              "price": 85,
+              "tickets": 3,
+              "position": "西安碑林博物馆",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安碑林博物馆",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:20",
+                  "cost": 55.69,
+                  "price": 55.69,
+                  "distance": 13.55,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "21:00",
+              "end_time": "07:00",
+              "cost": 112,
+              "price": 56,
+              "rooms": 2,
+              "room_type": 1,
+              "position": "今天商务宾馆",
+              "transports": [
+                {
+                  "start": "西安碑林博物馆",
+                  "end": "今天商务宾馆",
+                  "mode": "taxi",
+                  "start_time": "12:30",
+                  "end_time": "12:36",
+                  "cost": 20.97,
+                  "price": 20.97,
+                  "distance": 4.65,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:00",
+              "end_time": "12:00",
+              "cost": 360,
+              "price": 120,
+              "tickets": 3,
+              "position": "秦始皇兵马俑",
+              "transports": [
+                {
+                  "start": "今天商务宾馆",
+                  "end": "秦始皇兵马俑",
+                  "mode": "taxi",
+                  "start_time": "08:00",
+                  "end_time": "08:44",
+                  "cost": 128.15,
+                  "price": 128.15,
+                  "distance": 29.66,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start_time": "14:49",
+              "end_time": "18:38",
+              "cost": 948,
+              "price": 316,
+              "tickets": 3,
+              "TrainID": "G3879",
+              "start": "西安北",
+              "end": "成都东",
+              "transports": [
+                {
+                  "start": "秦始皇兵马俑",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "12:30",
+                  "end_time": "13:16",
+                  "cost": 135.09,
+                  "price": 135.09,
+                  "distance": 31.2,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "根据反馈将景点改为两处有明确非零门票目录价且符合历史古迹主题的实体：西安碑林博物馆85元/人，秦始皇兵马俑120元/人。两景点各按3人计票。行程车次使用沙盒历史参考票价；住宿56元/间夜、两间房共112元，使用目录1床容量代理，实际客房与库存未核实。市内车程和出租车价格为离线拓扑估算，非现实路线证明。按沙盒费用口径，日1约1391.66元，日2约1571.24元，均低于3000元。"
+  },
+  "first_sha256": "6a76ffe171ef20e88dac7a26d69e1c680ca4c2fcef05d3d5a0272df38b58f017",
+  "feedback_sha256": "cd141f3cac8db63df5669c924e948eae58b51a5ba6018d503d3d70487fbc0f75"
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:41:13.844889+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已读取本题反馈：outcome=pass、issues=[]。复核本题条件回退逻辑及本题渡轮记录，无法写入船腿时本岛替代行程符合题意，保留首稿。",
+    "status": "keep_first"
+  },
+  "first_sha256": "1029b003f2c54c4041a49a714f5cbd9c9f8128bf20119fd25e49b7883fc8f6a3",
+  "feedback_sha256": "e5983fe8dd66532562bedb734af054d57acff4e8d91656661a3f7740e63eaee0"
+}

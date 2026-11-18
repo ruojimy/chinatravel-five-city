@@ -1,0 +1,8 @@
+{
+  "first_sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "题面明确选择飞机；北京—厦门去程和返程航班均有时刻但缺票价，无法填写要求的数值票价/总价。铁路虽有价，但不符合所选交通方式。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

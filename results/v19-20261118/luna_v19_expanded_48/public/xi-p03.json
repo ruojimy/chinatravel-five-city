@@ -1,0 +1,11 @@
+{
+  "uid": "xi-p03",
+  "tag": "medium",
+  "start_city": "成都",
+  "target_city": "西安",
+  "days": 2,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "三人从成都坐火车往返西安，两天一晚。最后一处景点要是西安钟楼，第2天13:15从钟楼坐地铁前往西安北站，再乘返程火车。"
+}

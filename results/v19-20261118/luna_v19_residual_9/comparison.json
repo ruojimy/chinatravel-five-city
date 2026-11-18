@@ -1,0 +1,1277 @@
+{
+  "model": "gpt-6-luna",
+  "cases_count": 9,
+  "totals": {
+    "v17_first": {
+      "blocked_by_data": 7,
+      "fail": 2
+    },
+    "v17_revision": {
+      "blocked_by_data": 7,
+      "fail": 2
+    },
+    "v19_first": {
+      "pass": 2,
+      "blocked_by_data": 5,
+      "fail": 2
+    },
+    "v19_revision": {
+      "pass": 4,
+      "blocked_by_data": 5
+    }
+  },
+  "v19_one_revision_uplift": 2,
+  "v19_one_revision_uplift_pp": 22.22,
+  "source_results": {
+    "v17": {
+      "path": "luna_feedback_24/results.json",
+      "sha256": "984aab638cd5c44ae3994196d630bd7f15d98adda220a716b3cac03e09a21427",
+      "local_sha256": "e66a3076736da650da42a5a84c963231fd90b7589f650778129e6ded624d4ff7"
+    },
+    "v19": {
+      "path": "luna_v19_residual_9/results.json",
+      "sha256": "06fd23999432054238478bbac53dbad49aae2e4d215f28279e15c9c76c60c00c",
+      "local_sha256": "e11c4e54bc888d9f7caaee985402766e0557519f500ddd43d17ec99af975f3a8"
+    }
+  },
+  "cases": [
+    {
+      "uid": "x11e019",
+      "question": "当前位置苏州。我们四个人想去西安玩2天，想去同盛祥吃饭，请给我一个旅行规划。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11e019/first/submission.json",
+            "sha256": "71a439a3ec616bf6b852d64f01f1e6a267f64ca0250ebb86f7575c0a8cb136f0",
+            "local_sha256": "71a439a3ec616bf6b852d64f01f1e6a267f64ca0250ebb86f7575c0a8cb136f0"
+          },
+          "blocking_reasons": [
+            "苏州↔西安有可用历史基准车次及票价，但必去同盛祥记录缺少lat/lon，planning_position_available=false，无法用goto核实接驳路线，不能把该餐馆作为可落点活动提交。"
+          ],
+          "map_evidence": {
+            "routable_branch_catalog_calls": [],
+            "departure_browse_calls": [],
+            "available_branch_route_calls": [],
+            "branch_routes_used_in_plan": [],
+            "dated_route_calls": [],
+            "dated_routes_used_in_plan": [],
+            "submitted_meals": []
+          }
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11e019/revision/submission.json",
+            "sha256": "84a60938370c6fa5f3e7d86e90a8845b55534c547cab8e23213fafea2e3e843a",
+            "local_sha256": "84a60938370c6fa5f3e7d86e90a8845b55534c547cab8e23213fafea2e3e843a"
+          },
+          "blocking_reasons": [
+            "苏州↔西安有可用历史基准车次及票价，但必去同盛祥记录缺少lat/lon，planning_position_available=false，无法用goto核实接驳路线，不能把该餐馆作为可落点活动提交。"
+          ],
+          "map_evidence": {
+            "routable_branch_catalog_calls": [],
+            "departure_browse_calls": [],
+            "available_branch_route_calls": [],
+            "branch_routes_used_in_plan": [],
+            "dated_route_calls": [],
+            "dated_routes_used_in_plan": [],
+            "submitted_meals": []
+          }
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "pass",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11e019/first/submission.json",
+            "sha256": "f75e0a622cb08c6143e45e974071a9af874e193dc5811c49945a050e30a1a24a",
+            "local_sha256": "f75e0a622cb08c6143e45e974071a9af874e193dc5811c49945a050e30a1a24a"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/x11e019/first/plan.json",
+            "sha256": "a6f8f1f53d7fc32677f85dd5a5c0f5edd4e1f9bbf14b9080c81500d5cd579b06",
+            "local_sha256": "a6f8f1f53d7fc32677f85dd5a5c0f5edd4e1f9bbf14b9080c81500d5cd579b06"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/x11e019/first/score.json",
+            "sha256": "ac25ca79cd77ebc5f8f69737e4e43ce93c13a56a984e174438ad783e7218f09c",
+            "local_sha256": "52127bd90d7c5ff6a3414b3236fb614351cae906b155e8be2b9bcfceed67a65e"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [],
+          "map_evidence": {
+            "routable_branch_catalog_calls": [
+              {
+                "path": "luna_v19_residual_9/runs/x11e019/first/calls/05ffc8c9d4df47d8a32946ff6e6567e3.json",
+                "sha256": "94bac9d22beb05bd791696a1d2e4edb06625fdc0d25628b852d95e06493717a2",
+                "local_sha256": "a94e16fad5486eecc08ab53a0c435aaeff50c63253c0fa967e622d4e40618592"
+              },
+              {
+                "path": "luna_v19_residual_9/runs/x11e019/first/calls/adb616a0b06147498f199b96765e495d.json",
+                "sha256": "b30036eb13c27ab84ba21aba030e68ee99c3375290b62330793d9b8dc75664b3",
+                "local_sha256": "84ae58ade9deb534c4159ce2d69decad3a5d3657f582899dfcffd205ee48710b"
+              }
+            ],
+            "departure_browse_calls": [],
+            "available_branch_route_calls": [
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/029ac5b79ab745cba154bd14cae5e4c5.json",
+                  "sha256": "1b91845ac50347c90acb55344f9f64773b764a8ba8d17463e2196a1dfdab8775",
+                  "local_sha256": "1b91845ac50347c90acb55344f9f64773b764a8ba8d17463e2196a1dfdab8775"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "15:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/5ff26cc8af9742fc9752687baf993927.json",
+                  "sha256": "482e798ceded48aca0e2a8337d48c75aa204d68973b84c9a38840f837637a801",
+                  "local_sha256": "482e798ceded48aca0e2a8337d48c75aa204d68973b84c9a38840f837637a801"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/8b3ac582645d4e408aa9d73153949795.json",
+                  "sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58",
+                  "local_sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/b50fd43cc0004d6cbe93498da2189517.json",
+                  "sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83",
+                  "local_sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "13:20",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              }
+            ],
+            "branch_routes_used_in_plan": [
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/b50fd43cc0004d6cbe93498da2189517.json",
+                  "sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83",
+                  "local_sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "13:20",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/8b3ac582645d4e408aa9d73153949795.json",
+                  "sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58",
+                  "local_sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              }
+            ],
+            "dated_route_calls": [],
+            "dated_routes_used_in_plan": [],
+            "submitted_meals": [
+              {
+                "day": 1,
+                "position": "同盛祥(凤城五路店)",
+                "start_time": "13:30",
+                "end_time": "14:00",
+                "connection_modes": [
+                  "taxi"
+                ]
+              }
+            ]
+          }
+        },
+        "revision": {
+          "result": "pass",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11e019/revision/submission.json",
+            "sha256": "b221d15f739b237cb0d98bc1b7d3bab32e5da797c0bd43a0133377c56bda8fc3",
+            "local_sha256": "b221d15f739b237cb0d98bc1b7d3bab32e5da797c0bd43a0133377c56bda8fc3"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/x11e019/first/plan.json",
+            "sha256": "a6f8f1f53d7fc32677f85dd5a5c0f5edd4e1f9bbf14b9080c81500d5cd579b06",
+            "local_sha256": "a6f8f1f53d7fc32677f85dd5a5c0f5edd4e1f9bbf14b9080c81500d5cd579b06"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/x11e019/first/score.json",
+            "sha256": "ac25ca79cd77ebc5f8f69737e4e43ce93c13a56a984e174438ad783e7218f09c",
+            "local_sha256": "52127bd90d7c5ff6a3414b3236fb614351cae906b155e8be2b9bcfceed67a65e"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [],
+          "map_evidence": {
+            "routable_branch_catalog_calls": [
+              {
+                "path": "luna_v19_residual_9/runs/x11e019/first/calls/05ffc8c9d4df47d8a32946ff6e6567e3.json",
+                "sha256": "94bac9d22beb05bd791696a1d2e4edb06625fdc0d25628b852d95e06493717a2",
+                "local_sha256": "a94e16fad5486eecc08ab53a0c435aaeff50c63253c0fa967e622d4e40618592"
+              },
+              {
+                "path": "luna_v19_residual_9/runs/x11e019/first/calls/adb616a0b06147498f199b96765e495d.json",
+                "sha256": "b30036eb13c27ab84ba21aba030e68ee99c3375290b62330793d9b8dc75664b3",
+                "local_sha256": "84ae58ade9deb534c4159ce2d69decad3a5d3657f582899dfcffd205ee48710b"
+              }
+            ],
+            "departure_browse_calls": [],
+            "available_branch_route_calls": [
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/029ac5b79ab745cba154bd14cae5e4c5.json",
+                  "sha256": "1b91845ac50347c90acb55344f9f64773b764a8ba8d17463e2196a1dfdab8775",
+                  "local_sha256": "1b91845ac50347c90acb55344f9f64773b764a8ba8d17463e2196a1dfdab8775"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "15:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/5ff26cc8af9742fc9752687baf993927.json",
+                  "sha256": "482e798ceded48aca0e2a8337d48c75aa204d68973b84c9a38840f837637a801",
+                  "local_sha256": "482e798ceded48aca0e2a8337d48c75aa204d68973b84c9a38840f837637a801"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/8b3ac582645d4e408aa9d73153949795.json",
+                  "sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58",
+                  "local_sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/b50fd43cc0004d6cbe93498da2189517.json",
+                  "sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83",
+                  "local_sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "13:20",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              }
+            ],
+            "branch_routes_used_in_plan": [
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/b50fd43cc0004d6cbe93498da2189517.json",
+                  "sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83",
+                  "local_sha256": "79a2a800b884ca844b8b65bdb050203ae9e956dc30ff221c7c479246261fff83"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "departure": "13:20",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              },
+              {
+                "trace": {
+                  "path": "luna_v19_residual_9/runs/x11e019/first/calls/8b3ac582645d4e408aa9d73153949795.json",
+                  "sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58",
+                  "local_sha256": "b63fd6cfc4a2d54d13b3a4b86d6871934caeafa06ec11020b2757d3a5e875c58"
+                },
+                "args": {
+                  "city": "西安",
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "departure": "14:00",
+                  "people_number": 4
+                },
+                "source": "G3 static graph-distance Transportation.goto",
+                "evidence_id": null
+              }
+            ],
+            "dated_route_calls": [],
+            "dated_routes_used_in_plan": [],
+            "submitted_meals": [
+              {
+                "day": 1,
+                "position": "同盛祥(凤城五路店)",
+                "start_time": "13:30",
+                "end_time": "14:00",
+                "connection_modes": [
+                  "taxi"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/x11e019/feedback.json",
+        "sha256": "80057476d6d0523211c8a155851a33668dd2d610a543381af72fc2fc47a087c0",
+        "local_sha256": "80057476d6d0523211c8a155851a33668dd2d610a543381af72fc2fc47a087c0"
+      }
+    },
+    {
+      "uid": "x11e015",
+      "question": "当前位置杭州。我们四个人想去西安玩2天，往返坐飞机，请给我一个旅行规划。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11e015/first/submission.json",
+            "sha256": "216a694856af72f0778b7124326b27e8bbc574104173493a8f36abf218f578c5",
+            "local_sha256": "216a694856af72f0778b7124326b27e8bbc574104173493a8f36abf218f578c5"
+          },
+          "blocking_reasons": [
+            "已查询杭州→西安和西安→杭州航班；可用航班仅出现在unpriced_preview，未提供票价，且日期库存未知。按schema不能虚构往返机票金额，因此无法提交合规的完整往返预算行程。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11e015/revision/submission.json",
+            "sha256": "fd69b99551c22b7ffacdff6aac25e3b2d9eda344060efbefbdf4bb72b2886af6",
+            "local_sha256": "fd69b99551c22b7ffacdff6aac25e3b2d9eda344060efbefbdf4bb72b2886af6"
+          },
+          "blocking_reasons": [
+            "已查询杭州→西安和西安→杭州航班；可用航班仅出现在unpriced_preview，未提供票价，且日期库存未知。按schema不能虚构往返机票金额，因此无法提交合规的完整往返预算行程。"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11e015/first/submission.json",
+            "sha256": "c988614f80c0686294437751fd46f50cddfd250a648e2f6478ea4271fef1d62e",
+            "local_sha256": "c988614f80c0686294437751fd46f50cddfd250a648e2f6478ea4271fef1d62e"
+          },
+          "blocking_reasons": [
+            "按题目要求查询杭州→西安及西安→杭州飞机：去程可见CCA8507（15:11–17:16）等时刻，返程可见CES2223（16:58–18:41）等时刻，但返回结果均无可用票价。出行日不存在，冻结沙盒中未提供任何已定价航班； schema 要求飞机活动填票价和费用，协议不允许编造交通价格，因此无法提交合规的往返飞机行程。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11e015/revision/submission.json",
+            "sha256": "c90748456f7efb84abce6122f42122894238ff0779ac0d162e16c660d81e3d58",
+            "local_sha256": "c90748456f7efb84abce6122f42122894238ff0779ac0d162e16c660d81e3d58"
+          },
+          "blocking_reasons": [
+            "按题目要求查询杭州→西安及西安→杭州飞机：去程可见CCA8507（15:11–17:16）等时刻，返程可见CES2223（16:58–18:41）等时刻，但返回结果均无可用票价。出行日不存在，冻结沙盒中未提供任何已定价航班； schema 要求飞机活动填票价和费用，协议不允许编造交通价格，因此无法提交合规的往返飞机行程。"
+          ]
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/x11e015/feedback.json",
+        "sha256": "24b04a811ee00266fd75c2be8b5ac62f33e08cc49b202be6db402f38e5c601b4",
+        "local_sha256": "24b04a811ee00266fd75c2be8b5ac62f33e08cc49b202be6db402f38e5c601b4"
+      }
+    },
+    {
+      "uid": "x11m015",
+      "question": "当前位置成都。我们三个人想去西安玩2天，每晚人均住宿不超过300元，住2间房，想去历史古迹类景点，每天预算不超过3000元，请给我一个旅行规划。",
+      "v17": {
+        "first": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11m015/first/submission.json",
+            "sha256": "338b09460bcb35649ee2e1955597274b15cf02f3df26b992ed4e0f6ec8cd14e7",
+            "local_sha256": "338b09460bcb35649ee2e1955597274b15cf02f3df26b992ed4e0f6ec8cd14e7"
+          },
+          "plan": {
+            "path": "luna_feedback_24/runs/x11m015/first/plan.json",
+            "sha256": "20d198676f457d2a86178b427a6ef5307fcf3c87c17615deb79f216bd774b650",
+            "local_sha256": "20d198676f457d2a86178b427a6ef5307fcf3c87c17615deb79f216bd774b650"
+          },
+          "score": {
+            "path": "luna_feedback_24/runs/x11m015/first/score.json",
+            "sha256": "6663393cd6c16cde29f06b96eccb8941883a1c838d88deeeb7328f3253f0ba29",
+            "local_sha256": "c4c8859daa89421b19b054fdee75ff31b292ebeac803024afeb3712bc1ba42b0"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "Is_transport_correct",
+            "Is_time_correct",
+            "hard"
+          ]
+        },
+        "revision": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11m015/revision/submission.json",
+            "sha256": "4da10d95f5d745e36e2b6ce33eb7116a0bbb96a9968a29c20ada994b2a249640",
+            "local_sha256": "4da10d95f5d745e36e2b6ce33eb7116a0bbb96a9968a29c20ada994b2a249640"
+          },
+          "plan": {
+            "path": "luna_feedback_24/runs/x11m015/revision/plan.json",
+            "sha256": "30164a103575aa2a60f1aafffaf6e58ff9e513d0de34455c7ae03931d2a1e626",
+            "local_sha256": "30164a103575aa2a60f1aafffaf6e58ff9e513d0de34455c7ae03931d2a1e626"
+          },
+          "score": {
+            "path": "luna_feedback_24/runs/x11m015/revision/score.json",
+            "sha256": "6f70f82feaf3d87f64d4a0dd488f8ac18b7c315052ab518c8f9f69a56a38c3f3",
+            "local_sha256": "01e1f620c877b908ba20613139f81590536768c42fe3056145638fbadf599994"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "hard"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11m015/first/submission.json",
+            "sha256": "6a76ffe171ef20e88dac7a26d69e1c680ca4c2fcef05d3d5a0272df38b58f017",
+            "local_sha256": "6a76ffe171ef20e88dac7a26d69e1c680ca4c2fcef05d3d5a0272df38b58f017"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/x11m015/first/plan.json",
+            "sha256": "d8b62b2a93f87c3dab0824a80609cc694f3f2015abc6063ca724f1d49ca5d890",
+            "local_sha256": "d8b62b2a93f87c3dab0824a80609cc694f3f2015abc6063ca724f1d49ca5d890"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/x11m015/first/score.json",
+            "sha256": "790529e8b472d2a0ffc63f816e2b9a5caccb938fdc78ec3ec543b860a75a9433",
+            "local_sha256": "2f892d2fe6a3b41a8b24f973b6fa99dbeb436a00f134dc632f4a1b9ce5381cef"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "Is_attractions_correct",
+            "hard"
+          ]
+        },
+        "revision": {
+          "result": "pass",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11m015/revision/submission.json",
+            "sha256": "64af10664c3cb0278001a7b9c579b4cadb2a5e37137c5829734681ccb9769fef",
+            "local_sha256": "64af10664c3cb0278001a7b9c579b4cadb2a5e37137c5829734681ccb9769fef"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/x11m015/revision/plan.json",
+            "sha256": "9ad1100081da99e7d07bba2fc3ed6116d4940f92f7dd202565dab5275606f80b",
+            "local_sha256": "9ad1100081da99e7d07bba2fc3ed6116d4940f92f7dd202565dab5275606f80b"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/x11m015/revision/score.json",
+            "sha256": "7e7c2655ad4cb873c8b6f533fcfb4909138511676403f2ad7742d2a5dc3d05b2",
+            "local_sha256": "c1432191e868f109a6a49d4b3cffda3eccc9ac038cb5eb46c893dec65d37ac02"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": []
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/x11m015/feedback.json",
+        "sha256": "cd141f3cac8db63df5669c924e948eae58b51a5ba6018d503d3d70487fbc0f75",
+        "local_sha256": "cd141f3cac8db63df5669c924e948eae58b51a5ba6018d503d3d70487fbc0f75"
+      }
+    },
+    {
+      "uid": "x11m008",
+      "question": "当前位置广州。我们两个人想去西安玩4天，往返坐飞机，预算5000元，每天预算不超过5000元，去程12:00之后出发，请给我一个旅行规划。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11m008/first/submission.json",
+            "sha256": "2175ac73b4453e7f668af0dc59162db237bb8b2f71702a4653ee9f3ff1ebd37e",
+            "local_sha256": "2175ac73b4453e7f668af0dc59162db237bb8b2f71702a4653ee9f3ff1ebd37e"
+          },
+          "blocking_reasons": [
+            "已查询广州—西安往返航班：出程仅有CES2302、CSN3215等未定价航班；反向西安—广州查询也仅有无票价航班。往返票价是预算与必填城际活动金额的关键证据，不能编造，因此无法提交结构完整且可核验的四日含往返计划。具体日期库存未知。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11m008/revision/submission.json",
+            "sha256": "513561868efb34f0ed4c558435452ef9629f5b4bc74f8b5318d49f0a40b9bef0",
+            "local_sha256": "513561868efb34f0ed4c558435452ef9629f5b4bc74f8b5318d49f0a40b9bef0"
+          },
+          "blocking_reasons": [
+            "已查询广州—西安往返航班：出程仅有CES2302、CSN3215等未定价航班；反向西安—广州查询也仅有无票价航班。往返票价是预算与必填城际活动金额的关键证据，不能编造，因此无法提交结构完整且可核验的四日含往返计划。具体日期库存未知。"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11m008/first/submission.json",
+            "sha256": "42f4d3c90d63637ebd65483a9d1f4050ddf95382f0351640433c6e7cdb86174a",
+            "local_sha256": "42f4d3c90d63637ebd65483a9d1f4050ddf95382f0351640433c6e7cdb86174a"
+          },
+          "blocking_reasons": [
+            "已查询广州→西安往返航班。去程题目要求12:00后出发；工具只返回CES2302 13:58、CSN3215 14:35、CSN3231 19:23、CHH7858 19:40、JYH1106 22:18等无票价预览，priced records为空，无法为必需去程填写票价或核验5000元总预算。返程查询到MU2303 07:00–09:40，580元/人，但不能补齐去程金额。按静态数据规则不编造票价，因此无法冻结合规的往返机票行程。reference_search(kind=flight)也返回unsupported kind or city，未提供替代报价。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11m008/revision/submission.json",
+            "sha256": "16034a27cdf4ba291057b41462d0e0e53ce5d55a4c059d410271d21dccb73aca",
+            "local_sha256": "16034a27cdf4ba291057b41462d0e0e53ce5d55a4c059d410271d21dccb73aca"
+          },
+          "blocking_reasons": [
+            "反馈指出首稿无可评分行程，可核验一次替代检索。我用机场全名补查广州白云国际机场→西安咸阳国际机场，工具返回ValueError: unsupported city；原城市级查询中，12:00后去程仅有无票价航班预览，priced records为空。返程的MU2303有580元/人历史票价，仍无法确定去程金额和验证5000元预算。保留数据阻塞，不编造机票价格。"
+          ]
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/x11m008/feedback.json",
+        "sha256": "add927ec27b50ec6059922e535b3af445273f3de21fe2cb814597ee9711da69f",
+        "local_sha256": "add927ec27b50ec6059922e535b3af445273f3de21fe2cb814597ee9711da69f"
+      }
+    },
+    {
+      "uid": "x11h003",
+      "question": "[当前位置重庆,目标位置西安,旅行人数4,旅行天数1] 希望能玩得舒服些，帮忙推荐一条合适的路线。帮我规划一下。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11h003/first/submission.json",
+            "sha256": "2b004156ade96c555657041003499ee549b5fa045d319bb18837c893974fa281",
+            "local_sha256": "2b004156ade96c555657041003499ee549b5fa045d319bb18837c893974fa281"
+          },
+          "blocking_reasons": [
+            "查询重庆—西安any方向返回了有价列车及未定价航班；反向西安—重庆航班只返回未定价的MU2261、CZ2304、MU2267、CES2267。缺当日往返可核验的完整票价，因此无法形成有依据的交通金额与预算。快照不能证明具体日期的余票。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "G3782": [
+                {
+                  "path": "luna_feedback_24/runs/x11h003/first/calls/b589eee2eee940a9a0c7033fa0381cdd.json",
+                  "sha256": "a8b68d7ba860646fc0ca2aa43b7ea260f4e3b9971a623f89a0cd3670887944c6",
+                  "local_sha256": "d2c6affe8d4a34d199c1614a2e900d1e6e5f0bca3042d7d61240bd7ebdffa913"
+                }
+              ],
+              "D1991": []
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/x11h003/revision/submission.json",
+            "sha256": "f283bfea75191acdf910b834619292ba644615b9e08ba0eea6d0fc12890e4bbc",
+            "local_sha256": "f283bfea75191acdf910b834619292ba644615b9e08ba0eea6d0fc12890e4bbc"
+          },
+          "blocking_reasons": [
+            "查询重庆—西安any方向返回了有价列车及未定价航班；反向西安—重庆航班只返回未定价的MU2261、CZ2304、MU2267、CES2267。缺当日往返可核验的完整票价，因此无法形成有依据的交通金额与预算。快照不能证明具体日期的余票。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "G3782": [
+                {
+                  "path": "luna_feedback_24/runs/x11h003/first/calls/b589eee2eee940a9a0c7033fa0381cdd.json",
+                  "sha256": "a8b68d7ba860646fc0ca2aa43b7ea260f4e3b9971a623f89a0cd3670887944c6",
+                  "local_sha256": "d2c6affe8d4a34d199c1614a2e900d1e6e5f0bca3042d7d61240bd7ebdffa913"
+                }
+              ],
+              "D1991": [
+                {
+                  "path": "luna_feedback_24/runs/x11h003/revision/calls/632598e1e29444af9dd26ecdb728b9ba.json",
+                  "sha256": "8b52d2d0499c0bf82809bf4b3b61eaa3b54df2fa61b08a3a7a117e1018c62638",
+                  "local_sha256": "f40023dc452f392adfa4b0492f8be1aaa8315d1d73c8e09e190a0fc1a5638018"
+                }
+              ]
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11h003/first/submission.json",
+            "sha256": "0db60db895e27ced76b4c94c5706210fc4899d5fd08b6a497625e3bfbd9d8543",
+            "local_sha256": "0db60db895e27ced76b4c94c5706210fc4899d5fd08b6a497625e3bfbd9d8543"
+          },
+          "blocking_reasons": [
+            "已查重庆→西安及西安→重庆的飞机和火车。去程飞机MU2262（10:25–11:50）有时刻但无票价，回程最早列出的MU2267为15:25–17:10且同样无票价；火车去程最早06:41–12:26，返程最早07:38出发，不能组成同一日往返。题目仅给1天且未明确单程，按一日往返规划需要的两段飞机均缺票价，而规则不允许虚构交通费用，无法提交合规的一日往返行程。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "G3782": [
+                {
+                  "path": "luna_v19_residual_9/runs/x11h003/first/calls/9cc066f2a022405299e8beee780c9736.json",
+                  "sha256": "b6111d286405b4e873f056e6d70d783d16eb47eaa634ad2963940d424a955454",
+                  "local_sha256": "7e045efbfc859bb204f870a54d46d29c6ff51cf8ee8aac3be5d66da2bac0c674"
+                }
+              ],
+              "D1991": [
+                {
+                  "path": "luna_v19_residual_9/runs/x11h003/first/calls/a8017e5ebc2f45b780a5c653289030ec.json",
+                  "sha256": "c87bdc92b0d87f77064746571ddf93fae913a56e0e1f3b84602c5a03b64828cf",
+                  "local_sha256": "204f86b0ffc327d965b47e392350294fcc02d12d9eeffbc8c3f6ac2a2a5fa77d"
+                }
+              ]
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/x11h003/revision/submission.json",
+            "sha256": "f7fcddfb1bba680a5f874787c3c0625d07d71bd2276cab92b184489e87553098",
+            "local_sha256": "f7fcddfb1bba680a5f874787c3c0625d07d71bd2276cab92b184489e87553098"
+          },
+          "blocking_reasons": [
+            "已查重庆→西安及西安→重庆的飞机和火车。去程飞机MU2262（10:25–11:50）有时刻但无票价，回程最早列出的MU2267为15:25–17:10且同样无票价；火车去程最早06:41–12:26，返程最早07:38出发，不能组成同一日往返。题目仅给1天且未明确单程，按一日往返规划需要的两段飞机均缺票价，而规则不允许虚构交通费用，无法提交合规的一日往返行程。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "G3782": [
+                {
+                  "path": "luna_v19_residual_9/runs/x11h003/first/calls/9cc066f2a022405299e8beee780c9736.json",
+                  "sha256": "b6111d286405b4e873f056e6d70d783d16eb47eaa634ad2963940d424a955454",
+                  "local_sha256": "7e045efbfc859bb204f870a54d46d29c6ff51cf8ee8aac3be5d66da2bac0c674"
+                }
+              ],
+              "D1991": [
+                {
+                  "path": "luna_v19_residual_9/runs/x11h003/first/calls/a8017e5ebc2f45b780a5c653289030ec.json",
+                  "sha256": "c87bdc92b0d87f77064746571ddf93fae913a56e0e1f3b84602c5a03b64828cf",
+                  "local_sha256": "204f86b0ffc327d965b47e392350294fcc02d12d9eeffbc8c3f6ac2a2a5fa77d"
+                }
+              ]
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/x11h003/feedback.json",
+        "sha256": "a242943e30a6db76f0dfb08d4ff407097d6c436e551d1d6d05d0867f1e7dd531",
+        "local_sha256": "a242943e30a6db76f0dfb08d4ff407097d6c436e551d1d6d05d0867f1e7dd531"
+      }
+    },
+    {
+      "uid": "xm27n001",
+      "question": "两人从北京坐火车往返厦门，含在途总共3天。去程第1天16:00至17:00之间出发，第2天抵厦后住一晚并安排景点，第3天抵达北京。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27n001/first/submission.json",
+            "sha256": "2872f044bda1864b49d529932d2fc8232e455a6aed5e7554d8517bd2c93193b9",
+            "local_sha256": "2872f044bda1864b49d529932d2fc8232e455a6aed5e7554d8517bd2c93193b9"
+          },
+          "blocking_reasons": [
+            "已核实北京→厦门D131 16:12发车、次日10:09抵达，满足去程时窗；厦门→北京可用D132为17:21发车、次日11:18抵达。若第2天抵厦后安排景点并住一晚，则第3天需乘车返京，但冻结车次当天直达约束无法同时满足；D132若第2天返程则无法在厦住宿一晚。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "D131": [
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/3a506f4a6bd347f99f5c548792f6eb8a.json",
+                  "sha256": "8262bcc7faa2ddd78e52873114020202b9fb4c11d5d29b12d1e9668feea66886",
+                  "local_sha256": "f414adbd3fa1a9b8875650b72ea225555eadf9db5e8b9c9d8c52530e08c5f194"
+                },
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/4d946bd955c841d2a1acc0b9bfcf332f.json",
+                  "sha256": "1d380825daff3575a53c202d3abe87c0a043a143879ce8211635abbb03793420",
+                  "local_sha256": "c07c88cc2bb179da1c95180ea12b5617388315bf3d7b95c8c046b7efd4718a72"
+                },
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/531140e086e44fb8b671daf8066a13d0.json",
+                  "sha256": "f0e83c127a42b026a30dcd6ee59a2e2da2ad96f1ae21d84cf4e3b03663f8725a",
+                  "local_sha256": "02ce9fe2af823899d3c0ba6b4044bb4d62a2a5b17059bfc75ce1d4f3c2d11ea3"
+                }
+              ],
+              "G966": [
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/a49321984c7c45d79cc93954bb37cfa2.json",
+                  "sha256": "be975535c1a6abc34ff9064edbc692d0c47bafbad57ca59235e03a24fa5358c5",
+                  "local_sha256": "097038bb385daea21993e306f6b4c773a3306c12eea2d75677d787aac8939a01"
+                }
+              ]
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27n001/revision/submission.json",
+            "sha256": "0c6bbac810117f7a57197d4c07be1531b1a8e0e83cae3ccf6c8fba6834f8b2af",
+            "local_sha256": "0c6bbac810117f7a57197d4c07be1531b1a8e0e83cae3ccf6c8fba6834f8b2af"
+          },
+          "blocking_reasons": [
+            "已核实北京→厦门D131 16:12发车、次日10:09抵达，满足去程时窗；厦门→北京可用D132为17:21发车、次日11:18抵达。若第2天抵厦后安排景点并住一晚，则第3天需乘车返京，但冻结车次当天直达约束无法同时满足；D132若第2天返程则无法在厦住宿一晚。"
+          ],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "D131": [
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/3a506f4a6bd347f99f5c548792f6eb8a.json",
+                  "sha256": "8262bcc7faa2ddd78e52873114020202b9fb4c11d5d29b12d1e9668feea66886",
+                  "local_sha256": "f414adbd3fa1a9b8875650b72ea225555eadf9db5e8b9c9d8c52530e08c5f194"
+                },
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/4d946bd955c841d2a1acc0b9bfcf332f.json",
+                  "sha256": "1d380825daff3575a53c202d3abe87c0a043a143879ce8211635abbb03793420",
+                  "local_sha256": "c07c88cc2bb179da1c95180ea12b5617388315bf3d7b95c8c046b7efd4718a72"
+                },
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/531140e086e44fb8b671daf8066a13d0.json",
+                  "sha256": "f0e83c127a42b026a30dcd6ee59a2e2da2ad96f1ae21d84cf4e3b03663f8725a",
+                  "local_sha256": "02ce9fe2af823899d3c0ba6b4044bb4d62a2a5b17059bfc75ce1d4f3c2d11ea3"
+                }
+              ],
+              "G966": [
+                {
+                  "path": "luna_feedback_24/runs/xm27n001/first/calls/a49321984c7c45d79cc93954bb37cfa2.json",
+                  "sha256": "be975535c1a6abc34ff9064edbc692d0c47bafbad57ca59235e03a24fa5358c5",
+                  "local_sha256": "097038bb385daea21993e306f6b4c773a3306c12eea2d75677d787aac8939a01"
+                }
+              ]
+            },
+            "submitted_trains": [],
+            "submitted_reference_pair": false,
+            "both_submitted_trains_found_in_calls": false
+          }
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "pass",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27n001/first/submission.json",
+            "sha256": "dc48c4f0b9f9a14c50dcf3b38f21b2f9dbc7d8f401921ffb69f3be056c0c8219",
+            "local_sha256": "dc48c4f0b9f9a14c50dcf3b38f21b2f9dbc7d8f401921ffb69f3be056c0c8219"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/xm27n001/first/plan.json",
+            "sha256": "2ec6f072f0d120cb97ab8727b151deac7404f311943a65ffa0ba45757ddb41c4",
+            "local_sha256": "2ec6f072f0d120cb97ab8727b151deac7404f311943a65ffa0ba45757ddb41c4"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/xm27n001/first/score.json",
+            "sha256": "665f93c82c679c9db313ddf234fa6401d07fce1fcd13621920132ac37b48753e",
+            "local_sha256": "7011c1970bcb57b0e4f1cbc8c2b8a046957aa84c84cc0e892caf3c2dc8e76856"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "D131": [
+                {
+                  "path": "luna_v19_residual_9/runs/xm27n001/first/calls/43ecaa5e3184447d9f7262beec46b929.json",
+                  "sha256": "4e5a8ecea435caef83cda9bb97841f24908766c485757647dd5d23e4f21a87f2",
+                  "local_sha256": "e03acc781ae4234ac5a735803a9d7fb266a19e5a7fddcfde7e3c7181f95aae44"
+                }
+              ],
+              "G966": [
+                {
+                  "path": "luna_v19_residual_9/runs/xm27n001/first/calls/20f683822ed546f2a7b23c252b8543ce.json",
+                  "sha256": "e9360200a275fe8960bafb4be2c1a80daaafb1393bb5580499af7c5c454160a5",
+                  "local_sha256": "7b8e09628a7bfabc8db724c677761ccc616597189f24f6ce52a48d94ece91ab2"
+                }
+              ]
+            },
+            "submitted_trains": [
+              {
+                "day": 1,
+                "TrainID": "D131",
+                "start": "北京丰台站",
+                "end": "厦门北站",
+                "start_time": "16:12",
+                "end_time": "10:09",
+                "price": 501,
+                "arrival_day": 2,
+                "sandbox_matches": [
+                  {
+                    "route": {
+                      "from_city": "北京",
+                      "to_city": "厦门",
+                      "mode": "train"
+                    },
+                    "trace": {
+                      "path": "luna_v19_residual_9/runs/xm27n001/first/calls/43ecaa5e3184447d9f7262beec46b929.json",
+                      "sha256": "4e5a8ecea435caef83cda9bb97841f24908766c485757647dd5d23e4f21a87f2",
+                      "local_sha256": "e03acc781ae4234ac5a735803a9d7fb266a19e5a7fddcfde7e3c7181f95aae44"
+                    }
+                  }
+                ]
+              },
+              {
+                "day": 3,
+                "TrainID": "G966",
+                "start": "厦门北站",
+                "end": "北京南站",
+                "start_time": "09:32",
+                "end_time": "21:18",
+                "price": 1078.5,
+                "arrival_day": 3,
+                "sandbox_matches": [
+                  {
+                    "route": {
+                      "from_city": "厦门",
+                      "to_city": "北京",
+                      "mode": "train"
+                    },
+                    "trace": {
+                      "path": "luna_v19_residual_9/runs/xm27n001/first/calls/20f683822ed546f2a7b23c252b8543ce.json",
+                      "sha256": "e9360200a275fe8960bafb4be2c1a80daaafb1393bb5580499af7c5c454160a5",
+                      "local_sha256": "7b8e09628a7bfabc8db724c677761ccc616597189f24f6ce52a48d94ece91ab2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "submitted_reference_pair": true,
+            "both_submitted_trains_found_in_calls": true
+          }
+        },
+        "revision": {
+          "result": "pass",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27n001/revision/submission.json",
+            "sha256": "6112ee7d16f3409b0b2c15b045e911ee0c332f65fd1c9ab313f46f60cfd021bc",
+            "local_sha256": "6112ee7d16f3409b0b2c15b045e911ee0c332f65fd1c9ab313f46f60cfd021bc"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/xm27n001/first/plan.json",
+            "sha256": "2ec6f072f0d120cb97ab8727b151deac7404f311943a65ffa0ba45757ddb41c4",
+            "local_sha256": "2ec6f072f0d120cb97ab8727b151deac7404f311943a65ffa0ba45757ddb41c4"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/xm27n001/first/score.json",
+            "sha256": "665f93c82c679c9db313ddf234fa6401d07fce1fcd13621920132ac37b48753e",
+            "local_sha256": "7011c1970bcb57b0e4f1cbc8c2b8a046957aa84c84cc0e892caf3c2dc8e76856"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [],
+          "rail_evidence": {
+            "reference_pair_seen": {
+              "D131": [
+                {
+                  "path": "luna_v19_residual_9/runs/xm27n001/first/calls/43ecaa5e3184447d9f7262beec46b929.json",
+                  "sha256": "4e5a8ecea435caef83cda9bb97841f24908766c485757647dd5d23e4f21a87f2",
+                  "local_sha256": "e03acc781ae4234ac5a735803a9d7fb266a19e5a7fddcfde7e3c7181f95aae44"
+                }
+              ],
+              "G966": [
+                {
+                  "path": "luna_v19_residual_9/runs/xm27n001/first/calls/20f683822ed546f2a7b23c252b8543ce.json",
+                  "sha256": "e9360200a275fe8960bafb4be2c1a80daaafb1393bb5580499af7c5c454160a5",
+                  "local_sha256": "7b8e09628a7bfabc8db724c677761ccc616597189f24f6ce52a48d94ece91ab2"
+                }
+              ]
+            },
+            "submitted_trains": [
+              {
+                "day": 1,
+                "TrainID": "D131",
+                "start": "北京丰台站",
+                "end": "厦门北站",
+                "start_time": "16:12",
+                "end_time": "10:09",
+                "price": 501,
+                "arrival_day": 2,
+                "sandbox_matches": [
+                  {
+                    "route": {
+                      "from_city": "北京",
+                      "to_city": "厦门",
+                      "mode": "train"
+                    },
+                    "trace": {
+                      "path": "luna_v19_residual_9/runs/xm27n001/first/calls/43ecaa5e3184447d9f7262beec46b929.json",
+                      "sha256": "4e5a8ecea435caef83cda9bb97841f24908766c485757647dd5d23e4f21a87f2",
+                      "local_sha256": "e03acc781ae4234ac5a735803a9d7fb266a19e5a7fddcfde7e3c7181f95aae44"
+                    }
+                  }
+                ]
+              },
+              {
+                "day": 3,
+                "TrainID": "G966",
+                "start": "厦门北站",
+                "end": "北京南站",
+                "start_time": "09:32",
+                "end_time": "21:18",
+                "price": 1078.5,
+                "arrival_day": 3,
+                "sandbox_matches": [
+                  {
+                    "route": {
+                      "from_city": "厦门",
+                      "to_city": "北京",
+                      "mode": "train"
+                    },
+                    "trace": {
+                      "path": "luna_v19_residual_9/runs/xm27n001/first/calls/20f683822ed546f2a7b23c252b8543ce.json",
+                      "sha256": "e9360200a275fe8960bafb4be2c1a80daaafb1393bb5580499af7c5c454160a5",
+                      "local_sha256": "7b8e09628a7bfabc8db724c677761ccc616597189f24f6ce52a48d94ece91ab2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "submitted_reference_pair": true,
+            "both_submitted_trains_found_in_calls": true
+          }
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/xm27n001/feedback.json",
+        "sha256": "819f61a680ec495c7d73dcab94fc5d44ba752aa38ee40ccd485c21d00951871d",
+        "local_sha256": "819f61a680ec495c7d73dcab94fc5d44ba752aa38ee40ccd485c21d00951871d"
+      }
+    },
+    {
+      "uid": "xm27p001",
+      "question": "两个人在厦门集美一日游，必去嘉庚公园和龙舟池，安排可查的市内接驳及午饭。",
+      "v17": {
+        "first": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27p001/first/submission.json",
+            "sha256": "2f0af5c25ae43361116583349aa1f70d221b1cb149a6d34b230aa4486d02a910",
+            "local_sha256": "2f0af5c25ae43361116583349aa1f70d221b1cb149a6d34b230aa4486d02a910"
+          },
+          "plan": {
+            "path": "luna_feedback_24/runs/xm27p001/first/plan.json",
+            "sha256": "fd68f82d96f62a0a09bbf1531b0d4b47b5d8ddfc2b576f9d8f4e23086f082745",
+            "local_sha256": "fd68f82d96f62a0a09bbf1531b0d4b47b5d8ddfc2b576f9d8f4e23086f082745"
+          },
+          "score": {
+            "path": "luna_feedback_24/runs/xm27p001/first/score.json",
+            "sha256": "94bc48856f95f34864a9505b3015f3c5edb98b742eeaf6dd11eeb60bf8a95e3b",
+            "local_sha256": "ed74e5c9560a7547eede64aac09140d290256f45d15a21d23097b4a8db7557ad"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "Is_attractions_correct"
+          ]
+        },
+        "revision": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27p001/revision/submission.json",
+            "sha256": "b6e84b7d7e2a0e35f7919a092c92077ed4ccea122b14d9f618f45b879467111d",
+            "local_sha256": "b6e84b7d7e2a0e35f7919a092c92077ed4ccea122b14d9f618f45b879467111d"
+          },
+          "plan": {
+            "path": "luna_feedback_24/runs/xm27p001/revision/plan.json",
+            "sha256": "7849003276dd0dc4610ae9342f17e4292c174383e5a9e67f5937b93111c4e22b",
+            "local_sha256": "7849003276dd0dc4610ae9342f17e4292c174383e5a9e67f5937b93111c4e22b"
+          },
+          "score": {
+            "path": "luna_feedback_24/runs/xm27p001/revision/score.json",
+            "sha256": "96337a278cd1263019857e136dfe1ff8aa6d6393f49e5c3c15dad5dd1068a1d5",
+            "local_sha256": "d6b3cc495c1a7dab0149b0db5a6aac5b90b263f9bf41966085239151a71882fc"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "hard"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "fail",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27p001/first/submission.json",
+            "sha256": "4bc73b4bd1f54cb630b8f70c70d04c2ce5d07db794c8befa0251b43657339d92",
+            "local_sha256": "4bc73b4bd1f54cb630b8f70c70d04c2ce5d07db794c8befa0251b43657339d92"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/xm27p001/first/plan.json",
+            "sha256": "9500d145583fec88ac1ec274abe7594d75927a2e2356e63c38d2e1e0e107f130",
+            "local_sha256": "9500d145583fec88ac1ec274abe7594d75927a2e2356e63c38d2e1e0e107f130"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/xm27p001/first/score.json",
+            "sha256": "e97d4382fdf6dda466262dfa550b5e006eb1f44dbdf4a248b645ff1b2c9cc9fd",
+            "local_sha256": "fc6c4d3cd0ee79969a7055508788ffa018408b62ddb82762129add7db04c10a3"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": [
+            "Is_attractions_correct"
+          ]
+        },
+        "revision": {
+          "result": "pass",
+          "disposition": "submitted_first_draft",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27p001/revision/submission.json",
+            "sha256": "73f3db9de2e7d60b5cb00f7d5945f6ba9faaecb7abf869d5471ce0a9ad6c77f1",
+            "local_sha256": "73f3db9de2e7d60b5cb00f7d5945f6ba9faaecb7abf869d5471ce0a9ad6c77f1"
+          },
+          "plan": {
+            "path": "luna_v19_residual_9/runs/xm27p001/revision/plan.json",
+            "sha256": "3a0685967672ab891cb6858115e6e1ae68fedbb692f91e93d5bf32945c99dc9d",
+            "local_sha256": "3a0685967672ab891cb6858115e6e1ae68fedbb692f91e93d5bf32945c99dc9d"
+          },
+          "score": {
+            "path": "luna_v19_residual_9/runs/xm27p001/revision/score.json",
+            "sha256": "26901006b11122aaec6c6ed0d52b4e8942b3abb091a0dc63f769cbb20703fb20",
+            "local_sha256": "07fb25e2055274b9accbaa54077330609d797f157afbc058312f3343f67b7236"
+          },
+          "blocking_reasons": [],
+          "nonpassing_checks": []
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/xm27p001/feedback.json",
+        "sha256": "ce6c6abd27649f861afa249bc596bea4f130edd312c21f1c00dbb8e45b0095bb",
+        "local_sha256": "ce6c6abd27649f861afa249bc596bea4f130edd312c21f1c00dbb8e45b0095bb"
+      }
+    },
+    {
+      "uid": "xm27g001",
+      "question": "2人从杭州到厦门玩2天，含来回，必须坐飞机往返。写明可核验的航班时刻、票价、住宿及接驳，关键报价缺失就说明。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27g001/first/submission.json",
+            "sha256": "6400616b4f642a62983f88f8ff4bfc4e3618455f377172526b50a1b2405a7c31",
+            "local_sha256": "6400616b4f642a62983f88f8ff4bfc4e3618455f377172526b50a1b2405a7c31"
+          },
+          "blocking_reasons": [
+            "已查询杭州—厦门及厦门—杭州往返航班，结果均无可用records且无票价，无法核验题目要求的往返航班时刻和票价。票价是城际活动必填金额，不能推测。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27g001/revision/submission.json",
+            "sha256": "b499dddd3480e4cc33551c0d83e0c1daa9ad1b77a77570e45d9cd1ad64b94071",
+            "local_sha256": "b499dddd3480e4cc33551c0d83e0c1daa9ad1b77a77570e45d9cd1ad64b94071"
+          },
+          "blocking_reasons": [
+            "已查询杭州—厦门及厦门—杭州往返航班，结果均无可用records且无票价，无法核验题目要求的往返航班时刻和票价。票价是城际活动必填金额，不能推测。"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27g001/first/submission.json",
+            "sha256": "ed6114cb9517463d9206b0052b87df428a8ce1c872546887abf9ad3661fbe6a8",
+            "local_sha256": "ed6114cb9517463d9206b0052b87df428a8ce1c872546887abf9ad3661fbe6a8"
+          },
+          "blocking_reasons": [
+            "已分别查询杭州→厦门和厦门→杭州飞机，两个方向的 intercity_search 均返回 records=[]、unpriced_count=0，工具内没有可核验航班号、时刻或票价；reference_search(kind=airfare)也返回unsupported kind or city。题目要求必须往返乘机并写可核验航班时刻和票价，不能编造机票。厦门磐基希尔顿仅有一条2026-10-24至25、双床房、2成人、638.97元的历史官方报价，已过期且非当前库存；市内路线只能提供静态估算。关键机票报价缺失，无法冻结符合要求的具体往返计划。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27g001/revision/submission.json",
+            "sha256": "294f6d8165b78d556bb650f42a57681396f7378a29dba28c5b8a3f5669f14eaa",
+            "local_sha256": "294f6d8165b78d556bb650f42a57681396f7378a29dba28c5b8a3f5669f14eaa"
+          },
+          "blocking_reasons": [
+            "反馈指出首稿无可评分行程，可核验一次替代检索。我用机场全名分别查询杭州萧山国际机场→厦门高崎国际机场及返向，均返回ValueError: unsupported city；原城市级往返查询均无航班记录或未定价预览。必须乘飞机且须写明可核验航班时刻、票价，现有证据不足以填写。厦门酒店仅有过期的历史报价，不能补足机票证据，因此保留数据阻塞。"
+          ]
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/xm27g001/feedback.json",
+        "sha256": "f92b68c9b543b61144d4a11537c952f3388cbc620f6b27595f4d58a55d59d50e",
+        "local_sha256": "f92b68c9b543b61144d4a11537c952f3388cbc620f6b27595f4d58a55d59d50e"
+      }
+    },
+    {
+      "uid": "xm27g002",
+      "question": "厦门本岛出发三个人玩两天，必须乘渡轮到鼓浪屿参观，次日乘渡轮回本岛。按沙盒证据安排住宿、餐饮和两端接驳，无法核实时直接说明。",
+      "v17": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27g002/first/submission.json",
+            "sha256": "cdf558b180e3240d83f7dab2c2dda35887b560850e1d41a99262b3bc5be8024b",
+            "local_sha256": "cdf558b180e3240d83f7dab2c2dda35887b560850e1d41a99262b3bc5be8024b"
+          },
+          "blocking_reasons": [
+            "厦门渡轮参考显示本岛东渡客运码头↔鼓浪屿三丘田码头可参考票价35元/人，约20分钟，运营时刻可查，但工具标注can_build_native_itinerary_leg=false；当前schema仅支持train/airplane城际与walk/metro/taxi市内transports，不能如实表示必需的渡轮活动及两端接驳。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_feedback_24/runs/xm27g002/revision/submission.json",
+            "sha256": "f0be547e43dc602ab6006ca19b413e0fb4946755ddac2e8ceb7b8906be90f58a",
+            "local_sha256": "f0be547e43dc602ab6006ca19b413e0fb4946755ddac2e8ceb7b8906be90f58a"
+          },
+          "blocking_reasons": [
+            "厦门渡轮参考显示本岛东渡客运码头↔鼓浪屿三丘田码头可参考票价35元/人，约20分钟，运营时刻可查，但工具标注can_build_native_itinerary_leg=false；当前schema仅支持train/airplane城际与walk/metro/taxi市内transports，不能如实表示必需的渡轮活动及两端接驳。"
+          ]
+        }
+      },
+      "v19": {
+        "first": {
+          "result": "blocked_by_data",
+          "disposition": "blocked_by_data",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27g002/first/submission.json",
+            "sha256": "bc17f4b926508f438d0030d048fdff1ee9a5c3f22467bb8638d1df539c12313b",
+            "local_sha256": "bc17f4b926508f438d0030d048fdff1ee9a5c3f22467bb8638d1df539c12313b"
+          },
+          "blocking_reasons": [
+            "已调用厦门 ferry_reference：工具返回运营方已发布参考为东渡客运码头—鼓浪屿三丘田码头，往返票价参考每人35元、单程约20分钟，去程时段07:30–17:30、回程07:40–17:40；但同一工具明确标记 availability=unknown 且 can_build_native_itinerary_leg=false。原生行程 schema 的活动类型没有 ferry，transports 也只允许 walk、metro、taxi，无法按要求准确写出必须的去程和次日返程渡轮腿或对应时刻成本。故无法在限定沙盒格式内核实并生成完整有效行程。"
+          ]
+        },
+        "revision": {
+          "result": "blocked_by_data",
+          "disposition": "keep_first",
+          "submission": {
+            "path": "luna_v19_residual_9/runs/xm27g002/revision/submission.json",
+            "sha256": "f95f4802ab22b8334c966e8274f36dd8393195f320d727016deddfc4ded6d1e3",
+            "local_sha256": "f95f4802ab22b8334c966e8274f36dd8393195f320d727016deddfc4ded6d1e3"
+          },
+          "blocking_reasons": [
+            "已调用厦门 ferry_reference：工具返回运营方已发布参考为东渡客运码头—鼓浪屿三丘田码头，往返票价参考每人35元、单程约20分钟，去程时段07:30–17:30、回程07:40–17:40；但同一工具明确标记 availability=unknown 且 can_build_native_itinerary_leg=false。原生行程 schema 的活动类型没有 ferry，transports 也只允许 walk、metro、taxi，无法按要求准确写出必须的去程和次日返程渡轮腿或对应时刻成本。故无法在限定沙盒格式内核实并生成完整有效行程。"
+          ]
+        }
+      },
+      "v19_feedback": {
+        "path": "luna_v19_residual_9/runs/xm27g002/feedback.json",
+        "sha256": "3c912dccfd1d53ac42a766353928767ebd51f0ae7d096b7512a40adc013f4e1b",
+        "local_sha256": "3c912dccfd1d53ac42a766353928767ebd51f0ae7d096b7512a40adc013f4e1b"
+      }
+    }
+  ]
+}

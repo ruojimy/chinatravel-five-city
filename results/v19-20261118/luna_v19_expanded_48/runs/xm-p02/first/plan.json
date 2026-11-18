@@ -1,0 +1,93 @@
+{
+  "people_number": 3,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "10:45",
+          "cost": 0,
+          "price": 0,
+          "transports": [],
+          "position": "南普陀寺",
+          "tickets": 3
+        },
+        {
+          "type": "attraction",
+          "start_time": "11:10",
+          "end_time": "13:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "南普陀寺",
+              "end": "中山路步行街",
+              "mode": "taxi",
+              "start_time": "11:00",
+              "end_time": "11:03",
+              "price": 12.59,
+              "cost": 12.59,
+              "distance": 2.25,
+              "cars": 1
+            }
+          ],
+          "position": "中山路步行街",
+          "tickets": 3
+        },
+        {
+          "type": "accommodation",
+          "start_time": "15:30",
+          "end_time": "08:00",
+          "cost": 327,
+          "price": 109,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "15:00",
+              "end_time": "15:03",
+              "price": 12.7,
+              "cost": 12.7,
+              "distance": 2.28,
+              "cars": 1
+            }
+          ],
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "rooms": 3,
+          "room_type": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "lunch",
+          "start_time": "11:30",
+          "end_time": "12:30",
+          "cost": 72,
+          "price": 24,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "黄则和花生汤(中山路店)",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:03",
+              "price": 13.33,
+              "cost": 13.33,
+              "distance": 2.46,
+              "cars": 1
+            }
+          ],
+          "position": "黄则和花生汤(中山路店)"
+        }
+      ]
+    }
+  ]
+}

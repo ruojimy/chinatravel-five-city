@@ -1,0 +1,11 @@
+{
+  "uid": "xi-r06",
+  "tag": "medium",
+  "start_city": "南京",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "三人南京坐火车去西安，含往返共3天。头天到西安住一晚，第二天有活动，21:00后坐火车从西安回南京，第三天抵达南京就结束。"
+}

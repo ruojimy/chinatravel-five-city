@@ -1,0 +1,128 @@
+{
+  "utc": "2026-11-18T14:34:29.235147+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "深圳",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G3020",
+              "start": "深圳北站",
+              "end": "厦门北站",
+              "start_time": "06:51",
+              "end_time": "09:36",
+              "price": 228,
+              "cost": 456,
+              "tickets": 2,
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "position": "格盟酒店(厦门大学沙坡尾店)",
+              "start_time": "11:03",
+              "end_time": "08:00",
+              "price": 109,
+              "cost": 109,
+              "rooms": 1,
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "格盟酒店(厦门大学沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "10:30",
+                  "end_time": "11:03",
+                  "price": 94.99,
+                  "cost": 94.99,
+                  "distance": 22.29,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "南普陀寺",
+              "start_time": "09:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "格盟酒店(厦门大学沙坡尾店)",
+                  "end": "南普陀寺",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:00",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 0.58,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "春吉烧肉粽(沙坡尾店)",
+              "start_time": "12:10",
+              "end_time": "12:50",
+              "price": 28,
+              "cost": 56,
+              "transports": [
+                {
+                  "start": "南普陀寺",
+                  "end": "春吉烧肉粽(沙坡尾店)",
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "end_time": "12:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 0.82,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "TrainID": "D687",
+              "start": "厦门站",
+              "end": "深圳北站",
+              "start_time": "13:55",
+              "end_time": "17:27",
+              "price": 232,
+              "cost": 464,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "春吉烧肉粽(沙坡尾店)",
+                  "end": "厦门站",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:06",
+                  "price": 19.67,
+                  "cost": 19.67,
+                  "distance": 4.28,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件性静态沙盒行程。车次与票价来自该题本次 intercity_search，历史票价只作无日期预算参考，实际日期班次、票价、库存未核实；市内出租车 legs 是 G3 离线图估算，不构成真实道路证据，需按人数使用 cars。住宿及餐饮价格为目录历史/快照参考，不能证明实际日期价格、房型或余量；厦门 room_options 未提供可采信房型或当前库存，房间数是规划成本假设（xm-ct-h03按题面两间房）。景点缺票价按协议使用0元条件假设，需出行前核实。只列一顿有目录人均价的午餐，不含其他餐食、未录入的门票或个人消费。目录没有人流证据，“较清静”只是场所类型选择，不保证人少。 Revision: replaced the venue with a same-UID catalog match containing hours and a supported price; updated its route. The return transfer runs directly from the restaurant to 厦门站 as supported by the same-UID goto result."
+  },
+  "first_sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36",
+  "feedback_sha256": "0dbb781ebe1af7fbbee824ebbe46eb944136a060bd792440fe8c937da145c0c9"
+}

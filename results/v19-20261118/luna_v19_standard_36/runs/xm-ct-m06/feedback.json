@@ -1,0 +1,8 @@
+{
+  "first_sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "查询成都→厦门、厦门→成都的火车；往返可见最低价格各为 1095 元/人（G2277/G2278），2 人往返合计至少 4380 元，已超过 4200 元预算，尚未计住宿、餐饮和市内交通。不能通过编造票价给出预算内方案。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

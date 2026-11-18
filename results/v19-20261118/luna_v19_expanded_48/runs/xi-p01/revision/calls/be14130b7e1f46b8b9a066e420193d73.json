@@ -1,0 +1,40 @@
+{
+  "phase": "revision",
+  "tool": "goto",
+  "args": {
+    "city": "西安",
+    "start": "同盛祥(凤城五路店)",
+    "end": "西安钟楼",
+    "mode": "taxi",
+    "departure": "13:00",
+    "people_number": 2
+  },
+  "utc": "2026-11-18T13:42:05.746215+00:00",
+  "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "result": {
+    "city": "西安",
+    "start": "同盛祥(凤城五路店)",
+    "end": "西安钟楼",
+    "mode": "taxi",
+    "departure": "13:00",
+    "people_number": 2,
+    "available": true,
+    "legs": [
+      {
+        "start": "同盛祥(凤城五路店)",
+        "end": "西安钟楼",
+        "mode": "taxi",
+        "start_time": "13:00",
+        "end_time": "13:11",
+        "cost": 31.87,
+        "distance": 7.76,
+        "price": 31.87,
+        "cars": 1
+      }
+    ],
+    "error": null,
+    "source": "G3 static graph-distance Transportation.goto",
+    "route_scope": "offline topology and estimated time/fare, not real-world route proof",
+    "real_world_route_proof": false
+  }
+}

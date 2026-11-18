@@ -1,0 +1,368 @@
+{
+  "lookup": {
+    "name": "同盛祥",
+    "city": "西安"
+  },
+  "boundary": "provider candidate discovery only; kept outside V17",
+  "amap": {
+    "raw": {
+      "sha256": "0089c97a8abca9f49369443c983597539da0e9748e0be2f50ccca3cd139985a1",
+      "response": {
+        "count": "9",
+        "infocode": "10000",
+        "pois": [
+          {
+            "parent": "B001D0181D",
+            "address": "凤城五路海荣豪佳花园26号(西安中学对面)",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;清真菜馆",
+            "typecode": "050121",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "同盛祥(凤城五路店)",
+            "location": "108.940921,34.329281",
+            "id": "B0FFF64VL5"
+          },
+          {
+            "parent": "",
+            "address": "西大街5号(钟楼地铁站C口步行280米)",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610104",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;清真菜馆|餐饮服务;茶艺馆;茶艺馆",
+            "typecode": "050121|050600",
+            "adname": "莲湖区",
+            "citycode": "029",
+            "name": "同盛祥(钟楼店)",
+            "location": "108.945254,34.260282",
+            "id": "B001D03L3T"
+          },
+          {
+            "parent": "B0FFF999LR",
+            "address": "凤城二路鸣华府1号楼西1号(市第三医院地铁站D口旁)",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610112",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;清真菜馆",
+            "typecode": "050121",
+            "adname": "未央区",
+            "citycode": "029",
+            "name": "同盛祥·非遗(凤鸣华府店)",
+            "location": "108.960816,34.318222",
+            "id": "B0FFGE6VL9"
+          },
+          {
+            "parent": "B0FFF902CT",
+            "address": "白沙路与木塔东路西北角香榭兰廷底商106/107室",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610113",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;中餐厅",
+            "typecode": "050100",
+            "adname": "雁塔区",
+            "citycode": "029",
+            "name": "同盛祥(高新店)",
+            "location": "108.901614,34.209652",
+            "id": "B0ID6XA2AP"
+          },
+          {
+            "parent": "B0HR9A6319",
+            "address": "案板街26号易俗街区2-2",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610103",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "购物服务;专卖店;专营店",
+            "typecode": "061200",
+            "adname": "碑林区",
+            "citycode": "029",
+            "name": "同盛祥·非遗(东大街易俗社街区店)",
+            "location": "108.949624,34.260373",
+            "id": "B0H1HCSD59"
+          },
+          {
+            "parent": "B0FFL1U4QN",
+            "address": "丈八北路陕西宾馆18号楼负一",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610113",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;中餐厅",
+            "typecode": "050100",
+            "adname": "雁塔区",
+            "citycode": "029",
+            "name": "同盛祥(陕西宾馆店)",
+            "location": "108.872511,34.204141",
+            "id": "B0IDR5NE1E"
+          },
+          {
+            "parent": "B0FFIQG8I7",
+            "address": "大唐不夜城大城志尚食坊",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610113",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;中餐厅",
+            "typecode": "050100",
+            "adname": "雁塔区",
+            "citycode": "029",
+            "name": "同盛祥(泰发祥·檀府店)",
+            "location": "108.963706,34.208602",
+            "id": "B0J3DRLSJ8"
+          },
+          {
+            "parent": "B0FFFYZFTF",
+            "address": "雁塔南路518号西安·新乐汇F1层",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610113",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;中餐厅;中餐厅",
+            "typecode": "050100",
+            "adname": "雁塔区",
+            "citycode": "029",
+            "name": "同盛祥(曲江大唐不夜城步行街店)",
+            "location": "108.964615,34.213460",
+            "id": "B0FFK6LGH5"
+          },
+          {
+            "parent": "B0FFHBHEBK",
+            "address": "兵马俑旅游广场商业街S8一楼",
+            "distance": "",
+            "pcode": "610000",
+            "adcode": "610115",
+            "pname": "陕西省",
+            "cityname": "西安市",
+            "type": "餐饮服务;餐饮相关场所;餐饮相关",
+            "typecode": "050000",
+            "adname": "临潼区",
+            "citycode": "029",
+            "name": "同盛祥牛羊肉泡馍(兵马俑店)(暂停营业)",
+            "location": "109.285792,34.384121",
+            "id": "B0FFM4HP09"
+          }
+        ],
+        "status": "1",
+        "info": "OK"
+      }
+    },
+    "request": {
+      "endpoint": "https://restapi.amap.com/v5/place/text",
+      "params": {
+        "keywords": "同盛祥",
+        "region": "西安",
+        "city_limit": "true",
+        "page_size": "10",
+        "output": "JSON"
+      },
+      "retrieved_at": "2026-11-18T12:14:59+00:00",
+      "call_number": 1,
+      "ok": true,
+      "infocode": "10000"
+    },
+    "candidates": [
+      {
+        "name": "同盛祥(凤城五路店)",
+        "address": "凤城五路海荣豪佳花园26号(西安中学对面)",
+        "cityname": "西安市",
+        "typecode": "050121",
+        "location": "108.940921,34.329281",
+        "id": "B0FFF64VL5"
+      },
+      {
+        "name": "同盛祥(钟楼店)",
+        "address": "西大街5号(钟楼地铁站C口步行280米)",
+        "cityname": "西安市",
+        "typecode": "050121|050600",
+        "location": "108.945254,34.260282",
+        "id": "B001D03L3T"
+      },
+      {
+        "name": "同盛祥·非遗(凤鸣华府店)",
+        "address": "凤城二路鸣华府1号楼西1号(市第三医院地铁站D口旁)",
+        "cityname": "西安市",
+        "typecode": "050121",
+        "location": "108.960816,34.318222",
+        "id": "B0FFGE6VL9"
+      },
+      {
+        "name": "同盛祥(高新店)",
+        "address": "白沙路与木塔东路西北角香榭兰廷底商106/107室",
+        "cityname": "西安市",
+        "typecode": "050100",
+        "location": "108.901614,34.209652",
+        "id": "B0ID6XA2AP"
+      },
+      {
+        "name": "同盛祥·非遗(东大街易俗社街区店)",
+        "address": "案板街26号易俗街区2-2",
+        "cityname": "西安市",
+        "typecode": "061200",
+        "location": "108.949624,34.260373",
+        "id": "B0H1HCSD59"
+      },
+      {
+        "name": "同盛祥(陕西宾馆店)",
+        "address": "丈八北路陕西宾馆18号楼负一",
+        "cityname": "西安市",
+        "typecode": "050100",
+        "location": "108.872511,34.204141",
+        "id": "B0IDR5NE1E"
+      },
+      {
+        "name": "同盛祥(泰发祥·檀府店)",
+        "address": "大唐不夜城大城志尚食坊",
+        "cityname": "西安市",
+        "typecode": "050100",
+        "location": "108.963706,34.208602",
+        "id": "B0J3DRLSJ8"
+      },
+      {
+        "name": "同盛祥(曲江大唐不夜城步行街店)",
+        "address": "雁塔南路518号西安·新乐汇F1层",
+        "cityname": "西安市",
+        "typecode": "050100",
+        "location": "108.964615,34.213460",
+        "id": "B0FFK6LGH5"
+      },
+      {
+        "name": "同盛祥牛羊肉泡馍(兵马俑店)(暂停营业)",
+        "address": "兵马俑旅游广场商业街S8一楼",
+        "cityname": "西安市",
+        "typecode": "050000",
+        "location": "109.285792,34.384121",
+        "id": "B0FFM4HP09"
+      }
+    ]
+  },
+  "baidu": {
+    "raw": {
+      "sha256": "8f7a41d45f106a7e107ffc4a6bc2bd149c241cf410daffb71416c946a16afc75",
+      "response": {
+        "status": 0,
+        "message": "ok",
+        "total": 4,
+        "result_type": "poi_type",
+        "query_type": "general",
+        "results": [
+          {
+            "name": "同盛祥(大唐不夜城店)",
+            "location": {
+              "lat": 34.213399,
+              "lng": 108.964601
+            },
+            "address": "雁塔南路大雁塔南广场大唐不夜城步行街518号",
+            "province": "陕西省",
+            "city": "西安市",
+            "area": "雁塔区",
+            "street_id": "6c1212eae58e154d9ee3214a",
+            "telephone": "15309272730",
+            "detail": 1,
+            "uid": "6c1212eae58e154d9ee3214a"
+          },
+          {
+            "name": "同盛祥牛羊肉泡馍(兵马俑店)",
+            "location": {
+              "lat": 34.384121,
+              "lng": 109.285792
+            },
+            "address": "秦唐大道兵马俑秦皇大剧院广场对面",
+            "province": "陕西省",
+            "city": "西安市",
+            "area": "临潼区",
+            "telephone": "(029)83906369",
+            "detail": 1,
+            "uid": "b853067368123b283210af14"
+          },
+          {
+            "name": "同盛祥·非遗(凤城五路店)",
+            "location": {
+              "lat": 34.329229,
+              "lng": 108.940888
+            },
+            "address": "凤城五路26号（西安中学南门对面）",
+            "province": "陕西省",
+            "city": "西安市",
+            "area": "未央区",
+            "street_id": "5e5597b0f44a61663617dc49",
+            "telephone": "(029)86511133",
+            "detail": 1,
+            "uid": "5e5597b0f44a61663617dc49"
+          },
+          {
+            "name": "同盛祥(永宁巷子店)",
+            "location": {
+              "lat": 34.252461,
+              "lng": 108.945834
+            },
+            "address": "陕西省西安市碑林区湘子庙街西北大学附属第一医院南侧约90米",
+            "province": "陕西省",
+            "city": "西安市",
+            "area": "碑林区",
+            "street_id": "9d2a91ec07560c558b2fb53f",
+            "telephone": "18092041230",
+            "detail": 1,
+            "uid": "9d2a91ec07560c558b2fb53f"
+          }
+        ]
+      }
+    },
+    "status": 0,
+    "candidates": [
+      {
+        "name": "同盛祥(大唐不夜城店)",
+        "address": "雁塔南路大雁塔南广场大唐不夜城步行街518号",
+        "city": "西安市",
+        "location": {
+          "lat": 34.213399,
+          "lng": 108.964601
+        },
+        "uid": "6c1212eae58e154d9ee3214a"
+      },
+      {
+        "name": "同盛祥牛羊肉泡馍(兵马俑店)",
+        "address": "秦唐大道兵马俑秦皇大剧院广场对面",
+        "city": "西安市",
+        "location": {
+          "lat": 34.384121,
+          "lng": 109.285792
+        },
+        "uid": "b853067368123b283210af14"
+      },
+      {
+        "name": "同盛祥·非遗(凤城五路店)",
+        "address": "凤城五路26号（西安中学南门对面）",
+        "city": "西安市",
+        "location": {
+          "lat": 34.329229,
+          "lng": 108.940888
+        },
+        "uid": "5e5597b0f44a61663617dc49"
+      },
+      {
+        "name": "同盛祥(永宁巷子店)",
+        "address": "陕西省西安市碑林区湘子庙街西北大学附属第一医院南侧约90米",
+        "city": "西安市",
+        "location": {
+          "lat": 34.252461,
+          "lng": 108.945834
+        },
+        "uid": "9d2a91ec07560c558b2fb53f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "first_sha256": "26cb13394f50360e9a7421a0c5746c4d365545b8a7ead430cf50bcd8b191b74d",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_attractions_correct",
+      "state": "fail",
+      "messages": [
+        "The attraction is closed now. 回民街, open time: [10:00 -- 23:00]"
+      ],
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 1,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      }
+    }
+  ]
+}

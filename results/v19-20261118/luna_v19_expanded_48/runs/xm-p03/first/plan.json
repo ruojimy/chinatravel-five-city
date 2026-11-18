@@ -1,0 +1,139 @@
+{
+  "people_number": 2,
+  "start_city": "深圳",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:46",
+          "end_time": "10:23",
+          "cost": 456,
+          "price": 228,
+          "transports": [],
+          "TrainID": "D3126",
+          "start": "深圳北站",
+          "end": "厦门北站",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "11:40",
+          "end_time": "14:15",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "环岛路海滩",
+              "mode": "taxi",
+              "start_time": "11:00",
+              "end_time": "11:34",
+              "price": 98.03,
+              "cost": 98.03,
+              "distance": 22.96,
+              "cars": 1
+            }
+          ],
+          "position": "环岛路海滩",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:40",
+          "end_time": "17:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "环岛路海滩",
+              "end": "沙坡尾",
+              "mode": "taxi",
+              "start_time": "14:30",
+              "end_time": "14:32",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.67,
+              "cars": 1
+            }
+          ],
+          "position": "沙坡尾",
+          "tickets": 2
+        },
+        {
+          "type": "dinner",
+          "start_time": "17:05",
+          "end_time": "18:20",
+          "cost": 154,
+          "price": 77,
+          "transports": [
+            {
+              "start": "沙坡尾",
+              "end": "沙坡尾62号鱼港",
+              "mode": "walk",
+              "start_time": "17:00",
+              "end_time": "17:00",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.010784806442467949
+            }
+          ],
+          "position": "沙坡尾62号鱼港"
+        },
+        {
+          "type": "accommodation",
+          "start_time": "19:00",
+          "end_time": "08:00",
+          "cost": 218,
+          "price": 109,
+          "transports": [
+            {
+              "start": "沙坡尾62号鱼港",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "walk",
+              "start_time": "18:30",
+              "end_time": "18:35",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.4515773276400814
+            }
+          ],
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "rooms": 2,
+          "room_type": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "15:21",
+          "end_time": "18:29",
+          "cost": 468,
+          "price": 234,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "12:00",
+              "end_time": "12:33",
+              "price": 94.99,
+              "cost": 94.99,
+              "distance": 22.29,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G3021",
+          "start": "厦门北站",
+          "end": "深圳北站",
+          "tickets": 2
+        }
+      ]
+    }
+  ]
+}

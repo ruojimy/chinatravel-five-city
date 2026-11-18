@@ -1,0 +1,27 @@
+{
+  "uid": "xi-ct-e02",
+  "scorer_query_sha256": "86cc9ee2fb6dcd329fbe4499ca522117be19b8fb251f55b071d5b5bfce64674b",
+  "unresolved_requirements": [],
+  "clauses": [
+    {
+      "repaired_index": 0,
+      "key": "trip_days"
+    },
+    {
+      "repaired_index": 1,
+      "key": "people_number"
+    },
+    {
+      "repaired_index": 2,
+      "key": "intercity_modes"
+    },
+    {
+      "repaired_index": 3,
+      "key": "tickets_match_people"
+    },
+    {
+      "repaired_index": 4,
+      "key": "taxi_cars"
+    }
+  ]
+}

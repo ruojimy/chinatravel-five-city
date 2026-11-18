@@ -1,0 +1,73 @@
+{
+  "utc": "2026-11-18T13:00:52.756928+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:30",
+              "end_time": "11:20",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "嘉庚公园",
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:45",
+              "end_time": "12:45",
+              "cost": 120,
+              "price": 60,
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "transports": [
+                {
+                  "start": "嘉庚公园",
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "mode": "taxi",
+                  "start_time": "11:30",
+                  "end_time": "11:38",
+                  "price": 25.36,
+                  "cost": 25.36,
+                  "distance": 5.9,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "13:10",
+              "end_time": "15:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 2,
+              "position": "龙舟池",
+              "transports": [
+                {
+                  "start": "绿茶餐厅(厦门集美大悦城店)",
+                  "end": "龙舟池",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:07",
+                  "price": 23.08,
+                  "cost": 23.08,
+                  "distance": 5.25,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "嘉庚公园与龙舟池为必去点。嘉庚公园目录实体缺营业时间、建议游览时长及票价；依题目授权将未知景点票价按0元条件处理，且09:30–11:20为规划时段，不代表已核验开放。龙舟池目录记录显示全天开放，但该历史参考的时效未知；票价缺失同样按0元条件处理。绿茶餐厅目录参考人均60元，营业时段覆盖午餐；价格/营业信息为静态快照，实际日期供应未知。市内两段均查到单车出租车估时估价，均为G3静态图距离结果，不是实时路况/真实路线证明。未查到 map_departures 试跑接驳报价。"
+  }
+}

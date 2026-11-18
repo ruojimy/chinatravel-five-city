@@ -1,0 +1,98 @@
+{
+  "people_number": 2,
+  "start_city": "成都",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:09",
+          "end_time": "09:31",
+          "cost": 632,
+          "price": 316,
+          "tickets": 2,
+          "TrainID": "D1998",
+          "start": "成都东",
+          "end": "西安北",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "10:45",
+          "end_time": "16:30",
+          "cost": 20,
+          "price": 10,
+          "tickets": 2,
+          "position": "大雁塔",
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "大雁塔",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:26",
+              "cost": 73.69,
+              "price": 73.69,
+              "distance": 17.55,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "20:00",
+          "end_time": "04:00",
+          "cost": 184,
+          "price": 184,
+          "rooms": 1,
+          "room_type": 1,
+          "position": "真情宾馆(西安钟鼓楼店)",
+          "transports": [
+            {
+              "start": "大雁塔",
+              "end": "真情宾馆(西安钟鼓楼店)",
+              "mode": "taxi",
+              "start_time": "17:00",
+              "end_time": "17:06",
+              "cost": 20.66,
+              "price": 20.66,
+              "distance": 4.56,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "05:18",
+          "end_time": "14:18",
+          "cost": 528,
+          "price": 264,
+          "tickets": 2,
+          "TrainID": "D15",
+          "start": "西安东",
+          "end": "成都东",
+          "transports": [
+            {
+              "start": "真情宾馆(西安钟鼓楼店)",
+              "end": "西安东站",
+              "mode": "taxi",
+              "start_time": "04:00",
+              "end_time": "04:18",
+              "cost": 49,
+              "price": 49,
+              "distance": 12.07,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

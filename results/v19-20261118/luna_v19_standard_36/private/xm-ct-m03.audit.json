@@ -1,0 +1,39 @@
+{
+  "uid": "xm-ct-m03",
+  "scorer_query_sha256": "2fc1201380cff06450630f3b73a825a9311296c09e3c72900185bf99a6b78bba",
+  "unresolved_requirements": [],
+  "clauses": [
+    {
+      "repaired_index": 0,
+      "key": "trip_days"
+    },
+    {
+      "repaired_index": 1,
+      "key": "people_number"
+    },
+    {
+      "repaired_index": 2,
+      "key": "total_budget"
+    },
+    {
+      "repaired_index": 3,
+      "key": "intercity_modes"
+    },
+    {
+      "repaired_index": 4,
+      "key": "tickets_match_people"
+    },
+    {
+      "repaired_index": 5,
+      "key": "room_count"
+    },
+    {
+      "repaired_index": 6,
+      "key": "room_type"
+    },
+    {
+      "repaired_index": 7,
+      "key": "taxi_cars"
+    }
+  ]
+}

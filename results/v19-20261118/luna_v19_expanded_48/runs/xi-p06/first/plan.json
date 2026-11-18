@@ -1,0 +1,63 @@
+{
+  "people_number": 2,
+  "start_city": "西安",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "09:25",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "09:33",
+          "end_time": "11:00",
+          "position": "西安鼓楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "西安鼓楼",
+              "mode": "walk",
+              "start_time": "09:30",
+              "end_time": "09:33",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.32936040845839143
+            }
+          ]
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:45",
+          "end_time": "12:45",
+          "position": "西安饭庄",
+          "price": 128,
+          "cost": 256,
+          "transports": [
+            {
+              "start": "西安鼓楼",
+              "end": "西安饭庄",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.3124155599919094
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

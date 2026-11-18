@@ -1,0 +1,118 @@
+{
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "transports": [],
+          "end": "厦门北站",
+          "start_time": "06:46",
+          "start": "深圳北站",
+          "TrainID": "D3126",
+          "type": "train",
+          "price": 228,
+          "cost": 684,
+          "end_time": "10:23",
+          "tickets": 3
+        },
+        {
+          "start_time": "11:15",
+          "price": 0,
+          "transports": [
+            {
+              "end": "嘉庚公园-鳌亭",
+              "distance": 8.58,
+              "start_time": "10:45",
+              "start": "厦门北站",
+              "end_time": "10:57",
+              "price": 34.73,
+              "cost": 34.73,
+              "cars": 1,
+              "mode": "taxi"
+            }
+          ],
+          "tickets": 3,
+          "type": "attraction",
+          "end_time": "11:50",
+          "cost": 0,
+          "position": "嘉庚公园-鳌亭"
+        },
+        {
+          "start_time": "12:30",
+          "price": 0,
+          "transports": [
+            {
+              "start_time": "12:00",
+              "price": 0,
+              "mode": "walk",
+              "start": "嘉庚公园-鳌亭",
+              "end_time": "12:15",
+              "cost": 0,
+              "distance": 1.2782817849631052,
+              "end": "集美学村牌坊"
+            }
+          ],
+          "tickets": 3,
+          "type": "attraction",
+          "end_time": "13:10",
+          "cost": 0,
+          "position": "集美学村牌坊"
+        },
+        {
+          "start_time": "21:00",
+          "price": 665,
+          "transports": [
+            {
+              "end": "厦门鹭江宾馆",
+              "distance": 12.61,
+              "start_time": "13:30",
+              "start": "集美学村牌坊",
+              "end_time": "13:48",
+              "price": 51.45,
+              "cost": 51.45,
+              "cars": 1,
+              "mode": "taxi"
+            }
+          ],
+          "type": "accommodation",
+          "end_time": "09:00",
+          "cost": 665,
+          "rooms": 1,
+          "position": "厦门鹭江宾馆"
+        }
+      ],
+      "day": 1
+    },
+    {
+      "activities": [
+        {
+          "transports": [
+            {
+              "end": "厦门北站",
+              "distance": 20.34,
+              "start_time": "12:00",
+              "start": "厦门鹭江宾馆",
+              "end_time": "12:30",
+              "price": 86.23,
+              "cost": 86.23,
+              "cars": 1,
+              "mode": "taxi"
+            }
+          ],
+          "end": "深圳北站",
+          "start_time": "14:02",
+          "start": "厦门北站",
+          "TrainID": "D2331",
+          "type": "train",
+          "price": 228,
+          "cost": 684,
+          "end_time": "17:32",
+          "tickets": 3
+        }
+      ],
+      "day": 2
+    }
+  ],
+  "start_city": "深圳",
+  "people_number": 3
+}

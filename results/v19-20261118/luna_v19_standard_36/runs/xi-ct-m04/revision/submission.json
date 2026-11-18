@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:41:08.867285+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "保留阻塞：revision 再查杭州↔西安 airplane 仍无带价航班。杭州始发低价 K308 02:27–22:24抵达太晚，次日早班返程无法留出营业中的景点时段；能留出过夜游览时段的高铁票价组合已超过1500元预算。无日期票价不可补造。",
+    "status": "keep_first"
+  },
+  "first_sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad",
+  "feedback_sha256": "9ae8eb98b976126880d0918d5794bbc4b8dd53d496f1dcac61719b06c0d0953d"
+}

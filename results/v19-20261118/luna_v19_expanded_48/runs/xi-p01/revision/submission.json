@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-18T13:44:10.410128+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "西安",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:00",
+              "end_time": "10:00",
+              "position": "西安鼓楼",
+              "price": 30,
+              "cost": 60,
+              "tickets": 2,
+              "transports": []
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:30",
+              "end_time": "12:30",
+              "position": "同盛祥(凤城五路店)",
+              "price": 42,
+              "cost": 84,
+              "transports": [
+                {
+                  "start": "西安鼓楼",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "start_time": "11:00",
+                  "end_time": "11:11",
+                  "price": 31.5,
+                  "cost": 31.5,
+                  "distance": 7.66,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "13:20",
+              "end_time": "14:20",
+              "position": "西安钟楼",
+              "price": 30,
+              "cost": 60,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "西安钟楼",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:11",
+                  "price": 31.87,
+                  "cost": 31.87,
+                  "distance": 7.76,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "保留必需的同盛祥品牌午餐，改用目录中有坐标的同盛祥(凤城五路店)实体；42元/人。西安鼓楼与钟楼各30元/人。两段出租车路线使用G3静态图，替代未定位的同盛祥总店端点，实地路线/价格与当日营业库存未知。"
+  },
+  "first_sha256": "8a56a973d013af90c984f15eb4ca72cb073bcd5fa588933abbbceab5fbda90a6",
+  "feedback_sha256": "44c10ec2ebe1acd1ff4363dbd5eda716b0963f5880168de88d04cb72d44cf3ab"
+}

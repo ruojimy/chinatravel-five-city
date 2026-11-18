@@ -1,0 +1,11 @@
+{
+  "uid": "xi-r03",
+  "tag": "medium",
+  "start_city": "成都",
+  "target_city": "西安",
+  "days": 1,
+  "people_number": 4,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "四个人从成都去西安当天往返，双向坐火车。早上08:00前发车，回程选19:00后发车且当天到成都的，西安市区安排两处不同景点和一次午饭。"
+}

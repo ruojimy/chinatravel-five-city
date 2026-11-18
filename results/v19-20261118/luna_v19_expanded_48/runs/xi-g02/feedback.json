@@ -1,0 +1,16 @@
+{
+  "first_sha256": "8b418dc2e14f5440b95eaf4428f482ccc0f392d89be54236095bcc4cf4f08935",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_space_correct",
+      "state": "fail",
+      "messages": [
+        "{'state': 'fail', 'code': 'missing_transport_between_positions', 'day': 2, 'activity_index': 2}"
+      ],
+      "cells": {
+        "Invalid Transport information across positions": 1
+      }
+    }
+  ]
+}

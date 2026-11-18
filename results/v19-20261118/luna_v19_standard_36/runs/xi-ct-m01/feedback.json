@@ -1,0 +1,11 @@
+{
+  "first_sha256": "8e41d938139dd60945d3d81b1bf513e1bfca0b8f58062d5d39af6835719fb5b7",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "innercity_modes"
+    }
+  ]
+}

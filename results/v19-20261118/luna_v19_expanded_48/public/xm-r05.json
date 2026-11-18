@@ -1,0 +1,11 @@
+{
+  "uid": "xm-r05",
+  "tag": "medium",
+  "start_city": "上海",
+  "target_city": "厦门",
+  "days": 3,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "三人上海往返厦门只坐火车。第一天到厦门住一晚，第二天下午要在厦门安排游览，23:15后再坐火车返上海，第三天到达即结束。"
+}

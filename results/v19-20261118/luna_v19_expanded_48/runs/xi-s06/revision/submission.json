@@ -1,0 +1,94 @@
+{
+  "utc": "2026-11-18T13:44:28.042681+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "start_city": "西安",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 2,
+              "end_time": "09:55",
+              "cost": 60,
+              "type": "attraction",
+              "start_time": "09:00",
+              "transports": [],
+              "price": 30,
+              "position": "西安钟楼"
+            },
+            {
+              "tickets": 2,
+              "end_time": "11:15",
+              "cost": 60,
+              "type": "attraction",
+              "start_time": "10:15",
+              "transports": [
+                {
+                  "end_time": "10:03",
+                  "cost": 0,
+                  "distance": 0.32936040845839143,
+                  "end": "西安鼓楼",
+                  "mode": "walk",
+                  "start": "西安钟楼",
+                  "price": 0,
+                  "start_time": "10:00"
+                }
+              ],
+              "price": 30,
+              "position": "西安鼓楼"
+            },
+            {
+              "tickets": 2,
+              "end_time": "12:15",
+              "cost": 0,
+              "type": "attraction",
+              "start_time": "11:45",
+              "transports": [
+                {
+                  "end_time": "11:38",
+                  "cost": 0,
+                  "distance": 0.7259123475217185,
+                  "end": "日本飞机轰炸西安遗址",
+                  "mode": "walk",
+                  "start": "西安鼓楼",
+                  "price": 0,
+                  "start_time": "11:30"
+                }
+              ],
+              "price": 0,
+              "position": "日本飞机轰炸西安遗址"
+            },
+            {
+              "type": "lunch",
+              "price": 68,
+              "cost": 136,
+              "start_time": "12:30",
+              "transports": [
+                {
+                  "end_time": "12:29",
+                  "cost": 0,
+                  "distance": 0.7821051907493929,
+                  "end": "信阳土菜馆(西安钟楼店)",
+                  "mode": "walk",
+                  "start": "日本飞机轰炸西安遗址",
+                  "price": 0,
+                  "start_time": "12:20"
+                }
+              ],
+              "end_time": "13:30",
+              "position": "信阳土菜馆(西安钟楼店)"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "people_number": 2
+    },
+    "notes": "保留题目指定钟楼、鼓楼与全步行要求，并按反馈增加目录中明确type=110200的日本飞机轰炸西安遗址。该遗址票价未提供，按允许的零元条件假设；步行段按本题revision路线查询，离线估时不代表实时路线。午餐目录人均价格。"
+  },
+  "first_sha256": "b02fbc4c2a8c4db72597f420220b4007c2cf17acd87952931fc56eb283a36a12",
+  "feedback_sha256": "3d61ae5b93d28dbebbeeb00f809fe63662c978d63d30a1548be90520510412b8"
+}

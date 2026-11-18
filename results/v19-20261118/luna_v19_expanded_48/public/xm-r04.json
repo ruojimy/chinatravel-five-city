@@ -1,0 +1,11 @@
+{
+  "uid": "xm-r04",
+  "tag": "medium",
+  "start_city": "北京",
+  "target_city": "厦门",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "两人北京去厦门只坐火车，往返一共3天。第1天16:00–17:00出发，第2天到后看景点并住一晚。第3天上午10:00之后才出发，必须在当晚23:00前返回北京。"
+}

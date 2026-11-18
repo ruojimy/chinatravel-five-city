@@ -1,6 +1,6 @@
 # ChinaTravel + ShortTrip 完整实验套件
 
-**10 城原生沙盒 · 扩展 10 城 catalog · 第 11 城西安 · ShortTrip 架构 · 规则规划器 · 高德/百度 API · 三组基准驱动**
+**10 城原生沙盒 · 12 城冻结评测 · ShortTrip 架构 · 规则规划器 · 高德/百度 API · Luna 对照**
 
 本仓库是本项目（ChinaTravel 静态沙盒 → 扩展数据 → ShortTrip 本地基准）的研究实验套件，
 替代此前的「五城静态参考」v1 包（旧内容保留在 [`legacy/five_city_v1/`](legacy/five_city_v1/)）。
@@ -10,13 +10,28 @@
 
 ---
 
-## 0. 当前状态（2026-11-16）
+## 0. 十二城 V19（2026-11-18）
+
+V19 纳入西安和厦门的历史目录、跨日到达与跨夜退房校验、景区子点判定，以及按精确出发时刻回放的高德接驳。公开快照保留评测所用的标准化字段和证据摘要。历史报价和路线估算适用于本次冻结评测。
+
+Luna 在 36 道 Easy／Medium／Human 题上的首稿为 **11/36**，每题一次反馈修订后为 **23/36**。题目来自 18 道 ChinaTravel 原题模板，每个模板分别改为西安和厦门。人数、天数及原硬约束保留，本批选题侧重预算、住宿与交通。 [逐题记录](results/v19-20261118/luna_v19_standard_36/analysis.json) · [题目来源](results/v19-20261118/luna_v19_standard_36/sources.json)
+
+安装 `requirements.txt` 后，可用以下命令加载 V19 或离线重评一份已提交方案。
+
+```sh
+python -B scripts/g3_sandbox12_repaired_v19.py
+python -B scripts/replay_benchmark12_v19.py --uid xi-ct-m02 --phase revision --output score.json
+```
+
+评测方法、公开文件的校验方式和历史对照见 [V19 评测归档](results/v19-20261118/README.md)。
+
+## 0.1 十一城历史状态（2026-11-16）
 
 十一城 `xian_n16v2` 快照与主沙盒修复已加入仓库，包含西安城际参考、多段接驳检查、日期和席别限定的交通接口及南京南站定向别名核验。默认仍为原生十城；十一城须显式选择 profile。公开快照经过脱敏，与本地冻结评测输入的哈希不同。[使用说明及数据边界](docs/G3_VERIFIED_SANDBOX.md)
 
 同一批十一城样本中，Luna 每类 6 条，严格结果为 easy 2 通过、medium 0 通过、human 2 通过；数据阻塞和待定未计为评分失败。规则器全量 60 题中 4 题通过；规则器能读取硬约束和检查器反馈，Luna 不能。完整分母、条件通过、逐题脱敏记录和哈希见 [评测记录](results/g3-20261116/RESULTS.md)。
 
-## 0.1 历史状态（2026-11-11）
+## 0.2 历史状态（2026-11-11）
 
 | 项 | 状态 |
 |---|---|

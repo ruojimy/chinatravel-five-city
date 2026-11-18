@@ -1,0 +1,8 @@
+{
+  "first_sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "武汉—厦门一日行程：已查铁路去程最快约6小时42分、返程最快约6小时42分，无法同日往返并游览；可见航班记录没有可用票价，无法按schema填写往返飞机成本。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

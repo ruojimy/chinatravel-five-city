@@ -1,0 +1,8 @@
+{
+  "first_sha256": "71a439a3ec616bf6b852d64f01f1e6a267f64ca0250ebb86f7575c0a8cb136f0",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "苏州↔西安有可用历史基准车次及票价，但必去同盛祥记录缺少lat/lon，planning_position_available=false，无法用goto核实接驳路线，不能把该餐馆作为可落点活动提交。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

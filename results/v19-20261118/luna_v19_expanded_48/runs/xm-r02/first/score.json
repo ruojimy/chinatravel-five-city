@@ -1,0 +1,165 @@
+{
+  "uid": "xm-r02",
+  "target_root": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v19_maps\\engine",
+  "query_sha256": "4008902298acaccf6be87e9a17976ed79310a87e476cbc21f1220d61c932e926",
+  "plan_sha256": "38619e21c00b4bcec8f39370bcd5b3602a0cc7358ddd980600eb7886fcf84414",
+  "scored_utc": "2026-11-18T13:39:18.735416+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "pass"
+  },
+  "hard": {
+    "state": "pass",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "pass"
+      },
+      {
+        "index": 4,
+        "state": "pass"
+      },
+      {
+        "index": 5,
+        "state": "pass",
+        "evaluator": "grounded_place_clauses"
+      },
+      {
+        "index": 6,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "requested_places": {
+    "state": "pass",
+    "items": [
+      {
+        "target": "沙坡尾",
+        "state": "pass",
+        "matched_positions": [
+          "沙坡尾"
+        ],
+        "reason": "named activity found"
+      }
+    ],
+    "boundary": "Name/alias match is not proof of opening, geographic identity, ferry or real-world access."
+  },
+  "overall": "pass",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "18deca97623e92e6b92fdfd67347c5c331728df1646c4b713f52e37d7fd3687d",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  }
+}

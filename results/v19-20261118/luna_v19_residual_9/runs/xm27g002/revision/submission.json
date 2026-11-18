@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:06:11.628115+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "反馈允许保留阻塞。厦门ferry_reference已核实到运营方公布渡轮航线和参考票价，但availability仍为unknown且can_build_native_itinerary_leg=false；限定schema没有ferry活动或交通腿，原题强制渡轮往返，因此首稿的数据阻塞仍成立。"
+  },
+  "first_sha256": "bc17f4b926508f438d0030d048fdff1ee9a5c3f22467bb8638d1df539c12313b",
+  "feedback_sha256": "3c912dccfd1d53ac42a766353928767ebd51f0ae7d096b7512a40adc013f4e1b"
+}

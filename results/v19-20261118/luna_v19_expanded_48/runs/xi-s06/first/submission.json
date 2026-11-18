@@ -1,0 +1,71 @@
+{
+  "utc": "2026-11-18T13:23:59.644519+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "plan": {
+      "target_city": "西安",
+      "people_number": 2,
+      "start_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "price": 30,
+              "position": "西安钟楼",
+              "end_time": "09:55",
+              "cost": 60,
+              "tickets": 2,
+              "transports": [],
+              "start_time": "09:00",
+              "type": "attraction"
+            },
+            {
+              "price": 30,
+              "position": "西安鼓楼",
+              "end_time": "11:15",
+              "cost": 60,
+              "tickets": 2,
+              "transports": [
+                {
+                  "price": 0,
+                  "distance": 0.32936040845839143,
+                  "end_time": "10:03",
+                  "cost": 0,
+                  "end": "西安鼓楼",
+                  "start": "西安钟楼",
+                  "mode": "walk",
+                  "start_time": "10:00"
+                }
+              ],
+              "start_time": "10:15",
+              "type": "attraction"
+            },
+            {
+              "cost": 136,
+              "price": 68,
+              "transports": [
+                {
+                  "price": 0,
+                  "distance": 0.1565748762003653,
+                  "end_time": "11:31",
+                  "cost": 0,
+                  "end": "信阳土菜馆(西安钟楼店)",
+                  "start": "西安鼓楼",
+                  "mode": "walk",
+                  "start_time": "11:30"
+                }
+              ],
+              "start_time": "12:00",
+              "type": "lunch",
+              "position": "信阳土菜馆(西安钟楼店)",
+              "end_time": "13:00"
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "景点名称及票价来自静态快照；钟楼到鼓楼、鼓楼到午餐的路线均为工具核对的步行离线图估时，不代表实时路线；午餐按目录人均价计。",
+    "status": "submitted_first_draft"
+  }
+}

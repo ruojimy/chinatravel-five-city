@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-18T13:29:33.111649+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "目录核对鳌亭、龙舟池和餐馆。两处景点未暴露票价，按允许的零元条件假设；午餐人均价及出租离线估价来自本题工具记录，实时交通及当日供给未知。",
+    "status": "submitted_first_draft",
+    "plan": {
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "start_time": "09:00",
+              "price": 0,
+              "transports": [],
+              "tickets": 3,
+              "type": "attraction",
+              "end_time": "10:45",
+              "cost": 0,
+              "position": "嘉庚公园-鳌亭"
+            },
+            {
+              "start_time": "10:00",
+              "price": 0,
+              "transports": [
+                {
+                  "start_time": "09:30",
+                  "price": 0,
+                  "mode": "walk",
+                  "start": "嘉庚公园-鳌亭",
+                  "end_time": "09:38",
+                  "cost": 0,
+                  "distance": 0.7408232346604272,
+                  "end": "龙舟池"
+                }
+              ],
+              "tickets": 3,
+              "type": "attraction",
+              "end_time": "11:15",
+              "cost": 0,
+              "position": "龙舟池"
+            },
+            {
+              "price": 60,
+              "end_time": "13:00",
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "type": "lunch",
+              "cost": 180,
+              "transports": [
+                {
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "distance": 5.25,
+                  "start_time": "11:30",
+                  "start": "龙舟池",
+                  "end_time": "11:37",
+                  "price": 23.08,
+                  "cost": 23.08,
+                  "cars": 1,
+                  "mode": "taxi"
+                }
+              ],
+              "start_time": "12:00"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "start_city": "厦门",
+      "people_number": 3
+    }
+  }
+}

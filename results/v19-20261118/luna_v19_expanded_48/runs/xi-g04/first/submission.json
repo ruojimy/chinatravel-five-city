@@ -1,0 +1,112 @@
+{
+  "utc": "2026-11-18T13:35:43.677590+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 3,
+      "start_city": "广州",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start": "广州白云",
+              "end": "西安",
+              "TrainID": "K82",
+              "start_time": "16:06",
+              "end_time": "21:02",
+              "arrival_day": 2,
+              "price": 236,
+              "cost": 708,
+              "tickets": 3,
+              "transports": []
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "accommodation",
+              "start_time": "22:02",
+              "end_time": "08:00",
+              "position": "西安索菲特人民大厦",
+              "price": 491,
+              "cost": 1473,
+              "rooms": 3,
+              "room_type": 1,
+              "transports": [
+                {
+                  "start": "西安站",
+                  "end": "西安索菲特人民大厦",
+                  "mode": "taxi",
+                  "start_time": "22:00",
+                  "end_time": "22:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.37,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:05",
+              "end_time": "10:00",
+              "position": "西安钟楼",
+              "price": 30,
+              "cost": 90,
+              "tickets": 3,
+              "transports": [
+                {
+                  "start": "西安索菲特人民大厦",
+                  "end": "西安钟楼",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.32,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start": "西安北",
+              "end": "广州南站",
+              "TrainID": "G406",
+              "start_time": "12:22",
+              "end_time": "19:30",
+              "price": 974,
+              "cost": 2922,
+              "tickets": 3,
+              "transports": [
+                {
+                  "start": "西安钟楼",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "11:00",
+                  "end_time": "11:19",
+                  "price": 52.5,
+                  "cost": 52.5,
+                  "distance": 12.85,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "航班查询未得到双向可核验报价，选用两段有历史票价的火车：K82参考236元/人，G406参考974元/人。钟楼30元/人。人民大厦索菲特历史目录价491元/间晚，按1床代理安排3间；实际房型/入住库存和当日价格未知。市内接驳为G3离线估算。"
+  }
+}

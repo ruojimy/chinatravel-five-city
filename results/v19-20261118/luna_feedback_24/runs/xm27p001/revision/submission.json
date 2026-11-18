@@ -1,0 +1,73 @@
+{
+  "utc": "2026-11-18T12:17:07.854621+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "按反馈改用目录中可规划的嘉庚公园内具体点位“嘉庚公园-鳌亭”（在题面必去的嘉庚公园范围内），以及龙舟池；两处票价缺失，按统一沙盒授权作零元条件假设。用冻结图步行接驳至目录餐馆绿茶餐厅，60元/人。点位营业时间来源仍为静态快照，实际日期库存与现场开放未知。",
+    "plan": {
+      "people_number": 2,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "嘉庚公园-鳌亭",
+              "start_time": "09:00",
+              "end_time": "10:00",
+              "price": 0,
+              "tickets": 2,
+              "cost": 0,
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "position": "龙舟池",
+              "start_time": "10:08",
+              "end_time": "11:15",
+              "price": 0,
+              "tickets": 2,
+              "cost": 0,
+              "transports": [
+                {
+                  "start": "嘉庚公园-鳌亭",
+                  "end": "龙舟池",
+                  "mode": "walk",
+                  "start_time": "10:00",
+                  "end_time": "10:08",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.7408232346604272
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "start_time": "12:33",
+              "end_time": "13:30",
+              "price": 60,
+              "cost": 120,
+              "transports": [
+                {
+                  "start": "龙舟池",
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "mode": "walk",
+                  "start_time": "11:30",
+                  "end_time": "12:33",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 5.250369882398681
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_sha256": "2f0af5c25ae43361116583349aa1f70d221b1cb149a6d34b230aa4486d02a910",
+  "feedback_sha256": "2e917d480b3b7068ebe3763b82551d2fce550abca6a939df14219c1ffe5fa691"
+}

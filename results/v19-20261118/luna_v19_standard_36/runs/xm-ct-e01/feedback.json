@@ -1,0 +1,8 @@
+{
+  "first_sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "成都—厦门一日往返：有价铁路去程约14小时，返程最早列车也需约14小时，无法在一天内完成往返观光；航班查询的票价未提供，不能在不造价的情况下形成完整往返方案。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

@@ -1,0 +1,122 @@
+{
+  "utc": "2026-11-18T12:15:51.219365+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "深圳",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "D3126",
+              "start": "深圳北站",
+              "end": "厦门北站",
+              "start_time": "06:46",
+              "end_time": "10:23",
+              "price": 228,
+              "cost": 456,
+              "tickets": 2,
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "position": "中山路步行街",
+              "start_time": "11:00",
+              "end_time": "11:13",
+              "price": 0,
+              "cost": 0,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "厦门北站",
+                  "end": "中山路步行街",
+                  "mode": "taxi",
+                  "start_time": "10:30",
+                  "end_time": "11:00",
+                  "price": 86.19,
+                  "cost": 86.19,
+                  "distance": 20.33,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "乌糖沙茶面(民族路店)",
+              "start_time": "11:30",
+              "end_time": "12:00",
+              "price": 41,
+              "cost": 82,
+              "transports": [
+                {
+                  "start": "中山路步行街",
+                  "end": "乌糖沙茶面(民族路店)",
+                  "mode": "walk",
+                  "start_time": "11:13",
+                  "end_time": "11:27",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 1.228069473252381
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "position": "沙坡尾",
+              "start_time": "12:09",
+              "end_time": "16:00",
+              "price": 0,
+              "cost": 0,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "乌糖沙茶面(民族路店)",
+                  "end": "沙坡尾",
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "end_time": "12:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 0.8,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "TrainID": "D667",
+              "start": "厦门北站",
+              "end": "深圳北站",
+              "start_time": "20:20",
+              "end_time": "23:26",
+              "price": 228,
+              "cost": 456,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "沙坡尾",
+                  "end": "厦门北站",
+                  "mode": "taxi",
+                  "start_time": "16:00",
+                  "end_time": "16:33",
+                  "price": 94.68,
+                  "cost": 94.68,
+                  "distance": 22.22,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "将从中山路步行街到乌糖沙茶面的接驳改为11:13出发、11:27抵达，安排在前一景点11:13结束后；其他首稿证据与活动保持不变。"
+  },
+  "first_sha256": "ac71726c820e6e53a0ee2a7b1c67298a9e0b58aba2227f31b3d0e39c9189a85f",
+  "feedback_sha256": "62d56e81fefcac577f2e3d1a6b141f195c6d5247ce0b305a953e36c6e78c60fe"
+}

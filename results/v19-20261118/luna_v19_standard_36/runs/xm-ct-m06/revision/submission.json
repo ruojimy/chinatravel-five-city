@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:41:08.455288+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "保留阻塞：revision 再查成都↔厦门 priced train records，最低可见往返各1095元/人；两人合计4380元，已超过4200预算，尚未计住宿、餐饮和市内交通。未发现更便宜的带价车次。",
+    "status": "keep_first"
+  },
+  "first_sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf",
+  "feedback_sha256": "7e8cdd69fe690d80037c917a72be376ce7037dd40b9c09b362118c2e43f7391c"
+}

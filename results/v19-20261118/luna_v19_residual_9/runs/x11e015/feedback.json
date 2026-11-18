@@ -1,0 +1,8 @@
+{
+  "first_sha256": "c988614f80c0686294437751fd46f50cddfd250a648e2f6478ea4271fef1d62e",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "按题目要求查询杭州→西安及西安→杭州飞机：去程可见CCA8507（15:11–17:16）等时刻，返程可见CES2223（16:58–18:41）等时刻，但返回结果均无可用票价。出行日不存在，冻结沙盒中未提供任何已定价航班； schema 要求飞机活动填票价和费用，协议不允许编造交通价格，因此无法提交合规的往返飞机行程。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

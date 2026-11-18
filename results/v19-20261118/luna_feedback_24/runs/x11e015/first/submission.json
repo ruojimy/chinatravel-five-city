@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:06:00.250493+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "已查询杭州→西安和西安→杭州航班；可用航班仅出现在unpriced_preview，未提供票价，且日期库存未知。按schema不能虚构往返机票金额，因此无法提交合规的完整往返预算行程。"
+    ]
+  }
+}

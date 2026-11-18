@@ -1,0 +1,99 @@
+{
+  "utc": "2026-11-18T13:29:38.084957+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "西安",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "13:00",
+              "end_time": "16:30",
+              "position": "大雁塔",
+              "price": 10,
+              "cost": 40,
+              "tickets": 4,
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "18:00",
+              "end_time": "08:00",
+              "position": "西安索菲特传奇酒店（人民大厦）",
+              "price": 1440,
+              "cost": 2880,
+              "rooms": 2,
+              "transports": [
+                {
+                  "start": "大雁塔",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:07",
+                  "price": 23.1,
+                  "cost": 23.1,
+                  "distance": 5.26,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:05",
+              "end_time": "10:00",
+              "position": "西安钟楼",
+              "price": 30,
+              "cost": 120,
+              "tickets": 4,
+              "transports": [
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "西安钟楼",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.28,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:30",
+              "end_time": "12:30",
+              "position": "清真尔卜餐厅",
+              "price": 40,
+              "cost": 160,
+              "transports": [
+                {
+                  "start": "西安钟楼",
+                  "end": "清真尔卜餐厅",
+                  "mode": "walk",
+                  "start_time": "11:30",
+                  "end_time": "11:38",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.74720548972476
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "目录历史快照价：大雁塔10元/人、钟楼30元/人、清真尔卜40元/人；人民大厦索菲特目录价1440元/间晚，安排2间。room_options未能核验实际房型及库存，实际出行日供应与价格未知。路线为G3离线估算。"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "uid": "xm27p002",
+  "target_root": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v17\\engine",
+  "query_sha256": "e9dc1248f5597e2677da7a9424c620963568583b8c4e49db5e8a89b7203a7491",
+  "plan_sha256": "2b20eb84ad110968a8d1f833cdc78eaec32d42a4d65d7aff386eeaa98b31e839",
+  "scored_utc": "2026-11-18T12:14:15.567354+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": [
+        "Conditional room type derived from benchmark bed field: 心远电竞酒店(厦门中山路步行街轮渡码头店)"
+      ],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "fail",
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 1
+      },
+      "messages": [
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 2,
+          "activity_index": 2,
+          "detail": {
+            "leg": 1,
+            "departs_at_minute": 2100,
+            "previous_ends_at_minute": 2160
+          }
+        }
+      ],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "pass",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      },
+      {
+        "index": 3,
+        "state": "pass"
+      },
+      {
+        "index": 4,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "requested_places": {
+    "state": "pass",
+    "items": [
+      {
+        "target": "沙坡尾",
+        "state": "pass",
+        "matched_positions": [
+          "沙坡尾"
+        ],
+        "reason": "named activity found"
+      },
+      {
+        "target": "中山路",
+        "state": "pass",
+        "matched_positions": [
+          "中山路步行街",
+          "黄则和花生汤(中山路店)"
+        ],
+        "reason": "named activity found"
+      }
+    ],
+    "boundary": "Name/alias match is not proof of opening, geographic identity, ferry or real-world access."
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "4d494e108053268dfd9c9027a73f1db0476e5d14cdd4c7a6f6c67248b2b79c81",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "8fa547890ba29f32ccc04670f7e2413410f87cc9ddc0b8392e77d6498ae4d960",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  }
+}

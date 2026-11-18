@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:41:13.503964+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已读取本题反馈。复核本题唯一“只能坐飞机且往返都要可核验票价”的约束和本题 own records：airplane 查询杭州→厦门、厦门→杭州均为 0 条；火车不满足题目限制，阻塞仍成立，保留首稿阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "64ac63f46ca3ed37d28c32401cc396450d7f7e7e7ced65ea29462bb391aa1dd1",
+  "feedback_sha256": "8a5f17619ff7c462847340c0e08929b47b8e4ea15a673632c33cf35416737eba"
+}

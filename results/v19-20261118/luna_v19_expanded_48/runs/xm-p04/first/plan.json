@@ -1,0 +1,63 @@
+{
+  "people_number": 4,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "11:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [],
+          "position": "南普陀寺",
+          "tickets": 4
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:45",
+          "end_time": "12:30",
+          "cost": 144,
+          "price": 36,
+          "transports": [
+            {
+              "start": "南普陀寺",
+              "end": "阿呆姜母鸭(大同路店)",
+              "mode": "walk",
+              "start_time": "11:15",
+              "end_time": "11:44",
+              "price": 0,
+              "cost": 0,
+              "distance": 2.4270315117251755
+            }
+          ],
+          "position": "阿呆姜母鸭(大同路店)"
+        },
+        {
+          "type": "attraction",
+          "start_time": "12:45",
+          "end_time": "15:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "阿呆姜母鸭(大同路店)",
+              "end": "中山路步行街",
+              "mode": "walk",
+              "start_time": "12:30",
+              "end_time": "12:34",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.3991090110097619
+            }
+          ],
+          "position": "中山路步行街",
+          "tickets": 4
+        }
+      ]
+    }
+  ]
+}

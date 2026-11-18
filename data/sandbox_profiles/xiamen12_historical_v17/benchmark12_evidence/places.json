@@ -1,0 +1,76 @@
+{
+  "aliases": {
+    "西安": {
+      "追风者青年旅舍(南稍门地铁站店)": {
+        "name": "追风者青年旅社(南稍门地铁站店)",
+        "kind": "accommodation",
+        "record_id": "68",
+        "source": "https://hotels.ctrip.com/hotels/120086855.html"
+      }
+    },
+    "厦门": {
+      "厦门植物园": {
+        "name": "厦门园林植物园",
+        "kind": "attraction",
+        "record_id": "216163219282179",
+        "source": "https://ixm.xm.gov.cn/yyzx/202411/t20241106_97544.htm?type=web"
+      },
+      "中山路": {
+        "name": "中山路步行街",
+        "kind": "attraction",
+        "record_id": "228597371954287",
+        "source": "https://www.fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/flsxkmh/202404/t20240427_6440504.htm"
+      }
+    }
+  },
+  "public_area_hours": {
+    "155680731809938": {
+      "name": "沙坡尾",
+      "segments_minutes": [[0, 1440]],
+      "source": "https://you.ctrip.com/sight/xiamen21/149967763.html",
+      "area_scope_source": "https://fjca.miit.gov.cn/xwdt/xydt/art/2025/art_d4c48b22b9784a1787859521817a9923.html",
+      "scope": "户外开放街区，不含艺术西区展馆、商铺或临时管制"
+    },
+    "228597371954287": {
+      "name": "中山路步行街",
+      "segments_minutes": [[0, 1440]],
+      "source": "https://you.ctrip.com/destinationsite/sight/xiamen21/137032-hotels.html",
+      "area_scope_source": "https://fjca.miit.gov.cn/xwdt/xydt/art/2025/art_d4c48b22b9784a1787859521817a9923.html",
+      "scope": "户外步行街，不含沿街商户、展馆或临时管制"
+    }
+  },
+  "station_aliases": {
+    "武汉": {
+      "武昌站": {
+        "name": "武昌",
+        "station_telecode": "WCN",
+        "source": "https://www.wuchang.gov.cn/zjwc/wcly/xing/hcz/202103/t20210324_1655378.html"
+      }
+    }
+  },
+  "ferry_reference": {
+    "city": "厦门",
+    "destination_area": "鼓浪屿",
+    "mode": "ferry",
+    "outbound": {
+      "start": "东渡客运码头",
+      "end": "鼓浪屿三丘田码头",
+      "published_first": "07:30",
+      "published_last": "17:30"
+    },
+    "return": {
+      "start": "鼓浪屿三丘田码头",
+      "end": "东渡客运码头",
+      "published_first": "07:40",
+      "published_last": "17:40"
+    },
+    "published_return_ticket_from_cny_per_person": 35,
+    "published_crossing_minutes_approx": 20,
+    "availability": "unknown",
+    "status": "operator_published_reference",
+    "timetable_source": "https://xmferry.com/xwzx/zxgg/32752.htm",
+    "notice_date": "2026-10-31",
+    "fare_source": "https://xmferry.com/mtjjt/sqtmt/hxjpj/30640.htm",
+    "can_build_native_itinerary_leg": false
+  }
+}

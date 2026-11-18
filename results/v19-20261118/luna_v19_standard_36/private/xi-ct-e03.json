@@ -1,0 +1,26 @@
+{
+  "uid": "xi-ct-e03",
+  "tag": "easy",
+  "start_city": "南京",
+  "target_city": "西安",
+  "days": 2,
+  "people_number": 4,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置南京。我们四个人计划去西安玩两天，市内交通使用地铁。请给我一个旅行规划。",
+  "nature_language_en": "Current location: Nanjing. The four of us are planning to visit Xi'an for two days. We will primarily use the subway for city transportation. Please provide a travel itinerary.",
+  "hard_logic_py": [
+    "result=(day_count(plan)==2)",
+    "result=(people_count(plan)==4)",
+    "result=True\nfor activity in allactivities(plan):\n  if activity_type(activity) in ['attraction', 'airplane', 'train'] and activity_tickets(activity)!=4: result=False\n  if innercity_transport_type(activity_transports(activity))=='metro'and metro_tickets(activity_transports(activity))!=4: result=False",
+    "result=True\nfor activity in allactivities(plan):\n  if innercity_transport_type(activity_transports(activity))=='taxi'and taxi_cars(activity_transports(activity))!=1: result=False",
+    "innercity_transport_set=set()\nfor activity in allactivities(plan):\n  if activity_transports(activity)!=[]: innercity_transport_set.add(innercity_transport_type(activity_transports(activity)))\nresult=(innercity_transport_set<={'metro'})"
+  ],
+  "constraint_keys": [
+    "trip_days",
+    "people_number",
+    "tickets_match_people",
+    "taxi_cars",
+    "innercity_modes"
+  ]
+}

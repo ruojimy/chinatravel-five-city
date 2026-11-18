@@ -1,0 +1,100 @@
+{
+  "people_number": 3,
+  "start_city": "深圳",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:46",
+          "end_time": "10:23",
+          "cost": 684,
+          "price": 228,
+          "transports": [],
+          "TrainID": "D3126",
+          "start": "深圳北站",
+          "end": "厦门北站",
+          "tickets": 3
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:45",
+          "end_time": "12:40",
+          "cost": 231,
+          "price": 77,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "沙坡尾",
+              "mode": "taxi",
+              "start_time": "11:00",
+              "end_time": "11:33",
+              "price": 94.68,
+              "cost": 94.68,
+              "distance": 22.22,
+              "cars": 1
+            },
+            {
+              "start": "沙坡尾",
+              "end": "沙坡尾62号鱼港",
+              "mode": "walk",
+              "start_time": "11:33",
+              "end_time": "11:33",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.010784806442467949
+            }
+          ],
+          "position": "沙坡尾62号鱼港"
+        },
+        {
+          "type": "attraction",
+          "start_time": "13:00",
+          "end_time": "16:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "沙坡尾62号鱼港",
+              "end": "沙坡尾",
+              "mode": "walk",
+              "start_time": "12:45",
+              "end_time": "12:45",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.010784806442467949
+            }
+          ],
+          "position": "沙坡尾",
+          "tickets": 3
+        },
+        {
+          "type": "train",
+          "start_time": "19:54",
+          "end_time": "22:44",
+          "cost": 684,
+          "price": 228,
+          "transports": [
+            {
+              "start": "沙坡尾",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "17:00",
+              "end_time": "17:33",
+              "price": 94.68,
+              "cost": 94.68,
+              "distance": 22.22,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G3019",
+          "start": "厦门北站",
+          "end": "深圳北站",
+          "tickets": 3
+        }
+      ]
+    }
+  ]
+}

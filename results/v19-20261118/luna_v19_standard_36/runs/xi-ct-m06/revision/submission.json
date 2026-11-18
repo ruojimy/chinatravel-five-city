@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:30:46.670515+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "首稿在当前同一评分器反馈中通过；交通、票价和房价仍按条件快照，保留首稿。"
+  },
+  "first_sha256": "d8e44717fc4cd1fa83007ddd7dff311117f9440a24f87a136ec9fa4dfb0c0298",
+  "feedback_sha256": "d2619c1b938a6499dc5cefb1bbb972e2b652daceb0fb03b78b5d650a944f3231"
+}

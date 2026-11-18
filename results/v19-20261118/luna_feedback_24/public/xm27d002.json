@@ -1,0 +1,11 @@
+{
+  "uid": "xm27d002",
+  "tag": "human",
+  "start_city": "广州",
+  "target_city": "厦门",
+  "days": 1,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "3人当天从广州坐火车往返厦门。可一早出发，需要在当晚24:00前抵达广州。安排一处能从厦门车站接上的人文地点及一次吃饭，别排太多。"
+}

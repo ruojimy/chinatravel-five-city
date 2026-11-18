@@ -12,6 +12,7 @@ _GROUPS = (
     (('广州', 'guangzhou'), ('CAN',)),
     (('重庆', 'chongqing'), ('CKG',)),
     (('西安', "xi'an", 'xian'), ('XIY',)),
+    (('厦门', 'xiamen'), ('XMN',)),
 )
 
 def airport_matches(value, city, source_name=None):

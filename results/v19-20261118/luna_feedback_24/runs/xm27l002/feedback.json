@@ -1,0 +1,11 @@
+{
+  "first_sha256": "5c1d860fd274bd7f6b736f3a463d5772b7bc483dee325011a086e4585f2ffc51",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "市内只步行或地铁"
+    }
+  ]
+}

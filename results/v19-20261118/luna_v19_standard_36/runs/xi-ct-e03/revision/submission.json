@@ -1,0 +1,157 @@
+{
+  "utc": "2026-11-18T14:33:49.020729+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "已修正返程地铁接驳端点名称；该接驳使用本题原有沙盒查询结果，其他行程与条件价格说明保持不变。",
+    "plan": {
+      "people_number": 4,
+      "start_city": "南京",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "07:38",
+              "end_time": "13:20",
+              "cost": 2732,
+              "price": 683,
+              "tickets": 4,
+              "TrainID": "G1970",
+              "start": "南京南",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "start_time": "16:30",
+              "end_time": "09:30",
+              "cost": 5760,
+              "price": 1440,
+              "rooms": 4,
+              "room_type": 1,
+              "position": "西安索菲特传奇酒店（人民大厦）",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安北站(地铁站)",
+                  "mode": "walk",
+                  "start_time": "14:00",
+                  "end_time": "14:05",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.48
+                },
+                {
+                  "start": "西安北站(地铁站)",
+                  "end": "五路口地铁站E东南口",
+                  "mode": "metro",
+                  "start_time": "14:05",
+                  "end_time": "16:11",
+                  "price": 10,
+                  "cost": 40,
+                  "distance": 63.49,
+                  "tickets": 4
+                },
+                {
+                  "start": "五路口地铁站E东南口",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "walk",
+                  "start_time": "16:11",
+                  "end_time": "16:17",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "10:20",
+              "end_time": "11:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 4,
+              "position": "城墙公园",
+              "transports": [
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "城墙公园",
+                  "mode": "walk",
+                  "start_time": "10:00",
+                  "end_time": "10:18",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 1.5314344835952844
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "start_time": "15:56",
+              "end_time": "22:16",
+              "cost": 2684,
+              "price": 671,
+              "tickets": 4,
+              "TrainID": "G1942",
+              "start": "西安北",
+              "end": "南京南",
+              "transports": [
+                {
+                  "start": "城墙公园",
+                  "end": "西安索菲特传奇酒店（人民大厦）",
+                  "mode": "walk",
+                  "start_time": "11:00",
+                  "end_time": "11:18",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 1.5314344835952844
+                },
+                {
+                  "start": "西安索菲特传奇酒店（人民大厦）",
+                  "end": "五路口地铁站E东南口",
+                  "mode": "walk",
+                  "start_time": "11:30",
+                  "end_time": "11:36",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.53
+                },
+                {
+                  "start": "五路口地铁站E东南口",
+                  "end": "西安北站(地铁站)",
+                  "mode": "metro",
+                  "start_time": "11:36",
+                  "end_time": "13:42",
+                  "price": 10,
+                  "cost": 40,
+                  "distance": 63.49,
+                  "tickets": 4
+                },
+                {
+                  "start": "西安北站(地铁站)",
+                  "end": "西安北站",
+                  "mode": "walk",
+                  "start_time": "13:42",
+                  "end_time": "13:47",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.48
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3",
+  "feedback_sha256": "755376325eae923d5377fa0cb577bd9b14753cf6aae03875e16833a2575fdede"
+}

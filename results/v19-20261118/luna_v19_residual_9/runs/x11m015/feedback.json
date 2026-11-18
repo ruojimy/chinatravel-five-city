@@ -1,0 +1,25 @@
+{
+  "first_sha256": "6a76ffe171ef20e88dac7a26d69e1c680ca4c2fcef05d3d5a0272df38b58f017",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_attractions_correct",
+      "state": "fail",
+      "messages": [
+        "Attraction price should be provided"
+      ],
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 1,
+        "Incorrect cost Information of attraction": 0
+      }
+    },
+    {
+      "check": "stated_requirement",
+      "state": "fail",
+      "requirement_label": "required_attraction_types"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:17:07.057158+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "反馈确认无可评分方案。渡轮参考虽然给出票价和时刻，但明确can_build_native_itinerary_leg=false，schema无法表达所要求的渡轮往返及衔接，保留结构性阻塞。"
+  },
+  "first_sha256": "cdf558b180e3240d83f7dab2c2dda35887b560850e1d41a99262b3bc5be8024b",
+  "feedback_sha256": "028a81cc2342dcff092e50c2399428aedbb734a2a86c49e038c70ae1300e7d61"
+}

@@ -1,0 +1,8 @@
+{
+  "first_sha256": "2175ac73b4453e7f668af0dc59162db237bb8b2f71702a4653ee9f3ff1ebd37e",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查询广州—西安往返航班：出程仅有CES2302、CSN3215等未定价航班；反向西安—广州查询也仅有无票价航班。往返票价是预算与必填城际活动金额的关键证据，不能编造，因此无法提交结构完整且可核验的四日含往返计划。具体日期库存未知。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

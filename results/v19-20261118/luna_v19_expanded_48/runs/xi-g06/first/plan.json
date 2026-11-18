@@ -1,0 +1,96 @@
+{
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "start_time": "09:42",
+          "tickets": 2,
+          "TrainID": "G3180",
+          "start": "武汉",
+          "transports": [],
+          "end": "西安北",
+          "end_time": "14:01",
+          "cost": 1090,
+          "price": 545,
+          "type": "train"
+        },
+        {
+          "cost": 256,
+          "transports": [
+            {
+              "start_time": "14:15",
+              "start": "西安北站",
+              "end": "西安饭庄",
+              "end_time": "14:34",
+              "price": 52.98,
+              "mode": "taxi",
+              "cost": 52.98,
+              "cars": 1,
+              "distance": 12.95
+            }
+          ],
+          "end_time": "19:00",
+          "type": "dinner",
+          "price": 128,
+          "position": "西安饭庄",
+          "start_time": "18:00"
+        },
+        {
+          "price": 491,
+          "cost": 491,
+          "position": "西安索菲特人民大厦",
+          "rooms": 1,
+          "transports": [
+            {
+              "start_time": "19:00",
+              "start": "西安饭庄",
+              "end": "西安索菲特人民大厦",
+              "end_time": "19:00",
+              "price": 11,
+              "mode": "taxi",
+              "cost": 11,
+              "cars": 1,
+              "distance": 0.64
+            }
+          ],
+          "start_time": "21:00",
+          "end_time": "09:00",
+          "type": "accommodation"
+        }
+      ],
+      "day": 1
+    },
+    {
+      "activities": [
+        {
+          "start_time": "15:48",
+          "tickets": 2,
+          "TrainID": "G3182",
+          "start": "西安北",
+          "transports": [
+            {
+              "start_time": "15:00",
+              "start": "西安索菲特人民大厦",
+              "end": "西安北站",
+              "end_time": "15:18",
+              "price": 50.37,
+              "mode": "taxi",
+              "cost": 50.37,
+              "cars": 1,
+              "distance": 12.37
+            }
+          ],
+          "end": "武汉",
+          "end_time": "20:34",
+          "cost": 1090,
+          "price": 545,
+          "type": "train"
+        }
+      ],
+      "day": 2
+    }
+  ],
+  "target_city": "西安",
+  "start_city": "武汉",
+  "people_number": 2
+}

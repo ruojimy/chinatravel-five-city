@@ -1,0 +1,118 @@
+{
+  "people_number": 3,
+  "start_city": "成都",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "成都东",
+          "end": "西安北",
+          "TrainID": "D1998",
+          "start_time": "06:09",
+          "end_time": "09:31",
+          "price": 316,
+          "cost": 948,
+          "tickets": 3,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "start_time": "10:18",
+          "end_time": "08:00",
+          "position": "西安索菲特人民大厦",
+          "price": 491,
+          "cost": 1473,
+          "rooms": 3,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:18",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "12:05",
+          "end_time": "13:00",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 90,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "12:00",
+              "end_time": "12:01",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.32,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start": "西安北",
+          "end": "成都东",
+          "TrainID": "G1975",
+          "start_time": "14:33",
+          "end_time": "18:26",
+          "price": 316,
+          "cost": 948,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "钟楼",
+              "mode": "walk",
+              "start_time": "13:15",
+              "end_time": "13:20",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.182
+            },
+            {
+              "start": "钟楼",
+              "end": "西安北站",
+              "mode": "metro",
+              "start_time": "13:20",
+              "end_time": "13:48",
+              "price": 4,
+              "cost": 12,
+              "distance": 12.89,
+              "tickets": 3
+            },
+            {
+              "start": "西安北站",
+              "end": "西安北站",
+              "mode": "walk",
+              "start_time": "13:48",
+              "end_time": "13:59",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.517
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

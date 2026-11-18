@@ -1,0 +1,120 @@
+{
+  "people_number": 3,
+  "start_city": "成都",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:09",
+          "end_time": "09:31",
+          "cost": 948,
+          "price": 316,
+          "tickets": 3,
+          "TrainID": "D1998",
+          "start": "成都东",
+          "end": "西安北",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "10:30",
+          "end_time": "12:30",
+          "cost": 255,
+          "price": 85,
+          "tickets": 3,
+          "position": "西安碑林博物馆",
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安碑林博物馆",
+              "mode": "taxi",
+              "start_time": "10:00",
+              "end_time": "10:20",
+              "cost": 55.69,
+              "price": 55.69,
+              "distance": 13.55,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "21:00",
+          "end_time": "07:00",
+          "cost": 112,
+          "price": 56,
+          "rooms": 2,
+          "room_type": 1,
+          "position": "今天商务宾馆",
+          "transports": [
+            {
+              "start": "西安碑林博物馆",
+              "end": "今天商务宾馆",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "12:36",
+              "cost": 20.97,
+              "price": 20.97,
+              "distance": 4.65,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "12:00",
+          "cost": 360,
+          "price": 120,
+          "tickets": 3,
+          "position": "秦始皇兵马俑",
+          "transports": [
+            {
+              "start": "今天商务宾馆",
+              "end": "秦始皇兵马俑",
+              "mode": "taxi",
+              "start_time": "08:00",
+              "end_time": "08:44",
+              "cost": 128.15,
+              "price": 128.15,
+              "distance": 29.66,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start_time": "14:49",
+          "end_time": "18:38",
+          "cost": 948,
+          "price": 316,
+          "tickets": 3,
+          "TrainID": "G3879",
+          "start": "西安北",
+          "end": "成都东",
+          "transports": [
+            {
+              "start": "秦始皇兵马俑",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "12:30",
+              "end_time": "13:16",
+              "cost": 135.09,
+              "price": 135.09,
+              "distance": 31.2,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "people_number": 2,
+  "start_city": "南京",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:58",
+          "end_time": "13:05",
+          "cost": 1093.0,
+          "price": 546.5,
+          "transports": [],
+          "TrainID": "G3027",
+          "start": "南京南站",
+          "end": "厦门北站",
+          "tickets": 2
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:45",
+          "end_time": "16:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "南普陀寺",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:32",
+              "price": 93.34,
+              "cost": 93.34,
+              "distance": 21.92,
+              "cars": 1
+            }
+          ],
+          "position": "南普陀寺",
+          "tickets": 2
+        },
+        {
+          "type": "accommodation",
+          "start_time": "17:30",
+          "end_time": "08:00",
+          "cost": 218,
+          "price": 109,
+          "transports": [
+            {
+              "start": "南普陀寺",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "17:00",
+              "end_time": "17:00",
+              "price": 11,
+              "cost": 11,
+              "distance": 0.58,
+              "cars": 1
+            }
+          ],
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "rooms": 2,
+          "room_type": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "15:43",
+          "end_time": "22:36",
+          "cost": 1268,
+          "price": 634,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:33",
+              "price": 94.99,
+              "cost": 94.99,
+              "distance": 22.29,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G1656",
+          "start": "厦门北站",
+          "end": "南京南站",
+          "tickets": 2
+        }
+      ]
+    }
+  ]
+}

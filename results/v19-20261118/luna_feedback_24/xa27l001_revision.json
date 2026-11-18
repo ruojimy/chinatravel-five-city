@@ -1,0 +1,67 @@
+{
+  "status": "submitted_first_draft",
+  "plan": {
+    "people_number": 2,
+    "start_city": "西安",
+    "target_city": "西安",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "type": "attraction",
+            "position": "回民街",
+            "start_time": "10:00",
+            "end_time": "10:30",
+            "price": 0,
+            "cost": 0,
+            "tickets": 2,
+            "transports": []
+          },
+          {
+            "type": "attraction",
+            "position": "西安钟楼",
+            "start_time": "10:38",
+            "end_time": "11:10",
+            "price": 30,
+            "cost": 60,
+            "tickets": 2,
+            "transports": [
+              {
+                "start": "回民街",
+                "end": "西安钟楼",
+                "mode": "walk",
+                "start_time": "10:30",
+                "end_time": "10:38",
+                "price": 0,
+                "cost": 0,
+                "distance": 0.6804448972518206
+              }
+            ]
+          },
+          {
+            "type": "lunch",
+            "position": "西安饭庄",
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "price": 128,
+            "cost": 256,
+            "transports": [
+              {
+                "start": "西安钟楼",
+                "end": "西安饭庄",
+                "mode": "walk",
+                "start_time": "11:15",
+                "end_time": "11:26",
+                "price": 0,
+                "cost": 0,
+                "distance": 0.9912391442492667
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "notes": "回民街从目录开放时刻10:00开始；之后步行到西安钟楼及西安饭庄。门票/价格和静态路线说明沿用首稿。"
+}

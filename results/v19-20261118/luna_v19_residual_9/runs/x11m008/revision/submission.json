@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-18T13:05:15.461809+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "反馈指出首稿无可评分行程，可核验一次替代检索。我用机场全名补查广州白云国际机场→西安咸阳国际机场，工具返回ValueError: unsupported city；原城市级查询中，12:00后去程仅有无票价航班预览，priced records为空。返程的MU2303有580元/人历史票价，仍无法确定去程金额和验证5000元预算。保留数据阻塞，不编造机票价格。"
+    ]
+  },
+  "first_sha256": "42f4d3c90d63637ebd65483a9d1f4050ddf95382f0351640433c6e7cdb86174a",
+  "feedback_sha256": "add927ec27b50ec6059922e535b3af445273f3de21fe2cb814597ee9711da69f"
+}

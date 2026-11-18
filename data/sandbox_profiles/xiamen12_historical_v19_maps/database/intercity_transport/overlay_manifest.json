@@ -1,0 +1,751 @@
+{
+  "schema": "expanded12-intercity-overlay-v1",
+  "profile": "expanded12",
+  "cities": [
+    "北京",
+    "上海",
+    "南京",
+    "苏州",
+    "杭州",
+    "深圳",
+    "成都",
+    "武汉",
+    "广州",
+    "重庆",
+    "西安",
+    "厦门"
+  ],
+  "base_profile": {
+    "path": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2",
+    "file_hash_inventory": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\profile_file_hashes.json",
+    "source_route_file_count": 110,
+    "source_airplane_sha256": "fb1100f3df2ecba102f820a495cb913490c013c57b9a97ae2ba7141406eeb0b7"
+  },
+  "optional_city": "厦门",
+  "input_snapshot": {
+    "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\snapshot_v4\\catalog.sqlite3",
+    "sha256": "2ee9e09094e6d9cebc97b2609e0c950f63de2c75a6694314ae3abee02252db37"
+  },
+  "xian11_route_sources": [
+    {
+      "path": "from_北京_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_上海.json",
+      "sha256": "f1bdd7530e29f3d2524fa109da3e8aa702b124c7f8fac916747b431930cf2d2d"
+    },
+    {
+      "path": "from_北京_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_南京.json",
+      "sha256": "0264874b95cae7b4e94b8ff287f5b6e3bbf492f077572659f6159a179867be4a"
+    },
+    {
+      "path": "from_北京_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_苏州.json",
+      "sha256": "cc79c03696d49e0b7c184e095289eaa0c5f9e54f154045ef90137b9dcf11d38a"
+    },
+    {
+      "path": "from_北京_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_杭州.json",
+      "sha256": "7aac43dff6c221f943c10df3854ed0247fea159ed93de985d5ea409b5f2686f9"
+    },
+    {
+      "path": "from_北京_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_深圳.json",
+      "sha256": "251966172f1051fad515cdff1df74b1ffcc8b29ab42e5843cd8b680de9fa915f"
+    },
+    {
+      "path": "from_北京_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_成都.json",
+      "sha256": "293a502e36222da48151b8c6749b727a07c8b59233220b024e9bc01101e6bab6"
+    },
+    {
+      "path": "from_北京_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_武汉.json",
+      "sha256": "be0ed947b2d6b2987aefc58d6874ad586b8e84d632bb9f235679cc8cf8950d67"
+    },
+    {
+      "path": "from_北京_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_广州.json",
+      "sha256": "d92836a73c3b2aea5092156b6d06093191c3e6c765aec9144830fc9046c0aee6"
+    },
+    {
+      "path": "from_北京_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_重庆.json",
+      "sha256": "4ad008cc220d2b26a7e5aeb2ea986b722a604e0601accdd0b1a4ba0ae0927cb0"
+    },
+    {
+      "path": "from_北京_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_北京_to_西安.json",
+      "sha256": "816fd8a11d22a2bd6e672be4d6a51510b5716b6f5ac4b499b5d00b7c777aab82"
+    },
+    {
+      "path": "from_上海_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_北京.json",
+      "sha256": "4b8238c84ec5b90a9e4a94725e7b3d9a57156797d27dc1970acbaa54a56e0c5d"
+    },
+    {
+      "path": "from_上海_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_南京.json",
+      "sha256": "8faab5437587973646c6d8499b37431326ba9b1f519651e3387cded3113dd8fe"
+    },
+    {
+      "path": "from_上海_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_苏州.json",
+      "sha256": "b0f261423b5d333ad871aa3d5cc90fbf4227a841d8f9e823eb48f4241ac56712"
+    },
+    {
+      "path": "from_上海_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_杭州.json",
+      "sha256": "e5064d6d0d28ec96e25b09f8183bc3af5732403856d6ec0a9e7c253d7c9efbc0"
+    },
+    {
+      "path": "from_上海_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_深圳.json",
+      "sha256": "ff205497347a46e4d6e3a63f318417f0f4a5156d7695442c1d7273d44cd7b0e4"
+    },
+    {
+      "path": "from_上海_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_成都.json",
+      "sha256": "8940a57bab4650f739b3f9b9283d1e146f08a941b59ef8d243354facc3515191"
+    },
+    {
+      "path": "from_上海_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_武汉.json",
+      "sha256": "53cec90b952e083b1fa5ace61b3f687aa084f477fb6d7813d395d1f021c2501f"
+    },
+    {
+      "path": "from_上海_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_广州.json",
+      "sha256": "c38b772421f384fa4d77eb321d84352e906c54455381e0e9f8a9d9da1a55c515"
+    },
+    {
+      "path": "from_上海_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_重庆.json",
+      "sha256": "fdcd4de3432893bc24b9446dcb0a8bc265ff2a8c568fd6f5df66b28e9fd1c3e8"
+    },
+    {
+      "path": "from_上海_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_上海_to_西安.json",
+      "sha256": "6edcd3ff5b5007efa08a6bbebb8047497af39fedbe59f34eb1eafc35b7a3f32b"
+    },
+    {
+      "path": "from_南京_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_北京.json",
+      "sha256": "d8441ae63864a610c15e909447b6324a54fe926375eff8befc990b7ff5912506"
+    },
+    {
+      "path": "from_南京_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_上海.json",
+      "sha256": "7e49a3755e3f4b76542583737e2339d4c877c3d1ef2790894ff2906ab09f2bf1"
+    },
+    {
+      "path": "from_南京_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_苏州.json",
+      "sha256": "0eb4eef9c2480daad3eeb4d1ae7a117ea6ae2b30a43c6d550917f50444240cce"
+    },
+    {
+      "path": "from_南京_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_杭州.json",
+      "sha256": "6cdf052fbec5c5a09b833aafe68f76d2d7bbc176978f5ae720b503b00af03c2c"
+    },
+    {
+      "path": "from_南京_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_深圳.json",
+      "sha256": "ac262265b03a452265e101a5dc32166cd65febb65c798e1887a3593e2136eacd"
+    },
+    {
+      "path": "from_南京_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_成都.json",
+      "sha256": "9072b22b502c8872d158cef13e74f2535d1c0bd7832c2a40a097e6b0df418936"
+    },
+    {
+      "path": "from_南京_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_武汉.json",
+      "sha256": "7597c4c55e61552a498fbf7fc4ab3b6a20b17f0ce43fbc7aec5c28e42c4a3153"
+    },
+    {
+      "path": "from_南京_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_广州.json",
+      "sha256": "4697073c2e3ed033f1273e01178ef781e7ab6f4426462f2b0843aadea52460f5"
+    },
+    {
+      "path": "from_南京_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_重庆.json",
+      "sha256": "216e29ee38be7b6b6618d30145be430fa58e9681a113dba6fe99169863544552"
+    },
+    {
+      "path": "from_南京_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_南京_to_西安.json",
+      "sha256": "28649525505be71c5d5d264ee6c207ce61e220dd7d2fba1de349ec6183390c05"
+    },
+    {
+      "path": "from_苏州_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_北京.json",
+      "sha256": "10d5426e138cee37125cd0e3fcaec8b23e3252bb3d2e0bffecabd71d6adb843a"
+    },
+    {
+      "path": "from_苏州_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_上海.json",
+      "sha256": "f6fca6e9e6be7ec29f8195bcc02152d82d3f5966567c594a46d46e819f186912"
+    },
+    {
+      "path": "from_苏州_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_南京.json",
+      "sha256": "6dcd38429293240ee92e800db3eaa28a307d1160acdf9497add0dd8f27319c79"
+    },
+    {
+      "path": "from_苏州_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_杭州.json",
+      "sha256": "4ff30dcbd03f62263a40fe234d7488980670d9fc4f24f11224d0829284a5ebf7"
+    },
+    {
+      "path": "from_苏州_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_深圳.json",
+      "sha256": "842665d5b601ae71ce92d52f9d07782a02980b062ee0a630ce9cecfe79779baa"
+    },
+    {
+      "path": "from_苏州_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_成都.json",
+      "sha256": "9feb1c375367563b9a25832671c740b66c690664844a57ba358f0cc8560a08d1"
+    },
+    {
+      "path": "from_苏州_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_武汉.json",
+      "sha256": "8f9044518b4d612e319cdcc1c591e3cdc6dfb29e8b33c5aa6cf85113be6f3c0b"
+    },
+    {
+      "path": "from_苏州_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_广州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "from_苏州_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_重庆.json",
+      "sha256": "9a7eef60103a7d4d9903d919fa8b8b801167375bfc05ab974234c8a58eeb453c"
+    },
+    {
+      "path": "from_苏州_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_苏州_to_西安.json",
+      "sha256": "08998a1e1927dc58d84d592325718ad45617dfac23f6404160a0f719d28b4d1f"
+    },
+    {
+      "path": "from_杭州_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_北京.json",
+      "sha256": "a81ec7b7c9e41257b066a9139f5614cbb1008917b19dc5e616a33089ef40e8a1"
+    },
+    {
+      "path": "from_杭州_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_上海.json",
+      "sha256": "b2dc6aa1078dbbdd1838ddf0cce2ccac6b6aef2d0109aae078dbec32e443f91f"
+    },
+    {
+      "path": "from_杭州_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_南京.json",
+      "sha256": "b766f78eb6aaa59328aea018cb10d2550994d77ef021ed7ff184ab037d720ddd"
+    },
+    {
+      "path": "from_杭州_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_苏州.json",
+      "sha256": "995c6ed6dee32269b05874f4877a1741cc5e620a1ca11875377207aecf0b059b"
+    },
+    {
+      "path": "from_杭州_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_深圳.json",
+      "sha256": "5a13a4e08389d299a3b42dd4a9c8ba5960b277bc3d6ffed8e2d8ba6f3dce9084"
+    },
+    {
+      "path": "from_杭州_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_成都.json",
+      "sha256": "b0d161a62ed197e6bedba57995825ba0764bbd383038b9912a52c2a515e9e266"
+    },
+    {
+      "path": "from_杭州_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_武汉.json",
+      "sha256": "0d6a4b65aae834bc8f6f2da2c679b94c34417c875efa61625a19880ec1e50d99"
+    },
+    {
+      "path": "from_杭州_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_广州.json",
+      "sha256": "c7a2a8db5fecc71dd164a4225015fe3d2d640bc37d8a412d27bd5449f972a047"
+    },
+    {
+      "path": "from_杭州_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_重庆.json",
+      "sha256": "ae6635e1863f2cf2ed65d443643ac12c476c1b34c5e4ecca526ecf8a99eff334"
+    },
+    {
+      "path": "from_杭州_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_杭州_to_西安.json",
+      "sha256": "5a9cf79350a47a7f90315eb56e272ee88a4ab601f743c7c167d75d1d41b84566"
+    },
+    {
+      "path": "from_深圳_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_北京.json",
+      "sha256": "9c16b275d66dd986ce2340282a213396b0a7344a8876333d0e08eee2fc6016f1"
+    },
+    {
+      "path": "from_深圳_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_上海.json",
+      "sha256": "cebee92ade1227e95993bbce0f22b0d61a32357bbcbc0547773028f9638c3005"
+    },
+    {
+      "path": "from_深圳_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_南京.json",
+      "sha256": "2858cd5bd297b28a1b47687cc461a88da9daf3843461b993934d90df6b1a8f18"
+    },
+    {
+      "path": "from_深圳_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_苏州.json",
+      "sha256": "02ac43325a521ce7c8f93b24fe8cf8a805ca057346ed31edf61e1a8ecb360a8f"
+    },
+    {
+      "path": "from_深圳_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_杭州.json",
+      "sha256": "0ae68fe249704ca199250051a3874729c62035ad6df2a843e49a7fde14f4561c"
+    },
+    {
+      "path": "from_深圳_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_成都.json",
+      "sha256": "f6c7457aab38c77c602384f83aad53af1517fcf753a0e476c257943489da1896"
+    },
+    {
+      "path": "from_深圳_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_武汉.json",
+      "sha256": "4028d7f8bb7300f284ae9e0df218ecaa6d69e4e40db7e2a101a47126e40753d4"
+    },
+    {
+      "path": "from_深圳_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_广州.json",
+      "sha256": "4669d3e826a37bd6e421bec3172973998dda90f38e521de58866395823a215d0"
+    },
+    {
+      "path": "from_深圳_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_重庆.json",
+      "sha256": "ef99cbfd965f9368fc790e15ae9688879079647a63a3adc91eb9d989cd34709e"
+    },
+    {
+      "path": "from_深圳_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_深圳_to_西安.json",
+      "sha256": "e50fff569436aa393b9b334f211371f8ed39c6b4ec3917c2ca77c46fb2e005c5"
+    },
+    {
+      "path": "from_成都_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_北京.json",
+      "sha256": "8435dd25bae728fdb1135029ddceecdd9deea9e7806fb37f56ec348ec3fcd886"
+    },
+    {
+      "path": "from_成都_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_上海.json",
+      "sha256": "6960b5eadb5e29bc9b2d7f4ea011f7c84c97ee5e1d3b87142180d32005b1b6ff"
+    },
+    {
+      "path": "from_成都_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_南京.json",
+      "sha256": "d52623bb0e440eef44c987d6ce56df4c9d23a208e973e69be6933b5fffabe8a4"
+    },
+    {
+      "path": "from_成都_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_苏州.json",
+      "sha256": "90e5a2653b3f7c172342a3bd1304e943f4a88ecef518332f6f340766118b7ee6"
+    },
+    {
+      "path": "from_成都_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_杭州.json",
+      "sha256": "084a37bbe9bbd09ce3847c99da364976c6e8b96a4eab00d698f68caa1c79cb1a"
+    },
+    {
+      "path": "from_成都_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_深圳.json",
+      "sha256": "dafd54abfa39ae2c3d0d85bba40d8a0a9b3b7f429605827f3142c3c3f54edbe1"
+    },
+    {
+      "path": "from_成都_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_武汉.json",
+      "sha256": "e8956a766ca1441658471ea6181ae6cee370d6d2370dee9df82c12afad81767a"
+    },
+    {
+      "path": "from_成都_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_广州.json",
+      "sha256": "35d84e981f72dd1af6a134ddd534b66123f7737bd3331d2593a1ec14bfea9645"
+    },
+    {
+      "path": "from_成都_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_重庆.json",
+      "sha256": "1ab00fc3705a71a19ed8b285d25fcd398aa7e180e5e44232f6fe218d1ec895a9"
+    },
+    {
+      "path": "from_成都_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_成都_to_西安.json",
+      "sha256": "739c597edfeac8003492ddb759c404290b9079e55e40bc141163245a73ee3de8"
+    },
+    {
+      "path": "from_武汉_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_北京.json",
+      "sha256": "50dd9eca1071db0c86023be38701c0090ee1e5a076cc2ca62197add332cee9e0"
+    },
+    {
+      "path": "from_武汉_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_上海.json",
+      "sha256": "afd68a84237515edb74ebc81f39ef0644eefd1328ad2ac2b7ad93a23d4e2d537"
+    },
+    {
+      "path": "from_武汉_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_南京.json",
+      "sha256": "f189be7a84d55cd6b1c5e5d231f9c583f485f329c42000fc892afafdc6070964"
+    },
+    {
+      "path": "from_武汉_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_苏州.json",
+      "sha256": "bc17d9854215cb3091d18762d6bd53ea2bb827b3865716c3dcdb8aa9536a141a"
+    },
+    {
+      "path": "from_武汉_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_杭州.json",
+      "sha256": "35295bdc18959e90554f668a99655a7704d0fd8cd9e749659e3583cdfdc1bbef"
+    },
+    {
+      "path": "from_武汉_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_深圳.json",
+      "sha256": "0e377a5362e44530d53e3f9585793ac30dd5e4630da0bf8440e488bf35da98e0"
+    },
+    {
+      "path": "from_武汉_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_成都.json",
+      "sha256": "965222fafb8041fd440c6a70255aedbf1c79dc34507da45e4842de8c5d18876a"
+    },
+    {
+      "path": "from_武汉_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_广州.json",
+      "sha256": "04048a0fba4fdb8bec6914fdbe5e84581cab323d76482afaec7746be2952ed6a"
+    },
+    {
+      "path": "from_武汉_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_重庆.json",
+      "sha256": "41fa9e0fd879235de3d94bab3dcab4ac229e380760a42948905c43f48abac8ca"
+    },
+    {
+      "path": "from_武汉_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_武汉_to_西安.json",
+      "sha256": "5ddf11fde3531c7414e778a61056326f0b4d372bdf760cf9cbc12f6178d8956f"
+    },
+    {
+      "path": "from_广州_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_北京.json",
+      "sha256": "8b55d50df942160d3a643c0056cb37a7c3249d0d980e1b3cbb79663328036f4e"
+    },
+    {
+      "path": "from_广州_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_上海.json",
+      "sha256": "babae5b78c0dc2b0922471f0738ae6c30eb83f23f2a09f3302fe5f096a62022a"
+    },
+    {
+      "path": "from_广州_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_南京.json",
+      "sha256": "ec232c9d9353ffb6b4449623e4f9b982da0b50e68bdde76a799b0c5a27144688"
+    },
+    {
+      "path": "from_广州_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_苏州.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "from_广州_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_杭州.json",
+      "sha256": "ebcc072ab03c5bb06e9c34ab04dee20744ee8f1ef7c69acf615fce95947cb6a6"
+    },
+    {
+      "path": "from_广州_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_深圳.json",
+      "sha256": "be1bbbb96f462c60e858502745e5ebe1a65dcd8d55877e60de77dba8b73ade47"
+    },
+    {
+      "path": "from_广州_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_成都.json",
+      "sha256": "a34d1a4fd62a52eeb85176bc95e8874ea851e0a466a1d690fe1c007a0b1eee60"
+    },
+    {
+      "path": "from_广州_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_武汉.json",
+      "sha256": "c7f3a7149f210da2736b251aaf156853da841e8566137d327b722d2d8847fc07"
+    },
+    {
+      "path": "from_广州_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_重庆.json",
+      "sha256": "ba80df5e9668e9a7834b966df5859d06cb3bc6245619ca8915f710215289a6be"
+    },
+    {
+      "path": "from_广州_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_广州_to_西安.json",
+      "sha256": "006f0f4c6e73080ccbb9e34a2e27afa14304c0d8ebbec1de8731ee569222f8b2"
+    },
+    {
+      "path": "from_重庆_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_北京.json",
+      "sha256": "267249ecb8378fd437f00168726ee5d5bba30d85aa8dde0dec6a092bcb936150"
+    },
+    {
+      "path": "from_重庆_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_上海.json",
+      "sha256": "adbea90ca505805915b606d0ef827415c1ec8aa7653086474989ae8d6ac6456a"
+    },
+    {
+      "path": "from_重庆_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_南京.json",
+      "sha256": "12b0ded593d5b8841de6f4dde95705fc6f94db32f21d61daf17f2c71882c1b88"
+    },
+    {
+      "path": "from_重庆_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_苏州.json",
+      "sha256": "0dcfd64fd48143969c9118510261db507362386cb3806e7cea59eb9018dbd411"
+    },
+    {
+      "path": "from_重庆_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_杭州.json",
+      "sha256": "79075afe9328bb0223debfb53e1d3d0625d085f86d42e4bf1b5126c4a1408b30"
+    },
+    {
+      "path": "from_重庆_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_深圳.json",
+      "sha256": "61e6bc3c11f8739c94bded11d7d744ff34bcbc527ef8ff141f17706fec9bde52"
+    },
+    {
+      "path": "from_重庆_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_成都.json",
+      "sha256": "2fe1d03f013f2a90bd56f0c2c1c230cd9f5629e3e3012072ac512d5aa9b136d3"
+    },
+    {
+      "path": "from_重庆_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_武汉.json",
+      "sha256": "45a6430bff588547cf9ae98b8d1e9325bc7137450da41291675d295de8fea549"
+    },
+    {
+      "path": "from_重庆_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_广州.json",
+      "sha256": "ee2521ab063066deb7ffae37b85a8a35415d26e84007c7168cebc3b259d86529"
+    },
+    {
+      "path": "from_重庆_to_西安.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_重庆_to_西安.json",
+      "sha256": "e2614e4eb10c1fb6260cca87aef2fdd7d327c2323286c5d358a83a60bdbcbd7e"
+    },
+    {
+      "path": "from_西安_to_北京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_北京.json",
+      "sha256": "714e5dcc43c45fe0b2b51fb02c7d97a66996305aaa503fa788e36be7a93a49c7"
+    },
+    {
+      "path": "from_西安_to_上海.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_上海.json",
+      "sha256": "ed944f391314b5781f90e4874b366a45c8e022b707f0618bbc69ef76b046a922"
+    },
+    {
+      "path": "from_西安_to_南京.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_南京.json",
+      "sha256": "b434658cc4a6b73bc69a1ebfca5b1d2551d93db3754223f365641266a384f29d"
+    },
+    {
+      "path": "from_西安_to_苏州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_苏州.json",
+      "sha256": "34f6c63cec51d9f6925db21e068a3fccf6c7541086b2023a1d58ecb148524ee1"
+    },
+    {
+      "path": "from_西安_to_杭州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_杭州.json",
+      "sha256": "6c71b6ab87cec15661ea363c4a8467de61e3ed8a79fcdaa03dad145061a6bb07"
+    },
+    {
+      "path": "from_西安_to_深圳.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_深圳.json",
+      "sha256": "26d4dd037aa3d5d6c8604ea43ecba1fc49e932fbcdcd9bf753f36c049eb56007"
+    },
+    {
+      "path": "from_西安_to_成都.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_成都.json",
+      "sha256": "20afa8a6bb9171736ceded3e3a25f4c31682d479d0ee2f77e6905f9e9c1b1cb6"
+    },
+    {
+      "path": "from_西安_to_武汉.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_武汉.json",
+      "sha256": "cd93c85ecb2d2a26e143cba2daf84bd7734ff6cd2451321c4e32dec3d87871ab"
+    },
+    {
+      "path": "from_西安_to_广州.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_广州.json",
+      "sha256": "a98b9c794caaa7a3b54bcc40fd65d02019b55615a48b0ae4326697f0385b7949"
+    },
+    {
+      "path": "from_西安_to_重庆.json",
+      "source": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xian_n16v2\\expanded\\G3_ext11\\chinatravel\\environment\\database\\intercity_transport\\train\\from_西安_to_重庆.json",
+      "sha256": "4e4a5a8f53d11d3b1fddbd24eb5fbce2711d0e1881cad43d35249d78eca0f349"
+    }
+  ],
+  "xiamen_pair_counts": {
+    "上海->厦门": 23,
+    "北京->厦门": 6,
+    "南京->厦门": 14,
+    "厦门->上海": 25,
+    "厦门->北京": 4,
+    "厦门->南京": 13,
+    "厦门->广州": 19,
+    "厦门->成都": 2,
+    "厦门->杭州": 41,
+    "厦门->武汉": 10,
+    "厦门->深圳": 56,
+    "厦门->苏州": 7,
+    "厦门->西安": 3,
+    "厦门->重庆": 4,
+    "广州->厦门": 23,
+    "成都->厦门": 2,
+    "杭州->厦门": 40,
+    "武汉->厦门": 10,
+    "深圳->厦门": 63,
+    "苏州->厦门": 7,
+    "西安->厦门": 3,
+    "重庆->厦门": 4
+  },
+  "xiamen_reference_rows": 379,
+  "xiamen_raw_artifact_count": 26,
+  "xiamen_raw_artifacts": [
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_SZQ.json",
+      "sha256": "fc1627c45594e19cee07207821adae788b36643edb3c15c23ade4e291b31d27f",
+      "bytes": 41656
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_GZQ_XMS.json",
+      "sha256": "d9dc323952992657fb15797349cac9456ff0c4ffdddcfba4afa043d136ac517c",
+      "bytes": 27662
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_SHH.json",
+      "sha256": "f693ceaddf4f0e4de06e4dfc83ec1a7adb699c8f1e8cfd1e7b53dd5f47ad7c73",
+      "bytes": 24234
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_HZH_XMS.json",
+      "sha256": "3404790ce634b9322adcc5de8536072fe4f12fe4189352648a4cf26fda26a405",
+      "bytes": 32091
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_WHN_XMS.json",
+      "sha256": "e78f7f348e46b4ab351b5331e47559ff89f5ed8f93d461a55daeb8d42d1b71f7",
+      "bytes": 12429
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_SZQ_XMS.json",
+      "sha256": "e81d7870f2ad3d9f9a31802bfaf4eaba6c6a51421b1bb984b81586f872e98344",
+      "bytes": 44630
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_NJH_XMS.json",
+      "sha256": "fe9f2892db21e8f0a9de83bd7125ae80ee2e3cbbbfea2a2bfc22a5eb26e958b9",
+      "bytes": 11892
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_XAY.json",
+      "sha256": "9185b6d45b67d4c1a4ec3f9e68656ac6f3ceb8231e701d1307ac643456d3a980",
+      "bytes": 1624
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_HZH.json",
+      "sha256": "865f659eaac8bcabe398e2de39aee4dc63177bc77718b3c998f89a9123c98c86",
+      "bytes": 39754
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_CDW_XMS.json",
+      "sha256": "005b28845dcae863bf64495aec206b6bd734835a7607f0b016ead2f4fd05edbe",
+      "bytes": 1649
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_SZH.json",
+      "sha256": "31ecbfcf670e73f3b881f1ab2d4fd275535aeaab054d0b93a9718180d7370370",
+      "bytes": 13031
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_NJH.json",
+      "sha256": "2b7e3c8376fc8a261a1f50ed6a7b02875f4909d38ab2de26751bad6138fe1104",
+      "bytes": 10429
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_SZH_XMS.json",
+      "sha256": "5876a7cf0ec27215afc1e7637b16bdd155a97f39fae40d54bead19b33e43d2ee",
+      "bytes": 15856
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_WHN.json",
+      "sha256": "2a06b3e670f538cf5a3d2c9b6e4e8346ed979b5b6addb0904afb07756a22fc7e",
+      "bytes": 12294
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_GZQ.json",
+      "sha256": "9950010b0f00067104473d5ac20513a0bbe33706fa1925e929ca5d09fbb37e89",
+      "bytes": 24129
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_BJP_XMS.json",
+      "sha256": "5c0182d44c7f3c3322987e799e8a054afca49c8d94b01d0963c21b3f91aa610f",
+      "bytes": 5510
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_CQW_XMS.json",
+      "sha256": "9639dc7441c677b4aa00382ce5621555dd79bbf43c576914099145a42bbfa2ee",
+      "bytes": 3090
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_CDW.json",
+      "sha256": "25365b6e867daae71c5962cc49b51618c29440a9ad4ef94adc27b9969401c974",
+      "bytes": 1634
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_SHH_XMS.json",
+      "sha256": "089cfb30adbcd4c45ab14cb0987c7e3a57cfc455df34bbd490c56b3ad9ce4499",
+      "bytes": 20499
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_CQW.json",
+      "sha256": "b3125f5d2bbfbb72b82d93e0cc72d26181b4b35e941d4f8a17a9f898041c31d7",
+      "bytes": 3807
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-15_WHN_XMS.json",
+      "sha256": "e24a0b1adc9affdb0425db948f4e694e2d1d0f4c989bf8d63712e04e11d310fa",
+      "bytes": 13761
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XMS_BJP.json",
+      "sha256": "101cd1ca36164ff731a0c482d5033707fccac78835c013b7e4858fec10b49a0d",
+      "bytes": 5425
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306_extra2\\train_2026-11-25_XMS_XAY.json",
+      "sha256": "1aa8bfea79586df7d3d60b9caa8c35fce730d3c843b496405640005816c5831b",
+      "bytes": 1655
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-14_XAY_XMS.json",
+      "sha256": "be41daefbd2c77a0003e7da9e8b4051fabfc8ecd55c80a34f2d86db2936c57cd",
+      "bytes": 1632
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306\\train_2026-11-15_CQW_XMS.json",
+      "sha256": "1fc421a9de00adb64dc019fded3e8f606d0bd882081fc8f0e51943d6e63b52f2",
+      "bytes": 3781
+    },
+    {
+      "path": "<workspace>\\reproduction\\results\\xiamen_wave2_20261113_1937\\raw_api\\12306_extra2\\train_2026-11-25_XAY_XMS.json",
+      "sha256": "dc45f2247d426ed9f9221ae1bab570f34867a08cb8a0f91c7ac9c2520420531f",
+      "bytes": 1642
+    }
+  ],
+  "omitted": {
+    "not_official_12306": 0,
+    "missing_direction_code": 0,
+    "invalid_route_code": 0,
+    "missing_raw_artifact": 0,
+    "outside_expanded12": 0
+  },
+  "legacy_ct_trip_reference_count": 14,
+  "legacy_ct_trip_reference_file": "<workspace>\\output\\xiamen_expanded12_staging_20261116\\legacy_ctrip_reference_only.jsonl",
+  "fare_policy": "Cost is null for every legacy snapshot row; any old numeric Cost is retained only as HistoricalCost.",
+  "date_policy": "TravelDate stays null unless a date-scoped materialized source is later separately approved.",
+  "entity_status": "Xiamen attractions/hotels/restaurants/POI/metro remain unknown and are not materialized as empty success data."
+}

@@ -1,0 +1,1687 @@
+{
+  "profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "scope": "Frozen priced direct services, necessary clock and budget checks only",
+  "cases": {
+    "xi-ct-e01": {
+      "routes": {
+        "成都→西安/train": {
+          "candidates_with_time_and_price": 58,
+          "admitted_tool_records": 58,
+          "unpriced_references": 19
+        },
+        "成都→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 2
+        },
+        "西安→成都/train": {
+          "candidates_with_time_and_price": 62,
+          "admitted_tool_records": 62,
+          "unpriced_references": 23
+        },
+        "西安→成都/airplane": {
+          "candidates_with_time_and_price": 1,
+          "admitted_tool_records": 1,
+          "unpriced_references": 6
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 601,
+        "outbound": {
+          "mode": "train",
+          "service": "G322",
+          "from": "成都东",
+          "to": "西安北",
+          "start": 416,
+          "arrives": 605,
+          "price": 285
+        },
+        "return": {
+          "mode": "train",
+          "service": "G1517",
+          "from": "西安北",
+          "to": "成都东",
+          "start": 611,
+          "arrives": 860,
+          "price": 316,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 6
+      },
+      "party_intercity_floor": 601,
+      "budget_ceiling": 1100,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-e02": {
+      "routes": {
+        "上海→西安/train": {
+          "candidates_with_time_and_price": 33,
+          "admitted_tool_records": 33,
+          "unpriced_references": 1
+        },
+        "西安→上海/train": {
+          "candidates_with_time_and_price": 36,
+          "admitted_tool_records": 36,
+          "unpriced_references": 1
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 930.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G3292",
+          "from": "上海虹桥",
+          "to": "西安北",
+          "start": 504,
+          "arrives": 992,
+          "price": 750
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "上海",
+          "start": 1027,
+          "arrives": 2292,
+          "price": 180.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 35
+      },
+      "party_intercity_floor": 2791.5,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-e03": {
+      "routes": {
+        "南京→西安/train": {
+          "candidates_with_time_and_price": 29,
+          "admitted_tool_records": 29,
+          "unpriced_references": 0
+        },
+        "南京→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 2
+        },
+        "西安→南京/train": {
+          "candidates_with_time_and_price": 28,
+          "admitted_tool_records": 28,
+          "unpriced_references": 0
+        },
+        "西安→南京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 1
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 752.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G94",
+          "from": "南京南",
+          "to": "西安北",
+          "start": 596,
+          "arrives": 874,
+          "price": 600
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "南京",
+          "start": 1027,
+          "arrives": 1968,
+          "price": 152.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 153
+      },
+      "party_intercity_floor": 3010.0,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-e04": {
+      "routes": {
+        "广州→西安/train": {
+          "candidates_with_time_and_price": 12,
+          "admitted_tool_records": 12,
+          "unpriced_references": 3
+        },
+        "广州→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 5
+        },
+        "西安→广州/train": {
+          "candidates_with_time_and_price": 11,
+          "admitted_tool_records": 11,
+          "unpriced_references": 0
+        },
+        "西安→广州/airplane": {
+          "candidates_with_time_and_price": 1,
+          "admitted_tool_records": 1,
+          "unpriced_references": 15
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 665
+      },
+      "party_intercity_floor": 868,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-e05": {
+      "routes": {
+        "武汉→西安/train": {
+          "candidates_with_time_and_price": 32,
+          "admitted_tool_records": 32,
+          "unpriced_references": 13
+        },
+        "武汉→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 2
+        },
+        "西安→武汉/train": {
+          "candidates_with_time_and_price": 19,
+          "admitted_tool_records": 19,
+          "unpriced_references": 18
+        },
+        "西安→武汉/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 3
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 588.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K4286",
+          "from": "武昌",
+          "to": "西安",
+          "start": 34,
+          "arrives": 931,
+          "price": 135.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "G3926",
+          "from": "西安东",
+          "to": "汉口",
+          "start": 1001,
+          "arrives": 1177,
+          "price": 453,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 70
+      },
+      "party_intercity_floor": 588.5,
+      "budget_ceiling": 1600,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-e06": {
+      "routes": {
+        "北京→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 11
+        },
+        "西安→北京/airplane": {
+          "candidates_with_time_and_price": 3,
+          "admitted_tool_records": 3,
+          "unpriced_references": 17
+        }
+      },
+      "allowed_intercity_modes": [
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h01": {
+      "routes": {
+        "上海→西安/train": {
+          "candidates_with_time_and_price": 33,
+          "admitted_tool_records": 33,
+          "unpriced_references": 1
+        },
+        "上海→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 34
+        },
+        "西安→上海/train": {
+          "candidates_with_time_and_price": 36,
+          "admitted_tool_records": 36,
+          "unpriced_references": 1
+        },
+        "西安→上海/airplane": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 21
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "party_intercity_floor": 722.0,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h02": {
+      "routes": {
+        "北京→西安/train": {
+          "candidates_with_time_and_price": 37,
+          "admitted_tool_records": 37,
+          "unpriced_references": 1
+        },
+        "北京→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 11
+        },
+        "西安→北京/train": {
+          "candidates_with_time_and_price": 36,
+          "admitted_tool_records": 36,
+          "unpriced_references": 2
+        },
+        "西安→北京/airplane": {
+          "candidates_with_time_and_price": 3,
+          "admitted_tool_records": 3,
+          "unpriced_references": 17
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 297.0,
+        "outbound": {
+          "mode": "train",
+          "service": "T55",
+          "from": "北京丰台",
+          "to": "西安",
+          "start": 942,
+          "arrives": 1739,
+          "price": 148.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z180",
+          "from": "西安",
+          "to": "北京西",
+          "start": 27,
+          "arrives": 813,
+          "price": 148.5,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 2608
+      },
+      "party_intercity_floor": 1485.0,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h03": {
+      "routes": {
+        "南京→西安/train": {
+          "candidates_with_time_and_price": 29,
+          "admitted_tool_records": 29,
+          "unpriced_references": 0
+        },
+        "南京→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 2
+        },
+        "西安→南京/train": {
+          "candidates_with_time_and_price": 28,
+          "admitted_tool_records": 28,
+          "unpriced_references": 0
+        },
+        "西安→南京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 1
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1669
+      },
+      "party_intercity_floor": 915.0,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h04": {
+      "routes": {
+        "广州→西安/train": {
+          "candidates_with_time_and_price": 12,
+          "admitted_tool_records": 12,
+          "unpriced_references": 3
+        },
+        "广州→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 5
+        },
+        "西安→广州/train": {
+          "candidates_with_time_and_price": 11,
+          "admitted_tool_records": 11,
+          "unpriced_references": 0
+        },
+        "西安→广州/airplane": {
+          "candidates_with_time_and_price": 1,
+          "admitted_tool_records": 1,
+          "unpriced_references": 15
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2105
+      },
+      "party_intercity_floor": 1302,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h05": {
+      "routes": {
+        "深圳→西安/train": {
+          "candidates_with_time_and_price": 6,
+          "admitted_tool_records": 6,
+          "unpriced_references": 1
+        },
+        "深圳→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 7
+        },
+        "西安→深圳/train": {
+          "candidates_with_time_and_price": 7,
+          "admitted_tool_records": 7,
+          "unpriced_references": 2
+        },
+        "西安→深圳/airplane": {
+          "candidates_with_time_and_price": 1,
+          "admitted_tool_records": 1,
+          "unpriced_references": 16
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1284.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G846",
+          "from": "深圳北",
+          "to": "西安北",
+          "start": 560,
+          "arrives": 1167,
+          "price": 1048.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "深圳东",
+          "start": 1201,
+          "arrives": 2599,
+          "price": 236,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 34
+      },
+      "party_intercity_floor": 2569.0,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-h06": {
+      "routes": {
+        "苏州→西安/train": {
+          "candidates_with_time_and_price": 22,
+          "admitted_tool_records": 22,
+          "unpriced_references": 3
+        },
+        "苏州→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "西安→苏州/train": {
+          "candidates_with_time_and_price": 22,
+          "admitted_tool_records": 22,
+          "unpriced_references": 3
+        },
+        "西安→苏州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "苏州",
+          "to": "西安",
+          "start": 604,
+          "arrives": 1727,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "苏州",
+          "start": 516,
+          "arrives": 1688,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "party_intercity_floor": 694.0,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m01": {
+      "routes": {
+        "上海→西安/train": {
+          "candidates_with_time_and_price": 33,
+          "admitted_tool_records": 33,
+          "unpriced_references": 1
+        },
+        "上海→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 34
+        },
+        "西安→上海/train": {
+          "candidates_with_time_and_price": 36,
+          "admitted_tool_records": 36,
+          "unpriced_references": 1
+        },
+        "西安→上海/airplane": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 21
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "party_intercity_floor": 722.0,
+      "budget_ceiling": 6000,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m02": {
+      "routes": {
+        "南京→西安/train": {
+          "candidates_with_time_and_price": 29,
+          "admitted_tool_records": 29,
+          "unpriced_references": 0
+        },
+        "西安→南京/train": {
+          "candidates_with_time_and_price": 28,
+          "admitted_tool_records": 28,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "party_intercity_floor": 915.0,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m03": {
+      "routes": {
+        "广州→西安/train": {
+          "candidates_with_time_and_price": 12,
+          "admitted_tool_records": 12,
+          "unpriced_references": 3
+        },
+        "西安→广州/train": {
+          "candidates_with_time_and_price": 11,
+          "admitted_tool_records": 11,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1191,
+        "outbound": {
+          "mode": "train",
+          "service": "G842",
+          "from": "广州南站",
+          "to": "西安北",
+          "start": 531,
+          "arrives": 1105,
+          "price": 974
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 96
+      },
+      "party_intercity_floor": 4764,
+      "budget_ceiling": 5600,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m04": {
+      "routes": {
+        "杭州→西安/train": {
+          "candidates_with_time_and_price": 16,
+          "admitted_tool_records": 16,
+          "unpriced_references": 2
+        },
+        "杭州→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 4
+        },
+        "西安→杭州/train": {
+          "candidates_with_time_and_price": 16,
+          "admitted_tool_records": 16,
+          "unpriced_references": 3
+        },
+        "西安→杭州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 9
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K308",
+          "from": "杭州",
+          "to": "西安",
+          "start": 147,
+          "arrives": 1344,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z596",
+          "from": "西安",
+          "to": "杭州",
+          "start": 93,
+          "arrives": 1219,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 189
+      },
+      "party_intercity_floor": 694.0,
+      "budget_ceiling": 1500,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m05": {
+      "routes": {
+        "北京→西安/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 11
+        },
+        "西安→北京/airplane": {
+          "candidates_with_time_and_price": 3,
+          "admitted_tool_records": 3,
+          "unpriced_references": 17
+        }
+      },
+      "allowed_intercity_modes": [
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xi-ct-m06": {
+      "routes": {
+        "成都→西安/train": {
+          "candidates_with_time_and_price": 58,
+          "admitted_tool_records": 58,
+          "unpriced_references": 19
+        },
+        "西安→成都/train": {
+          "candidates_with_time_and_price": 62,
+          "admitted_tool_records": 62,
+          "unpriced_references": 23
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 261.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K386",
+          "from": "成都龙泉驿",
+          "to": "西安东",
+          "start": 789,
+          "arrives": 1444,
+          "price": 133
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z315",
+          "from": "西安东",
+          "to": "成都西",
+          "start": 350,
+          "arrives": 1234,
+          "price": 128.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 346
+      },
+      "party_intercity_floor": 523.0,
+      "budget_ceiling": 4200,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e01": {
+      "routes": {
+        "成都→厦门/train": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 0
+        },
+        "成都→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→成都/train": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 0
+        },
+        "厦门→成都/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": 1100,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e02": {
+      "routes": {
+        "上海→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "厦门→上海/train": {
+          "candidates_with_time_and_price": 25,
+          "admitted_tool_records": 25,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1179
+      },
+      "party_intercity_floor": 2745,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e03": {
+      "routes": {
+        "南京→厦门/train": {
+          "candidates_with_time_and_price": 14,
+          "admitted_tool_records": 14,
+          "unpriced_references": 0
+        },
+        "南京→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→南京/train": {
+          "candidates_with_time_and_price": 13,
+          "admitted_tool_records": 13,
+          "unpriced_references": 0
+        },
+        "厦门→南京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1034
+      },
+      "party_intercity_floor": 4288,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e04": {
+      "routes": {
+        "广州→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "广州→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→广州/train": {
+          "candidates_with_time_and_price": 19,
+          "admitted_tool_records": 19,
+          "unpriced_references": 0
+        },
+        "厦门→广州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 514
+      },
+      "party_intercity_floor": 408,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e05": {
+      "routes": {
+        "武汉→厦门/train": {
+          "candidates_with_time_and_price": 8,
+          "admitted_tool_records": 8,
+          "unpriced_references": 2
+        },
+        "武汉→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→武汉/train": {
+          "candidates_with_time_and_price": 9,
+          "admitted_tool_records": 9,
+          "unpriced_references": 1
+        },
+        "厦门→武汉/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": 1600,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-e06": {
+      "routes": {
+        "北京→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→北京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h01": {
+      "routes": {
+        "上海→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "上海→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→上海/train": {
+          "candidates_with_time_and_price": 25,
+          "admitted_tool_records": 25,
+          "unpriced_references": 0
+        },
+        "厦门→上海/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "party_intercity_floor": 1830,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h02": {
+      "routes": {
+        "北京→厦门/train": {
+          "candidates_with_time_and_price": 6,
+          "admitted_tool_records": 6,
+          "unpriced_references": 0
+        },
+        "北京→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→北京/train": {
+          "candidates_with_time_and_price": 4,
+          "admitted_tool_records": 4,
+          "unpriced_references": 0
+        },
+        "厦门→北京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 486,
+        "outbound": {
+          "mode": "train",
+          "service": "K571",
+          "from": "北京丰台站",
+          "to": "厦门北站",
+          "start": 994,
+          "arrives": 2758,
+          "price": 243
+        },
+        "return": {
+          "mode": "train",
+          "service": "K572",
+          "from": "厦门北站",
+          "to": "北京丰台站",
+          "start": 517,
+          "arrives": 2318,
+          "price": 243,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 639
+      },
+      "party_intercity_floor": 2430,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h03": {
+      "routes": {
+        "南京→厦门/train": {
+          "candidates_with_time_and_price": 14,
+          "admitted_tool_records": 14,
+          "unpriced_references": 0
+        },
+        "南京→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→南京/train": {
+          "candidates_with_time_and_price": 13,
+          "admitted_tool_records": 13,
+          "unpriced_references": 0
+        },
+        "厦门→南京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 3914
+      },
+      "party_intercity_floor": 3216,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h04": {
+      "routes": {
+        "广州→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "广州→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→广州/train": {
+          "candidates_with_time_and_price": 19,
+          "admitted_tool_records": 19,
+          "unpriced_references": 0
+        },
+        "厦门→广州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1954
+      },
+      "party_intercity_floor": 612,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h05": {
+      "routes": {
+        "深圳→厦门/train": {
+          "candidates_with_time_and_price": 63,
+          "admitted_tool_records": 63,
+          "unpriced_references": 0
+        },
+        "深圳→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→深圳/train": {
+          "candidates_with_time_and_price": 56,
+          "admitted_tool_records": 56,
+          "unpriced_references": 0
+        },
+        "厦门→深圳/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 456,
+        "outbound": {
+          "mode": "train",
+          "service": "D3126",
+          "from": "深圳北站",
+          "to": "厦门北站",
+          "start": 406,
+          "arrives": 623,
+          "price": 228
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3333",
+          "from": "厦门北站",
+          "to": "深圳北站",
+          "start": 505,
+          "arrives": 699,
+          "price": 228,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1322
+      },
+      "party_intercity_floor": 912,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-h06": {
+      "routes": {
+        "苏州→厦门/train": {
+          "candidates_with_time_and_price": 7,
+          "admitted_tool_records": 7,
+          "unpriced_references": 0
+        },
+        "苏州→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→苏州/train": {
+          "candidates_with_time_and_price": 7,
+          "admitted_tool_records": 7,
+          "unpriced_references": 0
+        },
+        "厦门→苏州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1004,
+        "outbound": {
+          "mode": "train",
+          "service": "D3205",
+          "from": "苏州南站",
+          "to": "厦门北站",
+          "start": 633,
+          "arrives": 1044,
+          "price": 502
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3206",
+          "from": "厦门北站",
+          "to": "苏州南站",
+          "start": 772,
+          "arrives": 1190,
+          "price": 502,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2608
+      },
+      "party_intercity_floor": 2008,
+      "budget_ceiling": null,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m01": {
+      "routes": {
+        "上海→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "上海→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→上海/train": {
+          "candidates_with_time_and_price": 25,
+          "admitted_tool_records": 25,
+          "unpriced_references": 0
+        },
+        "厦门→上海/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "party_intercity_floor": 1830,
+      "budget_ceiling": 6000,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m02": {
+      "routes": {
+        "南京→厦门/train": {
+          "candidates_with_time_and_price": 14,
+          "admitted_tool_records": 14,
+          "unpriced_references": 0
+        },
+        "厦门→南京/train": {
+          "candidates_with_time_and_price": 13,
+          "admitted_tool_records": 13,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2474
+      },
+      "party_intercity_floor": 3216,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m03": {
+      "routes": {
+        "广州→厦门/train": {
+          "candidates_with_time_and_price": 23,
+          "admitted_tool_records": 23,
+          "unpriced_references": 0
+        },
+        "厦门→广州/train": {
+          "candidates_with_time_and_price": 19,
+          "admitted_tool_records": 19,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 394,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3249",
+          "from": "厦门北站",
+          "to": "广州新塘站",
+          "start": 698,
+          "arrives": 947,
+          "price": 292,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 166
+      },
+      "party_intercity_floor": 1576,
+      "budget_ceiling": 5600,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m04": {
+      "routes": {
+        "杭州→厦门/train": {
+          "candidates_with_time_and_price": 40,
+          "admitted_tool_records": 40,
+          "unpriced_references": 0
+        },
+        "杭州→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→杭州/train": {
+          "candidates_with_time_and_price": 41,
+          "admitted_tool_records": 41,
+          "unpriced_references": 0
+        },
+        "厦门→杭州/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train",
+        "airplane"
+      ],
+      "pair_floor": {
+        "fare_per_person": 711.0,
+        "outbound": {
+          "mode": "train",
+          "service": "D3211",
+          "from": "杭州东站",
+          "to": "厦门北站",
+          "start": 423,
+          "arrives": 779,
+          "price": 355.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3212",
+          "from": "厦门北站",
+          "to": "杭州东站",
+          "start": 1026,
+          "arrives": 1372,
+          "price": 355.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1687
+      },
+      "party_intercity_floor": 1422.0,
+      "budget_ceiling": 1500,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m05": {
+      "routes": {
+        "北京→厦门/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        },
+        "厦门→北京/airplane": {
+          "candidates_with_time_and_price": 0,
+          "admitted_tool_records": 0,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "airplane"
+      ],
+      "pair_floor": null,
+      "party_intercity_floor": null,
+      "budget_ceiling": 8000,
+      "intercity_floor_above_budget": false
+    },
+    "xm-ct-m06": {
+      "routes": {
+        "成都→厦门/train": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 0
+        },
+        "厦门→成都/train": {
+          "candidates_with_time_and_price": 2,
+          "admitted_tool_records": 2,
+          "unpriced_references": 0
+        }
+      },
+      "allowed_intercity_modes": [
+        "train"
+      ],
+      "pair_floor": {
+        "fare_per_person": 2190,
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "from": "成都东站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 1335,
+          "price": 1095
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "from": "厦门北站",
+          "to": "成都东站",
+          "start": 476,
+          "arrives": 1313,
+          "price": 1095,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 581
+      },
+      "party_intercity_floor": 4380,
+      "budget_ceiling": 4200,
+      "intercity_floor_above_budget": true
+    }
+  },
+  "public_profile_receipt_sha256": "960bd888a9b8609b112c56d51b15bbca8ece90efb5057c67751606304763d0da"
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:41:08.662104+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "保留阻塞：revision 再查北京↔厦门 airplane 两方向仍无带价航班，schema 不能填往返机票 cost，也无法核算预算。",
+    "status": "keep_first"
+  },
+  "first_sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca",
+  "feedback_sha256": "06fbdb18beef3eb1efc82a7335ea3b3a5073d895d3034a072bf17c87043e65f5"
+}

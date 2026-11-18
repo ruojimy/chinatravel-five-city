@@ -1,0 +1,63 @@
+{
+  "people_number": 2,
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "position": "中山路步行街",
+          "start_time": "09:00",
+          "end_time": "11:00",
+          "price": 0,
+          "cost": 0,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "lunch",
+          "position": "乌糖沙茶面(民族路店)",
+          "start_time": "11:14",
+          "end_time": "12:00",
+          "price": 41,
+          "cost": 82,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "乌糖沙茶面(民族路店)",
+              "mode": "walk",
+              "start_time": "11:00",
+              "end_time": "11:14",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.228069473252381
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "position": "沙坡尾",
+          "start_time": "12:09",
+          "end_time": "14:00",
+          "price": 0,
+          "cost": 0,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "乌糖沙茶面(民族路店)",
+              "end": "沙坡尾",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:09",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.8002663399478139
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

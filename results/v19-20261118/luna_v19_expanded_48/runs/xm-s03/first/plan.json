@@ -1,0 +1,71 @@
+{
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "start_time": "09:00",
+          "price": 0,
+          "transports": [],
+          "tickets": 4,
+          "type": "attraction",
+          "end_time": "11:30",
+          "cost": 0,
+          "position": "嘉庚公园-鳌亭"
+        },
+        {
+          "start_time": "21:00",
+          "price": 665,
+          "transports": [
+            {
+              "end": "厦门鹭江宾馆",
+              "distance": 12.79,
+              "start_time": "17:00",
+              "start": "嘉庚公园-鳌亭",
+              "end_time": "17:19",
+              "price": 52.27,
+              "cost": 52.27,
+              "cars": 1,
+              "mode": "taxi"
+            }
+          ],
+          "type": "accommodation",
+          "end_time": "08:00",
+          "cost": 1330,
+          "rooms": 2,
+          "position": "厦门鹭江宾馆"
+        }
+      ],
+      "day": 1
+    },
+    {
+      "activities": [
+        {
+          "start_time": "09:30",
+          "price": 0,
+          "transports": [
+            {
+              "end": "沙坡尾",
+              "distance": 2.28,
+              "start_time": "09:00",
+              "start": "厦门鹭江宾馆",
+              "end_time": "09:03",
+              "price": 12.68,
+              "cost": 12.68,
+              "cars": 1,
+              "mode": "taxi"
+            }
+          ],
+          "tickets": 4,
+          "type": "attraction",
+          "end_time": "12:00",
+          "cost": 0,
+          "position": "沙坡尾"
+        }
+      ],
+      "day": 2
+    }
+  ],
+  "start_city": "厦门",
+  "people_number": 4
+}

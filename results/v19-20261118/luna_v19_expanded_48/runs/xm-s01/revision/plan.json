@@ -1,0 +1,64 @@
+{
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "tickets": 2,
+          "end_time": "09:45",
+          "cost": 0,
+          "type": "attraction",
+          "start_time": "09:00",
+          "transports": [],
+          "price": 0,
+          "position": "嘉庚公园-鳌亭"
+        },
+        {
+          "tickets": 2,
+          "end_time": "11:15",
+          "cost": 0,
+          "type": "attraction",
+          "start_time": "10:45",
+          "transports": [
+            {
+              "end_time": "10:15",
+              "cost": 0,
+              "distance": 1.2782817849631052,
+              "end": "集美学村牌坊",
+              "mode": "walk",
+              "start": "嘉庚公园-鳌亭",
+              "price": 0,
+              "start_time": "10:00"
+            }
+          ],
+          "price": 0,
+          "position": "集美学村牌坊"
+        },
+        {
+          "type": "lunch",
+          "price": 60,
+          "cost": 120,
+          "start_time": "12:00",
+          "transports": [
+            {
+              "mode": "taxi",
+              "end_time": "11:37",
+              "cost": 21.32,
+              "cars": 1,
+              "distance": 4.75,
+              "start": "集美学村牌坊",
+              "price": 21.32,
+              "end": "绿茶餐厅(厦门集美大悦城店)",
+              "start_time": "11:30"
+            }
+          ],
+          "end_time": "13:00",
+          "position": "绿茶餐厅(厦门集美大悦城店)"
+        }
+      ],
+      "day": 1
+    }
+  ],
+  "people_number": 2
+}

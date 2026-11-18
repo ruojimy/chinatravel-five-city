@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:15:21.855984+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "复核西安—广州航班仍只有未定价记录；题目强制往返飞机，未发现可用有价替代，保留具体票价缺口阻塞。"
+  },
+  "first_sha256": "2175ac73b4453e7f668af0dc59162db237bb8b2f71702a4653ee9f3ff1ebd37e",
+  "feedback_sha256": "1499bd398b32a1fa61624bc683e82eecfc91086f7524f653fa8dd31c706ec663"
+}

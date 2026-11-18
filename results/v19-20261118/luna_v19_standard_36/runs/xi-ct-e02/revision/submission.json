@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:35:00.834273+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "首稿反馈通过且无问题，保留。",
+    "status": "keep_first"
+  },
+  "first_sha256": "c320dcb443e542ceba469c26185d884550043a9632a2af0c1c293478b6d52f5b",
+  "feedback_sha256": "7c8a72b1ad16249addad9bdf6938ebbb0fb33c24b9e566997fff2e9666777d52"
+}

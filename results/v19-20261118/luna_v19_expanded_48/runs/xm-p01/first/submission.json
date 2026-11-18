@@ -1,0 +1,71 @@
+{
+  "utc": "2026-11-18T13:38:31.346536+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "09:30",
+              "end_time": "11:15",
+              "cost": 0,
+              "price": 0,
+              "transports": [],
+              "position": "中山路步行街",
+              "tickets": 2
+            },
+            {
+              "type": "lunch",
+              "start_time": "11:30",
+              "end_time": "12:30",
+              "cost": 82,
+              "price": 41,
+              "transports": [
+                {
+                  "start": "中山路步行街",
+                  "end": "乌糖沙茶面(民族路店)",
+                  "mode": "walk",
+                  "start_time": "11:15",
+                  "end_time": "11:29",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 1.228069473252381
+                }
+              ],
+              "position": "乌糖沙茶面(民族路店)"
+            },
+            {
+              "type": "attraction",
+              "start_time": "12:45",
+              "end_time": "15:30",
+              "cost": 0,
+              "price": 0,
+              "transports": [
+                {
+                  "start": "乌糖沙茶面(民族路店)",
+                  "end": "沙坡尾",
+                  "mode": "walk",
+                  "start_time": "12:30",
+                  "end_time": "12:39",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.8002663399478139
+                }
+              ],
+              "position": "沙坡尾",
+              "tickets": 2
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件评测：城际票价为沙盒给出的 2026-11-16 历史参考，不代表出行日班次库存或折扣；市内交通按 G3 冻结静态图估算时间和费用，不构成实时地图路况证明。住宿采用目录历史预算价及每间 1 床的容量代理，按人数安排房间；实际房型、日期价格和余量未知。景点目录未提供入场价时按题面允许的零元条件假设。"
+  }
+}

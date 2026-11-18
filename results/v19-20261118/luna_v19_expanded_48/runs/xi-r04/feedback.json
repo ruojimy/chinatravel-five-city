@@ -1,0 +1,8 @@
+{
+  "first_sha256": "d08f8c29840f1402bbcc04140f7e2c43ad85aed34b06ee32607c2e49f3647747",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查苏州→西安、 西安→苏州火车。去程可用早车G1970 06:34→13:20；返程在15:30后可用的西安→苏州班次均为次日到达，如G466 15:43→22:36、G1942 15:56→23:25、G3178 13:46? 不满足15:30门槛且其他日内车均22时后到；15:30后直达晚车Z378 20:41出发次日12:30到。无满足第2天下午15:30后发车且当天抵苏州的核验车次。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

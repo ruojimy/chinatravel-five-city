@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:27:35.749954+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "已查必去地点西安鼓楼、西安钟楼及必需午餐同盛祥目录。西安鼓楼可定位，但同盛祥缺lat/lon；同盛祥→钟楼的goto提示Endpoint coordinates require dynamic verification; provider not wired。未能核验要求的市内接驳完整路线，不能编造端点或路线。"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "people_number": 2,
+  "start_city": "西安",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "10:00",
+          "position": "西安鼓楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": []
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:30",
+          "end_time": "12:30",
+          "position": "同盛祥(凤城五路店)",
+          "price": 42,
+          "cost": 84,
+          "transports": [
+            {
+              "start": "西安鼓楼",
+              "end": "同盛祥(凤城五路店)",
+              "mode": "taxi",
+              "start_time": "11:00",
+              "end_time": "11:11",
+              "price": 31.5,
+              "cost": 31.5,
+              "distance": 7.66,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "start_time": "13:20",
+          "end_time": "14:20",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 60,
+          "tickets": 2,
+          "transports": [
+            {
+              "start": "同盛祥(凤城五路店)",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "13:00",
+              "end_time": "13:11",
+              "price": 31.87,
+              "cost": 31.87,
+              "distance": 7.76,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

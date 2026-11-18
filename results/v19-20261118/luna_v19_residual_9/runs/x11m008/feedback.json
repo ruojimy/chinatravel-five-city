@@ -1,0 +1,8 @@
+{
+  "first_sha256": "42f4d3c90d63637ebd65483a9d1f4050ddf95382f0351640433c6e7cdb86174a",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查询广州→西安往返航班。去程题目要求12:00后出发；工具只返回CES2302 13:58、CSN3215 14:35、CSN3231 19:23、CHH7858 19:40、JYH1106 22:18等无票价预览，priced records为空，无法为必需去程填写票价或核验5000元总预算。返程查询到MU2303 07:00–09:40，580元/人，但不能补齐去程金额。按静态数据规则不编造票价，因此无法冻结合规的往返机票行程。reference_search(kind=flight)也返回unsupported kind or city，未提供替代报价。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

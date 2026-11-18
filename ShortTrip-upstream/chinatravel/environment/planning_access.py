@@ -6,7 +6,7 @@ import pandas as pd
 
 _ROOT = Path(__file__).resolve().parents[2]
 _PROFILE = os.environ.get('CHINATRAVEL_PROFILE')
-_ENABLED = _PROFILE == 'expanded11'
+_ENABLED = _PROFILE in ('expanded11', 'expanded12')
 if _ENABLED:
     _BASE = Path(os.environ.get('CT_SANDBOX_RUNTIME_DIR',
                  Path(__file__).resolve().parents[3] / 'src' / 'sandbox_runtime')).resolve()
@@ -25,6 +25,8 @@ def scoped_frame(frame, kind, slug, lang):
         return frame
     if lang != 'zh':
         raise NotImplementedError('Repaired benchmark gate currently supports zh only')
+    if slug == 'xiamen':
+        raise NotImplementedError('Xiamen entity data is unknown in the intercity-only expanded12 profile')
     sandbox = _sandbox()
     city = next(c for c,s in sandbox.cities.items() if s == slug)
     items = sandbox._eligible(kind,city)

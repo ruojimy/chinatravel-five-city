@@ -1,0 +1,153 @@
+{
+  "utc": "2026-11-18T14:28:23.020347+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "上海",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G1970",
+              "start": "上海虹桥",
+              "end": "西安北",
+              "start_time": "06:09",
+              "end_time": "13:20",
+              "price": 870,
+              "cost": 1740,
+              "tickets": 2,
+              "transports": []
+            },
+            {
+              "type": "accommodation",
+              "position": "派酒店(西安明城墙和平门地铁站店)",
+              "start_time": "14:21",
+              "end_time": "08:00",
+              "price": 69,
+              "cost": 69,
+              "rooms": 1,
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "派酒店(西安明城墙和平门地铁站店)",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:21",
+                  "price": 57.79,
+                  "cost": 57.79,
+                  "distance": 14.02,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "兴庆宫公园",
+              "start_time": "09:30",
+              "end_time": "11:45",
+              "price": 0,
+              "cost": 0,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "派酒店(西安明城墙和平门地铁站店)",
+                  "end": "兴庆宫公园",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.62,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "咪咪小面",
+              "start_time": "12:10",
+              "end_time": "12:50",
+              "price": 28,
+              "cost": 56,
+              "transports": [
+                {
+                  "start": "兴庆宫公园",
+                  "end": "咪咪小面",
+                  "mode": "taxi",
+                  "start_time": "12:00",
+                  "end_time": "12:02",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.74,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "派酒店(西安明城墙和平门地铁站店)",
+              "start_time": "13:01",
+              "end_time": "08:00",
+              "price": 69,
+              "cost": 69,
+              "rooms": 1,
+              "transports": [
+                {
+                  "start": "咪咪小面",
+                  "end": "派酒店(西安明城墙和平门地铁站店)",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:01",
+                  "price": 11,
+                  "cost": 11,
+                  "distance": 1.27,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G3178",
+              "start": "西安北",
+              "end": "上海虹桥",
+              "start_time": "13:46",
+              "end_time": "22:26",
+              "price": 842,
+              "cost": 1684,
+              "tickets": 2,
+              "transports": [
+                {
+                  "start": "派酒店(西安明城墙和平门地铁站店)",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "12:30",
+                  "end_time": "12:51",
+                  "price": 57.79,
+                  "cost": 57.79,
+                  "distance": 14.02,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "条件性静态沙盒行程。车次与票价来自该题本次 intercity_search，历史票价只作无日期预算参考，实际日期班次、票价、库存未核实；市内出租车 legs 是 G3 离线图估算，不构成真实道路证据，需按人数使用 cars。住宿价格是目录参考，不证明实际房型、日期价格或余量；房间数是规划成本假设（xi-ct-h03按题面两间房），未给出可订房型。公园/寺庙的目录票价为0且收费来源未暴露，按协议只作0元条件假设，需出行前核实。仅列出一顿有目录人均价的午餐，不含其他餐食、未录入的门票或个人消费。目录没有人流证据，“较清静”只是场所类型选择，不保证人少。"
+  }
+}

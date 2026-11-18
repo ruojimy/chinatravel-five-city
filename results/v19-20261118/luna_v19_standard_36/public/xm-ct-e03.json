@@ -1,0 +1,12 @@
+{
+  "uid": "xm-ct-e03",
+  "tag": "easy",
+  "start_city": "南京",
+  "target_city": "厦门",
+  "days": 2,
+  "people_number": 4,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置南京。我们四个人计划去厦门玩两天，市内交通使用地铁。请给我一个旅行规划。",
+  "nature_language_en": "Current location: Nanjing. The four of us are planning to visit Xiamen for two days. We will primarily use the subway for city transportation. Please provide a travel itinerary."
+}

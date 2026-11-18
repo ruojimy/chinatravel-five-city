@@ -24,6 +24,7 @@ from .env import SandboxEnv, minutes
 from .planner import PlannerOptions, SkeletonPlanner
 from .repair import RepairEngine
 from .scheduler import extract_content, lookup_row, schedule
+from .opening_hours import windows as opening_windows
 
 MEAL_WINDOWS = {"breakfast": (7 * 60, 10 * 60), "lunch": (11 * 60, 14 * 60), "dinner": (17 * 60, 21 * 60)}
 
@@ -241,13 +242,14 @@ class ConstraintPlannerV2:
         row = lookup_row(self.env.restaurant_table(city), name)
         if row is None:
             return "lunch"
-        open_min = _hhmm(row.get("opentime")) or 0
-        close_min = _hhmm(row.get("endtime")) or 24 * 60
-        if close_min <= open_min:  # overnight venues
-            close_min = 24 * 60
+        try:
+            intervals = opening_windows(row)
+        except (ValueError, TypeError, KeyError):
+            return "lunch"
         best_kind, best_overlap = "lunch", -1
         for kind, (lo, hi) in MEAL_WINDOWS.items():
-            overlap = min(hi, close_min) - max(lo, open_min)
+            overlap = sum(max(0, min(hi, close_min) - max(lo, open_min))
+                          for open_min, close_min in intervals)
             if overlap > best_overlap:
                 best_kind, best_overlap = kind, overlap
         return best_kind

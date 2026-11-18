@@ -1,0 +1,44 @@
+{
+  "first_sha256": "52a01ab71493bb9244982eb16d40bfc2d36e5f4b53b648013dbfa502a407b749",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_activity_grounded",
+      "state": "fail",
+      "messages": [
+        "Intercity transport can only appear as the first or last activity: {'type': 'train', 'TrainID': 'K244', 'start': '厦门北站', 'end': '西安站', 'start_time': '19:36', 'end_time': '22:17', 'price': 229, 'cost': 458, 'tickets': 2, 'transports': [{'start': '阿呆姜母鸭(禹州大学城店)', 'end': '厦门北站', 'mode': 'taxi', 'start_time': '18:20', 'end_time': '18:29', 'price': 25.85, 'cost': 25.85, 'distance': 6.04, 'cars': 1}]}"
+      ],
+      "cells": {
+        "Invalid or ungrounded activity entity": 1
+      }
+    },
+    {
+      "check": "Is_intercity_transport_correct",
+      "state": "fail",
+      "messages": [
+        "It must contain intecity transport"
+      ],
+      "cells": {
+        "Intercity transportation events must occur": 1,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+        "Incorrect Information of Intercity Transport on price or duration": 1,
+        "Incorrect Cost on Intercity Transportation": 1
+      }
+    },
+    {
+      "check": "Is_attractions_correct",
+      "state": "fail",
+      "messages": [
+        "The attraction is closed now. 厦门老院子景区-始祖殿, open time: [09:30 -- 18:00]",
+        "Conditional zero assumption for missing attraction ticket: 厦门老院子景区-始祖殿"
+      ],
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 1,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:41:13.667741+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已读取本题反馈。复核本题“必须渡轮往返并要记录两段船”的要求及本题 ferry_reference：虽有发布的班次窗口和 35 元/人往返参考价，但 availability=unknown 且 can_build_native_itinerary_leg=false，不能形成 schema 内的船腿，阻塞仍成立，保留首稿阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "e742651378cd30e2a9b11af380f329de868889596424b0f5b06912da3dcd33d9",
+  "feedback_sha256": "ef62a46976f1bdfb9d41ca12411e59073b06a4ba2a5b8d47d8ca888c549e0c01"
+}

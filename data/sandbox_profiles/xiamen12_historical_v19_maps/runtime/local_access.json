@@ -1,0 +1,167 @@
+{
+  "scope": "dated transfer sample for a benchmark with undated historical intercity data",
+  "trial_date": "2026-11-19",
+  "restaurant": {
+    "name": "同盛祥(凤城五路店)",
+    "brand": "同盛祥",
+    "city": "西安",
+    "coord_system": "GCJ02",
+    "location": [
+      108.940888,
+      34.329229
+    ],
+    "amap_id": "B0FFF64VL5",
+    "baidu_uid": "5e5597b0f44a61663617dc49",
+    "distance_m": 6.52,
+    "address": "凤城五路海荣豪佳花园26号(西安中学对面)",
+    "agreed_opening_windows": [
+      [
+        "10:30",
+        "14:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "city": "西安",
+      "start": "西安北站",
+      "end": "同盛祥(凤城五路店)",
+      "mode": "metro",
+      "departure": "13:28",
+      "departure_at": "2026-11-19T13:28:00+08:00",
+      "endpoints_gcj02": [
+        [
+          108.938757,
+          34.37666
+        ],
+        [
+          108.940888,
+          34.329229
+        ]
+      ],
+      "provider": "amap",
+      "evidence_id": "amap-raw:b1346eedf7a95320ca58f4b4d3ea77ba3f1109cb61eafa84336f4559a51b8a3c",
+      "legs": [
+        {
+          "start": "西安北站",
+          "end": "西安北站",
+          "mode": "walk",
+          "start_time": "13:28",
+          "end_time": "13:32",
+          "distance": 0.17,
+          "cost": 0
+        },
+        {
+          "start": "西安北站",
+          "end": "凤城五路",
+          "mode": "metro",
+          "start_time": "13:32",
+          "end_time": "13:45",
+          "distance": 5.24,
+          "cost": 2.0
+        },
+        {
+          "start": "凤城五路",
+          "end": "同盛祥(凤城五路店)",
+          "mode": "walk",
+          "start_time": "13:45",
+          "end_time": "13:56",
+          "distance": 0.66,
+          "cost": 0
+        }
+      ],
+      "source_duration_seconds": 1596,
+      "source_claims": [
+        {
+          "field": "route_duration",
+          "value": 26.6,
+          "unit": "minutes",
+          "source_url": "https://restapi.amap.com/v5/direction/transit/integrated",
+          "retrieved_at": "2026-11-18T12:39:13+00:00",
+          "raw_sha256": "331ae0dd9ecfb6e2983ad3dd7b275538bcf36c56b35bf31fc2376f5dd066eaa5"
+        },
+        {
+          "field": "route_fare",
+          "value": 2.0,
+          "unit": "CNY",
+          "source_url": "https://restapi.amap.com/v5/direction/transit/integrated",
+          "retrieved_at": "2026-11-18T12:39:13+00:00",
+          "raw_sha256": "331ae0dd9ecfb6e2983ad3dd7b275538bcf36c56b35bf31fc2376f5dd066eaa5"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "start": "西安钟楼",
+      "end": "西安北站",
+      "mode": "metro",
+      "departure": "13:15",
+      "departure_at": "2026-11-20T13:15:00+08:00",
+      "endpoints_gcj02": [
+        [
+          108.94703,
+          34.25943
+        ],
+        [
+          108.938757,
+          34.37666
+        ]
+      ],
+      "provider": "amap",
+      "evidence_id": "amap-raw:bca49dd36556930424e252ebd467fbfb0fc71dc93525dc5d58b89226a6051f1e",
+      "legs": [
+        {
+          "start": "西安钟楼",
+          "end": "钟楼",
+          "mode": "walk",
+          "start_time": "13:15",
+          "end_time": "13:20",
+          "distance": 0.182,
+          "cost": 0
+        },
+        {
+          "start": "钟楼",
+          "end": "西安北站",
+          "mode": "metro",
+          "start_time": "13:20",
+          "end_time": "13:48",
+          "distance": 12.89,
+          "cost": 4.0
+        },
+        {
+          "start": "西安北站",
+          "end": "西安北站",
+          "mode": "walk",
+          "start_time": "13:48",
+          "end_time": "13:59",
+          "distance": 0.517,
+          "cost": 0
+        }
+      ],
+      "source_duration_seconds": 2511,
+      "source_claims": [
+        {
+          "field": "route_duration",
+          "value": 41.85,
+          "unit": "minutes",
+          "source_url": "https://restapi.amap.com/v5/direction/transit/integrated",
+          "retrieved_at": "2026-11-18T12:39:17+00:00",
+          "raw_sha256": "21d98fe56957ac9cd2e7e2c8fc0aaa253a0c568fe4d25f3f8068e4f14aaef1fd"
+        },
+        {
+          "field": "route_fare",
+          "value": 4.0,
+          "unit": "CNY",
+          "source_url": "https://restapi.amap.com/v5/direction/transit/integrated",
+          "retrieved_at": "2026-11-18T12:39:17+00:00",
+          "raw_sha256": "21d98fe56957ac9cd2e7e2c8fc0aaa253a0c568fe4d25f3f8068e4f14aaef1fd"
+        }
+      ]
+    }
+  ],
+  "public_export": "Normalized legs and evidence digests; provider response bodies omitted."
+}

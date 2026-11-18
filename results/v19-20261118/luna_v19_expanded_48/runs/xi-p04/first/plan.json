@@ -1,0 +1,63 @@
+{
+  "people_number": 3,
+  "start_city": "西安",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:00",
+          "end_time": "11:20",
+          "position": "西安碑林博物馆",
+          "price": 85,
+          "cost": 255,
+          "tickets": 3,
+          "transports": []
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:40",
+          "end_time": "12:40",
+          "position": "西安饭庄",
+          "price": 128,
+          "cost": 384,
+          "transports": [
+            {
+              "start": "西安碑林博物馆",
+              "end": "西安饭庄",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:39",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.7925458934210899
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "start_time": "13:30",
+          "end_time": "15:00",
+          "position": "回民街",
+          "price": 0,
+          "cost": 0,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "西安饭庄",
+              "end": "回民街",
+              "mode": "walk",
+              "start_time": "13:00",
+              "end_time": "13:19",
+              "price": 0,
+              "cost": 0,
+              "distance": 1.5964973382498675
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

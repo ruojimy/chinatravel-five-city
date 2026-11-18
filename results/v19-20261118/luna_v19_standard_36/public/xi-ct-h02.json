@@ -1,0 +1,12 @@
+{
+  "uid": "xi-ct-h02",
+  "tag": "human",
+  "start_city": "北京",
+  "target_city": "西安",
+  "days": 4,
+  "people_number": 5,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "[当前位置北京,目标位置西安,旅行人数5,旅行天数4] 我和我室友一共5人，想去西安玩4天，怎么规划行程",
+  "nature_language_en": "[Current location: Beijing, Destination: Xi'an, Number of travelers: 5, Number of travel days: 4] My roommates and I, a total of 5 people, want to go to Xi'an for 4 days. How should we plan the itinerary?"
+}

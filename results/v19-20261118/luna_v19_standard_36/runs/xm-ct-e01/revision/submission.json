@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:35:01.688743+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已核对本题去返铁路时长及航班未定价证据，一天内有价铁路往返不可行；保留数据阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a",
+  "feedback_sha256": "2b832e645b67510b7813ea1f56fd2f121d3ab61b8fe22d1c7ccf2f0ae80d8966"
+}

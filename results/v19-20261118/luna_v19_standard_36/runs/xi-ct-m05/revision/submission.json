@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:41:09.066003+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "保留阻塞：revision 再查北京→西安 airplane 仍只有 unpriced_preview；西安→北京有带价返程记录但不能替代缺失的去程金额，schema 要求填写 cost，不能核算预算。",
+    "status": "keep_first"
+  },
+  "first_sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9",
+  "feedback_sha256": "483f8b3cc67695e175ec1e1e7cb548255342d263c77a1c176d39af9bf9a3e07f"
+}

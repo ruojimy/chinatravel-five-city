@@ -1,0 +1,11 @@
+{
+  "uid": "xi-g02",
+  "tag": "medium",
+  "start_city": "杭州",
+  "target_city": "西安",
+  "days": 3,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "杭州两人西安往返共三天。优先飞机，如果核验不出往返价格，可以两向改坐火车。要有景点和住宿，并标明金额口径。"
+}

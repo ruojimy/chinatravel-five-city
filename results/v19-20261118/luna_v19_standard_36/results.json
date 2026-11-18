@@ -1,0 +1,554 @@
+{
+  "profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "model": "gpt-6-luna",
+  "by_city": {
+    "xian": {
+      "cases": 18,
+      "first": {
+        "pass": 9,
+        "fail": 3,
+        "blocked_by_data": 6
+      },
+      "revision": {
+        "pass": 12,
+        "fail": 1,
+        "blocked_by_data": 5
+      },
+      "new_passes": 3,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 1
+      }
+    },
+    "xiamen": {
+      "cases": 18,
+      "first": {
+        "blocked_by_data": 6,
+        "pass": 2,
+        "fail": 10
+      },
+      "revision": {
+        "blocked_by_data": 7,
+        "pass": 11
+      },
+      "new_passes": 9,
+      "regressions": 0,
+      "remaining_failing_gates": {}
+    },
+    "all": {
+      "cases": 36,
+      "first": {
+        "pass": 11,
+        "blocked_by_data": 12,
+        "fail": 13
+      },
+      "revision": {
+        "pass": 23,
+        "blocked_by_data": 12,
+        "fail": 1
+      },
+      "new_passes": 12,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 1
+      }
+    }
+  },
+  "cases": [
+    {
+      "uid": "xi-ct-e01",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "db0d008222b13679f0566723f1e293495fb589fd623249194bbe2e8b1a2bd9e2",
+      "revision_sha256": "57095d74150228d2a3f3a7e4c938ad7a7948d43a431b9fec137c0ee713446bb1",
+      "feedback_sha256": "9878947df3ac9506ce6ee5c9e9152797c673ef168506c7582c6c232a26c7f4e9"
+    },
+    {
+      "uid": "xm-ct-e01",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "成都—厦门一日往返：有价铁路去程约14小时，返程最早列车也需约14小时，无法在一天内完成往返观光；航班查询的票价未提供，不能在不造价的情况下形成完整往返方案。"
+      ],
+      "first_sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a",
+      "revision_sha256": "96242a0d4a75b087752186757a3fadf3d9c3ffc97662a36c97983ecf8c6eafa7",
+      "feedback_sha256": "2b832e645b67510b7813ea1f56fd2f121d3ab61b8fe22d1c7ccf2f0ae80d8966"
+    },
+    {
+      "uid": "xi-ct-e02",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c320dcb443e542ceba469c26185d884550043a9632a2af0c1c293478b6d52f5b",
+      "revision_sha256": "c45df9460c004f51dc96bc0119cbd17a37f689b35b8552870fa9237bceefc3af",
+      "feedback_sha256": "7c8a72b1ad16249addad9bdf6938ebbb0fb33c24b9e566997fff2e9666777d52"
+    },
+    {
+      "uid": "xm-ct-e02",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3abf4eea9902f88c45911f380e5cec46c451b2a60bc6ff233b8e3aa5f926f802",
+      "revision_sha256": "a85b95af6ed230a3fecc3c30a914477591a72ab028389956eccafd05711cca94",
+      "feedback_sha256": "27c643d2c622bf91a34bb99ea5bdb8649b606d7205698aa3f8432cce6f4190f2"
+    },
+    {
+      "uid": "xi-ct-e03",
+      "city": "xian",
+      "family": "easy",
+      "first": "fail",
+      "revision": "fail",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [
+        "hard"
+      ],
+      "blocking_reasons": [],
+      "first_sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3",
+      "revision_sha256": "aae593e1d17b5b0278b67dcf0359be85c276a5b0a8b3dc5e19a22afb0f28b424",
+      "feedback_sha256": "755376325eae923d5377fa0cb577bd9b14753cf6aae03875e16833a2575fdede"
+    },
+    {
+      "uid": "xm-ct-e03",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "fail",
+      "revision": "blocked_by_data",
+      "revision_status": "blocked_by_data",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "首稿的内城交通模式要求未满足。修订阶段针对南普陀寺、中山路步行街、厦门大学(思明校区)、沙坡尾等本题公开目录地点，从瑞颐大酒店按地铁查询均无可用路线；可用的地铁路线只连酒店和厦门北站，无法支撑要求的景点接驳。为满足地铁要求不能将无证据路线写入行程。"
+      ],
+      "first_sha256": "2968c16ee4a2b8df7018d8070c628f4910017f4bea11ef9d78fcffa8f4f42ac9",
+      "revision_sha256": "cf0207d682676e775898629187e82f9002bb3b52224282eea14fb92f5caca1af",
+      "feedback_sha256": "8ef5c8e590eb1f0739bf67c9b6ebf1eafce634691be68cc0dc2dd34b16526068"
+    },
+    {
+      "uid": "xi-ct-e04",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c8b258c88d9f5a76ca12a427614013279d87f22a032a638b3cddd83cd2f2f801",
+      "revision_sha256": "b6e38b521082600848d76f32d8c263cc389d954ca1e8474613afe677942ee255",
+      "feedback_sha256": "e6ee2559a0fa4de0b22eab2e0e0a85169ecfcf1ac21eff1d851d4cb277baa850"
+    },
+    {
+      "uid": "xm-ct-e04",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3e8bfef62309f3f87bf616ae2abd746f5911883575a80a6d1fbf4ab7291664fd",
+      "revision_sha256": "8918095c358122ebd215128f35bba01f97069470c59a285d8c2e5db24fa21ff4",
+      "feedback_sha256": "d8ca37c237c62e15b66d5d276785b3774eb9b8a19b9b80dc3d918bc801681fbb"
+    },
+    {
+      "uid": "xi-ct-e05",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "70b1c2426c0e0386601130bb00fb8737187eb579b77eb924f4c2c00e82602829",
+      "revision_sha256": "1f06544065d600ece4924abcecbd9d3a3bab726a0d04376f1bbf960f5151e737",
+      "feedback_sha256": "8f1bd4528b2baabcd90fa3c7650580db5e7a556e07f68634fbf4fb5e0a9de430"
+    },
+    {
+      "uid": "xm-ct-e05",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "武汉—厦门一日行程：已查铁路去程最快约6小时42分、返程最快约6小时42分，无法同日往返并游览；可见航班记录没有可用票价，无法按schema填写往返飞机成本。"
+      ],
+      "first_sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b",
+      "revision_sha256": "8626da244ad163f816f51bca9acdba5aff82f01bb037670c2d80da88d9f3817f",
+      "feedback_sha256": "491409c7cb4cd9b9248a1ff8a981fa13a5d583a158bc35b094e52fdf67788a2e"
+    },
+    {
+      "uid": "xi-ct-e06",
+      "city": "xian",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+      ],
+      "first_sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967",
+      "revision_sha256": "0b91314a4918da32444cd941593ebe818d50ade1dd39f91920ac438a531b0e82",
+      "feedback_sha256": "07a1f136570dd68a92e82f5a76a94f2e9d176d28bd71162e14c7c9e4ebd03a85"
+    },
+    {
+      "uid": "xm-ct-e06",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "题面明确选择飞机；北京—厦门去程和返程航班均有时刻但缺票价，无法填写要求的数值票价/总价。铁路虽有价，但不符合所选交通方式。"
+      ],
+      "first_sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20",
+      "revision_sha256": "09e02f7d6015fc95e818c620b28b5b34054138ef6c62f0f6fb32b1059fd824a1",
+      "feedback_sha256": "4e7f84242b74f45c24197b87209c9d4fb8bcb8b7e7d004a444cd2305cee34362"
+    },
+    {
+      "uid": "xi-ct-m01",
+      "city": "xian",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8e41d938139dd60945d3d81b1bf513e1bfca0b8f58062d5d39af6835719fb5b7",
+      "revision_sha256": "1005aeee5a1db0e01cc517562ecd4bde286206740eb24d0964fa77369ac6f024",
+      "feedback_sha256": "d5e9532562cdb0b2ee2bd210ff0cc3cf087f3e9052a5fbcabc09b60acee97b46"
+    },
+    {
+      "uid": "xm-ct-m01",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "0ee976dba49dc68ab7dbcc38bd3d9da2d87d0398422d73a73987959c7d6e6be3",
+      "revision_sha256": "4093994a6bdb5a5a5a588bbe72e93eecff854f43077a2bee3d343814570496dd",
+      "feedback_sha256": "a6517ccfd193986d54e223323bdd678d12c5353085efbfed5e8f17e6f8cb8a9b"
+    },
+    {
+      "uid": "xi-ct-m02",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "ee8049ade415af05d616e540453d1556644383bcf50ed7c0ee79671699d49c59",
+      "revision_sha256": "49605d0f156d23e3f682f5beeca08ac6bb372631ae4f14634ebc919433f7da3b",
+      "feedback_sha256": "5a451cfafba85b0cb62193dbc1832507fa90ff8ab0716f73b609cc8beb167228"
+    },
+    {
+      "uid": "xm-ct-m02",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "50fe03e26d4fd7c9fc379b754bdba7b33aaac3a59279c27e49f7a51abe035331",
+      "revision_sha256": "a38068554587f6219031c8038886daf0e875b8cc6623a456ddd9e233fbbb2fc4",
+      "feedback_sha256": "2628f7afdbfdb4f21fc0dc451f9d0997f8be815f8f402811884d0b429208c139"
+    },
+    {
+      "uid": "xi-ct-m03",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "blocked_by_data",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "复核了本题 2 日广州—西安往返车次，并在住宿目录全集中找到可核价双床数代理（西安新城康泰宾馆，103元/间/晚）；原先的住宿阻塞可解除。但满足在西安过一晚并于第2日返程的可见同日到达高铁组合（例如 G404 09:49–16:50、G840 次日10:15–19:12）票价合计974+974元/人，4人至少7792元，已超过5600元预算，未计两间房和市内费用。低价候选 Z138 为236元/人但次日07:22才到西安；两日窗口内再乘同日返程列车，就没有在西安过夜并使用题目要求的两间双床房的时间。无法在该时限和预算下做出满足住宿及游览要求的往返行程。"
+      ],
+      "first_sha256": "31b7d1c49b13acdf92e2a5bcce8fbefd7ed7400a60286f0c0a56a46d9d4a866e",
+      "revision_sha256": "610cd54c45fee8a3eea6540a510d17d53b40352e3ae65b55a3ebffc247effa17",
+      "feedback_sha256": "c883dca4fc7180c0a6da39d5d45b279d581b8249cf73f408d80b0fb7079cd0a7"
+    },
+    {
+      "uid": "xm-ct-m03",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c236f11f8e083573aaae9c0d3c3a460564b84966fb7eaa824df7c53649effd5a",
+      "revision_sha256": "018b0c9276b841ab5e451e70a3767e0835c26c8b22279c488fd57254c4446b95",
+      "feedback_sha256": "b9113de4205708dec40236efc771fff6ffa42be88b141dc14e9855180717a312"
+    },
+    {
+      "uid": "xi-ct-m04",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按杭州→西安、西安→杭州查询火车。可见的低价去程 K308 为 02:27→22:24（票价 173.5），次日可见返程最早 D114 00:33 出发，或 K306 06:45 出发并于第三天 03:21 到达；在总行程仅 2 个日历天时，去程抵达已晚于景点营业时间，返程选项又不能留出可用游览时段。更便宜的候选无法组成有可用游览时间的两日往返安排，因此无法给出满足“去西安玩两天”的可执行行程。"
+      ],
+      "first_sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad",
+      "revision_sha256": "9602169b51d20a581217a37b287f38175d7b2d5579acdc29cdf218e3bfeede51",
+      "feedback_sha256": "9ae8eb98b976126880d0918d5794bbc4b8dd53d496f1dcac61719b06c0d0953d"
+    },
+    {
+      "uid": "xm-ct-m04",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已查询杭州→厦门和厦门→杭州的火车。往返最低可见票价候选为 D3211 355.5 元/人及 G1680 422 元/人，2 人往返合计 1555 元，已超过 1500 元预算；还未计住宿、市内交通和餐饮。不能在不虚构票价的情况下提交符合预算的方案。"
+      ],
+      "first_sha256": "ec6b3747120190afd91ff045553905ea77f0bec9132de4ec6da2843f4d9d8028",
+      "revision_sha256": "1b7642b55bc882d7fdbff762b9069c88aac712afe47e9e78baef47032bba0b23",
+      "feedback_sha256": "5072402503e2da5e8d46a217eda9cb8bddc5531646933a9eb46194cc504eef39"
+    },
+    {
+      "uid": "xi-ct-m05",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按北京→西安和西安→北京查询 airplane。去程记录仅有无票价的航班预览（如 CCA1201、MU2118），查询结果没有带 Cost 的去程航班；返程虽有带 Cost 的 MU2123、CA1206、MU2107，但单程金额缺失，无法按 schema 填写去程 cost 或核算往返预算。快照无 travel_date，不能补造金额。"
+      ],
+      "first_sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9",
+      "revision_sha256": "b5e72a45afac7bb92eea58838b752f07df4b4218461e1928bc88a04e1c1c5859",
+      "feedback_sha256": "483f8b3cc67695e175ec1e1e7cb548255342d263c77a1c176d39af9bf9a3e07f"
+    },
+    {
+      "uid": "xm-ct-m05",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按北京→厦门和厦门→北京查询 airplane，两个方向的 records 均没有带 Cost 的航班；可见航班只在 unpriced_preview 中，无法按 schema 填写往返 airplane cost 或核算预算。快照无 travel_date，不能补造金额。"
+      ],
+      "first_sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca",
+      "revision_sha256": "0b52d086ec09085544192e740d0ff2a2cf4468167198e0793ff6189349eda4b6",
+      "feedback_sha256": "06fbdb18beef3eb1efc82a7335ea3b3a5073d895d3034a072bf17c87043e65f5"
+    },
+    {
+      "uid": "xi-ct-m06",
+      "city": "xian",
+      "family": "medium",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "d8e44717fc4cd1fa83007ddd7dff311117f9440a24f87a136ec9fa4dfb0c0298",
+      "revision_sha256": "476668b7250a89d9172a92c165e18f649a43af164f970089aab69f8cca06f4d3",
+      "feedback_sha256": "d2619c1b938a6499dc5cefb1bbb972e2b652daceb0fb03b78b5d650a944f3231"
+    },
+    {
+      "uid": "xm-ct-m06",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "查询成都→厦门、厦门→成都的火车；往返可见最低价格各为 1095 元/人（G2277/G2278），2 人往返合计至少 4380 元，已超过 4200 元预算，尚未计住宿、餐饮和市内交通。不能通过编造票价给出预算内方案。"
+      ],
+      "first_sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf",
+      "revision_sha256": "7df1a46aba7c74cead6a886538b30bdc92c33197107b40f0a79e9071b565e819",
+      "feedback_sha256": "7e8cdd69fe690d80037c917a72be376ce7037dd40b9c09b362118c2e43f7391c"
+    },
+    {
+      "uid": "xi-ct-h01",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "558050cae8cac60b005e6ebcc220e088577be227dd9664e354c10edd0555c99b",
+      "revision_sha256": "c4ec65984c80f8f44b36dbe807bcde02e78cb132592d218b9d66bd6583780a56",
+      "feedback_sha256": "c18a03cfd3125592281927de20457c9faf9085f81c14483afc914c03d55ea31b"
+    },
+    {
+      "uid": "xm-ct-h01",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "304f9576984192f8ad0b9022d7e9ba29e42b3d45468faeb619ca6d4a3c501f15",
+      "revision_sha256": "2db5dd845da5eaac11ca2fe68df31722dfb5dd41af25b626c77f8e84f7c53f9a",
+      "feedback_sha256": "0821bef4e49ec1a63780db8025ab3a157f843b2cc8b793f173ecfc7c57f9c106"
+    },
+    {
+      "uid": "xi-ct-h02",
+      "city": "xian",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1e9bda1d88e4c53dfc3cbb759d26d7691c95ad6bc1facb4573ffd0a55b4a8162",
+      "revision_sha256": "0f3d23bedd2bac4edf9b14557e03715949a17736b8dbf76b384cf5d9a33f9d3c",
+      "feedback_sha256": "50135591b8805e6a0cd41d5dcefbbf8e1e204ff2934a5e31324257f6f4997a56"
+    },
+    {
+      "uid": "xm-ct-h02",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "21a2c65b01c724e02ca01988a90a058d901db90d39d1712f49854b323d1afc9e",
+      "revision_sha256": "19ed90b615d71cc8b4bf49de847b677748ee7135f0ba3bd4e7fc34767aec4e5d",
+      "feedback_sha256": "ad5e98375e31bfd1693d8f16360591636879fb8070a87ef1078d65bdc93c411b"
+    },
+    {
+      "uid": "xi-ct-h03",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "f71a40c772e0dad6477bf4daa4e3b455b58b14d71a1a90dba6879e2ea87b5b50",
+      "revision_sha256": "042288b13e6164d539d24c7836e8c7b19756d890a8a871d396e60f33661dbac3",
+      "feedback_sha256": "bd547e14929ce8dd36f76a4d16d5185335977a567fbc72f0093914181fe06f4f"
+    },
+    {
+      "uid": "xm-ct-h03",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "0d9ce97cc2c73f5378f12edc04cc55695a97b8a6ddb6e7d44c9daaab13069ef8",
+      "revision_sha256": "2c4a898904fc215745c59c9f46791039f1c0836a0abf43dce64403e4000b3b6e",
+      "feedback_sha256": "0fa8aa365a7a4b5d065c73ee3545e44d0239d37726a7cdb1256b4de056aa1194"
+    },
+    {
+      "uid": "xi-ct-h04",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1eaf1e02e76fcc8e156b15f2b85f296f54585766e626c95282f236c751571757",
+      "revision_sha256": "0165e7f45fae1b9475755fa4fda7f388990ec5a393e73a76bf08df02d819d667",
+      "feedback_sha256": "7a8a81ddc6035099e5639660d7907b60f8311d6ba9000119832e8db39467f322"
+    },
+    {
+      "uid": "xm-ct-h04",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "ee7ffba464fcdc9915a012a1fa1b2eef0b1582a074349c93707e77dbd985e699",
+      "revision_sha256": "8b44ae31db6c5c09e2a21b0e3d3617d32ca9a596b472928871d927fd43cd494e",
+      "feedback_sha256": "4ea038e97082d807c07e6c23f3db3e353ffd7996df0feb125d2faff6e5b81be1"
+    },
+    {
+      "uid": "xi-ct-h05",
+      "city": "xian",
+      "family": "human",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "本题只允许使用本题的冻结沙盒证据。深圳—西安可查的有价列车中，直达高铁样例 G846 单程约10小时，其他可用车次需过夜；返程高铁样例 G837 也约9小时40分。两天周末往返将被城际交通占满，无法形成题面要求的悠闲、少人流游玩日。可见航班没有可用票价，协议禁止补造机票费用，因此在现有证据下没有可核验且符合需求的方案。"
+      ],
+      "first_sha256": "3793968db944bd766b972fb80524708a87a80ce75c0bae70fc0749ad4ea6d045",
+      "revision_sha256": "edaac3ad627b6a666f18ac43fe7b7497bd5f592931201649de5532ff5093b51d",
+      "feedback_sha256": "8ed72145a8919ba8f2ac70243b22de06f1b32b65db9503c6564b9b10c4b3d529"
+    },
+    {
+      "uid": "xm-ct-h05",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36",
+      "revision_sha256": "d7cebf4be42532761bd558cb9590ff4c82fb8f2fbacf3ffedc4df56dcecd2da5",
+      "feedback_sha256": "0dbb781ebe1af7fbbee824ebbe46eb944136a060bd792440fe8c937da145c0c9"
+    },
+    {
+      "uid": "xi-ct-h06",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "2c77a29626f2fe2e82f3ba7771ef57f8fe61f99732eb1b79fd45712811e163fa",
+      "revision_sha256": "1e3e171c97a27c2b5eea447601a8fef854d21fd991883467cd2cdc0274fe7f92",
+      "feedback_sha256": "4cfc127e1228fe0e8a3c264080df05ce2091d79822b1569d936236b2d66d0346"
+    },
+    {
+      "uid": "xm-ct-h06",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "6da9077ba071c49eefa977b0696291fc1e0f0159afb79d4b5536dae2d3387ac9",
+      "revision_sha256": "ca8521437ee5ab8206857d3e2daf465bbcdb1d7e5517de5f0c9650b6a4184850",
+      "feedback_sha256": "42e4eeff3d6149ee3ee5a6918cd6d56e2a613cd6a92d648cc1b0c59e78b2f26e"
+    }
+  ],
+  "public_profile_receipt_sha256": "960bd888a9b8609b112c56d51b15bbca8ece90efb5057c67751606304763d0da"
+}

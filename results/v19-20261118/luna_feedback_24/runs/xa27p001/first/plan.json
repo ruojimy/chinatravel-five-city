@@ -1,0 +1,126 @@
+{
+  "start_city": "西安",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "activities": [
+        {
+          "price": 0,
+          "end_time": "11:20",
+          "start_time": "10:15",
+          "transports": [
+            {
+              "start_time": "10:00",
+              "start": "西安市中心",
+              "cost": 35.39,
+              "distance": 8.77,
+              "end": "回民街",
+              "end_time": "10:13",
+              "cars": 1,
+              "mode": "taxi",
+              "price": 35.39
+            }
+          ],
+          "position": "回民街",
+          "cost": 0,
+          "type": "attraction",
+          "tickets": 2
+        },
+        {
+          "position": "清真尔卜餐厅",
+          "type": "lunch",
+          "cost": 80,
+          "transports": [
+            {
+              "start_time": "11:30",
+              "start": "回民街",
+              "cost": 11.0,
+              "distance": 0.19,
+              "end": "清真尔卜餐厅",
+              "end_time": "11:30",
+              "cars": 1,
+              "mode": "taxi",
+              "price": 11.0
+            }
+          ],
+          "end_time": "12:30",
+          "price": 40,
+          "start_time": "11:30"
+        },
+        {
+          "price": 0,
+          "end_time": "17:00",
+          "start_time": "13:15",
+          "transports": [
+            {
+              "start_time": "13:00",
+              "start": "清真尔卜餐厅",
+              "cost": 21.24,
+              "distance": 4.73,
+              "end": "陕西历史博物馆",
+              "end_time": "13:07",
+              "cars": 1,
+              "mode": "taxi",
+              "price": 21.24
+            }
+          ],
+          "position": "陕西历史博物馆",
+          "cost": 0,
+          "type": "attraction",
+          "tickets": 2
+        },
+        {
+          "price": 80,
+          "end_time": "08:00",
+          "start_time": "22:00",
+          "transports": [
+            {
+              "start_time": "17:30",
+              "start": "陕西历史博物馆",
+              "cost": 14.58,
+              "distance": 2.82,
+              "end": "西安新开家庭公寓(黄雁村地铁站店)",
+              "end_time": "17:34",
+              "cars": 1,
+              "mode": "taxi",
+              "price": 14.58
+            }
+          ],
+          "position": "西安新开家庭公寓(黄雁村地铁站店)",
+          "cost": 80,
+          "type": "accommodation",
+          "rooms": 1
+        }
+      ],
+      "day": 1
+    },
+    {
+      "activities": [
+        {
+          "price": 30,
+          "end_time": "10:00",
+          "start_time": "09:10",
+          "transports": [
+            {
+              "start_time": "09:00",
+              "start": "西安新开家庭公寓(黄雁村地铁站店)",
+              "cost": 13.28,
+              "distance": 2.45,
+              "end": "西安钟楼",
+              "end_time": "09:03",
+              "cars": 1,
+              "mode": "taxi",
+              "price": 13.28
+            }
+          ],
+          "position": "西安钟楼",
+          "cost": 60,
+          "type": "attraction",
+          "tickets": 2
+        }
+      ],
+      "day": 2
+    }
+  ],
+  "people_number": 2
+}

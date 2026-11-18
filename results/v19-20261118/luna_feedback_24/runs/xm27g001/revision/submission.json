@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:15:22.196937+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "往返航空的双向查询均无可用航班记录或票价，强制机票条件缺口仍成立。"
+  },
+  "first_sha256": "6400616b4f642a62983f88f8ff4bfc4e3618455f377172526b50a1b2405a7c31",
+  "feedback_sha256": "1dfb280726e2a8ba875c31ba86c77319619d4cab3f75d7e610c00d25ec13352f"
+}

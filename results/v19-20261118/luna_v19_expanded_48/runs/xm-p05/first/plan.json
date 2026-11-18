@@ -1,0 +1,118 @@
+{
+  "people_number": 3,
+  "start_city": "广州",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "07:47",
+          "end_time": "11:56",
+          "cost": 933,
+          "price": 311,
+          "transports": [],
+          "TrainID": "D3309",
+          "start": "广州东站",
+          "end": "厦门北站",
+          "tickets": 3
+        },
+        {
+          "type": "accommodation",
+          "start_time": "15:00",
+          "end_time": "08:00",
+          "cost": 327,
+          "price": 109,
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "taxi",
+              "start_time": "12:15",
+              "end_time": "12:48",
+              "price": 94.99,
+              "cost": 94.99,
+              "distance": 22.29,
+              "cars": 1
+            }
+          ],
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "rooms": 3,
+          "room_type": 1
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:15",
+          "end_time": "11:30",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "中山路步行街",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:03",
+              "price": 12.7,
+              "cost": 12.7,
+              "distance": 2.28,
+              "cars": 1
+            }
+          ],
+          "position": "中山路步行街",
+          "tickets": 3
+        },
+        {
+          "type": "lunch",
+          "start_time": "11:35",
+          "end_time": "12:30",
+          "cost": 72,
+          "price": 24,
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "黄则和花生汤(中山路店)",
+              "mode": "walk",
+              "start_time": "11:30",
+              "end_time": "11:34",
+              "price": 0,
+              "cost": 0,
+              "distance": 0.3702018719251149
+            }
+          ],
+          "position": "黄则和花生汤(中山路店)"
+        },
+        {
+          "type": "train",
+          "start_time": "15:26",
+          "end_time": "18:54",
+          "cost": 925.5,
+          "price": 308.5,
+          "transports": [
+            {
+              "start": "黄则和花生汤(中山路店)",
+              "end": "厦门北站",
+              "mode": "taxi",
+              "start_time": "13:30",
+              "end_time": "14:00",
+              "price": 86.43,
+              "cost": 86.43,
+              "distance": 20.39,
+              "cars": 1
+            }
+          ],
+          "TrainID": "G1021",
+          "start": "厦门北站",
+          "end": "广州南站",
+          "tickets": 3
+        }
+      ]
+    }
+  ]
+}

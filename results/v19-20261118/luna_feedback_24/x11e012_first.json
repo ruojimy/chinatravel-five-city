@@ -1,0 +1,73 @@
+{
+  "status": "submitted_first_draft",
+  "plan": {
+    "people_number": 2,
+    "start_city": "成都",
+    "target_city": "西安",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          {
+            "type": "train",
+            "TrainID": "D1998",
+            "start": "成都东",
+            "end": "西安北",
+            "start_time": "06:09",
+            "end_time": "09:31",
+            "price": 316,
+            "cost": 632,
+            "tickets": 2,
+            "transports": []
+          },
+          {
+            "type": "lunch",
+            "position": "山由之cafe&meal(小寨店)",
+            "start_time": "11:00",
+            "end_time": "12:00",
+            "price": 63,
+            "cost": 126,
+            "transports": [
+              {
+                "start": "西安北站",
+                "end": "山由之cafe&meal(小寨店)",
+                "mode": "taxi",
+                "start_time": "10:00",
+                "end_time": "10:24",
+                "price": 69.44,
+                "cost": 69.44,
+                "distance": 16.61,
+                "cars": 1
+              }
+            ]
+          },
+          {
+            "type": "train",
+            "TrainID": "G3417",
+            "start": "西安北",
+            "end": "成都东",
+            "start_time": "19:58",
+            "end_time": "23:27",
+            "price": 316,
+            "cost": 632,
+            "tickets": 2,
+            "transports": [
+              {
+                "start": "山由之cafe&meal(小寨店)",
+                "end": "西安北站",
+                "mode": "taxi",
+                "start_time": "15:30",
+                "end_time": "15:54",
+                "price": 69.44,
+                "cost": 69.44,
+                "distance": 16.61,
+                "cars": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "notes": "去程、返程车次与票价来自冻结城际查询；西安北站至指定餐厅及返程出租车路线来自静态交通图。餐厅价为目录人均价63元，按2人计；班次及静态价格非出行日库存或现价。"
+}

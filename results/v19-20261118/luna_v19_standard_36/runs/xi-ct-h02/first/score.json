@@ -1,0 +1,147 @@
+{
+  "uid": "xi-ct-h02",
+  "target_root": "<workspace>\\chinatravel-five-city-luna-20261115\\data\\sandbox_profiles\\xiamen12_historical_v19_maps\\engine",
+  "query_sha256": "932ca38ad4ddeda1a66c150d2313ccf5ef737df24d6b9396aa76fdb45a1bc9ac",
+  "plan_sha256": "7ba594a67f8a24288664d47cae90f3a9c1ac76a80156b12758bdc5210a34fcad",
+  "scored_utc": "2026-11-18T14:29:03.529379+00:00",
+  "groups": [
+    {
+      "name": "Is_activity_grounded",
+      "state": "pass",
+      "cells": {
+        "Invalid or ungrounded activity entity": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_intercity_transport_correct",
+      "state": "pass",
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 0,
+        "Incorrect Information of Intercity Transport on price or duration": 0,
+        "Incorrect Cost on Intercity Transportation": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_attractions_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable attractions": 0,
+        "Visiting attraction in their closed time": 0,
+        "Repeated attraction Choices": 0,
+        "Incorrect price Information of attraction": 0,
+        "Incorrect cost Information of attraction": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_hotels_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Accommodation": 0,
+        "Incorrect Information of Accommodation on price or room type": 0,
+        "Incorrect cost Information of Accommodation": 0,
+        "Accomondation is necessary for trips longer than one day": 0
+      },
+      "messages": [
+        "Conditional room type derived from benchmark bed field: 派酒店(西安明城墙和平门地铁站店)",
+        "Conditional room type derived from benchmark bed field: 派酒店(西安明城墙和平门地铁站店)",
+        "Conditional room type derived from benchmark bed field: 派酒店(西安明城墙和平门地铁站店)"
+      ],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_restaurants_correct",
+      "state": "pass",
+      "cells": {
+        "Unavailable Restruants": 0,
+        "Visiting Restruants in their closed time": 0,
+        "Repeated Restruants Choices": 0,
+        "Incorrect price Information of Restruants": 0,
+        "Incorrect cost Information of Restruants": 0,
+        "Inappropriate Meal Times": 0,
+        "Repeated Meal Types in One Day": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_transport_correct",
+      "state": "fail",
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+        "Inccorrect cost information of Inner-City Transport": 0
+      },
+      "messages": [
+        "segment 1: Incorrect duration infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]",
+        "segment 1: Incorrect price infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]",
+        "segment 1: Incorrect distance infomation of transport 派酒店(西安明城墙和平门地铁站店) -> 西安  [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:51', 'price': 57.79, 'cost': 115.58, 'distance': 14.02, 'cars': 2}], Tool: [{'start': '派酒店(西安明城墙和平门地铁站店)', 'end': '西安', 'mode': 'taxi', 'start_time': '06:30', 'end_time': '06:34', 'cost': 14.97, 'distance': 2.94}]"
+      ],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_time_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    },
+    {
+      "name": "Is_space_correct",
+      "state": "pass",
+      "cells": {
+        "Invalid Transport information across positions": 0
+      },
+      "messages": [],
+      "conditional_assumptions": []
+    }
+  ],
+  "schema": {
+    "state": "pass",
+    "error": null
+  },
+  "commonsense": {
+    "state": "fail"
+  },
+  "hard": {
+    "state": "pass",
+    "clauses": [
+      {
+        "index": 0,
+        "state": "pass"
+      },
+      {
+        "index": 1,
+        "state": "pass"
+      },
+      {
+        "index": 2,
+        "state": "pass"
+      }
+    ],
+    "unresolved_requirements": []
+  },
+  "requested_places": {
+    "state": "pass",
+    "items": [],
+    "boundary": "Name/alias match is not proof of opening, geographic identity, ferry or real-world access."
+  },
+  "overall": "fail",
+  "policy": "A failed gate determines fail; checker errors are unknown if no other definite gate fails.",
+  "query_audit_sha256": "2fc4acf6fb832023fc092d2e08e6bc828e0ffc7693a91949f5d004d7a268089b",
+  "evaluator_hashes": {
+    "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+    "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+    "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+    "chinatravel\\symbol_verification\\concept_func.py": "481a29e9968c73f6bd53dc3532f858f588060f4ec1caccd8d475b28b8fabada2"
+  }
+}

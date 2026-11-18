@@ -1,0 +1,197 @@
+{
+  "start_city": "厦门",
+  "target_city": "厦门",
+  "people_number": 5,
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "tickets": 5,
+          "cost": 0,
+          "start_time": "10:00",
+          "type": "attraction",
+          "position": "沙坡尾",
+          "end_time": "16:45",
+          "transports": [
+            {
+              "distance": 4.42,
+              "start_time": "09:00",
+              "price": 20.16,
+              "end": "沙坡尾",
+              "start": "厦门站",
+              "end_time": "09:06",
+              "cost": 40.32,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 0
+        },
+        {
+          "end_time": "17:50",
+          "transports": [
+            {
+              "distance": 0.01,
+              "start_time": "17:00",
+              "price": 11.0,
+              "end": "沙坡尾62号鱼港",
+              "start": "沙坡尾",
+              "end_time": "17:00",
+              "cost": 22.0,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 77,
+          "position": "沙坡尾62号鱼港",
+          "cost": 385,
+          "type": "dinner",
+          "start_time": "17:05"
+        },
+        {
+          "position": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+          "start_time": "22:00",
+          "rooms": 3,
+          "type": "accommodation",
+          "room_type": 1,
+          "transports": [
+            {
+              "distance": 2.31,
+              "start_time": "18:00",
+              "price": 12.79,
+              "end": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+              "start": "沙坡尾62号鱼港",
+              "end_time": "18:03",
+              "cost": 25.58,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 140,
+          "end_time": "09:00",
+          "cost": 420
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "tickets": 5,
+          "cost": 0,
+          "start_time": "09:40",
+          "type": "attraction",
+          "position": "中山路步行街",
+          "end_time": "12:00",
+          "transports": [
+            {
+              "distance": 0.44,
+              "start_time": "09:30",
+              "price": 11.0,
+              "end": "中山路步行街",
+              "start": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+              "end_time": "09:30",
+              "cost": 22.0,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 0
+        },
+        {
+          "end_time": "13:00",
+          "transports": [
+            {
+              "distance": 0.37,
+              "start_time": "12:00",
+              "price": 11.0,
+              "end": "黄则和花生汤(中山路店)",
+              "start": "中山路步行街",
+              "end_time": "12:00",
+              "cost": 22.0,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 24,
+          "position": "黄则和花生汤(中山路店)",
+          "cost": 120,
+          "type": "lunch",
+          "start_time": "12:10"
+        },
+        {
+          "position": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+          "start_time": "22:00",
+          "rooms": 3,
+          "type": "accommodation",
+          "room_type": 1,
+          "transports": [
+            {
+              "distance": 0.15,
+              "start_time": "13:00",
+              "price": 11.0,
+              "end": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+              "start": "黄则和花生汤(中山路店)",
+              "end_time": "13:00",
+              "cost": 22.0,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 140,
+          "end_time": "09:00",
+          "cost": 420
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "tickets": 5,
+          "cost": 0,
+          "start_time": "09:10",
+          "type": "attraction",
+          "position": "南普陀寺",
+          "end_time": "12:30",
+          "transports": [
+            {
+              "distance": 2.64,
+              "start_time": "09:00",
+              "price": 13.93,
+              "end": "南普陀寺",
+              "start": "心远电竞酒店(厦门中山路步行街轮渡码头店)",
+              "end_time": "09:03",
+              "cost": 27.86,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 0
+        },
+        {
+          "end_time": "14:00",
+          "transports": [
+            {
+              "distance": 4.49,
+              "start_time": "13:00",
+              "price": 20.42,
+              "end": "鹭江1号中餐厅闽南茶海鲜(101剧场店)",
+              "start": "南普陀寺",
+              "end_time": "13:06",
+              "cost": 40.84,
+              "cars": 2,
+              "mode": "taxi"
+            }
+          ],
+          "price": 67,
+          "position": "鹭江1号中餐厅闽南茶海鲜(101剧场店)",
+          "cost": 335,
+          "type": "lunch",
+          "start_time": "13:15"
+        }
+      ]
+    }
+  ]
+}

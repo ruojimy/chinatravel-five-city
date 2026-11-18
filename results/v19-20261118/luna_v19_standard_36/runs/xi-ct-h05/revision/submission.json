@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:34:28.297251+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "复查本题的深圳—西安有价列车：去程 G846 约10.12小时，K1348 需过夜；返程 G837 约9.62小时，高铁单程均接近10小时。查询 also shows unpriced flights; the sandbox does not provide admitted fare evidence for them. The two-day relaxed sightseeing request remains unsupported, so keep the verified blocker."
+  },
+  "first_sha256": "3793968db944bd766b972fb80524708a87a80ce75c0bae70fc0749ad4ea6d045",
+  "feedback_sha256": "8ed72145a8919ba8f2ac70243b22de06f1b32b65db9503c6564b9b10c4b3d529"
+}

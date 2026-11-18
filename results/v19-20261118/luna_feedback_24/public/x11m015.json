@@ -1,0 +1,17 @@
+{
+  "uid": "x11m015",
+  "tag": "medium",
+  "start_city": "成都",
+  "target_city": "西安",
+  "days": 2,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "当前位置成都。我们三个人想去西安玩2天，每晚人均住宿不超过300元，住2间房，想去历史古迹类景点，每天预算不超过3000元，请给我一个旅行规划。",
+  "nature_language_en": "Currently in 成都. three of us want to travel to 西安 for 2 day(s); hotel cost under 300 RMB per person per night, book 2 room(s), want to visit 历史古迹 attractions, with a daily budget under 3000 RMB. Please provide a travel plan.",
+  "xian11": {
+    "city_role": "target",
+    "translation": "controlled_template",
+    "native_compatible": true
+  }
+}

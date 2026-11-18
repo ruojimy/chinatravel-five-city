@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:35:02.327592+00:00",
+  "status": "keep_first",
+  "reply": {
+    "notes": "已核对本题去返铁路时刻，最短有价铁路单程仍需数小时且无同日观光往返窗口；可见航班无可填票价，保留数据阻塞。",
+    "status": "keep_first"
+  },
+  "first_sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b",
+  "feedback_sha256": "491409c7cb4cd9b9248a1ff8a981fa13a5d583a158bc35b094e52fdf67788a2e"
+}

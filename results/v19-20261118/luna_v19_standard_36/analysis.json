@@ -1,0 +1,4283 @@
+{
+  "model": "gpt-6-luna",
+  "profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "tiers": {
+    "easy": {
+      "n": 12,
+      "first": {
+        "pass": 5,
+        "blocked_by_data": 4,
+        "fail": 3
+      },
+      "revision": {
+        "pass": 6,
+        "blocked_by_data": 5,
+        "fail": 1
+      },
+      "remaining_hard_clauses": {
+        "innercity_modes": 1
+      },
+      "remaining_checks": {}
+    },
+    "medium": {
+      "n": 12,
+      "first": {
+        "fail": 3,
+        "blocked_by_data": 7,
+        "pass": 2
+      },
+      "revision": {
+        "pass": 6,
+        "blocked_by_data": 6
+      },
+      "remaining_hard_clauses": {},
+      "remaining_checks": {}
+    },
+    "human": {
+      "n": 12,
+      "first": {
+        "pass": 4,
+        "fail": 7,
+        "blocked_by_data": 1
+      },
+      "revision": {
+        "pass": 11,
+        "blocked_by_data": 1
+      },
+      "remaining_hard_clauses": {},
+      "remaining_checks": {}
+    },
+    "all": {
+      "n": 36,
+      "first": {
+        "pass": 11,
+        "blocked_by_data": 12,
+        "fail": 13
+      },
+      "revision": {
+        "pass": 23,
+        "blocked_by_data": 12,
+        "fail": 1
+      },
+      "remaining_hard_clauses": {
+        "innercity_modes": 1
+      },
+      "remaining_checks": {}
+    }
+  },
+  "by_city": {
+    "xian": {
+      "cases": 18,
+      "first": {
+        "pass": 9,
+        "fail": 3,
+        "blocked_by_data": 6
+      },
+      "revision": {
+        "pass": 12,
+        "fail": 1,
+        "blocked_by_data": 5
+      },
+      "new_passes": 3,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 1
+      }
+    },
+    "xiamen": {
+      "cases": 18,
+      "first": {
+        "blocked_by_data": 6,
+        "pass": 2,
+        "fail": 10
+      },
+      "revision": {
+        "blocked_by_data": 7,
+        "pass": 11
+      },
+      "new_passes": 9,
+      "regressions": 0,
+      "remaining_failing_gates": {}
+    },
+    "all": {
+      "cases": 36,
+      "first": {
+        "pass": 11,
+        "blocked_by_data": 12,
+        "fail": 13
+      },
+      "revision": {
+        "pass": 23,
+        "blocked_by_data": 12,
+        "fail": 1
+      },
+      "new_passes": 12,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 1
+      }
+    }
+  },
+  "transport_screen": {
+    "transport_screen_blocked": {
+      "n": 7,
+      "first": {
+        "blocked_by_data": 7
+      },
+      "revision": {
+        "blocked_by_data": 7
+      }
+    },
+    "remaining_after_transport_screen": {
+      "n": 29,
+      "first": {
+        "pass": 11,
+        "fail": 13,
+        "blocked_by_data": 5
+      },
+      "revision": {
+        "pass": 23,
+        "fail": 1,
+        "blocked_by_data": 5
+      }
+    }
+  },
+  "raw_results": {
+    "path": "luna_v19_standard_36/results.json",
+    "sha256": "20c0eca7ecf20c6ecdb50f3b36d268212750b473d9a041c1d56cbf4bcf03a143",
+    "local_sha256": "9de7b5568eb471007e5493555e68be66b654568323784bf649a811434dc8437c"
+  },
+  "source_manifest": {
+    "path": "luna_v19_standard_36/sources.json",
+    "sha256": "bca490e23cbd6ef99b13fc18084cb3a85057412bfaf71228310ef1cc40c1dd3c",
+    "local_sha256": "bca490e23cbd6ef99b13fc18084cb3a85057412bfaf71228310ef1cc40c1dd3c"
+  },
+  "preflight": {
+    "path": "luna_v19_standard_36/transport_preflight.json",
+    "sha256": "90319d7ea8d016e8557dcaaef0655df482113b89e95d45168a4bf4732667beb5",
+    "local_sha256": "52d7491fffa735eba0d5a348c503a0708357d752c10ff8ce08803430ebf49e9c"
+  },
+  "lodging_preflight": {
+    "path": "luna_v19_standard_36/lodging_preflight.json",
+    "sha256": "542767a08c49eb9c349b2f60f40a601a9bc76363119911835675d879d5fcda2f",
+    "local_sha256": "f0c13d0969b6a62ccc2f253fe57f6d6b59676c7c8aaa056b14f2e819350204c6"
+  },
+  "cases": [
+    {
+      "uid": "xi-ct-e01",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "db0d008222b13679f0566723f1e293495fb589fd623249194bbe2e8b1a2bd9e2",
+      "revision_sha256": "57095d74150228d2a3f3a7e4c938ad7a7948d43a431b9fec137c0ee713446bb1",
+      "feedback_sha256": "9878947df3ac9506ce6ee5c9e9152797c673ef168506c7582c6c232a26c7f4e9",
+      "split": "easy",
+      "source_uid": "e20241028160306588034",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e01.json",
+        "sha256": "ac9b9c33012f2aeb60c9ad51273b71c89271bfd723c0ee693c47e5089a79070e",
+        "local_sha256": "ac9b9c33012f2aeb60c9ad51273b71c89271bfd723c0ee693c47e5089a79070e"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e01/feedback.json",
+        "sha256": "9878947df3ac9506ce6ee5c9e9152797c673ef168506c7582c6c232a26c7f4e9",
+        "local_sha256": "9878947df3ac9506ce6ee5c9e9152797c673ef168506c7582c6c232a26c7f4e9"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/first/submission.json",
+          "sha256": "db0d008222b13679f0566723f1e293495fb589fd623249194bbe2e8b1a2bd9e2",
+          "local_sha256": "db0d008222b13679f0566723f1e293495fb589fd623249194bbe2e8b1a2bd9e2"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "catalog_search": 3,
+          "goto": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/first/plan.json",
+          "sha256": "66f2f2f7a604c3f2b8a032bd4f4c20489e55b00193a63f2c7ad857fb016e05d8",
+          "local_sha256": "66f2f2f7a604c3f2b8a032bd4f4c20489e55b00193a63f2c7ad857fb016e05d8"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/first/score.json",
+          "sha256": "f93d51ce9e448a3f90b654f71cf22dbc71284f8406212252388256871b125fd2",
+          "local_sha256": "14935b359ea86ed267c8eac786cdc6fe98351d5f33f40fc8e4f3846a5baa762a"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/revision/submission.json",
+          "sha256": "57095d74150228d2a3f3a7e4c938ad7a7948d43a431b9fec137c0ee713446bb1",
+          "local_sha256": "57095d74150228d2a3f3a7e4c938ad7a7948d43a431b9fec137c0ee713446bb1"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/first/plan.json",
+          "sha256": "66f2f2f7a604c3f2b8a032bd4f4c20489e55b00193a63f2c7ad857fb016e05d8",
+          "local_sha256": "66f2f2f7a604c3f2b8a032bd4f4c20489e55b00193a63f2c7ad857fb016e05d8"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e01/first/score.json",
+          "sha256": "f93d51ce9e448a3f90b654f71cf22dbc71284f8406212252388256871b125fd2",
+          "local_sha256": "14935b359ea86ed267c8eac786cdc6fe98351d5f33f40fc8e4f3846a5baa762a"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "成都→西安/train": {
+            "candidates_with_time_and_price": 58,
+            "admitted_tool_records": 58,
+            "unpriced_references": 19
+          },
+          "成都→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 2
+          },
+          "西安→成都/train": {
+            "candidates_with_time_and_price": 62,
+            "admitted_tool_records": 62,
+            "unpriced_references": 23
+          },
+          "西安→成都/airplane": {
+            "candidates_with_time_and_price": 1,
+            "admitted_tool_records": 1,
+            "unpriced_references": 6
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 601,
+          "outbound": {
+            "mode": "train",
+            "service": "G322",
+            "from": "成都东",
+            "to": "西安北",
+            "start": 416,
+            "arrives": 605,
+            "price": 285
+          },
+          "return": {
+            "mode": "train",
+            "service": "G1517",
+            "from": "西安北",
+            "to": "成都东",
+            "start": 611,
+            "arrives": 860,
+            "price": 316,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 6
+        },
+        "party_intercity_floor": 601,
+        "budget_ceiling": 1100,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e01",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "成都—厦门一日往返：有价铁路去程约14小时，返程最早列车也需约14小时，无法在一天内完成往返观光；航班查询的票价未提供，不能在不造价的情况下形成完整往返方案。"
+      ],
+      "first_sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a",
+      "revision_sha256": "96242a0d4a75b087752186757a3fadf3d9c3ffc97662a36c97983ecf8c6eafa7",
+      "feedback_sha256": "2b832e645b67510b7813ea1f56fd2f121d3ab61b8fe22d1c7ccf2f0ae80d8966",
+      "split": "easy",
+      "source_uid": "e20241028160306588034",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e01.json",
+        "sha256": "4d0270b4b9e7db95ffb72bfd6c9f54548f5d0e800409b5004704151878109063",
+        "local_sha256": "4d0270b4b9e7db95ffb72bfd6c9f54548f5d0e800409b5004704151878109063"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e01/feedback.json",
+        "sha256": "2b832e645b67510b7813ea1f56fd2f121d3ab61b8fe22d1c7ccf2f0ae80d8966",
+        "local_sha256": "2b832e645b67510b7813ea1f56fd2f121d3ab61b8fe22d1c7ccf2f0ae80d8966"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e01/first/submission.json",
+          "sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a",
+          "local_sha256": "b261674bcacfc8f848918af60c30cfc85bd454c54df307eca365a0fe27efee5a"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "catalog_search": 3
+        },
+        "blocker_reasons": [
+          "成都—厦门一日往返：有价铁路去程约14小时，返程最早列车也需约14小时，无法在一天内完成往返观光；航班查询的票价未提供，不能在不造价的情况下形成完整往返方案。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e01/revision/submission.json",
+          "sha256": "96242a0d4a75b087752186757a3fadf3d9c3ffc97662a36c97983ecf8c6eafa7",
+          "local_sha256": "96242a0d4a75b087752186757a3fadf3d9c3ffc97662a36c97983ecf8c6eafa7"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [
+          "成都—厦门一日往返：有价铁路去程约14小时，返程最早列车也需约14小时，无法在一天内完成往返观光；航班查询的票价未提供，不能在不造价的情况下形成完整往返方案。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "成都→厦门/train": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 0
+          },
+          "成都→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→成都/train": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 0
+          },
+          "厦门→成都/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": 1100,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-e02",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c320dcb443e542ceba469c26185d884550043a9632a2af0c1c293478b6d52f5b",
+      "revision_sha256": "c45df9460c004f51dc96bc0119cbd17a37f689b35b8552870fa9237bceefc3af",
+      "feedback_sha256": "7c8a72b1ad16249addad9bdf6938ebbb0fb33c24b9e566997fff2e9666777d52",
+      "split": "easy",
+      "source_uid": "t20241206171912934521",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e02.json",
+        "sha256": "488dc9b1e6c31db0161432c62c27f5dec5ab95b87cdf06bb9e3be2b23717bd00",
+        "local_sha256": "488dc9b1e6c31db0161432c62c27f5dec5ab95b87cdf06bb9e3be2b23717bd00"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e02/feedback.json",
+        "sha256": "7c8a72b1ad16249addad9bdf6938ebbb0fb33c24b9e566997fff2e9666777d52",
+        "local_sha256": "7c8a72b1ad16249addad9bdf6938ebbb0fb33c24b9e566997fff2e9666777d52"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/first/submission.json",
+          "sha256": "c320dcb443e542ceba469c26185d884550043a9632a2af0c1c293478b6d52f5b",
+          "local_sha256": "c320dcb443e542ceba469c26185d884550043a9632a2af0c1c293478b6d52f5b"
+        },
+        "tool_calls": {
+          "goto": 5,
+          "catalog_search": 5,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/first/plan.json",
+          "sha256": "815a0fe12a12ca3c1a23bd922de1ba1cbee3d81e8b974269348914e89b7530d9",
+          "local_sha256": "815a0fe12a12ca3c1a23bd922de1ba1cbee3d81e8b974269348914e89b7530d9"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/first/score.json",
+          "sha256": "89c15b2f79c2fb5c86a2d22b1385d9371a02ba4c5343aaa01d12bb05b6a4afdc",
+          "local_sha256": "8d2be616b6bf802c2475eef1c545659c85debff452b7ede9e08a3f999e7a1458"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/revision/submission.json",
+          "sha256": "c45df9460c004f51dc96bc0119cbd17a37f689b35b8552870fa9237bceefc3af",
+          "local_sha256": "c45df9460c004f51dc96bc0119cbd17a37f689b35b8552870fa9237bceefc3af"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/first/plan.json",
+          "sha256": "815a0fe12a12ca3c1a23bd922de1ba1cbee3d81e8b974269348914e89b7530d9",
+          "local_sha256": "815a0fe12a12ca3c1a23bd922de1ba1cbee3d81e8b974269348914e89b7530d9"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e02/first/score.json",
+          "sha256": "89c15b2f79c2fb5c86a2d22b1385d9371a02ba4c5343aaa01d12bb05b6a4afdc",
+          "local_sha256": "8d2be616b6bf802c2475eef1c545659c85debff452b7ede9e08a3f999e7a1458"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→西安/train": {
+            "candidates_with_time_and_price": 33,
+            "admitted_tool_records": 33,
+            "unpriced_references": 1
+          },
+          "西安→上海/train": {
+            "candidates_with_time_and_price": 36,
+            "admitted_tool_records": 36,
+            "unpriced_references": 1
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 930.5,
+          "outbound": {
+            "mode": "train",
+            "service": "G3292",
+            "from": "上海虹桥",
+            "to": "西安北",
+            "start": 504,
+            "arrives": 992,
+            "price": 750
+          },
+          "return": {
+            "mode": "train",
+            "service": "K558",
+            "from": "西安",
+            "to": "上海",
+            "start": 1027,
+            "arrives": 2292,
+            "price": 180.5,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 35
+        },
+        "party_intercity_floor": 2791.5,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e02",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3abf4eea9902f88c45911f380e5cec46c451b2a60bc6ff233b8e3aa5f926f802",
+      "revision_sha256": "a85b95af6ed230a3fecc3c30a914477591a72ab028389956eccafd05711cca94",
+      "feedback_sha256": "27c643d2c622bf91a34bb99ea5bdb8649b606d7205698aa3f8432cce6f4190f2",
+      "split": "easy",
+      "source_uid": "t20241206171912934521",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e02.json",
+        "sha256": "7acdede97e96b964cb4d8fe1c253caae19ac0d095cb5c09cbc7c6a4f59329869",
+        "local_sha256": "7acdede97e96b964cb4d8fe1c253caae19ac0d095cb5c09cbc7c6a4f59329869"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e02/feedback.json",
+        "sha256": "27c643d2c622bf91a34bb99ea5bdb8649b606d7205698aa3f8432cce6f4190f2",
+        "local_sha256": "27c643d2c622bf91a34bb99ea5bdb8649b606d7205698aa3f8432cce6f4190f2"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/first/submission.json",
+          "sha256": "3abf4eea9902f88c45911f380e5cec46c451b2a60bc6ff233b8e3aa5f926f802",
+          "local_sha256": "3abf4eea9902f88c45911f380e5cec46c451b2a60bc6ff233b8e3aa5f926f802"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "catalog_search": 5,
+          "goto": 3
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/first/plan.json",
+          "sha256": "dceebfcb2aed1e4f5b11e681d7f98474add96e9f8abcb90515e8b37241ecf5b9",
+          "local_sha256": "dceebfcb2aed1e4f5b11e681d7f98474add96e9f8abcb90515e8b37241ecf5b9"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/first/score.json",
+          "sha256": "4ee464e6f39a073e64cefaafb7aebdff08711f68b9ba8e030ae958f900d0e57f",
+          "local_sha256": "c8a6f55da8108c017ee6665ec93ac54a0ea268887fff5e7c52c7148a74a6fe13"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/revision/submission.json",
+          "sha256": "a85b95af6ed230a3fecc3c30a914477591a72ab028389956eccafd05711cca94",
+          "local_sha256": "a85b95af6ed230a3fecc3c30a914477591a72ab028389956eccafd05711cca94"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/first/plan.json",
+          "sha256": "dceebfcb2aed1e4f5b11e681d7f98474add96e9f8abcb90515e8b37241ecf5b9",
+          "local_sha256": "dceebfcb2aed1e4f5b11e681d7f98474add96e9f8abcb90515e8b37241ecf5b9"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e02/first/score.json",
+          "sha256": "4ee464e6f39a073e64cefaafb7aebdff08711f68b9ba8e030ae958f900d0e57f",
+          "local_sha256": "c8a6f55da8108c017ee6665ec93ac54a0ea268887fff5e7c52c7148a74a6fe13"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "厦门→上海/train": {
+            "candidates_with_time_and_price": 25,
+            "admitted_tool_records": 25,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 915,
+          "outbound": {
+            "mode": "train",
+            "service": "D3107",
+            "from": "上海南站",
+            "to": "厦门北站",
+            "start": 590,
+            "arrives": 1070,
+            "price": 464
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3202",
+            "from": "厦门北站",
+            "to": "上海松江站",
+            "start": 809,
+            "arrives": 1268,
+            "price": 451,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 1179
+        },
+        "party_intercity_floor": 2745,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-e03",
+      "city": "xian",
+      "family": "easy",
+      "first": "fail",
+      "revision": "fail",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [
+        "hard"
+      ],
+      "blocking_reasons": [],
+      "first_sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3",
+      "revision_sha256": "aae593e1d17b5b0278b67dcf0359be85c276a5b0a8b3dc5e19a22afb0f28b424",
+      "feedback_sha256": "755376325eae923d5377fa0cb577bd9b14753cf6aae03875e16833a2575fdede",
+      "split": "easy",
+      "source_uid": "t20241206171925565020",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e03.json",
+        "sha256": "935f70988f8d883876214c4945a2dad2d1a868e35bdbf1122cfaf9dd2a7c5fdc",
+        "local_sha256": "935f70988f8d883876214c4945a2dad2d1a868e35bdbf1122cfaf9dd2a7c5fdc"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e03/feedback.json",
+        "sha256": "755376325eae923d5377fa0cb577bd9b14753cf6aae03875e16833a2575fdede",
+        "local_sha256": "755376325eae923d5377fa0cb577bd9b14753cf6aae03875e16833a2575fdede"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/first/submission.json",
+          "sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3",
+          "local_sha256": "498c4ab782faaaefa07c778a3a6ff65043d9ccfd38635e6925198d80615601c3"
+        },
+        "tool_calls": {
+          "goto": 8,
+          "catalog_search": 5,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/first/plan.json",
+          "sha256": "d1f9d92fd32e10bd65e4d448a680b21d47abb23da307005996c5728e334b16d3",
+          "local_sha256": "d1f9d92fd32e10bd65e4d448a680b21d47abb23da307005996c5728e334b16d3"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/first/score.json",
+          "sha256": "7a79da2e3893466115c29235453b794754850d71a0bd8a5e9f2f4d64cfde169d",
+          "local_sha256": "39985f23df5bc95e3925363a59ed1fd8c5b3e120bb001daa704cf240d996c93d"
+        },
+        "failed_checks": [
+          "Is_transport_correct"
+        ],
+        "failed_clauses": [
+          "innercity_modes"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/revision/submission.json",
+          "sha256": "aae593e1d17b5b0278b67dcf0359be85c276a5b0a8b3dc5e19a22afb0f28b424",
+          "local_sha256": "aae593e1d17b5b0278b67dcf0359be85c276a5b0a8b3dc5e19a22afb0f28b424"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/revision/plan.json",
+          "sha256": "21d49e3a3254298fa46333020a0da7d0c20888609dfdb21fda25084e15e6865f",
+          "local_sha256": "21d49e3a3254298fa46333020a0da7d0c20888609dfdb21fda25084e15e6865f"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e03/revision/score.json",
+          "sha256": "12e389625414fe83e06b54968d9fe0c01c18397099de3b151866b8ef50717ccf",
+          "local_sha256": "f49a3d94f200e069d712fcaf071aa8f35f5a3eb0a4d3645afe451a9776f7c6f0"
+        },
+        "failed_checks": [],
+        "failed_clauses": [
+          "innercity_modes"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→西安/train": {
+            "candidates_with_time_and_price": 29,
+            "admitted_tool_records": 29,
+            "unpriced_references": 0
+          },
+          "南京→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 2
+          },
+          "西安→南京/train": {
+            "candidates_with_time_and_price": 28,
+            "admitted_tool_records": 28,
+            "unpriced_references": 0
+          },
+          "西安→南京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 1
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 752.5,
+          "outbound": {
+            "mode": "train",
+            "service": "G94",
+            "from": "南京南",
+            "to": "西安北",
+            "start": 596,
+            "arrives": 874,
+            "price": 600
+          },
+          "return": {
+            "mode": "train",
+            "service": "K558",
+            "from": "西安",
+            "to": "南京",
+            "start": 1027,
+            "arrives": 1968,
+            "price": 152.5,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 153
+        },
+        "party_intercity_floor": 3010.0,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e03",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "fail",
+      "revision": "blocked_by_data",
+      "revision_status": "blocked_by_data",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "首稿的内城交通模式要求未满足。修订阶段针对南普陀寺、中山路步行街、厦门大学(思明校区)、沙坡尾等本题公开目录地点，从瑞颐大酒店按地铁查询均无可用路线；可用的地铁路线只连酒店和厦门北站，无法支撑要求的景点接驳。为满足地铁要求不能将无证据路线写入行程。"
+      ],
+      "first_sha256": "2968c16ee4a2b8df7018d8070c628f4910017f4bea11ef9d78fcffa8f4f42ac9",
+      "revision_sha256": "cf0207d682676e775898629187e82f9002bb3b52224282eea14fb92f5caca1af",
+      "feedback_sha256": "8ef5c8e590eb1f0739bf67c9b6ebf1eafce634691be68cc0dc2dd34b16526068",
+      "split": "easy",
+      "source_uid": "t20241206171925565020",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e03.json",
+        "sha256": "f4f2549dbb988b7980e0602567cc03f13cd05653ee8a0642ed8ed019b062d604",
+        "local_sha256": "f4f2549dbb988b7980e0602567cc03f13cd05653ee8a0642ed8ed019b062d604"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e03/feedback.json",
+        "sha256": "8ef5c8e590eb1f0739bf67c9b6ebf1eafce634691be68cc0dc2dd34b16526068",
+        "local_sha256": "8ef5c8e590eb1f0739bf67c9b6ebf1eafce634691be68cc0dc2dd34b16526068"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e03/first/submission.json",
+          "sha256": "2968c16ee4a2b8df7018d8070c628f4910017f4bea11ef9d78fcffa8f4f42ac9",
+          "local_sha256": "2968c16ee4a2b8df7018d8070c628f4910017f4bea11ef9d78fcffa8f4f42ac9"
+        },
+        "tool_calls": {
+          "catalog_search": 5,
+          "intercity_search": 2,
+          "goto": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e03/first/plan.json",
+          "sha256": "7e78d3e5256638ea85e3fd270c579147ca6c687196eec4d4c10385d950f0b831",
+          "local_sha256": "7e78d3e5256638ea85e3fd270c579147ca6c687196eec4d4c10385d950f0b831"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e03/first/score.json",
+          "sha256": "17d54658a02b1875d88b56730b3f847a6d055345b0d335354997dec895ec1358",
+          "local_sha256": "e2e8670948ddd0f65e940ebce24be3664e5d70bf8775c07e95040e0f41500b16"
+        },
+        "failed_checks": [],
+        "failed_clauses": [
+          "innercity_modes"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e03/revision/submission.json",
+          "sha256": "cf0207d682676e775898629187e82f9002bb3b52224282eea14fb92f5caca1af",
+          "local_sha256": "cf0207d682676e775898629187e82f9002bb3b52224282eea14fb92f5caca1af"
+        },
+        "tool_calls": {
+          "goto": 10,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [
+          "首稿的内城交通模式要求未满足。修订阶段针对南普陀寺、中山路步行街、厦门大学(思明校区)、沙坡尾等本题公开目录地点，从瑞颐大酒店按地铁查询均无可用路线；可用的地铁路线只连酒店和厦门北站，无法支撑要求的景点接驳。为满足地铁要求不能将无证据路线写入行程。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→厦门/train": {
+            "candidates_with_time_and_price": 14,
+            "admitted_tool_records": 14,
+            "unpriced_references": 0
+          },
+          "南京→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→南京/train": {
+            "candidates_with_time_and_price": 13,
+            "admitted_tool_records": 13,
+            "unpriced_references": 0
+          },
+          "厦门→南京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1072,
+          "outbound": {
+            "mode": "train",
+            "service": "D3295",
+            "from": "南京南站",
+            "to": "厦门北站",
+            "start": 469,
+            "arrives": 995,
+            "price": 536
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3296",
+            "from": "厦门北站",
+            "to": "南京南站",
+            "start": 589,
+            "arrives": 1098,
+            "price": 536,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 1034
+        },
+        "party_intercity_floor": 4288,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-e04",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c8b258c88d9f5a76ca12a427614013279d87f22a032a638b3cddd83cd2f2f801",
+      "revision_sha256": "b6e38b521082600848d76f32d8c263cc389d954ca1e8474613afe677942ee255",
+      "feedback_sha256": "e6ee2559a0fa4de0b22eab2e0e0a85169ecfcf1ac21eff1d851d4cb277baa850",
+      "split": "easy",
+      "source_uid": "t20241206211714064780",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e04.json",
+        "sha256": "a2f9f86692a14e6aab6d06edacb4a3103aa775d84b745893aa72ebdae6952f00",
+        "local_sha256": "a2f9f86692a14e6aab6d06edacb4a3103aa775d84b745893aa72ebdae6952f00"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e04/feedback.json",
+        "sha256": "e6ee2559a0fa4de0b22eab2e0e0a85169ecfcf1ac21eff1d851d4cb277baa850",
+        "local_sha256": "e6ee2559a0fa4de0b22eab2e0e0a85169ecfcf1ac21eff1d851d4cb277baa850"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/first/submission.json",
+          "sha256": "c8b258c88d9f5a76ca12a427614013279d87f22a032a638b3cddd83cd2f2f801",
+          "local_sha256": "c8b258c88d9f5a76ca12a427614013279d87f22a032a638b3cddd83cd2f2f801"
+        },
+        "tool_calls": {
+          "catalog_search": 5,
+          "goto": 4,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/first/plan.json",
+          "sha256": "bdda8afc4173481659ecb1e03d4c65c0ffbc17d9ae3034035b0164aab7ceafc2",
+          "local_sha256": "bdda8afc4173481659ecb1e03d4c65c0ffbc17d9ae3034035b0164aab7ceafc2"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/first/score.json",
+          "sha256": "65cad3134801f406a568bec31364e8319397c4ddbd0ef64f92286bf693ad7418",
+          "local_sha256": "991fcb6e14e54a8641559e6dbc85d47db9f60ec3ab00aaf67a128426bd9aca6d"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/revision/submission.json",
+          "sha256": "b6e38b521082600848d76f32d8c263cc389d954ca1e8474613afe677942ee255",
+          "local_sha256": "b6e38b521082600848d76f32d8c263cc389d954ca1e8474613afe677942ee255"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/first/plan.json",
+          "sha256": "bdda8afc4173481659ecb1e03d4c65c0ffbc17d9ae3034035b0164aab7ceafc2",
+          "local_sha256": "bdda8afc4173481659ecb1e03d4c65c0ffbc17d9ae3034035b0164aab7ceafc2"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e04/first/score.json",
+          "sha256": "65cad3134801f406a568bec31364e8319397c4ddbd0ef64f92286bf693ad7418",
+          "local_sha256": "991fcb6e14e54a8641559e6dbc85d47db9f60ec3ab00aaf67a128426bd9aca6d"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→西安/train": {
+            "candidates_with_time_and_price": 12,
+            "admitted_tool_records": 12,
+            "unpriced_references": 3
+          },
+          "广州→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 5
+          },
+          "西安→广州/train": {
+            "candidates_with_time_and_price": 11,
+            "admitted_tool_records": 11,
+            "unpriced_references": 0
+          },
+          "西安→广州/airplane": {
+            "candidates_with_time_and_price": 1,
+            "admitted_tool_records": 1,
+            "unpriced_references": 15
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 434,
+          "outbound": {
+            "mode": "train",
+            "service": "Z230",
+            "from": "广州北",
+            "to": "西安",
+            "start": 670,
+            "arrives": 1976,
+            "price": 217
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z232",
+            "from": "西安",
+            "to": "广州北",
+            "start": 1201,
+            "arrives": 2499,
+            "price": 217,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 665
+        },
+        "party_intercity_floor": 868,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e04",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3e8bfef62309f3f87bf616ae2abd746f5911883575a80a6d1fbf4ab7291664fd",
+      "revision_sha256": "8918095c358122ebd215128f35bba01f97069470c59a285d8c2e5db24fa21ff4",
+      "feedback_sha256": "d8ca37c237c62e15b66d5d276785b3774eb9b8a19b9b80dc3d918bc801681fbb",
+      "split": "easy",
+      "source_uid": "t20241206211714064780",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e04.json",
+        "sha256": "3156faa052b232574abdc9c626bb553cd5c64dab1bdf7ad8c564416a21b60966",
+        "local_sha256": "3156faa052b232574abdc9c626bb553cd5c64dab1bdf7ad8c564416a21b60966"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e04/feedback.json",
+        "sha256": "d8ca37c237c62e15b66d5d276785b3774eb9b8a19b9b80dc3d918bc801681fbb",
+        "local_sha256": "d8ca37c237c62e15b66d5d276785b3774eb9b8a19b9b80dc3d918bc801681fbb"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/first/submission.json",
+          "sha256": "3e8bfef62309f3f87bf616ae2abd746f5911883575a80a6d1fbf4ab7291664fd",
+          "local_sha256": "3e8bfef62309f3f87bf616ae2abd746f5911883575a80a6d1fbf4ab7291664fd"
+        },
+        "tool_calls": {
+          "catalog_search": 5,
+          "goto": 6,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/first/plan.json",
+          "sha256": "c479f4ca2d1469c09fd5e4d6135acecd56fa987bc5c5d86adff02e35743e01e7",
+          "local_sha256": "c479f4ca2d1469c09fd5e4d6135acecd56fa987bc5c5d86adff02e35743e01e7"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/first/score.json",
+          "sha256": "d0b7ff4f80367db8fbd2136daf73199c83b5e02c06f2b927e32b72e68c7bbb9c",
+          "local_sha256": "58a541b7ce12628da2f5bb581bb6e8fb6f592cb55a7c57e11dfa7bbaac7aafa0"
+        },
+        "failed_checks": [
+          "Is_space_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/revision/submission.json",
+          "sha256": "8918095c358122ebd215128f35bba01f97069470c59a285d8c2e5db24fa21ff4",
+          "local_sha256": "8918095c358122ebd215128f35bba01f97069470c59a285d8c2e5db24fa21ff4"
+        },
+        "tool_calls": {
+          "catalog_search": 2,
+          "goto": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/revision/plan.json",
+          "sha256": "33bb62eb3c6ab129ec77ecff4a93744de63055b2e714ee7962363d3a0148da10",
+          "local_sha256": "33bb62eb3c6ab129ec77ecff4a93744de63055b2e714ee7962363d3a0148da10"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e04/revision/score.json",
+          "sha256": "2c22e35268d4a1003bd268e6255d11100353199c3311a48d81339bf177b4f761",
+          "local_sha256": "c6442d97e059bfe909a7751ccb651b3cd6341c4caed87a84bcdefcbfb3b57a9f"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "广州→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→广州/train": {
+            "candidates_with_time_and_price": 19,
+            "admitted_tool_records": 19,
+            "unpriced_references": 0
+          },
+          "厦门→广州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 204,
+          "outbound": {
+            "mode": "train",
+            "service": "K229",
+            "from": "广州站",
+            "to": "厦门北站",
+            "start": 1212,
+            "arrives": 1972,
+            "price": 102
+          },
+          "return": {
+            "mode": "train",
+            "service": "K230",
+            "from": "厦门北站",
+            "to": "广州白云站",
+            "start": 1046,
+            "arrives": 1767,
+            "price": 102,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 514
+        },
+        "party_intercity_floor": 408,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-e05",
+      "city": "xian",
+      "family": "easy",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "70b1c2426c0e0386601130bb00fb8737187eb579b77eb924f4c2c00e82602829",
+      "revision_sha256": "1f06544065d600ece4924abcecbd9d3a3bab726a0d04376f1bbf960f5151e737",
+      "feedback_sha256": "8f1bd4528b2baabcd90fa3c7650580db5e7a556e07f68634fbf4fb5e0a9de430",
+      "split": "easy",
+      "source_uid": "e20241028160317745984",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e05.json",
+        "sha256": "64ed405791a289a29f544bc56f8d5accc202fda9803a8db5cb3b947e0820dce9",
+        "local_sha256": "64ed405791a289a29f544bc56f8d5accc202fda9803a8db5cb3b947e0820dce9"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e05/feedback.json",
+        "sha256": "8f1bd4528b2baabcd90fa3c7650580db5e7a556e07f68634fbf4fb5e0a9de430",
+        "local_sha256": "8f1bd4528b2baabcd90fa3c7650580db5e7a556e07f68634fbf4fb5e0a9de430"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/first/submission.json",
+          "sha256": "70b1c2426c0e0386601130bb00fb8737187eb579b77eb924f4c2c00e82602829",
+          "local_sha256": "70b1c2426c0e0386601130bb00fb8737187eb579b77eb924f4c2c00e82602829"
+        },
+        "tool_calls": {
+          "goto": 2,
+          "catalog_search": 3,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/first/plan.json",
+          "sha256": "8d945723e242f3084b15d2622e4d8fda814137878348e7b7e8fe2aa08719db7a",
+          "local_sha256": "8d945723e242f3084b15d2622e4d8fda814137878348e7b7e8fe2aa08719db7a"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/first/score.json",
+          "sha256": "ce2e7977c8aa960fcf137e136e005373b5b19f15221814607d7e719e4f9fcd1b",
+          "local_sha256": "3ed039d4bcc5f6eaf920b83230de02d23ede2d4c12c4ef1968ce6c81641eff89"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/revision/submission.json",
+          "sha256": "1f06544065d600ece4924abcecbd9d3a3bab726a0d04376f1bbf960f5151e737",
+          "local_sha256": "1f06544065d600ece4924abcecbd9d3a3bab726a0d04376f1bbf960f5151e737"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/first/plan.json",
+          "sha256": "8d945723e242f3084b15d2622e4d8fda814137878348e7b7e8fe2aa08719db7a",
+          "local_sha256": "8d945723e242f3084b15d2622e4d8fda814137878348e7b7e8fe2aa08719db7a"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e05/first/score.json",
+          "sha256": "ce2e7977c8aa960fcf137e136e005373b5b19f15221814607d7e719e4f9fcd1b",
+          "local_sha256": "3ed039d4bcc5f6eaf920b83230de02d23ede2d4c12c4ef1968ce6c81641eff89"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "武汉→西安/train": {
+            "candidates_with_time_and_price": 32,
+            "admitted_tool_records": 32,
+            "unpriced_references": 13
+          },
+          "武汉→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 2
+          },
+          "西安→武汉/train": {
+            "candidates_with_time_and_price": 19,
+            "admitted_tool_records": 19,
+            "unpriced_references": 18
+          },
+          "西安→武汉/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 3
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 588.5,
+          "outbound": {
+            "mode": "train",
+            "service": "K4286",
+            "from": "武昌",
+            "to": "西安",
+            "start": 34,
+            "arrives": 931,
+            "price": 135.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "G3926",
+            "from": "西安东",
+            "to": "汉口",
+            "start": 1001,
+            "arrives": 1177,
+            "price": 453,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 70
+        },
+        "party_intercity_floor": 588.5,
+        "budget_ceiling": 1600,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e05",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "武汉—厦门一日行程：已查铁路去程最快约6小时42分、返程最快约6小时42分，无法同日往返并游览；可见航班记录没有可用票价，无法按schema填写往返飞机成本。"
+      ],
+      "first_sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b",
+      "revision_sha256": "8626da244ad163f816f51bca9acdba5aff82f01bb037670c2d80da88d9f3817f",
+      "feedback_sha256": "491409c7cb4cd9b9248a1ff8a981fa13a5d583a158bc35b094e52fdf67788a2e",
+      "split": "easy",
+      "source_uid": "e20241028160317745984",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e05.json",
+        "sha256": "4687f761a786e36dca6992fac8239030ad2a73482be529ae1d925baf1d03b8e7",
+        "local_sha256": "4687f761a786e36dca6992fac8239030ad2a73482be529ae1d925baf1d03b8e7"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e05/feedback.json",
+        "sha256": "491409c7cb4cd9b9248a1ff8a981fa13a5d583a158bc35b094e52fdf67788a2e",
+        "local_sha256": "491409c7cb4cd9b9248a1ff8a981fa13a5d583a158bc35b094e52fdf67788a2e"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e05/first/submission.json",
+          "sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b",
+          "local_sha256": "89ebe42db52618873229ad38f05e4b46c0bc80aecac997726c0518203ff40c1b"
+        },
+        "tool_calls": {
+          "catalog_search": 3,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "武汉—厦门一日行程：已查铁路去程最快约6小时42分、返程最快约6小时42分，无法同日往返并游览；可见航班记录没有可用票价，无法按schema填写往返飞机成本。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e05/revision/submission.json",
+          "sha256": "8626da244ad163f816f51bca9acdba5aff82f01bb037670c2d80da88d9f3817f",
+          "local_sha256": "8626da244ad163f816f51bca9acdba5aff82f01bb037670c2d80da88d9f3817f"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [
+          "武汉—厦门一日行程：已查铁路去程最快约6小时42分、返程最快约6小时42分，无法同日往返并游览；可见航班记录没有可用票价，无法按schema填写往返飞机成本。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "武汉→厦门/train": {
+            "candidates_with_time_and_price": 8,
+            "admitted_tool_records": 8,
+            "unpriced_references": 2
+          },
+          "武汉→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→武汉/train": {
+            "candidates_with_time_and_price": 9,
+            "admitted_tool_records": 9,
+            "unpriced_references": 1
+          },
+          "厦门→武汉/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": 1600,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-e06",
+      "city": "xian",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+      ],
+      "first_sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967",
+      "revision_sha256": "0b91314a4918da32444cd941593ebe818d50ade1dd39f91920ac438a531b0e82",
+      "feedback_sha256": "07a1f136570dd68a92e82f5a76a94f2e9d176d28bd71162e14c7c9e4ebd03a85",
+      "split": "easy",
+      "source_uid": "t20241206211714065984",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-e06.json",
+        "sha256": "df21eae405190368190e2c6fb031910d414ab23517870296d97e572e19b39867",
+        "local_sha256": "df21eae405190368190e2c6fb031910d414ab23517870296d97e572e19b39867"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-e06/feedback.json",
+        "sha256": "07a1f136570dd68a92e82f5a76a94f2e9d176d28bd71162e14c7c9e4ebd03a85",
+        "local_sha256": "07a1f136570dd68a92e82f5a76a94f2e9d176d28bd71162e14c7c9e4ebd03a85"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e06/first/submission.json",
+          "sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967",
+          "local_sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967"
+        },
+        "tool_calls": {
+          "catalog_search": 3,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-e06/revision/submission.json",
+          "sha256": "0b91314a4918da32444cd941593ebe818d50ade1dd39f91920ac438a531b0e82",
+          "local_sha256": "0b91314a4918da32444cd941593ebe818d50ade1dd39f91920ac438a531b0e82"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [
+          "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 11
+          },
+          "西安→北京/airplane": {
+            "candidates_with_time_and_price": 3,
+            "admitted_tool_records": 3,
+            "unpriced_references": 17
+          }
+        },
+        "allowed_intercity_modes": [
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-e06",
+      "city": "xiamen",
+      "family": "easy",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "题面明确选择飞机；北京—厦门去程和返程航班均有时刻但缺票价，无法填写要求的数值票价/总价。铁路虽有价，但不符合所选交通方式。"
+      ],
+      "first_sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20",
+      "revision_sha256": "09e02f7d6015fc95e818c620b28b5b34054138ef6c62f0f6fb32b1059fd824a1",
+      "feedback_sha256": "4e7f84242b74f45c24197b87209c9d4fb8bcb8b7e7d004a444cd2305cee34362",
+      "split": "easy",
+      "source_uid": "t20241206211714065984",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-e06.json",
+        "sha256": "4fa8bc823d69df87f8518c2165debbb28ae93210c5e084ffe77da93853dad6c6",
+        "local_sha256": "4fa8bc823d69df87f8518c2165debbb28ae93210c5e084ffe77da93853dad6c6"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-e06/feedback.json",
+        "sha256": "4e7f84242b74f45c24197b87209c9d4fb8bcb8b7e7d004a444cd2305cee34362",
+        "local_sha256": "4e7f84242b74f45c24197b87209c9d4fb8bcb8b7e7d004a444cd2305cee34362"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e06/first/submission.json",
+          "sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20",
+          "local_sha256": "430e028a37469f503b2c17f6f494d210bd81c9714d79581522a489b676beed20"
+        },
+        "tool_calls": {
+          "catalog_search": 3,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "题面明确选择飞机；北京—厦门去程和返程航班均有时刻但缺票价，无法填写要求的数值票价/总价。铁路虽有价，但不符合所选交通方式。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-e06/revision/submission.json",
+          "sha256": "09e02f7d6015fc95e818c620b28b5b34054138ef6c62f0f6fb32b1059fd824a1",
+          "local_sha256": "09e02f7d6015fc95e818c620b28b5b34054138ef6c62f0f6fb32b1059fd824a1"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [
+          "题面明确选择飞机；北京—厦门去程和返程航班均有时刻但缺票价，无法填写要求的数值票价/总价。铁路虽有价，但不符合所选交通方式。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→北京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m01",
+      "city": "xian",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8e41d938139dd60945d3d81b1bf513e1bfca0b8f58062d5d39af6835719fb5b7",
+      "revision_sha256": "1005aeee5a1db0e01cc517562ecd4bde286206740eb24d0964fa77369ac6f024",
+      "feedback_sha256": "d5e9532562cdb0b2ee2bd210ff0cc3cf087f3e9052a5fbcabc09b60acee97b46",
+      "split": "medium",
+      "source_uid": "e20241028160842228543",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m01.json",
+        "sha256": "8ea27a1235717a0355127aaf2784fe51a33030e7fab2fd77a29e752d3252a173",
+        "local_sha256": "8ea27a1235717a0355127aaf2784fe51a33030e7fab2fd77a29e752d3252a173"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m01/feedback.json",
+        "sha256": "d5e9532562cdb0b2ee2bd210ff0cc3cf087f3e9052a5fbcabc09b60acee97b46",
+        "local_sha256": "d5e9532562cdb0b2ee2bd210ff0cc3cf087f3e9052a5fbcabc09b60acee97b46"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/first/submission.json",
+          "sha256": "8e41d938139dd60945d3d81b1bf513e1bfca0b8f58062d5d39af6835719fb5b7",
+          "local_sha256": "8e41d938139dd60945d3d81b1bf513e1bfca0b8f58062d5d39af6835719fb5b7"
+        },
+        "tool_calls": {
+          "intercity_search": 8,
+          "catalog_search": 11,
+          "catalog_list": 3,
+          "goto": 10
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/first/plan.json",
+          "sha256": "f2b9bc05277b29742bca4e09c520d85fc406fbbbd8e585328c0e20a9d69df30d",
+          "local_sha256": "f2b9bc05277b29742bca4e09c520d85fc406fbbbd8e585328c0e20a9d69df30d"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/first/score.json",
+          "sha256": "914993ba90e5e85a46fb78d0e91842db35eec156537dc23ac080bf4676eedf18",
+          "local_sha256": "62ce81ba6356a7fc3379c6b21f34712718bab3322ef3a8a437cb15ae48134328"
+        },
+        "failed_checks": [],
+        "failed_clauses": [
+          "innercity_modes"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/revision/submission.json",
+          "sha256": "1005aeee5a1db0e01cc517562ecd4bde286206740eb24d0964fa77369ac6f024",
+          "local_sha256": "1005aeee5a1db0e01cc517562ecd4bde286206740eb24d0964fa77369ac6f024"
+        },
+        "tool_calls": {
+          "goto": 15,
+          "catalog_search": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/revision/plan.json",
+          "sha256": "1f3ae8708665484c458cc7168c99af114bdb574e6884a69d2d7bd4df96503f9e",
+          "local_sha256": "1f3ae8708665484c458cc7168c99af114bdb574e6884a69d2d7bd4df96503f9e"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m01/revision/score.json",
+          "sha256": "9eaad8b31e73d2b27a3f661737299e871aa6696140566477528a364a8107a418",
+          "local_sha256": "22198ce58320e2af83f921adcced0800d3a768cdfcc9ff99e3728328dfafa5f0"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→西安/train": {
+            "candidates_with_time_and_price": 33,
+            "admitted_tool_records": 33,
+            "unpriced_references": 1
+          },
+          "上海→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 34
+          },
+          "西安→上海/train": {
+            "candidates_with_time_and_price": 36,
+            "admitted_tool_records": 36,
+            "unpriced_references": 1
+          },
+          "西安→上海/airplane": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 21
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 361.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K2186",
+            "from": "上海",
+            "to": "西安",
+            "start": 537,
+            "arrives": 1727,
+            "price": 180.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "K2188",
+            "from": "西安",
+            "to": "上海",
+            "start": 516,
+            "arrives": 1773,
+            "price": 180.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 229
+        },
+        "party_intercity_floor": 722.0,
+        "budget_ceiling": 6000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m01",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "0ee976dba49dc68ab7dbcc38bd3d9da2d87d0398422d73a73987959c7d6e6be3",
+      "revision_sha256": "4093994a6bdb5a5a5a588bbe72e93eecff854f43077a2bee3d343814570496dd",
+      "feedback_sha256": "a6517ccfd193986d54e223323bdd678d12c5353085efbfed5e8f17e6f8cb8a9b",
+      "split": "medium",
+      "source_uid": "e20241028160842228543",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m01.json",
+        "sha256": "588875f293dbebb4779e28611c2a0c0b5af06644f056bc71204514c6caee40df",
+        "local_sha256": "588875f293dbebb4779e28611c2a0c0b5af06644f056bc71204514c6caee40df"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m01/feedback.json",
+        "sha256": "a6517ccfd193986d54e223323bdd678d12c5353085efbfed5e8f17e6f8cb8a9b",
+        "local_sha256": "a6517ccfd193986d54e223323bdd678d12c5353085efbfed5e8f17e6f8cb8a9b"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/first/submission.json",
+          "sha256": "0ee976dba49dc68ab7dbcc38bd3d9da2d87d0398422d73a73987959c7d6e6be3",
+          "local_sha256": "0ee976dba49dc68ab7dbcc38bd3d9da2d87d0398422d73a73987959c7d6e6be3"
+        },
+        "tool_calls": {
+          "goto": 14,
+          "room_options": 1,
+          "catalog_search": 7,
+          "intercity_search": 3,
+          "catalog_list": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/first/plan.json",
+          "sha256": "4458e79dca1aa43e4b3286535309113faaee4f2d632096378f9271fd87036983",
+          "local_sha256": "4458e79dca1aa43e4b3286535309113faaee4f2d632096378f9271fd87036983"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/first/score.json",
+          "sha256": "554da2210ea6037f2c2b57c01646893856b0788d39cb8f27101211d649021696",
+          "local_sha256": "e2d1be844821cea68c8f4aa1611071e8f7d689dda1187c4c6ec2a4ec1280f18b"
+        },
+        "failed_checks": [
+          "Is_transport_correct",
+          "Is_time_correct"
+        ],
+        "failed_clauses": [
+          "innercity_modes"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/revision/submission.json",
+          "sha256": "4093994a6bdb5a5a5a588bbe72e93eecff854f43077a2bee3d343814570496dd",
+          "local_sha256": "4093994a6bdb5a5a5a588bbe72e93eecff854f43077a2bee3d343814570496dd"
+        },
+        "tool_calls": {
+          "goto": 8
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/revision/plan.json",
+          "sha256": "7e9816ad48491a469df676b43e30caacb2f41572e10d4aa6d477045e51b32a95",
+          "local_sha256": "7e9816ad48491a469df676b43e30caacb2f41572e10d4aa6d477045e51b32a95"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m01/revision/score.json",
+          "sha256": "565ca9653a9e7c667b7aaea660a3c901065540ba5023ff61fa77aaf1c379109c",
+          "local_sha256": "45a278b4157a90616e4112b9670b480728a6348ad7bc660a023f4fd9ac80b12d"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "上海→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→上海/train": {
+            "candidates_with_time_and_price": 25,
+            "admitted_tool_records": 25,
+            "unpriced_references": 0
+          },
+          "厦门→上海/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 915,
+          "outbound": {
+            "mode": "train",
+            "service": "D3107",
+            "from": "上海南站",
+            "to": "厦门北站",
+            "start": 590,
+            "arrives": 1070,
+            "price": 464
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3202",
+            "from": "厦门北站",
+            "to": "上海松江站",
+            "start": 809,
+            "arrives": 1268,
+            "price": 451,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 2619
+        },
+        "party_intercity_floor": 1830,
+        "budget_ceiling": 6000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m02",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "ee8049ade415af05d616e540453d1556644383bcf50ed7c0ee79671699d49c59",
+      "revision_sha256": "49605d0f156d23e3f682f5beeca08ac6bb372631ae4f14634ebc919433f7da3b",
+      "feedback_sha256": "5a451cfafba85b0cb62193dbc1832507fa90ff8ab0716f73b609cc8beb167228",
+      "split": "medium",
+      "source_uid": "e20241028160951725307",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m02.json",
+        "sha256": "0957cc3766a2b06731e73444e6d15c00f258571f12c8d7ed8b0a2a5f5c4b87ab",
+        "local_sha256": "0957cc3766a2b06731e73444e6d15c00f258571f12c8d7ed8b0a2a5f5c4b87ab"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m02/feedback.json",
+        "sha256": "5a451cfafba85b0cb62193dbc1832507fa90ff8ab0716f73b609cc8beb167228",
+        "local_sha256": "5a451cfafba85b0cb62193dbc1832507fa90ff8ab0716f73b609cc8beb167228"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m02/first/submission.json",
+          "sha256": "ee8049ade415af05d616e540453d1556644383bcf50ed7c0ee79671699d49c59",
+          "local_sha256": "ee8049ade415af05d616e540453d1556644383bcf50ed7c0ee79671699d49c59"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "catalog_list": 1,
+          "catalog_search": 1
+        },
+        "blocker_reasons": [
+          "为 3 人的行程检索了西安住宿（catalog_search 文本“双床”、住宿列表前 60 条）；没有发现可同时核实双床房代理数和房价的住宿记录。仅有单床数代理或无价住宿，无法按要求安排 2 间有可核实价格的双床房。未用未知房价补预算。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m02/revision/submission.json",
+          "sha256": "49605d0f156d23e3f682f5beeca08ac6bb372631ae4f14634ebc919433f7da3b",
+          "local_sha256": "49605d0f156d23e3f682f5beeca08ac6bb372631ae4f14634ebc919433f7da3b"
+        },
+        "tool_calls": {
+          "goto": 9,
+          "catalog_list": 13,
+          "catalog_search": 3,
+          "intercity_search": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m02/revision/plan.json",
+          "sha256": "b817abb88d55af527c737f92bc57061f9ee8bdedb077152e698b7763fc3bf166",
+          "local_sha256": "b817abb88d55af527c737f92bc57061f9ee8bdedb077152e698b7763fc3bf166"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m02/revision/score.json",
+          "sha256": "289d386f89d1963f3adb9946ce8eaa0798bd2aa1519c1e5c8426771739e56c51",
+          "local_sha256": "07de88dbf4cad24bb71efaf2e3b21a7422be7b08019fbceac3f707dc340fdd25"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→西安/train": {
+            "candidates_with_time_and_price": 29,
+            "admitted_tool_records": 29,
+            "unpriced_references": 0
+          },
+          "西安→南京/train": {
+            "candidates_with_time_and_price": 28,
+            "admitted_tool_records": 28,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 305.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K2186",
+            "from": "南京",
+            "to": "西安",
+            "start": 767,
+            "arrives": 1727,
+            "price": 152.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "K2188",
+            "from": "西安",
+            "to": "南京",
+            "start": 516,
+            "arrives": 1537,
+            "price": 152.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 229
+        },
+        "party_intercity_floor": 915.0,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m02",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "50fe03e26d4fd7c9fc379b754bdba7b33aaac3a59279c27e49f7a51abe035331",
+      "revision_sha256": "a38068554587f6219031c8038886daf0e875b8cc6623a456ddd9e233fbbb2fc4",
+      "feedback_sha256": "2628f7afdbfdb4f21fc0dc451f9d0997f8be815f8f402811884d0b429208c139",
+      "split": "medium",
+      "source_uid": "e20241028160951725307",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m02.json",
+        "sha256": "9bcdbd116ecd907b59e2ba9b0dbd8a34016d9a7fac2c9b38eed8f976eb8c38f8",
+        "local_sha256": "9bcdbd116ecd907b59e2ba9b0dbd8a34016d9a7fac2c9b38eed8f976eb8c38f8"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m02/feedback.json",
+        "sha256": "2628f7afdbfdb4f21fc0dc451f9d0997f8be815f8f402811884d0b429208c139",
+        "local_sha256": "2628f7afdbfdb4f21fc0dc451f9d0997f8be815f8f402811884d0b429208c139"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/first/submission.json",
+          "sha256": "50fe03e26d4fd7c9fc379b754bdba7b33aaac3a59279c27e49f7a51abe035331",
+          "local_sha256": "50fe03e26d4fd7c9fc379b754bdba7b33aaac3a59279c27e49f7a51abe035331"
+        },
+        "tool_calls": {
+          "goto": 11,
+          "catalog_search": 7,
+          "intercity_search": 3,
+          "room_options": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/first/plan.json",
+          "sha256": "b9fb814ba1aa932819502d1d682b2a7bf46337916bde42d5091cf9805407d248",
+          "local_sha256": "b9fb814ba1aa932819502d1d682b2a7bf46337916bde42d5091cf9805407d248"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/first/score.json",
+          "sha256": "c9f6c5cc4a9beedb0fce1da6fe222b317397d0e22c516a038379041e3afcdc46",
+          "local_sha256": "a730cf695e55a2c01e1cec265b2d57ee1f4c674e96c856586b59c953247ce194"
+        },
+        "failed_checks": [
+          "Is_transport_correct",
+          "Is_time_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/revision/submission.json",
+          "sha256": "a38068554587f6219031c8038886daf0e875b8cc6623a456ddd9e233fbbb2fc4",
+          "local_sha256": "a38068554587f6219031c8038886daf0e875b8cc6623a456ddd9e233fbbb2fc4"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/revision/plan.json",
+          "sha256": "0f0eb43169328874cd05d7d0aeda906a8343d611c0b5e5e18fac56c759d584c8",
+          "local_sha256": "0f0eb43169328874cd05d7d0aeda906a8343d611c0b5e5e18fac56c759d584c8"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m02/revision/score.json",
+          "sha256": "f304f53e457bebb1db841f19223ee6b3e581159adb061941314fa9da5360f4d6",
+          "local_sha256": "95a66b45b756c7e6df5edcf6f18eefe7f099427adc42ea55b48e7f911a17d2a7"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→厦门/train": {
+            "candidates_with_time_and_price": 14,
+            "admitted_tool_records": 14,
+            "unpriced_references": 0
+          },
+          "厦门→南京/train": {
+            "candidates_with_time_and_price": 13,
+            "admitted_tool_records": 13,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1072,
+          "outbound": {
+            "mode": "train",
+            "service": "D3295",
+            "from": "南京南站",
+            "to": "厦门北站",
+            "start": 469,
+            "arrives": 995,
+            "price": 536
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3296",
+            "from": "厦门北站",
+            "to": "南京南站",
+            "start": 589,
+            "arrives": 1098,
+            "price": 536,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 2474
+        },
+        "party_intercity_floor": 3216,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m03",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "blocked_by_data",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "复核了本题 2 日广州—西安往返车次，并在住宿目录全集中找到可核价双床数代理（西安新城康泰宾馆，103元/间/晚）；原先的住宿阻塞可解除。但满足在西安过一晚并于第2日返程的可见同日到达高铁组合（例如 G404 09:49–16:50、G840 次日10:15–19:12）票价合计974+974元/人，4人至少7792元，已超过5600元预算，未计两间房和市内费用。低价候选 Z138 为236元/人但次日07:22才到西安；两日窗口内再乘同日返程列车，就没有在西安过夜并使用题目要求的两间双床房的时间。无法在该时限和预算下做出满足住宿及游览要求的往返行程。"
+      ],
+      "first_sha256": "31b7d1c49b13acdf92e2a5bcce8fbefd7ed7400a60286f0c0a56a46d9d4a866e",
+      "revision_sha256": "610cd54c45fee8a3eea6540a510d17d53b40352e3ae65b55a3ebffc247effa17",
+      "feedback_sha256": "c883dca4fc7180c0a6da39d5d45b279d581b8249cf73f408d80b0fb7079cd0a7",
+      "split": "medium",
+      "source_uid": "e20241028160848776495",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m03.json",
+        "sha256": "e4396e568c3558671c64ba3ce6a3c36999b2443ad0a5980dad6afc8648dc566b",
+        "local_sha256": "e4396e568c3558671c64ba3ce6a3c36999b2443ad0a5980dad6afc8648dc566b"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m03/feedback.json",
+        "sha256": "c883dca4fc7180c0a6da39d5d45b279d581b8249cf73f408d80b0fb7079cd0a7",
+        "local_sha256": "c883dca4fc7180c0a6da39d5d45b279d581b8249cf73f408d80b0fb7079cd0a7"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m03/first/submission.json",
+          "sha256": "31b7d1c49b13acdf92e2a5bcce8fbefd7ed7400a60286f0c0a56a46d9d4a866e",
+          "local_sha256": "31b7d1c49b13acdf92e2a5bcce8fbefd7ed7400a60286f0c0a56a46d9d4a866e"
+        },
+        "tool_calls": {
+          "catalog_search": 1,
+          "intercity_search": 2,
+          "catalog_list": 1
+        },
+        "blocker_reasons": [
+          "为 4 人的行程检索了西安住宿（catalog_search 文本“双床”、住宿列表前 60 条）；没有发现可同时核实双床房代理数和房价的住宿记录。仅有单床数代理或无价住宿，无法按要求安排 2 间有可核实价格的双床房。未用未知房价补预算。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m03/revision/submission.json",
+          "sha256": "610cd54c45fee8a3eea6540a510d17d53b40352e3ae65b55a3ebffc247effa17",
+          "local_sha256": "610cd54c45fee8a3eea6540a510d17d53b40352e3ae65b55a3ebffc247effa17"
+        },
+        "tool_calls": {
+          "catalog_list": 13,
+          "intercity_search": 4,
+          "catalog_search": 1
+        },
+        "blocker_reasons": [
+          "复核了本题 2 日广州—西安往返车次，并在住宿目录全集中找到可核价双床数代理（西安新城康泰宾馆，103元/间/晚）；原先的住宿阻塞可解除。但满足在西安过一晚并于第2日返程的可见同日到达高铁组合（例如 G404 09:49–16:50、G840 次日10:15–19:12）票价合计974+974元/人，4人至少7792元，已超过5600元预算，未计两间房和市内费用。低价候选 Z138 为236元/人但次日07:22才到西安；两日窗口内再乘同日返程列车，就没有在西安过夜并使用题目要求的两间双床房的时间。无法在该时限和预算下做出满足住宿及游览要求的往返行程。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→西安/train": {
+            "candidates_with_time_and_price": 12,
+            "admitted_tool_records": 12,
+            "unpriced_references": 3
+          },
+          "西安→广州/train": {
+            "candidates_with_time_and_price": 11,
+            "admitted_tool_records": 11,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1191,
+          "outbound": {
+            "mode": "train",
+            "service": "G842",
+            "from": "广州南站",
+            "to": "西安北",
+            "start": 531,
+            "arrives": 1105,
+            "price": 974
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z232",
+            "from": "西安",
+            "to": "广州北",
+            "start": 1201,
+            "arrives": 2499,
+            "price": 217,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 96
+        },
+        "party_intercity_floor": 4764,
+        "budget_ceiling": 5600,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m03",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c236f11f8e083573aaae9c0d3c3a460564b84966fb7eaa824df7c53649effd5a",
+      "revision_sha256": "018b0c9276b841ab5e451e70a3767e0835c26c8b22279c488fd57254c4446b95",
+      "feedback_sha256": "b9113de4205708dec40236efc771fff6ffa42be88b141dc14e9855180717a312",
+      "split": "medium",
+      "source_uid": "e20241028160848776495",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m03.json",
+        "sha256": "9b0de7801a02215a779a157ed7ef7dd3f97393a56c5e5876cbf1650845ef5a95",
+        "local_sha256": "9b0de7801a02215a779a157ed7ef7dd3f97393a56c5e5876cbf1650845ef5a95"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m03/feedback.json",
+        "sha256": "b9113de4205708dec40236efc771fff6ffa42be88b141dc14e9855180717a312",
+        "local_sha256": "b9113de4205708dec40236efc771fff6ffa42be88b141dc14e9855180717a312"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/first/submission.json",
+          "sha256": "c236f11f8e083573aaae9c0d3c3a460564b84966fb7eaa824df7c53649effd5a",
+          "local_sha256": "c236f11f8e083573aaae9c0d3c3a460564b84966fb7eaa824df7c53649effd5a"
+        },
+        "tool_calls": {
+          "goto": 7,
+          "room_options": 1,
+          "catalog_search": 6,
+          "intercity_search": 3
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/first/plan.json",
+          "sha256": "8d62f5b097f99741affad7eee05c7d2d795684f2c28dc076048ed513bc33c606",
+          "local_sha256": "8d62f5b097f99741affad7eee05c7d2d795684f2c28dc076048ed513bc33c606"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/first/score.json",
+          "sha256": "38eee1cccd200514e52e6988e374db1bc021f6babc83b8638ecacc1225cd0eb2",
+          "local_sha256": "4af17ed738fc621a9e22a18b8e0044881eb87f0990e024e84d98971052741192"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/revision/submission.json",
+          "sha256": "018b0c9276b841ab5e451e70a3767e0835c26c8b22279c488fd57254c4446b95",
+          "local_sha256": "018b0c9276b841ab5e451e70a3767e0835c26c8b22279c488fd57254c4446b95"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/first/plan.json",
+          "sha256": "8d62f5b097f99741affad7eee05c7d2d795684f2c28dc076048ed513bc33c606",
+          "local_sha256": "8d62f5b097f99741affad7eee05c7d2d795684f2c28dc076048ed513bc33c606"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m03/first/score.json",
+          "sha256": "38eee1cccd200514e52e6988e374db1bc021f6babc83b8638ecacc1225cd0eb2",
+          "local_sha256": "4af17ed738fc621a9e22a18b8e0044881eb87f0990e024e84d98971052741192"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "厦门→广州/train": {
+            "candidates_with_time_and_price": 19,
+            "admitted_tool_records": 19,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 394,
+          "outbound": {
+            "mode": "train",
+            "service": "K229",
+            "from": "广州站",
+            "to": "厦门北站",
+            "start": 1212,
+            "arrives": 1972,
+            "price": 102
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3249",
+            "from": "厦门北站",
+            "to": "广州新塘站",
+            "start": 698,
+            "arrives": 947,
+            "price": 292,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 166
+        },
+        "party_intercity_floor": 1576,
+        "budget_ceiling": 5600,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m04",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按杭州→西安、西安→杭州查询火车。可见的低价去程 K308 为 02:27→22:24（票价 173.5），次日可见返程最早 D114 00:33 出发，或 K306 06:45 出发并于第三天 03:21 到达；在总行程仅 2 个日历天时，去程抵达已晚于景点营业时间，返程选项又不能留出可用游览时段。更便宜的候选无法组成有可用游览时间的两日往返安排，因此无法给出满足“去西安玩两天”的可执行行程。"
+      ],
+      "first_sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad",
+      "revision_sha256": "9602169b51d20a581217a37b287f38175d7b2d5579acdc29cdf218e3bfeede51",
+      "feedback_sha256": "9ae8eb98b976126880d0918d5794bbc4b8dd53d496f1dcac61719b06c0d0953d",
+      "split": "medium",
+      "source_uid": "e20241028160851829629",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m04.json",
+        "sha256": "828e218c1570e9b79d1a1c425812d66e5cae51949261bbe993f7094a05218759",
+        "local_sha256": "828e218c1570e9b79d1a1c425812d66e5cae51949261bbe993f7094a05218759"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m04/feedback.json",
+        "sha256": "9ae8eb98b976126880d0918d5794bbc4b8dd53d496f1dcac61719b06c0d0953d",
+        "local_sha256": "9ae8eb98b976126880d0918d5794bbc4b8dd53d496f1dcac61719b06c0d0953d"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m04/first/submission.json",
+          "sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad",
+          "local_sha256": "5b7df97eb99955a3a503d2c2ff785716ceb269194875ecdf909e7c467a6015ad"
+        },
+        "tool_calls": {
+          "catalog_search": 1,
+          "catalog_list": 1,
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已按杭州→西安、西安→杭州查询火车。可见的低价去程 K308 为 02:27→22:24（票价 173.5），次日可见返程最早 D114 00:33 出发，或 K306 06:45 出发并于第三天 03:21 到达；在总行程仅 2 个日历天时，去程抵达已晚于景点营业时间，返程选项又不能留出可用游览时段。更便宜的候选无法组成有可用游览时间的两日往返安排，因此无法给出满足“去西安玩两天”的可执行行程。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m04/revision/submission.json",
+          "sha256": "9602169b51d20a581217a37b287f38175d7b2d5579acdc29cdf218e3bfeede51",
+          "local_sha256": "9602169b51d20a581217a37b287f38175d7b2d5579acdc29cdf218e3bfeede51"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已按杭州→西安、西安→杭州查询火车。可见的低价去程 K308 为 02:27→22:24（票价 173.5），次日可见返程最早 D114 00:33 出发，或 K306 06:45 出发并于第三天 03:21 到达；在总行程仅 2 个日历天时，去程抵达已晚于景点营业时间，返程选项又不能留出可用游览时段。更便宜的候选无法组成有可用游览时间的两日往返安排，因此无法给出满足“去西安玩两天”的可执行行程。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "杭州→西安/train": {
+            "candidates_with_time_and_price": 16,
+            "admitted_tool_records": 16,
+            "unpriced_references": 2
+          },
+          "杭州→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 4
+          },
+          "西安→杭州/train": {
+            "candidates_with_time_and_price": 16,
+            "admitted_tool_records": 16,
+            "unpriced_references": 3
+          },
+          "西安→杭州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 9
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 347.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K308",
+            "from": "杭州",
+            "to": "西安",
+            "start": 147,
+            "arrives": 1344,
+            "price": 173.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z596",
+            "from": "西安",
+            "to": "杭州",
+            "start": 93,
+            "arrives": 1219,
+            "price": 173.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 189
+        },
+        "party_intercity_floor": 694.0,
+        "budget_ceiling": 1500,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m04",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已查询杭州→厦门和厦门→杭州的火车。往返最低可见票价候选为 D3211 355.5 元/人及 G1680 422 元/人，2 人往返合计 1555 元，已超过 1500 元预算；还未计住宿、市内交通和餐饮。不能在不虚构票价的情况下提交符合预算的方案。"
+      ],
+      "first_sha256": "ec6b3747120190afd91ff045553905ea77f0bec9132de4ec6da2843f4d9d8028",
+      "revision_sha256": "1b7642b55bc882d7fdbff762b9069c88aac712afe47e9e78baef47032bba0b23",
+      "feedback_sha256": "5072402503e2da5e8d46a217eda9cb8bddc5531646933a9eb46194cc504eef39",
+      "split": "medium",
+      "source_uid": "e20241028160851829629",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m04.json",
+        "sha256": "401471b35e77b935969f760181110dbd7b05a32ef9b26cd7f4de07e048b1580a",
+        "local_sha256": "401471b35e77b935969f760181110dbd7b05a32ef9b26cd7f4de07e048b1580a"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m04/feedback.json",
+        "sha256": "5072402503e2da5e8d46a217eda9cb8bddc5531646933a9eb46194cc504eef39",
+        "local_sha256": "5072402503e2da5e8d46a217eda9cb8bddc5531646933a9eb46194cc504eef39"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m04/first/submission.json",
+          "sha256": "ec6b3747120190afd91ff045553905ea77f0bec9132de4ec6da2843f4d9d8028",
+          "local_sha256": "ec6b3747120190afd91ff045553905ea77f0bec9132de4ec6da2843f4d9d8028"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "catalog_list": 1,
+          "catalog_search": 1
+        },
+        "blocker_reasons": [
+          "已查询杭州→厦门和厦门→杭州的火车。往返最低可见票价候选为 D3211 355.5 元/人及 G1680 422 元/人，2 人往返合计 1555 元，已超过 1500 元预算；还未计住宿、市内交通和餐饮。不能在不虚构票价的情况下提交符合预算的方案。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m04/revision/submission.json",
+          "sha256": "1b7642b55bc882d7fdbff762b9069c88aac712afe47e9e78baef47032bba0b23",
+          "local_sha256": "1b7642b55bc882d7fdbff762b9069c88aac712afe47e9e78baef47032bba0b23"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已查询杭州→厦门和厦门→杭州的火车。往返最低可见票价候选为 D3211 355.5 元/人及 G1680 422 元/人，2 人往返合计 1555 元，已超过 1500 元预算；还未计住宿、市内交通和餐饮。不能在不虚构票价的情况下提交符合预算的方案。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "杭州→厦门/train": {
+            "candidates_with_time_and_price": 40,
+            "admitted_tool_records": 40,
+            "unpriced_references": 0
+          },
+          "杭州→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→杭州/train": {
+            "candidates_with_time_and_price": 41,
+            "admitted_tool_records": 41,
+            "unpriced_references": 0
+          },
+          "厦门→杭州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 711.0,
+          "outbound": {
+            "mode": "train",
+            "service": "D3211",
+            "from": "杭州东站",
+            "to": "厦门北站",
+            "start": 423,
+            "arrives": 779,
+            "price": 355.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3212",
+            "from": "厦门北站",
+            "to": "杭州东站",
+            "start": 1026,
+            "arrives": 1372,
+            "price": 355.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 1687
+        },
+        "party_intercity_floor": 1422.0,
+        "budget_ceiling": 1500,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m05",
+      "city": "xian",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按北京→西安和西安→北京查询 airplane。去程记录仅有无票价的航班预览（如 CCA1201、MU2118），查询结果没有带 Cost 的去程航班；返程虽有带 Cost 的 MU2123、CA1206、MU2107，但单程金额缺失，无法按 schema 填写去程 cost 或核算往返预算。快照无 travel_date，不能补造金额。"
+      ],
+      "first_sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9",
+      "revision_sha256": "b5e72a45afac7bb92eea58838b752f07df4b4218461e1928bc88a04e1c1c5859",
+      "feedback_sha256": "483f8b3cc67695e175ec1e1e7cb548255342d263c77a1c176d39af9bf9a3e07f",
+      "split": "medium",
+      "source_uid": "e20241028161145339341",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m05.json",
+        "sha256": "20671925eb0c0a221d2b7f5cbe432c23d1d46f89a82156458548ad56ef33bccd",
+        "local_sha256": "20671925eb0c0a221d2b7f5cbe432c23d1d46f89a82156458548ad56ef33bccd"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m05/feedback.json",
+        "sha256": "483f8b3cc67695e175ec1e1e7cb548255342d263c77a1c176d39af9bf9a3e07f",
+        "local_sha256": "483f8b3cc67695e175ec1e1e7cb548255342d263c77a1c176d39af9bf9a3e07f"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m05/first/submission.json",
+          "sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9",
+          "local_sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9"
+        },
+        "tool_calls": {
+          "intercity_search": 5
+        },
+        "blocker_reasons": [
+          "已按北京→西安和西安→北京查询 airplane。去程记录仅有无票价的航班预览（如 CCA1201、MU2118），查询结果没有带 Cost 的去程航班；返程虽有带 Cost 的 MU2123、CA1206、MU2107，但单程金额缺失，无法按 schema 填写去程 cost 或核算往返预算。快照无 travel_date，不能补造金额。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m05/revision/submission.json",
+          "sha256": "b5e72a45afac7bb92eea58838b752f07df4b4218461e1928bc88a04e1c1c5859",
+          "local_sha256": "b5e72a45afac7bb92eea58838b752f07df4b4218461e1928bc88a04e1c1c5859"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已按北京→西安和西安→北京查询 airplane。去程记录仅有无票价的航班预览（如 CCA1201、MU2118），查询结果没有带 Cost 的去程航班；返程虽有带 Cost 的 MU2123、CA1206、MU2107，但单程金额缺失，无法按 schema 填写去程 cost 或核算往返预算。快照无 travel_date，不能补造金额。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 11
+          },
+          "西安→北京/airplane": {
+            "candidates_with_time_and_price": 3,
+            "admitted_tool_records": 3,
+            "unpriced_references": 17
+          }
+        },
+        "allowed_intercity_modes": [
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m05",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按北京→厦门和厦门→北京查询 airplane，两个方向的 records 均没有带 Cost 的航班；可见航班只在 unpriced_preview 中，无法按 schema 填写往返 airplane cost 或核算预算。快照无 travel_date，不能补造金额。"
+      ],
+      "first_sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca",
+      "revision_sha256": "0b52d086ec09085544192e740d0ff2a2cf4468167198e0793ff6189349eda4b6",
+      "feedback_sha256": "06fbdb18beef3eb1efc82a7335ea3b3a5073d895d3034a072bf17c87043e65f5",
+      "split": "medium",
+      "source_uid": "e20241028161145339341",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m05.json",
+        "sha256": "5e9e5725b0381a14b8468d3e85acf1c789af8466546426d05680123259548e0d",
+        "local_sha256": "5e9e5725b0381a14b8468d3e85acf1c789af8466546426d05680123259548e0d"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m05/feedback.json",
+        "sha256": "06fbdb18beef3eb1efc82a7335ea3b3a5073d895d3034a072bf17c87043e65f5",
+        "local_sha256": "06fbdb18beef3eb1efc82a7335ea3b3a5073d895d3034a072bf17c87043e65f5"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m05/first/submission.json",
+          "sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca",
+          "local_sha256": "5fb54ff741d6a0af575e96c63fb683c6b84f9f786e6f498c38fb8fc071a653ca"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已按北京→厦门和厦门→北京查询 airplane，两个方向的 records 均没有带 Cost 的航班；可见航班只在 unpriced_preview 中，无法按 schema 填写往返 airplane cost 或核算预算。快照无 travel_date，不能补造金额。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m05/revision/submission.json",
+          "sha256": "0b52d086ec09085544192e740d0ff2a2cf4468167198e0793ff6189349eda4b6",
+          "local_sha256": "0b52d086ec09085544192e740d0ff2a2cf4468167198e0793ff6189349eda4b6"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "已按北京→厦门和厦门→北京查询 airplane，两个方向的 records 均没有带 Cost 的航班；可见航班只在 unpriced_preview 中，无法按 schema 填写往返 airplane cost 或核算预算。快照无 travel_date，不能补造金额。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→北京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "airplane"
+        ],
+        "pair_floor": null,
+        "party_intercity_floor": null,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-m06",
+      "city": "xian",
+      "family": "medium",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "d8e44717fc4cd1fa83007ddd7dff311117f9440a24f87a136ec9fa4dfb0c0298",
+      "revision_sha256": "476668b7250a89d9172a92c165e18f649a43af164f970089aab69f8cca06f4d3",
+      "feedback_sha256": "d2619c1b938a6499dc5cefb1bbb972e2b652daceb0fb03b78b5d650a944f3231",
+      "split": "medium",
+      "source_uid": "e20241028161208995433",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-m06.json",
+        "sha256": "f7327614795d3aec4195a70f267289ff1e3bdb94c5baec6a8b00b462147d59a5",
+        "local_sha256": "f7327614795d3aec4195a70f267289ff1e3bdb94c5baec6a8b00b462147d59a5"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-m06/feedback.json",
+        "sha256": "d2619c1b938a6499dc5cefb1bbb972e2b652daceb0fb03b78b5d650a944f3231",
+        "local_sha256": "d2619c1b938a6499dc5cefb1bbb972e2b652daceb0fb03b78b5d650a944f3231"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/first/submission.json",
+          "sha256": "d8e44717fc4cd1fa83007ddd7dff311117f9440a24f87a136ec9fa4dfb0c0298",
+          "local_sha256": "d8e44717fc4cd1fa83007ddd7dff311117f9440a24f87a136ec9fa4dfb0c0298"
+        },
+        "tool_calls": {
+          "catalog_search": 7,
+          "intercity_search": 4,
+          "goto": 3,
+          "catalog_list": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/first/plan.json",
+          "sha256": "758f6a26e56bdad6f61025d0b8dbd6fa0ccf31b223c16ccdeb9cbd97d2b1dba4",
+          "local_sha256": "758f6a26e56bdad6f61025d0b8dbd6fa0ccf31b223c16ccdeb9cbd97d2b1dba4"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/first/score.json",
+          "sha256": "9f79cfcb59bde810c63d0e58b9fc0feccd88e78b2a77b36c3661c787727bc3fc",
+          "local_sha256": "86e7ffe64f11f6688c4139452d4d77091fc76581f0190c65d073690dbbfbab71"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/revision/submission.json",
+          "sha256": "476668b7250a89d9172a92c165e18f649a43af164f970089aab69f8cca06f4d3",
+          "local_sha256": "476668b7250a89d9172a92c165e18f649a43af164f970089aab69f8cca06f4d3"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/first/plan.json",
+          "sha256": "758f6a26e56bdad6f61025d0b8dbd6fa0ccf31b223c16ccdeb9cbd97d2b1dba4",
+          "local_sha256": "758f6a26e56bdad6f61025d0b8dbd6fa0ccf31b223c16ccdeb9cbd97d2b1dba4"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-m06/first/score.json",
+          "sha256": "9f79cfcb59bde810c63d0e58b9fc0feccd88e78b2a77b36c3661c787727bc3fc",
+          "local_sha256": "86e7ffe64f11f6688c4139452d4d77091fc76581f0190c65d073690dbbfbab71"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "成都→西安/train": {
+            "candidates_with_time_and_price": 58,
+            "admitted_tool_records": 58,
+            "unpriced_references": 19
+          },
+          "西安→成都/train": {
+            "candidates_with_time_and_price": 62,
+            "admitted_tool_records": 62,
+            "unpriced_references": 23
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 261.5,
+          "outbound": {
+            "mode": "train",
+            "service": "K386",
+            "from": "成都龙泉驿",
+            "to": "西安东",
+            "start": 789,
+            "arrives": 1444,
+            "price": 133
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z315",
+            "from": "西安东",
+            "to": "成都西",
+            "start": 350,
+            "arrives": 1234,
+            "price": 128.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 346
+        },
+        "party_intercity_floor": 523.0,
+        "budget_ceiling": 4200,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-m06",
+      "city": "xiamen",
+      "family": "medium",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "查询成都→厦门、厦门→成都的火车；往返可见最低价格各为 1095 元/人（G2277/G2278），2 人往返合计至少 4380 元，已超过 4200 元预算，尚未计住宿、餐饮和市内交通。不能通过编造票价给出预算内方案。"
+      ],
+      "first_sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf",
+      "revision_sha256": "7df1a46aba7c74cead6a886538b30bdc92c33197107b40f0a79e9071b565e819",
+      "feedback_sha256": "7e8cdd69fe690d80037c917a72be376ce7037dd40b9c09b362118c2e43f7391c",
+      "split": "medium",
+      "source_uid": "e20241028161208995433",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-m06.json",
+        "sha256": "77d908afb130616521222ddc0d257eb717703c00d9941100afd24b1cdcd91724",
+        "local_sha256": "77d908afb130616521222ddc0d257eb717703c00d9941100afd24b1cdcd91724"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-m06/feedback.json",
+        "sha256": "7e8cdd69fe690d80037c917a72be376ce7037dd40b9c09b362118c2e43f7391c",
+        "local_sha256": "7e8cdd69fe690d80037c917a72be376ce7037dd40b9c09b362118c2e43f7391c"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m06/first/submission.json",
+          "sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf",
+          "local_sha256": "750fb9143331cecb5a52221216845144d3fae9b4f63265e346931990c1079acf"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "intercity_search": 3
+        },
+        "blocker_reasons": [
+          "查询成都→厦门、厦门→成都的火车；往返可见最低价格各为 1095 元/人（G2277/G2278），2 人往返合计至少 4380 元，已超过 4200 元预算，尚未计住宿、餐饮和市内交通。不能通过编造票价给出预算内方案。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-m06/revision/submission.json",
+          "sha256": "7df1a46aba7c74cead6a886538b30bdc92c33197107b40f0a79e9071b565e819",
+          "local_sha256": "7df1a46aba7c74cead6a886538b30bdc92c33197107b40f0a79e9071b565e819"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "查询成都→厦门、厦门→成都的火车；往返可见最低价格各为 1095 元/人（G2277/G2278），2 人往返合计至少 4380 元，已超过 4200 元预算，尚未计住宿、餐饮和市内交通。不能通过编造票价给出预算内方案。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "成都→厦门/train": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 0
+          },
+          "厦门→成都/train": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train"
+        ],
+        "pair_floor": {
+          "fare_per_person": 2190,
+          "outbound": {
+            "mode": "train",
+            "service": "G2277",
+            "from": "成都东站",
+            "to": "厦门北站",
+            "start": 469,
+            "arrives": 1335,
+            "price": 1095
+          },
+          "return": {
+            "mode": "train",
+            "service": "G2278",
+            "from": "厦门北站",
+            "to": "成都东站",
+            "start": 476,
+            "arrives": 1313,
+            "price": 1095,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 581
+        },
+        "party_intercity_floor": 4380,
+        "budget_ceiling": 4200,
+        "intercity_floor_above_budget": true
+      }
+    },
+    {
+      "uid": "xi-ct-h01",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "558050cae8cac60b005e6ebcc220e088577be227dd9664e354c10edd0555c99b",
+      "revision_sha256": "c4ec65984c80f8f44b36dbe807bcde02e78cb132592d218b9d66bd6583780a56",
+      "feedback_sha256": "c18a03cfd3125592281927de20457c9faf9085f81c14483afc914c03d55ea31b",
+      "split": "human",
+      "source_uid": "h20241029143447759844",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h01.json",
+        "sha256": "997a168dee3d70dcd51bd40f472e471b9738811e75d1b81e805165778be616ef",
+        "local_sha256": "997a168dee3d70dcd51bd40f472e471b9738811e75d1b81e805165778be616ef"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h01/feedback.json",
+        "sha256": "c18a03cfd3125592281927de20457c9faf9085f81c14483afc914c03d55ea31b",
+        "local_sha256": "c18a03cfd3125592281927de20457c9faf9085f81c14483afc914c03d55ea31b"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/first/submission.json",
+          "sha256": "558050cae8cac60b005e6ebcc220e088577be227dd9664e354c10edd0555c99b",
+          "local_sha256": "558050cae8cac60b005e6ebcc220e088577be227dd9664e354c10edd0555c99b"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "goto": 9,
+          "intercity_search": 6,
+          "catalog_list": 3
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/first/plan.json",
+          "sha256": "fc8f78eda2c13101707b651723f67b7c369312480fe4f49e5a8c8d6aa40e08bb",
+          "local_sha256": "fc8f78eda2c13101707b651723f67b7c369312480fe4f49e5a8c8d6aa40e08bb"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/first/score.json",
+          "sha256": "c794690de8a7e9c36ac9670d50c9bed80a5ab0183f9ca1a1e7fb6b6097cd4313",
+          "local_sha256": "0bb40efe68a8edd8a8b98433063784803eb7a8e52680f5994d0ee93637c2a4a3"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/revision/submission.json",
+          "sha256": "c4ec65984c80f8f44b36dbe807bcde02e78cb132592d218b9d66bd6583780a56",
+          "local_sha256": "c4ec65984c80f8f44b36dbe807bcde02e78cb132592d218b9d66bd6583780a56"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/first/plan.json",
+          "sha256": "fc8f78eda2c13101707b651723f67b7c369312480fe4f49e5a8c8d6aa40e08bb",
+          "local_sha256": "fc8f78eda2c13101707b651723f67b7c369312480fe4f49e5a8c8d6aa40e08bb"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h01/first/score.json",
+          "sha256": "c794690de8a7e9c36ac9670d50c9bed80a5ab0183f9ca1a1e7fb6b6097cd4313",
+          "local_sha256": "0bb40efe68a8edd8a8b98433063784803eb7a8e52680f5994d0ee93637c2a4a3"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→西安/train": {
+            "candidates_with_time_and_price": 33,
+            "admitted_tool_records": 33,
+            "unpriced_references": 1
+          },
+          "上海→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 34
+          },
+          "西安→上海/train": {
+            "candidates_with_time_and_price": 36,
+            "admitted_tool_records": 36,
+            "unpriced_references": 1
+          },
+          "西安→上海/airplane": {
+            "candidates_with_time_and_price": 2,
+            "admitted_tool_records": 2,
+            "unpriced_references": 21
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 361.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K2186",
+            "from": "上海",
+            "to": "西安",
+            "start": 537,
+            "arrives": 1727,
+            "price": 180.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "K2188",
+            "from": "西安",
+            "to": "上海",
+            "start": 516,
+            "arrives": 1773,
+            "price": 180.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 229
+        },
+        "party_intercity_floor": 722.0,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h01",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "304f9576984192f8ad0b9022d7e9ba29e42b3d45468faeb619ca6d4a3c501f15",
+      "revision_sha256": "2db5dd845da5eaac11ca2fe68df31722dfb5dd41af25b626c77f8e84f7c53f9a",
+      "feedback_sha256": "0821bef4e49ec1a63780db8025ab3a157f843b2cc8b793f173ecfc7c57f9c106",
+      "split": "human",
+      "source_uid": "h20241029143447759844",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h01.json",
+        "sha256": "3cd1f5ae3b5eab85fb0c7d60f88e2188441ca1f53cf3b6550967909fc130d7c4",
+        "local_sha256": "3cd1f5ae3b5eab85fb0c7d60f88e2188441ca1f53cf3b6550967909fc130d7c4"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h01/feedback.json",
+        "sha256": "0821bef4e49ec1a63780db8025ab3a157f843b2cc8b793f173ecfc7c57f9c106",
+        "local_sha256": "0821bef4e49ec1a63780db8025ab3a157f843b2cc8b793f173ecfc7c57f9c106"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/first/submission.json",
+          "sha256": "304f9576984192f8ad0b9022d7e9ba29e42b3d45468faeb619ca6d4a3c501f15",
+          "local_sha256": "304f9576984192f8ad0b9022d7e9ba29e42b3d45468faeb619ca6d4a3c501f15"
+        },
+        "tool_calls": {
+          "goto": 11,
+          "intercity_search": 4,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/first/plan.json",
+          "sha256": "88ef7fa17680ce088e7ae72c31ff5bff34d46c9c41d233c619dcd4545829bf0b",
+          "local_sha256": "88ef7fa17680ce088e7ae72c31ff5bff34d46c9c41d233c619dcd4545829bf0b"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/first/score.json",
+          "sha256": "b9654c44babc1ac7789b1e924b5b314fdb5acbcf0926c12dc44271183e309c87",
+          "local_sha256": "b7fb58f7092ba0c6ea679dea23cfdd7715644c4ad22c8fcc8c82fc3725d66632"
+        },
+        "failed_checks": [
+          "Is_restaurants_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/revision/submission.json",
+          "sha256": "2db5dd845da5eaac11ca2fe68df31722dfb5dd41af25b626c77f8e84f7c53f9a",
+          "local_sha256": "2db5dd845da5eaac11ca2fe68df31722dfb5dd41af25b626c77f8e84f7c53f9a"
+        },
+        "tool_calls": {
+          "goto": 2,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/revision/plan.json",
+          "sha256": "23dc554b2c18fa43f712f98c0d3348cd726f3b96f8ba14f774b89f8f33f85086",
+          "local_sha256": "23dc554b2c18fa43f712f98c0d3348cd726f3b96f8ba14f774b89f8f33f85086"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h01/revision/score.json",
+          "sha256": "d522128b88a46de98ebd5583720c7832ce03dcc45212b5e8510fb76b3ab69bd5",
+          "local_sha256": "1dc82d80649ae581d8a7e689b09c63da729bf58abad1ea065c77135738f3cede"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "上海→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "上海→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→上海/train": {
+            "candidates_with_time_and_price": 25,
+            "admitted_tool_records": 25,
+            "unpriced_references": 0
+          },
+          "厦门→上海/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 915,
+          "outbound": {
+            "mode": "train",
+            "service": "D3107",
+            "from": "上海南站",
+            "to": "厦门北站",
+            "start": 590,
+            "arrives": 1070,
+            "price": 464
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3202",
+            "from": "厦门北站",
+            "to": "上海松江站",
+            "start": 809,
+            "arrives": 1268,
+            "price": 451,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 2619
+        },
+        "party_intercity_floor": 1830,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-h02",
+      "city": "xian",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1e9bda1d88e4c53dfc3cbb759d26d7691c95ad6bc1facb4573ffd0a55b4a8162",
+      "revision_sha256": "0f3d23bedd2bac4edf9b14557e03715949a17736b8dbf76b384cf5d9a33f9d3c",
+      "feedback_sha256": "50135591b8805e6a0cd41d5dcefbbf8e1e204ff2934a5e31324257f6f4997a56",
+      "split": "human",
+      "source_uid": "h20241029143845365386",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h02.json",
+        "sha256": "fdbbbe2d8325b6c97e516b5f800b06c4a1de3101c3f4f23357dcc5b44f79b4ea",
+        "local_sha256": "fdbbbe2d8325b6c97e516b5f800b06c4a1de3101c3f4f23357dcc5b44f79b4ea"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h02/feedback.json",
+        "sha256": "50135591b8805e6a0cd41d5dcefbbf8e1e204ff2934a5e31324257f6f4997a56",
+        "local_sha256": "50135591b8805e6a0cd41d5dcefbbf8e1e204ff2934a5e31324257f6f4997a56"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/first/submission.json",
+          "sha256": "1e9bda1d88e4c53dfc3cbb759d26d7691c95ad6bc1facb4573ffd0a55b4a8162",
+          "local_sha256": "1e9bda1d88e4c53dfc3cbb759d26d7691c95ad6bc1facb4573ffd0a55b4a8162"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "goto": 16,
+          "catalog_list": 3,
+          "intercity_search": 5
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/first/plan.json",
+          "sha256": "7ba594a67f8a24288664d47cae90f3a9c1ac76a80156b12758bdc5210a34fcad",
+          "local_sha256": "7ba594a67f8a24288664d47cae90f3a9c1ac76a80156b12758bdc5210a34fcad"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/first/score.json",
+          "sha256": "51c9c5fb014015c4afd5d567139beeb62d9268b0119dac6c16d917d3a35aadde",
+          "local_sha256": "b206200fadb17c2cbe49c7c4352e6dfe936faae06254a96490b713c188b9b4e5"
+        },
+        "failed_checks": [
+          "Is_transport_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/revision/submission.json",
+          "sha256": "0f3d23bedd2bac4edf9b14557e03715949a17736b8dbf76b384cf5d9a33f9d3c",
+          "local_sha256": "0f3d23bedd2bac4edf9b14557e03715949a17736b8dbf76b384cf5d9a33f9d3c"
+        },
+        "tool_calls": {
+          "goto": 1
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/revision/plan.json",
+          "sha256": "fa7ab872b2b6fffb39d22b3d93ded19a0e280588997a3cdfa2a7bb1a474819cf",
+          "local_sha256": "fa7ab872b2b6fffb39d22b3d93ded19a0e280588997a3cdfa2a7bb1a474819cf"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h02/revision/score.json",
+          "sha256": "00f7ba4e230563fb210378a3418c6a4e7c2eb3de5270fbd176ad5c74616bcf04",
+          "local_sha256": "dd8aff2d8afebc71af73499b69e45bbbbbb529058bb8920cb190c86773dc481d"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→西安/train": {
+            "candidates_with_time_and_price": 37,
+            "admitted_tool_records": 37,
+            "unpriced_references": 1
+          },
+          "北京→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 11
+          },
+          "西安→北京/train": {
+            "candidates_with_time_and_price": 36,
+            "admitted_tool_records": 36,
+            "unpriced_references": 2
+          },
+          "西安→北京/airplane": {
+            "candidates_with_time_and_price": 3,
+            "admitted_tool_records": 3,
+            "unpriced_references": 17
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 297.0,
+          "outbound": {
+            "mode": "train",
+            "service": "T55",
+            "from": "北京丰台",
+            "to": "西安",
+            "start": 942,
+            "arrives": 1739,
+            "price": 148.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z180",
+            "from": "西安",
+            "to": "北京西",
+            "start": 27,
+            "arrives": 813,
+            "price": 148.5,
+            "departure_day": 4
+          },
+          "destination_window_minutes": 2608
+        },
+        "party_intercity_floor": 1485.0,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h02",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "21a2c65b01c724e02ca01988a90a058d901db90d39d1712f49854b323d1afc9e",
+      "revision_sha256": "19ed90b615d71cc8b4bf49de847b677748ee7135f0ba3bd4e7fc34767aec4e5d",
+      "feedback_sha256": "ad5e98375e31bfd1693d8f16360591636879fb8070a87ef1078d65bdc93c411b",
+      "split": "human",
+      "source_uid": "h20241029143845365386",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h02.json",
+        "sha256": "d3c03b97878c559071f1b7f40b3f6da6a1a50c04cb85aa17074950eb786829d8",
+        "local_sha256": "d3c03b97878c559071f1b7f40b3f6da6a1a50c04cb85aa17074950eb786829d8"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h02/feedback.json",
+        "sha256": "ad5e98375e31bfd1693d8f16360591636879fb8070a87ef1078d65bdc93c411b",
+        "local_sha256": "ad5e98375e31bfd1693d8f16360591636879fb8070a87ef1078d65bdc93c411b"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/first/submission.json",
+          "sha256": "21a2c65b01c724e02ca01988a90a058d901db90d39d1712f49854b323d1afc9e",
+          "local_sha256": "21a2c65b01c724e02ca01988a90a058d901db90d39d1712f49854b323d1afc9e"
+        },
+        "tool_calls": {
+          "goto": 13,
+          "catalog_search": 4,
+          "intercity_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/first/plan.json",
+          "sha256": "4877076093c1929cb08fdfae8c6fd391866a765fc971d9ba4dd856ebaad4c70a",
+          "local_sha256": "4877076093c1929cb08fdfae8c6fd391866a765fc971d9ba4dd856ebaad4c70a"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/first/score.json",
+          "sha256": "66a65a6d2d32dfe999598784749fce87855af245e0cd46ec40378e2a364aacf6",
+          "local_sha256": "f8221a657d8f4705e40877f5c63d21597634a05604047d24ec1d2c49e3e21acc"
+        },
+        "failed_checks": [
+          "Is_restaurants_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/revision/submission.json",
+          "sha256": "19ed90b615d71cc8b4bf49de847b677748ee7135f0ba3bd4e7fc34767aec4e5d",
+          "local_sha256": "19ed90b615d71cc8b4bf49de847b677748ee7135f0ba3bd4e7fc34767aec4e5d"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "goto": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/revision/plan.json",
+          "sha256": "108abd89c095487a1dbc00d1990fe316469e89ef5918ebf57bc86bc43655f2c8",
+          "local_sha256": "108abd89c095487a1dbc00d1990fe316469e89ef5918ebf57bc86bc43655f2c8"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h02/revision/score.json",
+          "sha256": "84ae40808f84b47e5a6138c80086a8dfb1d7ebbbd2f8a306183bf406f0dba3ad",
+          "local_sha256": "e61e6aa6e0c5df6a637a8cb01ff6649714e7c4918e2a4a57c22949509a3a6d28"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "北京→厦门/train": {
+            "candidates_with_time_and_price": 6,
+            "admitted_tool_records": 6,
+            "unpriced_references": 0
+          },
+          "北京→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→北京/train": {
+            "candidates_with_time_and_price": 4,
+            "admitted_tool_records": 4,
+            "unpriced_references": 0
+          },
+          "厦门→北京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 486,
+          "outbound": {
+            "mode": "train",
+            "service": "K571",
+            "from": "北京丰台站",
+            "to": "厦门北站",
+            "start": 994,
+            "arrives": 2758,
+            "price": 243
+          },
+          "return": {
+            "mode": "train",
+            "service": "K572",
+            "from": "厦门北站",
+            "to": "北京丰台站",
+            "start": 517,
+            "arrives": 2318,
+            "price": 243,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 639
+        },
+        "party_intercity_floor": 2430,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-h03",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "f71a40c772e0dad6477bf4daa4e3b455b58b14d71a1a90dba6879e2ea87b5b50",
+      "revision_sha256": "042288b13e6164d539d24c7836e8c7b19756d890a8a871d396e60f33661dbac3",
+      "feedback_sha256": "bd547e14929ce8dd36f76a4d16d5185335977a567fbc72f0093914181fe06f4f",
+      "split": "human",
+      "source_uid": "h20241029143915014327",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h03.json",
+        "sha256": "76981dc2b36066c671aeedc17fc08d757d9a7a167078430aff1ad0a1d752533b",
+        "local_sha256": "76981dc2b36066c671aeedc17fc08d757d9a7a167078430aff1ad0a1d752533b"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h03/feedback.json",
+        "sha256": "bd547e14929ce8dd36f76a4d16d5185335977a567fbc72f0093914181fe06f4f",
+        "local_sha256": "bd547e14929ce8dd36f76a4d16d5185335977a567fbc72f0093914181fe06f4f"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/first/submission.json",
+          "sha256": "f71a40c772e0dad6477bf4daa4e3b455b58b14d71a1a90dba6879e2ea87b5b50",
+          "local_sha256": "f71a40c772e0dad6477bf4daa4e3b455b58b14d71a1a90dba6879e2ea87b5b50"
+        },
+        "tool_calls": {
+          "goto": 9,
+          "intercity_search": 6,
+          "catalog_list": 3,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/first/plan.json",
+          "sha256": "d014b54580fd8ba791c9794aef0d04b77a50ef6dc368ad60335aa2aeacdffaf7",
+          "local_sha256": "d014b54580fd8ba791c9794aef0d04b77a50ef6dc368ad60335aa2aeacdffaf7"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/first/score.json",
+          "sha256": "f168020b9db220620b31d85cda09a8e834eb878338339f7f6541e17651e017a4",
+          "local_sha256": "c21a6bce4b7617e197c3b9a8e864dad22efb40b7e18aec7268476093f358776e"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/revision/submission.json",
+          "sha256": "042288b13e6164d539d24c7836e8c7b19756d890a8a871d396e60f33661dbac3",
+          "local_sha256": "042288b13e6164d539d24c7836e8c7b19756d890a8a871d396e60f33661dbac3"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/first/plan.json",
+          "sha256": "d014b54580fd8ba791c9794aef0d04b77a50ef6dc368ad60335aa2aeacdffaf7",
+          "local_sha256": "d014b54580fd8ba791c9794aef0d04b77a50ef6dc368ad60335aa2aeacdffaf7"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h03/first/score.json",
+          "sha256": "f168020b9db220620b31d85cda09a8e834eb878338339f7f6541e17651e017a4",
+          "local_sha256": "c21a6bce4b7617e197c3b9a8e864dad22efb40b7e18aec7268476093f358776e"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→西安/train": {
+            "candidates_with_time_and_price": 29,
+            "admitted_tool_records": 29,
+            "unpriced_references": 0
+          },
+          "南京→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 2
+          },
+          "西安→南京/train": {
+            "candidates_with_time_and_price": 28,
+            "admitted_tool_records": 28,
+            "unpriced_references": 0
+          },
+          "西安→南京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 1
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 305.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K2186",
+            "from": "南京",
+            "to": "西安",
+            "start": 767,
+            "arrives": 1727,
+            "price": 152.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "K2188",
+            "from": "西安",
+            "to": "南京",
+            "start": 516,
+            "arrives": 1537,
+            "price": 152.5,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 1669
+        },
+        "party_intercity_floor": 915.0,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h03",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "0d9ce97cc2c73f5378f12edc04cc55695a97b8a6ddb6e7d44c9daaab13069ef8",
+      "revision_sha256": "2c4a898904fc215745c59c9f46791039f1c0836a0abf43dce64403e4000b3b6e",
+      "feedback_sha256": "0fa8aa365a7a4b5d065c73ee3545e44d0239d37726a7cdb1256b4de056aa1194",
+      "split": "human",
+      "source_uid": "h20241029143915014327",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h03.json",
+        "sha256": "5bc5c6008ea7aceaa10a4b09278b63d668e7534eafc2d34e68512dea49ffca03",
+        "local_sha256": "5bc5c6008ea7aceaa10a4b09278b63d668e7534eafc2d34e68512dea49ffca03"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h03/feedback.json",
+        "sha256": "0fa8aa365a7a4b5d065c73ee3545e44d0239d37726a7cdb1256b4de056aa1194",
+        "local_sha256": "0fa8aa365a7a4b5d065c73ee3545e44d0239d37726a7cdb1256b4de056aa1194"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/first/submission.json",
+          "sha256": "0d9ce97cc2c73f5378f12edc04cc55695a97b8a6ddb6e7d44c9daaab13069ef8",
+          "local_sha256": "0d9ce97cc2c73f5378f12edc04cc55695a97b8a6ddb6e7d44c9daaab13069ef8"
+        },
+        "tool_calls": {
+          "intercity_search": 4,
+          "room_options": 1,
+          "goto": 11,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/first/plan.json",
+          "sha256": "2a2c24cd18415f5e90f6ef79e166e8492092c29d6e593fb5cb6cbbf8b0f3c987",
+          "local_sha256": "2a2c24cd18415f5e90f6ef79e166e8492092c29d6e593fb5cb6cbbf8b0f3c987"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/first/score.json",
+          "sha256": "2fe6554f3130e6bb6395f8480f40816202c82348b9077ca2d07e145c08c5759c",
+          "local_sha256": "e621e8972b71f54cfe8ab45cedb5a3cadb0f6a7d828c9cfbd7570d0dde06d20d"
+        },
+        "failed_checks": [
+          "Is_restaurants_correct",
+          "Is_transport_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/revision/submission.json",
+          "sha256": "2c4a898904fc215745c59c9f46791039f1c0836a0abf43dce64403e4000b3b6e",
+          "local_sha256": "2c4a898904fc215745c59c9f46791039f1c0836a0abf43dce64403e4000b3b6e"
+        },
+        "tool_calls": {
+          "goto": 2,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/revision/plan.json",
+          "sha256": "56e0b623f4cb0f4d747aefaed55fd52dc8c22f4a0a7e909354d75ef3903290f4",
+          "local_sha256": "56e0b623f4cb0f4d747aefaed55fd52dc8c22f4a0a7e909354d75ef3903290f4"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h03/revision/score.json",
+          "sha256": "c56f6142085e552f32fd52df2bc88b7f72b57c40568640b518fdb6118721d17a",
+          "local_sha256": "61f6c70fd2dd085b343e1f33a44c39d559761c638b37cdbd934b097294cf8443"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "南京→厦门/train": {
+            "candidates_with_time_and_price": 14,
+            "admitted_tool_records": 14,
+            "unpriced_references": 0
+          },
+          "南京→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→南京/train": {
+            "candidates_with_time_and_price": 13,
+            "admitted_tool_records": 13,
+            "unpriced_references": 0
+          },
+          "厦门→南京/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1072,
+          "outbound": {
+            "mode": "train",
+            "service": "D3295",
+            "from": "南京南站",
+            "to": "厦门北站",
+            "start": 469,
+            "arrives": 995,
+            "price": 536
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3296",
+            "from": "厦门北站",
+            "to": "南京南站",
+            "start": 589,
+            "arrives": 1098,
+            "price": 536,
+            "departure_day": 4
+          },
+          "destination_window_minutes": 3914
+        },
+        "party_intercity_floor": 3216,
+        "budget_ceiling": 8000,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-h04",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1eaf1e02e76fcc8e156b15f2b85f296f54585766e626c95282f236c751571757",
+      "revision_sha256": "0165e7f45fae1b9475755fa4fda7f388990ec5a393e73a76bf08df02d819d667",
+      "feedback_sha256": "7a8a81ddc6035099e5639660d7907b60f8311d6ba9000119832e8db39467f322",
+      "split": "human",
+      "source_uid": "h20241029143743586105",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h04.json",
+        "sha256": "a5321d2593e76cb611e54fa9f58370a90b95596ebd377cef33eb1d682f7a4c8e",
+        "local_sha256": "a5321d2593e76cb611e54fa9f58370a90b95596ebd377cef33eb1d682f7a4c8e"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h04/feedback.json",
+        "sha256": "7a8a81ddc6035099e5639660d7907b60f8311d6ba9000119832e8db39467f322",
+        "local_sha256": "7a8a81ddc6035099e5639660d7907b60f8311d6ba9000119832e8db39467f322"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/first/submission.json",
+          "sha256": "1eaf1e02e76fcc8e156b15f2b85f296f54585766e626c95282f236c751571757",
+          "local_sha256": "1eaf1e02e76fcc8e156b15f2b85f296f54585766e626c95282f236c751571757"
+        },
+        "tool_calls": {
+          "goto": 9,
+          "catalog_list": 3,
+          "intercity_search": 6,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/first/plan.json",
+          "sha256": "b3eeb2b3817edb198b985084291c301082dcbc0e27fce22c2beaa95d11492916",
+          "local_sha256": "b3eeb2b3817edb198b985084291c301082dcbc0e27fce22c2beaa95d11492916"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/first/score.json",
+          "sha256": "525d3c8c2f765edb2b4f87c413ace66b40a60db665fbdccc57651676a4f28741",
+          "local_sha256": "5877cd60cbd41d3ee03be692c12ef82dff5932f6bb7a374a87f388616b2546b1"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/revision/submission.json",
+          "sha256": "0165e7f45fae1b9475755fa4fda7f388990ec5a393e73a76bf08df02d819d667",
+          "local_sha256": "0165e7f45fae1b9475755fa4fda7f388990ec5a393e73a76bf08df02d819d667"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/first/plan.json",
+          "sha256": "b3eeb2b3817edb198b985084291c301082dcbc0e27fce22c2beaa95d11492916",
+          "local_sha256": "b3eeb2b3817edb198b985084291c301082dcbc0e27fce22c2beaa95d11492916"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h04/first/score.json",
+          "sha256": "525d3c8c2f765edb2b4f87c413ace66b40a60db665fbdccc57651676a4f28741",
+          "local_sha256": "5877cd60cbd41d3ee03be692c12ef82dff5932f6bb7a374a87f388616b2546b1"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→西安/train": {
+            "candidates_with_time_and_price": 12,
+            "admitted_tool_records": 12,
+            "unpriced_references": 3
+          },
+          "广州→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 5
+          },
+          "西安→广州/train": {
+            "candidates_with_time_and_price": 11,
+            "admitted_tool_records": 11,
+            "unpriced_references": 0
+          },
+          "西安→广州/airplane": {
+            "candidates_with_time_and_price": 1,
+            "admitted_tool_records": 1,
+            "unpriced_references": 15
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 434,
+          "outbound": {
+            "mode": "train",
+            "service": "Z230",
+            "from": "广州北",
+            "to": "西安",
+            "start": 670,
+            "arrives": 1976,
+            "price": 217
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z232",
+            "from": "西安",
+            "to": "广州北",
+            "start": 1201,
+            "arrives": 2499,
+            "price": 217,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 2105
+        },
+        "party_intercity_floor": 1302,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h04",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "ee7ffba464fcdc9915a012a1fa1b2eef0b1582a074349c93707e77dbd985e699",
+      "revision_sha256": "8b44ae31db6c5c09e2a21b0e3d3617d32ca9a596b472928871d927fd43cd494e",
+      "feedback_sha256": "4ea038e97082d807c07e6c23f3db3e353ffd7996df0feb125d2faff6e5b81be1",
+      "split": "human",
+      "source_uid": "h20241029143743586105",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h04.json",
+        "sha256": "ea67526d506a2427c69c9d9adf90f024c3e18e0258158b1a233d906a8d1719ca",
+        "local_sha256": "ea67526d506a2427c69c9d9adf90f024c3e18e0258158b1a233d906a8d1719ca"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h04/feedback.json",
+        "sha256": "4ea038e97082d807c07e6c23f3db3e353ffd7996df0feb125d2faff6e5b81be1",
+        "local_sha256": "4ea038e97082d807c07e6c23f3db3e353ffd7996df0feb125d2faff6e5b81be1"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/first/submission.json",
+          "sha256": "ee7ffba464fcdc9915a012a1fa1b2eef0b1582a074349c93707e77dbd985e699",
+          "local_sha256": "ee7ffba464fcdc9915a012a1fa1b2eef0b1582a074349c93707e77dbd985e699"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "intercity_search": 4,
+          "goto": 13
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/first/plan.json",
+          "sha256": "0449c71a89a949daf6339ab4260d7be90e19622a0403219f0e43a731160c2289",
+          "local_sha256": "0449c71a89a949daf6339ab4260d7be90e19622a0403219f0e43a731160c2289"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/first/score.json",
+          "sha256": "e97763cc87fb1d48e90bb414ac4df6f136e9ce08b9e32f9f21dff8952b7eb8a3",
+          "local_sha256": "0c1681c0151b00b9397d0ad27299051ba4fdcbd06832759a60a0f1573211f556"
+        },
+        "failed_checks": [
+          "Is_intercity_transport_correct",
+          "Is_restaurants_correct",
+          "Is_transport_correct",
+          "Is_time_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/revision/submission.json",
+          "sha256": "8b44ae31db6c5c09e2a21b0e3d3617d32ca9a596b472928871d927fd43cd494e",
+          "local_sha256": "8b44ae31db6c5c09e2a21b0e3d3617d32ca9a596b472928871d927fd43cd494e"
+        },
+        "tool_calls": {
+          "intercity_search": 2,
+          "goto": 3,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/revision/plan.json",
+          "sha256": "7e00a325a4ca7853a181b26ed3fa3340c4649a9875c5fe2131e3626fd145d47a",
+          "local_sha256": "7e00a325a4ca7853a181b26ed3fa3340c4649a9875c5fe2131e3626fd145d47a"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h04/revision/score.json",
+          "sha256": "382109c30b069b823837e4a4cb0d59fd55152123a704ea81c3a88d0f3ee38c61",
+          "local_sha256": "43729fda86bb75942e4c25b839a0f4ab4709ba8eebab14107bb05d94971960a4"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "广州→厦门/train": {
+            "candidates_with_time_and_price": 23,
+            "admitted_tool_records": 23,
+            "unpriced_references": 0
+          },
+          "广州→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→广州/train": {
+            "candidates_with_time_and_price": 19,
+            "admitted_tool_records": 19,
+            "unpriced_references": 0
+          },
+          "厦门→广州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 204,
+          "outbound": {
+            "mode": "train",
+            "service": "K229",
+            "from": "广州站",
+            "to": "厦门北站",
+            "start": 1212,
+            "arrives": 1972,
+            "price": 102
+          },
+          "return": {
+            "mode": "train",
+            "service": "K230",
+            "from": "厦门北站",
+            "to": "广州白云站",
+            "start": 1046,
+            "arrives": 1767,
+            "price": 102,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 1954
+        },
+        "party_intercity_floor": 612,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-h05",
+      "city": "xian",
+      "family": "human",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "本题只允许使用本题的冻结沙盒证据。深圳—西安可查的有价列车中，直达高铁样例 G846 单程约10小时，其他可用车次需过夜；返程高铁样例 G837 也约9小时40分。两天周末往返将被城际交通占满，无法形成题面要求的悠闲、少人流游玩日。可见航班没有可用票价，协议禁止补造机票费用，因此在现有证据下没有可核验且符合需求的方案。"
+      ],
+      "first_sha256": "3793968db944bd766b972fb80524708a87a80ce75c0bae70fc0749ad4ea6d045",
+      "revision_sha256": "edaac3ad627b6a666f18ac43fe7b7497bd5f592931201649de5532ff5093b51d",
+      "feedback_sha256": "8ed72145a8919ba8f2ac70243b22de06f1b32b65db9503c6564b9b10c4b3d529",
+      "split": "human",
+      "source_uid": "h20241029143602442546",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h05.json",
+        "sha256": "aa2b6ed71bcacb4918e25005f49c82c70ac0188a940bbbfe696573250ba3eeeb",
+        "local_sha256": "aa2b6ed71bcacb4918e25005f49c82c70ac0188a940bbbfe696573250ba3eeeb"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h05/feedback.json",
+        "sha256": "8ed72145a8919ba8f2ac70243b22de06f1b32b65db9503c6564b9b10c4b3d529",
+        "local_sha256": "8ed72145a8919ba8f2ac70243b22de06f1b32b65db9503c6564b9b10c4b3d529"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h05/first/submission.json",
+          "sha256": "3793968db944bd766b972fb80524708a87a80ce75c0bae70fc0749ad4ea6d045",
+          "local_sha256": "3793968db944bd766b972fb80524708a87a80ce75c0bae70fc0749ad4ea6d045"
+        },
+        "tool_calls": {
+          "goto": 7,
+          "intercity_search": 4,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [
+          "本题只允许使用本题的冻结沙盒证据。深圳—西安可查的有价列车中，直达高铁样例 G846 单程约10小时，其他可用车次需过夜；返程高铁样例 G837 也约9小时40分。两天周末往返将被城际交通占满，无法形成题面要求的悠闲、少人流游玩日。可见航班没有可用票价，协议禁止补造机票费用，因此在现有证据下没有可核验且符合需求的方案。"
+        ]
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h05/revision/submission.json",
+          "sha256": "edaac3ad627b6a666f18ac43fe7b7497bd5f592931201649de5532ff5093b51d",
+          "local_sha256": "edaac3ad627b6a666f18ac43fe7b7497bd5f592931201649de5532ff5093b51d"
+        },
+        "tool_calls": {
+          "intercity_search": 2
+        },
+        "blocker_reasons": [
+          "本题只允许使用本题的冻结沙盒证据。深圳—西安可查的有价列车中，直达高铁样例 G846 单程约10小时，其他可用车次需过夜；返程高铁样例 G837 也约9小时40分。两天周末往返将被城际交通占满，无法形成题面要求的悠闲、少人流游玩日。可见航班没有可用票价，协议禁止补造机票费用，因此在现有证据下没有可核验且符合需求的方案。"
+        ]
+      },
+      "transport_preflight": {
+        "routes": {
+          "深圳→西安/train": {
+            "candidates_with_time_and_price": 6,
+            "admitted_tool_records": 6,
+            "unpriced_references": 1
+          },
+          "深圳→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 7
+          },
+          "西安→深圳/train": {
+            "candidates_with_time_and_price": 7,
+            "admitted_tool_records": 7,
+            "unpriced_references": 2
+          },
+          "西安→深圳/airplane": {
+            "candidates_with_time_and_price": 1,
+            "admitted_tool_records": 1,
+            "unpriced_references": 16
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1284.5,
+          "outbound": {
+            "mode": "train",
+            "service": "G846",
+            "from": "深圳北",
+            "to": "西安北",
+            "start": 560,
+            "arrives": 1167,
+            "price": 1048.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "Z232",
+            "from": "西安",
+            "to": "深圳东",
+            "start": 1201,
+            "arrives": 2599,
+            "price": 236,
+            "departure_day": 1
+          },
+          "destination_window_minutes": 34
+        },
+        "party_intercity_floor": 2569.0,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h05",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36",
+      "revision_sha256": "d7cebf4be42532761bd558cb9590ff4c82fb8f2fbacf3ffedc4df56dcecd2da5",
+      "feedback_sha256": "0dbb781ebe1af7fbbee824ebbe46eb944136a060bd792440fe8c937da145c0c9",
+      "split": "human",
+      "source_uid": "h20241029143602442546",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h05.json",
+        "sha256": "215716c3f871c87ad850ae4af570a290cdd7e43f781373044eb7766fe6b87c8d",
+        "local_sha256": "215716c3f871c87ad850ae4af570a290cdd7e43f781373044eb7766fe6b87c8d"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h05/feedback.json",
+        "sha256": "0dbb781ebe1af7fbbee824ebbe46eb944136a060bd792440fe8c937da145c0c9",
+        "local_sha256": "0dbb781ebe1af7fbbee824ebbe46eb944136a060bd792440fe8c937da145c0c9"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/first/submission.json",
+          "sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36",
+          "local_sha256": "fbaa91ea51d75500d6d401223f2ed8cdfd9914bb8c6c5fcf9facab51ee27dd36"
+        },
+        "tool_calls": {
+          "goto": 23,
+          "intercity_search": 5,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/first/plan.json",
+          "sha256": "c428837b21507dd28703772d8b09831e4af6f4d323fba54a29f962204977a23a",
+          "local_sha256": "c428837b21507dd28703772d8b09831e4af6f4d323fba54a29f962204977a23a"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/first/score.json",
+          "sha256": "a510d566e26439f9fc26b3ee1773aacf2e58f8d7609f37a103d7a5bac1e788da",
+          "local_sha256": "cb93aad72cf02ff8b193f8a4c4669f8c3e3a4e72a2a7cfe7abfae68a386d0a30"
+        },
+        "failed_checks": [
+          "Is_restaurants_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/revision/submission.json",
+          "sha256": "d7cebf4be42532761bd558cb9590ff4c82fb8f2fbacf3ffedc4df56dcecd2da5",
+          "local_sha256": "d7cebf4be42532761bd558cb9590ff4c82fb8f2fbacf3ffedc4df56dcecd2da5"
+        },
+        "tool_calls": {
+          "goto": 3,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/revision/plan.json",
+          "sha256": "8f19c3f6ef18c3ea67cd56aeeb7e3a8885fa17d599956d299ff108e9585d7efd",
+          "local_sha256": "8f19c3f6ef18c3ea67cd56aeeb7e3a8885fa17d599956d299ff108e9585d7efd"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h05/revision/score.json",
+          "sha256": "3803f2097bd2e7e6615c4941460d95407defce64aa3770beed2d972f7826265d",
+          "local_sha256": "0a234a804e699c53763d8d5a604df78f750b991f9826b6860fd46530f3bcffdd"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "深圳→厦门/train": {
+            "candidates_with_time_and_price": 63,
+            "admitted_tool_records": 63,
+            "unpriced_references": 0
+          },
+          "深圳→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→深圳/train": {
+            "candidates_with_time_and_price": 56,
+            "admitted_tool_records": 56,
+            "unpriced_references": 0
+          },
+          "厦门→深圳/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 456,
+          "outbound": {
+            "mode": "train",
+            "service": "D3126",
+            "from": "深圳北站",
+            "to": "厦门北站",
+            "start": 406,
+            "arrives": 623,
+            "price": 228
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3333",
+            "from": "厦门北站",
+            "to": "深圳北站",
+            "start": 505,
+            "arrives": 699,
+            "price": 228,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 1322
+        },
+        "party_intercity_floor": 912,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xi-ct-h06",
+      "city": "xian",
+      "family": "human",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "2c77a29626f2fe2e82f3ba7771ef57f8fe61f99732eb1b79fd45712811e163fa",
+      "revision_sha256": "1e3e171c97a27c2b5eea447601a8fef854d21fd991883467cd2cdc0274fe7f92",
+      "feedback_sha256": "4cfc127e1228fe0e8a3c264080df05ce2091d79822b1569d936236b2d66d0346",
+      "split": "human",
+      "source_uid": "h20241029143844076573",
+      "question": {
+        "path": "luna_v19_standard_36/public/xi-ct-h06.json",
+        "sha256": "1c88e79570a8762782c66f2fde88b270894f3a554e61fbdb80283bae99958046",
+        "local_sha256": "1c88e79570a8762782c66f2fde88b270894f3a554e61fbdb80283bae99958046"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xi-ct-h06/feedback.json",
+        "sha256": "4cfc127e1228fe0e8a3c264080df05ce2091d79822b1569d936236b2d66d0346",
+        "local_sha256": "4cfc127e1228fe0e8a3c264080df05ce2091d79822b1569d936236b2d66d0346"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/first/submission.json",
+          "sha256": "2c77a29626f2fe2e82f3ba7771ef57f8fe61f99732eb1b79fd45712811e163fa",
+          "local_sha256": "2c77a29626f2fe2e82f3ba7771ef57f8fe61f99732eb1b79fd45712811e163fa"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "intercity_search": 5,
+          "goto": 9
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/first/plan.json",
+          "sha256": "ededb163703c698cda105d86b801271de2275a7f41cd5eb59ca61e5391e0fd34",
+          "local_sha256": "ededb163703c698cda105d86b801271de2275a7f41cd5eb59ca61e5391e0fd34"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/first/score.json",
+          "sha256": "23f24f4aabf753b98cce06453cdd4cd74f660a574c2b0162e4442ea2b7a36f29",
+          "local_sha256": "f09bd9952c032c240909418e104759cefbc2f6c317d1ba254ec771c75934789b"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/revision/submission.json",
+          "sha256": "1e3e171c97a27c2b5eea447601a8fef854d21fd991883467cd2cdc0274fe7f92",
+          "local_sha256": "1e3e171c97a27c2b5eea447601a8fef854d21fd991883467cd2cdc0274fe7f92"
+        },
+        "tool_calls": {},
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/first/plan.json",
+          "sha256": "ededb163703c698cda105d86b801271de2275a7f41cd5eb59ca61e5391e0fd34",
+          "local_sha256": "ededb163703c698cda105d86b801271de2275a7f41cd5eb59ca61e5391e0fd34"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xi-ct-h06/first/score.json",
+          "sha256": "23f24f4aabf753b98cce06453cdd4cd74f660a574c2b0162e4442ea2b7a36f29",
+          "local_sha256": "f09bd9952c032c240909418e104759cefbc2f6c317d1ba254ec771c75934789b"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "苏州→西安/train": {
+            "candidates_with_time_and_price": 22,
+            "admitted_tool_records": 22,
+            "unpriced_references": 3
+          },
+          "苏州→西安/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "西安→苏州/train": {
+            "candidates_with_time_and_price": 22,
+            "admitted_tool_records": 22,
+            "unpriced_references": 3
+          },
+          "西安→苏州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 347.0,
+          "outbound": {
+            "mode": "train",
+            "service": "K2186",
+            "from": "苏州",
+            "to": "西安",
+            "start": 604,
+            "arrives": 1727,
+            "price": 173.5
+          },
+          "return": {
+            "mode": "train",
+            "service": "K2188",
+            "from": "西安",
+            "to": "苏州",
+            "start": 516,
+            "arrives": 1688,
+            "price": 173.5,
+            "departure_day": 2
+          },
+          "destination_window_minutes": 229
+        },
+        "party_intercity_floor": 694.0,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    },
+    {
+      "uid": "xm-ct-h06",
+      "city": "xiamen",
+      "family": "human",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "6da9077ba071c49eefa977b0696291fc1e0f0159afb79d4b5536dae2d3387ac9",
+      "revision_sha256": "ca8521437ee5ab8206857d3e2daf465bbcdb1d7e5517de5f0c9650b6a4184850",
+      "feedback_sha256": "42e4eeff3d6149ee3ee5a6918cd6d56e2a613cd6a92d648cc1b0c59e78b2f26e",
+      "split": "human",
+      "source_uid": "h20241029143844076573",
+      "question": {
+        "path": "luna_v19_standard_36/public/xm-ct-h06.json",
+        "sha256": "7920b52cf37f4fe848244729052f94dcc987ebe163950f28d5a7c90ea88e6885",
+        "local_sha256": "7920b52cf37f4fe848244729052f94dcc987ebe163950f28d5a7c90ea88e6885"
+      },
+      "feedback": {
+        "path": "luna_v19_standard_36/runs/xm-ct-h06/feedback.json",
+        "sha256": "42e4eeff3d6149ee3ee5a6918cd6d56e2a613cd6a92d648cc1b0c59e78b2f26e",
+        "local_sha256": "42e4eeff3d6149ee3ee5a6918cd6d56e2a613cd6a92d648cc1b0c59e78b2f26e"
+      },
+      "first_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/first/submission.json",
+          "sha256": "6da9077ba071c49eefa977b0696291fc1e0f0159afb79d4b5536dae2d3387ac9",
+          "local_sha256": "6da9077ba071c49eefa977b0696291fc1e0f0159afb79d4b5536dae2d3387ac9"
+        },
+        "tool_calls": {
+          "goto": 20,
+          "intercity_search": 4,
+          "catalog_search": 4
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/first/plan.json",
+          "sha256": "4bebedc2752fcd42a606b79fd098d8ca1226e07bad1b4a41ab1746822e2a7e47",
+          "local_sha256": "4bebedc2752fcd42a606b79fd098d8ca1226e07bad1b4a41ab1746822e2a7e47"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/first/score.json",
+          "sha256": "b4930c9836ea24ae16923ff128c29365312971cf98f45c219554d1f33a7fe7c3",
+          "local_sha256": "8cb0bbd0b30977cbd66ad96b8bc425070a635f7b97abb6eacd6ceb32882e908d"
+        },
+        "failed_checks": [
+          "Is_restaurants_correct"
+        ],
+        "failed_clauses": []
+      },
+      "revision_details": {
+        "submission": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/revision/submission.json",
+          "sha256": "ca8521437ee5ab8206857d3e2daf465bbcdb1d7e5517de5f0c9650b6a4184850",
+          "local_sha256": "ca8521437ee5ab8206857d3e2daf465bbcdb1d7e5517de5f0c9650b6a4184850"
+        },
+        "tool_calls": {
+          "catalog_search": 4,
+          "goto": 2
+        },
+        "blocker_reasons": [],
+        "plan": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/revision/plan.json",
+          "sha256": "8b855361a217bdce15652ee005449d24deaa5af0eec369137849eff80a361099",
+          "local_sha256": "8b855361a217bdce15652ee005449d24deaa5af0eec369137849eff80a361099"
+        },
+        "score": {
+          "path": "luna_v19_standard_36/runs/xm-ct-h06/revision/score.json",
+          "sha256": "131f9d01c59c43f99e7359ba932821e8c1a55abe91d86706028a640da17ee5fc",
+          "local_sha256": "8a1541b9f0fb4d0ff7d2315e33ba8e0e2c5f2948ed772a24fed9e3a0ae7ae10b"
+        },
+        "failed_checks": [],
+        "failed_clauses": []
+      },
+      "transport_preflight": {
+        "routes": {
+          "苏州→厦门/train": {
+            "candidates_with_time_and_price": 7,
+            "admitted_tool_records": 7,
+            "unpriced_references": 0
+          },
+          "苏州→厦门/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          },
+          "厦门→苏州/train": {
+            "candidates_with_time_and_price": 7,
+            "admitted_tool_records": 7,
+            "unpriced_references": 0
+          },
+          "厦门→苏州/airplane": {
+            "candidates_with_time_and_price": 0,
+            "admitted_tool_records": 0,
+            "unpriced_references": 0
+          }
+        },
+        "allowed_intercity_modes": [
+          "train",
+          "airplane"
+        ],
+        "pair_floor": {
+          "fare_per_person": 1004,
+          "outbound": {
+            "mode": "train",
+            "service": "D3205",
+            "from": "苏州南站",
+            "to": "厦门北站",
+            "start": 633,
+            "arrives": 1044,
+            "price": 502
+          },
+          "return": {
+            "mode": "train",
+            "service": "D3206",
+            "from": "厦门北站",
+            "to": "苏州南站",
+            "start": 772,
+            "arrives": 1190,
+            "price": 502,
+            "departure_day": 3
+          },
+          "destination_window_minutes": 2608
+        },
+        "party_intercity_floor": 2008,
+        "budget_ceiling": null,
+        "intercity_floor_above_budget": false
+      }
+    }
+  ],
+  "public_profile_receipt_sha256": "960bd888a9b8609b112c56d51b15bbca8ece90efb5057c67751606304763d0da"
+}

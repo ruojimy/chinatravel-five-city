@@ -1,0 +1,74 @@
+{
+  "utc": "2026-11-18T13:44:28.410215+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 3,
+              "end_time": "09:20",
+              "cost": 0,
+              "type": "attraction",
+              "start_time": "09:00",
+              "transports": [],
+              "price": 0,
+              "position": "嘉庚公园-鳌亭"
+            },
+            {
+              "tickets": 3,
+              "end_time": "11:15",
+              "cost": 0,
+              "type": "attraction",
+              "start_time": "10:00",
+              "transports": [
+                {
+                  "end_time": "09:38",
+                  "cost": 0,
+                  "distance": 0.7408232346604272,
+                  "end": "龙舟池",
+                  "mode": "walk",
+                  "start": "嘉庚公园-鳌亭",
+                  "price": 0,
+                  "start_time": "09:30"
+                }
+              ],
+              "price": 0,
+              "position": "龙舟池"
+            },
+            {
+              "type": "lunch",
+              "price": 60,
+              "cost": 180,
+              "start_time": "12:00",
+              "transports": [
+                {
+                  "mode": "taxi",
+                  "end_time": "11:37",
+                  "cost": 23.08,
+                  "cars": 1,
+                  "distance": 5.25,
+                  "start": "龙舟池",
+                  "price": 23.08,
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "start_time": "11:30"
+                }
+              ],
+              "end_time": "13:00",
+              "position": "绿茶餐厅(厦门集美大悦城店)"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "people_number": 3
+    },
+    "notes": "已把鳌亭结束时间改到09:20，早于09:30步行接驳和10:00龙舟池活动，修复反馈列出的重叠。两景点未知票价按允许的零元条件假设，午餐价及出租估价来自本题工具记录。"
+  },
+  "first_sha256": "e1f77b056bd05b9bc8f133ce79eabd1e0839d6f0e3119da84fab834cdfbfbe29",
+  "feedback_sha256": "c254bb3353d614e8d70fc05cd7f40acab4219a44e1552a9c54891d1c4d8963ac"
+}

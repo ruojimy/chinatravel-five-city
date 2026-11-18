@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:06:11.330296+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "首稿反馈为pass且无issues，行程满足D131第2天抵厦、住一晚、第3天抵京的时序；保持首稿。"
+  },
+  "first_sha256": "dc48c4f0b9f9a14c50dcf3b38f21b2f9dbc7d8f401921ffb69f3be056c0c8219",
+  "feedback_sha256": "819f61a680ec495c7d73dcab94fc5d44ba752aa38ee40ccd485c21d00951871d"
+}

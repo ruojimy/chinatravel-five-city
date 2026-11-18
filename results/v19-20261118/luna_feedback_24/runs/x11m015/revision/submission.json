@@ -1,0 +1,129 @@
+{
+  "utc": "2026-11-18T12:17:30.784997+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "按反馈修正西安北站接博物馆时序，并将第二处景点改为目录可定位的秦始皇兵马俑，与西安碑林博物馆组成历史古迹类景点。采用冻结历史列车票价、静态交通估价与目录历史房价作条件预算；出行日票价/库存、酒店实际房间容量及当前价格未知。酒店按68元/间夜×2间计，不将目录床数代理视为已确认房型。含住宿与车票在内每日估算均低于3000元。",
+    "plan": {
+      "people_number": 3,
+      "start_city": "成都",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "TrainID": "G322",
+              "start": "成都东",
+              "end": "西安北",
+              "start_time": "06:56",
+              "end_time": "10:05",
+              "price": 285,
+              "tickets": 3,
+              "cost": 855,
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "position": "西安碑林博物馆",
+              "start_time": "10:25",
+              "end_time": "12:25",
+              "price": 85,
+              "tickets": 3,
+              "cost": 255,
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安碑林博物馆",
+                  "mode": "taxi",
+                  "start_time": "10:05",
+                  "end_time": "10:25",
+                  "price": 55.69,
+                  "cost": 55.69,
+                  "distance": 13.55,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "position": "宜家假日旅游民宿酒店(钟楼回民街店)",
+              "start_time": "12:42",
+              "end_time": "08:00",
+              "price": 68,
+              "rooms": 2,
+              "cost": 136,
+              "transports": [
+                {
+                  "start": "西安碑林博物馆",
+                  "end": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "mode": "taxi",
+                  "start_time": "12:40",
+                  "end_time": "12:42",
+                  "price": 11.0,
+                  "cost": 11.0,
+                  "distance": 1.57,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "秦始皇兵马俑",
+              "start_time": "09:00",
+              "end_time": "12:30",
+              "price": 120,
+              "tickets": 3,
+              "cost": 360,
+              "transports": [
+                {
+                  "start": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "end": "秦始皇兵马俑",
+                  "mode": "taxi",
+                  "start_time": "08:00",
+                  "end_time": "08:49",
+                  "price": 143.65,
+                  "cost": 143.65,
+                  "distance": 33.1,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "train",
+              "TrainID": "G323",
+              "start": "西安北",
+              "end": "成都东",
+              "start_time": "19:17",
+              "end_time": "22:28",
+              "price": 316,
+              "tickets": 3,
+              "cost": 948,
+              "transports": [
+                {
+                  "start": "秦始皇兵马俑",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "13:00",
+                  "end_time": "13:46",
+                  "price": 135.09,
+                  "cost": 135.09,
+                  "distance": 31.2,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_sha256": "338b09460bcb35649ee2e1955597274b15cf02f3df26b992ed4e0f6ec8cd14e7",
+  "feedback_sha256": "cd869a0c0efdabb5207b705f105b3ecd37d4643f81dd48d4d759665a68d1c8bb"
+}

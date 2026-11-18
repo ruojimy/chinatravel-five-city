@@ -1,0 +1,100 @@
+{
+  "utc": "2026-11-18T13:34:55.383164+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "已按题面备选分支改为本岛两日：嘉庚公园内用独立记录的鳌亭、再游沙坡尾，第二天退房后接驳并安排午餐。渡轮参考明确不能构成原生行程腿，故不填渡轮；鼓浪屿目录/房型查询不能证明当日船班和房间可订。鹭江宾馆历史代理价665元/间，按2间计，实际库存和房型未知；鳌亭票价未知，按允许的零元条件假设。出租为离线图估价。",
+    "plan": {
+      "people_number": 4,
+      "target_city": "厦门",
+      "start_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "price": 0,
+              "position": "嘉庚公园-鳌亭",
+              "type": "attraction",
+              "start_time": "09:00",
+              "cost": 0,
+              "end_time": "11:30",
+              "tickets": 4,
+              "transports": []
+            },
+            {
+              "rooms": 2,
+              "position": "厦门鹭江宾馆",
+              "type": "accommodation",
+              "start_time": "21:00",
+              "price": 665,
+              "cost": 1330,
+              "end_time": "08:00",
+              "transports": [
+                {
+                  "price": 52.27,
+                  "distance": 12.79,
+                  "end_time": "17:19",
+                  "start_time": "17:00",
+                  "end": "厦门鹭江宾馆",
+                  "cost": 52.27,
+                  "cars": 1,
+                  "mode": "taxi",
+                  "start": "嘉庚公园-鳌亭"
+                }
+              ]
+            }
+          ],
+          "day": 1
+        },
+        {
+          "activities": [
+            {
+              "price": 0,
+              "position": "沙坡尾",
+              "type": "attraction",
+              "start_time": "09:30",
+              "cost": 0,
+              "end_time": "11:30",
+              "tickets": 4,
+              "transports": [
+                {
+                  "price": 12.68,
+                  "distance": 2.28,
+                  "end_time": "09:03",
+                  "start_time": "09:00",
+                  "end": "沙坡尾",
+                  "cost": 12.68,
+                  "cars": 1,
+                  "mode": "taxi",
+                  "start": "厦门鹭江宾馆"
+                }
+              ]
+            },
+            {
+              "start_time": "12:30",
+              "price": 12,
+              "cost": 48,
+              "transports": [
+                {
+                  "price": 19.13,
+                  "distance": 4.12,
+                  "end_time": "12:06",
+                  "start_time": "12:00",
+                  "end": "厦门海蛎煎(曾厝垵店)",
+                  "cost": 19.13,
+                  "cars": 1,
+                  "mode": "taxi",
+                  "start": "沙坡尾"
+                }
+              ],
+              "end_time": "13:30",
+              "position": "厦门海蛎煎(曾厝垵店)",
+              "type": "lunch"
+            }
+          ],
+          "day": 2
+        }
+      ]
+    },
+    "status": "submitted_first_draft"
+  }
+}

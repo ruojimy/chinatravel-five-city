@@ -1,0 +1,40 @@
+{
+  "phase": "first",
+  "tool": "goto",
+  "args": {
+    "city": "西安",
+    "start": "同盛祥(凤城五路店)",
+    "end": "西安索菲特传奇酒店（人民大厦）",
+    "mode": "taxi",
+    "departure": "15:00",
+    "people_number": 4
+  },
+  "utc": "2026-11-18T13:30:28.543706+00:00",
+  "receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "result": {
+    "city": "西安",
+    "start": "同盛祥(凤城五路店)",
+    "end": "西安索菲特传奇酒店（人民大厦）",
+    "mode": "taxi",
+    "departure": "15:00",
+    "people_number": 4,
+    "available": true,
+    "legs": [
+      {
+        "start": "同盛祥(凤城五路店)",
+        "end": "西安索菲特传奇酒店（人民大厦）",
+        "mode": "taxi",
+        "start_time": "15:00",
+        "end_time": "15:10",
+        "cost": 30.15,
+        "distance": 7.27,
+        "price": 30.15,
+        "cars": 1
+      }
+    ],
+    "error": null,
+    "source": "G3 static graph-distance Transportation.goto",
+    "route_scope": "offline topology and estimated time/fare, not real-world route proof",
+    "real_world_route_proof": false
+  }
+}

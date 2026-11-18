@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T13:45:09.691492+00:00",
+  "status": "keep_first",
+  "reply": {
+    "status": "keep_first",
+    "notes": "复核首稿记录的去程和返程航班搜索，均仍无价格；题目不允许用火车替换，保留数据阻塞。"
+  },
+  "first_sha256": "6833562d43da55addf02266d80441ca4fff8786a312df125def3806e50416fa6",
+  "feedback_sha256": "a7ce8efb512176f401b59a86725a1bd513497e90d56c48871b32be6264adcb78"
+}

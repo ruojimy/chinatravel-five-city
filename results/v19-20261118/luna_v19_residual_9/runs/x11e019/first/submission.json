@@ -1,0 +1,148 @@
+{
+  "utc": "2026-11-18T13:02:19.322100+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 4,
+      "start_city": "苏州",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:34",
+              "end_time": "13:20",
+              "cost": 3288,
+              "price": 822,
+              "tickets": 4,
+              "transports": [],
+              "TrainID": "G1970",
+              "start": "苏州北",
+              "end": "西安北"
+            },
+            {
+              "type": "lunch",
+              "start_time": "13:30",
+              "end_time": "14:00",
+              "cost": 168,
+              "price": 42,
+              "position": "同盛祥(凤城五路店)",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "同盛祥(凤城五路店)",
+                  "mode": "taxi",
+                  "start_time": "13:20",
+                  "end_time": "13:27",
+                  "cost": 22.5,
+                  "price": 22.5,
+                  "distance": 5.09,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "attraction",
+              "start_time": "14:20",
+              "end_time": "17:00",
+              "cost": 0,
+              "price": 0,
+              "tickets": 4,
+              "position": "陕西历史博物馆",
+              "transports": [
+                {
+                  "start": "同盛祥(凤城五路店)",
+                  "end": "陕西历史博物馆",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:17",
+                  "cost": 47.82,
+                  "price": 47.82,
+                  "distance": 11.8,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "dinner",
+              "start_time": "18:00",
+              "end_time": "19:00",
+              "cost": 512,
+              "price": 128,
+              "position": "西安饭庄",
+              "transports": [
+                {
+                  "start": "陕西历史博物馆",
+                  "end": "西安饭庄",
+                  "mode": "taxi",
+                  "start_time": "17:30",
+                  "end_time": "17:35",
+                  "cost": 18.65,
+                  "price": 18.65,
+                  "distance": 3.99,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "19:30",
+              "end_time": "07:30",
+              "cost": 272,
+              "price": 68,
+              "rooms": 4,
+              "room_type": 1,
+              "position": "宜家假日旅游民宿酒店(钟楼回民街店)",
+              "transports": [
+                {
+                  "start": "西安饭庄",
+                  "end": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "mode": "taxi",
+                  "start_time": "19:00",
+                  "end_time": "19:01",
+                  "cost": 11,
+                  "price": 11,
+                  "distance": 1.29,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "09:29",
+              "end_time": "16:11",
+              "cost": 3288,
+              "price": 822,
+              "tickets": 4,
+              "transports": [
+                {
+                  "start": "宜家假日旅游民宿酒店(钟楼回民街店)",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "07:30",
+                  "end_time": "07:48",
+                  "cost": 48.95,
+                  "price": 48.95,
+                  "distance": 12.05,
+                  "cars": 1
+                }
+              ],
+              "TrainID": "G1918",
+              "start": "西安北",
+              "end": "苏州北"
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "行程按无指定出行日的静态快照作有条件规划。G1970/G1918 使用2026-11-16历史参考票价822元/人，日期供应与现价未知。西安饭庄、同盛祥(凤城五路店)的人均价42/128元为静态目录值；住宿68元/间夜为目录值，按1床代理列4间；当晚房型、现价、库存均未核实。陕西历史博物馆目录价为0元，按目录条件值计。市内路线是冻结图估算，不代表实时导航或车/餐/馆可订；所有市内时间均为工具返回。"
+  }
+}

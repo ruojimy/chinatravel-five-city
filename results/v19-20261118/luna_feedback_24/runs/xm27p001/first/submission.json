@@ -1,0 +1,71 @@
+{
+  "utc": "2026-11-18T12:07:41.890160+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "notes": "按静态目录选择必去嘉庚公园、龙舟池和集美午餐。两处景点目录未提供门票价，按冻结沙盒对缺失景点票价的授权作零元条件假设；餐馆60元/人按2人计。市内步行路线是冻结交通图估算，不是实时路线证明；日期库存与实际营业情况未知。",
+    "plan": {
+      "people_number": 2,
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "attraction",
+              "position": "嘉庚公园",
+              "start_time": "09:00",
+              "end_time": "10:00",
+              "price": 0,
+              "tickets": 2,
+              "cost": 0,
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "position": "龙舟池",
+              "start_time": "10:09",
+              "end_time": "11:15",
+              "price": 0,
+              "tickets": 2,
+              "cost": 0,
+              "transports": [
+                {
+                  "start": "嘉庚公园",
+                  "end": "龙舟池",
+                  "mode": "walk",
+                  "start_time": "10:00",
+                  "end_time": "10:09",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 0.8304591862836017
+                }
+              ]
+            },
+            {
+              "type": "lunch",
+              "position": "绿茶餐厅(厦门集美大悦城店)",
+              "start_time": "12:33",
+              "end_time": "13:30",
+              "price": 60,
+              "cost": 120,
+              "transports": [
+                {
+                  "start": "龙舟池",
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "mode": "walk",
+                  "start_time": "11:30",
+                  "end_time": "12:33",
+                  "price": 0,
+                  "cost": 0,
+                  "distance": 5.250369882398681
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

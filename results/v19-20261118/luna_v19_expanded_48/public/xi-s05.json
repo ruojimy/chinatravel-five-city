@@ -1,0 +1,11 @@
+{
+  "uid": "xi-s05",
+  "tag": "medium",
+  "start_city": "成都",
+  "target_city": "西安",
+  "days": 2,
+  "people_number": 2,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "成都两人火车往返西安，含往返共两天。指定西安碑林博物馆，要完成至少一次历史古迹游览，住一晚并留一次午饭。"
+}

@@ -1,0 +1,8 @@
+{
+  "first_sha256": "ed6114cb9517463d9206b0052b87df428a8ce1c872546887abf9ad3661fbe6a8",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已分别查询杭州→厦门和厦门→杭州飞机，两个方向的 intercity_search 均返回 records=[]、unpriced_count=0，工具内没有可核验航班号、时刻或票价；reference_search(kind=airfare)也返回unsupported kind or city。题目要求必须往返乘机并写可核验航班时刻和票价，不能编造机票。厦门磐基希尔顿仅有一条2026-10-24至25、双床房、2成人、638.97元的历史官方报价，已过期且非当前库存；市内路线只能提供静态估算。关键机票报价缺失，无法冻结符合要求的具体往返计划。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

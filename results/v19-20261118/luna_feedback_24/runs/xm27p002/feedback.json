@@ -1,0 +1,27 @@
+{
+  "first_sha256": "29645b9a48da34b7b9fe8ccd84a2b297baad4562fed696372af43143dab7407c",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_time_correct",
+      "state": "fail",
+      "messages": [
+        {
+          "state": "fail",
+          "code": "transport_overlaps_previous",
+          "day": 2,
+          "activity_index": 2,
+          "detail": {
+            "leg": 1,
+            "departs_at_minute": 2100,
+            "previous_ends_at_minute": 2160
+          }
+        }
+      ],
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 1
+      }
+    }
+  ]
+}

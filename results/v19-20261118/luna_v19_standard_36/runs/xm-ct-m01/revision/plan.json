@@ -1,0 +1,185 @@
+{
+  "people_number": 2,
+  "start_city": "上海",
+  "target_city": "厦门",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:20",
+          "end_time": "13:47",
+          "cost": 1260,
+          "price": 630,
+          "tickets": 2,
+          "TrainID": "G3091",
+          "start": "上海虹桥站",
+          "end": "厦门北站",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "15:30",
+          "end_time": "17:00",
+          "cost": 0,
+          "price": 0,
+          "tickets": 2,
+          "position": "沙坡尾",
+          "transports": [
+            {
+              "start": "厦门北站",
+              "end": "厦门北-地铁站",
+              "mode": "walk",
+              "start_time": "14:00",
+              "end_time": "14:01",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.1
+            },
+            {
+              "start": "厦门北-地铁站",
+              "end": "镇海路-地铁站",
+              "mode": "metro",
+              "start_time": "14:01",
+              "end_time": "14:56",
+              "cost": 12,
+              "price": 6,
+              "distance": 27.75,
+              "tickets": 2
+            },
+            {
+              "start": "镇海路-地铁站",
+              "end": "沙坡尾",
+              "mode": "walk",
+              "start_time": "14:56",
+              "end_time": "15:14",
+              "cost": 0,
+              "price": 0,
+              "distance": 1.58
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "20:00",
+          "end_time": "08:00",
+          "cost": 109,
+          "price": 109,
+          "rooms": 1,
+          "room_type": 1,
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "transports": [
+            {
+              "start": "沙坡尾",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "walk",
+              "start_time": "18:00",
+              "end_time": "18:05",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.4616134262087982
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "10:45",
+          "end_time": "16:30",
+          "cost": 0,
+          "price": 0,
+          "tickets": 2,
+          "position": "中山路步行街",
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "中山路步行街",
+              "mode": "walk",
+              "start_time": "10:10",
+              "end_time": "10:37",
+              "cost": 0,
+              "price": 0,
+              "distance": 2.284979102986828
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "20:00",
+          "end_time": "05:00",
+          "cost": 109,
+          "price": 109,
+          "rooms": 1,
+          "room_type": 1,
+          "position": "格盟酒店(厦门大学沙坡尾店)",
+          "transports": [
+            {
+              "start": "中山路步行街",
+              "end": "格盟酒店(厦门大学沙坡尾店)",
+              "mode": "walk",
+              "start_time": "17:00",
+              "end_time": "17:27",
+              "cost": 0,
+              "price": 0,
+              "distance": 2.284979102986828
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "07:18",
+          "end_time": "14:02",
+          "cost": 1220,
+          "price": 610,
+          "tickets": 2,
+          "TrainID": "G3756",
+          "start": "厦门北站",
+          "end": "上海松江站",
+          "transports": [
+            {
+              "start": "格盟酒店(厦门大学沙坡尾店)",
+              "end": "镇海路-地铁站",
+              "mode": "walk",
+              "start_time": "05:00",
+              "end_time": "05:21",
+              "cost": 0,
+              "price": 0,
+              "distance": 1.81
+            },
+            {
+              "start": "镇海路-地铁站",
+              "end": "厦门北-地铁站",
+              "mode": "metro",
+              "start_time": "05:21",
+              "end_time": "06:48",
+              "cost": 16,
+              "price": 8,
+              "distance": 43.83,
+              "tickets": 2
+            },
+            {
+              "start": "厦门北-地铁站",
+              "end": "厦门北站",
+              "mode": "walk",
+              "start_time": "06:48",
+              "end_time": "06:49",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

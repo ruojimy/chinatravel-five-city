@@ -1,0 +1,74 @@
+{
+  "utc": "2026-11-18T13:44:28.221692+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "start_city": "厦门",
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "tickets": 2,
+              "end_time": "09:45",
+              "cost": 0,
+              "type": "attraction",
+              "start_time": "09:00",
+              "transports": [],
+              "price": 0,
+              "position": "嘉庚公园-鳌亭"
+            },
+            {
+              "tickets": 2,
+              "end_time": "11:15",
+              "cost": 0,
+              "type": "attraction",
+              "start_time": "10:45",
+              "transports": [
+                {
+                  "end_time": "10:15",
+                  "cost": 0,
+                  "distance": 1.2782817849631052,
+                  "end": "集美学村牌坊",
+                  "mode": "walk",
+                  "start": "嘉庚公园-鳌亭",
+                  "price": 0,
+                  "start_time": "10:00"
+                }
+              ],
+              "price": 0,
+              "position": "集美学村牌坊"
+            },
+            {
+              "type": "lunch",
+              "price": 60,
+              "cost": 120,
+              "start_time": "12:00",
+              "transports": [
+                {
+                  "mode": "taxi",
+                  "end_time": "11:37",
+                  "cost": 21.32,
+                  "cars": 1,
+                  "distance": 4.75,
+                  "start": "集美学村牌坊",
+                  "price": 21.32,
+                  "end": "绿茶餐厅(厦门集美大悦城店)",
+                  "start_time": "11:30"
+                }
+              ],
+              "end_time": "13:00",
+              "position": "绿茶餐厅(厦门集美大悦城店)"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "people_number": 2
+    },
+    "notes": "已将鳌亭停留调整至10:00步行接驳之前，消除反馈指出的路线与前一活动时间重叠；仍游览集美学村牌坊并安排午餐。景点未提供票价按允许的零元条件假设；出租估价来自离线图。"
+  },
+  "first_sha256": "f652f217132fb66d1beb0c33b6e36e5268360fa4827f2c8e47e7e745c2bdb079",
+  "feedback_sha256": "608036497610b0466f89c28755a0e98562b604f733e512e77957f00b61fe69e2"
+}

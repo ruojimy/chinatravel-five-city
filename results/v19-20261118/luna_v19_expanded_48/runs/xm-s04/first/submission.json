@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-18T13:29:33.494595+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "notes": "静态快照将南普陀寺标为历史古迹；两景点按目录中的零价条件计。午餐价来自目录；出租和步行接驳为离线图估算，不代表实时路线或营业情况。",
+    "status": "submitted_first_draft",
+    "plan": {
+      "target_city": "厦门",
+      "itinerary": [
+        {
+          "activities": [
+            {
+              "start_time": "09:00",
+              "price": 0,
+              "transports": [],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "11:30",
+              "cost": 0,
+              "position": "南普陀寺"
+            },
+            {
+              "price": 24,
+              "end_time": "12:45",
+              "position": "黄则和花生汤(中山路店)",
+              "type": "lunch",
+              "cost": 48,
+              "transports": [
+                {
+                  "end": "黄则和花生汤(中山路店)",
+                  "distance": 2.51,
+                  "start_time": "11:30",
+                  "start": "南普陀寺",
+                  "end_time": "11:33",
+                  "price": 13.47,
+                  "cost": 13.47,
+                  "cars": 1,
+                  "mode": "taxi"
+                }
+              ],
+              "start_time": "11:45"
+            },
+            {
+              "start_time": "13:30",
+              "price": 0,
+              "transports": [
+                {
+                  "start_time": "13:00",
+                  "price": 0,
+                  "mode": "walk",
+                  "start": "黄则和花生汤(中山路店)",
+                  "end_time": "13:04",
+                  "cost": 0,
+                  "distance": 0.3702018719251149,
+                  "end": "中山路步行街"
+                }
+              ],
+              "tickets": 2,
+              "type": "attraction",
+              "end_time": "15:00",
+              "cost": 0,
+              "position": "中山路步行街"
+            }
+          ],
+          "day": 1
+        }
+      ],
+      "start_city": "厦门",
+      "people_number": 2
+    }
+  }
+}

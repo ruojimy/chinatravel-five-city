@@ -1,0 +1,11 @@
+{
+  "uid": "xm-s05",
+  "tag": "medium",
+  "start_city": "深圳",
+  "target_city": "厦门",
+  "days": 2,
+  "people_number": 3,
+  "limit_rooms": false,
+  "limits_room_type": false,
+  "nature_language": "三人坐火车从深圳往返厦门，两天一晚。我只指定嘉庚公园的鳌亭和集美学村牌坊，两处都要到，市内接驳要核对。"
+}

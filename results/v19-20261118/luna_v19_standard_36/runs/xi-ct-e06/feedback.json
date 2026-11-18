@@ -1,0 +1,8 @@
+{
+  "first_sha256": "5eda8907b4694aa9548fa695149a09c85556641000f6bb738bcdb460620ff967",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

@@ -1,0 +1,8 @@
+{
+  "first_sha256": "8a56a973d013af90c984f15eb4ca72cb073bcd5fa588933abbbceab5fbda90a6",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查必去地点西安鼓楼、西安钟楼及必需午餐同盛祥目录。西安鼓楼可定位，但同盛祥缺lat/lon；同盛祥→钟楼的goto提示Endpoint coordinates require dynamic verification; provider not wired。未能核验要求的市内接驳完整路线，不能编造端点或路线。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

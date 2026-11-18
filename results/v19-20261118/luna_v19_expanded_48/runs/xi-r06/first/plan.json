@@ -1,0 +1,103 @@
+{
+  "people_number": 3,
+  "start_city": "南京",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start": "南京南",
+          "end": "西安北",
+          "TrainID": "G1970",
+          "start_time": "07:38",
+          "end_time": "13:20",
+          "price": 683,
+          "cost": 2049,
+          "tickets": 3,
+          "transports": []
+        },
+        {
+          "type": "accommodation",
+          "start_time": "14:18",
+          "end_time": "08:00",
+          "position": "西安索菲特人民大厦",
+          "price": 491,
+          "cost": 1473,
+          "rooms": 3,
+          "room_type": 1,
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安索菲特人民大厦",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:18",
+              "price": 50.37,
+              "cost": 50.37,
+              "distance": 12.37,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "09:05",
+          "end_time": "10:00",
+          "position": "西安钟楼",
+          "price": 30,
+          "cost": 90,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "西安索菲特人民大厦",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "09:00",
+              "end_time": "09:01",
+              "price": 11,
+              "cost": 11,
+              "distance": 1.32,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "train",
+          "start": "西安",
+          "end": "南京",
+          "TrainID": "Z306",
+          "start_time": "21:41",
+          "end_time": "09:40",
+          "arrival_day": 3,
+          "price": 152.5,
+          "cost": 457.5,
+          "tickets": 3,
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "西安站",
+              "mode": "taxi",
+              "start_time": "20:00",
+              "end_time": "20:03",
+              "price": 13.18,
+              "cost": 13.18,
+              "distance": 2.42,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": []
+    }
+  ]
+}

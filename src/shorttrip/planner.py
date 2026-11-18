@@ -17,6 +17,7 @@ import pandas as pd
 from .checker import CheckReport, check_plan
 from .env import SandboxEnv, hhmm, minutes
 from .plan import DayBuilder, ceil_div, itinerary
+from .opening_hours import fits as opening_hours_fit
 
 
 def _known_cost(record: dict) -> bool:
@@ -496,11 +497,13 @@ def _close_minutes(open_time: str, close_time: str) -> int:
 
 def _window_allows(row, start_min: int, duration: int) -> bool:
     try:
-        open_min = minutes(str(row["opentime"]))
-        close_min = _close_minutes(str(row["opentime"]), str(row["endtime"]))
-    except Exception:
+        return opening_hours_fit(row, start_min, duration)
+    except (ValueError, TypeError, KeyError):
+        # Preserve legacy unknown-hour handling, but never treat malformed
+        # explicit segments as unrestricted.
+        if row.get('opening_segments_json') not in (None, ''):
+            return False
         return True
-    return start_min >= open_min and start_min + duration <= close_min
 
 
 def _meal_window_ok(kind: str, activity: dict) -> bool:

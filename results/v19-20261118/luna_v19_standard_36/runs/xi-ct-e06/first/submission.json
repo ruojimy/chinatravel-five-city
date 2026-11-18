@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T14:25:07.137399+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "reasons": [
+      "北京至西安的 airplane 搜索有航班时刻但11条均缺票价，schema要求飞机活动提供数值票价和总价；反向查询也未提供可作为条件票价的价格，预算无法核算。"
+    ],
+    "status": "blocked_by_data"
+  }
+}

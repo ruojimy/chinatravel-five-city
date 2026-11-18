@@ -1,0 +1,69 @@
+{
+  "first_sha256": "ee7ffba464fcdc9915a012a1fa1b2eef0b1582a074349c93707e77dbd985e699",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_intercity_transport_correct",
+      "state": "fail",
+      "messages": [
+        "No information found given transport ID."
+      ],
+      "cells": {
+        "Intercity transportation events must occur": 0,
+        "Invalid Trains or Airplanes, given TrainID/FlightID, origin and destination": 1,
+        "Incorrect Information of Intercity Transport on price or duration": 1,
+        "Incorrect Cost on Intercity Transportation": 1
+      }
+    },
+    {
+      "check": "Is_restaurants_correct",
+      "state": "fail",
+      "messages": [
+        "No information found given restaurant [海鲜生海景餐厅]"
+      ],
+      "cells": {
+        "Unavailable Restruants": 1,
+        "Visiting Restruants in their closed time": 1,
+        "Repeated Restruants Choices": 1,
+        "Incorrect price Information of Restruants": 1,
+        "Incorrect cost Information of Restruants": 1,
+        "Inappropriate Meal Times": 1,
+        "Repeated Meal Types in One Day": 1
+      }
+    },
+    {
+      "check": "Is_transport_correct",
+      "state": "fail",
+      "messages": [
+        "segment 1: Incorrect price infomation of transport 格盟酒店(厦门大学沙坡尾店) -> 南普陀寺  [{'start': '格盟酒店(厦门大学沙坡尾店)', 'end': '南普陀寺', 'mode': 'taxi', 'start_time': '09:00', 'end_time': '09:00', 'price': 16.5, 'cost': 16.5, 'distance': 0.58, 'cars': 1}], Tool: [{'start': '格盟酒店(厦门大学沙坡尾店)', 'end': '南普陀寺', 'mode': 'taxi', 'start_time': '09:00', 'end_time': '09:00', 'cost': 11.0, 'distance': 0.58}]"
+      ],
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 1,
+        "Inccorrect cost information of Inner-City Transport": 0
+      }
+    },
+    {
+      "check": "Is_time_correct",
+      "state": "unknown",
+      "messages": [
+        {
+          "state": "unknown",
+          "code": "intercity_duration_evidence_missing",
+          "day": 4,
+          "activity_index": 1
+        },
+        {
+          "state": "unknown",
+          "code": "intercity_arrival_day_not_explicit",
+          "day": 4,
+          "activity_index": 1
+        }
+      ],
+      "cells": {
+        "Invalid duration information of each activity": 0,
+        "Does not follow Chronological Order": 0
+      }
+    }
+  ]
+}

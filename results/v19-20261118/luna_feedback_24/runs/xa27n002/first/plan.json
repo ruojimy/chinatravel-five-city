@@ -1,0 +1,145 @@
+{
+  "target_city": "西安",
+  "start_city": "武汉",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "end_time": "14:01",
+          "type": "train",
+          "tickets": 2,
+          "end": "西安北",
+          "TrainID": "G3180",
+          "price": 545,
+          "transports": [],
+          "start": "武汉",
+          "start_time": "09:42",
+          "cost": 1090
+        },
+        {
+          "start_time": "15:00",
+          "end_time": "17:00",
+          "cost": 0,
+          "price": 0,
+          "transports": [
+            {
+              "end_time": "14:55",
+              "cars": 1,
+              "cost": 70.66,
+              "end": "陕西历史博物馆",
+              "price": 70.66,
+              "start": "西安北站",
+              "distance": 16.88,
+              "start_time": "14:30",
+              "mode": "taxi"
+            }
+          ],
+          "tickets": 2,
+          "type": "attraction",
+          "position": "陕西历史博物馆"
+        },
+        {
+          "start_time": "22:00",
+          "end_time": "08:00",
+          "rooms": 1,
+          "price": 80,
+          "transports": [
+            {
+              "end_time": "18:04",
+              "cars": 1,
+              "cost": 14.58,
+              "end": "西安新开家庭公寓(黄雁村地铁站店)",
+              "price": 14.58,
+              "start": "陕西历史博物馆",
+              "distance": 2.82,
+              "start_time": "18:00",
+              "mode": "taxi"
+            }
+          ],
+          "type": "accommodation",
+          "cost": 80,
+          "position": "西安新开家庭公寓(黄雁村地铁站店)"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "start_time": "09:10",
+          "end_time": "10:30",
+          "cost": 60,
+          "price": 30,
+          "transports": [
+            {
+              "end_time": "09:03",
+              "cars": 1,
+              "cost": 13.28,
+              "end": "西安钟楼",
+              "price": 13.28,
+              "start": "西安新开家庭公寓(黄雁村地铁站店)",
+              "distance": 2.45,
+              "start_time": "09:00",
+              "mode": "taxi"
+            }
+          ],
+          "tickets": 2,
+          "type": "attraction",
+          "position": "西安钟楼"
+        },
+        {
+          "cost": 80,
+          "start_time": "17:00",
+          "type": "dinner",
+          "price": 40,
+          "transports": [
+            {
+              "end_time": "11:01",
+              "cars": 1,
+              "cost": 11.0,
+              "end": "清真尔卜餐厅",
+              "price": 11.0,
+              "start": "西安钟楼",
+              "distance": 0.75,
+              "start_time": "11:00",
+              "mode": "taxi"
+            }
+          ],
+          "end_time": "18:00",
+          "position": "清真尔卜餐厅"
+        },
+        {
+          "end_time": "05:57",
+          "type": "train",
+          "tickets": 2,
+          "transports": [
+            {
+              "end_time": "18:33",
+              "cars": 1,
+              "cost": 12.98,
+              "end": "西安站",
+              "price": 12.98,
+              "start": "清真尔卜餐厅",
+              "distance": 2.37,
+              "start_time": "18:30",
+              "mode": "taxi"
+            }
+          ],
+          "end": "武昌",
+          "TrainID": "Z232",
+          "price": 119,
+          "arrival_day": 3,
+          "start": "西安",
+          "start_time": "20:01",
+          "cost": 238
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": []
+    }
+  ],
+  "people_number": 2
+}

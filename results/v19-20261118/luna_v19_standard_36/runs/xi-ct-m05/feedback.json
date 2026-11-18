@@ -1,0 +1,8 @@
+{
+  "first_sha256": "2d6f381d49ab46aad058b8828199cf16d30d30129c43fbd443b3bbd62abc6eb9",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已按北京→西安和西安→北京查询 airplane。去程记录仅有无票价的航班预览（如 CCA1201、MU2118），查询结果没有带 Cost 的去程航班；返程虽有带 Cost 的 MU2123、CA1206、MU2107，但单程金额缺失，无法按 schema 填写去程 cost 或核算往返预算。快照无 travel_date，不能补造金额。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

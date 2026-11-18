@@ -1,0 +1,706 @@
+{
+  "profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "model": "gpt-6-luna",
+  "by_city": {
+    "xian": {
+      "cases": 24,
+      "first": {
+        "pass": 12,
+        "fail": 6,
+        "blocked_by_data": 6
+      },
+      "revision": {
+        "pass": 18,
+        "fail": 3,
+        "blocked_by_data": 3
+      },
+      "new_passes": 6,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 3
+      }
+    },
+    "xiamen": {
+      "cases": 24,
+      "first": {
+        "pass": 19,
+        "fail": 2,
+        "blocked_by_data": 3
+      },
+      "revision": {
+        "pass": 21,
+        "blocked_by_data": 3
+      },
+      "new_passes": 2,
+      "regressions": 0,
+      "remaining_failing_gates": {}
+    },
+    "all": {
+      "cases": 48,
+      "first": {
+        "pass": 31,
+        "fail": 8,
+        "blocked_by_data": 9
+      },
+      "revision": {
+        "pass": 39,
+        "fail": 3,
+        "blocked_by_data": 6
+      },
+      "new_passes": 8,
+      "regressions": 0,
+      "remaining_failing_gates": {
+        "hard": 3
+      }
+    }
+  },
+  "cases": [
+    {
+      "uid": "xi-r01",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "4783f35ee1ab7dee923b4994d52988179970a7453c430482c66dabaa79193a18",
+      "revision_sha256": "5b28ad9bf81cbab9b3b621301c097e43c041b6956bcc21e1d2041c0ca433fe8d",
+      "feedback_sha256": "2bca57e619928c2f884e43cb4e61f8001ce81ba89c279f55822004e6ad6472b3"
+    },
+    {
+      "uid": "xi-r02",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "d865355bd6a742015ba76bd53ea1c95fbc630cb463a6386e50716ee5f2f05fb2",
+      "revision_sha256": "c184e057b5d01563f49d42136b9d03333dcff63240ce0e6beea810d44d3f3416",
+      "feedback_sha256": "577fa0a47de34141213606fcb74d8a773d708eebb87e7e1a6bcf2553bf378476"
+    },
+    {
+      "uid": "xi-r03",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "e107b19fcc999fc0a07cd1fe1c2416227ec9b0dba3a58a07a8a71fc283310967",
+      "revision_sha256": "8b1e1699d63dc75c753d601af8dfbc0048a652af26fa5b015476260d90ab1619",
+      "feedback_sha256": "5596167a5b97ceba91e8c2b5322b8cd525f5a250ad70ce37d2e59e07687372df"
+    },
+    {
+      "uid": "xi-r04",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "blocked_by_data",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "d08f8c29840f1402bbcc04140f7e2c43ad85aed34b06ee32607c2e49f3647747",
+      "revision_sha256": "7b7a3d5e7e68b6211a3c261f1cec3b215b3df908fc5176c99cc80f9d2bae947a",
+      "feedback_sha256": "228c232f89e3aa6c7886a1450e11231e93dd4bc7eb56b284cc871d708b43d567"
+    },
+    {
+      "uid": "xi-r05",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "27d1bf7516012d851f776b89f6d7ca7e39b94116a8266304f030e8613c4e3060",
+      "revision_sha256": "46986789dad1ec0beef898a5d36814c08e5db8d03b6dbf39fab5e9349ea3580e",
+      "feedback_sha256": "d183d33c06c17e08f5dce1a3e79aafe972ebd4ae27f09d4a3ba630c7c0b5d677"
+    },
+    {
+      "uid": "xi-r06",
+      "city": "xian",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "03d844859e1a7e59ad34f0471f4514b485487caa4e7f673a24b270ebac9cd4a8",
+      "revision_sha256": "edb2bdcff6bdc686e128a96ed5a527ea2908c4e008277cf102151c52761911da",
+      "feedback_sha256": "c2ae9aa26444332a5c7a0a1e8dd11ad51ed17ea5bae9eb2b22602e77375c86d9"
+    },
+    {
+      "uid": "xm-r01",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "414d1b7cd4c94f003e576fb5585c993810b6916a1fbd2df83c842d490586b3fb",
+      "revision_sha256": "cfbac3e9bffcce0308582246663326359b68908420698c6a4ad418603e26948b",
+      "feedback_sha256": "f54e26a24e9d763bf4df363198602ada7cd381fa314c673407f8b4ed8e0b9265"
+    },
+    {
+      "uid": "xm-r02",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "593ff64babd3eb8564ce78bfda6c9bc88990f8637cefe2ecb5fdbe2cef7f539d",
+      "revision_sha256": "88032693998bc3b0e98d8f77a798a98e92c145475f6665b395571c8a3edb53ec",
+      "feedback_sha256": "33185fd2959289858e39b01d861930516acb474c1c23bd743b8fa58b7520e517"
+    },
+    {
+      "uid": "xm-r03",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "77284c08b68e7de07bff8c236ea8fa4f58e8860758cb9e52256f802ff5a2e5dc",
+      "revision_sha256": "d473cc8fb589465560830036e317b1258bf5e96c259de2d1787e6b910cc7c518",
+      "feedback_sha256": "7e92f5df6b8de73e5b83b1968e30ace5158964829fce5113ea19f17ba9853703"
+    },
+    {
+      "uid": "xm-r04",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c96350509b89ffd82eb2580241a9e9aad6f1d85e79fa169282ce7099f30176e4",
+      "revision_sha256": "55fa148b2b8894c8b4ba0afbe804dcdd9bacd06f590163c4128bfef7651a6413",
+      "feedback_sha256": "7ec218cb3c2999c8a8e3cc1b5add6782bca6e978e5d1adee4daab299f9ffa0b2"
+    },
+    {
+      "uid": "xm-r05",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3f23a57dea9f233c9dd44cd318cc32de62d8d75cb94e9bfdae9f5eb25cf50df0",
+      "revision_sha256": "f09cbf76507f4878f1d06c22dfe7ad2bddf751fe83264a4c055901f89736e680",
+      "feedback_sha256": "f5dfe0c4d5c84fbcb8b5f3bce65b9f7d65760caaeb8c3adab16ca7ba2741ca49"
+    },
+    {
+      "uid": "xm-r06",
+      "city": "xiamen",
+      "family": "rail_timing",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "159b6382cf60f8a296e36b4b88ffbe98e283875445431a580f34fd167344d5a6",
+      "revision_sha256": "ec0e62bb4106b1678018ac687c7486b77bc5758df57595b52dd33c63270a359e",
+      "feedback_sha256": "9411626ce4c80b90aa480b100024a640373c7e7d8291eb54e9ae350f32817b90"
+    },
+    {
+      "uid": "xi-p01",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "blocked_by_data",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8a56a973d013af90c984f15eb4ca72cb073bcd5fa588933abbbceab5fbda90a6",
+      "revision_sha256": "97408f16635bfa25a20f54537c8a7e192bf7f6d5de879fb07ab708390c858d0e",
+      "feedback_sha256": "44c10ec2ebe1acd1ff4363dbd5eda716b0963f5880168de88d04cb72d44cf3ab"
+    },
+    {
+      "uid": "xi-p02",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "blocked_by_data",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "e5772e926b028893354ba9c14675ed335bf55016d3e8d4ad981b7cac22dbeb10",
+      "revision_sha256": "1e2c67648828834b7ea21cee6610df0dac4df8b35184b6d9434c4002f630a312",
+      "feedback_sha256": "597719077b8efe945468f6afc3afd1c63c3b6680035dbf525713c5d89c8c329d"
+    },
+    {
+      "uid": "xi-p03",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3851dd9ccc839bc039207f65986d7d5e0e18ae509d3d3e1670c89cf161a104b7",
+      "revision_sha256": "1251d1a2bb1d46a0a291f81a703e618a22f6f791553678bf9b4fc99251340a8a",
+      "feedback_sha256": "e8c612953a963af42e8cbd0d87d0135980c86fadabe126aa3de8d7452204bfc5"
+    },
+    {
+      "uid": "xi-p04",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1aed46e885efbb6b165003f27181e22d41d543a67cc8466c5764f6f3e5c12fe4",
+      "revision_sha256": "289417a7913d35533c8c9d24ea298d86e0b65663ba29d4f4b18bc7f1f4931e0f",
+      "feedback_sha256": "fe2cac8390b2266e57477087960f31e272b870cea9b08f2f35790f9fe7d50da2"
+    },
+    {
+      "uid": "xi-p05",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8cb570ff2f3a14266c558ba26b1c091a14fbf1896a0e3f1a3e398a0b2301dc94",
+      "revision_sha256": "2d6625d7f7dc3031a5e4beecfd47673524a92521903de1f27d999369d77b3b66",
+      "feedback_sha256": "110b2e78934ff565cb330114dfa156fbd354e62febe2eb792a285794b6ac9591"
+    },
+    {
+      "uid": "xi-p06",
+      "city": "xian",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "76dcf6883086f18d0f76da362ab1d6a54c3809482c742a1eb230d4f2a23c2a87",
+      "revision_sha256": "090822185c6c6cb72f8272b26df78f272f8dcbe27cbfc931f4f2ac3c29ea0747",
+      "feedback_sha256": "1cf2002570f852e7b559cd2bec3d32b5dc362cb581f250d7fb0dedb6600b8161"
+    },
+    {
+      "uid": "xm-p01",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "f3e3620389017af4e8d1e2504f54372f1536d12b78d1c9061399ae7c5cd96408",
+      "revision_sha256": "d2b0fa7ce5c71daeea73857ac0cd185a229756771254ab63e1b90823a7ae158e",
+      "feedback_sha256": "8ee956609f11bc547f92b7bb28b35e64161fb25f418787ed5728c058aeafa23d"
+    },
+    {
+      "uid": "xm-p02",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "2758f1b75f2c89593cd1a2af52e79b44b8a7ff0b4ec185af0377428f07921ba4",
+      "revision_sha256": "4ee74a0f23f6bbd484dfd1a2640e87797a3f1a78230fa13be8ca76462d6a00a7",
+      "feedback_sha256": "bc41350684af2bd582305425de65f17c94f15ce27f75480be1d7aa1a3687e16f"
+    },
+    {
+      "uid": "xm-p03",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1f59dd0438cc09815cdc9c2330dd969a9f8e0c531df77470caa11d1a36d9c00e",
+      "revision_sha256": "3e76a847bdb0259006ede7937607e0b0e0b6ee5bd39afb952ed767e823ed9afa",
+      "feedback_sha256": "c11e3a13cebf95f9348acbd5cfc2eacb2a82aa51fdd0a309537e5a9292f40467"
+    },
+    {
+      "uid": "xm-p04",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "fdd22b4601b11c84ee79e03eb67bf1a1042e2196118afa869a65296a3d38a37f",
+      "revision_sha256": "c790322f401627824a709586407b11056c28c91178d20c12244668144c693de9",
+      "feedback_sha256": "06d4b678dfe6217ea1faa0421261b0c9fc322f39032392ca2c6cd4eb863e102e"
+    },
+    {
+      "uid": "xm-p05",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "cf862ba888a0137da3cefeb6ecd63890e0dbd1d2f1ee5a9ec7c060dd6af3137a",
+      "revision_sha256": "684ad390081c79267db6b75190d891c52769cefbd4cfa6c810ece5ad3f4967f1",
+      "feedback_sha256": "1d00f930b3f4baa2ce335246cc92af705101015a0bff743629b1803e1dd7194c"
+    },
+    {
+      "uid": "xm-p06",
+      "city": "xiamen",
+      "family": "place_connection",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "fba8f71f0162b2ea816a5e1700501fbf65ebef4a73f9865f3ec1797c204e15fc",
+      "revision_sha256": "4bb2c67d2256cd70cf2fe7feef3189d525d84551a5b72380cd8e734b08f691b3",
+      "feedback_sha256": "712c564c9d267ea7aa96640a8fff96237854a7db8ac0ef08e5a6a7fd357bd2e1"
+    },
+    {
+      "uid": "xi-s01",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8b37b00d183f8c1e679ca9403b71da8e88a1a71c701a91ed03578f245688363c",
+      "revision_sha256": "be6b2ae4c438e1061434edddd3954b4b7d9186e51968d2557ea147a0e7dcef66",
+      "feedback_sha256": "11d87baaef2ac6684e718d4ddab63b26917dc7342f818f6b1779ede40fb0c92f"
+    },
+    {
+      "uid": "xi-s02",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "3230e3a00486f89a4facaf2fc83bb43cbdcd870518126c52468f9074154e2a66",
+      "revision_sha256": "386f87ee83c62148b5bab7a701c37961fef01d60bd28594e9dfa23e3c2b236da",
+      "feedback_sha256": "98430417d58e67ea3db961cef5adcb7580c1a1c60854ce8930e0d5f08b408574"
+    },
+    {
+      "uid": "xi-s03",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "fail",
+      "revision": "fail",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [
+        "hard"
+      ],
+      "blocking_reasons": [],
+      "first_sha256": "e3afa552119d5104bd21e3e89fc806b51202350bcd84ee36d76547511273c211",
+      "revision_sha256": "1bd1d484460b0b57cb30b2fc705d665c0db0a6955f0adcca12e0124d6307dfcf",
+      "feedback_sha256": "d5e2856fa81f7408a85fee5e779605abe7fff860d00dd975b111e9a1ca372801"
+    },
+    {
+      "uid": "xi-s04",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "fail",
+      "revision": "fail",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [
+        "hard"
+      ],
+      "blocking_reasons": [],
+      "first_sha256": "81e1d77c4c6c0052b1c2b976bad16ebc71cf80f5fe87f505e96ed691b5ef180a",
+      "revision_sha256": "4f9b1e894fd71127d516f04b63147dabf542a40feeb63cf182ac419e9b81e1c9",
+      "feedback_sha256": "70a49adab7167fbbb212af474d0d743df8c6b157c9b3ffff14cee00ccbf93ea1"
+    },
+    {
+      "uid": "xi-s05",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "4379c147df1930efe05e5f5c864b1b5d099a9ab11161f3ab4e5a0dd2556a9b05",
+      "revision_sha256": "d3450d1a9b487f2061cf17d5cb1c5173901b75290ff15cd738702313879fa916",
+      "feedback_sha256": "42b759c5a76afaa4927d5416f61cbd4bbd5c7d2f016da1f5cd63185b6d64faf8"
+    },
+    {
+      "uid": "xi-s06",
+      "city": "xian",
+      "family": "attraction_semantics",
+      "first": "fail",
+      "revision": "fail",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [
+        "hard"
+      ],
+      "blocking_reasons": [],
+      "first_sha256": "b02fbc4c2a8c4db72597f420220b4007c2cf17acd87952931fc56eb283a36a12",
+      "revision_sha256": "46006f48c301f6a73ac054d1bae82e8083f019aba8f20b04f790d41449c8b359",
+      "feedback_sha256": "3d61ae5b93d28dbebbeeb00f809fe63662c978d63d30a1548be90520510412b8"
+    },
+    {
+      "uid": "xm-s01",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "f652f217132fb66d1beb0c33b6e36e5268360fa4827f2c8e47e7e745c2bdb079",
+      "revision_sha256": "96cbdfe2a367acd365eca11fccd263658268500e190f5f8060cc1ebd233a2dd8",
+      "feedback_sha256": "608036497610b0466f89c28755a0e98562b604f733e512e77957f00b61fe69e2"
+    },
+    {
+      "uid": "xm-s02",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "e1f77b056bd05b9bc8f133ce79eabd1e0839d6f0e3119da84fab834cdfbfbe29",
+      "revision_sha256": "13b3818d9bfc884f94eac5c8d2de054fbadaa32501bd1d7cff422fcc9bf34b28",
+      "feedback_sha256": "c254bb3353d614e8d70fc05cd7f40acab4219a44e1552a9c54891d1c4d8963ac"
+    },
+    {
+      "uid": "xm-s03",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "a602b94d73c9be4c416fdf545c5bc434a12a526b85b76bf8dde6e7585d3606ae",
+      "revision_sha256": "a5c999ef7b6e5bcf67e7a85e9efe8cee78179b6801f663f583c034715523a547",
+      "feedback_sha256": "fd7e4f6bac5f39286e0154b62d4e636299fc498e1406815f822d81bf73c62bc1"
+    },
+    {
+      "uid": "xm-s04",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "d4a256698e8c3146d894c813d0bbef0601c8bcedae701880e0f62c06878cb7be",
+      "revision_sha256": "4958381ff0c276506223cf42bb2a0a3bc9246b1ae0074282da28eb21b9a0807f",
+      "feedback_sha256": "059e5dd6e0b0b0033226d7e73238c80373ab2c17c67261c39dcae64c51141cf4"
+    },
+    {
+      "uid": "xm-s05",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "5804a753ed392039347ee128da1cbedc49be212a9a7857078ab986f339ab2e43",
+      "revision_sha256": "30142c9d7c3663437d19d40c83b9bc131a0c433ad2bdf325c64d25fa8ac73d3e",
+      "feedback_sha256": "3bd75a51f7d3dd4f12eae0c6ee5be1c47b361e8365e5eed10abefffe114bdec5"
+    },
+    {
+      "uid": "xm-s06",
+      "city": "xiamen",
+      "family": "attraction_semantics",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "2dd659a66a2959cb6692a58df470d962e2738ab9164dc04379135a5de537d093",
+      "revision_sha256": "efd545d336c2b6581f946d79b8953858bb8d774e3bdc4481d9a5c1921221e0a6",
+      "feedback_sha256": "69668ea597de9032a3ee17d1ddf4786f95fae0bf7efc930364e011b8a9cc7c58"
+    },
+    {
+      "uid": "xi-g01",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已分别查询杭州→西安和西安→杭州飞机。去程4班、返程9班均只有航班号/时刻等资料而没有Cost；没有可核验的往返机票金额，无法满足两张往返机票金额要求。"
+      ],
+      "first_sha256": "9a72af4b92b822b21b8ef13542f854319d16e8b5264916ac4c916de3f983c9e4",
+      "revision_sha256": "f1e114170a4c51b2e10957a832203c880b38f7b912454d326d02b718db050114",
+      "feedback_sha256": "f5847b85229c92141369413e9233e6d20663c1e5f1c21cffd44839576efd137b"
+    },
+    {
+      "uid": "xi-g02",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "fail",
+      "revision": "pass",
+      "revision_status": "submitted_first_draft",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "8b418dc2e14f5440b95eaf4428f482ccc0f392d89be54236095bcc4cf4f08935",
+      "revision_sha256": "f9f23769b5138f544a786a491caaf150f796b6360db81f6cdaaba0c74c3d6b21",
+      "feedback_sha256": "76af8319cd69c90ecfb9b20c583066fe6be9100928053cfc74edfddf60a49a4c"
+    },
+    {
+      "uid": "xi-g03",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已分别查询广州→西安和西安→广州飞机。去程候选航班均无Cost；返程只有MU2303有可核验单价580元/人。必须乘飞机且预算上限7000元，缺少去程票价，无法核验往返交通和总额是否在预算内。"
+      ],
+      "first_sha256": "b21d85d265cd393a589b8938720e109a1894572daf71cc99a118de4425570d92",
+      "revision_sha256": "b3652378929edfb903fd308249e4b6c3beccc364febb131d6ddcc92ec32ad395",
+      "feedback_sha256": "bb15b0eb1310ce5b9d5e3dcf23281d7e33b00a6238a69e95c9ea45575e273c88"
+    },
+    {
+      "uid": "xi-g04",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "db68597d434309c65876edf40eb43f9ddc962798a668fc6760dd0abf66cf4982",
+      "revision_sha256": "747ee9624bc1ddda991f0fe7927987430de3c8b6f61b0e6ec37b9303761fb2c8",
+      "feedback_sha256": "69243b9b34e9ae51c0b7aba706ac16bcea3d8083f3293cb6eeb435812928ed65"
+    },
+    {
+      "uid": "xi-g05",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "核查了武汉天河国际机场→西安咸阳国际机场：航班搜索有2条记录，但priced records为0、unpriced_count为2（CZ3889、CSN3889），均无票价。",
+        "核查了西安咸阳国际机场→武汉天河国际机场：航班搜索有3条记录，但priced records为0、unpriced_count为3（含MU7756、CZ3890、3U1406），均无票价。",
+        "题面硬性要求往返两段都乘飞机并且有可核验票价；静态沙盒当前不能为任一航段提供价格，且没有实际出行日期可进一步限定。不能满足该条件，因此不以无价航班虚构金额或改乘火车。"
+      ],
+      "first_sha256": "6833562d43da55addf02266d80441ca4fff8786a312df125def3806e50416fa6",
+      "revision_sha256": "3d5a79f34f12513506be9740e939dea4ebf104724728b071b9bd3e0807375482",
+      "feedback_sha256": "a7ce8efb512176f401b59a86725a1bd513497e90d56c48871b32be6264adcb78"
+    },
+    {
+      "uid": "xi-g06",
+      "city": "xian",
+      "family": "evidence_boundary",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "2aee7ff2eca2d5379656b868aeffb3531510585bd5fe519d460892e3154b11e2",
+      "revision_sha256": "1e7ca2d0666089904b44c824ebe905ee56d27602d0143b1dab3a27a9d89b728d",
+      "feedback_sha256": "f0616f0c4a733553626076035b888d39bd50d87d2eaaeb78bec86ae6a856d953"
+    },
+    {
+      "uid": "xm-g01",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "已按本题分别查询杭州→厦门及厦门→杭州的 airplane 城际记录；两个方向均返回 0 条航班/票价记录，无法按“只能坐飞机、来回都要可核验票价”构成往返行程。没有用火车替代。"
+      ],
+      "first_sha256": "64ac63f46ca3ed37d28c32401cc396450d7f7e7e7ced65ea29462bb391aa1dd1",
+      "revision_sha256": "25a84cc9cc5cc4cd7252f1012ee87991b742e7965b7484f6c613c54c20991f31",
+      "feedback_sha256": "8a5f17619ff7c462847340c0e08929b47b8e4ea15a673632c33cf35416737eba"
+    },
+    {
+      "uid": "xm-g02",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "b96d108b9a7645154ec88f6d20f3d065c0231ae623ab898ceb682cfcfe4b3d00",
+      "revision_sha256": "7dfe0f470c379a73e61247e30db282496126baed6009f1f3fa0e5aa38e37dbb9",
+      "feedback_sha256": "fa05e0a35bdbd3b9167d5c41c9f53901209ecf51ae389d3bd4597b7c8cbeb252"
+    },
+    {
+      "uid": "xm-g03",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "鼓浪屿 ferry_reference 已返回东渡客运码头→鼓浪屿三丘田码头与返向船班窗口、约 20 分钟航程及往返票价参考 35 元/人，但 availability=unknown 且 can_build_native_itinerary_leg=false；schema 不能记录船舶活动/船腿，无法按题意提交两段可记录的渡轮行程。"
+      ],
+      "first_sha256": "e742651378cd30e2a9b11af380f329de868889596424b0f5b06912da3dcd33d9",
+      "revision_sha256": "75442bfac22c2562851c6822c3e7b072841ec8e1fe6ba884de81afcb60acc0df",
+      "feedback_sha256": "ef62a46976f1bdfb9d41ca12411e59073b06a4ba2a5b8d47d8ca888c549e0c01"
+    },
+    {
+      "uid": "xm-g04",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "1029b003f2c54c4041a49a714f5cbd9c9f8128bf20119fd25e49b7883fc8f6a3",
+      "revision_sha256": "47156acdefe222a4d48b3e0bd4d1b18759e817a82495cf23d7e780d02045d970",
+      "feedback_sha256": "e5983fe8dd66532562bedb734af054d57acff4e8d91656661a3f7740e63eaee0"
+    },
+    {
+      "uid": "xm-g05",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "blocked_by_data",
+      "revision": "blocked_by_data",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [
+        "题目要求第1天到鼓浪屿乘船并在岛上过夜，第2天乘船回本岛，且船票与住宿必须能在行程中核验。厦门ferry_reference返回东渡客运码头↔鼓浪屿三丘田码头、参考往返票价35元/人及约20分钟，但availability=unknown且can_build_native_itinerary_leg=false。",
+        "对正确方向和码头调用map_departures（第1天去程、第2天返程）均返回空记录，无法为题面指定的两天选到可核验的精确船班。原工具仅有walk/taxi/metro路线和train/airplane城际活动类型，不能把渡轮原样写成合规行程腿。",
+        "查询鼓浪屿晴宿精品客栈的room_options只返回historical_reference、official_rooms为空、availability=unknown；目录79元历史代理价不证明四人可订房型或出行日余量。因此也不能核验题目要求的岛上住宿。"
+      ],
+      "first_sha256": "11c2a526b493670ea6b7746074563d7129b1a43d4bb58729b52719282459c45e",
+      "revision_sha256": "1b726daeb39c1383e9e14b369aa3075060b2b3a4cc27c4ffcdb4f11e693363c2",
+      "feedback_sha256": "751d71a36658d89361b1178a05f400c15531facb6c7b0b384cec36a7aba2100a"
+    },
+    {
+      "uid": "xm-g06",
+      "city": "xiamen",
+      "family": "evidence_boundary",
+      "first": "pass",
+      "revision": "pass",
+      "revision_status": "keep_first",
+      "remaining_failing_gates": [],
+      "blocking_reasons": [],
+      "first_sha256": "c647cf39085827dc8a16cdc0d3d787efd5e747e30e8fc496d6b2c0570fbd40b2",
+      "revision_sha256": "d965860ed21a87993d0aa3e5ff7926be8b0850bd83b14657c77c5db890c00c04",
+      "feedback_sha256": "9b39bbe4d3ace28718ec7e9b98c1e91114a939af95b131c089db643709415c1d"
+    }
+  ],
+  "public_profile_receipt_sha256": "960bd888a9b8609b112c56d51b15bbca8ece90efb5057c67751606304763d0da"
+}

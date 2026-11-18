@@ -1,0 +1,8 @@
+{
+  "first_sha256": "216a694856af72f0778b7124326b27e8bbc574104173493a8f36abf218f578c5",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "已查询杭州→西安和西安→杭州航班；可用航班仅出现在unpriced_preview，未提供票价，且日期库存未知。按schema不能虚构往返机票金额，因此无法提交合规的完整往返预算行程。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

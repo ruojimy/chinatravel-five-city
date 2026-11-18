@@ -1,0 +1,280 @@
+{
+  "people_number": 2,
+  "start_city": "上海",
+  "target_city": "西安",
+  "itinerary": [
+    {
+      "day": 1,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:09",
+          "end_time": "13:20",
+          "cost": 1740,
+          "price": 870,
+          "tickets": 2,
+          "TrainID": "G1970",
+          "start": "上海虹桥",
+          "end": "西安北",
+          "transports": []
+        },
+        {
+          "type": "attraction",
+          "start_time": "14:30",
+          "end_time": "15:15",
+          "cost": 60,
+          "price": 30,
+          "tickets": 2,
+          "position": "西安钟楼",
+          "transports": [
+            {
+              "start": "西安北站",
+              "end": "西安钟楼",
+              "mode": "taxi",
+              "start_time": "14:00",
+              "end_time": "14:19",
+              "cost": 52.5,
+              "price": 52.5,
+              "distance": 12.85,
+              "cars": 1
+            }
+          ]
+        },
+        {
+          "type": "attraction",
+          "start_time": "15:50",
+          "end_time": "16:50",
+          "cost": 20,
+          "price": 10,
+          "tickets": 2,
+          "position": "大雁塔",
+          "transports": [
+            {
+              "start": "西安钟楼",
+              "end": "钟楼地铁站C口",
+              "mode": "walk",
+              "start_time": "15:30",
+              "end_time": "15:30",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.07
+            },
+            {
+              "start": "钟楼地铁站C口",
+              "end": "大雁塔地铁站B西南口",
+              "mode": "metro",
+              "start_time": "15:30",
+              "end_time": "15:39",
+              "cost": 6,
+              "price": 3,
+              "distance": 4.77,
+              "tickets": 2
+            },
+            {
+              "start": "大雁塔地铁站B西南口",
+              "end": "大雁塔",
+              "mode": "walk",
+              "start_time": "15:39",
+              "end_time": "15:44",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.48
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "20:00",
+          "end_time": "08:00",
+          "cost": 184,
+          "price": 184,
+          "rooms": 1,
+          "room_type": 1,
+          "position": "真情宾馆(西安钟鼓楼店)",
+          "transports": [
+            {
+              "start": "大雁塔",
+              "end": "大雁塔地铁站B西南口",
+              "mode": "walk",
+              "start_time": "17:00",
+              "end_time": "17:05",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.48
+            },
+            {
+              "start": "大雁塔地铁站B西南口",
+              "end": "钟楼地铁站C口",
+              "mode": "metro",
+              "start_time": "17:05",
+              "end_time": "17:14",
+              "cost": 6,
+              "price": 3,
+              "distance": 4.77,
+              "tickets": 2
+            },
+            {
+              "start": "钟楼地铁站C口",
+              "end": "西安钟楼",
+              "mode": "walk",
+              "start_time": "17:14",
+              "end_time": "17:14",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.07
+            },
+            {
+              "start": "西安钟楼",
+              "end": "真情宾馆(西安钟鼓楼店)",
+              "mode": "walk",
+              "start_time": "17:20",
+              "end_time": "17:27",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.6088195176410776
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "activities": [
+        {
+          "type": "attraction",
+          "start_time": "10:00",
+          "end_time": "11:00",
+          "cost": 60,
+          "price": 30,
+          "tickets": 2,
+          "position": "西安鼓楼",
+          "transports": [
+            {
+              "start": "真情宾馆(西安钟鼓楼店)",
+              "end": "西安钟楼",
+              "mode": "walk",
+              "start_time": "09:00",
+              "end_time": "09:07",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.6088195176410776
+            },
+            {
+              "start": "西安钟楼",
+              "end": "钟楼地铁站C口",
+              "mode": "walk",
+              "start_time": "09:15",
+              "end_time": "09:15",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.07
+            },
+            {
+              "start": "钟楼地铁站C口",
+              "end": "大雁塔地铁站B西南口",
+              "mode": "metro",
+              "start_time": "09:15",
+              "end_time": "09:24",
+              "cost": 6,
+              "price": 3,
+              "distance": 4.77,
+              "tickets": 2
+            },
+            {
+              "start": "大雁塔地铁站B西南口",
+              "end": "大雁塔",
+              "mode": "walk",
+              "start_time": "09:24",
+              "end_time": "09:29",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.48
+            },
+            {
+              "start": "大雁塔",
+              "end": "大雁塔地铁站B西南口",
+              "mode": "walk",
+              "start_time": "09:30",
+              "end_time": "09:35",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.48
+            },
+            {
+              "start": "大雁塔地铁站B西南口",
+              "end": "钟楼地铁站C口",
+              "mode": "metro",
+              "start_time": "09:35",
+              "end_time": "09:44",
+              "cost": 6,
+              "price": 3,
+              "distance": 4.77,
+              "tickets": 2
+            },
+            {
+              "start": "钟楼地铁站C口",
+              "end": "西安鼓楼",
+              "mode": "walk",
+              "start_time": "09:44",
+              "end_time": "09:47",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.32
+            }
+          ]
+        },
+        {
+          "type": "accommodation",
+          "start_time": "20:00",
+          "end_time": "04:00",
+          "cost": 184,
+          "price": 184,
+          "rooms": 1,
+          "room_type": 1,
+          "position": "真情宾馆(西安钟鼓楼店)",
+          "transports": [
+            {
+              "start": "西安鼓楼",
+              "end": "真情宾馆(西安钟鼓楼店)",
+              "mode": "walk",
+              "start_time": "12:00",
+              "end_time": "12:06",
+              "cost": 0,
+              "price": 0,
+              "distance": 0.5510115859298393
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "activities": [
+        {
+          "type": "train",
+          "start_time": "06:13",
+          "end_time": "13:22",
+          "cost": 1740,
+          "price": 870,
+          "tickets": 2,
+          "TrainID": "G1914",
+          "start": "西安北",
+          "end": "上海虹桥",
+          "transports": [
+            {
+              "start": "真情宾馆(西安钟鼓楼店)",
+              "end": "西安北站",
+              "mode": "taxi",
+              "start_time": "04:30",
+              "end_time": "04:49",
+              "cost": 54.48,
+              "price": 54.48,
+              "distance": 13.29,
+              "cars": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

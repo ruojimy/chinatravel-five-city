@@ -1,0 +1,106 @@
+{
+  "utc": "2026-11-18T14:25:44.040419+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "成都",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:09",
+              "end_time": "09:31",
+              "cost": 632,
+              "price": 316,
+              "tickets": 2,
+              "TrainID": "D1998",
+              "start": "成都东",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "10:45",
+              "end_time": "16:30",
+              "cost": 20,
+              "price": 10,
+              "tickets": 2,
+              "position": "大雁塔",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "大雁塔",
+                  "mode": "taxi",
+                  "start_time": "10:00",
+                  "end_time": "10:26",
+                  "cost": 73.69,
+                  "price": 73.69,
+                  "distance": 17.55,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "04:00",
+              "cost": 184,
+              "price": 184,
+              "rooms": 1,
+              "room_type": 1,
+              "position": "真情宾馆(西安钟鼓楼店)",
+              "transports": [
+                {
+                  "start": "大雁塔",
+                  "end": "真情宾馆(西安钟鼓楼店)",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:06",
+                  "cost": 20.66,
+                  "price": 20.66,
+                  "distance": 4.56,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "05:18",
+              "end_time": "14:18",
+              "cost": 528,
+              "price": 264,
+              "tickets": 2,
+              "TrainID": "D15",
+              "start": "西安东",
+              "end": "成都东",
+              "transports": [
+                {
+                  "start": "真情宾馆(西安钟鼓楼店)",
+                  "end": "西安东站",
+                  "mode": "taxi",
+                  "start_time": "04:00",
+                  "end_time": "04:18",
+                  "cost": 49,
+                  "price": 49,
+                  "distance": 12.07,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "仅用本题查询到的静态目录、带历史票价车次及 goto 离线路线。目录房价184元/间/晚、单床数1仅作大床一床容量代理，不证明实际床尺寸或可订房型；车票与路线不是出行日供给。未查询餐饮，因此不计餐费。"
+  }
+}

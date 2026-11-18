@@ -1,0 +1,156 @@
+{
+  "utc": "2026-11-18T14:25:43.873352+00:00",
+  "status": "submitted_first_draft",
+  "reply": {
+    "status": "submitted_first_draft",
+    "plan": {
+      "people_number": 2,
+      "start_city": "上海",
+      "target_city": "西安",
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:09",
+              "end_time": "13:20",
+              "cost": 1740,
+              "price": 870,
+              "tickets": 2,
+              "TrainID": "G1970",
+              "start": "上海虹桥",
+              "end": "西安北",
+              "transports": []
+            },
+            {
+              "type": "attraction",
+              "start_time": "15:00",
+              "end_time": "17:00",
+              "cost": 60,
+              "price": 30,
+              "tickets": 2,
+              "position": "西安钟楼",
+              "transports": [
+                {
+                  "start": "西安北站",
+                  "end": "西安钟楼",
+                  "mode": "taxi",
+                  "start_time": "14:00",
+                  "end_time": "14:19",
+                  "cost": 52.5,
+                  "price": 52.5,
+                  "distance": 12.85,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "08:00",
+              "cost": 184,
+              "price": 184,
+              "rooms": 1,
+              "room_type": 1,
+              "position": "真情宾馆(西安钟鼓楼店)",
+              "transports": [
+                {
+                  "start": "西安钟楼",
+                  "end": "真情宾馆(西安钟鼓楼店)",
+                  "mode": "taxi",
+                  "start_time": "18:00",
+                  "end_time": "18:00",
+                  "cost": 11,
+                  "price": 11,
+                  "distance": 0.61,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            {
+              "type": "attraction",
+              "start_time": "10:00",
+              "end_time": "15:00",
+              "cost": 20,
+              "price": 10,
+              "tickets": 2,
+              "position": "大雁塔",
+              "transports": [
+                {
+                  "start": "真情宾馆(西安钟鼓楼店)",
+                  "end": "大雁塔",
+                  "mode": "taxi",
+                  "start_time": "09:00",
+                  "end_time": "09:06",
+                  "cost": 20.66,
+                  "price": 20.66,
+                  "distance": 4.56,
+                  "cars": 1
+                }
+              ]
+            },
+            {
+              "type": "accommodation",
+              "start_time": "20:00",
+              "end_time": "04:00",
+              "cost": 184,
+              "price": 184,
+              "rooms": 1,
+              "room_type": 1,
+              "position": "真情宾馆(西安钟鼓楼店)",
+              "transports": [
+                {
+                  "start": "大雁塔",
+                  "end": "真情宾馆(西安钟鼓楼店)",
+                  "mode": "taxi",
+                  "start_time": "17:00",
+                  "end_time": "17:06",
+                  "cost": 20.66,
+                  "price": 20.66,
+                  "distance": 4.56,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "activities": [
+            {
+              "type": "train",
+              "start_time": "06:13",
+              "end_time": "13:22",
+              "cost": 1740,
+              "price": 870,
+              "tickets": 2,
+              "TrainID": "G1914",
+              "start": "西安北",
+              "end": "上海虹桥",
+              "transports": [
+                {
+                  "start": "真情宾馆(西安钟鼓楼店)",
+                  "end": "西安北站",
+                  "mode": "taxi",
+                  "start_time": "04:30",
+                  "end_time": "04:49",
+                  "cost": 54.48,
+                  "price": 54.48,
+                  "distance": 13.29,
+                  "cars": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": "仅用本题查询到的静态目录、带历史票价车次及 goto 离线路线。住宿以目录单床数代理，价格184元/间/晚为快照参考，房型及当日库存未核实；车票和路线报价不是出行日供给。沙坡尾等以外未规划用餐，餐饮费不纳入小计。"
+  }
+}

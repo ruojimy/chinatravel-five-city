@@ -1,0 +1,8 @@
+{
+  "first_sha256": "2b004156ade96c555657041003499ee549b5fa045d319bb18837c893974fa281",
+  "outcome": "blocked_by_data",
+  "reasons": [
+    "查询重庆—西安any方向返回了有价列车及未定价航班；反向西安—重庆航班只返回未定价的MU2261、CZ2304、MU2267、CES2267。缺当日往返可核验的完整票价，因此无法形成有依据的交通金额与预算。快照不能证明具体日期的余票。"
+  ],
+  "check": "No plan could be scored. You may verify a missed route, date or alternative once, or retain the blocker."
+}

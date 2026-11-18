@@ -1,0 +1,16 @@
+{
+  "first_sha256": "d865355bd6a742015ba76bd53ea1c95fbc630cb463a6386e50716ee5f2f05fb2",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_space_correct",
+      "state": "fail",
+      "messages": [
+        "{'state': 'fail', 'code': 'transport_end_mismatch', 'day': 1, 'activity_index': 4}"
+      ],
+      "cells": {
+        "Invalid Transport information across positions": 1
+      }
+    }
+  ]
+}

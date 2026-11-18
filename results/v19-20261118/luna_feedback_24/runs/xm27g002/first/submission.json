@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-18T12:05:59.860088+00:00",
+  "status": "blocked_by_data",
+  "reply": {
+    "status": "blocked_by_data",
+    "reasons": [
+      "厦门渡轮参考显示本岛东渡客运码头↔鼓浪屿三丘田码头可参考票价35元/人，约20分钟，运营时刻可查，但工具标注can_build_native_itinerary_leg=false；当前schema仅支持train/airplane城际与walk/metro/taxi市内transports，不能如实表示必需的渡轮活动及两端接驳。"
+    ]
+  }
+}

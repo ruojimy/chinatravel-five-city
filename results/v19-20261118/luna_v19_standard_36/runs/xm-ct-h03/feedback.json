@@ -1,0 +1,34 @@
+{
+  "first_sha256": "0d9ce97cc2c73f5378f12edc04cc55695a97b8a6ddb6e7d44c9daaab13069ef8",
+  "outcome": "fail",
+  "issues": [
+    {
+      "check": "Is_restaurants_correct",
+      "state": "fail",
+      "messages": [
+        "No information found given restaurant [海鲜生海景餐厅]"
+      ],
+      "cells": {
+        "Unavailable Restruants": 1,
+        "Visiting Restruants in their closed time": 1,
+        "Repeated Restruants Choices": 1,
+        "Incorrect price Information of Restruants": 1,
+        "Incorrect cost Information of Restruants": 1,
+        "Inappropriate Meal Times": 1,
+        "Repeated Meal Types in One Day": 1
+      }
+    },
+    {
+      "check": "Is_transport_correct",
+      "state": "fail",
+      "messages": [
+        "segment 1: Incorrect cost information of transport 格盟酒店(厦门大学沙坡尾店) -> 南普陀寺  [{'start': '格盟酒店(厦门大学沙坡尾店)', 'end': '南普陀寺', 'mode': 'taxi', 'start_time': '09:00', 'end_time': '09:00', 'price': 11, 'cost': 16.5, 'distance': 0.58, 'cars': 1}], [cost=price*cars] "
+      ],
+      "cells": {
+        "Unavailable Inner-City Transport": 0,
+        "Incorrect Information of Inner-City Transporton on price, distance, and duration": 0,
+        "Inccorrect cost information of Inner-City Transport": 1
+      }
+    }
+  ]
+}
