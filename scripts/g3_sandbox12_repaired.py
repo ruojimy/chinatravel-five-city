@@ -8,7 +8,7 @@ from pathlib import Path
 
 from g3_sandbox12_xiamen import REPO, configure as configure_profile, room_options
 
-PROFILE = REPO / 'data/sandbox_profiles/xiamen12_historical_v19_maps'
+PROFILE = REPO / 'data/sandbox_profiles/xiamen12_historical_v20_completion'
 CHECKOUT_PROFILE = PROFILE.with_name('xiamen12_historical_v16')
 TIMELINE_PROFILE = PROFILE.with_name('xiamen12_historical_v17')
 TOOLS = ('catalog_list', 'catalog_search', 'catalog_entity', 'catalog_preflight',

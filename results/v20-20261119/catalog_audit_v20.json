@@ -1,0 +1,382 @@
+{
+  "profile": {
+    "profile": "xiamen12_historical_v20_completion",
+    "path": "data/sandbox_profiles/xiamen12_historical_v20_completion",
+    "receipt_sha256": "e917838ba9b72c502d2dcbef555fc88dfaa2ff861df6b1433a4deed5228b3dee",
+    "boundary": "V19 historical schedules and V20 verified catalog observations. Dated seller fares are conditional and do not establish purchase totals or seat inventory.",
+    "public_receipt_sha256": "e5bae46e2dc9cbcd77f66138463ace7628e27dde6a4c568aaeb05106adcd3106"
+  },
+  "cities": {
+    "北京": {
+      "attraction": {
+        "eligible": 335,
+        "has_position": 335,
+        "has_price": 335,
+        "all_required_fields": 335,
+        "specific": 335,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 470,
+        "has_position": 470,
+        "has_price": 470,
+        "all_required_fields": 470,
+        "specific": 378,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 92
+      },
+      "accommodation": {
+        "eligible": 401,
+        "has_position": 401,
+        "has_price": 401,
+        "all_required_fields": 401,
+        "has_bed_count": 401
+      }
+    },
+    "上海": {
+      "attraction": {
+        "eligible": 360,
+        "has_position": 360,
+        "has_price": 360,
+        "all_required_fields": 360,
+        "specific": 360,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 484,
+        "has_position": 484,
+        "has_price": 484,
+        "all_required_fields": 484,
+        "specific": 339,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 145
+      },
+      "accommodation": {
+        "eligible": 403,
+        "has_position": 403,
+        "has_price": 403,
+        "all_required_fields": 403,
+        "has_bed_count": 403
+      }
+    },
+    "南京": {
+      "attraction": {
+        "eligible": 323,
+        "has_position": 323,
+        "has_price": 323,
+        "all_required_fields": 323,
+        "specific": 323,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 468,
+        "has_position": 468,
+        "has_price": 468,
+        "all_required_fields": 468,
+        "specific": 405,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 61,
+        "unknown": 2
+      },
+      "accommodation": {
+        "eligible": 373,
+        "has_position": 373,
+        "has_price": 373,
+        "all_required_fields": 373,
+        "has_bed_count": 373
+      }
+    },
+    "苏州": {
+      "attraction": {
+        "eligible": 359,
+        "has_position": 359,
+        "has_price": 359,
+        "all_required_fields": 359,
+        "specific": 359,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 469,
+        "has_position": 469,
+        "has_price": 469,
+        "all_required_fields": 469,
+        "specific": 400,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 64,
+        "unknown": 5
+      },
+      "accommodation": {
+        "eligible": 293,
+        "has_position": 293,
+        "has_price": 293,
+        "all_required_fields": 293,
+        "has_bed_count": 293
+      }
+    },
+    "杭州": {
+      "attraction": {
+        "eligible": 377,
+        "has_position": 377,
+        "has_price": 377,
+        "all_required_fields": 377,
+        "specific": 377,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 458,
+        "has_position": 458,
+        "has_price": 458,
+        "all_required_fields": 458,
+        "specific": 404,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 53,
+        "unknown": 1
+      },
+      "accommodation": {
+        "eligible": 378,
+        "has_position": 378,
+        "has_price": 378,
+        "all_required_fields": 378,
+        "has_bed_count": 378
+      }
+    },
+    "深圳": {
+      "attraction": {
+        "eligible": 306,
+        "has_position": 306,
+        "has_price": 306,
+        "all_required_fields": 306,
+        "specific": 306,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 478,
+        "has_position": 478,
+        "has_price": 478,
+        "all_required_fields": 478,
+        "specific": 389,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 89
+      },
+      "accommodation": {
+        "eligible": 402,
+        "has_position": 402,
+        "has_price": 402,
+        "all_required_fields": 402,
+        "has_bed_count": 402
+      }
+    },
+    "成都": {
+      "attraction": {
+        "eligible": 333,
+        "has_position": 333,
+        "has_price": 333,
+        "all_required_fields": 285,
+        "specific": 333,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 467,
+        "has_position": 467,
+        "has_price": 467,
+        "all_required_fields": 467,
+        "specific": 413,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 49,
+        "unknown": 5
+      },
+      "accommodation": {
+        "eligible": 379,
+        "has_position": 379,
+        "has_price": 379,
+        "all_required_fields": 379,
+        "has_bed_count": 379
+      }
+    },
+    "武汉": {
+      "attraction": {
+        "eligible": 334,
+        "has_position": 334,
+        "has_price": 334,
+        "all_required_fields": 334,
+        "specific": 334,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 457,
+        "has_position": 457,
+        "has_price": 457,
+        "all_required_fields": 457,
+        "specific": 383,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 70,
+        "unknown": 4
+      },
+      "accommodation": {
+        "eligible": 368,
+        "has_position": 368,
+        "has_price": 368,
+        "all_required_fields": 368,
+        "has_bed_count": 368
+      }
+    },
+    "广州": {
+      "attraction": {
+        "eligible": 339,
+        "has_position": 339,
+        "has_price": 339,
+        "all_required_fields": 339,
+        "specific": 339,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 467,
+        "has_position": 467,
+        "has_price": 467,
+        "all_required_fields": 467,
+        "specific": 377,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 88,
+        "unknown": 2
+      },
+      "accommodation": {
+        "eligible": 400,
+        "has_position": 400,
+        "has_price": 400,
+        "all_required_fields": 400,
+        "has_bed_count": 400
+      }
+    },
+    "重庆": {
+      "attraction": {
+        "eligible": 347,
+        "has_position": 347,
+        "has_price": 347,
+        "all_required_fields": 347,
+        "specific": 347,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0
+      },
+      "restaurant": {
+        "eligible": 436,
+        "has_position": 436,
+        "has_price": 436,
+        "all_required_fields": 436,
+        "specific": 392,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 41,
+        "unknown": 3
+      },
+      "accommodation": {
+        "eligible": 373,
+        "has_position": 373,
+        "has_price": 373,
+        "all_required_fields": 373,
+        "has_bed_count": 373
+      }
+    },
+    "西安": {
+      "attraction": {
+        "eligible": 591,
+        "has_position": 589,
+        "has_price": 25,
+        "all_required_fields": 20,
+        "specific": 255,
+        "mapped_numeric": 569,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 1,
+        "unknown": 19,
+        "broad": 317
+      },
+      "restaurant": {
+        "eligible": 487,
+        "has_position": 467,
+        "has_price": 469,
+        "all_required_fields": 450,
+        "specific": 288,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 3,
+        "new_operating_field_records": 0,
+        "unknown": 149,
+        "broad": 50
+      },
+      "accommodation": {
+        "eligible": 706,
+        "has_position": 700,
+        "has_price": 254,
+        "all_required_fields": 248,
+        "has_bed_count": 706
+      }
+    },
+    "厦门": {
+      "attraction": {
+        "eligible": 434,
+        "has_position": 434,
+        "has_price": 11,
+        "all_required_fields": 5,
+        "specific": 180,
+        "mapped_numeric": 420,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 1,
+        "broad": 254
+      },
+      "restaurant": {
+        "eligible": 1610,
+        "has_position": 1610,
+        "has_price": 1567,
+        "all_required_fields": 1567,
+        "specific": 1326,
+        "mapped_numeric": 0,
+        "known_cuisine_from_empty": 0,
+        "new_operating_field_records": 0,
+        "broad": 284
+      },
+      "accommodation": {
+        "eligible": 1184,
+        "has_position": 1184,
+        "has_price": 296,
+        "all_required_fields": 296,
+        "has_bed_count": 296
+      }
+    }
+  }
+}

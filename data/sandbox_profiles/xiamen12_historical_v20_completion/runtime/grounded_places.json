@@ -1,0 +1,37 @@
+{
+  "secondary_types": [
+    {
+      "city": "西安",
+      "name": "西安碑林博物馆",
+      "category": "历史古迹",
+      "source": "https://wwj.shaanxi.gov.cn/bsfw/xzfw/202403/P020240321599276872624.pdf"
+    },
+    {
+      "city": "西安",
+      "name": "秦始皇兵马俑",
+      "category": "历史古迹",
+      "source": "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/ghxx/gtzygh/202406/P020240622343901996974.pdf"
+    }
+  ],
+  "visit_relations": [
+    {
+      "city": "厦门",
+      "kind": "attraction",
+      "name": "嘉庚公园",
+      "position": "嘉庚公园-鳌亭",
+      "parent_catalog_id": "200786859880360",
+      "child_catalog_id": "81835880107231",
+      "catalog_sha256": "2e04997b57b3551a9f6e44c32ea14a1ae38d040a9a0842e673a39001c6d9d3aa",
+      "source": "Frozen catalog entry explicitly identifies 鳌亭 under 嘉庚公园",
+      "corroboration": "https://www.yeecai.com/tour/showSceneInfo?id=1486"
+    },
+    {
+      "city": "西安",
+      "kind": "restaurant",
+      "name": "同盛祥",
+      "position": "同盛祥(凤城五路店)",
+      "amap_id": "B0FFF64VL5",
+      "baidu_uid": "5e5597b0f44a61663617dc49"
+    }
+  ]
+}

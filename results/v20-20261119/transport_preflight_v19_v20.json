@@ -1,0 +1,4057 @@
+{
+  "profile": {
+    "profile": "xiamen12_historical_v20_completion",
+    "path": "data/sandbox_profiles/xiamen12_historical_v20_completion",
+    "receipt_sha256": "e917838ba9b72c502d2dcbef555fc88dfaa2ff861df6b1433a4deed5228b3dee",
+    "boundary": "V19 historical schedules and V20 verified catalog observations. Dated seller fares are conditional and do not establish purchase totals or seat inventory.",
+    "public_receipt_sha256": "e5bae46e2dc9cbcd77f66138463ace7628e27dde6a4c568aaeb05106adcd3106"
+  },
+  "v19_profile_receipt_sha256": "78ae3de33399dbefb4edba55e81fe75ee7281832399d0846555987fbfdd133fc",
+  "sample_start": "2026-11-20",
+  "scope": "Necessary direct-service date, clock and fare checks. Air fees, actual booking and station transfers are unresolved.",
+  "cities": {
+    "西安": {
+      "n": 18,
+      "v19_clock": 16,
+      "v19_under_budget": 16,
+      "with_dated_sample_clock": 18,
+      "with_dated_sample_fare_cutoff": 18,
+      "clock_changed": [
+        "xi-ct-e06",
+        "xi-ct-m05"
+      ],
+      "fare_cutoff_changed": [
+        "xi-ct-e06",
+        "xi-ct-m05"
+      ]
+    },
+    "厦门": {
+      "n": 18,
+      "v19_clock": 14,
+      "v19_under_budget": 13,
+      "with_dated_sample_clock": 18,
+      "with_dated_sample_fare_cutoff": 17,
+      "clock_changed": [
+        "xm-ct-e01",
+        "xm-ct-e05",
+        "xm-ct-e06",
+        "xm-ct-m05"
+      ],
+      "fare_cutoff_changed": [
+        "xm-ct-e05",
+        "xm-ct-e06",
+        "xm-ct-m05",
+        "xm-ct-m06"
+      ]
+    }
+  },
+  "cases": {
+    "xi-ct-e01": {
+      "id": "xi-ct-e01",
+      "question": "当前位置成都。我一个人想去西安玩一天，预算1100人民币，请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "成都",
+      "destination": "西安",
+      "days": 1,
+      "party": 1,
+      "budget": 1100,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 601,
+        "outbound": {
+          "mode": "train",
+          "service": "G322",
+          "from": "成都东",
+          "to": "西安北",
+          "start": 416,
+          "arrives": 605,
+          "price": 285
+        },
+        "return": {
+          "mode": "train",
+          "service": "G1517",
+          "from": "西安北",
+          "to": "成都东",
+          "start": 611,
+          "arrives": 860,
+          "price": 316,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 6
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 601,
+        "outbound": {
+          "mode": "train",
+          "service": "G322",
+          "from": "成都东",
+          "to": "西安北",
+          "start": 416,
+          "arrives": 605,
+          "price": 285
+        },
+        "return": {
+          "mode": "train",
+          "service": "G1517",
+          "from": "西安北",
+          "to": "成都东",
+          "start": 611,
+          "arrives": 860,
+          "price": 316,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 6
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "成都",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "成都",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "成都"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "成都"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-e02": {
+      "id": "xi-ct-e02",
+      "question": "当前位置上海。我和两位朋友打算去西安玩两天，选择火车出行。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "上海",
+      "destination": "西安",
+      "days": 2,
+      "party": 3,
+      "budget": null,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 930.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G3292",
+          "from": "上海虹桥",
+          "to": "西安北",
+          "start": 504,
+          "arrives": 992,
+          "price": 750
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "上海",
+          "start": 1027,
+          "arrives": 2292,
+          "price": 180.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 35
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 930.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G3292",
+          "from": "上海虹桥",
+          "to": "西安北",
+          "start": 504,
+          "arrives": 992,
+          "price": 750
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "上海",
+          "start": 1027,
+          "arrives": 2292,
+          "price": 180.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 35
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-e03": {
+      "id": "xi-ct-e03",
+      "question": "当前位置南京。我们四个人计划去西安玩两天，市内交通使用地铁。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "南京",
+      "destination": "西安",
+      "days": 2,
+      "party": 4,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 752.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G94",
+          "from": "南京南",
+          "to": "西安北",
+          "start": 596,
+          "arrives": 874,
+          "price": 600
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "南京",
+          "start": 1027,
+          "arrives": 1968,
+          "price": 152.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 153
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 752.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G94",
+          "from": "南京南",
+          "to": "西安北",
+          "start": 596,
+          "arrives": 874,
+          "price": 600
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "南京",
+          "start": 1027,
+          "arrives": 1968,
+          "price": 152.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 153
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "南京",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "南京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-e04": {
+      "id": "xi-ct-e04",
+      "question": "当前位置广州。我和朋友计划去西安玩三天，市内打车。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "广州",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 665
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 665
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "广州",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "广州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-e05": {
+      "id": "xi-ct-e05",
+      "question": "当前位置武汉。我一个人想去西安玩一天，预算1600人民币，请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "武汉",
+      "destination": "西安",
+      "days": 1,
+      "party": 1,
+      "budget": 1600,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 588.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K4286",
+          "from": "武昌",
+          "to": "西安",
+          "start": 34,
+          "arrives": 931,
+          "price": 135.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "G3926",
+          "from": "西安东",
+          "to": "汉口",
+          "start": 1001,
+          "arrives": 1177,
+          "price": 453,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 70
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 588.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K4286",
+          "from": "武昌",
+          "to": "西安",
+          "start": 34,
+          "arrives": 931,
+          "price": 135.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "G3926",
+          "from": "西安东",
+          "to": "汉口",
+          "start": 1001,
+          "arrives": 1177,
+          "price": 453,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 70
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "武汉",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "武汉",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "武汉"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "武汉"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-e06": {
+      "id": "xi-ct-e06",
+      "question": "当前位置北京。我和朋友计划去西安玩三天，选择飞机出行。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "北京",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 27,
+          "distinct_dated_services": 27
+        },
+        {
+          "route": [
+            "西安",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 29,
+          "distinct_dated_services": 29
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ8829",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "北京大兴",
+          "to": "咸阳 T5",
+          "from_code": "PKX",
+          "to_code": "XIY",
+          "departure": "2026-11-20T08:30",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 130,
+          "fare_cny": 360.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1360.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3555
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CA1249",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "首都 T3",
+          "to": "咸阳 T2",
+          "from_code": "PEK",
+          "to_code": "XIY",
+          "departure": "2026-11-20T06:55",
+          "arrival": "2026-11-20T09:25",
+          "minutes": 150,
+          "fare_cny": 790.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 2220.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3630
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h01": {
+      "id": "xi-ct-h01",
+      "question": "[当前位置上海,目标位置西安,旅行人数2,旅行天数3] 我要带着我大儿子从上海出发去西安玩三天，要轻快自由行，不要特种兵出行。帮我规划一下。",
+      "difficulty": "h",
+      "origin": "上海",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "上海",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "上海"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h02": {
+      "id": "xi-ct-h02",
+      "question": "[当前位置北京,目标位置西安,旅行人数5,旅行天数4] 我和我室友一共5人，想去西安玩4天，怎么规划行程",
+      "difficulty": "h",
+      "origin": "北京",
+      "destination": "西安",
+      "days": 4,
+      "party": 5,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 297.0,
+        "outbound": {
+          "mode": "train",
+          "service": "T55",
+          "from": "北京丰台",
+          "to": "西安",
+          "start": 942,
+          "arrives": 1739,
+          "price": 148.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z180",
+          "from": "西安",
+          "to": "北京西",
+          "start": 27,
+          "arrives": 813,
+          "price": 148.5,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 2608
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 297.0,
+        "outbound": {
+          "mode": "train",
+          "service": "T55",
+          "from": "北京丰台",
+          "to": "西安",
+          "start": 942,
+          "arrives": 1739,
+          "price": 148.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z180",
+          "from": "西安",
+          "to": "北京西",
+          "start": 27,
+          "arrives": 813,
+          "price": 148.5,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 2608
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "北京",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 27,
+          "distinct_dated_services": 27
+        },
+        {
+          "route": [
+            "西安",
+            "北京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h03": {
+      "id": "xi-ct-h03",
+      "question": "[当前位置南京,目标位置西安,旅行人数3,旅行天数4] 我们3人想去西安游玩，大概4天，想游行轻松一些，去人少的地方，住2间房，预算8000元。",
+      "difficulty": "h",
+      "origin": "南京",
+      "destination": "西安",
+      "days": 4,
+      "party": 3,
+      "budget": 8000,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1669
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1669
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "南京",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "南京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h04": {
+      "id": "xi-ct-h04",
+      "question": "[当前位置广州,目标位置西安,旅行人数3,旅行天数4] 我们想去西安玩4天，请帮我规划一下行程。旅游安排不要太紧凑，尽可能舒适一些。交通尽可能便利。",
+      "difficulty": "h",
+      "origin": "广州",
+      "destination": "西安",
+      "days": 4,
+      "party": 3,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2105
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2105
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "广州",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "广州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h05": {
+      "id": "xi-ct-h05",
+      "question": "[当前位置深圳,目标位置西安,旅行人数2,旅行天数2] 我和朋友想在周末两天从深圳出发到西安玩，想去人比较少的地方，主打一个悠闲，如何规划",
+      "difficulty": "h",
+      "origin": "深圳",
+      "destination": "西安",
+      "days": 2,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1284.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G846",
+          "from": "深圳北",
+          "to": "西安北",
+          "start": 560,
+          "arrives": 1167,
+          "price": 1048.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "深圳东",
+          "start": 1201,
+          "arrives": 2599,
+          "price": 236,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 34
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1284.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G846",
+          "from": "深圳北",
+          "to": "西安北",
+          "start": 560,
+          "arrives": 1167,
+          "price": 1048.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "深圳东",
+          "start": 1201,
+          "arrives": 2599,
+          "price": 236,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 34
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "深圳",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "深圳",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "深圳"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "深圳"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-h06": {
+      "id": "xi-ct-h06",
+      "question": "[当前位置苏州,目标位置西安,旅行人数2,旅行天数3] 我们想两个人去西安，玩大概三天左右 请给我一个旅行规划",
+      "difficulty": "h",
+      "origin": "苏州",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "苏州",
+          "to": "西安",
+          "start": 604,
+          "arrives": 1727,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "苏州",
+          "start": 516,
+          "arrives": 1688,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "苏州",
+          "to": "西安",
+          "start": 604,
+          "arrives": 1727,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "苏州",
+          "start": 516,
+          "arrives": 1688,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "苏州",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "苏州",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "苏州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "苏州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m01": {
+      "id": "xi-ct-m01",
+      "question": "当前位置上海。我和朋友计划去西安玩三天，预算6000元，市内交通主要使用地铁，开一间单床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "上海",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": 6000,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "上海",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "上海"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m02": {
+      "id": "xi-ct-m02",
+      "question": "当前位置南京。我们三个人计划去西安玩三天，选择火车出行，预算8000元，开两间双床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "南京",
+      "destination": "西安",
+      "days": 3,
+      "party": 3,
+      "budget": 8000,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m03": {
+      "id": "xi-ct-m03",
+      "question": "当前位置广州。我们四个人计划去西安玩两天，选择火车出行，预算5600元，开两间双床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "广州",
+      "destination": "西安",
+      "days": 2,
+      "party": 4,
+      "budget": 5600,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1191,
+        "outbound": {
+          "mode": "train",
+          "service": "G842",
+          "from": "广州南站",
+          "to": "西安北",
+          "start": 531,
+          "arrives": 1105,
+          "price": 974
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 96
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1191,
+        "outbound": {
+          "mode": "train",
+          "service": "G842",
+          "from": "广州南站",
+          "to": "西安北",
+          "start": 531,
+          "arrives": 1105,
+          "price": 974
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 96
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m04": {
+      "id": "xi-ct-m04",
+      "question": "当前位置杭州。我和男朋友打算去西安玩两天，预算1500元，市内主要使用出租车，开一间单床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "杭州",
+      "destination": "西安",
+      "days": 2,
+      "party": 2,
+      "budget": 1500,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K308",
+          "from": "杭州",
+          "to": "西安",
+          "start": 147,
+          "arrives": 1344,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z596",
+          "from": "西安",
+          "to": "杭州",
+          "start": 93,
+          "arrives": 1219,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 189
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K308",
+          "from": "杭州",
+          "to": "西安",
+          "start": 147,
+          "arrives": 1344,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z596",
+          "from": "西安",
+          "to": "杭州",
+          "start": 93,
+          "arrives": 1219,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 189
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "杭州",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "杭州",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "杭州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "杭州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m05": {
+      "id": "xi-ct-m05",
+      "question": "当前位置北京。我两个人想去西安玩3天，预算8000人民币，坐飞机往返，住一间双床房，麻烦给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "北京",
+      "destination": "西安",
+      "days": 3,
+      "party": 2,
+      "budget": 8000,
+      "allowed_modes": [
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "西安"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 27,
+          "distinct_dated_services": 27
+        },
+        {
+          "route": [
+            "西安",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 29,
+          "distinct_dated_services": 29
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ8829",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "北京大兴",
+          "to": "咸阳 T5",
+          "from_code": "PKX",
+          "to_code": "XIY",
+          "departure": "2026-11-20T08:30",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 130,
+          "fare_cny": 360.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1360.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3555
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CA1249",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "首都 T3",
+          "to": "咸阳 T2",
+          "from_code": "PEK",
+          "to_code": "XIY",
+          "departure": "2026-11-20T06:55",
+          "arrival": "2026-11-20T09:25",
+          "minutes": 150,
+          "fare_cny": 790.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 2220.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3630
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xi-ct-m06": {
+      "id": "xi-ct-m06",
+      "question": "当前位置成都。我两个人想去西安玩2天，预算4200人民币，坐火车往返，住一间大床房，麻烦给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "成都",
+      "destination": "西安",
+      "days": 2,
+      "party": 2,
+      "budget": 4200,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 261.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K386",
+          "from": "成都龙泉驿",
+          "to": "西安东",
+          "start": 789,
+          "arrives": 1444,
+          "price": 133
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z315",
+          "from": "西安东",
+          "to": "成都西",
+          "start": 350,
+          "arrives": 1234,
+          "price": 128.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 346
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 261.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K386",
+          "from": "成都龙泉驿",
+          "to": "西安东",
+          "start": 789,
+          "arrives": 1444,
+          "price": 133
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z315",
+          "from": "西安东",
+          "to": "成都西",
+          "start": 350,
+          "arrives": 1234,
+          "price": 128.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 346
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "成都",
+            "西安"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "西安",
+            "成都"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-e01": {
+      "id": "xm-ct-e01",
+      "question": "当前位置成都。我一个人想去厦门玩一天，预算1100人民币，请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "成都",
+      "destination": "厦门",
+      "days": 1,
+      "party": 1,
+      "budget": 1100,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "成都",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 4,
+          "distinct_dated_services": 2
+        },
+        {
+          "route": [
+            "成都",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 10,
+          "distinct_dated_services": 10
+        },
+        {
+          "route": [
+            "厦门",
+            "成都"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 4,
+          "distinct_dated_services": 2
+        },
+        {
+          "route": [
+            "厦门",
+            "成都"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 11,
+          "distinct_dated_services": 11
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MU9805",
+          "origin": "成都",
+          "destination": "厦门",
+          "from": "天府 T2",
+          "to": "高崎 T4",
+          "from_code": "TFU",
+          "to_code": "XMN",
+          "departure": "2026-11-20T08:15",
+          "arrival": "2026-11-20T10:50",
+          "minutes": 155,
+          "fare_cny": 1030.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/CTU-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "051d055605b58d6aeabbb4de65aff8413e262966864c6a9e9afc51aafebe7cb2"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "MF8441",
+          "origin": "厦门",
+          "destination": "成都",
+          "from": "高崎 T3",
+          "to": "天府 T2",
+          "from_code": "XMN",
+          "to_code": "TFU",
+          "departure": "2026-11-20T16:20",
+          "arrival": "2026-11-20T19:20",
+          "minutes": 180,
+          "fare_cny": 900.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-CTU?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "7895347210489ea3f9a5a74d67744984138a19e7eef93a8d404f844010e9a8f6"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1930.0,
+        "passes_displayed_fare_cutoff": false,
+        "destination_window_minutes": 330
+      },
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": false
+    },
+    "xm-ct-e02": {
+      "id": "xm-ct-e02",
+      "question": "当前位置上海。我和两位朋友打算去厦门玩两天，选择火车出行。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "上海",
+      "destination": "厦门",
+      "days": 2,
+      "party": 3,
+      "budget": null,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1179
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1179
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-e03": {
+      "id": "xm-ct-e03",
+      "question": "当前位置南京。我们四个人计划去厦门玩两天，市内交通使用地铁。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "南京",
+      "destination": "厦门",
+      "days": 2,
+      "party": 4,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1034
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1034
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "南京",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "南京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-e04": {
+      "id": "xm-ct-e04",
+      "question": "当前位置广州。我和朋友计划去厦门玩三天，市内打车。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "广州",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 514
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 514
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "广州",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "广州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-e05": {
+      "id": "xm-ct-e05",
+      "question": "当前位置武汉。我一个人想去厦门玩一天，预算1600人民币，请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "武汉",
+      "destination": "厦门",
+      "days": 1,
+      "party": 1,
+      "budget": 1600,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "武汉",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 39,
+          "distinct_dated_services": 15
+        },
+        {
+          "route": [
+            "武汉",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 9,
+          "distinct_dated_services": 9
+        },
+        {
+          "route": [
+            "厦门",
+            "武汉"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 31,
+          "distinct_dated_services": 10
+        },
+        {
+          "route": [
+            "厦门",
+            "武汉"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 7,
+          "distinct_dated_services": 7
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ3841",
+          "origin": "武汉",
+          "destination": "厦门",
+          "from": "天河 T3",
+          "to": "高崎 T3",
+          "from_code": "WUH",
+          "to_code": "XMN",
+          "departure": "2026-11-20T08:05",
+          "arrival": "2026-11-20T10:05",
+          "minutes": 120,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/WUH-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "03c6cb8dbd701fb6f86b6aab7138049167481682df07d8e7b24035e4fc9269cd"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3278",
+          "origin": "厦门",
+          "destination": "武汉",
+          "from": "厦门北",
+          "to": "武汉",
+          "departure": "2026-11-20T14:47",
+          "arrival": "2026-11-20T22:07",
+          "minutes": 440,
+          "fare_cny": 381,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "limited",
+          "stock_text": "6张",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/xiamen-to-wuhan/2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "8a1f2ab8935203c24acd37502a9c64002388dece6310cf5f2eb91a57a8943e3c"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 701.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 282
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ3841",
+          "origin": "武汉",
+          "destination": "厦门",
+          "from": "天河 T3",
+          "to": "高崎 T3",
+          "from_code": "WUH",
+          "to_code": "XMN",
+          "departure": "2026-11-20T08:05",
+          "arrival": "2026-11-20T10:05",
+          "minutes": 120,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/WUH-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "03c6cb8dbd701fb6f86b6aab7138049167481682df07d8e7b24035e4fc9269cd"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "MF8367",
+          "origin": "厦门",
+          "destination": "武汉",
+          "from": "高崎 T3",
+          "to": "天河 T2",
+          "from_code": "XMN",
+          "to_code": "WUH",
+          "departure": "2026-11-20T19:55",
+          "arrival": "2026-11-20T21:55",
+          "minutes": 120,
+          "fare_cny": 670.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-WUH?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "cba9a3ed345102ddcc0ffe2bf08d6d8d6ed982e6268ca5eccd930e618b43b8d4"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 990.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 590
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-e06": {
+      "id": "xm-ct-e06",
+      "question": "当前位置北京。我和朋友计划去厦门玩三天，选择飞机出行。请给我一个旅行规划。",
+      "difficulty": "e",
+      "origin": "北京",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 19,
+          "distinct_dated_services": 19
+        },
+        {
+          "route": [
+            "厦门",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 23,
+          "distinct_dated_services": 23
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "HU7492",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T4",
+          "to": "首都 T2",
+          "from_code": "XMN",
+          "to_code": "PEK",
+          "departure": "2026-11-22T20:40",
+          "arrival": "2026-11-22T23:45",
+          "minutes": 185,
+          "fare_cny": 1080.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4180.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3480
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "MF8103",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T3",
+          "to": "北京大兴",
+          "from_code": "XMN",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:00",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 160,
+          "fare_cny": 1160.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4340.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3500
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h01": {
+      "id": "xm-ct-h01",
+      "question": "[当前位置上海,目标位置厦门,旅行人数2,旅行天数3] 我要带着我大儿子从上海出发去厦门玩三天，要轻快自由行，不要特种兵出行。帮我规划一下。",
+      "difficulty": "h",
+      "origin": "上海",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "上海",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "上海"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h02": {
+      "id": "xm-ct-h02",
+      "question": "[当前位置北京,目标位置厦门,旅行人数5,旅行天数4] 我和我室友一共5人，想去厦门玩4天，怎么规划行程",
+      "difficulty": "h",
+      "origin": "北京",
+      "destination": "厦门",
+      "days": 4,
+      "party": 5,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 486,
+        "outbound": {
+          "mode": "train",
+          "service": "K571",
+          "from": "北京丰台站",
+          "to": "厦门北站",
+          "start": 994,
+          "arrives": 2758,
+          "price": 243
+        },
+        "return": {
+          "mode": "train",
+          "service": "K572",
+          "from": "厦门北站",
+          "to": "北京丰台站",
+          "start": 517,
+          "arrives": 2318,
+          "price": 243,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 639
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 486,
+        "outbound": {
+          "mode": "train",
+          "service": "K571",
+          "from": "北京丰台站",
+          "to": "厦门北站",
+          "start": 994,
+          "arrives": 2758,
+          "price": 243
+        },
+        "return": {
+          "mode": "train",
+          "service": "K572",
+          "from": "厦门北站",
+          "to": "北京丰台站",
+          "start": 517,
+          "arrives": 2318,
+          "price": 243,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 639
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "北京",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 19,
+          "distinct_dated_services": 19
+        },
+        {
+          "route": [
+            "厦门",
+            "北京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h03": {
+      "id": "xm-ct-h03",
+      "question": "[当前位置南京,目标位置厦门,旅行人数3,旅行天数4] 我们3人想去厦门游玩，大概4天，想游行轻松一些，去人少的地方，住2间房，预算8000元。",
+      "difficulty": "h",
+      "origin": "南京",
+      "destination": "厦门",
+      "days": 4,
+      "party": 3,
+      "budget": 8000,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 3914
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 3914
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "南京",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "南京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h04": {
+      "id": "xm-ct-h04",
+      "question": "[当前位置广州,目标位置厦门,旅行人数3,旅行天数4] 我们想去厦门玩4天，请帮我规划一下行程。旅游安排不要太紧凑，尽可能舒适一些。交通尽可能便利。",
+      "difficulty": "h",
+      "origin": "广州",
+      "destination": "厦门",
+      "days": 4,
+      "party": 3,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1954
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1954
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "广州",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "广州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-23",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h05": {
+      "id": "xm-ct-h05",
+      "question": "[当前位置深圳,目标位置厦门,旅行人数2,旅行天数2] 我和朋友想在周末两天从深圳出发到厦门玩，想去人比较少的地方，主打一个悠闲，如何规划",
+      "difficulty": "h",
+      "origin": "深圳",
+      "destination": "厦门",
+      "days": 2,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 456,
+        "outbound": {
+          "mode": "train",
+          "service": "D3126",
+          "from": "深圳北站",
+          "to": "厦门北站",
+          "start": 406,
+          "arrives": 623,
+          "price": 228
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3333",
+          "from": "厦门北站",
+          "to": "深圳北站",
+          "start": 505,
+          "arrives": 699,
+          "price": 228,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1322
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 456,
+        "outbound": {
+          "mode": "train",
+          "service": "D3126",
+          "from": "深圳北站",
+          "to": "厦门北站",
+          "start": 406,
+          "arrives": 623,
+          "price": 228
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3333",
+          "from": "厦门北站",
+          "to": "深圳北站",
+          "start": 505,
+          "arrives": 699,
+          "price": 228,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1322
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "深圳",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "深圳",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "深圳"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "深圳"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-h06": {
+      "id": "xm-ct-h06",
+      "question": "[当前位置苏州,目标位置厦门,旅行人数2,旅行天数3] 我们想两个人去厦门，玩大概三天左右 请给我一个旅行规划",
+      "difficulty": "h",
+      "origin": "苏州",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": null,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1004,
+        "outbound": {
+          "mode": "train",
+          "service": "D3205",
+          "from": "苏州南站",
+          "to": "厦门北站",
+          "start": 633,
+          "arrives": 1044,
+          "price": 502
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3206",
+          "from": "厦门北站",
+          "to": "苏州南站",
+          "start": 772,
+          "arrives": 1190,
+          "price": 502,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2608
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1004,
+        "outbound": {
+          "mode": "train",
+          "service": "D3205",
+          "from": "苏州南站",
+          "to": "厦门北站",
+          "start": 633,
+          "arrives": 1044,
+          "price": 502
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3206",
+          "from": "厦门北站",
+          "to": "苏州南站",
+          "start": 772,
+          "arrives": 1190,
+          "price": 502,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2608
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "苏州",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "苏州",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "苏州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "苏州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m01": {
+      "id": "xm-ct-m01",
+      "question": "当前位置上海。我和朋友计划去厦门玩三天，预算6000元，市内交通主要使用地铁，开一间单床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "上海",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": 6000,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "上海",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "上海",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "上海"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "上海"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m02": {
+      "id": "xm-ct-m02",
+      "question": "当前位置南京。我们三个人计划去厦门玩三天，选择火车出行，预算8000元，开两间双床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "南京",
+      "destination": "厦门",
+      "days": 3,
+      "party": 3,
+      "budget": 8000,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2474
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2474
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "南京",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "南京"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m03": {
+      "id": "xm-ct-m03",
+      "question": "当前位置广州。我们四个人计划去厦门玩两天，选择火车出行，预算5600元，开两间双床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "广州",
+      "destination": "厦门",
+      "days": 2,
+      "party": 4,
+      "budget": 5600,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 394,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3249",
+          "from": "厦门北站",
+          "to": "广州新塘站",
+          "start": 698,
+          "arrives": 947,
+          "price": 292,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 166
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 394,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3249",
+          "from": "厦门北站",
+          "to": "广州新塘站",
+          "start": 698,
+          "arrives": 947,
+          "price": 292,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 166
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "广州",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "广州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m04": {
+      "id": "xm-ct-m04",
+      "question": "当前位置杭州。我和男朋友打算去厦门玩两天，预算1500元，市内主要使用出租车，开一间单床房。请给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "杭州",
+      "destination": "厦门",
+      "days": 2,
+      "party": 2,
+      "budget": 1500,
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "v19_pair": {
+        "fare_per_person": 711.0,
+        "outbound": {
+          "mode": "train",
+          "service": "D3211",
+          "from": "杭州东站",
+          "to": "厦门北站",
+          "start": 423,
+          "arrives": 779,
+          "price": 355.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3212",
+          "from": "厦门北站",
+          "to": "杭州东站",
+          "start": 1026,
+          "arrives": 1372,
+          "price": 355.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1687
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 711.0,
+        "outbound": {
+          "mode": "train",
+          "service": "D3211",
+          "from": "杭州东站",
+          "to": "厦门北站",
+          "start": 423,
+          "arrives": 779,
+          "price": 355.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3212",
+          "from": "厦门北站",
+          "to": "杭州东站",
+          "start": 1026,
+          "arrives": 1372,
+          "price": 355.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1687
+      },
+      "v19_passed_fare_cutoff": true,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "杭州",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "杭州",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "杭州"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        },
+        {
+          "route": [
+            "厦门",
+            "杭州"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 0,
+          "distinct_dated_services": 0
+        }
+      ],
+      "cheapest_sample_pair": null,
+      "longest_under_budget_pair": null,
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m05": {
+      "id": "xm-ct-m05",
+      "question": "当前位置北京。我两个人想去厦门玩3天，预算8000人民币，坐飞机往返，住一间双床房，麻烦给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "北京",
+      "destination": "厦门",
+      "days": 3,
+      "party": 2,
+      "budget": 8000,
+      "allowed_modes": [
+        "airplane"
+      ],
+      "v19_pair": null,
+      "v20_undated_pair": null,
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "北京",
+            "厦门"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 19,
+          "distinct_dated_services": 19
+        },
+        {
+          "route": [
+            "厦门",
+            "北京"
+          ],
+          "mode": "airplane",
+          "sample_date": "2026-11-22",
+          "dated_seat_observations": 23,
+          "distinct_dated_services": 23
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "HU7492",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T4",
+          "to": "首都 T2",
+          "from_code": "XMN",
+          "to_code": "PEK",
+          "departure": "2026-11-22T20:40",
+          "arrival": "2026-11-22T23:45",
+          "minutes": 185,
+          "fare_cny": 1080.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4180.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3480
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "MF8103",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T3",
+          "to": "北京大兴",
+          "from_code": "XMN",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:00",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 160,
+          "fare_cny": 1160.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4340.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3500
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    },
+    "xm-ct-m06": {
+      "id": "xm-ct-m06",
+      "question": "当前位置成都。我两个人想去厦门玩2天，预算4200人民币，坐火车往返，住一间大床房，麻烦给我一个旅行规划。",
+      "difficulty": "m",
+      "origin": "成都",
+      "destination": "厦门",
+      "days": 2,
+      "party": 2,
+      "budget": 4200,
+      "allowed_modes": [
+        "train"
+      ],
+      "v19_pair": {
+        "fare_per_person": 2190,
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "from": "成都东站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 1335,
+          "price": 1095
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "from": "厦门北站",
+          "to": "成都东站",
+          "start": 476,
+          "arrives": 1313,
+          "price": 1095,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 581
+      },
+      "v20_undated_pair": {
+        "fare_per_person": 2190,
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "from": "成都东站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 1335,
+          "price": 1095
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "from": "厦门北站",
+          "to": "成都东站",
+          "start": 476,
+          "arrives": 1313,
+          "price": 1095,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 581
+      },
+      "v19_passed_fare_cutoff": false,
+      "dated_sample_routes": [
+        {
+          "route": [
+            "成都",
+            "厦门"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-20",
+          "dated_seat_observations": 4,
+          "distinct_dated_services": 2
+        },
+        {
+          "route": [
+            "厦门",
+            "成都"
+          ],
+          "mode": "train",
+          "sample_date": "2026-11-21",
+          "dated_seat_observations": 4,
+          "distinct_dated_services": 2
+        }
+      ],
+      "cheapest_sample_pair": {
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "origin": "成都",
+          "destination": "厦门",
+          "from": "成都东",
+          "to": "厦门北",
+          "departure": "2026-11-20T07:49",
+          "arrival": "2026-11-20T22:15",
+          "minutes": 866,
+          "fare_cny": 1026,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "limited",
+          "stock_text": "5张",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/chengdu-to-xiamen/2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:38+00:00",
+            "sha256": "ee149efd6995ba7686ae732fcc5e7a76037a7df2442768badb524acbb6a27cb9"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "origin": "厦门",
+          "destination": "成都",
+          "from": "厦门北",
+          "to": "成都东",
+          "departure": "2026-11-21T07:56",
+          "arrival": "2026-11-21T21:53",
+          "minutes": 837,
+          "fare_cny": 1026,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "in_stock",
+          "stock_text": "有票",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/xiamen-to-chengdu/2026-11-21",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "d9297e8f292a963015da997771a2288d752484a8df6d0cf0e1f0f4d14297e8c1"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4104,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 581
+      },
+      "longest_under_budget_pair": {
+        "outbound": {
+          "mode": "train",
+          "service": "G2371",
+          "origin": "成都",
+          "destination": "厦门",
+          "from": "成都东",
+          "to": "厦门北",
+          "departure": "2026-11-20T06:45",
+          "arrival": "2026-11-20T20:51",
+          "minutes": 846,
+          "fare_cny": 1065,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "limited",
+          "stock_text": "2张",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/chengdu-to-xiamen/2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:38+00:00",
+            "sha256": "ee149efd6995ba7686ae732fcc5e7a76037a7df2442768badb524acbb6a27cb9"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "origin": "厦门",
+          "destination": "成都",
+          "from": "厦门北",
+          "to": "成都东",
+          "departure": "2026-11-21T07:56",
+          "arrival": "2026-11-21T21:53",
+          "minutes": 837,
+          "fare_cny": 1026,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "in_stock",
+          "stock_text": "有票",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/xiamen-to-chengdu/2026-11-21",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "d9297e8f292a963015da997771a2288d752484a8df6d0cf0e1f0f4d14297e8c1"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4182,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 665
+      },
+      "any_clock_pair_v19_or_sample": true,
+      "passes_fare_cutoff_v19_or_sample": true
+    }
+  }
+}

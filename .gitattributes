@@ -4,4 +4,5 @@ data/observations/flight_20261116/** -text
 src/sandbox_runtime/alias_evidence/** -text
 results/g3-20261116/** -text
 results/v19-20261118/** -text
+results/v20-20261119/** -text
 tests/fixtures/multileg/** -text

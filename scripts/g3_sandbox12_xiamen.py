@@ -3,7 +3,7 @@ from pathlib import Path
 from hashlib import sha256
 import argparse,csv,json,os,sys
 from g3_sandbox12 import REPO, configure as configure_base
-PROFILE=REPO/'data/sandbox_profiles/xiamen12_historical_v19_maps'
+PROFILE=REPO/'data/sandbox_profiles/xiamen12_historical_v20_completion'
 def digest(p):return sha256(p.read_bytes()).hexdigest()
 def configure(profile=PROFILE):
     profile=Path(profile).resolve();receipt=json.loads((profile/'receipt.json').read_text(encoding='utf8'))
