@@ -14,8 +14,8 @@ android {
         applicationId 'cn.shorttrip.workbench'
         minSdk 24
         targetSdk 35
-        versionCode prop('shorttripVersionCode', '7').toInteger()
-        versionName prop('shorttripVersionName', '2.0')
+        versionCode prop('shorttripVersionCode', '9').toInteger()
+        versionName prop('shorttripVersionName', '2.2')
         buildConfigField 'String', 'DEFAULT_SERVER', '"' + prop('shorttripServer', '') + '"'
         buildConfigField 'String', 'RELEASE', '"' + prop('shorttripRelease', 'dev') + '"'
     }

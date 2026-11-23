@@ -12,6 +12,7 @@ param(
     [string]$Archive,
     [string]$Python = 'python3.12.exe',
     [string]$PipIndex = 'https://pypi.org/simple',
+    [switch]$ReferencePreview,
     [switch]$SkipImport,
     [switch]$SkipVenv
 )
@@ -69,6 +70,7 @@ $manifest = [ordered]@{
     version = $Version; built = (Get-Date).ToString('s'); upstream = $Upstream
     snapshots = @($Snapshots); archive = $Archive
     public_jobs = $publicJobs; public_requests = $publicRequests
+    reference_preview = [bool]$ReferencePreview
 }
 $manifest | ConvertTo-Json -Depth 4 | Set-Content -Encoding utf8 (Join-Path $release 'shorttrip_release.json')
 Write-Host "快照顺序：$($Snapshots -join ' -> ')；示例任务 $($publicJobs.Count) 个"
@@ -96,6 +98,10 @@ if (!$SkipVenv) {
 }
 
 # ---------------------------------------------------------------- 4. data into GaussDB
+if ($ReferencePreview) {
+    Invoke-Native { & $venvPython -X utf8 (Join-Path $PSScriptRoot 'enable_city_preview.py') $release }
+    if ($LASTEXITCODE -ne 0) { throw '应用双城试排与反馈更新失败。' }
+}
 $env:PYTHONPATH = $release
 Invoke-Native { & $venvPython -X utf8 -m shorttrip_cloud init-db }
 if ($LASTEXITCODE -ne 0) { throw '数据库初始化失败。先运行 Initialize-GaussDB.ps1。' }

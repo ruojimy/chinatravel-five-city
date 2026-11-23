@@ -1,13 +1,14 @@
 ﻿[CmdletBinding()]
 param(
-    [string]$Out = (Join-Path $env:LOCALAPPDATA 'ShortTrip\8795'),
+    [string]$Out = (Join-Path $env:LOCALAPPDATA 'ShortTrip\8795-r22'),
     [string]$UpstreamZip,
     [string]$Python,
     [switch]$UseConfiguredDatabase,
     [switch]$VerifySourceOnly
 )
 $ErrorActionPreference = 'Stop'
-$version = 'workbench-8795-20261123'
+$version = 'workbench-8795-reference-2.2'
+$upstreamVersion = 'workbench-8795-20261123'
 $zipName = 'ShortTrip-Workbench-8795-20261123.zip'
 $expected = 'e16568379d614757ac4f4e2662bc20a883d45d169a91ea1bfdc1cad73831cfc1'
 $snapshots = @('5e0ee8a', '6de12f4')
@@ -37,7 +38,7 @@ try {
     if ($UpstreamZip) {
         Copy-Item -LiteralPath $UpstreamZip -Destination $sourceZip
     } else {
-        $uri = "https://github.com/ccc-cccst/travel-assistant/releases/download/$version/$zipName"
+        $uri = "https://github.com/ccc-cccst/travel-assistant/releases/download/$upstreamVersion/$zipName"
         & curl.exe --fail --location --silent --show-error --retry 3 --output $sourceZip $uri
         if ($LASTEXITCODE -ne 0) { throw '上游下载失败，可下载后通过 -UpstreamZip 指定 ZIP。' }
     }
@@ -65,7 +66,7 @@ try {
         & (Join-Path $scripts 'Initialize-GaussDB.ps1')
     }
     & (Join-Path $scripts 'New-ShortTripRelease.ps1') -Upstream $source -Out $Out `
-        -Version $version -Snapshots $snapshots -Archive $archive -Python $pythonExe
+        -Version $version -Snapshots $snapshots -Archive $archive -Python $pythonExe -ReferencePreview
 
     $release = Join-Path $Out 'ShortTrip'
     $venv = Join-Path $release 'combined version_personalized\.venv\Scripts\python.exe'

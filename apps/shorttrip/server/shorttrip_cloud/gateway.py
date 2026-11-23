@@ -16,6 +16,7 @@ import subprocess
 import sys
 import threading
 import time
+from uuid import uuid4
 from types import SimpleNamespace
 from urllib.parse import parse_qs, quote, urlsplit
 from urllib.request import ProxyHandler, build_opener
@@ -63,7 +64,7 @@ def make_handler(base, gateway):
             super().setup()
             self._cached_body = _UNSET
             self._filter = None
-            self._captured = None
+            self._route_context = None
             self.user = None
 
         # ------------------------------------------------------------ plumbing
@@ -78,7 +79,19 @@ def make_handler(base, gateway):
         def _json(self, obj, status=200, cookie=None):
             if self._filter is not None and status < 300:
                 obj = self._filter(obj)
-            self._captured = (status, obj)
+            if self._route_context is not None:
+                method, parts, query = self._route_context
+                self._route_context = None
+                try:
+                    self._after(method, parts, query, status, obj)
+                except Exception as error:
+                    sys.stderr.write(f"[gateway] 记录失败: {type(error).__name__}\n")
+                    if tuple(parts) in {
+                        ("personalized", "interpret"), ("personalized", "start"),
+                        ("personalized", "resolve"), ("personalized", "place-preference"),
+                        ("itinerary-edits", "preview"),
+                    }:
+                        status, obj = 503, {"message": "暂未保存，请重试。"}
             body = json.dumps(obj, ensure_ascii=False, default=str).encode("utf-8")
             self.send_response(status)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -203,6 +216,9 @@ def make_handler(base, gateway):
             if app.personalized:
                 config += "window.SHORTTRIP_PERSONALIZED = true;\n"
             config += "window.SHORTTRIP_CLOUD = true;\n"
+            if gateway.preview_snapshot:
+                from .preview_data import CITIES
+                config += "window.SHORTTRIP_TRIAL_CITIES = " + json.dumps(CITIES) + ";\n"
             config += ("(function(){var s=document.createElement('script');s.src='/account.js';"
                        "document.head.appendChild(s);})();\n")
             body = config.encode("utf-8")
@@ -257,18 +273,54 @@ def make_handler(base, gateway):
             user, data = self.user, gateway.userdata
             if parts == ["account", "trips"] and method == "GET":
                 return self._json({"trips": data.trips(user)})
+            if method == "POST" and parts in (["account", "feedback"], ["feedback"]):
+                return self._account_feedback(data, user, survey=parts == ["feedback"])
             try:
                 denied = self._guard(method, parts, query)
             except (ValueError, KeyError) as error:
                 return self._json({"message": f"请求无效：{error}"}, 400)
             if denied:
                 return self._json({"message": denied}, 404)
-            self._route(method)
-            if self._captured:
-                try:
-                    self._after(method, parts, query, *self._captured)
-                except Exception as error:  # noqa: BLE001 - bookkeeping must not break the response
-                    sys.stderr.write(f"[gateway] 记录失败: {error!r}\n")
+            if method == "POST" and parts == ["personalized", "feedback"]:
+                return self._plan_feedback(data, user)
+            self._route_context = (method, parts, query)
+            try:
+                self._route(method)
+            finally:
+                self._route_context = None
+
+        def _account_feedback(self, data, user, *, survey):
+            body = self._body()
+            if not isinstance(body, dict):
+                return self._json({"message": "反馈格式无效。"}, 400)
+            text = body.get("text", "")
+            job = body.get("job")
+            score = body.get("score")
+            if (not isinstance(text, str) or len(text.strip()) > 1000
+                    or (survey and (type(score) is not int or not 1 <= score <= 5))
+                    or (not survey and not text.strip())):
+                return self._json({"message": "请填写反馈，最多 1000 字。"}, 400)
+            if job and not data.can_read_job(user, job):
+                return self._json({"message": "找不到这份行程。"}, 404)
+            record = {"id": uuid4().hex, "text": text.strip(), "job": job,
+                      "decision": f"survey_{score}" if survey else "report_issue"}
+            return self._save_feedback(data, user, record)
+
+        def _plan_feedback(self, data, user):
+            body = self._body()
+            code, result = self.app.record_feedback(body)
+            if code != 201:
+                return self._json(result, code)
+            record = {**body, "id": result["id"]}
+            return self._save_feedback(data, user, record)
+
+        def _save_feedback(self, data, user, record):
+            try:
+                data.add_feedback(user.id, record)
+            except Exception as error:  # A successful response requires an openGauss commit.
+                sys.stderr.write(f"[gateway] 反馈入库失败: {type(error).__name__}\n")
+                return self._json({"message": "反馈暂未存入数据库，请重试。"}, 503)
+            return self._json({"id": record["id"]}, 201)
 
         def _guard(self, method, parts, query):
             """Return an error message when the call touches an object of another account."""
@@ -362,8 +414,7 @@ def make_handler(base, gateway):
                 versions = group.get("versions") or [{}]
                 adopted = bool((versions[0].get("revision") or {}).get("adopted"))
                 data.edit_state(value.get("id"), value.get("state"), adopted)
-            elif key == ("personalized", "feedback") and valid(value.get("id")):
-                data.add_feedback(user.id, {"id": value["id"], **body})
+
 
     return GatewayHandler
 
@@ -377,11 +428,19 @@ class Gateway:
         self.accounts = Accounts(db, settings)
         self.userdata = UserData(db, self.release.planner)
         self.planner_process = None
+        self.preview_snapshot = None
 
     # ------------------------------------------------------------ startup
     def prepare_data(self):
         for snapshot in self.release.info["snapshots"]:
             materialize(self.db, snapshot, self.release.data)
+        if self.release.info.get("reference_preview"):
+            from .preview_data import BASE, prepare
+            self.preview_snapshot = prepare(self.db, self.release.data / BASE)
+            materialize(self.db, self.preview_snapshot, self.release.data)
+            snapshots = [*self.release.info["snapshots"], self.preview_snapshot]
+            self.db.run("UPDATE st_release SET snapshot_ids=%s WHERE version=%s",
+                        (",".join(snapshots), self.release.info["version"]))
         self.userdata.register_examples(self.release.info.get("public_jobs", ()),
                                         self.release.info.get("public_requests", ()))
 
@@ -399,6 +458,14 @@ class Gateway:
         logs.mkdir(parents=True, exist_ok=True)
         log = open(logs / f"planner-{time.strftime('%Y%m%d-%H%M%S')}.log", "w", encoding="utf-8")
         env = {**os.environ, "PYTHONPATH": str(self.release.planner), "PYTHONUTF8": "1"}
+        env.pop("SHORTTRIP_REFERENCE_PREVIEW", None)
+        env.pop("SHORTTRIP_REFERENCE_ENGINE", None)
+        if self.preview_snapshot:
+            env["SHORTTRIP_REFERENCE_PREVIEW"] = str(self.release.data / self.preview_snapshot / "reference-preview.json")
+            env["CT_XIAMEN_HISTORICAL_FARES"] = "1"
+            from .preview_data import BASE, prepare_engine
+            engine = prepare_engine(self.release.data / BASE, self.release.data.parent / "trial-engine")
+            env["SHORTTRIP_REFERENCE_ENGINE"] = str(engine)
         self.planner_process = subprocess.Popen(
             [sys.executable, "-B", "-X", "utf8", "-m", "chinatravel.personalization.web",
              "--port", str(self.planner_port), "--data", str(self.release.data / self.release.info["snapshots"][-1])],

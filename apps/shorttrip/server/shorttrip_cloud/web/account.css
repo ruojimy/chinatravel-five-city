@@ -19,3 +19,6 @@
 .st-password input { font: inherit; padding: 8px 10px; border: 1px solid #d5dae3; border-radius: 8px; }
 .st-password button { padding: 8px; border: 0; border-radius: 8px; background: var(--brand, #2f6bff); color: #fff; font: inherit; cursor: pointer; }
 @media (max-width: 700px) { .st-account-panel { top: 60px; right: 8px; } }
+
+.st-feedback textarea{width:100%;box-sizing:border-box;font:inherit;padding:.55rem .7rem;border:1px solid #b8a99f;border-radius:.5rem;resize:vertical}
+.st-account-panel footer{flex-wrap:wrap;gap:.5rem}

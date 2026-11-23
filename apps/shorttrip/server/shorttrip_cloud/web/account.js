@@ -62,22 +62,52 @@
     el.innerHTML = `<header><div><b>${esc(me.display_name)}</b><span>@${esc(me.username)}${me.role === "admin" ? " · 管理员" : ""}</span></div>
       <button type="button" class="st-link" data-act="logout">退出登录</button></header>
       <h3>云端行程 <small>电脑和手机同步</small></h3><div class="st-trips">正在读取…</div>
-      <footer><a href="/?new=1">＋ 新建规划</a><button type="button" class="st-link" data-act="password">修改密码</button></footer>`;
+      <footer><a href="/?new=1">＋ 新建规划</a><button type="button" class="st-link" data-act="feedback">反馈问题</button><button type="button" class="st-link" data-act="password">修改密码</button></footer>`;
     el.querySelector('[data-act="logout"]').onclick = async () => {
       await call("/api/auth/logout", {method: "POST", body: "{}"}).catch(() => {});
       location.replace("/login");
     };
     el.querySelector('[data-act="password"]').onclick = () => passwordForm(el);
+    el.querySelector('[data-act="feedback"]').onclick = () => feedbackForm(el);
     try {
       const {trips} = await call("/api/account/trips");
       const list = el.querySelector(".st-trips");
+      if (list.querySelector("form")) return;
       if (!trips.length) { list.innerHTML = `<p class="st-empty">还没有规划过行程。</p>`; return; }
       list.innerHTML = trips.map(t => `<a class="st-trip" href="/?job=${esc(t.job)}${t.request ? "&request=" + esc(t.request) : ""}">
           <span class="st-title">${esc(t.title || "行程规划")}${t.example ? ' <em>示例</em>' : ""}</span>
           <span class="st-meta">${esc(STATES[t.state] || t.state || "")} · ${when(t.created)}${t.client === "android" ? " · 手机" : t.client === "pc" ? " · 电脑" : ""}${t.adopted_edits ? ` · 已改 ${t.adopted_edits} 次` : ""}</span></a>`).join("");
     } catch (error) {
-      el.querySelector(".st-trips").innerHTML = `<p class="st-empty">${esc(error.message)}</p>`;
+      const list = el.querySelector(".st-trips");
+      if (!list.querySelector("form")) list.innerHTML = `<p class="st-empty">${esc(error.message)}</p>`;
     }
+  }
+
+  function feedbackForm(el) {
+    el.querySelector(".st-trips").innerHTML = `<form class="st-password st-feedback">
+      <label for="st-feedback-text">问题或建议</label>
+      <textarea id="st-feedback-text" name="text" placeholder="例如：酒店报价偏差、景点门票或行程安排" required maxlength="1000" rows="4"></textarea>
+      <button type="submit">提交反馈</button><p class="st-empty" role="status"></p></form>`;
+    const form = el.querySelector(".st-feedback");
+    const button = form.querySelector("button");
+    form.onsubmit = async event => {
+      event.preventDefault();
+      if (button.disabled) return;
+      button.disabled = true;
+      const note = form.querySelector("p");
+      try {
+        const text = String(new FormData(form).get("text") || "").trim();
+        if (!text) throw new Error("请填写反馈内容。");
+        const job = new URLSearchParams(location.search).get("job");
+        await call("/api/account/feedback", {method: "POST", body: JSON.stringify({text, job})});
+        note.textContent = "反馈已保存。";
+        form.reset();
+      } catch (error) {
+        note.textContent = error.message || "反馈暂未保存，请重试。";
+      } finally {
+        button.disabled = false;
+      }
+    };
   }
 
   function passwordForm(el) {

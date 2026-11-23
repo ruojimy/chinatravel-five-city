@@ -10,9 +10,9 @@
 
 ---
 
-## ShortTrip 8795 · openGauss 与 Android 2.1
+## ShortTrip 8795 · 西安厦门试排与 Android 2.2
 
-Windows 工作台与 Android 共用账号、行程和旅行数据。安装包导入西安和厦门的 V20 目录，保留参考记录和缺字段的隔离数据。 [下载 Windows 安装包和 APK](https://github.com/ruojimy/chinatravel-five-city/releases/tag/shorttrip-8795-gaussdb-20261123) · [源码和部署说明](apps/shorttrip/)
+Windows 工作台与 Android 共用账号、行程和旅行数据。西安与厦门开放参考试排，历史房价和高置信估价带入沙盒，账号面板可提交问题反馈。 [下载 Windows 安装包和 APK](https://github.com/ruojimy/chinatravel-five-city/releases/tag/shorttrip-reference-2.2) · [源码和部署说明](apps/shorttrip/)
 
 ## 0. 十二城 V20（2026-11-19）
 
