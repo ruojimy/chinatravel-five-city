@@ -1,0 +1,229 @@
+{
+  "observed_on": "2026-11-23",
+  "sources": {
+    "qujiang": {
+      "url": "https://qjxq.xa.gov.cn/zjqj/qyts/5df21c46f99d657750e6dde3.html",
+      "publisher": "西安曲江新区管理委员会",
+      "basis": "曲江公共园林及大雁塔北广场、贞观文化广场的公共休闲属性"
+    },
+    "xianparks": {
+      "url": "https://m.xa.bendibao.com/tour/jingdianbangdan/1309.shtml",
+      "publisher": "西安本地宝",
+      "basis": "革命公园和唐城墙遗址公园门票为免费"
+    },
+    "kunmingchi": {
+      "url": "https://xa.ify.cn/content/263.aspx",
+      "publisher": "游西安",
+      "basis": "昆明池·七夕公园景区售票说明列为免费"
+    },
+    "changle": {
+      "url": "https://daj.shaanxi.gov.cn/Article/View?id=1457",
+      "publisher": "陕西省档案馆",
+      "basis": "长乐公园为公益性城市公园"
+    },
+    "changle_report": {
+      "url": "https://epaper.sanqin.com/html/pic/202408/16/8c4c6fc8-36e7-438d-8945-ebd5bb3c40ab.pdf",
+      "publisher": "三秦都市报",
+      "basis": "记载长乐公园向市民免费开放"
+    },
+    "xianparks2": {
+      "url": "https://www.sohu.com/a/919900849_681384",
+      "publisher": "搜狐刊载的西安公园游览资料",
+      "basis": "所列城市公园的公开免费入园资料，包括长乐、莲湖、丰庆"
+    },
+    "xian_rule": {
+      "url": "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html",
+      "publisher": "西安住房公积金管理中心转载公园条例",
+      "basis": "政府管理公园一般免费，保留依法收费及临时活动的例外"
+    },
+    "coast": {
+      "url": "https://m.lovetly.com/article/111936.htm",
+      "publisher": "福建凯撒国旅",
+      "published_on": "2026-07-08",
+      "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+    },
+    "xmparks": {
+      "url": "https://xm.bendibao.com/tour/20171013/53619_2.shtm",
+      "publisher": "厦门本地宝",
+      "basis": "忠仑公园、铁路文化公园、五缘湾湿地公园免费入口"
+    },
+    "greens": {
+      "url": "https://xm.fjsen.com/wap/2025-03/29/content_31872587.htm",
+      "publisher": "东南网",
+      "published_on": "2025-03-29",
+      "basis": "记载三处明确命名的公众共享绿地和免费设施"
+    },
+    "xmwalk": {
+      "url": "https://www.china-planning.org/alpha/wp-content/uploads/2025/06/IACP2025program.pdf",
+      "publisher": "IACP 会议公开资料",
+      "basis": "厦门滨海生态步行路线以及沿途公共区域，仅用于核对对象"
+    }
+  },
+  "places": [
+    [
+      "西安",
+      "106",
+      "长乐公园",
+      "public_park_grounds",
+      [
+        "changle",
+        "changle_report"
+      ]
+    ],
+    [
+      "西安",
+      "153",
+      "丰庆公园",
+      "public_park_grounds",
+      [
+        "xianparks2",
+        "xian_rule"
+      ]
+    ],
+    [
+      "西安",
+      "163",
+      "莲湖公园",
+      "public_park_grounds",
+      [
+        "xianparks2",
+        "xian_rule"
+      ]
+    ],
+    [
+      "西安",
+      "202",
+      "大雁塔北广场",
+      "public_square",
+      [
+        "qujiang"
+      ]
+    ],
+    [
+      "西安",
+      "222",
+      "贞观广场",
+      "public_square",
+      [
+        "qujiang"
+      ]
+    ],
+    [
+      "西安",
+      "234",
+      "昆明池·七夕公园",
+      "public_park_grounds",
+      [
+        "kunmingchi",
+        "xianparks"
+      ]
+    ],
+    [
+      "西安",
+      "244",
+      "革命公园",
+      "public_park_grounds",
+      [
+        "xianparks",
+        "xian_rule"
+      ]
+    ],
+    [
+      "西安",
+      "710",
+      "唐城墙遗址公园",
+      "public_park_grounds",
+      [
+        "xianparks",
+        "qujiang"
+      ]
+    ],
+    [
+      "厦门",
+      "188822583284873",
+      "忠仑公园叠水广场",
+      "public_shared_green_space",
+      [
+        "greens",
+        "xmparks"
+      ]
+    ],
+    [
+      "厦门",
+      "24808903554291",
+      "石头皮山公园疏林草地",
+      "public_shared_green_space",
+      [
+        "greens"
+      ]
+    ],
+    [
+      "厦门",
+      "7888351955976",
+      "五缘湾湿地公园共享绿地",
+      "public_shared_green_space",
+      [
+        "greens",
+        "xmparks"
+      ]
+    ],
+    [
+      "厦门",
+      "130470800663205",
+      "环岛路海滩",
+      "public_beach",
+      [
+        "coast",
+        "xmwalk"
+      ]
+    ],
+    [
+      "厦门",
+      "33255296569058",
+      "椰风寨沙滩",
+      "public_beach",
+      [
+        "coast"
+      ]
+    ],
+    [
+      "厦门",
+      "161070823970322",
+      "曾厝垵文创街区",
+      "public_outdoor_streets",
+      [
+        "coast",
+        "xmwalk"
+      ]
+    ],
+    [
+      "厦门",
+      "242477537726511",
+      "五缘湾湿地公园",
+      "public_park_grounds",
+      [
+        "coast",
+        "xmparks"
+      ]
+    ],
+    [
+      "厦门",
+      "51742646252020",
+      "忠仑公园",
+      "public_park_grounds",
+      [
+        "xmparks",
+        "greens"
+      ]
+    ],
+    [
+      "厦门",
+      "68015161981217",
+      "演武大桥观景平台",
+      "public_viewing_platform",
+      [
+        "coast"
+      ]
+    ]
+  ]
+}

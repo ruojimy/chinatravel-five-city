@@ -1,0 +1,21 @@
+.st-account-btn { font-size: 15px !important; font-weight: 700; color: #fff !important; background: var(--brand, #2f6bff) !important; border-radius: 50% !important; width: 32px !important; height: 32px !important; }
+.st-account-btn:hover { filter: brightness(1.08); }
+.st-account-panel { position: fixed; top: 68px; right: 16px; z-index: 2000; width: min(360px, calc(100vw - 24px)); max-height: calc(100vh - 90px); overflow: auto; background: #fff; border: 1px solid var(--line, #e8ebf0); border-radius: 14px; box-shadow: 0 16px 44px rgba(20, 30, 60, .16); padding: 14px 16px; font-size: 15px; }
+.st-account-panel header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line-2, #f1f3f6); }
+.st-account-panel header span { display: block; color: #7a8190; font-size: 13px; }
+.st-account-panel h3 { font-size: 15px; margin: 12px 0 6px; }
+.st-account-panel h3 small { font-weight: 400; color: #8a90a0; font-size: 12px; margin-left: 6px; }
+.st-trips { display: grid; gap: 4px; }
+.st-trip { display: block; padding: 8px 10px; border-radius: 9px; color: inherit; text-decoration: none; }
+.st-trip:hover { background: var(--brand-soft, #eaf1ff); }
+.st-title { display: block; font-weight: 600; }
+.st-title em { font-style: normal; font-size: 12px; font-weight: 500; color: #8a6d00; background: #fff4cc; border-radius: 5px; padding: 0 5px; margin-left: 4px; }
+.st-meta { display: block; color: #7a8190; font-size: 12.5px; }
+.st-empty { color: #7a8190; font-size: 13.5px; margin: 6px 2px; }
+.st-account-panel footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line-2, #f1f3f6); }
+.st-account-panel footer a { color: var(--brand, #2f6bff); text-decoration: none; font-weight: 600; }
+.st-link { border: 0; background: none; color: var(--brand, #2f6bff); font: inherit; font-size: 14px; cursor: pointer; padding: 4px; }
+.st-password { display: grid; gap: 8px; }
+.st-password input { font: inherit; padding: 8px 10px; border: 1px solid #d5dae3; border-radius: 8px; }
+.st-password button { padding: 8px; border: 0; border-radius: 8px; background: var(--brand, #2f6bff); color: #fff; font: inherit; cursor: pointer; }
+@media (max-width: 700px) { .st-account-panel { top: 60px; right: 8px; } }

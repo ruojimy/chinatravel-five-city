@@ -10,6 +10,10 @@
 
 ---
 
+## ShortTrip 8795 · openGauss 与 Android 2.1
+
+Windows 工作台与 Android 共用账号、行程和旅行数据。安装包导入西安和厦门的 V20 目录，保留参考记录和缺字段的隔离数据。 [下载 Windows 安装包和 APK](https://github.com/ruojimy/chinatravel-five-city/releases/tag/shorttrip-8795-gaussdb-20261123) · [源码和部署说明](apps/shorttrip/)
+
 ## 0. 十二城 V20（2026-11-19）
 
 V20 统一西安和厦门的景点类别与菜系读取，补入部分门票、营业时段及 POI 关联，并新增指定日期的跨城班次和展示票价。36 道原题的往返时刻预检从 **30/36** 提升到 **36/36**，城际展示票价在预算内的从 **29/36** 提升到 **35/36**。这些数字仅衡量交通。Luna 行程分数沿用下方 V19 评测。 [V20 逐题结果及数据边界](results/v20-20261119/README.md)

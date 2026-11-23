@@ -1,0 +1,6 @@
+<!-- The app talks to a ShortTrip server on the home/school LAN (http://192.168.x.x:8790),
+     whose address is only known at run time, so cleartext HTTP is allowed. Use https:// for
+     a server reachable from the internet. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

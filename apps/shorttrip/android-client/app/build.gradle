@@ -1,0 +1,48 @@
+// Thin ShortTrip client: a WebView signed in to the shared ShortTrip server.
+// Version, server address and signing come from Build-ShortTripApk.ps1 (-P properties / env).
+plugins {
+    id 'com.android.application' version '8.10.1'
+}
+
+def prop = { String name, String fallback -> providers.gradleProperty(name).orNull ?: fallback }
+
+android {
+    namespace 'cn.shorttrip.workbench'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'cn.shorttrip.workbench'
+        minSdk 24
+        targetSdk 35
+        versionCode prop('shorttripVersionCode', '7').toInteger()
+        versionName prop('shorttripVersionName', '2.0')
+        buildConfigField 'String', 'DEFAULT_SERVER', '"' + prop('shorttripServer', '') + '"'
+        buildConfigField 'String', 'RELEASE', '"' + prop('shorttripRelease', 'dev') + '"'
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    signingConfigs {
+        release {
+            def store = System.getenv('SHORTTRIP_KEYSTORE')
+            if (store) {
+                storeFile file(store)
+                storePassword System.getenv('SHORTTRIP_STORE_PASSWORD')
+                keyAlias 'shorttrip'
+                keyPassword System.getenv('SHORTTRIP_STORE_PASSWORD')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv('SHORTTRIP_KEYSTORE')) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

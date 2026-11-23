@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>登录 · ShortTrip</title>
+<link rel="icon" href="data:,">
+<style>
+  :root { --brand: #2f6bff; --brand-2: #4a86ff; --brand-soft: #eaf1ff; --text: #1d2129; --muted: #6b7280;
+          --line: #e5e8ef; --bad: #d93025; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+         color: var(--text); background: linear-gradient(160deg, #f5f8ff 0%, #eef6f1 100%);
+         display: grid; place-items: center; padding: 24px 16px; }
+  main { width: 100%; max-width: 380px; background: #fff; border: 1px solid var(--line); border-radius: 16px;
+         padding: 28px 26px 22px; box-shadow: 0 12px 40px rgba(31, 56, 120, .08); }
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+  .brand svg { width: 34px; height: 34px; }
+  h1 { font-size: 22px; margin: 0; }
+  .lead { color: var(--muted); font-size: 14px; margin: 2px 0 20px; }
+  .tabs { display: grid; grid-template-columns: 1fr 1fr; background: #f3f5f9; border-radius: 10px; padding: 3px; margin-bottom: 18px; }
+  .tabs button { border: 0; background: none; padding: 7px 0; border-radius: 8px; font: inherit; font-size: 15px; color: var(--muted); cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: #fff; color: var(--text); font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  label { display: block; font-size: 14px; color: #3d4350; margin: 12px 0 5px; }
+  input { width: 100%; font: inherit; padding: 10px 12px; border: 1px solid #d5dae3; border-radius: 9px; background: #fff; }
+  input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+  .hint { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  button.primary { width: 100%; margin-top: 20px; padding: 11px; border: 0; border-radius: 10px; background: var(--brand);
+                   color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+  button.primary:hover { background: var(--brand-2); }
+  button.primary:disabled { opacity: .6; cursor: progress; }
+  .error { color: var(--bad); font-size: 14px; min-height: 22px; margin-top: 12px; }
+  footer { margin-top: 10px; font-size: 12.5px; color: var(--muted); text-align: center; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2f6bff"/><path d="M9 21c3-8 11-8 14-10M10 11h6M16 21h6" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+    <h1>ShortTrip 旅游规划</h1>
+  </div>
+  <p class="lead">一个账号，电脑和手机看到同一份行程。</p>
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" id="tabLogin" aria-selected="true">登录</button>
+    <button type="button" role="tab" id="tabRegister" aria-selected="false">注册</button>
+  </div>
+  <form id="form" novalidate>
+    <label for="username">用户名</label>
+    <input id="username" name="username" autocomplete="username" autocapitalize="off" spellcheck="false" required>
+    <div class="hint register-only" hidden>3–32 位字母、数字或下划线</div>
+    <div class="register-only" hidden>
+      <label for="displayName">昵称（可选）</label>
+      <input id="displayName" name="display_name" maxlength="32" autocomplete="nickname">
+    </div>
+    <label for="password">密码</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <div class="hint register-only" hidden>至少 8 位，同时包含字母和数字</div>
+    <div class="register-only" hidden>
+      <label for="password2">确认密码</label>
+      <input id="password2" type="password" autocomplete="new-password">
+    </div>
+    <button class="primary" id="submit" type="submit">登录</button>
+    <div class="error" id="error" role="alert"></div>
+  </form>
+  <footer id="footer"></footer>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let mode = "login";
+  const next = (() => {
+    const value = new URLSearchParams(location.search).get("next") || "/?new=1";
+    return value.startsWith("/") && !value.startsWith("//") ? value : "/?new=1";
+  })();
+
+  function setMode(value) {
+    mode = value;
+    $("tabLogin").setAttribute("aria-selected", value === "login");
+    $("tabRegister").setAttribute("aria-selected", value === "register");
+    document.querySelectorAll(".register-only").forEach(el => el.hidden = value !== "register");
+    $("password").autocomplete = value === "login" ? "current-password" : "new-password";
+    $("submit").textContent = value === "login" ? "登录" : "注册并登录";
+    $("error").textContent = "";
+  }
+  $("tabLogin").onclick = () => setMode("login");
+  $("tabRegister").onclick = () => setMode("register");
+
+  fetch("/api/auth/me", {credentials: "same-origin"}).then(async r => {
+    const data = await r.json().catch(() => ({}));
+    if (r.ok) return location.replace(next);
+    if (data.register === false) $("tabRegister").hidden = true;
+  }).catch(() => { $("footer").textContent = "暂时连不上服务器，请检查网络或服务器地址。"; });
+
+  $("form").addEventListener("submit", async event => {
+    event.preventDefault();
+    const username = $("username").value.trim(), password = $("password").value;
+    if (!username || !password) return $("error").textContent = "请输入用户名和密码。";
+    if (mode === "register" && password !== $("password2").value) return $("error").textContent = "两次输入的密码不一致。";
+    $("submit").disabled = true;
+    $("error").textContent = "";
+    try {
+      const body = {username, password};
+      if (mode === "register") body.display_name = $("displayName").value.trim();
+      const response = await fetch("/api/auth/" + mode, {
+        method: "POST", credentials: "same-origin",
+        headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.message || "登录失败，请稍后再试。");
+      location.replace(next);
+    } catch (error) {
+      $("error").textContent = error.message === "Failed to fetch" ? "连不上服务器，请检查网络。" : error.message;
+    } finally {
+      $("submit").disabled = false;
+    }
+  });
+  fetch("/api/health").then(r => r.json()).then(d => {
+    if (d.version) $("footer").textContent = "服务器版本 " + d.version + (/ShortTripAndroid\//.test(navigator.userAgent) ? " · 安卓客户端" : "");
+  }).catch(() => {});
+})();
+</script>
+</body>
+</html>
