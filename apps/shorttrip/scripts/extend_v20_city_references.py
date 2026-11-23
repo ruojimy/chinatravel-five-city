@@ -101,6 +101,43 @@ def public_outdoor_scope(name, data):
     return next((scope for pattern, scope in OUTDOOR_NAMES if pattern.search(name)), None)
 
 
+EXPANDED_OUTDOOR_BASIS = "public_outdoor_type_reference"
+OPEN_PARK_PARENTS = (
+    "仙岳公园", "忠仑公园", "白鹭洲公园", "五缘湾湿地公园", "狐尾山公园", "厦门香山公园",
+    "兴庆宫公园", "唐城墙遗址公园", "曲江池遗址公园",
+)
+OPEN_PARK_FEATURE = re.compile(r"(?:亭|木桥|亲水平台|观景台|草坪|花溪|樱花谷|雕像|铜像|石狮|湖|园中园|水上广场|唐诗迷宫)$")
+OPEN_PARK_SECTION = re.compile(r"公园(?:[0-9一二三四五六七八九十]+期|[1-9一二三四五六七八九]区)$")
+PUBLIC_STREETS = re.compile(r"(?:观光大道|健身步道|亲水步道|海滨步道|滨水步道|骑行道|公共绿道)$")
+PUBLIC_WALKWAY_NODE = re.compile(r"(?:健康步道|市政绿道)[\u4e00-\u9fff]{0,8}(?:桥|观景台|观景平台)$")
+EXTRA_RESTRICTIONS = re.compile(
+    r"经停|施工|已关闭|已停业|暂停营业|闭园|小区|度假村|主题乐园|营地|售票|专用|办公|"
+    r"出海|帆船|游船|温泉|滑道|展馆|纪念馆|博物馆|影视城|营业部|运动培训|体育场|球场"
+)
+
+
+def expanded_public_scope(name, data):
+    """Recognize a public place with a compatible category and a scoped name."""
+    name = unicodedata.normalize("NFKC", name).strip()
+    if RESTRICTED_CONTEXT.search(name) or EXTRA_RESTRICTIONS.search(name):
+        return None
+    labels = data.get("category_values") or ([data["type"]] if data.get("type") else [])
+    if set(labels) - OUTDOOR_CATEGORIES - BROAD_CATEGORIES:
+        return None
+    if PUBLIC_STREETS.search(name) or name in {"环岛路", "环岛东路", "中山路步行街"}:
+        return "public_outdoor_streets"
+    if PUBLIC_WALKWAY_NODE.search(name) or name in {"曾厝垵牌坊", "集美学村牌坊"}:
+        return "public_path_or_viewpoint"
+    if name in {"湖里街道侨文化园", "街心花园"} or OPEN_PARK_SECTION.search(name):
+        return "public_park_grounds"
+    if (any(parent in name and name.index(parent) + len(parent) < len(name) for parent in OPEN_PARK_PARENTS)
+            and OPEN_PARK_FEATURE.search(name)):
+        return "public_park_outdoor_feature"
+    if re.fullmatch(r"[^()]+广场\([^()]{1,24}(?:路|街)\)", name):
+        return "public_square"
+    return None
+
+
 def positive_price(value):
     try:
         return float(value) > 0
@@ -134,6 +171,15 @@ def free_admission(city, name, payload, public_spaces):
         return {
             "amount_cny": 0, "scope": outdoor, "basis": "user_approved_public_outdoor_admission",
             "approved_on": "2026-11-23", "price_status": "assumed_for_reference",
+            "covers": "basic access to the named outdoor public area",
+            "excludes": ["ticketed facilities", "reservations or access restrictions", "ferries", "paid activities"],
+            "source_locator": payload["source_locator"],
+        }
+    expanded = expanded_public_scope(name, data)
+    if expanded and not any(positive_price(v) for v in (data.get("price"), row.get("price"))):
+        return {
+            "amount_cny": 0, "scope": expanded, "basis": EXPANDED_OUTDOOR_BASIS,
+            "approved_on": "2026-11-24", "price_status": "assumed_for_reference",
             "covers": "basic access to the named outdoor public area",
             "excludes": ["ticketed facilities", "reservations or access restrictions", "ferries", "paid activities"],
             "source_locator": payload["source_locator"],
@@ -230,6 +276,10 @@ def build_references(quarantined, profile, local_observations):
         if admission is not None:
             data["price"] = 0
             payload["admission_evidence"] = admission
+            if admission["basis"] == EXPANDED_OUTDOOR_BASIS:
+                discovery = attraction_discovery(name, payload, restrictions)
+                if discovery:
+                    payload["discovery_evidence"] = discovery
             admissions[city, admission["basis"]] += 1
         elif kind == "attraction":
             payload["discovery_evidence"] = info
@@ -285,6 +335,18 @@ def summary_of(snapshot, existing, quarantine, rows, admissions):
     }
 
 
+def is_new_outdoor_admission(current, proposed):
+    if proposed is None or proposed[:4] != current[:4] or current[2] != "attraction":
+        return False
+    before, after = json.loads(current[-1]), json.loads(proposed[-1])
+    admission = after.pop("admission_evidence", {})
+    if (before.get("admission_evidence") or admission.get("basis") != EXPANDED_OUTDOOR_BASIS
+            or before["data"].get("price") not in (None, 0) or after["data"].get("price") != 0):
+        return False
+    after["data"]["price"] = before["data"]["price"]
+    return before == after
+
+
 def import_batch(db, snapshot, profile, local_observations, check):
     from shorttrip_cloud.db import execute_batch
 
@@ -311,12 +373,21 @@ def import_batch(db, snapshot, profile, local_observations, check):
         cur.execute("SELECT id, city, kind, name, payload FROM st_catalog_reference WHERE snapshot_id=%s", (snapshot,))
         current = cur.fetchall()
         existing_ids = {row[0] for row in current}
-        if any(refs.get(row[0]) != row for row in current):
-            raise ValueError("Existing catalog reference would change or disappear")
+        upgrades = []
+        for row in current:
+            proposed = refs.get(row[0])
+            if proposed == row:
+                continue
+            if not is_new_outdoor_admission(row, proposed):
+                raise ValueError(f"Existing catalog reference would change or disappear: {row[0]}")
+            upgrades.append((proposed[-1], snapshot, row[0]))
+        if upgrades:
+            execute_batch(cur, "UPDATE st_catalog_reference SET payload=%s WHERE snapshot_id=%s AND id=%s", upgrades)
         additions = sorted(refs[row_id] for row_id in refs.keys() - existing_ids)
         if additions:
             execute_batch(cur, "INSERT INTO st_catalog_reference (snapshot_id,id,city,kind,name,payload) VALUES (%s,%s,%s,%s,%s,%s)",
                           [(snapshot, *row) for row in additions])
+        if additions or upgrades:
             cur.execute("SELECT id, city, kind, name, payload FROM st_catalog_reference WHERE snapshot_id=%s", (snapshot,))
             current = cur.fetchall()
         if len(current) != len(refs) or set(current) != set(refs.values()):
@@ -328,7 +399,7 @@ def import_batch(db, snapshot, profile, local_observations, check):
             cur.execute("INSERT INTO st_meta (key, value) VALUES (%s,%s)", (RECEIPT, encoded))
         elif stored != (encoded,):
             prior = json.loads(stored[0])
-            if not additions or prior.get("reference_only") != len(existing_ids):
+            if not (additions or upgrades) or prior.get("reference_only") != len(existing_ids):
                 raise ValueError("Existing catalog reference receipt differs")
             cur.execute("UPDATE st_meta SET value=%s WHERE key=%s", (encoded, RECEIPT))
         return summary
