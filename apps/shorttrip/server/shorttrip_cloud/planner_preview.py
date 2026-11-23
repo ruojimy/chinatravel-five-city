@@ -38,6 +38,10 @@ def sandbox_for(Sandbox):
             access = payload["access"]
             access["shorttrip_trial_context"] = extra
             access["catalog_discoverable"] = True
+            if extra["basis"] == "price_quarantined":
+                payload["data"]["price"] = None
+                access["main_path"] = False
+                access["price_usable_for_static_budget"] = False
             if extra["planning_eligible"] and access["planning_position_available"] and access["poi_name_match"]:
                 payload["data"].update(extra["fields"])
                 access["main_path"] = True

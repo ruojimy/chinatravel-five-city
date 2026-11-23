@@ -14,6 +14,7 @@ from .snapshots import import_snapshot
 
 CITIES = ("西安", "厦门")
 BASE = "6de12f4"
+MIN_REFERENCE_ROOM_NIGHT_CNY = 10.0
 PROFILE = "xiamen12_historical_v20_completion"
 ESTIMATES = f"sandbox_profiles/{PROFILE}/database/accommodations/xian/"
 
@@ -62,26 +63,35 @@ def approved_estimates(db, base):
 
 def hotel_price(payload):
     info = payload.get("hotel_reference", {})
-    offers = []
+    offers, quarantined = [], []
     for value in info.get("room_or_offer_observations", ()):
         obs = value["observation"]
-        if positive(obs.get("price_cny_per_room_stay")) and positive(obs.get("nights")):
-            amount = positive(obs["price_cny_per_room_stay"]) / positive(obs["nights"])
+        stay, nights = positive(obs.get("price_cny_per_room_stay")), positive(obs.get("nights"))
+        if stay and nights:
+            amount = stay / nights
         elif obs.get("unit") == "元/间/查询1晚" and positive(obs.get("price_cny")):
             amount = positive(obs["price_cny"])
         else:
             continue
-        offers.append(amount)
-    if offers:
-        return {"price": median(offers), "basis": "historical_nightly_room_observation",
-                "unit": "CNY/room/night", "observations": len(offers)}
+        if amount < MIN_REFERENCE_ROOM_NIGHT_CNY:
+            quarantined.append({"price": amount, "basis": value["scope"],
+                                "observed_at": obs.get("observed_at"), "source_url": obs.get("source_url")})
+        else:
+            offers.append(amount)
     display = info.get("display_price_observation") or {}
     amount = positive(display.get("amount_cny"))
+    reference = None
     if amount:
-        return {"price": amount, "basis": "historical_display_price_proxy",
-                "unit": "CNY/room/night", "original_unit_scope": display.get("unit_scope"),
-                "observed_at": display.get("observed_at"), "evidence_id": display.get("evidence_id")}
-    return None
+        reference = {"price": amount, "basis": "historical_display_price_proxy",
+                     "unit": "CNY/room/night", "original_unit_scope": display.get("unit_scope"),
+                     "observed_at": display.get("observed_at"), "evidence_id": display.get("evidence_id")}
+        if amount < MIN_REFERENCE_ROOM_NIGHT_CNY:
+            quarantined.append(reference)
+            reference = None
+    if offers:
+        reference = {"price": median(offers), "basis": "historical_nightly_room_observation",
+                     "unit": "CNY/room/night", "observations": len(offers)}
+    return reference, quarantined
 
 
 def entry(payload, scope, estimate):
@@ -94,9 +104,18 @@ def entry(payload, scope, estimate):
     # Discovery is broader than routeability. Keep records with no position searchable by name.
     routable = (access.get("planning_position_available") and access.get("poi_name_match")
                 and positive(data.get("lat")) and positive(data.get("lon")))
-    if payload["kind"] == "accommodation" and routable and access.get("grade") != "L4":
-        price = hotel_price(payload) if payload["city"] == "厦门" else estimate
-        if price:
+    if payload["kind"] == "accommodation":
+        if payload["city"] == "厦门":
+            price, quarantined = hotel_price(payload)
+        else:
+            price, quarantined = estimate, []
+            if price and price["price"] < MIN_REFERENCE_ROOM_NIGHT_CNY:
+                quarantined, price = [price], None
+        if quarantined:
+            result["quarantined_prices"] = quarantined
+            if price is None:
+                result["basis"] = "price_quarantined"
+        if price and routable and access.get("grade") != "L4":
             result.update(basis=price["basis"], price_evidence=price, planning_eligible=True)
             result["fields"]["price"] = round(price["price"], 2)
             if payload["city"] == "厦门":
@@ -147,7 +166,7 @@ def prepare(db, base):
         if name in excluded or counts[name] != 1 or name not in estimates:
             continue
         value = entry(hotel, "estimate", estimates[name])
-        if value and value["planning_eligible"]:
+        if value and (value["planning_eligible"] or value.get("quarantined_prices")):
             data[hotel["source_record_id"]] = value
     timetable = []
     rail_rows = db.all(
@@ -169,10 +188,33 @@ def prepare(db, base):
         (root / "reference-preview.json").write_bytes(raw)
         import_snapshot(db, root, identifier, BASE, "ShortTrip 2.2 reference trial", catalog=False)
     totals = Counter((key.split(":", 1)[0], value["basis"], value["planning_eligible"]) for key, value in data.items())
-    print(f"参考试排快照 {identifier}，{len(data)} 条地点，{len(timetable)} 条历史铁路票价")
+    quarantined = persist_price_quarantine(db, identifier, data)
+    print(f"参考试排快照 {identifier}，{len(data)} 条地点，{len(timetable)} 条历史铁路票价，{quarantined} 家酒店有隔离报价")
     for (kind, basis, eligible), count in sorted(totals.items()):
         print(f"  {kind} {basis} {'试排' if eligible else '查询'} {count}")
     return identifier
+
+
+def persist_price_quarantine(db, snapshot, data):
+    rows = [(record_id, value) for record_id, value in data.items() if value.get("quarantined_prices")]
+    with db.tx() as cur:
+        cur.execute("SELECT id FROM st_snapshot WHERE id=%s FOR UPDATE", (snapshot,))
+        cur.execute("SELECT id FROM st_catalog_quarantine WHERE snapshot_id=%s", (snapshot,))
+        existing = {row_id for row_id, in cur.fetchall()}
+        for record_id, value in sorted(rows):
+            row_id = "trial-price:" + record_id
+            if row_id in existing:
+                continue
+            city = {"xian": "西安", "xiamen": "厦门"}[record_id.split(":", 2)[1]]
+            detail = {"source": value["source"], "quarantined_prices": value["quarantined_prices"],
+                      "alternate_usable": value["planning_eligible"],
+                      "minimum_cny_per_room_night": MIN_REFERENCE_ROOM_NIGHT_CNY}
+            cur.execute(
+                "INSERT INTO st_catalog_quarantine "
+                "(snapshot_id,id,city,kind,name,reasons,payload) VALUES (%s,%s,%s,%s,%s,%s,%s)",
+                (snapshot, row_id, city, "accommodation", value["name"],
+                 json.dumps(["nominal_room_night_price"]), json.dumps(detail, ensure_ascii=False)))
+    return len(rows)
 
 
 def prepare_engine(base, destination):
