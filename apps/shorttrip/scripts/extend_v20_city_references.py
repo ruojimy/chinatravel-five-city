@@ -15,6 +15,8 @@ from import_v20_city_catalog import digest, dump, number, present, read
 
 RECEIPT = "city_catalog_v20_references"
 PUBLIC_SPACES = Path(__file__).resolve().parent.parent / "references/v20-free-public-spaces.json"
+REVIEWED_SPACES = PUBLIC_SPACES.with_name("v20-reviewed-free-places.json")
+REVIEWED_FREE_BASIS = "reviewed_public_free_access"
 OFFICIAL = "xiamen_evidence/official_room_price_history.csv"
 NIKKO = "xiamen_evidence/nikko_manual/manual_room_variants.csv"
 OBSERVATIONS = {
@@ -244,6 +246,31 @@ def hotel_evidence(name, payload, observations):
     return {"display_price_observation": historical, "room_or_offer_observations": rooms}
 
 
+def reviewed_admissions(quarantined, path):
+    manifest = read(path)
+    rows = {row[0]: row for row in quarantined if row[2] == "attraction"}
+    result = {}
+    for item in manifest["places"]:
+        identity = item["id"]
+        row = rows.get(identity)
+        if row is None or row[1] != item["city"] or row[3] != item["name"] or identity in result:
+            raise ValueError(f"Reviewed attraction identity did not match: {identity}")
+        if not item["scope"] or not item["reason"] or not isinstance(item["trial_allowed"], bool):
+            raise ValueError(f"Missing reviewed admission scope or eligibility: {identity}")
+        payload = json.loads(row[-1])
+        prices = (payload["raw_record"].get("price"), payload["data"].get("price"))
+        if any(positive_price(price) for price in prices):
+            raise ValueError(f"Reviewed free admission conflicts with a stored positive price: {identity}")
+        evidence = {
+            "amount_cny": 0, "scope": item["scope"], "basis": REVIEWED_FREE_BASIS,
+            "price_status": "reviewed_reference", "reviewed_on": item["reviewed_on"],
+            "reason": item["reason"], "source_urls": item["urls"], "trial_allowed": item["trial_allowed"],
+            "source_locator": payload["source_locator"],
+        }
+        result[identity] = evidence
+    return result
+
+
 def build_references(quarantined, profile, local_observations):
     public = read(PUBLIC_SPACES)
     public_spaces = {
@@ -255,6 +282,7 @@ def build_references(quarantined, profile, local_observations):
         for city, source_id, name, scope, sources in public["places"]
     }
     observations = room_observations(profile, local_observations)
+    reviewed = reviewed_admissions(quarantined, REVIEWED_SPACES)
     refs, rows, admissions = {}, [], Counter()
     for row_id, city, kind, name, reasons_raw, payload_raw in quarantined:
         if kind not in ("attraction", "accommodation"):
@@ -263,6 +291,10 @@ def build_references(quarantined, profile, local_observations):
         restrictions = json.loads(reasons_raw)
         admission = free_admission(city, name, payload, public_spaces) if kind == "attraction" else None
         if kind == "attraction":
+            if row_id in reviewed:
+                if admission is not None:
+                    raise ValueError(f"Reviewed attraction already has admission evidence: {row_id}")
+                admission = reviewed[row_id]
             info = admission or attraction_discovery(name, payload, restrictions)
         else:
             info = hotel_evidence(name, payload, observations) if city == "厦门" else None
@@ -276,7 +308,7 @@ def build_references(quarantined, profile, local_observations):
         if admission is not None:
             data["price"] = 0
             payload["admission_evidence"] = admission
-            if admission["basis"] == EXPANDED_OUTDOOR_BASIS:
+            if admission["basis"] in {EXPANDED_OUTDOOR_BASIS, REVIEWED_FREE_BASIS}:
                 discovery = attraction_discovery(name, payload, restrictions)
                 if discovery:
                     payload["discovery_evidence"] = discovery
@@ -340,7 +372,7 @@ def is_new_outdoor_admission(current, proposed):
         return False
     before, after = json.loads(current[-1]), json.loads(proposed[-1])
     admission = after.pop("admission_evidence", {})
-    if (before.get("admission_evidence") or admission.get("basis") != EXPANDED_OUTDOOR_BASIS
+    if (before.get("admission_evidence") or admission.get("basis") not in {EXPANDED_OUTDOOR_BASIS, REVIEWED_FREE_BASIS}
             or before["data"].get("price") not in (None, 0) or after["data"].get("price") != 0):
         return False
     after["data"]["price"] = before["data"]["price"]

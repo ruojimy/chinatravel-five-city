@@ -132,7 +132,10 @@ def entry(payload, scope, estimate):
         if admission:
             result["basis"] = admission["basis"]
             result["fields"]["price"] = 0
-            if routable and access.get("time_complete") and access.get("grade") != "L4":
+            if "trial_allowed" in admission:
+                result["admission_evidence"] = admission
+            if (admission.get("trial_allowed", True) and routable and access.get("time_complete")
+                    and access.get("grade") != "L4"):
                 result["planning_eligible"] = True
                 low, high = positive(data.get("recommendmintime")), positive(data.get("recommendmaxtime"))
                 if not low or not high or high < low:
