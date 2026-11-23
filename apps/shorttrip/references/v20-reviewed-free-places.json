@@ -63,6 +63,19 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xiamen:109032260879725",
+      "city": "厦门",
+      "name": "奥古斯特·罗丹雕像",
+      "scope": "public_art_in_open_square",
+      "reason": "厦门文联记载市政府在环岛路书法广场设置罗丹雕像，广场为沿海开放公共空间；按户外雕像准入，周边商业服务不计。",
+      "urls": [
+        "https://news.sohu.com/20070102/n247390377.shtml",
+        "https://www.xmwenlian.com/home/article/index/category/52.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xiamen:109189570212594",
       "city": "厦门",
       "name": "陈嘉庚纪念胜地-集美鳌园",
@@ -137,6 +150,20 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:117688530773662",
+      "city": "厦门",
+      "name": "桥梁博物馆",
+      "scope": "free_public_museum",
+      "reason": "桥梁博物馆为海沧大桥锚碇内的公众展馆，专业博物馆目录明确门票免费；展馆按开放时段/预约规则参观。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://art.icity.ly/museums/8haqyw1",
+        "https://ditu.amap.com/place/B025003YM0",
+        "https://you.ctrip.com/sight/xiamen21/48770.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xiamen:118097239786675",
@@ -388,6 +415,19 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:138677746826531",
+      "city": "厦门",
+      "name": "云顶中路忠仑公园人行天桥",
+      "scope": "public_urban_park_access_point",
+      "reason": "公园名称及场所类型明确为城市公园入口或步行连接段，基础通行免费；按路线识别点使用。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:139042025835131",
       "city": "厦门",
       "name": "仙岳公园-土地公庙",
@@ -517,6 +557,18 @@
       "reason": "龙头山寨遗址为户外历史遗址/山径点，按不带售票设施的公共遗址空间纳入。",
       "urls": [
         "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:157554693666683",
+      "city": "厦门",
+      "name": "中茶海堤茶博物馆",
+      "scope": "free_public_museum",
+      "reason": "厦门日报报道中茶海堤博物馆面向公众免费参观；仅馆内基础展览免费，茶叶零售/体验消费另计。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://news.xmnn.cn/xmxw/202307/t20230706_88806.html"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -734,6 +786,20 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:180523475552271",
+      "city": "厦门",
+      "name": "狐尾山公园-降水现象解说区",
+      "scope": "public_urban_park_outdoors",
+      "reason": "市人大资料确认这些点所属的公园公共开放，按开放景观及公园步行范围记录；独立场馆及限制区域另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://www.xmrd.gov.cn/rdlz/rdgb/2023/202403/P020240325695249929082.pdf",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xiamen:180756723153253",
       "city": "厦门",
       "name": "归来园",
@@ -764,6 +830,18 @@
       "name": "梵天禅寺",
       "scope": "public_temple",
       "reason": "梵天禅寺是同安寺院公共礼佛区域，按基本宗教场所访问纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:183084400316552",
+      "city": "厦门",
+      "name": "仙岳公园-太岁殿",
+      "scope": "public_park_shrine",
+      "reason": "记录为仙岳公园内太岁殿；仅认定公园附属开放礼拜点和公园公共路网，不将任何独立收费服务纳入。 具体开放日和入场条件仍需确认。",
       "urls": [
         "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
       ],
@@ -959,6 +1037,18 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xiamen:209604535279214",
+      "city": "厦门",
+      "name": "厦门大学翔安校区芙蓉湖",
+      "scope": "public_free_campus_outdoors",
+      "reason": "湖区为校园户外景观；仅在获准进入对应校区时计基础游览。游客预约政策及预约适用校区单独核验。",
+      "urls": [
+        "https://dawb.xmu.edu.cn/wbglzx/cgfw.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:210934633107520",
       "city": "厦门",
       "name": "南普陀寺-转逢和尚之塔",
@@ -995,6 +1085,33 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:227311769600078",
+      "city": "厦门",
+      "name": "厦门大学思明校区海洋科技博物馆",
+      "scope": "public_free_campus_exhibition",
+      "reason": "厦门大学馆方明确常年免费开放，入校、参观预约、闭馆日及特殊活动另核。",
+      "urls": [
+        "https://coe.xmu.edu.cn/info/1971/93560.htm",
+        "https://coe.xmu.edu.cn/info/1981/93570.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:230760981741761",
+      "city": "厦门",
+      "name": "白鹭洲公园中公园-大牌楼",
+      "scope": "public_urban_park_outdoors",
+      "reason": "市人大资料确认这些点所属的公园公共开放，按开放景观及公园步行范围记录；独立场馆及限制区域另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://www.xmrd.gov.cn/rdlz/rdgb/2023/202403/P020240325695249929082.pdf",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
     },
     {
       "id": "v20:attraction:xiamen:23123747914060",
@@ -1121,6 +1238,19 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:238927020885832",
+      "city": "厦门",
+      "name": "厦门观音寺-万佛宝塔",
+      "scope": "public_free_temple",
+      "reason": "厦门观音寺免费开放且无需预约的公开信息覆盖寺院；本条仅表示寺内塔院基础参观免费，不含供养、香品等自愿支出。",
+      "urls": [
+        "https://m.xm.bendibao.com/tour/77834.shtm",
+        "https://www.sohu.com/a/616068362_121117454"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xiamen:2395909493254",
       "city": "厦门",
       "name": "青礁慈济祖宫-甄权雕像",
@@ -1159,6 +1289,18 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xiamen:243967415415876",
+      "city": "厦门",
+      "name": "南普陀寺-伽蓝殿",
+      "scope": "public_free_forecourt_of_temple",
+      "reason": "依据南普陀寺免费预约参观，标记这些殿堂所对应的开放院落及殿外公共游线；室内权限、法会及预约时间另核。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:244976754178075",
       "city": "厦门",
       "name": "归来堂",
@@ -1180,6 +1322,19 @@
       "urls": [
         "https://www.xmjkbd.com/",
         "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:247375437466462",
+      "city": "厦门",
+      "name": "石室禅院",
+      "scope": "public_free_temple",
+      "reason": "公开旅游信息列明石室禅院免费开放；本条按基本参观院落登记，宗教活动、内部区域及临时封闭遵从现场管理。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-shi-chan-yuan-24-ton-bell",
+        "https://www.sscycs.cn/"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
@@ -1248,6 +1403,18 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:253197757646387",
+      "city": "厦门",
+      "name": "陈嘉庚纪念胜地-李林园",
+      "scope": "public_free_memorial_grounds",
+      "reason": "纪念胜地开放免费证据覆盖对应露天附属园地。纪念胜地各展馆、临时修缮和限时开放另核。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:253601129837678",
       "city": "厦门",
       "name": "青礁慈济祖宫-药臼亭",
@@ -1256,6 +1423,20 @@
       "urls": [
         "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
         "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:256516810501770",
+      "city": "厦门",
+      "name": "仙岳公园-仙之源",
+      "scope": "public_urban_park_outdoors",
+      "reason": "市人大资料确认这些点所属的公园公共开放，按开放景观及公园步行范围记录；独立场馆及限制区域另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://www.xmrd.gov.cn/rdlz/rdgb/2023/202403/P020240325695249929082.pdf",
+        "https://xmjkbd.com/"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
@@ -1272,6 +1453,32 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:26167111321661",
+      "city": "厦门",
+      "name": "青礁慈济祖宫主殿",
+      "scope": "public_free_temple_reservation_or_site_rules",
+      "reason": "青礁慈济祖宫面向公众免费参观；宫内主殿属于基本参观范围。依据旧预约公告曾要求实名预约，实际是否预约及殿堂开放以现场公告为准。仅登记参观，不含捐赠、香品、讲解或馆内收费服务。",
+      "urls": [
+        "https://m.fznews.com.cn/fzsync/2020-04-19/1017491993685.shtml",
+        "https://xm.bendibao.com/tour/20221123/79436.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:263733901328359",
+      "city": "厦门",
+      "name": "谢景德烈士之墓",
+      "scope": "public_memorial_site",
+      "reason": "市级文保资料确认该烈士墓位于忠仑苗圃内；厦门烈士纪念场所对外开放的公开通知支持基本纪念参观免费。因位于苗圃管理范围，具体入口与开放安排建议现场核验。",
+      "urls": [
+        "https://m.hxnews.com/news/fj/mn/xm/202604/01/2246312.shtml",
+        "https://zh.wikipedia.org/wiki/厦门市文物保护单位"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xiamen:263940831006895",
@@ -1351,6 +1558,32 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:277673813808169",
+      "city": "厦门",
+      "name": "南普陀寺-藏经阁",
+      "scope": "public_free_forecourt_of_temple",
+      "reason": "依据南普陀寺免费预约参观，标记这些殿堂所对应的开放院落及殿外公共游线；室内权限、法会及预约时间另核。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:281212085778162",
+      "city": "厦门",
+      "name": "仙岳山",
+      "scope": "public_urban_park_outdoors",
+      "reason": "市人大资料确认这些点所属的公园公共开放，按开放景观及公园步行范围记录；独立场馆及限制区域另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://www.xmrd.gov.cn/rdlz/rdgb/2023/202403/P020240325695249929082.pdf",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xiamen:34125425693906",
       "city": "厦门",
       "name": "南普陀寺-韦驮菩萨",
@@ -1387,6 +1620,18 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:40416350959195",
+      "city": "厦门",
+      "name": "南普陀寺-罗汉堂",
+      "scope": "public_free_forecourt_of_temple",
+      "reason": "依据南普陀寺免费预约参观，标记这些殿堂所对应的开放院落及殿外公共游线；室内权限、法会及预约时间另核。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xiamen:45637542547627",
@@ -1493,6 +1738,18 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xiamen:58731522020738",
+      "city": "厦门",
+      "name": "南普陀寺-法堂",
+      "scope": "public_free_forecourt_of_temple",
+      "reason": "依据南普陀寺免费预约参观，标记这些殿堂所对应的开放院落及殿外公共游线；室内权限、法会及预约时间另核。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:59050442710613",
       "city": "厦门",
       "name": "南普陀寺-五老凌霄",
@@ -1504,6 +1761,18 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:59480345597583",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-百草园",
+      "scope": "public_free_temple_outdoor_garden",
+      "reason": "厦门本地宝明确记载青礁慈济祖宫旁百草园可免费参观；仅计露天园地基本游览，预约及开放时段以现场为准。",
+      "urls": [
+        "https://xm.bendibao.com/tour/20221123/79436.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
     },
     {
       "id": "v20:attraction:xiamen:60102073492431",
@@ -1546,6 +1815,19 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xiamen:61973749586809",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-武圣庙",
+      "scope": "public_free_temple_reservation_or_site_rules",
+      "reason": "青礁慈济祖宫整体面向公众免费参观，文旅介绍记载主殿两侧有文武两庙；按开放时可进入的基础宗教建筑范围登记，预约/临时管理规则以现场为准。",
+      "urls": [
+        "https://m.fznews.com.cn/fzsync/2020-04-19/1017491993685.shtml",
+        "https://xm.bendibao.com/tour/20221123/79436.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xiamen:62248336359016",
       "city": "厦门",
       "name": "厦门市博物馆",
@@ -1581,6 +1863,19 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:6524274207419",
+      "city": "厦门",
+      "name": "石室禅院-大雄宝殿",
+      "scope": "public_free_temple",
+      "reason": "石室禅院公开信息为免费开放；大雄宝殿属寺院基本参观建筑，具体殿内开放时间以现场管理为准。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-shi-chan-yuan-24-ton-bell",
+        "https://www.sscycs.cn/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xiamen:66542790449447",
@@ -1632,6 +1927,32 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:69659768295377",
+      "city": "厦门",
+      "name": "五缘湾天鹅湖",
+      "scope": "public_free_wetland_lake",
+      "reason": "市人大公开资料明确天鹅湖为公共开放区；仅开放岸线及观景步道，与封闭的核心保护区分别处理。",
+      "urls": [
+        "https://www.xmrd.gov.cn/rdlz/dbjygk/jyhfh/201504/t20150411_4886109.htm",
+        "https://www.xmrd.gov.cn/zt/xmsj/wzbd/202402/t20240222_244366.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xiamen:70720891727526",
+      "city": "厦门",
+      "name": "忠仑公园门",
+      "scope": "public_urban_park_access_point",
+      "reason": "公园名称及场所类型明确为城市公园入口或步行连接段，基础通行免费；按路线识别点使用。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xiamen:71373279331471",
@@ -1707,6 +2028,33 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:84842689433207",
+      "city": "厦门",
+      "name": "石室禅院-韦陀殿",
+      "scope": "public_free_temple",
+      "reason": "石室禅院公开信息为免费开放；韦陀殿按寺院基本参观范围登记，若遇宗教活动或封闭区域应以现场为准。",
+      "urls": [
+        "https://travelnews.qunar.com/ugc/xiamen-shi-chan-yuan-24-ton-bell",
+        "https://www.sscycs.cn/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:85081901778911",
+      "city": "厦门",
+      "name": "仙岳公园益寿台",
+      "scope": "public_urban_park_outdoors",
+      "reason": "市人大资料确认这些点所属的公园公共开放，按开放景观及公园步行范围记录；独立场馆及限制区域另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm",
+        "https://www.xmrd.gov.cn/rdlz/rdgb/2023/202403/P020240325695249929082.pdf",
+        "https://xmjkbd.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
     },
     {
       "id": "v20:attraction:xiamen:87213018437015",
@@ -1811,6 +2159,18 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xiamen:95943527591890",
+      "city": "厦门",
+      "name": "黄厝海滩妈祖铜像",
+      "scope": "public_beach_outdoor_sculpture",
+      "reason": "地点名明确落在已知免费的黄厝公共海滩范围，按露天雕像基础观赏计价。",
+      "urls": [
+        "https://m.lovetly.com/article/111936.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xiamen:97739740688387",
       "city": "厦门",
       "name": "集美鳌园景区-休息亭",
@@ -1819,6 +2179,19 @@
       "urls": [
         "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
         "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xiamen:99079241195448",
+      "city": "厦门",
+      "name": "鼓浪屿历史文化陈列馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "展馆参观说明和公开免费指南核验了基本参观；开放日、预约和轮渡另按实际情况。",
+      "urls": [
+        "https://o2o.lvjiwang.com/scenic/market/detail/10003335?sid=10005159",
+        "https://xm.bendibao.com/tour/2026716/96694.shtm"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -1844,6 +2217,19 @@
       "reason": "当前旅游信息列明免费免预约；范围为对访客开放的寺观院落，不包含特殊法会/捐赠性服务。",
       "urls": [
         "https://you.ctrip.com/sight/xian7/73355.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:102",
+      "city": "西安",
+      "name": "罔极寺",
+      "scope": "public_free_temple_courtyard",
+      "reason": "实名地点对应兴庆宫北侧罔极寺；公开参观资料标明门票免费，按日常开放院落参观，专属区另核。",
+      "urls": [
+        "https://kr.trip.com/moments/poi-xiangzi-temple-89252/",
+        "https://travel.sina.com.cn/china/2015-05-05/1535305755_4.shtml"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -1887,6 +2273,18 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:108",
+      "city": "西安",
+      "name": "重修荐福寺记碑(东)",
+      "scope": "public_outdoor_stele_view",
+      "reason": "碑刻户外外观按开放公共区域瞻览准入；是否在小雁塔景区预约范围内有争议，需按西安博物院预约边界区分。",
+      "urls": [
+        "https://www.xabwy.com/index.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:110",
       "city": "西安",
       "name": "兴庆宫公园-阿倍仲麻吕纪念碑",
@@ -1897,6 +2295,18 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:113",
+      "city": "西安",
+      "name": "重修荐福寺碑记",
+      "scope": "public_outdoor_stele_view",
+      "reason": "碑刻外观基础观览准入；若定位落在需预约的西安博物院/小雁塔园区内，仍需免费预约进入。",
+      "urls": [
+        "https://www.xabwy.com/index.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xian:117",
@@ -1936,6 +2346,18 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:121",
+      "city": "西安",
+      "name": "敕赐荐禅寺重修记碑",
+      "scope": "public_outdoor_stele_view",
+      "reason": "露天碑刻按外观瞻览准入；预约或保护围栏范围按现场管理执行。",
+      "urls": [
+        "https://www.xabwy.com/index.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:137",
       "city": "西安",
       "name": "都城隍庙-财神殿",
@@ -1955,6 +2377,19 @@
       "reason": "名称指向户外纪念遗址点而非收费展馆；准入露天遗址/外部瞻览，不含可能关联的室内展陈。",
       "urls": [
         "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:142",
+      "city": "西安",
+      "name": "大唐西市",
+      "scope": "public_free_cultural_district_outdoors",
+      "reason": "历史商业街区开放步行与餐饮零售经营并存，免费参考只表示大唐西市公共步行区域，博物馆、活动另核。",
+      "urls": [
+        "https://cbip.xa.gov.cn/zwgk/jghsf/jgsfzc/1943136543116402690.html",
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -2045,6 +2480,57 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:174",
+      "city": "西安",
+      "name": "唐秘书省遗址",
+      "scope": "public_outdoor_ruin_view",
+      "reason": "户外遗址名称按地表外观/公共道路视览准入，不延伸至封闭考古保护区或收费场馆。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:187",
+      "city": "西安",
+      "name": "大兴善寺-观音洞",
+      "scope": "public_free_temple_courtyard",
+      "reason": "现场参观资料确认大兴善寺普通参观免费；按殿外开放院落范围记录，殿洞内部开放及活动另核。",
+      "urls": [
+        "https://visitxian.cn/zh-TW/places/daxingshan-temple",
+        "https://you.ctrip.com/sight/xian7/18278.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:195",
+      "city": "西安",
+      "name": "秦二世皇帝陵",
+      "scope": "public_free_park_exterior",
+      "reason": "曲江城市公共园林基本免票，范围限定秦二世陵遗址的公共园地、室外可见处；遗址博物馆名录列为收费，另计。",
+      "urls": [
+        "https://kr.xa.gov.cn/xajs/wenh/1691268022499135489.html",
+        "https://www.xa.gov.cn/gk/wtly/ssml/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:200",
+      "city": "西安",
+      "name": "大兴善寺-天王殿",
+      "scope": "public_free_temple_courtyard",
+      "reason": "现场参观资料确认大兴善寺普通参观免费；按殿外开放院落范围记录，殿洞内部开放及活动另核。",
+      "urls": [
+        "https://visitxian.cn/zh-TW/places/daxingshan-temple",
+        "https://you.ctrip.com/sight/xian7/18278.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:216",
       "city": "西安",
       "name": "大雁塔文化休闲景区-玄奘雕像",
@@ -2055,6 +2541,18 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:217",
+      "city": "西安",
+      "name": "圜丘遗址",
+      "scope": "public_outdoor_ruin_view",
+      "reason": "遗址外观按开放公共空间步行瞻览准入，不包含进入封闭遗址保护区。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xian:228",
@@ -2069,6 +2567,18 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:232",
+      "city": "西安",
+      "name": "菩提寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院点位而非收费景区名称，未见门票证据；按寺院日常开放参访基础进入免费参考，开放时间及临时礼仪限制由寺方决定。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:235",
       "city": "西安",
       "name": "魁星楼遗址",
@@ -2076,6 +2586,18 @@
       "reason": "以遗址点名，按户外地表遗存/外部瞻览的基础公共通行准入，不含室内或受限遗址空间。",
       "urls": [
         "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:237",
+      "city": "西安",
+      "name": "石婆庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立乡村庙宇名称与宗教场所类型明确，未见收费景区或单独门票证据；按日常开放庙院基础进入免费参考，宗教服务/供奉除外。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -2118,6 +2640,18 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:253",
+      "city": "西安",
+      "name": "长安归元寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立宗教寺院而非收费景区名称，按日常公开礼佛院落基础进入免费参考；不含法事、供奉及服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:256",
       "city": "西安",
       "name": "雍光门",
@@ -2125,6 +2659,42 @@
       "reason": "门楼/城门外观为城市公共街道景观，按街面外观步行瞻览准入；不含登城墙和室内空间。",
       "urls": [
         "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:263",
+      "city": "西安",
+      "name": "龙泉寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院名无收费景区/附属收费场馆标识；按日常开放宗教院落基础进入免费参考，遵从现场管理。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:266",
+      "city": "西安",
+      "name": "镐京观",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立道观点位而非收费景区名称，按日常公开参访基础进入免费参考；法会、供奉与可能的临时封闭不包含。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:272",
+      "city": "西安",
+      "name": "F1赛艇雕塑",
+      "scope": "public_outdoor_sculpture_view",
+      "reason": "雕塑名称及类别为户外公共艺术设施，按公共空间外观瞻览准入；不含周边赛事、商业活动和封闭设施。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -2178,6 +2748,19 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:282",
+      "city": "西安",
+      "name": "大明宫国家遗址公园-银汉门遗址",
+      "scope": "public_free_park_ruin_view",
+      "reason": "曲江新区官方规划将银汉门遗址列入非收费宫苑区；只按免费公园中户外遗址观览准入，收费考古核心区不包含。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
+        "https://xa.bendibao.com/tour/20211122/ly90037.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:283",
       "city": "西安",
       "name": "汉城湖旅游风景区",
@@ -2203,6 +2786,19 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:286",
+      "city": "西安",
+      "name": "大明宫国家遗址公园-栖霞山",
+      "scope": "public_free_park_landscape",
+      "reason": "官方规划明确宫苑区为非收费区，涵盖太液池、园林景观与城市休闲空间；仅免费园地步行游览，付费核心区不含。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
+        "https://xa.bendibao.com/tour/20211122/ly90037.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xian:288",
       "city": "西安",
       "name": "汉台遗址",
@@ -2210,6 +2806,44 @@
       "reason": "按户外遗址外观及公共步行空间准入；不含封闭保护区/馆舍。",
       "urls": [
         "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:290",
+      "city": "西安",
+      "name": "大明宫国家遗址公园-太液池",
+      "scope": "public_free_park_lakeside",
+      "reason": "官方将太液池列为大明宫非收费宫苑区的重点遗址；准入免费园区岸线及景观步行，不含游乐服务或收费考古核心区。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
+        "https://xa.bendibao.com/tour/20211122/ly90037.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:293",
+      "city": "西安",
+      "name": "大明宫国家遗址公园-重玄门遗址",
+      "scope": "public_free_park_ruin_view",
+      "reason": "官方规划将重玄门遗址列入非收费宫苑区重点遗址；仅限免费园地内户外观览，收费核心区设施另计。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
+        "https://xa.bendibao.com/tour/20211122/ly90037.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:297",
+      "city": "西安",
+      "name": "法照寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院名称未显示收费景区属性；按日常开放院落基础进入免费参考，遵守寺院接待和礼佛秩序。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -2235,6 +2869,79 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:308",
+      "city": "西安",
+      "name": "极乐寺(广安路)",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "城市道路旁独立寺院点位，未见景区收费证据；按日常开放礼佛/参访基础进入免费参考。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:312",
+      "city": "西安",
+      "name": "牛头禅寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立禅寺名称无景区套票标识，按日常参访寺院基础进入免费参考；不包含宗教服务或活动。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:313",
+      "city": "西安",
+      "name": "长安关帝庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "城市宗教场所点位而非收费景区名称，按日常公开庙院基础进入免费参考；未对祭祀供奉作免费承诺。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:316",
+      "city": "西安",
+      "name": "清凉寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "公开景点资料记载清凉寺免费对外开放且为宗教活动场所；按日常礼佛/参观范围纳入。",
+      "urls": [
+        "https://bkso.baidu.com/item/%E6%B8%85%E5%87%89%E5%AF%BA/10229196"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:317",
+      "city": "西安",
+      "name": "十方菩萨庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体庙宇而非景区游乐/展陈项目，按日常开放庙院基础进入免费参考；如遇宗教活动依现场管理。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:322",
+      "city": "西安",
+      "name": "白鹿原·白鹿仓",
+      "scope": "public_free_cultural_district_outdoors",
+      "reason": "公开旅游资料列为基础免票，按白鹿仓公共民俗街区步行范围纳入，独立游乐和沉浸体验另行售票。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html",
+        "https://youletour.com/xian/bai-lu-yuan-bai-lu-cang/map"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:324",
       "city": "西安",
       "name": "世博园长安花谷",
@@ -2246,6 +2953,54 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:335",
+      "city": "西安",
+      "name": "普天禅寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院名称未显示收费景区或门票项目，按日常公开参访基础进入免费参考；不含宗教服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:337",
+      "city": "西安",
+      "name": "灵台观",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立道观点位未显示景区收费属性，按日常开放院落基础进入免费参考；临时关闭/法会限制听从场所安排。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:343",
+      "city": "西安",
+      "name": "西安国际陆港网球运动公园",
+      "scope": "public_park_grounds_excludes_courts",
+      "reason": "市公园条例规定政府投资管理公园应免费开放；按公园公共绿地和步道准入，网球场、赛事、预约及设施服务另计。",
+      "urls": [
+        "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:351",
+      "city": "西安",
+      "name": "太白庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立乡村庙宇，非命名收费景区；按日常开放院落基础进入免费参考，不含祭祀、供奉等宗教服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xian:352",
@@ -2270,6 +3025,42 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:363",
+      "city": "西安",
+      "name": "祝春庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立庙宇点位无收费景区标识，按日常开放庙院基础进入免费参考；以场所现场开放为准。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:365",
+      "city": "西安",
+      "name": "无量庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立庙宇点位无收费景区标识，按日常开放庙院基础进入免费参考；不含宗教服务和捐赠。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:374",
+      "city": "西安",
+      "name": "正法寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院名称无收费景区标识，按日常公开参访基础进入免费参考；临时活动及关闭听从寺方。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:382",
       "city": "西安",
       "name": "西安世博园-航天植物园",
@@ -2281,6 +3072,18 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:384",
+      "city": "西安",
+      "name": "云经寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院点位未见售票景区属性，按日常开放参访基础进入免费参考；不包括法事/供奉。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xian:398",
@@ -2319,6 +3122,30 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:432",
+      "city": "西安",
+      "name": "康桥寺庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "社区寺庙命名且非收费景区，按日常开放院落基础进入免费参考；仅涉及普通入内，不推断全天开放。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:437",
+      "city": "西安",
+      "name": "锦绣阎良园",
+      "scope": "public_park_grounds",
+      "reason": "名称及类别均指向城市公园广场；按公园条例的政府管理公园免费原则准入公共园地，独立活动设施另计。",
+      "urls": [
+        "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xian:439",
       "city": "西安",
       "name": "武之望纪念碑",
@@ -2331,6 +3158,18 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:455",
+      "city": "西安",
+      "name": "栎阳湖风景区",
+      "scope": "public_lakeside_walk",
+      "reason": "自然湖岸基础步行观景按公共空间免费参考，不包含娱乐设施与船类服务；实际受限岸段遵从管理规定。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
       "id": "v20:attraction:xian:459",
       "city": "西安",
       "name": "阎良区关山街道长山村吉祥塔",
@@ -2338,6 +3177,67 @@
       "reason": "村落公共环境中的户外塔式地标，按外观瞻览/道路步行准入；不含登塔或进入私人院落。",
       "urls": [
         "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:472",
+      "city": "西安",
+      "name": "凤凰广场-阎良区人口文化园",
+      "scope": "public_city_plaza",
+      "reason": "阎良凤凰广场已被公开认定为公共广场，广场内的室外科普和绿地基本通行按免费参考。",
+      "urls": [
+        "https://www.sohu.com/a/583721233_121124620"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:480",
+      "city": "西安",
+      "name": "高陵塔",
+      "scope": "public_outdoor_monument_view",
+      "reason": "村镇历史塔式地标按公共道路可见外观瞻览准入；不含登塔或封闭院落。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:484",
+      "city": "西安",
+      "name": "泾渭分明交汇点",
+      "scope": "public_free_riverside_view",
+      "reason": "报道核实泾渭分明观景台及周边绿道开放；仅指公共观景台与开放步道，生态核心区及季节封闭区域另计。",
+      "urls": [
+        "https://gjnews.cn/2026/0718/628525.html",
+        "https://slt.shaanxi.gov.cn/sy/tzgg/202104/P020210430353663615017.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:488",
+      "city": "西安",
+      "name": "莲湖湖",
+      "scope": "public_park_lakeside",
+      "reason": "城市湖泊/公园类公共空间按开放岸线步行游览免费参考；不包含游船或收费活动，若点位落在私人封闭地则撤销。",
+      "urls": [
+        "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:494",
+      "city": "西安",
+      "name": "高陵湖",
+      "scope": "public_lakeside_walk",
+      "reason": "湖滨户外基础观景/步行按公共空间免费参考，不包含游船、垂钓经营或封闭岸段。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
@@ -2353,6 +3253,150 @@
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:526",
+      "city": "西安",
+      "name": "白云寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院名称无收费景区或附属套票标识，按日常参访基础进入免费参考；特殊宗教活动另按寺方安排。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:529",
+      "city": "西安",
+      "name": "文殊菩萨庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立庙宇而非景区项目点，按日常开放礼佛院落基础进入免费参考；香烛/捐赠不包括。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226368322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:530",
+      "city": "西安",
+      "name": "福慧寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院名称无收费景区标识，按日常公开参访基础进入免费参考；特殊活动与服务除外。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:531",
+      "city": "西安",
+      "name": "送子娘娘庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立民间庙宇，未见收费景区/套票属性；按日常开放庙院基础进入免费参考，供奉服务不在准入范围。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:534",
+      "city": "西安",
+      "name": "鄠邑区天桥湖",
+      "scope": "public_lakeside_walk",
+      "reason": "湖岸户外观景与公共步行范围免费参考，不包含水上经营项目或私人/保护区封闭用地。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:542",
+      "city": "西安",
+      "name": "净居寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院点位而非景区套票项目，按日常开放礼佛基础进入免费参考；寺方临时管理优先。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:545",
+      "city": "西安",
+      "name": "迎旭门",
+      "scope": "public_street_gate_exterior",
+      "reason": "门楼作为道路历史地标按外部公共街面观览准入；不含登墙、室内/封闭遗址空间。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:546",
+      "city": "西安",
+      "name": "鄠邑区尖山顶焦将神庙",
+      "scope": "public_rural_shrine_exterior",
+      "reason": "乡村山顶庙宇点位按户外公共道路可达范围和外部瞻览准入；不含登山景区交通或寺内供奉服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:563",
+      "city": "西安",
+      "name": "云溪寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院名称未显示景区收费属性，按日常开放院落基础进入免费参考；不含宗教服务或法会。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:567",
+      "city": "西安",
+      "name": "石门寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院名无收费景区标识，按日常开放院落基础进入免费参考；周边登山/景区服务不计入。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:568",
+      "city": "西安",
+      "name": "天佛寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院点位未显示收费景区属性，按日常开放参访基础进入免费参考；宗教服务除外。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:575",
+      "city": "西安",
+      "name": "下悟真寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "以寺院名称定位的独立宗教场所，未见景区套票标识；按日常开放礼佛基础进入免费参考，寺方临时限制优先。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
     },
     {
       "id": "v20:attraction:xian:580",
@@ -2379,6 +3423,153 @@
       "trial_allowed": false
     },
     {
+      "id": "v20:attraction:xian:594",
+      "city": "西安",
+      "name": "中共蓝田特别支部纪念馆",
+      "scope": "public_free_revolutionary_memorial",
+      "reason": "最高检报道确认蓝田革命纪念场馆完成修缮并继续接待，按公益纪念馆基础参观参考，入馆须确认是否开放及是否限团体。",
+      "urls": [
+        "https://www.spp.gov.cn/spp/dfjcdt/202108/t20210827_527845.shtml",
+        "https://xadrc.xa.gov.cn/xxgk/zfwj/bmwj/1942424460371431426.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:606",
+      "city": "西安",
+      "name": "大觉寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立寺院点位而非收费景区，按日常参访院落基础进入免费参考；不包含宗教服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:618",
+      "city": "西安",
+      "name": "鄂豫陕苏维埃政府葛牌镇纪念馆",
+      "scope": "public_free_revolutionary_memorial",
+      "reason": "西安市文物局名录列葛牌镇区苏维埃政府纪念馆为免费开放；纪念馆具体开放时段及节假日规则单独处理。",
+      "urls": [
+        "https://police.xa.gov.cn/jwxw/paxa/1942391755343257602.html",
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:621",
+      "city": "西安",
+      "name": "玉皇庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "独立庙宇名未见收费景区属性，按日常公开庙院基础进入免费参考；祈福、供奉与活动费用不含。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:622",
+      "city": "西安",
+      "name": "文魁星庙宇",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体庙宇而非景区收费点，按日常开放院落基础进入免费参考；供奉与特殊活动服务另计。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:633",
+      "city": "西安",
+      "name": "清凉古寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "长安清凉寺公开资料明确免费开放；此同名别称按同一开放寺院基础参访准入。",
+      "urls": [
+        "https://bkso.baidu.com/item/%E6%B8%85%E5%87%89%E5%AF%BA/10229196"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:643",
+      "city": "西安",
+      "name": "丹阳观",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体道观名称无景区售票属性，按日常开放参访基础进入免费参考；不含供奉、法会服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:646",
+      "city": "西安",
+      "name": "白马寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体寺院点位未显示收费景区属性，按日常开放礼佛基础进入免费参考；宗教服务和周边景区项目另计。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:655",
+      "city": "西安",
+      "name": "周至县天台寺",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "县域单体寺院点位无收费景区名称或门票证据，按日常开放院落基础进入免费参考；临时限制遵从寺方。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:715",
+      "city": "西安",
+      "name": "唐城墙遗址公园-隋唐长安城崇化坊",
+      "scope": "public_free_park_exterior",
+      "reason": "有官方开放式唐城墙遗址公园依据；按室外城坊遗址和可见标识纳入，考古围护区不计。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/xwzx/xwdt/1985281022030794754.html",
+        "https://xdz.xa.gov.cn/hdjl/zxts/zxtslb/2066706595082407937.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:738",
+      "city": "西安",
+      "name": "寻隐者不遇雕像",
+      "scope": "public_outdoor_sculpture_view",
+      "reason": "户外雕像按公共空间外部观览准入；不得将此准入扩展到关联收费园区或室内展陈。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:745",
+      "city": "西安",
+      "name": "关帝庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "单体城市庙宇名无收费景区/套票属性，按日常公开庙院基础进入免费参考；不包括祈福供奉服务。",
+      "urls": [
+        "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/dfxfg/202402/W020240226322843.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:746",
       "city": "西安",
       "name": "仪祉湖景区",
@@ -2391,6 +3582,30 @@
       "trial_allowed": true
     },
     {
+      "id": "v20:attraction:xian:748",
+      "city": "西安",
+      "name": "木塔寺偏殿遗址",
+      "scope": "public_free_park_outdoor_landmark",
+      "reason": "木塔寺遗址公园是面向居民的开放公园，按其露天偏殿遗址可见范围纳入，场馆开放权限按公示。",
+      "urls": [
+        "https://xdz.xa.gov.cn/zwgk/ldhd/63c0be73f8fd1c4c21378e3a.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:88",
+      "city": "西安",
+      "name": "西安事变纪念馆张学良公馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "纪念馆参观指南明确张学良将军公馆免费参观；开放日、入场手续与临时闭馆须核对。",
+      "urls": [
+        "https://www.xasb.net/jinianguanjianjie/cgzn/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
       "id": "v20:attraction:xian:90",
       "city": "西安",
       "name": "小雁塔-鼓楼",
@@ -2399,6 +3614,56 @@
       "urls": [
         "https://www.xabwy.com/index.html",
         "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:91",
+      "city": "西安",
+      "name": "德福门",
+      "scope": "public_historic_lane_exterior",
+      "reason": "德福巷是公共历史街区，按巷口门楼外观和公开步行面记录，街区内商家和付费活动另计。",
+      "urls": [
+        "https://en.xa.gov.cn/MediaCenter/News/1877636276699070466.html",
+        "https://tyjrswj.xa.gov.cn/zwfw/fwxx/sygz/1826898188152934401.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true
+    },
+    {
+      "id": "v20:attraction:xian:92",
+      "city": "西安",
+      "name": "卧龙禅寺",
+      "scope": "public_free_temple_courtyard",
+      "reason": "两份实地参观资料明确卧龙禅寺基础参观免费。场所开放、登记及法会等条件另核。",
+      "urls": [
+        "https://k.sina.cn/article_2503571737_9539791902001gozm.html?from=travel",
+        "https://travelnews.qunar.com/ugc/xian-wolong-temple-guide"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:94",
+      "city": "西安",
+      "name": "西安城墙朱雀门",
+      "scope": "public_wall_gate_exterior_only",
+      "reason": "只纳入公共街道上门楼外观瞻览，不含城墙登临、瓮城内游览和城墙景区门票。 具体开放日和入场条件仍需确认。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false
+    },
+    {
+      "id": "v20:attraction:xian:96",
+      "city": "西安",
+      "name": "宝庆寺塔",
+      "scope": "public_outdoor_monument_view",
+      "reason": "塔式历史地标按公共街道可见外观瞻览准入；不包含进入寺院封闭院落或登塔。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
       ],
       "reviewed_on": "2026-11-24",
       "trial_allowed": false
