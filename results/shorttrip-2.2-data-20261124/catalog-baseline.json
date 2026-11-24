@@ -1,0 +1,4942 @@
+{
+  "catalog_snapshot": "6de12f4",
+  "free_attraction_references": [
+    {
+      "city": "厦门",
+      "name": "白城沙滩",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 23
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "长尾礁公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 476
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-休息亭",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 210
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "香山文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 413
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门市忠仑公园沁芳亭",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 592
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "天竺山森林公园",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 748
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "白鹭洲公园东公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 490
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "曾厝埯猫街",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 435
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "白鹭洲摄影广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 445
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "曾厝垵牌坊",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 89
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门园林博览苑-民族风情广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 217
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "妈祖广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 361
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "白鹭洲公园东公园-亲水平台",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 582
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "环岛路海滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.lovetly.com/article/111936.htm",
+          "publisher": "福建凯撒国旅",
+          "published_on": "2026-07-08",
+          "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+        },
+        {
+          "url": "https://www.china-planning.org/alpha/wp-content/uploads/2025/06/IACP2025program.pdf",
+          "publisher": "IACP 会议公开资料",
+          "basis": "厦门滨海生态步行路线以及沿途公共区域，仅用于核对对象"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "狐尾山公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 526
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "集美沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 731
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门白鹭洲下沉式广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 284
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "集美学村牌坊",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 44
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "澳头社区演艺广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 87
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门北站南广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 172
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "马銮湾南岸滨海公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 286
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "香山-木栈道",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 331
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "狐尾山公园-东门广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 66
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门山海健康步道(园路H6点)",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 705
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门白鹭洲公园西公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 509
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "十二生肖广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 667
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "脸谱广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 296
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "蔡尖尾山公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 568
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "沙坡尾",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 7
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "白鹭洲公园西公园水上广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 285
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "青礁慈济祖宫-喷泉广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 722
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "南堤公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 412
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "轮渡广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 708
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "集美学村海上观景平台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 97
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "曾厝垵文创街区",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.lovetly.com/article/111936.htm",
+          "publisher": "福建凯撒国旅",
+          "published_on": "2026-07-08",
+          "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+        },
+        {
+          "url": "https://www.china-planning.org/alpha/wp-content/uploads/2025/06/IACP2025program.pdf",
+          "publisher": "IACP 会议公开资料",
+          "basis": "厦门滨海生态步行路线以及沿途公共区域，仅用于核对对象"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "马銮湾环湾带状公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 558
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "香山郊野公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 674
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "马銮湾生态三岛公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 83
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "五通灯塔公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 56
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "嘉庚公园-小广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 282
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "黄厝海滩",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 14
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "龙舟池公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 352
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-鼓浪屿沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 553
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门白鹭洲公园-中公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 547
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "忠仑公园叠水广场",
+      "amount_cny": 0,
+      "scope": "public_shared_green_space",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://xm.fjsen.com/wap/2025-03/29/content_31872587.htm",
+          "publisher": "东南网",
+          "published_on": "2025-03-29",
+          "basis": "记载三处明确命名的公众共享绿地和免费设施"
+        },
+        {
+          "url": "https://xm.bendibao.com/tour/20171013/53619_2.shtm",
+          "publisher": "厦门本地宝",
+          "basis": "忠仑公园、铁路文化公园、五缘湾湿地公园免费入口"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾湿地公园木桥",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 201
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "福建省厦门市白鹭洲公园-鸽子广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 128
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "狐尾山公园-观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 654
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "嘉庚公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 240
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-马郎妇观音雕像",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 371
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门大学(思明校区)",
+      "amount_cny": 0,
+      "scope": "basic_admission_subject_to_visitor_access_policy",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 13
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "嘉庚文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 196
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门白鹭洲公园音乐喷泉广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 535
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门香山公园-香月湖",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 766
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "中山路步行街",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 25
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "杏林湾绿道公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 725
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-仙岳山文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 233
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-笔山公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 343
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "牌坊广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 562
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "园博苑海洋岛滨海沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 374
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾湿地公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.lovetly.com/article/111936.htm",
+          "publisher": "福建凯撒国旅",
+          "published_on": "2026-07-08",
+          "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+        },
+        {
+          "url": "https://xm.bendibao.com/tour/20171013/53619_2.shtm",
+          "publisher": "厦门本地宝",
+          "basis": "忠仑公园、铁路文化公园、五缘湾湿地公园免费入口"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "厦门白鹭洲公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 439
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "山海健康步道松韵园观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 511
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "梅山公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 584
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "石头皮山公园疏林草地",
+      "amount_cny": 0,
+      "scope": "public_shared_green_space",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://xm.fjsen.com/wap/2025-03/29/content_31872587.htm",
+          "publisher": "东南网",
+          "published_on": "2025-03-29",
+          "basis": "记载三处明确命名的公众共享绿地和免费设施"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "厦门北站北广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 140
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾湿地公园-凉亭",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 446
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门园林博览苑",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 564
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-望金亭",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 402
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "狐尾山公园-樱花谷",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 339
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-延平公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 55
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "鼓浪屿",
+      "amount_cny": 0,
+      "scope": "outdoor_streets_excludes_ferry_and_ticketed_venues",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 11
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "观光旅游大道/环岛东路",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 609
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳山福德文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 625
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "健康步道步云桥",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 338
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "环岛路观光大道",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 132
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "嘉庚广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 367
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "福建省厦门市白鹭洲公园-母子铜像",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 144
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "湖里街道侨文化园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 483
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "椰风寨沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.lovetly.com/article/111936.htm",
+          "publisher": "福建凯撒国旅",
+          "published_on": "2026-07-08",
+          "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "天竺山森林公园-大曦山郊野公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 379
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "永镇海疆广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 574
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-福隆体育公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 394
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 477
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 362
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "海沧湾公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 99
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "忠仑公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://xm.bendibao.com/tour/20171013/53619_2.shtm",
+          "publisher": "厦门本地宝",
+          "basis": "忠仑公园、铁路文化公园、五缘湾湿地公园免费入口"
+        },
+        {
+          "url": "https://xm.fjsen.com/wap/2025-03/29/content_31872587.htm",
+          "publisher": "东南网",
+          "published_on": "2025-03-29",
+          "basis": "记载三处明确命名的公众共享绿地和免费设施"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "曾厝垵",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 5
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "演武大桥观景平台",
+      "amount_cny": 0,
+      "scope": "public_viewing_platform",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.lovetly.com/article/111936.htm",
+          "publisher": "福建凯撒国旅",
+          "published_on": "2026-07-08",
+          "basis": "环岛路公共海滩、椰风寨、演武大桥观景平台、曾厝垵文创村和五缘湾湿地公园公共区免费"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾湿地公园共享绿地",
+      "amount_cny": 0,
+      "scope": "public_shared_green_space",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://xm.fjsen.com/wap/2025-03/29/content_31872587.htm",
+          "publisher": "东南网",
+          "published_on": "2025-03-29",
+          "basis": "记载三处明确命名的公众共享绿地和免费设施"
+        },
+        {
+          "url": "https://xm.bendibao.com/tour/20171013/53619_2.shtm",
+          "publisher": "厦门本地宝",
+          "basis": "忠仑公园、铁路文化公园、五缘湾湿地公园免费入口"
+        }
+      ]
+    },
+    {
+      "city": "厦门",
+      "name": "五缘湾湿地公园-花溪",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 473
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "仙岳公园-观自在雕像",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 541
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "聚会广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 733
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "狐尾山公园-中远亭",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 72
+      }
+    },
+    {
+      "city": "厦门",
+      "name": "环岛路",
+      "amount_cny": 0,
+      "scope": "basic_admission_excludes_paid_services",
+      "basis": "explicit_zero_in_verified_snapshot",
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 20
+      }
+    },
+    {
+      "city": "西安",
+      "name": "长乐公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://daj.shaanxi.gov.cn/Article/View?id=1457",
+          "publisher": "陕西省档案馆",
+          "basis": "长乐公园为公益性城市公园"
+        },
+        {
+          "url": "https://epaper.sanqin.com/html/pic/202408/16/8c4c6fc8-36e7-438d-8945-ebd5bb3c40ab.pdf",
+          "publisher": "三秦都市报",
+          "basis": "记载长乐公园向市民免费开放"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "环城公园(文艺北路)",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 47
+      }
+    },
+    {
+      "city": "西安",
+      "name": "东门里小广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 48
+      }
+    },
+    {
+      "city": "西安",
+      "name": "城墙公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 49
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西钞广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 64
+      }
+    },
+    {
+      "city": "西安",
+      "name": "安定文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 67
+      }
+    },
+    {
+      "city": "西安",
+      "name": "无极公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 75
+      }
+    },
+    {
+      "city": "西安",
+      "name": "丰庆公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://www.sohu.com/a/919900849_681384",
+          "publisher": "搜狐刊载的西安公园游览资料",
+          "basis": "所列城市公园的公开免费入园资料，包括长乐、莲湖、丰庆"
+        },
+        {
+          "url": "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html",
+          "publisher": "西安住房公积金管理中心转载公园条例",
+          "basis": "政府管理公园一般免费，保留依法收费及临时活动的例外"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "金市广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 80
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安环城公园(顺城北路西段)",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 81
+      }
+    },
+    {
+      "city": "西安",
+      "name": "环城西苑公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 83
+      }
+    },
+    {
+      "city": "西安",
+      "name": "土门小树林公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 86
+      }
+    },
+    {
+      "city": "西安",
+      "name": "莲湖公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://www.sohu.com/a/919900849_681384",
+          "publisher": "搜狐刊载的西安公园游览资料",
+          "basis": "所列城市公园的公开免费入园资料，包括长乐、莲湖、丰庆"
+        },
+        {
+          "url": "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html",
+          "publisher": "西安住房公积金管理中心转载公园条例",
+          "basis": "政府管理公园一般免费，保留依法收费及临时活动的例外"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "鑫苑体育运动公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 90
+      }
+    },
+    {
+      "city": "西安",
+      "name": "莱安逸境下沉广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 93
+      }
+    },
+    {
+      "city": "西安",
+      "name": "天朗城市公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 96
+      }
+    },
+    {
+      "city": "西安",
+      "name": "大寨路广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 101
+      }
+    },
+    {
+      "city": "西安",
+      "name": "大唐西市-丝路广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 103
+      }
+    },
+    {
+      "city": "西安",
+      "name": "木塔寺公园2期",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 108
+      }
+    },
+    {
+      "city": "西安",
+      "name": "曲江秦二世陵遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 109
+      }
+    },
+    {
+      "city": "西安",
+      "name": "重阳广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 110
+      }
+    },
+    {
+      "city": "西安",
+      "name": "曲江池遗址公园-插座护法石狮",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 113
+      }
+    },
+    {
+      "city": "西安",
+      "name": "雁鸣湖休闲公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 117
+      }
+    },
+    {
+      "city": "西安",
+      "name": "曲江寒窑遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 123
+      }
+    },
+    {
+      "city": "西安",
+      "name": "曲江青年公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 124
+      }
+    },
+    {
+      "city": "西安",
+      "name": "大雁塔北广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://qjxq.xa.gov.cn/zjqj/qyts/5df21c46f99d657750e6dde3.html",
+          "publisher": "西安曲江新区管理委员会",
+          "basis": "曲江公共园林及大雁塔北广场、贞观文化广场的公共休闲属性"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "隋大兴唐长安城明德门遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 137
+      }
+    },
+    {
+      "city": "西安",
+      "name": "延平门广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 138
+      }
+    },
+    {
+      "city": "西安",
+      "name": "唐城墙遗址公园3区-唐诗迷宫",
+      "amount_cny": 0,
+      "scope": "public_park_outdoor_feature",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 143
+      }
+    },
+    {
+      "city": "西安",
+      "name": "开元广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 145
+      }
+    },
+    {
+      "city": "西安",
+      "name": "永阳公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 146
+      }
+    },
+    {
+      "city": "西安",
+      "name": "贞观广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://qjxq.xa.gov.cn/zjqj/qyts/5df21c46f99d657750e6dde3.html",
+          "publisher": "西安曲江新区管理委员会",
+          "basis": "曲江公共园林及大雁塔北广场、贞观文化广场的公共休闲属性"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "西安人才公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 148
+      }
+    },
+    {
+      "city": "西安",
+      "name": "唐城墙遗址公园9区",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 149
+      }
+    },
+    {
+      "city": "西安",
+      "name": "金辉运动公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 150
+      }
+    },
+    {
+      "city": "西安",
+      "name": "昆明池·七夕公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://xa.ify.cn/content/263.aspx",
+          "publisher": "游西安",
+          "basis": "昆明池·七夕公园景区售票说明列为免费"
+        },
+        {
+          "url": "https://m.xa.bendibao.com/tour/jingdianbangdan/1309.shtml",
+          "publisher": "西安本地宝",
+          "basis": "革命公园和唐城墙遗址公园门票为免费"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "体育运动公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 162
+      }
+    },
+    {
+      "city": "西安",
+      "name": "革命公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.xa.bendibao.com/tour/jingdianbangdan/1309.shtml",
+          "publisher": "西安本地宝",
+          "basis": "革命公园和唐城墙遗址公园门票为免费"
+        },
+        {
+          "url": "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html",
+          "publisher": "西安住房公积金管理中心转载公园条例",
+          "basis": "政府管理公园一般免费，保留依法收费及临时活动的例外"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "花园综合广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 166
+      }
+    },
+    {
+      "city": "西安",
+      "name": "东元公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 173
+      }
+    },
+    {
+      "city": "西安",
+      "name": "沣东城市广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 175
+      }
+    },
+    {
+      "city": "西安",
+      "name": "红光公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 176
+      }
+    },
+    {
+      "city": "西安",
+      "name": "沣东文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 179
+      }
+    },
+    {
+      "city": "西安",
+      "name": "新嘉园广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 182
+      }
+    },
+    {
+      "city": "西安",
+      "name": "健身广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 183
+      }
+    },
+    {
+      "city": "西安",
+      "name": "浐灞城市广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 190
+      }
+    },
+    {
+      "city": "西安",
+      "name": "汉清明门广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 191
+      }
+    },
+    {
+      "city": "西安",
+      "name": "雕塑广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 197
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安渭河城市运动公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 206
+      }
+    },
+    {
+      "city": "西安",
+      "name": "开元公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 208
+      }
+    },
+    {
+      "city": "西安",
+      "name": "文化中心广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 210
+      }
+    },
+    {
+      "city": "西安",
+      "name": "汉长安城国家遗址公园前殿广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 214
+      }
+    },
+    {
+      "city": "西安",
+      "name": "文景山公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 218
+      }
+    },
+    {
+      "city": "西安",
+      "name": "汉长安城章城门广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 220
+      }
+    },
+    {
+      "city": "西安",
+      "name": "浐灞滋水公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 221
+      }
+    },
+    {
+      "city": "西安",
+      "name": "红旗广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 222
+      }
+    },
+    {
+      "city": "西安",
+      "name": "未央城市广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 223
+      }
+    },
+    {
+      "city": "西安",
+      "name": "汉长安城未央宫国家考古遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 225
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安城市运动公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 227
+      }
+    },
+    {
+      "city": "西安",
+      "name": "凤城广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 229
+      }
+    },
+    {
+      "city": "西安",
+      "name": "文景公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 230
+      }
+    },
+    {
+      "city": "西安",
+      "name": "清凉山森林公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 252
+      }
+    },
+    {
+      "city": "西安",
+      "name": "港务区公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 262
+      }
+    },
+    {
+      "city": "西安",
+      "name": "灞桥生态湿地公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 264
+      }
+    },
+    {
+      "city": "西安",
+      "name": "灞渭生态滩区观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 268
+      }
+    },
+    {
+      "city": "西安",
+      "name": "启航公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 276
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安市纺织公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 279
+      }
+    },
+    {
+      "city": "西安",
+      "name": "灞桥生态湿地公园北区",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 282
+      }
+    },
+    {
+      "city": "西安",
+      "name": "御锦城河堤公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 284
+      }
+    },
+    {
+      "city": "西安",
+      "name": "樱桃广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 286
+      }
+    },
+    {
+      "city": "西安",
+      "name": "御锦城中央公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 292
+      }
+    },
+    {
+      "city": "西安",
+      "name": "邵平店文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 294
+      }
+    },
+    {
+      "city": "西安",
+      "name": "秦统一雕塑广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 315
+      }
+    },
+    {
+      "city": "西安",
+      "name": "鹦鹉寺公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 318
+      }
+    },
+    {
+      "city": "西安",
+      "name": "芷阳广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 321
+      }
+    },
+    {
+      "city": "西安",
+      "name": "泰吉广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 331
+      }
+    },
+    {
+      "city": "西安",
+      "name": "阎良公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 340
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西飞广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 342
+      }
+    },
+    {
+      "city": "西安",
+      "name": "蓝天广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 349
+      }
+    },
+    {
+      "city": "西安",
+      "name": "凤凰广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 350
+      }
+    },
+    {
+      "city": "西安",
+      "name": "润天路口袋公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 351
+      }
+    },
+    {
+      "city": "西安",
+      "name": "清河滨河公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 355
+      }
+    },
+    {
+      "city": "西安",
+      "name": "老寨村文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 356
+      }
+    },
+    {
+      "city": "西安",
+      "name": "奋进广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 357
+      }
+    },
+    {
+      "city": "西安",
+      "name": "口袋公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 361
+      }
+    },
+    {
+      "city": "西安",
+      "name": "时空之门南广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 362
+      }
+    },
+    {
+      "city": "西安",
+      "name": "街心花园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 363
+      }
+    },
+    {
+      "city": "西安",
+      "name": "阎良村文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 365
+      }
+    },
+    {
+      "city": "西安",
+      "name": "南岸观景平台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 368
+      }
+    },
+    {
+      "city": "西安",
+      "name": "水景公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 371
+      }
+    },
+    {
+      "city": "西安",
+      "name": "平安广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 375
+      }
+    },
+    {
+      "city": "西安",
+      "name": "泾渭广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 380
+      }
+    },
+    {
+      "city": "西安",
+      "name": "高陵区鹿祥公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 385
+      }
+    },
+    {
+      "city": "西安",
+      "name": "泾河入渭口桥头公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 387
+      }
+    },
+    {
+      "city": "西安",
+      "name": "泾渭分明观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 388
+      }
+    },
+    {
+      "city": "西安",
+      "name": "泾渭金沙滩",
+      "amount_cny": 0,
+      "scope": "public_beach",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 394
+      }
+    },
+    {
+      "city": "西安",
+      "name": "北环广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 400
+      }
+    },
+    {
+      "city": "西安",
+      "name": "蓝湖九郡广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 402
+      }
+    },
+    {
+      "city": "西安",
+      "name": "东方广场(潭滨南路)",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "public_outdoor_type_reference",
+      "approved_on": "2026-11-24",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 412
+      }
+    },
+    {
+      "city": "西安",
+      "name": "乡野公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 417
+      }
+    },
+    {
+      "city": "西安",
+      "name": "陕西省西安市鄠邑区五竹镇红色广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 430
+      }
+    },
+    {
+      "city": "西安",
+      "name": "余下惠安人口文化园-文化宫广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 431
+      }
+    },
+    {
+      "city": "西安",
+      "name": "文化宫广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 432
+      }
+    },
+    {
+      "city": "西安",
+      "name": "古楼广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 436
+      }
+    },
+    {
+      "city": "西安",
+      "name": "汤泉广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 439
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安市蓝田县天鹅湖广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 447
+      }
+    },
+    {
+      "city": "西安",
+      "name": "秦家寨核桃主题公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 448
+      }
+    },
+    {
+      "city": "西安",
+      "name": "鲍旗寨写生基地观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 454
+      }
+    },
+    {
+      "city": "西安",
+      "name": "山王村观景台",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 457
+      }
+    },
+    {
+      "city": "西安",
+      "name": "戏楼广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 464
+      }
+    },
+    {
+      "city": "西安",
+      "name": "红军魂广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 465
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安市蓝田县电力广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 469
+      }
+    },
+    {
+      "city": "西安",
+      "name": "紫云山森林公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 472
+      }
+    },
+    {
+      "city": "西安",
+      "name": "白鹿广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 477
+      }
+    },
+    {
+      "city": "西安",
+      "name": "周至水街",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 492
+      }
+    },
+    {
+      "city": "西安",
+      "name": "乐天公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 499
+      }
+    },
+    {
+      "city": "西安",
+      "name": "恒州村北堡文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 508
+      }
+    },
+    {
+      "city": "西安",
+      "name": "周至水街南广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 513
+      }
+    },
+    {
+      "city": "西安",
+      "name": "曲江新区生活垃圾分类主题公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 534
+      }
+    },
+    {
+      "city": "西安",
+      "name": "唐城墙遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "named_public_area_sources",
+      "observed_on": "2026-11-23",
+      "evidence_manifest_sha256": "38dd1417a3dcd3718e58fbe938c264cd9d173e94ba5c192a69ea24c9870edbe7",
+      "sources": [
+        {
+          "url": "https://m.xa.bendibao.com/tour/jingdianbangdan/1309.shtml",
+          "publisher": "西安本地宝",
+          "basis": "革命公园和唐城墙遗址公园门票为免费"
+        },
+        {
+          "url": "https://qjxq.xa.gov.cn/zjqj/qyts/5df21c46f99d657750e6dde3.html",
+          "publisher": "西安曲江新区管理委员会",
+          "basis": "曲江公共园林及大雁塔北广场、贞观文化广场的公共休闲属性"
+        }
+      ]
+    },
+    {
+      "city": "西安",
+      "name": "奥林匹克公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 554
+      }
+    },
+    {
+      "city": "西安",
+      "name": "紫薇文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 555
+      }
+    },
+    {
+      "city": "西安",
+      "name": "嘉会坊",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 558
+      }
+    },
+    {
+      "city": "西安",
+      "name": "石榴花广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 561
+      }
+    },
+    {
+      "city": "西安",
+      "name": "乡愁文化广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 563
+      }
+    },
+    {
+      "city": "西安",
+      "name": "沣惠绿道",
+      "amount_cny": 0,
+      "scope": "public_path_or_viewpoint",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 565
+      }
+    },
+    {
+      "city": "西安",
+      "name": "未来之瞳科学公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 566
+      }
+    },
+    {
+      "city": "西安",
+      "name": "大仁遗址公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 567
+      }
+    },
+    {
+      "city": "西安",
+      "name": "鹤鸣湖公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 568
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西安创汇公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 569
+      }
+    },
+    {
+      "city": "西安",
+      "name": "唐城墙遗址公园-北广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 579
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西太路转角公园",
+      "amount_cny": 0,
+      "scope": "public_park_grounds",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 581
+      }
+    },
+    {
+      "city": "西安",
+      "name": "西入口广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 584
+      }
+    },
+    {
+      "city": "西安",
+      "name": "高新区西沣路景观绿地广场",
+      "amount_cny": 0,
+      "scope": "public_square",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 586
+      }
+    },
+    {
+      "city": "西安",
+      "name": "粉巷",
+      "amount_cny": 0,
+      "scope": "public_outdoor_streets",
+      "basis": "user_approved_public_outdoor_admission",
+      "approved_on": "2026-11-23",
+      "price_status": "assumed_for_reference",
+      "covers": "basic access to the named outdoor public area",
+      "excludes": [
+        "ticketed facilities",
+        "reservations or access restrictions",
+        "ferries",
+        "paid activities"
+      ],
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 30
+      }
+    }
+  ]
+}

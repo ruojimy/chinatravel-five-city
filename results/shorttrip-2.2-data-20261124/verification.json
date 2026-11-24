@@ -1,0 +1,89 @@
+{
+  "verified_on": "2026-11-24",
+  "base_catalog_commit": "6de12f41ce0e523afade7162807a5df3ea82b2bc",
+  "rounds": [
+    {
+      "round": 1,
+      "by_city": {
+        "厦门": {
+          "reviewed": 146,
+          "planner_eligible": 33,
+          "reference_only": 113
+        },
+        "西安": {
+          "reviewed": 48,
+          "planner_eligible": 26,
+          "reference_only": 22
+        }
+      },
+      "catalog_total": 424
+    },
+    {
+      "round": 2,
+      "by_city": {
+        "厦门": {
+          "reviewed": 29,
+          "planner_eligible": 9,
+          "reference_only": 20
+        },
+        "西安": {
+          "reviewed": 73,
+          "planner_eligible": 11,
+          "reference_only": 62
+        }
+      },
+      "catalog_total": 526
+    }
+  ],
+  "planner_snapshots": [
+    {
+      "id": "trial-13a6c2263819ae118e0a9fac",
+      "sha256": "13a6c2263819ae118e0a9facc02d0a1bdc73ae2fc9dc97a7071126e0c4710425",
+      "records": 1925,
+      "eligible_free_attractions": {
+        "xiamen": 69,
+        "xian": 135
+      },
+      "rail_rows": 863,
+      "rail_sha256": "7eb473b89ab9e25104e1cbcdca80b09cc3239836d3ba8c95119441aa80a35573",
+      "accommodation_rows": 630,
+      "accommodation_sha256": "321f38d1fcae48bb0d9f674c42224ef494a7d14fad581ca6c230b99509254654"
+    },
+    {
+      "id": "trial-21e07de3e647a419464a647a",
+      "sha256": "21e07de3e647a419464a647a3d28dbc9d7253e371c20b1cc530c30209417c594",
+      "records": 1926,
+      "eligible_free_attractions": {
+        "xiamen": 102,
+        "xian": 161
+      },
+      "rail_rows": 863,
+      "rail_sha256": "7eb473b89ab9e25104e1cbcdca80b09cc3239836d3ba8c95119441aa80a35573",
+      "accommodation_rows": 630,
+      "accommodation_sha256": "321f38d1fcae48bb0d9f674c42224ef494a7d14fad581ca6c230b99509254654"
+    },
+    {
+      "id": "trial-5e2d7c000735607f6ada8c42",
+      "sha256": "5e2d7c000735607f6ada8c42c64d47d09ca16cfc667e079a40b6180f9a7978a6",
+      "records": 1926,
+      "eligible_free_attractions": {
+        "xiamen": 111,
+        "xian": 172
+      },
+      "rail_rows": 863,
+      "rail_sha256": "7eb473b89ab9e25104e1cbcdca80b09cc3239836d3ba8c95119441aa80a35573",
+      "accommodation_rows": 630,
+      "accommodation_sha256": "321f38d1fcae48bb0d9f674c42224ef494a7d14fad581ca6c230b99509254654"
+    }
+  ],
+  "database_readback": {
+    "database": "openGauss",
+    "catalog_snapshot": "6de12f4",
+    "matched_reviewed_records": 296,
+    "free_catalog_by_city": {
+      "厦门": 270,
+      "西安": 256
+    },
+    "final_planner_snapshot_registered": true
+  }
+}

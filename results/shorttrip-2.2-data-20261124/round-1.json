@@ -1,0 +1,4095 @@
+{
+  "planner_snapshot": "trial-21e07de3e647a419464a647a",
+  "places": [
+    {
+      "id": "v20:attraction:xiamen:100885808146818",
+      "city": "厦门",
+      "name": "白鹭园",
+      "scope": "public_city_park",
+      "reason": "白鹭园为市政公园类公共绿地，厦门公园法规确立公园免费开放原则；按开放园地录入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 176
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:101120302032428",
+      "city": "厦门",
+      "name": "曾厝垵景区",
+      "scope": "public_village_street",
+      "reason": "曾厝垵景区名称对应原生社区/文创村公共街巷；录入可步行街巷与村落空间，不把店铺、展演或收费项目算作免费。",
+      "urls": [
+        "https://img.chiway-repton.com/2025/01/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%94%9F%E6%80%81%E6%96%87%E6%98%8E%E6%80%9D%E6%83%B3%E5%8E%A6%E9%97%A8%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%A4%AE%E5%AA%92%E4%BD%93%E9%9B%86%E4%B8%AD%E6%8A%A5%E9%81%93%E9%87%8D%E7%82%B9%E7%A8%BF%E4%BB%B6%E6%B1%87%E7%BC%96.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 688
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:103064062311840",
+      "city": "厦门",
+      "name": "园博苑民族风情园雾森",
+      "scope": "public_free_garden_grounds",
+      "reason": "园博苑运营方公示普通票0元；仅计入园内常设室外园林，观光车和特别活动另计。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 212
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:106111051757178",
+      "city": "厦门",
+      "name": "南普陀寺-荷花池",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 114
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:108349802360221",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-吴尚先雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 397
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:109189570212594",
+      "city": "厦门",
+      "name": "陈嘉庚纪念胜地-集美鳌园",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 442
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:110111226553546",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-凉亭",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 593
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:110717725233021",
+      "city": "厦门",
+      "name": "五通灯塔公园-三富翁庙",
+      "scope": "public_park_temple",
+      "reason": "五通灯塔公园内三富翁庙，作为公园附属开放小庙与公共园路录入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 715
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:111124143668099",
+      "city": "厦门",
+      "name": "南普陀寺-千佛应身",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 698
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:111519794562144",
+      "city": "厦门",
+      "name": "观音山海滨旅游休闲区",
+      "scope": "public_beachfront",
+      "reason": "观音山海滨休闲区包含公共沙滩岸线；仅录入海滨公共区域，明确排除梦幻海岸主题游乐设施。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://img.chiway-repton.com/2025/01/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%94%9F%E6%80%81%E6%96%87%E6%98%8E%E6%80%9D%E6%83%B3%E5%8E%A6%E9%97%A8%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%A4%AE%E5%AA%92%E4%BD%93%E9%9B%86%E4%B8%AD%E6%8A%A5%E9%81%93%E9%87%8D%E7%82%B9%E7%A8%BF%E4%BB%B6%E6%B1%87%E7%BC%96.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 195
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:114295752872531",
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-鼓声洞",
+      "scope": "public_coastal_geosite",
+      "reason": "鼓声洞为连接美华浴场与菽庄花园一带的公共通行隧道；只计公共洞道本身，紧邻鼓声路5号的贝壳梦幻世界单独收费，不计入。",
+      "urls": [
+        "https://pages.c-ctrip.com/tour/pdf1901/0118.pdf",
+        "https://xm.city8.com/scope/8a1iac729k8wb69f01"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 279
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:118097239786675",
+      "city": "厦门",
+      "name": "厦门清林寺",
+      "scope": "public_temple",
+      "reason": "清林寺为社区寺庙公共礼佛空间；宗教活动场所未见景区售票体系，纳入基础寺院访问。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 665
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:119912490394334",
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-印斗石",
+      "scope": "public_island_geosite",
+      "reason": "鼓浪屿东南海岸印斗石为潮间带礁石，新闻资料确认其位于大德记沙滩海面、仅退潮时可步行到达；仅纳入天然礁石观赏，不含皓月园门票或涉水服务，并加潮汐限制。",
+      "urls": [
+        "https://aoc.ouc.edu.cn/_upload/article/files/69/8b/7dcea7c54668b772e756da60da88/75d2290a-5249-4066-8af0-340e5549e8a7.pdf",
+        "https://dzb.sunnews.cn/page/2025-06/11/A08/hxcb20250611A08.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 594
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:12274903440860",
+      "city": "厦门",
+      "name": "山拔宫",
+      "scope": "public_community_temple",
+      "reason": "山拔宫为社区宫庙，认定公共礼拜空间而非收费游览项目。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 679
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:122753319654427",
+      "city": "厦门",
+      "name": "天上圣妈宫",
+      "scope": "public_community_temple",
+      "reason": "天上圣妈宫为社区妈祖宫庙，按开放礼拜场所纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 545
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:123358907965245",
+      "city": "厦门",
+      "name": "南普陀寺-金卢亭",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 292
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:123362758055749",
+      "city": "厦门",
+      "name": "厦门市郑成功纪念馆",
+      "scope": "public_museum",
+      "reason": "厦门市郑成功纪念馆免费开放，无需预约；可将纪念馆本体作为免费场馆。",
+      "urls": [
+        "https://xm.bendibao.com/xiuxian/2022420/71511.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 322
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:12415838816573",
+      "city": "厦门",
+      "name": "鼓浪屿晴天墙",
+      "scope": "public_street_art",
+      "reason": "鼓浪屿晴天墙是街巷公共立面打卡点，属于开放街区户外景观，不含商业室内项目。",
+      "urls": [
+        "https://xmferry.com/wybm/wshlk/xchgpp/index.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 516
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:126158340678942",
+      "city": "厦门",
+      "name": "英雄三岛精神主题馆",
+      "scope": "public_memorial_museum",
+      "reason": "英雄三岛精神主题馆为公共纪念展陈馆类型，按免费公益展馆候选准入；建议营运时间另核。",
+      "urls": [
+        "https://www.fujian.gov.cn/english/cultureandtravel/attractions/202503/t20250311_6777625.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 415
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:127606009362987",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-朱震亨雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 325
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:128065336122186",
+      "city": "厦门",
+      "name": "陈嘉庚生平事迹陈列馆",
+      "scope": "public_memorial_museum",
+      "reason": "陈嘉庚生平事迹陈列馆为纪念展陈场馆，按公共公益陈列馆录入；如临时闭馆需实时核验。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 759
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:129647002806864",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-保生大帝雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 701
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:13247578440206",
+      "city": "厦门",
+      "name": "陈嘉庚墓",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 586
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:13312483947646",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-钱乙雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 332
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:133537741794881",
+      "city": "厦门",
+      "name": "陈嘉庚墓·集美解放纪念碑-小广场",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 248
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:134402098894021",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-鉴真雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 478
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:134585226753063",
+      "city": "厦门",
+      "name": "厦门大学思明校区陈嘉庚纪念馆",
+      "scope": "public_free_campus_exhibition",
+      "reason": "厦门大学馆方明确所辖展馆免费参观；校外访客需另按校园入校政策。",
+      "urls": [
+        "https://dawb.xmu.edu.cn/wbglzx/cgfw.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 244
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:135538266893087",
+      "city": "厦门",
+      "name": "集美鳌园景区-佛肚竹",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 363
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:137812119638490",
+      "city": "厦门",
+      "name": "厦门园林博览苑国际园",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 326
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:138371600906054",
+      "city": "厦门",
+      "name": "厦门真寂寺",
+      "scope": "public_temple",
+      "reason": "真寂寺为社区寺院公共礼佛场所，未见独立收费景区属性。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 252
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:138373379798389",
+      "city": "厦门",
+      "name": "五缘湾旅游度假区",
+      "scope": "public_waterfront",
+      "reason": "五缘湾旅游度假区中公共湾岸步道和开放滨水空间可免费使用；排除游艇、商业会所、湿地保护区封闭区域。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://img.chiway-repton.com/2025/01/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%94%9F%E6%80%81%E6%96%87%E6%98%8E%E6%80%9D%E6%83%B3%E5%8E%A6%E9%97%A8%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%A4%AE%E5%AA%92%E4%BD%93%E9%9B%86%E4%B8%AD%E6%8A%A5%E9%81%93%E9%87%8D%E7%82%B9%E7%A8%BF%E4%BB%B6%E6%B1%87%E7%BC%96.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 227
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:139042025835131",
+      "city": "厦门",
+      "name": "仙岳公园-土地公庙",
+      "scope": "public_park_temple",
+      "reason": "仙岳公园园内土地公庙属于公共公园附属礼拜点；按公园公共园路访问。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 384
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:139793706328606",
+      "city": "厦门",
+      "name": "厦门园林博览苑-画境",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 59
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:139940172743745",
+      "city": "厦门",
+      "name": "青礁慈济祖宫",
+      "scope": "public_temple",
+      "reason": "青礁慈济祖宫作为宗教场所开放参拜；没有独立景区门票证据，按基础院落公共访问收录。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 494
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:140958108107079",
+      "city": "厦门",
+      "name": "观音寺",
+      "scope": "public_temple",
+      "reason": "观音寺为社区寺院/礼佛空间，按基本开放宗教场所纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 400
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:142407175687220",
+      "city": "厦门",
+      "name": "姓氏文化苑",
+      "scope": "public_cultural_park",
+      "reason": "姓氏文化苑为户外公共文化园地，基础园路与雕塑景观无单独收费证据。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 120
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:143346392789777",
+      "city": "厦门",
+      "name": "同安博物馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "博物馆机构参观说明明确向公众免费开放；同安孔庙为该馆展址。",
+      "urls": [
+        "https://www.museumschina.cn/Museums/Details?id=35018221900007"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 735
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:1441662882516",
+      "city": "厦门",
+      "name": "鳌园",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 531
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:145962847657476",
+      "city": "厦门",
+      "name": "阮旻锡夕阳寮隐居处遗址",
+      "scope": "public_historic_memorial",
+      "reason": "阮旻锡夕阳寮隐居处遗址是户外历史遗址点，按开放遗址/步行访问纳入。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 359
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:14724413299305",
+      "city": "厦门",
+      "name": "南普陀寺-大雄宝殿",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 702
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:148032165584811",
+      "city": "厦门",
+      "name": "忠仑公园中草药科普基地",
+      "scope": "public_city_park",
+      "reason": "忠仑公园中草药科普基地是公园户外科普园地，基础公园免费开放。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 110
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:154367134141083",
+      "city": "厦门",
+      "name": "龙头山寨遗址",
+      "scope": "public_historic_ruins",
+      "reason": "龙头山寨遗址为户外历史遗址/山径点，按不带售票设施的公共遗址空间纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 595
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:161159014761095",
+      "city": "厦门",
+      "name": "厦门园林博览苑主展岛",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 627
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:1612929400320",
+      "city": "厦门",
+      "name": "陈嘉庚先生故居",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 169
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:1617620710631",
+      "city": "厦门",
+      "name": "五通灯塔公园-万人坑纪念碑",
+      "scope": "public_park_memorial",
+      "reason": "五通灯塔公园万人坑纪念碑为公园内户外纪念点，公园原则上免费开放。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 673
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:1636271243403",
+      "city": "厦门",
+      "name": "梅山寺",
+      "scope": "public_temple",
+      "reason": "梅山寺为社区礼佛寺院，按公共基础参拜空间纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 354
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:163846171698490",
+      "city": "厦门",
+      "name": "陈嘉庚纪念馆",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 693
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:166330982703975",
+      "city": "厦门",
+      "name": "马銮湾音乐海岸",
+      "scope": "public_waterfront",
+      "reason": "马銮湾音乐海岸属于滨海公共岸线/开放海岸公园空间，按散步观景区域录入。",
+      "urls": [
+        "https://img.chiway-repton.com/2025/01/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%94%9F%E6%80%81%E6%96%87%E6%98%8E%E6%80%9D%E6%83%B3%E5%8E%A6%E9%97%A8%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%A4%AE%E5%AA%92%E4%BD%93%E9%9B%86%E4%B8%AD%E6%8A%A5%E9%81%93%E9%87%8D%E7%82%B9%E7%A8%BF%E4%BB%B6%E6%B1%87%E7%BC%96.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 450
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:167939981572827",
+      "city": "厦门",
+      "name": "华侨博物院",
+      "scope": "public_free_standard_exhibition",
+      "reason": "馆方公开基本展陈免费；特别展和临时闭馆按当日公告。",
+      "urls": [
+        "https://www.hqbwy.org.cn/uploads/file/20250725/501a21621231441021301421eb10117c1a01211181b514a1.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 264
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:169168863481441",
+      "city": "厦门",
+      "name": "南普陀寺-大悲殿",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 417
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:170383296975245",
+      "city": "厦门",
+      "name": "天竺山森林公园-竹泉",
+      "scope": "public_forest_park",
+      "reason": "天竺山森林公园公共步道/竹泉景观点可入库；不包含森林公园内收费游乐设施。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 480
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:171585766263727",
+      "city": "厦门",
+      "name": "龙舟池",
+      "scope": "public_waterfront",
+      "reason": "龙舟池为集美学村公共水域和步行观景空间，开放街区可步行游览。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 104
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:174561953963025",
+      "city": "厦门",
+      "name": "厦门经济特区纪念馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "馆方在公众公告中明确所属场馆免费开放，按各馆实际开放日入馆。",
+      "urls": [
+        "https://www.sina.cn/news/detail/5283300245243120.html",
+        "https://www.xmmuseum.com/zx/xbgg/202401/P020240130548587479835.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 762
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:174986743853860",
+      "city": "厦门",
+      "name": "狐尾山公园(北门)",
+      "scope": "public_city_park",
+      "reason": "狐尾山公园北门为公园公共入口；普通城市公园依法免费开放。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 90
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:175566779372744",
+      "city": "厦门",
+      "name": "南普陀寺-碧泉",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 171
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:177432864819686",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-澄心亭",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 561
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:17997736554475",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-王焘雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 75
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:180031697984325",
+      "city": "厦门",
+      "name": "厦门园林博览苑儿童乐园",
+      "scope": "public_garden_expo",
+      "reason": "园博苑园区普通票0元；儿童公园需预约但官网未标门票，准入条件标成预约制，不把预约误判为收费。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 205
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:180152245569393",
+      "city": "厦门",
+      "name": "南普陀寺-天王殿",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 498
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:180756723153253",
+      "city": "厦门",
+      "name": "归来园",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 124
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:181165171735124",
+      "city": "厦门",
+      "name": "香山岩寺",
+      "scope": "public_temple",
+      "reason": "香山岩寺为宗教场所公共礼佛空间；若进入香山郊野公园收费边界则按现场入口区分。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 290
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:182353286807509",
+      "city": "厦门",
+      "name": "梵天禅寺",
+      "scope": "public_temple",
+      "reason": "梵天禅寺是同安寺院公共礼佛区域，按基本宗教场所访问纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 229
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:183199042743118",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-王肯堂雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 198
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:185175533644878",
+      "city": "厦门",
+      "name": "林巧稚纪念馆",
+      "scope": "public_free_exhibition_or_memorial_garden",
+      "reason": "鼓浪屿管理方说明公益纪念馆及纪念园开放。此处只计入门，过岛轮渡费用单列。",
+      "urls": [
+        "https://www.glyylq.cn/article.php?id=1152",
+        "https://www.glyylq.cn/article.php?id=411"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 317
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:188820478338778",
+      "city": "厦门",
+      "name": "厦门园林博览苑-现代园区",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 226
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:189600307155099",
+      "city": "厦门",
+      "name": "集美解放纪念碑",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 398
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:190751138902155",
+      "city": "厦门",
+      "name": "鳌园春晖",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 301
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:190816661400634",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-李时珍雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 78
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:194723461151180",
+      "city": "厦门",
+      "name": "海堤博物馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "海堤纪念馆公开报道确认基本展陈免费，预约及馆内秩序以现场为准。",
+      "urls": [
+        "https://news.xmnn.cn/xmxw/202306/t20230617_85542.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 98
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:198519106358227",
+      "city": "厦门",
+      "name": "高集海堤原址纪念园",
+      "scope": "public_outdoor_memorial",
+      "reason": "市级公开报道明确高集海堤原址建有纪念公园，判断仅涵盖室外纪念段。",
+      "urls": [
+        "https://news.xmnn.cn/xmxw/202306/t20230617_85542.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 653
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:201587927920313",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-王冰雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 630
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:204176962936174",
+      "city": "厦门",
+      "name": "陈嘉庚纪念胜地-集美寨遗址",
+      "scope": "public_historic_ruins",
+      "reason": "集美寨遗址为户外历史遗址点，按纪念片区公共户外步行范围录入。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 309
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:205543274785744",
+      "city": "厦门",
+      "name": "厦门园林博览苑-深圳园",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 687
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:20563186436953",
+      "city": "厦门",
+      "name": "林希元祠",
+      "scope": "public_historic_memorial",
+      "reason": "林希元祠属历史祠堂/文物点，户外公共参观入口纳入；如日常锁闭可标闭馆/需核验。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 136
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:205820482211757",
+      "city": "厦门",
+      "name": "龙门寺",
+      "scope": "public_temple",
+      "reason": "龙门寺为宗教场所基本参拜区域，按开放礼佛空间纳入。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 178
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:206573329458770",
+      "city": "厦门",
+      "name": "南普陀寺-佛塔",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 108
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:207799164417387",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-张景岳雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 720
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:210934633107520",
+      "city": "厦门",
+      "name": "南普陀寺-转逢和尚之塔",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 231
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:212568037223466",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-放生池",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 467
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:214244238429345",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-文昌庙",
+      "scope": "public_temple",
+      "reason": "青礁慈济祖宫文昌庙属于开放祖宫院落宗教空间。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 69
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:23123747914060",
+      "city": "厦门",
+      "name": "天竺山森林公园天柱峰",
+      "scope": "public_forest_park_grounds",
+      "reason": "运营方将此处列为天竺山自然景观；免费基本步行范围，避开节庆收费专区和游乐项目。",
+      "urls": [
+        "https://m.lovetly.com/article/111776.htm",
+        "https://www.xmtzs.com/index/about/index.html",
+        "https://xm.fjsen.com/wap/2025-03/01/content_31851923.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 344
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:232529929195191",
+      "city": "厦门",
+      "name": "观音山",
+      "scope": "public_natural_area",
+      "reason": "观音山按自然山体户外公共景观点录入；收费海滨游乐区不属于本记录免费范围。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/fgk/201209/t20120903_237015.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 230
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:233336148237087",
+      "city": "厦门",
+      "name": "延平故垒",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 242
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:233415593897839",
+      "city": "厦门",
+      "name": "白石炮台遗址",
+      "scope": "public_outdoor",
+      "reason": "资料显示遗址免费开放但须实名预约、限流；按预约进入基础遗址范围免费，不含周边收费活动。",
+      "urls": [
+        "https://larkleap.com/zh/attraction/xiamen/pangu-tower"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 426
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:233881014199170",
+      "city": "厦门",
+      "name": "厦门市鼓浪屿风景名胜区-四落大厝",
+      "scope": "public_outdoor",
+      "reason": "按街区/室外公共遗址基础参观免费；鼓浪屿船票另计，日光岩、菽庄花园、皓月园及部分馆园为收费点，不在此免票范围。",
+      "urls": [
+        "https://m.xm.bendibao.com/tour/61741.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 396
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:233957301397492",
+      "city": "厦门",
+      "name": "厦门园林博览苑-越秀",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 663
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:235004572125921",
+      "city": "厦门",
+      "name": "集美海上生态景观走廊",
+      "scope": "public_outdoor",
+      "reason": "集美学村属历史文化街区；该记录按学村街巷/滨水公共空间理解，街区步行免费。校内建筑、鳌园及独立展馆不含在免费范围内。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 550
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:237484443650960",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-宋慈雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 761
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:237688863297578",
+      "city": "厦门",
+      "name": "厦门大学思明校区鲁迅广场",
+      "scope": "campus_reservation_public",
+      "reason": "校园内广场本身无景区门票；厦门大学现执行访客预约入校，按预约能进入时免费。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 92
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:238685263871212",
+      "city": "厦门",
+      "name": "南普陀寺-凉亭",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 383
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:2395909493254",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-甄权雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 539
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:240525330363787",
+      "city": "厦门",
+      "name": "集美学村",
+      "scope": "public_outdoor",
+      "reason": "集美学村属历史文化街区；该记录按学村街巷/滨水公共空间理解，街区步行免费。校内建筑、鳌园及独立展馆不含在免费范围内。",
+      "urls": [
+        "https://zfgb.fujian.gov.cn/9455"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 22
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:242893468194563",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-巢元芳雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 200
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:244976754178075",
+      "city": "厦门",
+      "name": "归来堂",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 666
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:246880889307707",
+      "city": "厦门",
+      "name": "狐尾山公园-中外气象名人园区",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 221
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:247822334601778",
+      "city": "厦门",
+      "name": "天竺山森林公园-泉舜树",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 267
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:247919461072659",
+      "city": "厦门",
+      "name": "厦门园林博览苑-源园",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 746
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:248816696200943",
+      "city": "厦门",
+      "name": "观海长廊(漳州路)",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 479
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:251347754610174",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-张子和雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 485
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:251780155383626",
+      "city": "厦门",
+      "name": "南普陀寺-洗心池",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 258
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:253601129837678",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-药臼亭",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 62
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:259674145749311",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-崔知悌雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 141
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:263940831006895",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-许胤宗雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 216
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:267361243292376",
+      "city": "厦门",
+      "name": "天竺山森林公园-中海林",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 493
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:269310240444808",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-叶天士雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 259
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:273151220264158",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-陶弘景雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 82
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:275697227841627",
+      "city": "厦门",
+      "name": "厦门园林博览苑-沈阳园",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 74
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:276855923887055",
+      "city": "厦门",
+      "name": "集美鳌园景区",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 603
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:34125425693906",
+      "city": "厦门",
+      "name": "南普陀寺-韦驮菩萨",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 764
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:35488259142470",
+      "city": "厦门",
+      "name": "厦门园林博览苑-名校风华园",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 515
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:39160816430701",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-张仲景雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 118
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:45637542547627",
+      "city": "厦门",
+      "name": "椰风寨",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 484
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:48677907338736",
+      "city": "厦门",
+      "name": "天竺山森林公园-四季花谷",
+      "scope": "public_forest_park_grounds",
+      "reason": "运营方将此处列为天竺山自然景观；免费基本步行范围，避开节庆收费专区和游乐项目。",
+      "urls": [
+        "https://m.lovetly.com/article/111776.htm",
+        "https://www.xmtzs.com/index/about/index.html",
+        "https://xm.fjsen.com/wap/2025-03/01/content_31851923.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 184
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:49301663310907",
+      "city": "厦门",
+      "name": "毓园(林巧稚纪念馆)",
+      "scope": "public_free_exhibition_or_memorial_garden",
+      "reason": "鼓浪屿管理方说明公益纪念馆及纪念园开放。此处只计入门，过岛轮渡费用单列。",
+      "urls": [
+        "https://www.glyylq.cn/article.php?id=1152",
+        "https://www.glyylq.cn/article.php?id=411"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 266
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:54712938551797",
+      "city": "厦门",
+      "name": "南普陀寺-普同塔",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 138
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:55378304499821",
+      "city": "厦门",
+      "name": "鼓浪屿工部局遗址",
+      "scope": "public_outdoor",
+      "reason": "按街区/室外公共遗址基础参观免费；鼓浪屿船票另计，日光岩、菽庄花园、皓月园及部分馆园为收费点，不在此免票范围。",
+      "urls": [
+        "https://m.xm.bendibao.com/tour/61741.shtm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 589
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:565722740173",
+      "city": "厦门",
+      "name": "天竺山森林公园-天竺湖旅游景区",
+      "scope": "public_forest_park_grounds",
+      "reason": "运营方将此处列为天竺山自然景观；免费基本步行范围，避开节庆收费专区和游乐项目。",
+      "urls": [
+        "https://m.lovetly.com/article/111776.htm",
+        "https://www.xmtzs.com/index/about/index.html",
+        "https://xm.fjsen.com/wap/2025-03/01/content_31851923.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 53
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:56894077033520",
+      "city": "厦门",
+      "name": "白鹭洲公园水上广场-筼筜渔火",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 228
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:58691354793423",
+      "city": "厦门",
+      "name": "厦门南音渔村",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 573
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:59050442710613",
+      "city": "厦门",
+      "name": "南普陀寺-五老凌霄",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 747
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:60102073492431",
+      "city": "厦门",
+      "name": "陈嘉庚纪念胜地-归来园凉亭",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 265
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:6054736825176",
+      "city": "厦门",
+      "name": "天竺山森林公园-百竹园景区",
+      "scope": "public_forest_park_grounds",
+      "reason": "运营方将此处列为天竺山自然景观；免费基本步行范围，避开节庆收费专区和游乐项目。",
+      "urls": [
+        "https://m.lovetly.com/article/111776.htm",
+        "https://www.xmtzs.com/index/about/index.html",
+        "https://xm.fjsen.com/wap/2025-03/01/content_31851923.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 408
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:61484304962590",
+      "city": "厦门",
+      "name": "仙岳公园-悠然园",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 428
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:62248336359016",
+      "city": "厦门",
+      "name": "厦门市博物馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "馆方在公众公告中明确所属场馆免费开放，按各馆实际开放日入馆。",
+      "urls": [
+        "https://www.sina.cn/news/detail/5283300245243120.html",
+        "https://www.xmmuseum.com/zx/xbgg/202401/P020240130548587479835.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 119
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:62570112142195",
+      "city": "厦门",
+      "name": "沙坡尾彩虹墙",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 524
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:64977856467401",
+      "city": "厦门",
+      "name": "园博苑心愿林",
+      "scope": "public_free_garden_grounds",
+      "reason": "园博苑运营方公示普通票0元；仅计入园内常设室外园林，观光车和特别活动另计。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 225
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:66542790449447",
+      "city": "厦门",
+      "name": "厦门园林博览苑-百花洲",
+      "scope": "public_free_garden_grounds",
+      "reason": "运营方普通票为0元，识别园博苑常设户外展园和观赏区域。观光车、灯会和室内项目按各自票务。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 461
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:67870148121999",
+      "city": "厦门",
+      "name": "集美鳌园景区-文化长廊",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 347
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:68436841174576",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-王叔和雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 77
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:68913189400563",
+      "city": "厦门",
+      "name": "天竺山森林公园-叠翠",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 102
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:71373279331471",
+      "city": "厦门",
+      "name": "小嶝月亮湾",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 590
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:75133193001213",
+      "city": "厦门",
+      "name": "南普陀寺-休息亭",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 602
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:78426695787725",
+      "city": "厦门",
+      "name": "厦门大学思明校区人类博物馆",
+      "scope": "public_free_campus_exhibition",
+      "reason": "厦门大学馆方明确所辖展馆免费参观；校外访客需另按校园入校政策。",
+      "urls": [
+        "https://dawb.xmu.edu.cn/wbglzx/cgfw.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 173
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:78510172472838",
+      "city": "厦门",
+      "name": "同安孔庙",
+      "scope": "public_free_standard_exhibition",
+      "reason": "博物馆机构参观说明明确向公众免费开放；同安孔庙为该馆展址。",
+      "urls": [
+        "https://www.museumschina.cn/Museums/Details?id=35018221900007"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 624
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:81835880107231",
+      "city": "厦门",
+      "name": "嘉庚公园-鳌亭",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 617
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:83680128734402",
+      "city": "厦门",
+      "name": "南普陀寺-苏亭",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 179
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:87213018437015",
+      "city": "厦门",
+      "name": "南普陀寺-主殿",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 588
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:87250766576666",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-牌坊",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 131
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:88389324426975",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-王清任雕像",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 181
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:88450909627742",
+      "city": "厦门",
+      "name": "狐尾山公园-和美园",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 79
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xiamen:8921905845385",
+      "city": "厦门",
+      "name": "青礁慈济祖宫-石伏狮",
+      "scope": "public_temple_outdoor_sculpture_corridor",
+      "reason": "地方志记载青礁慈济祖宫公共名医长廊及两侧室外雕像。仅基本户外观赏，开放及宗教活动安排按现场。",
+      "urls": [
+        "https://www.fjtb.gov.cn/jdly/cjg/201709/t20170904_11839019.htm",
+        "https://xm.fjdsfzw.org.cn/2025-01-13/content_154059.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 600
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:93232597597568",
+      "city": "厦门",
+      "name": "大嶝岛",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。 范围限定为公共户外区域，区内独立收费点另计。",
+      "urls": [
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 235
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:94577772596115",
+      "city": "厦门",
+      "name": "南普陀寺-万寿塔",
+      "scope": "public_free_temple_reservation_required",
+      "reason": "南普陀寺基本参观免费并有预约规则，范围限定对公众开放的殿舍、亭台、庭院及户外地标。预约和院内开放安排需要另核。",
+      "urls": [
+        "https://dzb.sunnews.cn/page/2025-02/25/A04/hxcb20250225A04.pdf",
+        "https://travelnews.qunar.com/ugc/xiamen-nanputuo-temple-wulaofeng"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 622
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:95800041084246",
+      "city": "厦门",
+      "name": "园博苑-宁波清源甬情园",
+      "scope": "public_free_garden_grounds",
+      "reason": "园博苑运营方公示普通票0元；仅计入园内常设室外园林，观光车和特别活动另计。",
+      "urls": [
+        "https://xmylbly.com/"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 49
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:97739740688387",
+      "city": "厦门",
+      "name": "集美鳌园景区-休息亭",
+      "scope": "public_free_commemorative_site",
+      "reason": "鳌园景区由地方宣传教育基地公开说明自2017年免费开放。记录仅对应基本参观，具体时段及临时管控需核对。",
+      "urls": [
+        "https://shxc.xmnn.cn/agzyjy/201909/t20190927_5313938.htm",
+        "https://xm.fjsen.com/2026-09/04/content_32247891.htm"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 194
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xiamen:99545442859989",
+      "city": "厦门",
+      "name": "白鹭洲西堤桥",
+      "scope": "public_outdoor",
+      "reason": "位于可自由步行的公共空间/公园或公共文化场馆；厦门公园条例规定公园原则免费，个别收费景区另行售票。",
+      "urls": [
+        "https://www.xmjkbd.com/",
+        "https://www.xmrd.gov.cn/pdf_file/qwfb/P020120815603065465276.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xiamen/attractions.csv",
+        "file_sha256": "06b840c14fc594fa2a88a8aa8cfdd795eba223ff0917a783fed74debfc9b6b32",
+        "poi_file_sha256": "407963a627b8809bd13909bd97723d06599866226a9b196426895e03379c68f3",
+        "row_index_0based": 491
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:101",
+      "city": "西安",
+      "name": "湘子庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "当前旅游信息列明免费免预约；范围为对访客开放的寺观院落，不包含特殊法会/捐赠性服务。",
+      "urls": [
+        "https://you.ctrip.com/sight/xian7/73355.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 34
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:104",
+      "city": "西安",
+      "name": "小雁塔-石佛阁",
+      "scope": "public_free_reservation_required",
+      "reason": "小雁塔园区随西安博物院免费实名预约；范围仅限开放园区和可参观区域。",
+      "urls": [
+        "https://www.xabwy.com/index.html",
+        "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 37
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:105",
+      "city": "西安",
+      "name": "永宁西苑",
+      "scope": "public_park",
+      "reason": "属于西安环城公园绿廊的公园/园区命名点；官方说明环城公园各区为全民健身公共空间，全部区域免费向群众开放。",
+      "urls": [
+        "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21860696/content.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 38
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:107",
+      "city": "西安",
+      "name": "小雁塔",
+      "scope": "public_free_reservation_required",
+      "reason": "小雁塔园区随西安博物院免费实名预约；范围仅限开放园区和可参观区域。",
+      "urls": [
+        "https://www.xabwy.com/index.html",
+        "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 40
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:110",
+      "city": "西安",
+      "name": "兴庆宫公园-阿倍仲麻吕纪念碑",
+      "scope": "public_park_outdoor_feature",
+      "reason": "位于兴庆宫公益性城市遗址公园内，官方明确公园已取消门票免费开放；仅准入园内户外纪念碑，不含两栖爬行馆等室内/经营设施。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/jyta/rddbjybl/2079856077273378818.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 43
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:117",
+      "city": "西安",
+      "name": "兴庆宫公园-积庆殿",
+      "scope": "public_park_outdoor_feature",
+      "reason": "按官方兴庆宫公园全面免票开放政策纳入园内公共游览设施；不代表殿内展览或经营活动免费。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/jyta/rddbjybl/2079856077273378818.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 50
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:118",
+      "city": "西安",
+      "name": "小雁塔-南山门",
+      "scope": "public_free_reservation_required",
+      "reason": "小雁塔园区随西安博物院免费实名预约；范围仅限开放园区和可参观区域。",
+      "urls": [
+        "https://www.xabwy.com/index.html",
+        "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 51
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:120",
+      "city": "西安",
+      "name": "兴庆宫公园-五龙坛",
+      "scope": "public_park_outdoor_feature",
+      "reason": "官方资料将五龙坛列为兴庆宫公园内仿唐建筑，公园已取消门票免费开放；范围限公共园区户外点位。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/jyta/rddbjybl/2079856077273378818.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 53
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:137",
+      "city": "西安",
+      "name": "都城隍庙-财神殿",
+      "scope": "public_religious_site_outdoor_feature",
+      "reason": "属免费开放的都城隍庙院落建筑点位；仅限日常对外开放的公共参观范围。",
+      "urls": [
+        "https://you.ctrip.com/sight/xian7/107610.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 63
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:140",
+      "city": "西安",
+      "name": "日本飞机轰炸西安遗址",
+      "scope": "public_outdoor_memorial",
+      "reason": "名称指向户外纪念遗址点而非收费展馆；准入露天遗址/外部瞻览，不含可能关联的室内展陈。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 66
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:143",
+      "city": "西安",
+      "name": "西安牡丹苑",
+      "scope": "public_park",
+      "reason": "快照已有明确零价记录，且名称类别为公园；依据西安市公园条例，政府投资建设管理的公园原则上免费，收费例外需有明确依据。",
+      "urls": [
+        "https://zfgjj.xa.gov.cn/ztzl/fzzfjs/pfxc/5da86ec8fd850838eff59ff5.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 69
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:145",
+      "city": "西安",
+      "name": "北院门",
+      "scope": "public_street_walk",
+      "reason": "官方将北院门列为历史文化街区及回坊文化风情街组成街巷；准入街道步行本身，餐饮商铺、院落/馆舍按各自规则。",
+      "urls": [
+        "https://xadfz.xa.gov.cn/xadq/dqtk/1901530303720120321.html",
+        "https://zygh.xa.gov.cn/ywpd/cxghgsgb/ghglpqgs/2109828845696290817.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 71
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:150",
+      "city": "西安",
+      "name": "都城隍庙",
+      "scope": "public_religious_site_basic_entry",
+      "reason": "当前公开旅游信息列为免门票，历史宗教场所对公众开放；准入日常参观院落，不包含活动/经营服务。",
+      "urls": [
+        "https://you.ctrip.com/sight/xian7/107610.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 76
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:152",
+      "city": "西安",
+      "name": "安定园",
+      "scope": "public_park",
+      "reason": "官方资料将安定园列为环城公园四大园区之一，并明确相关区域全部免费开放；此准入为园区公共绿地。",
+      "urls": [
+        "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21860696/content.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 78
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:158",
+      "city": "西安",
+      "name": "丝绸之路群雕",
+      "scope": "public_free_square_monument",
+      "reason": "城内公共街道型露天雕塑与街巷，按名称及城市景点点位判断基础观赏无需门票；付费展馆不随之减免。",
+      "urls": [
+        "https://www.xa.gov.cn/web_files/xian/file/2022/09/09/202209091042479845518.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 84
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:161",
+      "city": "西安",
+      "name": "丝绸之路起点",
+      "scope": "public_outdoor_marker",
+      "reason": "名称指向城市公共纪念标志，按外部瞻览/步行通过准入；不含收费景区或室内展陈。",
+      "urls": [
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 87
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:165",
+      "city": "西安",
+      "name": "都城隍庙-文昌阁",
+      "scope": "public_religious_site_outdoor_feature",
+      "reason": "属免费开放的都城隍庙院落建筑点位；仅限日常对外开放的公共参观范围。",
+      "urls": [
+        "https://you.ctrip.com/sight/xian7/107610.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 91
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:216",
+      "city": "西安",
+      "name": "大雁塔文化休闲景区-玄奘雕像",
+      "scope": "public_free_square_monument",
+      "reason": "曲江新区公开介绍大雁塔南广场及玄奘像属于游客公共活动空间；该零价仅指室外雕像，与登塔和寺院票分开。",
+      "urls": [
+        "https://qjxq.xa.gov.cn/xwzx/xwdt/1959905174292041730.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 141
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:228",
+      "city": "西安",
+      "name": "沣东·沣河生态景区",
+      "scope": "public_free_greenway",
+      "reason": "高新区公示沣河绿道和仪祉湖公园免费开放。仅公共岸线和开放园地。",
+      "urls": [
+        "https://xdz.xa.gov.cn/ztzl/gdzt/jlxkgcgxqsjk/xkzx/1714098089274986498.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 151
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:235",
+      "city": "西安",
+      "name": "魁星楼遗址",
+      "scope": "public_outdoor_ruin",
+      "reason": "以遗址点名，按户外地表遗存/外部瞻览的基础公共通行准入，不含室内或受限遗址空间。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 157
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:246",
+      "city": "西安",
+      "name": "汉城湖旅游风景区-汉城湖安门广场",
+      "scope": "public_free_lakeside_grounds",
+      "reason": "西安旅游机构明确公园基本入园免费、部分项目收费；本记录仅覆盖开敞湖滨和入口广场。",
+      "urls": [
+        "https://xa.ify.cn/content/228.aspx",
+        "https://yjglj.xa.gov.cn/xw/qxdt/2005473415401123842.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 167
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:247",
+      "city": "西安",
+      "name": "汉城湖旅游风景区-安门码头",
+      "scope": "public_lakeside_walk",
+      "reason": "汉城湖基础景区免费，付费项目另计；按码头周边可步行岸线准入，乘船服务不包含。",
+      "urls": [
+        "https://xa.ify.cn/content/228.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 168
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:249",
+      "city": "西安",
+      "name": "明秦王府城墙遗址",
+      "scope": "public_outdoor_ruin_view",
+      "reason": "准入城市公共区域可见的遗址外观；不包含西安城墙收费登临及封闭考古区。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 170
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:256",
+      "city": "西安",
+      "name": "雍光门",
+      "scope": "public_street_gate_exterior",
+      "reason": "门楼/城门外观为城市公共街道景观，按街面外观步行瞻览准入；不含登城墙和室内空间。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 177
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:273",
+      "city": "西安",
+      "name": "浐灞国家湿地公园-湿地沙滩",
+      "scope": "public_wetland_park_feature",
+      "reason": "运营集团公告记载浐灞国家湿地公园免费开放试运营；湿地沙滩作为园内户外公共景观按基础入园准入，游船、科普馆/体验项目不包含。",
+      "urls": [
+        "https://www.xacbdc.com/index.php?c=show&id=53&s=news"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 194
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:275",
+      "city": "西安",
+      "name": "西安湖",
+      "scope": "public_free_greenway",
+      "reason": "水务局明确西安湖环湖路供市民健身，基本公共游览仅限开放岸线和步道。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 196
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:278",
+      "city": "西安",
+      "name": "渭河生态景观区",
+      "scope": "public_free_greenway",
+      "reason": "水务局明确西安湖环湖路供市民健身，基本公共游览仅限开放岸线和步道。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 199
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:279",
+      "city": "西安",
+      "name": "汉长安城霸城门遗址",
+      "scope": "public_outdoor_ruin_view",
+      "reason": "汉长安城遗址外部户外遗迹点按公共步行瞻览准入；不含需预约/限制进入的考古遗址本体内部。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 200
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:283",
+      "city": "西安",
+      "name": "汉城湖旅游风景区",
+      "scope": "public_free_lakeside_grounds",
+      "reason": "西安旅游机构明确公园基本入园免费、部分项目收费；本记录仅覆盖开敞湖滨和入口广场。",
+      "urls": [
+        "https://xa.ify.cn/content/228.aspx",
+        "https://yjglj.xa.gov.cn/xw/qxdt/2005473415401123842.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 204
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:284",
+      "city": "西安",
+      "name": "汉城湖旅游风景区水车码头",
+      "scope": "public_lakeside_walk",
+      "reason": "汉城湖基础景区免费，付费项目另计；按岸边公共步行点位准入，码头游船服务不包含。",
+      "urls": [
+        "https://xa.ify.cn/content/228.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 205
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:288",
+      "city": "西安",
+      "name": "汉台遗址",
+      "scope": "public_outdoor_ruin_view",
+      "reason": "按户外遗址外观及公共步行空间准入；不含封闭保护区/馆舍。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 209
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:299",
+      "city": "西安",
+      "name": "桃花潭-竹影廊桥",
+      "scope": "public_outdoor_park_landmark",
+      "reason": "城市水岸公园的露天廊桥、行人观景台和公开水岸；按地点类型判断基础室外游览免费，游乐项目和限制水域另计。",
+      "urls": [],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 219
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:306",
+      "city": "西安",
+      "name": "灞河西观光台",
+      "scope": "public_outdoor_park_landmark",
+      "reason": "城市水岸公园的露天廊桥、行人观景台和公开水岸；按地点类型判断基础室外游览免费，游乐项目和限制水域另计。",
+      "urls": [],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 226
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:324",
+      "city": "西安",
+      "name": "世博园长安花谷",
+      "scope": "public_free_garden_grounds",
+      "reason": "世博园运营方披露园区免费开放，按常设户外植物园艺景观纳入；馆舍、观光车及项目费用独立。",
+      "urls": [
+        "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202401/035721_20240102_LUR5.pdf",
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 243
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:352",
+      "city": "西安",
+      "name": "桃花潭",
+      "scope": "public_outdoor_park_landmark",
+      "reason": "城市水岸公园的露天廊桥、行人观景台和公开水岸；按地点类型判断基础室外游览免费，游乐项目和限制水域另计。",
+      "urls": [],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 270
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:355",
+      "city": "西安",
+      "name": "灞渭生态滩区",
+      "scope": "public_riverside_nature_walk",
+      "reason": "市水务部门明确灞渭沿线有生态景观节点、人工湖与“三河一山”绿道驿站，属于生态游憩景观带；限开放步道/观景，不含封闭保护区。",
+      "urls": [
+        "https://swj.xa.gov.cn/gzdt/gzdt/2122888692146237442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 273
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:382",
+      "city": "西安",
+      "name": "西安世博园-航天植物园",
+      "scope": "public_free_garden_grounds",
+      "reason": "世博园运营方披露园区免费开放，按常设户外植物园艺景观纳入；馆舍、观光车及项目费用独立。",
+      "urls": [
+        "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202401/035721_20240102_LUR5.pdf",
+        "https://www.xa.gov.cn/gk/wtly/ssml/1824366329290301442.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 297
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:398",
+      "city": "西安",
+      "name": "临潼博物馆",
+      "scope": "public_free_standard_exhibition",
+      "reason": "西安市文物局公布临潼区博物馆免费开放，并注明周一等开放限制。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 311
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:413",
+      "city": "西安",
+      "name": "姜寨遗址碑",
+      "scope": "public_outdoor_memorial",
+      "reason": "名称为露天遗址碑，按公共空间中外部瞻览准入；姜寨遗址博物馆/考古保护区另行核验，不含在本条内。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 326
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:425",
+      "city": "西安",
+      "name": "光禄坊",
+      "scope": "public_historic_lane_walk",
+      "reason": "按历史坊巷的道路步行本身准入；不含沿街商铺、院落、馆舍或收费活动。",
+      "urls": [
+        "https://zygh.xa.gov.cn/ywpd/cxghgsgb/ghglpqgs/2109828845696290817.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 333
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:439",
+      "city": "西安",
+      "name": "武之望纪念碑",
+      "scope": "public_outdoor_memorial",
+      "reason": "按户外纪念碑外部瞻览准入，不延伸至任何室内纪念馆或封闭场地。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 343
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:459",
+      "city": "西安",
+      "name": "阎良区关山街道长山村吉祥塔",
+      "scope": "public_outdoor_monument",
+      "reason": "村落公共环境中的户外塔式地标，按外观瞻览/道路步行准入；不含登塔或进入私人院落。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 358
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:509",
+      "city": "西安",
+      "name": "昭慧广场-李晟碑",
+      "scope": "public_free_square_monument",
+      "reason": "城内公共街道型露天雕塑与街巷，按名称及城市景点点位判断基础观赏无需门票；付费展馆不随之减免。",
+      "urls": [
+        "https://www.xa.gov.cn/web_files/xian/file/2022/09/09/202209091042479845518.pdf"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 395
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:580",
+      "city": "西安",
+      "name": "葛牌古镇",
+      "scope": "public_village_street_walk",
+      "reason": "古镇公共街巷按基础步行范围纳入，独立收费展馆、温泉另计。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 446
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:584",
+      "city": "西安",
+      "name": "塘子古镇旅游区",
+      "scope": "public_village_street_walk",
+      "reason": "古镇公共街巷按基础步行范围纳入，独立收费展馆、温泉另计。",
+      "urls": [
+        "https://wwj.xa.gov.cn/xxgk/wbxx/62d8ba0ef8fd1c4c210ae016.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 450
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:746",
+      "city": "西安",
+      "name": "仪祉湖景区",
+      "scope": "public_free_greenway",
+      "reason": "高新区公示沣河绿道和仪祉湖公园免费开放。仅公共岸线和开放园地。",
+      "urls": [
+        "https://xdz.xa.gov.cn/ztzl/gdzt/jlxkgcgxqsjk/xkzx/1714098089274986498.html"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": true,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 583
+      },
+      "planner_eligible": true
+    },
+    {
+      "id": "v20:attraction:xian:90",
+      "city": "西安",
+      "name": "小雁塔-鼓楼",
+      "scope": "public_free_reservation_required",
+      "reason": "小雁塔园区随西安博物院免费实名预约；范围仅限开放园区和可参观区域。",
+      "urls": [
+        "https://www.xabwy.com/index.html",
+        "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 23
+      },
+      "planner_eligible": false
+    },
+    {
+      "id": "v20:attraction:xian:99",
+      "city": "西安",
+      "name": "小雁塔-白衣阁",
+      "scope": "public_free_reservation_required",
+      "reason": "小雁塔园区随西安博物院免费实名预约；范围仅限开放园区和可参观区域。",
+      "urls": [
+        "https://www.xabwy.com/index.html",
+        "https://xa.ify.cn/content/214.aspx"
+      ],
+      "reviewed_on": "2026-11-24",
+      "trial_allowed": false,
+      "catalog_admission_cny": 0,
+      "source_locator": {
+        "file": "data/sandbox_profiles/xiamen12_historical_v20_completion/database/attractions/xian/attractions.csv",
+        "file_sha256": "959c31b84b5781ece468c9e2621239eaffee609c3473d347d259f9f56dde2134",
+        "poi_file_sha256": "598aac759aadbda5c94f88ba78a40ee445d8d9283ae7e86127f0584eedd77ab2",
+        "row_index_0based": 32
+      },
+      "planner_eligible": false
+    }
+  ],
+  "deferred_during_merge": [
+    {
+      "id": "v20:attraction:xiamen:108685575315671",
+      "name": "南普陀寺-正命楼",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:110481075041365",
+      "name": "莲花峰",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:111566977857362",
+      "name": "南普陀寺·随缘",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:112904845432095",
+      "name": "鼓浪屿-观赏植物区",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:114754162252151",
+      "name": "南普陀寺-赠香处",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:123009628586562",
+      "name": "山樱花观赏区",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:154509245151969",
+      "name": "天下奇观百年榕树断肢自接",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:165512903913075",
+      "name": "南普陀寺-功德楼",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:17494617638831",
+      "name": "天香湖",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:178726142297886",
+      "name": "荔枝林",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:183274095285916",
+      "name": "集美学村-旅游观光车嘉庚纪念馆站",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:185519382957315",
+      "name": "妈祖文化区",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:190609354007441",
+      "name": "渡月亭",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:196367172302778",
+      "name": "柠檬桉林",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:229588625817822",
+      "name": "彩虹桥",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:23248067062049",
+      "name": "百米榕道",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xiamen:276088679595125",
+      "name": "厦门白鹭洲公园中公园-母婴室",
+      "city": "厦门",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xian:236",
+      "name": "光顺门遗址",
+      "city": "西安",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xian:265",
+      "name": "望仙门遗址",
+      "city": "西安",
+      "reason": "位置、访客范围或收费边界仍待核"
+    },
+    {
+      "id": "v20:attraction:xian:340",
+      "name": "张学良将军向爱国学生讲话纪念碑",
+      "city": "西安",
+      "reason": "位置、访客范围或收费边界仍待核"
+    }
+  ]
+}
