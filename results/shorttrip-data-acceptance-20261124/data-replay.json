@@ -1,0 +1,2363 @@
+{
+  "snapshot": "trial-5e2d7c000735607f6ada8c42",
+  "overlay_sha256": "5e2d7c000735607f6ada8c42c64d47d09ca16cfc667e079a40b6180f9a7978a6",
+  "sample_date": "2026-11-20",
+  "catalog_by_city": {
+    "北京": {
+      "attraction": {
+        "source_rows": 670,
+        "exact_poi": 335,
+        "aliases": 335,
+        "unresolved_poi": 0,
+        "discoverable": 335,
+        "sandbox_eligible": 335,
+        "eligible_with_price": 335,
+        "eligible_with_price_and_operating_fields": 335,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 936,
+        "exact_poi": 470,
+        "aliases": 466,
+        "unresolved_poi": 0,
+        "discoverable": 470,
+        "sandbox_eligible": 470,
+        "eligible_with_price": 470,
+        "eligible_with_price_and_operating_fields": 470,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 802,
+        "exact_poi": 401,
+        "aliases": 401,
+        "unresolved_poi": 0,
+        "discoverable": 401,
+        "sandbox_eligible": 401,
+        "eligible_with_price": 401,
+        "eligible_with_price_and_operating_fields": 401,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "上海": {
+      "attraction": {
+        "source_rows": 719,
+        "exact_poi": 360,
+        "aliases": 359,
+        "unresolved_poi": 0,
+        "discoverable": 360,
+        "sandbox_eligible": 360,
+        "eligible_with_price": 360,
+        "eligible_with_price_and_operating_fields": 360,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 958,
+        "exact_poi": 484,
+        "aliases": 474,
+        "unresolved_poi": 0,
+        "discoverable": 484,
+        "sandbox_eligible": 484,
+        "eligible_with_price": 484,
+        "eligible_with_price_and_operating_fields": 484,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 805,
+        "exact_poi": 403,
+        "aliases": 402,
+        "unresolved_poi": 0,
+        "discoverable": 403,
+        "sandbox_eligible": 403,
+        "eligible_with_price": 403,
+        "eligible_with_price_and_operating_fields": 403,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "南京": {
+      "attraction": {
+        "source_rows": 645,
+        "exact_poi": 323,
+        "aliases": 322,
+        "unresolved_poi": 0,
+        "discoverable": 323,
+        "sandbox_eligible": 323,
+        "eligible_with_price": 323,
+        "eligible_with_price_and_operating_fields": 323,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 935,
+        "exact_poi": 468,
+        "aliases": 467,
+        "unresolved_poi": 0,
+        "discoverable": 468,
+        "sandbox_eligible": 468,
+        "eligible_with_price": 468,
+        "eligible_with_price_and_operating_fields": 468,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 745,
+        "exact_poi": 373,
+        "aliases": 372,
+        "unresolved_poi": 0,
+        "discoverable": 373,
+        "sandbox_eligible": 373,
+        "eligible_with_price": 373,
+        "eligible_with_price_and_operating_fields": 373,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "苏州": {
+      "attraction": {
+        "source_rows": 718,
+        "exact_poi": 359,
+        "aliases": 359,
+        "unresolved_poi": 0,
+        "discoverable": 359,
+        "sandbox_eligible": 359,
+        "eligible_with_price": 359,
+        "eligible_with_price_and_operating_fields": 359,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 938,
+        "exact_poi": 469,
+        "aliases": 469,
+        "unresolved_poi": 0,
+        "discoverable": 469,
+        "sandbox_eligible": 469,
+        "eligible_with_price": 469,
+        "eligible_with_price_and_operating_fields": 469,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 586,
+        "exact_poi": 293,
+        "aliases": 293,
+        "unresolved_poi": 0,
+        "discoverable": 293,
+        "sandbox_eligible": 293,
+        "eligible_with_price": 293,
+        "eligible_with_price_and_operating_fields": 293,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "杭州": {
+      "attraction": {
+        "source_rows": 754,
+        "exact_poi": 377,
+        "aliases": 377,
+        "unresolved_poi": 0,
+        "discoverable": 377,
+        "sandbox_eligible": 377,
+        "eligible_with_price": 377,
+        "eligible_with_price_and_operating_fields": 377,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 914,
+        "exact_poi": 458,
+        "aliases": 456,
+        "unresolved_poi": 0,
+        "discoverable": 458,
+        "sandbox_eligible": 458,
+        "eligible_with_price": 458,
+        "eligible_with_price_and_operating_fields": 458,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 755,
+        "exact_poi": 378,
+        "aliases": 377,
+        "unresolved_poi": 0,
+        "discoverable": 378,
+        "sandbox_eligible": 378,
+        "eligible_with_price": 378,
+        "eligible_with_price_and_operating_fields": 378,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "深圳": {
+      "attraction": {
+        "source_rows": 610,
+        "exact_poi": 306,
+        "aliases": 304,
+        "unresolved_poi": 0,
+        "discoverable": 306,
+        "sandbox_eligible": 306,
+        "eligible_with_price": 306,
+        "eligible_with_price_and_operating_fields": 306,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 952,
+        "exact_poi": 478,
+        "aliases": 474,
+        "unresolved_poi": 0,
+        "discoverable": 478,
+        "sandbox_eligible": 478,
+        "eligible_with_price": 478,
+        "eligible_with_price_and_operating_fields": 478,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 803,
+        "exact_poi": 402,
+        "aliases": 395,
+        "unresolved_poi": 6,
+        "discoverable": 402,
+        "sandbox_eligible": 402,
+        "eligible_with_price": 402,
+        "eligible_with_price_and_operating_fields": 402,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "成都": {
+      "attraction": {
+        "source_rows": 665,
+        "exact_poi": 333,
+        "aliases": 332,
+        "unresolved_poi": 0,
+        "discoverable": 333,
+        "sandbox_eligible": 333,
+        "eligible_with_price": 333,
+        "eligible_with_price_and_operating_fields": 333,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 934,
+        "exact_poi": 467,
+        "aliases": 467,
+        "unresolved_poi": 0,
+        "discoverable": 467,
+        "sandbox_eligible": 467,
+        "eligible_with_price": 467,
+        "eligible_with_price_and_operating_fields": 467,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 757,
+        "exact_poi": 379,
+        "aliases": 378,
+        "unresolved_poi": 0,
+        "discoverable": 379,
+        "sandbox_eligible": 379,
+        "eligible_with_price": 379,
+        "eligible_with_price_and_operating_fields": 379,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "武汉": {
+      "attraction": {
+        "source_rows": 667,
+        "exact_poi": 334,
+        "aliases": 333,
+        "unresolved_poi": 0,
+        "discoverable": 334,
+        "sandbox_eligible": 334,
+        "eligible_with_price": 334,
+        "eligible_with_price_and_operating_fields": 334,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 913,
+        "exact_poi": 457,
+        "aliases": 456,
+        "unresolved_poi": 0,
+        "discoverable": 457,
+        "sandbox_eligible": 457,
+        "eligible_with_price": 457,
+        "eligible_with_price_and_operating_fields": 457,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 736,
+        "exact_poi": 368,
+        "aliases": 368,
+        "unresolved_poi": 0,
+        "discoverable": 368,
+        "sandbox_eligible": 368,
+        "eligible_with_price": 368,
+        "eligible_with_price_and_operating_fields": 368,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "广州": {
+      "attraction": {
+        "source_rows": 676,
+        "exact_poi": 339,
+        "aliases": 337,
+        "unresolved_poi": 0,
+        "discoverable": 339,
+        "sandbox_eligible": 339,
+        "eligible_with_price": 339,
+        "eligible_with_price_and_operating_fields": 339,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 932,
+        "exact_poi": 467,
+        "aliases": 465,
+        "unresolved_poi": 0,
+        "discoverable": 467,
+        "sandbox_eligible": 467,
+        "eligible_with_price": 467,
+        "eligible_with_price_and_operating_fields": 467,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 799,
+        "exact_poi": 400,
+        "aliases": 399,
+        "unresolved_poi": 0,
+        "discoverable": 400,
+        "sandbox_eligible": 400,
+        "eligible_with_price": 400,
+        "eligible_with_price_and_operating_fields": 400,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "重庆": {
+      "attraction": {
+        "source_rows": 694,
+        "exact_poi": 347,
+        "aliases": 347,
+        "unresolved_poi": 0,
+        "discoverable": 347,
+        "sandbox_eligible": 347,
+        "eligible_with_price": 347,
+        "eligible_with_price_and_operating_fields": 347,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 873,
+        "exact_poi": 437,
+        "aliases": 435,
+        "unresolved_poi": 1,
+        "discoverable": 436,
+        "sandbox_eligible": 436,
+        "eligible_with_price": 436,
+        "eligible_with_price_and_operating_fields": 436,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 744,
+        "exact_poi": 373,
+        "aliases": 371,
+        "unresolved_poi": 0,
+        "discoverable": 373,
+        "sandbox_eligible": 373,
+        "eligible_with_price": 373,
+        "eligible_with_price_and_operating_fields": 373,
+        "source_price_missing_or_placeholder": 0,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "西安": {
+      "attraction": {
+        "source_rows": 591,
+        "exact_poi": 591,
+        "aliases": 0,
+        "unresolved_poi": 0,
+        "discoverable": 591,
+        "sandbox_eligible": 198,
+        "eligible_with_price": 194,
+        "eligible_with_price_and_operating_fields": 194,
+        "source_price_missing_or_placeholder": 569,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 487,
+        "exact_poi": 487,
+        "aliases": 0,
+        "unresolved_poi": 0,
+        "discoverable": 487,
+        "sandbox_eligible": 487,
+        "eligible_with_price": 469,
+        "eligible_with_price_and_operating_fields": 469,
+        "source_price_missing_or_placeholder": 18,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 706,
+        "exact_poi": 706,
+        "aliases": 0,
+        "unresolved_poi": 0,
+        "discoverable": 706,
+        "sandbox_eligible": 706,
+        "eligible_with_price": 573,
+        "eligible_with_price_and_operating_fields": 573,
+        "source_price_missing_or_placeholder": 352,
+        "source_beds_or_hours_missing": 0,
+        "eligible_hotel_price_below_10": 0
+      }
+    },
+    "厦门": {
+      "attraction": {
+        "source_rows": 767,
+        "exact_poi": 747,
+        "aliases": 0,
+        "unresolved_poi": 20,
+        "discoverable": 752,
+        "sandbox_eligible": 124,
+        "eligible_with_price": 116,
+        "eligible_with_price_and_operating_fields": 116,
+        "source_price_missing_or_placeholder": 747,
+        "source_beds_or_hours_missing": 327,
+        "eligible_hotel_price_below_10": null
+      },
+      "restaurant": {
+        "source_rows": 2152,
+        "exact_poi": 2040,
+        "aliases": 0,
+        "unresolved_poi": 112,
+        "discoverable": 2040,
+        "sandbox_eligible": 1610,
+        "eligible_with_price": 1567,
+        "eligible_with_price_and_operating_fields": 1567,
+        "source_price_missing_or_placeholder": 225,
+        "source_beds_or_hours_missing": 513,
+        "eligible_hotel_price_below_10": null
+      },
+      "accommodation": {
+        "source_rows": 1202,
+        "exact_poi": 1184,
+        "aliases": 0,
+        "unresolved_poi": 18,
+        "discoverable": 1198,
+        "sandbox_eligible": 1183,
+        "eligible_with_price": 296,
+        "eligible_with_price_and_operating_fields": 296,
+        "source_price_missing_or_placeholder": 893,
+        "source_beds_or_hours_missing": 892,
+        "eligible_hotel_price_below_10": 0
+      }
+    }
+  },
+  "transport_cases": [
+    {
+      "id": "xi-ct-e01",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "成都",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 1,
+      "people": 1,
+      "budget": 1100,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 601,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 601,
+        "outbound": {
+          "mode": "train",
+          "service": "G322",
+          "from": "成都东",
+          "to": "西安北",
+          "start": 416,
+          "arrives": 605,
+          "price": 285
+        },
+        "return": {
+          "mode": "train",
+          "service": "G1517",
+          "from": "西安北",
+          "to": "成都东",
+          "start": 611,
+          "arrives": 860,
+          "price": 316,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 6
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-e02",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "上海",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 3,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 2791.5,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 930.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G3292",
+          "from": "上海虹桥",
+          "to": "西安北",
+          "start": 504,
+          "arrives": 992,
+          "price": 750
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "上海",
+          "start": 1027,
+          "arrives": 2292,
+          "price": 180.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 35
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-e03",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "南京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 4,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 3010.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 752.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G94",
+          "from": "南京南",
+          "to": "西安北",
+          "start": 596,
+          "arrives": 874,
+          "price": 600
+        },
+        "return": {
+          "mode": "train",
+          "service": "K558",
+          "from": "西安",
+          "to": "南京",
+          "start": 1027,
+          "arrives": 1968,
+          "price": 152.5,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 153
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-e04",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "广州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 868,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 665
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-e05",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "武汉",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 1,
+      "people": 1,
+      "budget": 1600,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 588.5,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 588.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K4286",
+          "from": "武昌",
+          "to": "西安",
+          "start": 34,
+          "arrives": 931,
+          "price": 135.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "G3926",
+          "from": "西安东",
+          "to": "汉口",
+          "start": 1001,
+          "arrives": 1177,
+          "price": 453,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 70
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-e06",
+      "destination": "西安",
+      "difficulty": "e",
+      "origin": "北京",
+      "allowed_modes": [
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1360.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ8829",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "北京大兴",
+          "to": "咸阳 T5",
+          "from_code": "PKX",
+          "to_code": "XIY",
+          "departure": "2026-11-20T08:30",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 130,
+          "fare_cny": 360.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1360.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3555
+      }
+    },
+    {
+      "id": "xi-ct-h01",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "上海",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 722.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-h02",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "北京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 5,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1485.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 297.0,
+        "outbound": {
+          "mode": "train",
+          "service": "T55",
+          "from": "北京丰台",
+          "to": "西安",
+          "start": 942,
+          "arrives": 1739,
+          "price": 148.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z180",
+          "from": "西安",
+          "to": "北京西",
+          "start": 27,
+          "arrives": 813,
+          "price": 148.5,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 2608
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-h03",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "南京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 3,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 915.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1669
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-h04",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "广州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 3,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1302,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 434,
+        "outbound": {
+          "mode": "train",
+          "service": "Z230",
+          "from": "广州北",
+          "to": "西安",
+          "start": 670,
+          "arrives": 1976,
+          "price": 217
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2105
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-h05",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "深圳",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 2569.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1284.5,
+        "outbound": {
+          "mode": "train",
+          "service": "G846",
+          "from": "深圳北",
+          "to": "西安北",
+          "start": 560,
+          "arrives": 1167,
+          "price": 1048.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "深圳东",
+          "start": 1201,
+          "arrives": 2599,
+          "price": 236,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 34
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-h06",
+      "destination": "西安",
+      "difficulty": "h",
+      "origin": "苏州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 694.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "苏州",
+          "to": "西安",
+          "start": 604,
+          "arrives": 1727,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "苏州",
+          "start": 516,
+          "arrives": 1688,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-m01",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "上海",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": 6000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 722.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 361.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "上海",
+          "to": "西安",
+          "start": 537,
+          "arrives": 1727,
+          "price": 180.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "上海",
+          "start": 516,
+          "arrives": 1773,
+          "price": 180.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-m02",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "南京",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 3,
+      "people": 3,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 915.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 305.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K2186",
+          "from": "南京",
+          "to": "西安",
+          "start": 767,
+          "arrives": 1727,
+          "price": 152.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "K2188",
+          "from": "西安",
+          "to": "南京",
+          "start": 516,
+          "arrives": 1537,
+          "price": 152.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 229
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-m03",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "广州",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 4,
+      "budget": 5600,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 4764,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1191,
+        "outbound": {
+          "mode": "train",
+          "service": "G842",
+          "from": "广州南站",
+          "to": "西安北",
+          "start": 531,
+          "arrives": 1105,
+          "price": 974
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z232",
+          "from": "西安",
+          "to": "广州北",
+          "start": 1201,
+          "arrives": 2499,
+          "price": 217,
+          "departure_day": 1
+        },
+        "destination_window_minutes": 96
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-m04",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "杭州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": 1500,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 694.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 347.0,
+        "outbound": {
+          "mode": "train",
+          "service": "K308",
+          "from": "杭州",
+          "to": "西安",
+          "start": 147,
+          "arrives": 1344,
+          "price": 173.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z596",
+          "from": "西安",
+          "to": "杭州",
+          "start": 93,
+          "arrives": 1219,
+          "price": 173.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 189
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xi-ct-m05",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "北京",
+      "allowed_modes": [
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1360.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ8829",
+          "origin": "北京",
+          "destination": "西安",
+          "from": "北京大兴",
+          "to": "咸阳 T5",
+          "from_code": "PKX",
+          "to_code": "XIY",
+          "departure": "2026-11-20T08:30",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 130,
+          "fare_cny": 360.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-SIA?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "c189cfb20e573a74b7a6f8278add9e659398b6ab05372b684f4a7e0b4509d743"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "NS8032",
+          "origin": "西安",
+          "destination": "北京",
+          "from": "咸阳 T5",
+          "to": "北京大兴",
+          "from_code": "XIY",
+          "to_code": "PKX",
+          "departure": "2026-11-22T21:55",
+          "arrival": "2026-11-22T23:40",
+          "minutes": 105,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/SIA-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:41+00:00",
+            "sha256": "ccb55097a02fa992badb3cea2c45e3eddb29abc20dee19421283a5aaf56b0922"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1360.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3555
+      }
+    },
+    {
+      "id": "xi-ct-m06",
+      "destination": "西安",
+      "difficulty": "m",
+      "origin": "成都",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": 4200,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 523.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 261.5,
+        "outbound": {
+          "mode": "train",
+          "service": "K386",
+          "from": "成都龙泉驿",
+          "to": "西安东",
+          "start": 789,
+          "arrives": 1444,
+          "price": 133
+        },
+        "return": {
+          "mode": "train",
+          "service": "Z315",
+          "from": "西安东",
+          "to": "成都西",
+          "start": 350,
+          "arrives": 1234,
+          "price": 128.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 346
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-e01",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "成都",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 1,
+      "people": 1,
+      "budget": 1100,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1930.0,
+      "within_intercity_budget": false,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MU9805",
+          "origin": "成都",
+          "destination": "厦门",
+          "from": "天府 T2",
+          "to": "高崎 T4",
+          "from_code": "TFU",
+          "to_code": "XMN",
+          "departure": "2026-11-20T08:15",
+          "arrival": "2026-11-20T10:50",
+          "minutes": 155,
+          "fare_cny": 1030.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/CTU-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "051d055605b58d6aeabbb4de65aff8413e262966864c6a9e9afc51aafebe7cb2"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "MF8441",
+          "origin": "厦门",
+          "destination": "成都",
+          "from": "高崎 T3",
+          "to": "天府 T2",
+          "from_code": "XMN",
+          "to_code": "TFU",
+          "departure": "2026-11-20T16:20",
+          "arrival": "2026-11-20T19:20",
+          "minutes": 180,
+          "fare_cny": 900.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-CTU?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "7895347210489ea3f9a5a74d67744984138a19e7eef93a8d404f844010e9a8f6"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 1930.0,
+        "passes_displayed_fare_cutoff": false,
+        "destination_window_minutes": 330
+      }
+    },
+    {
+      "id": "xm-ct-e02",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "上海",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 3,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 2745,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1179
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-e03",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "南京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 4,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 4288,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1034
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-e04",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "广州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 408,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 514
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-e05",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "武汉",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 1,
+      "people": 1,
+      "budget": 1600,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 701.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "CZ3841",
+          "origin": "武汉",
+          "destination": "厦门",
+          "from": "天河 T3",
+          "to": "高崎 T3",
+          "from_code": "WUH",
+          "to_code": "XMN",
+          "departure": "2026-11-20T08:05",
+          "arrival": "2026-11-20T10:05",
+          "minutes": 120,
+          "fare_cny": 320.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/WUH-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "03c6cb8dbd701fb6f86b6aab7138049167481682df07d8e7b24035e4fc9269cd"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3278",
+          "origin": "厦门",
+          "destination": "武汉",
+          "from": "厦门北",
+          "to": "武汉",
+          "departure": "2026-11-20T14:47",
+          "arrival": "2026-11-20T22:07",
+          "minutes": 440,
+          "fare_cny": 381,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "limited",
+          "stock_text": "6张",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/xiamen-to-wuhan/2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:40+00:00",
+            "sha256": "8a1f2ab8935203c24acd37502a9c64002388dece6310cf5f2eb91a57a8943e3c"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 701.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 282
+      }
+    },
+    {
+      "id": "xm-ct-e06",
+      "destination": "厦门",
+      "difficulty": "e",
+      "origin": "北京",
+      "allowed_modes": [
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 4180.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "HU7492",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T4",
+          "to": "首都 T2",
+          "from_code": "XMN",
+          "to_code": "PEK",
+          "departure": "2026-11-22T20:40",
+          "arrival": "2026-11-22T23:45",
+          "minutes": 185,
+          "fare_cny": 1080.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4180.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3480
+      }
+    },
+    {
+      "id": "xm-ct-h01",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "上海",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1830,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-h02",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "北京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 5,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 2430,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 486,
+        "outbound": {
+          "mode": "train",
+          "service": "K571",
+          "from": "北京丰台站",
+          "to": "厦门北站",
+          "start": 994,
+          "arrives": 2758,
+          "price": 243
+        },
+        "return": {
+          "mode": "train",
+          "service": "K572",
+          "from": "厦门北站",
+          "to": "北京丰台站",
+          "start": 517,
+          "arrives": 2318,
+          "price": 243,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 639
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-h03",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "南京",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 3,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 3216,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 4
+        },
+        "destination_window_minutes": 3914
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-h04",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "广州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 4,
+      "people": 3,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 612,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 204,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "K230",
+          "from": "厦门北站",
+          "to": "广州白云站",
+          "start": 1046,
+          "arrives": 1767,
+          "price": 102,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 1954
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-h05",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "深圳",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 912,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 456,
+        "outbound": {
+          "mode": "train",
+          "service": "D3126",
+          "from": "深圳北站",
+          "to": "厦门北站",
+          "start": 406,
+          "arrives": 623,
+          "price": 228
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3333",
+          "from": "厦门北站",
+          "to": "深圳北站",
+          "start": 505,
+          "arrives": 699,
+          "price": 228,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1322
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-h06",
+      "destination": "厦门",
+      "difficulty": "h",
+      "origin": "苏州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": null,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 2008,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1004,
+        "outbound": {
+          "mode": "train",
+          "service": "D3205",
+          "from": "苏州南站",
+          "to": "厦门北站",
+          "start": 633,
+          "arrives": 1044,
+          "price": 502
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3206",
+          "from": "厦门北站",
+          "to": "苏州南站",
+          "start": 772,
+          "arrives": 1190,
+          "price": 502,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2608
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-m01",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "上海",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": 6000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1830,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 915,
+        "outbound": {
+          "mode": "train",
+          "service": "D3107",
+          "from": "上海南站",
+          "to": "厦门北站",
+          "start": 590,
+          "arrives": 1070,
+          "price": 464
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3202",
+          "from": "厦门北站",
+          "to": "上海松江站",
+          "start": 809,
+          "arrives": 1268,
+          "price": 451,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2619
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-m02",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "南京",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 3,
+      "people": 3,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 3216,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 1072,
+        "outbound": {
+          "mode": "train",
+          "service": "D3295",
+          "from": "南京南站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 995,
+          "price": 536
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3296",
+          "from": "厦门北站",
+          "to": "南京南站",
+          "start": 589,
+          "arrives": 1098,
+          "price": 536,
+          "departure_day": 3
+        },
+        "destination_window_minutes": 2474
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-m03",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "广州",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 4,
+      "budget": 5600,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1576,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 394,
+        "outbound": {
+          "mode": "train",
+          "service": "K229",
+          "from": "广州站",
+          "to": "厦门北站",
+          "start": 1212,
+          "arrives": 1972,
+          "price": 102
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3249",
+          "from": "厦门北站",
+          "to": "广州新塘站",
+          "start": 698,
+          "arrives": 947,
+          "price": 292,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 166
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-m04",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "杭州",
+      "allowed_modes": [
+        "train",
+        "airplane"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": 1500,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 1422.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 711.0,
+        "outbound": {
+          "mode": "train",
+          "service": "D3211",
+          "from": "杭州东站",
+          "to": "厦门北站",
+          "start": 423,
+          "arrives": 779,
+          "price": 355.5
+        },
+        "return": {
+          "mode": "train",
+          "service": "D3212",
+          "from": "厦门北站",
+          "to": "杭州东站",
+          "start": 1026,
+          "arrives": 1372,
+          "price": 355.5,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 1687
+      },
+      "dated_observations_roundtrip": null
+    },
+    {
+      "id": "xm-ct-m05",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "北京",
+      "allowed_modes": [
+        "airplane"
+      ],
+      "days": 3,
+      "people": 2,
+      "budget": 8000,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 4180.0,
+      "within_intercity_budget": true,
+      "historic_roundtrip": null,
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "airplane",
+          "service": "MF8104",
+          "origin": "北京",
+          "destination": "厦门",
+          "from": "北京大兴",
+          "to": "高崎 T3",
+          "from_code": "PKX",
+          "to_code": "XMN",
+          "departure": "2026-11-20T07:45",
+          "arrival": "2026-11-20T10:40",
+          "minutes": 175,
+          "fare_cny": 1010.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/BJS-XMN?date=2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "0c44cb716f5c5150e93ef6a7663cb7ac3b5fde32426513b40cd1317a8891aa44"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "airplane",
+          "service": "HU7492",
+          "origin": "厦门",
+          "destination": "北京",
+          "from": "高崎 T4",
+          "to": "首都 T2",
+          "from_code": "XMN",
+          "to_code": "PEK",
+          "departure": "2026-11-22T20:40",
+          "arrival": "2026-11-22T23:45",
+          "minutes": 185,
+          "fare_cny": 1080.0,
+          "seat": "经济舱",
+          "availability": "unknown",
+          "fees": "not_shown_in_public_card",
+          "source": {
+            "url": "https://m.ly.com/travel/flight/XMN-BJS?date=2026-11-22",
+            "observed_at_utc": "2026-11-19T13:20:42+00:00",
+            "sha256": "cc0c7e9a30cdca7226f201e045589adf2d364b3144e4467aec4bc21dee75f8fa"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4180.0,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 3480
+      }
+    },
+    {
+      "id": "xm-ct-m06",
+      "destination": "厦门",
+      "difficulty": "m",
+      "origin": "成都",
+      "allowed_modes": [
+        "train"
+      ],
+      "days": 2,
+      "people": 2,
+      "budget": 4200,
+      "priced_roundtrip_found": true,
+      "minimum_reference_fare": 4104,
+      "within_intercity_budget": true,
+      "historic_roundtrip": {
+        "fare_per_person": 2190,
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "from": "成都东站",
+          "to": "厦门北站",
+          "start": 469,
+          "arrives": 1335,
+          "price": 1095
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "from": "厦门北站",
+          "to": "成都东站",
+          "start": 476,
+          "arrives": 1313,
+          "price": 1095,
+          "departure_day": 2
+        },
+        "destination_window_minutes": 581
+      },
+      "dated_observations_roundtrip": {
+        "outbound": {
+          "mode": "train",
+          "service": "G2277",
+          "origin": "成都",
+          "destination": "厦门",
+          "from": "成都东",
+          "to": "厦门北",
+          "departure": "2026-11-20T07:49",
+          "arrival": "2026-11-20T22:15",
+          "minutes": 866,
+          "fare_cny": 1026,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "limited",
+          "stock_text": "5张",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/chengdu-to-xiamen/2026-11-20",
+            "observed_at_utc": "2026-11-19T13:20:38+00:00",
+            "sha256": "ee149efd6995ba7686ae732fcc5e7a76037a7df2442768badb524acbb6a27cb9"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "return": {
+          "mode": "train",
+          "service": "G2278",
+          "origin": "厦门",
+          "destination": "成都",
+          "from": "厦门北",
+          "to": "成都东",
+          "departure": "2026-11-21T07:56",
+          "arrival": "2026-11-21T21:53",
+          "minutes": 837,
+          "fare_cny": 1026,
+          "seat": "二等座",
+          "fees": "not_inferred",
+          "availability": "in_stock",
+          "stock_text": "有票",
+          "source": {
+            "url": "https://train.qunar.com/train/tickets/xiamen-to-chengdu/2026-11-21",
+            "observed_at_utc": "2026-11-19T13:20:39+00:00",
+            "sha256": "d9297e8f292a963015da997771a2288d752484a8df6d0cf0e1f0f4d14297e8c1"
+          },
+          "status": "date_scoped_display_observation",
+          "strict_budget_eligible": false
+        },
+        "party_displayed_fare": 4104,
+        "passes_displayed_fare_cutoff": true,
+        "destination_window_minutes": 581
+      }
+    }
+  ],
+  "database": {
+    "backend": "openGauss",
+    "active_release": "workbench-8795-reference-2.2",
+    "active_snapshots": [
+      "5e0ee8a",
+      "6de12f4",
+      "trial-5e2d7c000735607f6ada8c42"
+    ],
+    "snapshot_file_counts": {
+      "6de12f4": 719,
+      "xmn-flight-20261124-c73acb03bf": 12,
+      "trial-5e2d7c000735607f6ada8c42": 1
+    },
+    "lookup_counts": {
+      "catalog": [
+        {
+          "city": "厦门",
+          "kind": "attraction",
+          "rows": 5
+        },
+        {
+          "city": "厦门",
+          "kind": "flight_observation",
+          "rows": 79
+        },
+        {
+          "city": "厦门",
+          "kind": "metro",
+          "rows": 102
+        },
+        {
+          "city": "厦门",
+          "kind": "poi",
+          "rows": 1721
+        },
+        {
+          "city": "厦门",
+          "kind": "restaurant",
+          "rows": 1567
+        },
+        {
+          "city": "厦门",
+          "kind": "train",
+          "rows": 371
+        },
+        {
+          "city": "厦门",
+          "kind": "train_observation",
+          "rows": 82
+        },
+        {
+          "city": "西安",
+          "kind": "accommodation",
+          "rows": 248
+        },
+        {
+          "city": "西安",
+          "kind": "attraction",
+          "rows": 20
+        },
+        {
+          "city": "西安",
+          "kind": "flight",
+          "rows": 9
+        },
+        {
+          "city": "西安",
+          "kind": "flight_observation",
+          "rows": 56
+        },
+        {
+          "city": "西安",
+          "kind": "metro",
+          "rows": 474
+        },
+        {
+          "city": "西安",
+          "kind": "poi",
+          "rows": 3506
+        },
+        {
+          "city": "西安",
+          "kind": "restaurant",
+          "rows": 450
+        },
+        {
+          "city": "西安",
+          "kind": "train",
+          "rows": 526
+        }
+      ],
+      "reference": [
+        {
+          "city": "厦门",
+          "kind": "accommodation",
+          "rows": 311
+        },
+        {
+          "city": "厦门",
+          "kind": "attraction",
+          "rows": 731
+        },
+        {
+          "city": "西安",
+          "kind": "attraction",
+          "rows": 565
+        }
+      ],
+      "quarantine": [
+        {
+          "city": "厦门",
+          "kind": "accommodation",
+          "rows": 1202
+        },
+        {
+          "city": "厦门",
+          "kind": "attraction",
+          "rows": 762
+        },
+        {
+          "city": "厦门",
+          "kind": "flight",
+          "rows": 1
+        },
+        {
+          "city": "厦门",
+          "kind": "poi",
+          "rows": 2399
+        },
+        {
+          "city": "厦门",
+          "kind": "restaurant",
+          "rows": 585
+        },
+        {
+          "city": "厦门",
+          "kind": "train",
+          "rows": 5
+        },
+        {
+          "city": "西安",
+          "kind": "accommodation",
+          "rows": 458
+        },
+        {
+          "city": "西安",
+          "kind": "attraction",
+          "rows": 571
+        },
+        {
+          "city": "西安",
+          "kind": "flight",
+          "rows": 301
+        },
+        {
+          "city": "西安",
+          "kind": "metro",
+          "rows": 71
+        },
+        {
+          "city": "西安",
+          "kind": "poi",
+          "rows": 1066
+        },
+        {
+          "city": "西安",
+          "kind": "restaurant",
+          "rows": 37
+        },
+        {
+          "city": "西安",
+          "kind": "train",
+          "rows": 99
+        }
+      ]
+    },
+    "quarantine_reasons": {
+      "numbed": 892,
+      "price": 2901,
+      "verified_bed_count": 303,
+      "verified_price_unit": 309,
+      "lat": 146,
+      "lon": 146,
+      "poi_name_link": 150,
+      "source_grade_L4": 870,
+      "verified_position": 178,
+      "valid_position": 32,
+      "endtime": 839,
+      "opentime": 832,
+      "recommendmaxtime": 1330,
+      "recommendmintime": 1329,
+      "linked_place_quarantined": 3465,
+      "metro_line": 71,
+      "fare_cny": 404,
+      "Duration": 36,
+      "EndTime": 21,
+      "origin_destination": 130,
+      "BeginTime": 15
+    },
+    "supplemental_xiamen_flights": {
+      "snapshot": "xmn-flight-20261124-c73acb03bf",
+      "record_count": 432,
+      "active": false
+    }
+  }
+}

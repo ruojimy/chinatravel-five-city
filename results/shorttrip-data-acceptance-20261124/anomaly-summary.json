@@ -1,0 +1,758 @@
+{
+  "frozen_source_snapshot": "6de12f4",
+  "source_rows_scanned": 37637,
+  "source_rows_by_kind": {
+    "attraction": 8176,
+    "hotel": 9440,
+    "restaurant": 11924,
+    "flight": 1751,
+    "train": 6346
+  },
+  "rule_hits": {
+    "large_attraction_price": 30,
+    "inverted_or_invalid_visit_duration": 665,
+    "far_from_city_cluster": 146,
+    "landmark_zero_ticket": 1,
+    "negative_price": 939,
+    "restaurant_price_review": 372,
+    "coordinate_outside_china": 2,
+    "nominal_hotel_price": 1,
+    "duration_differs_from_clocks": 3000,
+    "missing_or_invalid_schedule_time": 39,
+    "active_nominal_hotel_price": 1
+  },
+  "historical_runtime_train_scan": {
+    "scope": "undated principal planner train select, V20, historical fares enabled",
+    "clock_duration_mismatches_over_one_minute": 2988,
+    "clock_duration_mismatches_over_15_minutes": 162,
+    "directions_tested": 132,
+    "query_errors": [],
+    "directions_with_no_selectable_rows": 24,
+    "by_direction": [
+      {
+        "from": "上海",
+        "to": "北京",
+        "selectable": 48
+      },
+      {
+        "from": "上海",
+        "to": "南京",
+        "selectable": 379
+      },
+      {
+        "from": "上海",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "上海",
+        "to": "广州",
+        "selectable": 8
+      },
+      {
+        "from": "上海",
+        "to": "成都",
+        "selectable": 27
+      },
+      {
+        "from": "上海",
+        "to": "杭州",
+        "selectable": 228
+      },
+      {
+        "from": "上海",
+        "to": "武汉",
+        "selectable": 25
+      },
+      {
+        "from": "上海",
+        "to": "深圳",
+        "selectable": 21
+      },
+      {
+        "from": "上海",
+        "to": "苏州",
+        "selectable": 315
+      },
+      {
+        "from": "上海",
+        "to": "西安",
+        "selectable": 2
+      },
+      {
+        "from": "上海",
+        "to": "重庆",
+        "selectable": 30
+      },
+      {
+        "from": "北京",
+        "to": "上海",
+        "selectable": 50
+      },
+      {
+        "from": "北京",
+        "to": "南京",
+        "selectable": 71
+      },
+      {
+        "from": "北京",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "北京",
+        "to": "广州",
+        "selectable": 16
+      },
+      {
+        "from": "北京",
+        "to": "成都",
+        "selectable": 11
+      },
+      {
+        "from": "北京",
+        "to": "杭州",
+        "selectable": 27
+      },
+      {
+        "from": "北京",
+        "to": "武汉",
+        "selectable": 31
+      },
+      {
+        "from": "北京",
+        "to": "深圳",
+        "selectable": 11
+      },
+      {
+        "from": "北京",
+        "to": "苏州",
+        "selectable": 23
+      },
+      {
+        "from": "北京",
+        "to": "西安",
+        "selectable": 1
+      },
+      {
+        "from": "北京",
+        "to": "重庆",
+        "selectable": 11
+      },
+      {
+        "from": "南京",
+        "to": "上海",
+        "selectable": 397
+      },
+      {
+        "from": "南京",
+        "to": "北京",
+        "selectable": 71
+      },
+      {
+        "from": "南京",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "南京",
+        "to": "广州",
+        "selectable": 4
+      },
+      {
+        "from": "南京",
+        "to": "成都",
+        "selectable": 25
+      },
+      {
+        "from": "南京",
+        "to": "杭州",
+        "selectable": 189
+      },
+      {
+        "from": "南京",
+        "to": "武汉",
+        "selectable": 41
+      },
+      {
+        "from": "南京",
+        "to": "深圳",
+        "selectable": 13
+      },
+      {
+        "from": "南京",
+        "to": "苏州",
+        "selectable": 317
+      },
+      {
+        "from": "南京",
+        "to": "西安",
+        "selectable": 2
+      },
+      {
+        "from": "南京",
+        "to": "重庆",
+        "selectable": 31
+      },
+      {
+        "from": "厦门",
+        "to": "上海",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "北京",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "南京",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "广州",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "成都",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "杭州",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "武汉",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "深圳",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "苏州",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "西安",
+        "selectable": 0
+      },
+      {
+        "from": "厦门",
+        "to": "重庆",
+        "selectable": 0
+      },
+      {
+        "from": "广州",
+        "to": "上海",
+        "selectable": 8
+      },
+      {
+        "from": "广州",
+        "to": "北京",
+        "selectable": 16
+      },
+      {
+        "from": "广州",
+        "to": "南京",
+        "selectable": 4
+      },
+      {
+        "from": "广州",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "广州",
+        "to": "成都",
+        "selectable": 18
+      },
+      {
+        "from": "广州",
+        "to": "杭州",
+        "selectable": 16
+      },
+      {
+        "from": "广州",
+        "to": "武汉",
+        "selectable": 74
+      },
+      {
+        "from": "广州",
+        "to": "深圳",
+        "selectable": 297
+      },
+      {
+        "from": "广州",
+        "to": "苏州",
+        "selectable": 0
+      },
+      {
+        "from": "广州",
+        "to": "西安",
+        "selectable": 2
+      },
+      {
+        "from": "广州",
+        "to": "重庆",
+        "selectable": 28
+      },
+      {
+        "from": "成都",
+        "to": "上海",
+        "selectable": 18
+      },
+      {
+        "from": "成都",
+        "to": "北京",
+        "selectable": 11
+      },
+      {
+        "from": "成都",
+        "to": "南京",
+        "selectable": 16
+      },
+      {
+        "from": "成都",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "成都",
+        "to": "广州",
+        "selectable": 17
+      },
+      {
+        "from": "成都",
+        "to": "杭州",
+        "selectable": 8
+      },
+      {
+        "from": "成都",
+        "to": "武汉",
+        "selectable": 3
+      },
+      {
+        "from": "成都",
+        "to": "深圳",
+        "selectable": 3
+      },
+      {
+        "from": "成都",
+        "to": "苏州",
+        "selectable": 9
+      },
+      {
+        "from": "成都",
+        "to": "西安",
+        "selectable": 1
+      },
+      {
+        "from": "成都",
+        "to": "重庆",
+        "selectable": 97
+      },
+      {
+        "from": "杭州",
+        "to": "上海",
+        "selectable": 215
+      },
+      {
+        "from": "杭州",
+        "to": "北京",
+        "selectable": 28
+      },
+      {
+        "from": "杭州",
+        "to": "南京",
+        "selectable": 173
+      },
+      {
+        "from": "杭州",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "杭州",
+        "to": "广州",
+        "selectable": 15
+      },
+      {
+        "from": "杭州",
+        "to": "成都",
+        "selectable": 10
+      },
+      {
+        "from": "杭州",
+        "to": "武汉",
+        "selectable": 21
+      },
+      {
+        "from": "杭州",
+        "to": "深圳",
+        "selectable": 25
+      },
+      {
+        "from": "杭州",
+        "to": "苏州",
+        "selectable": 59
+      },
+      {
+        "from": "杭州",
+        "to": "西安",
+        "selectable": 1
+      },
+      {
+        "from": "杭州",
+        "to": "重庆",
+        "selectable": 18
+      },
+      {
+        "from": "武汉",
+        "to": "上海",
+        "selectable": 23
+      },
+      {
+        "from": "武汉",
+        "to": "北京",
+        "selectable": 31
+      },
+      {
+        "from": "武汉",
+        "to": "南京",
+        "selectable": 34
+      },
+      {
+        "from": "武汉",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "武汉",
+        "to": "广州",
+        "selectable": 72
+      },
+      {
+        "from": "武汉",
+        "to": "成都",
+        "selectable": 4
+      },
+      {
+        "from": "武汉",
+        "to": "杭州",
+        "selectable": 16
+      },
+      {
+        "from": "武汉",
+        "to": "深圳",
+        "selectable": 39
+      },
+      {
+        "from": "武汉",
+        "to": "苏州",
+        "selectable": 13
+      },
+      {
+        "from": "武汉",
+        "to": "西安",
+        "selectable": 1
+      },
+      {
+        "from": "武汉",
+        "to": "重庆",
+        "selectable": 12
+      },
+      {
+        "from": "深圳",
+        "to": "上海",
+        "selectable": 21
+      },
+      {
+        "from": "深圳",
+        "to": "北京",
+        "selectable": 9
+      },
+      {
+        "from": "深圳",
+        "to": "南京",
+        "selectable": 12
+      },
+      {
+        "from": "深圳",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "深圳",
+        "to": "广州",
+        "selectable": 303
+      },
+      {
+        "from": "深圳",
+        "to": "成都",
+        "selectable": 3
+      },
+      {
+        "from": "深圳",
+        "to": "杭州",
+        "selectable": 25
+      },
+      {
+        "from": "深圳",
+        "to": "武汉",
+        "selectable": 45
+      },
+      {
+        "from": "深圳",
+        "to": "苏州",
+        "selectable": 7
+      },
+      {
+        "from": "深圳",
+        "to": "西安",
+        "selectable": 2
+      },
+      {
+        "from": "深圳",
+        "to": "重庆",
+        "selectable": 8
+      },
+      {
+        "from": "苏州",
+        "to": "上海",
+        "selectable": 352
+      },
+      {
+        "from": "苏州",
+        "to": "北京",
+        "selectable": 21
+      },
+      {
+        "from": "苏州",
+        "to": "南京",
+        "selectable": 292
+      },
+      {
+        "from": "苏州",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "苏州",
+        "to": "广州",
+        "selectable": 0
+      },
+      {
+        "from": "苏州",
+        "to": "成都",
+        "selectable": 15
+      },
+      {
+        "from": "苏州",
+        "to": "杭州",
+        "selectable": 63
+      },
+      {
+        "from": "苏州",
+        "to": "武汉",
+        "selectable": 11
+      },
+      {
+        "from": "苏州",
+        "to": "深圳",
+        "selectable": 7
+      },
+      {
+        "from": "苏州",
+        "to": "西安",
+        "selectable": 2
+      },
+      {
+        "from": "苏州",
+        "to": "重庆",
+        "selectable": 16
+      },
+      {
+        "from": "西安",
+        "to": "上海",
+        "selectable": 3
+      },
+      {
+        "from": "西安",
+        "to": "北京",
+        "selectable": 2
+      },
+      {
+        "from": "西安",
+        "to": "南京",
+        "selectable": 2
+      },
+      {
+        "from": "西安",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "西安",
+        "to": "广州",
+        "selectable": 3
+      },
+      {
+        "from": "西安",
+        "to": "成都",
+        "selectable": 1
+      },
+      {
+        "from": "西安",
+        "to": "杭州",
+        "selectable": 1
+      },
+      {
+        "from": "西安",
+        "to": "武汉",
+        "selectable": 1
+      },
+      {
+        "from": "西安",
+        "to": "深圳",
+        "selectable": 3
+      },
+      {
+        "from": "西安",
+        "to": "苏州",
+        "selectable": 2
+      },
+      {
+        "from": "西安",
+        "to": "重庆",
+        "selectable": 1
+      },
+      {
+        "from": "重庆",
+        "to": "上海",
+        "selectable": 23
+      },
+      {
+        "from": "重庆",
+        "to": "北京",
+        "selectable": 11
+      },
+      {
+        "from": "重庆",
+        "to": "南京",
+        "selectable": 22
+      },
+      {
+        "from": "重庆",
+        "to": "厦门",
+        "selectable": 0
+      },
+      {
+        "from": "重庆",
+        "to": "广州",
+        "selectable": 31
+      },
+      {
+        "from": "重庆",
+        "to": "成都",
+        "selectable": 110
+      },
+      {
+        "from": "重庆",
+        "to": "杭州",
+        "selectable": 12
+      },
+      {
+        "from": "重庆",
+        "to": "武汉",
+        "selectable": 11
+      },
+      {
+        "from": "重庆",
+        "to": "深圳",
+        "selectable": 8
+      },
+      {
+        "from": "重庆",
+        "to": "苏州",
+        "selectable": 13
+      },
+      {
+        "from": "重庆",
+        "to": "西安",
+        "selectable": 1
+      }
+    ]
+  },
+  "current_preview_price_quarantined": [
+    {
+      "id": "accommodation:xiamen:167096523694611",
+      "name": "厦门安达仕酒店",
+      "basis": "price_quarantined",
+      "planning_eligible": false
+    }
+  ],
+  "xian_lodging_identity_to_verify": [
+    {
+      "record_id": "accommodation:xian:71",
+      "name": "西安交大南洋大酒店大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:72",
+      "name": "西安煤研宾馆(万达广场李家村地铁站店)(暂停营业)",
+      "reason": "source_name_says_paused",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:168",
+      "name": "陕西宾馆18号楼大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:178",
+      "name": "维也纳酒店西安小寨大唐不夜城店大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:212",
+      "name": "曲江惠宾苑宾馆大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:218",
+      "name": "汉庭酒店西安明城墙火车站新店大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:236",
+      "name": "西铁环城商店",
+      "reason": "shop",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:264",
+      "name": "维也纳国际酒店西安北站店大堂",
+      "reason": "lobby",
+      "planning_eligible_in_preview": true
+    },
+    {
+      "record_id": "accommodation:xian:269",
+      "name": "君驿酒店(暂停营业)",
+      "reason": "source_name_says_paused",
+      "planning_eligible_in_preview": true
+    }
+  ]
+}

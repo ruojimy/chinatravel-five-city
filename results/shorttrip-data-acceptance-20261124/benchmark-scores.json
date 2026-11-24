@@ -1,0 +1,1014 @@
+{
+  "snapshot": "trial-5e2d7c000735607f6ada8c42",
+  "scorer_sha256": "aac6fda5233723611c4b69f6a89ec475bcd13630ba6a57f1efeee34657fe3f7b",
+  "cases": [
+    {
+      "id": "xi-ct-e01",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-e02",
+      "overall": "pass",
+      "plan_sha256": "a5771a2815e6f0c4b94a5913695130c0cdcfdbf9083b94c48c5dc67cd658038d",
+      "query_sha256": "86cc9ee2fb6dcd329fbe4499ca522117be19b8fb251f55b071d5b5bfce64674b",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "intercity_modes",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-e03",
+      "overall": "fail",
+      "plan_sha256": "3b01f852c10d90c3a413f5b1a95cf469592d1d11604a2cbaf2d0517e62b0577a",
+      "query_sha256": "754f2dc90c2da0ee208b214019af6e4f2730fd561e22f08b35bdc9a031b15069",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "fail",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        },
+        {
+          "key": "innercity_modes",
+          "state": "fail"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-e04",
+      "overall": "pass",
+      "plan_sha256": "a8d3f9c5bb9948e45ef886c1c923db230efed382c09db7301942bf708ce9c48e",
+      "query_sha256": "775fe0d02583c1a64ce5ed850821dfa38293e56b8a0e9ebf9a2f890388e820df",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        },
+        {
+          "key": "innercity_modes",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-e05",
+      "overall": "pass",
+      "plan_sha256": "e82f6fa836d4731c461bf7f71cb9736b0df899a4be6259f89f80c87c781eac6c",
+      "query_sha256": "1985e1b4cbd1f2d0a2d19a7b2dcf7382905742a6c5ccbd011d71a0e4178db772",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "total_budget",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-e06",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-h01",
+      "overall": "pass",
+      "plan_sha256": "7f71c7a92b175b6059dd3bc61e44e482a1c12e739254572582e9c66e8fc78ab6",
+      "query_sha256": "b5cfd205d0aeb6be436eb055d0b4bbd98704e939286a4f1d42213171bee46bf9",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-h02",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-h03",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-h04",
+      "overall": "pass",
+      "plan_sha256": "84d036de67c9b67895a90cb04b94a7dbd1d78ec49a4f1ef491b3c62356eca5b8",
+      "query_sha256": "7201a905e1b1704849bed13ed8471c4f3eb83bd9e562f31a5b15c7cdc3a72e5c",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-h05",
+      "overall": "pass",
+      "plan_sha256": "702915ad0d184f73570ab12e9fea5294125a0c35229a7bb5f83324c7645beb69",
+      "query_sha256": "f6fb4d11f7fe1f7ee3614a36bcff44ec3705b919a3cbe4ec2109e079cffe7bc7",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-h06",
+      "overall": "pass",
+      "plan_sha256": "72d860f5ed5961d49dc4e0d84e60953ec337ece34e6036a9ef3420290ce79234",
+      "query_sha256": "59ebe5d2314129e743f907a022a934e9bf3e2747b58208cfe0d5a40eed937f5f",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xi-ct-m01",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-m02",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-m03",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-m04",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-m05",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xi-ct-m06",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-e01",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-e02",
+      "overall": "pass",
+      "plan_sha256": "cd9fb9e1caee9595e521949f7c072ac3c41b063944332248b4656263a588a790",
+      "query_sha256": "b161f20777b393c2d3f544e982e65e96fc1af290f422c288904dccec2714f149",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "intercity_modes",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-e03",
+      "overall": "fail",
+      "plan_sha256": "470fefb0ac4c6b823c8bc6108321d3ae46616ac40b2cbdada92863489c188666",
+      "query_sha256": "156ec443380ad0818a2baa51c2fdeb2b2a718351eb32a87d9ef96130120b3459",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "fail",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        },
+        {
+          "key": "innercity_modes",
+          "state": "fail"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-e04",
+      "overall": "fail",
+      "plan_sha256": "997c5b2844dfac183a1c8a40c89db719016d744373a52189757106a12e297fb9",
+      "query_sha256": "5e31ae5dfe8727b9658a02c563ce6b177fa96351bc1cf3d9367d4e75ed01fe4d",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "fail",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        },
+        {
+          "key": "innercity_modes",
+          "state": "fail"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-e05",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-e06",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-h01",
+      "overall": "pass",
+      "plan_sha256": "5a290d68ea90430d26d0d2a0cb3f84d9c69576881b9d218d48b3ded42e203bdc",
+      "query_sha256": "f84381930f326301a15ad966c2551250e0ff26459d06de8cd3fd22ebecd29700",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-h02",
+      "overall": "pass",
+      "plan_sha256": "a3296bfa70ed6ab646ebf0f6f4d1fed4c8eaf16d85c365f3edf5f193a6b5d28e",
+      "query_sha256": "75e6f40e23b421e9111f512e80a6dffd3544576daab98c4f0d76743651ce9438",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-h03",
+      "overall": "pass",
+      "plan_sha256": "ef93d7bf0a3049af683f5087883af5fd980c4f197abb15aeed9817c5784a160e",
+      "query_sha256": "675d1e9cff971a24cc1ef01946c0fa2ef4ace65d678847f05994f627aa88f50b",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "room_count",
+          "state": "pass"
+        },
+        {
+          "key": "total_budget",
+          "state": "pass"
+        },
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-h04",
+      "overall": "pass",
+      "plan_sha256": "5bcee8a6978baeeb545c37ac8c6352ac42afa2dff42efa4742efe7b032411aa9",
+      "query_sha256": "07d1507acc0025d4a57fbc1c41da77fc1de6a3ca8ab582b866c6d037bb45fd17",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-h05",
+      "overall": "pass",
+      "plan_sha256": "b585efcf68e93e94a359e01f06f6dbb6e7eeedf348315dad5b55b761dfd87f1c",
+      "query_sha256": "ca26d67f94a083ed62b59d883e519ff228f33fa3131b73a895154dbb7ee9cb50",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-h06",
+      "overall": "pass",
+      "plan_sha256": "c27584487d212d6a6a23734100f64d8d4fb356c99b7f4a3db7a6020054846a56",
+      "query_sha256": "d1b959d55f053030760af1e108676223dbee988146531e9319cd49315ed90de3",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-m01",
+      "overall": "fail",
+      "plan_sha256": "fe90908619c0774b84b5d4fc2bf5387ce329ae7bdec32625d7b74210e4c6634d",
+      "query_sha256": "079ec78fc7b0bac8df978702f6e5e32a4c3b581b66b880f83768214193e25aae",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "fail",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "total_budget",
+          "state": "pass"
+        },
+        {
+          "key": "innercity_modes",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "room_count",
+          "state": "pass"
+        },
+        {
+          "key": "room_type",
+          "state": "fail"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-m02",
+      "overall": "pass",
+      "plan_sha256": "4124f7b399a3869d9eef48daaeb0f2d51cec69c78a401624907cfbb9fadd8b5f",
+      "query_sha256": "2a7a2cf3ba6666c4d624c6bb2c5b94212ea40099c32d74993c3d5baca22195f2",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "total_budget",
+          "state": "pass"
+        },
+        {
+          "key": "intercity_modes",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "room_count",
+          "state": "pass"
+        },
+        {
+          "key": "room_type",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-m03",
+      "overall": "pass",
+      "plan_sha256": "f39ed2b6e256ec41d5fd7d4f0fac8fbe594adaf5b7903b1ec0c8c2f9e24db49d",
+      "query_sha256": "2fc1201380cff06450630f3b73a825a9311296c09e3c72900185bf99a6b78bba",
+      "schema": "pass",
+      "commonsense": "pass",
+      "hard": "pass",
+      "requested_places": "pass",
+      "commonsense_checks": {
+        "Is_activity_grounded": "pass",
+        "Is_intercity_transport_correct": "pass",
+        "Is_attractions_correct": "pass",
+        "Is_hotels_correct": "pass",
+        "Is_restaurants_correct": "pass",
+        "Is_transport_correct": "pass",
+        "Is_time_correct": "pass",
+        "Is_space_correct": "pass"
+      },
+      "hard_checks": [
+        {
+          "key": "trip_days",
+          "state": "pass"
+        },
+        {
+          "key": "people_number",
+          "state": "pass"
+        },
+        {
+          "key": "total_budget",
+          "state": "pass"
+        },
+        {
+          "key": "intercity_modes",
+          "state": "pass"
+        },
+        {
+          "key": "tickets_match_people",
+          "state": "pass"
+        },
+        {
+          "key": "room_count",
+          "state": "pass"
+        },
+        {
+          "key": "room_type",
+          "state": "pass"
+        },
+        {
+          "key": "taxi_cars",
+          "state": "pass"
+        }
+      ],
+      "unresolved_original_requirements": [],
+      "evaluator_hashes": {
+        "chinatravel\\evaluation\\schema_constraint.py": "584e7537d11dc944e5f06af7cd521e9533ca2a1d0a220aa2e7ec5ae0ba65b8ea",
+        "chinatravel\\symbol_verification\\commonsense_constraint.py": "28c8c1efe6c2516c2256addb93121224b7812ac2dc3dddc5fc4714fd77749688",
+        "chinatravel\\symbol_verification\\hard_constraint.py": "8e7e05017bac0fdb5d110d1967d847c2f636b55fdb04ffda58c32940f8ae5510",
+        "chinatravel\\symbol_verification\\concept_func.py": "977fd4bb1da156b0c70764619511caf2085b0ecb0f34295c461fd3cf61daad07"
+      }
+    },
+    {
+      "id": "xm-ct-m04",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-m05",
+      "overall": "no_plan"
+    },
+    {
+      "id": "xm-ct-m06",
+      "overall": "no_plan"
+    }
+  ]
+}

@@ -1,0 +1,6094 @@
+{
+  "snapshot": "trial-5e2d7c000735607f6ada8c42",
+  "cases": [
+    {
+      "id": "xi-ct-e01",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。已生成的候选未通过独立核验。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 9.05,
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-e02",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 14.51,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "上海",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:55",
+                "end_time": "14:34",
+                "start": "上海虹桥",
+                "end": "西安北",
+                "price": 756.0,
+                "cost": 2268.0,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "G94"
+              },
+              {
+                "position": "文景山公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:35",
+                "end_time": "15:35",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "文景山公园",
+                    "mode": "taxi",
+                    "start_time": "14:34",
+                    "end_time": "14:35",
+                    "cost": 11.0,
+                    "distance": 1.18,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 42.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "文景山公园",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:36",
+                    "end_time": "17:00",
+                    "cost": 67.19,
+                    "distance": 16.11,
+                    "price": 67.19,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:01",
+                "end_time": "19:01",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "西安磊鑫宾馆",
+                "type": "accommodation",
+                "price": 38.0,
+                "cost": 76.0,
+                "rooms": 2,
+                "start_time": "19:39",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "西安磊鑫宾馆",
+                    "mode": "taxi",
+                    "start_time": "19:01",
+                    "end_time": "19:39",
+                    "cost": 109.69,
+                    "distance": 25.55,
+                    "price": 109.69,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 30.0,
+                "start_time": "09:13",
+                "end_time": "10:43",
+                "transports": [
+                  {
+                    "start": "西安磊鑫宾馆",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "09:13",
+                    "cost": 126.32,
+                    "distance": 29.25,
+                    "price": 126.32,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "咪咪小面",
+                "type": "lunch",
+                "price": 28.0,
+                "cost": 84.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "10:43",
+                    "end_time": "10:46",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:32",
+                "end_time": "21:22",
+                "start": "西安北",
+                "end": "上海虹桥",
+                "price": 870.0,
+                "cost": 2610.0,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "西安北",
+                    "mode": "taxi",
+                    "start_time": "14:10",
+                    "end_time": "14:32",
+                    "cost": 63.28,
+                    "distance": 15.24,
+                    "price": 63.28,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G96"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-e03",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 1,
+      "issue_fields": [],
+      "seconds": 12.01,
+      "recommended_itinerary": {
+        "people_number": 4,
+        "start_city": "南京",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "09:56",
+                "end_time": "14:34",
+                "start": "南京南",
+                "end": "西安北",
+                "price": 600.0,
+                "cost": 2400.0,
+                "tickets": 4,
+                "transports": [],
+                "TrainID": "G94"
+              },
+              {
+                "position": "文景山公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:35",
+                "end_time": "15:35",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "文景山公园",
+                    "mode": "taxi",
+                    "start_time": "14:34",
+                    "end_time": "14:35",
+                    "cost": 11.0,
+                    "distance": 1.18,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 56.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "文景山公园",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:36",
+                    "end_time": "17:00",
+                    "cost": 67.19,
+                    "distance": 16.11,
+                    "price": 67.19,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:01",
+                "end_time": "19:01",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "西安磊鑫宾馆",
+                "type": "accommodation",
+                "price": 38.0,
+                "cost": 76.0,
+                "rooms": 2,
+                "start_time": "19:39",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "西安磊鑫宾馆",
+                    "mode": "taxi",
+                    "start_time": "19:01",
+                    "end_time": "19:39",
+                    "cost": 109.69,
+                    "distance": 25.55,
+                    "price": 109.69,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 40.0,
+                "start_time": "09:13",
+                "end_time": "10:43",
+                "transports": [
+                  {
+                    "start": "西安磊鑫宾馆",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "09:13",
+                    "cost": 126.32,
+                    "distance": 29.25,
+                    "price": 126.32,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "咪咪小面",
+                "type": "lunch",
+                "price": 28.0,
+                "cost": 112.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "10:43",
+                    "end_time": "10:46",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:43",
+                "end_time": "21:37",
+                "start": "西安北",
+                "end": "南京南",
+                "price": 671.0,
+                "cost": 2684.0,
+                "tickets": 4,
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "西安北",
+                    "mode": "taxi",
+                    "start_time": "14:21",
+                    "end_time": "14:43",
+                    "cost": 63.28,
+                    "distance": 15.24,
+                    "price": 63.28,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G466"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-e04",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 10.33,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "广州",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "09:49",
+                "end_time": "16:50",
+                "start": "广州南站",
+                "end": "西安北",
+                "price": 974.0,
+                "cost": 1948.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G404"
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "17:12",
+                "end_time": "18:12",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:50",
+                    "end_time": "17:12",
+                    "cost": 63.14,
+                    "distance": 15.21,
+                    "price": 63.14,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:13",
+                "end_time": "19:13",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:12",
+                    "end_time": "18:13",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "19:14",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "19:13",
+                    "end_time": "19:14",
+                    "cost": 11.0,
+                    "distance": 0.74,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "陕西历史博物馆",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:35",
+                "end_time": "11:05",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "陕西历史博物馆",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:35",
+                    "cost": 17.38,
+                    "distance": 3.62,
+                    "price": 17.38,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "雷记绿豆馅饼(中贸广场店)",
+                "type": "lunch",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "11:08",
+                "end_time": "12:08",
+                "transports": [
+                  {
+                    "start": "陕西历史博物馆",
+                    "end": "雷记绿豆馅饼(中贸广场店)",
+                    "mode": "taxi",
+                    "start_time": "11:05",
+                    "end_time": "11:08",
+                    "cost": 13.56,
+                    "distance": 2.53,
+                    "price": 13.56,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "12:13",
+                "end_time": "13:43",
+                "transports": [
+                  {
+                    "start": "雷记绿豆馅饼(中贸广场店)",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "12:08",
+                    "end_time": "12:13",
+                    "cost": 16.56,
+                    "distance": 3.39,
+                    "price": 16.56,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "咪咪小面",
+                "type": "dinner",
+                "price": 28.0,
+                "cost": 56.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "18:01",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.22,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "type": "airplane",
+                "start_time": "07:00",
+                "end_time": "09:40",
+                "start": "西安咸阳国际机场",
+                "end": "广州白云国际机场",
+                "price": 580.0,
+                "cost": 1160.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "西安咸阳国际机场",
+                    "mode": "taxi",
+                    "start_time": "04:16",
+                    "end_time": "05:00",
+                    "cost": 127.66,
+                    "distance": 29.55,
+                    "price": 127.66,
+                    "cars": 1
+                  }
+                ],
+                "FlightID": "MU2303"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-e05",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 8.83,
+      "recommended_itinerary": {
+        "people_number": 1,
+        "start_city": "武汉",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "10:01",
+                "end_time": "12:58",
+                "start": "汉口",
+                "end": "西安东",
+                "price": 453.0,
+                "cost": 453.0,
+                "tickets": 1,
+                "transports": [],
+                "TrainID": "G3925"
+              },
+              {
+                "position": "阿晴煲仔饭(交大店)",
+                "type": "lunch",
+                "price": 26.0,
+                "cost": 26.0,
+                "start_time": "13:09",
+                "end_time": "14:09",
+                "transports": [
+                  {
+                    "start": "西安东",
+                    "end": "阿晴煲仔饭(交大店)",
+                    "mode": "taxi",
+                    "start_time": "12:58",
+                    "end_time": "13:09",
+                    "cost": 30.81,
+                    "distance": 7.46,
+                    "price": 30.81,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "大明宫国家遗址公园",
+                "type": "attraction",
+                "price": 60.0,
+                "cost": 60.0,
+                "start_time": "14:17",
+                "end_time": "16:17",
+                "transports": [
+                  {
+                    "start": "阿晴煲仔饭(交大店)",
+                    "end": "大明宫国家遗址公园",
+                    "mode": "taxi",
+                    "start_time": "14:09",
+                    "end_time": "14:17",
+                    "cost": 24.09,
+                    "distance": 5.54,
+                    "price": 24.09,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 1
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 14.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "大明宫国家遗址公园",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:17",
+                    "end_time": "16:25",
+                    "cost": 24.04,
+                    "distance": 5.53,
+                    "price": 24.04,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "19:25",
+                "end_time": "22:37",
+                "start": "西安东",
+                "end": "汉口",
+                "price": 453.0,
+                "cost": 453.0,
+                "tickets": 1,
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "西安东",
+                    "mode": "taxi",
+                    "start_time": "18:14",
+                    "end_time": "18:25",
+                    "cost": 31.69,
+                    "distance": 7.71,
+                    "price": 31.69,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G3864"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-e06",
+      "destination": "西安",
+      "difficulty": "e",
+      "state": "no_eligible_intercity_transport",
+      "stage": "world_facts",
+      "reason_code": null,
+      "message": "本地旅行快照中没有符合要求的去程班次。可调整城际交通方式后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 5.02,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-h01",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 9.7,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "上海",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:55",
+                "end_time": "14:34",
+                "start": "上海虹桥",
+                "end": "西安北",
+                "price": 756.0,
+                "cost": 1512.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G94"
+              },
+              {
+                "position": "文景山公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:35",
+                "end_time": "15:35",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "文景山公园",
+                    "mode": "taxi",
+                    "start_time": "14:34",
+                    "end_time": "14:35",
+                    "cost": 11.0,
+                    "distance": 1.18,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "文景山公园",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:36",
+                    "end_time": "17:00",
+                    "cost": 67.19,
+                    "distance": 16.11,
+                    "price": 67.19,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:01",
+                "end_time": "19:01",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "19:02",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "19:01",
+                    "end_time": "19:02",
+                    "cost": 11.0,
+                    "distance": 0.74,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "陕西历史博物馆",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:35",
+                "end_time": "11:05",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "陕西历史博物馆",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:35",
+                    "cost": 17.38,
+                    "distance": 3.62,
+                    "price": 17.38,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "雷记绿豆馅饼(中贸广场店)",
+                "type": "lunch",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "11:08",
+                "end_time": "12:08",
+                "transports": [
+                  {
+                    "start": "陕西历史博物馆",
+                    "end": "雷记绿豆馅饼(中贸广场店)",
+                    "mode": "taxi",
+                    "start_time": "11:05",
+                    "end_time": "11:08",
+                    "cost": 13.56,
+                    "distance": 2.53,
+                    "price": 13.56,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "12:13",
+                "end_time": "13:43",
+                "transports": [
+                  {
+                    "start": "雷记绿豆馅饼(中贸广场店)",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "12:08",
+                    "end_time": "12:13",
+                    "cost": 16.56,
+                    "distance": 3.39,
+                    "price": 16.56,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "咪咪小面",
+                "type": "dinner",
+                "price": 28.0,
+                "cost": 56.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "18:01",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.22,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "西安钟楼",
+                "type": "attraction",
+                "price": 30.0,
+                "cost": 60.0,
+                "start_time": "08:34",
+                "end_time": "09:34",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "西安钟楼",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:34",
+                    "cost": 14.53,
+                    "distance": 2.81,
+                    "price": 14.53,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "樊记腊汁肉夹馍",
+                "type": "lunch",
+                "price": 20.0,
+                "cost": 40.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "西安钟楼",
+                    "end": "樊记腊汁肉夹馍",
+                    "mode": "walk",
+                    "start_time": "10:56",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.38636959996700443,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:32",
+                "end_time": "21:22",
+                "start": "西安北",
+                "end": "上海虹桥",
+                "price": 870.0,
+                "cost": 1740.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "樊记腊汁肉夹馍",
+                    "end": "西安北",
+                    "mode": "taxi",
+                    "start_time": "14:13",
+                    "end_time": "14:32",
+                    "cost": 53.4,
+                    "distance": 13.04,
+                    "price": 53.4,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G96"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-h02",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。试排的班次留给市内活动和返程进站的时间不足。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 8.39,
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-h03",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "search_timeout",
+      "stage": "search",
+      "reason_code": "search_timeout",
+      "message": "试排达到搜索时限，未找到通过核验的行程。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 23.89,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-h04",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 9.51,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "广州",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "09:49",
+                "end_time": "16:50",
+                "start": "广州南站",
+                "end": "西安北",
+                "price": 974.0,
+                "cost": 2922.0,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "G404"
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 42.0,
+                "start_time": "17:12",
+                "end_time": "18:12",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "16:50",
+                    "end_time": "17:12",
+                    "cost": 63.14,
+                    "distance": 15.21,
+                    "price": 63.14,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:13",
+                "end_time": "19:13",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:12",
+                    "end_time": "18:13",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 50.0,
+                "rooms": 2,
+                "start_time": "19:14",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "19:13",
+                    "end_time": "19:14",
+                    "cost": 11.0,
+                    "distance": 0.74,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "陕西历史博物馆",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:35",
+                "end_time": "11:05",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "陕西历史博物馆",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:35",
+                    "cost": 17.38,
+                    "distance": 3.62,
+                    "price": 17.38,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "雷记绿豆馅饼(中贸广场店)",
+                "type": "lunch",
+                "price": 14.0,
+                "cost": 42.0,
+                "start_time": "11:08",
+                "end_time": "12:08",
+                "transports": [
+                  {
+                    "start": "陕西历史博物馆",
+                    "end": "雷记绿豆馅饼(中贸广场店)",
+                    "mode": "taxi",
+                    "start_time": "11:05",
+                    "end_time": "11:08",
+                    "cost": 13.56,
+                    "distance": 2.53,
+                    "price": 13.56,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 30.0,
+                "start_time": "12:13",
+                "end_time": "13:43",
+                "transports": [
+                  {
+                    "start": "雷记绿豆馅饼(中贸广场店)",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "12:08",
+                    "end_time": "12:13",
+                    "cost": 16.56,
+                    "distance": 3.39,
+                    "price": 16.56,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "咪咪小面",
+                "type": "dinner",
+                "price": 28.0,
+                "cost": 84.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 50.0,
+                "rooms": 2,
+                "start_time": "18:01",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.22,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "西安钟楼",
+                "type": "attraction",
+                "price": 30.0,
+                "cost": 90.0,
+                "start_time": "08:34",
+                "end_time": "09:34",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "西安钟楼",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:34",
+                    "cost": 14.53,
+                    "distance": 2.81,
+                    "price": 14.53,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "樊记腊汁肉夹馍",
+                "type": "lunch",
+                "price": 20.0,
+                "cost": 60.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "西安钟楼",
+                    "end": "樊记腊汁肉夹馍",
+                    "mode": "walk",
+                    "start_time": "10:56",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.38636959996700443,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "西安鼓楼",
+                "type": "attraction",
+                "price": 30.0,
+                "cost": 90.0,
+                "start_time": "12:03",
+                "end_time": "13:03",
+                "transports": [
+                  {
+                    "start": "樊记腊汁肉夹馍",
+                    "end": "西安鼓楼",
+                    "mode": "walk",
+                    "start_time": "12:00",
+                    "end_time": "12:03",
+                    "cost": 0.0,
+                    "distance": 0.30085837020526435,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "节奏烧烤音乐餐吧(德福巷店)",
+                "type": "dinner",
+                "price": 51.0,
+                "cost": 153.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "西安鼓楼",
+                    "end": "节奏烧烤音乐餐吧(德福巷店)",
+                    "mode": "taxi",
+                    "start_time": "17:59",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.71,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 50.0,
+                "rooms": 2,
+                "start_time": "19:04",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "节奏烧烤音乐餐吧(德福巷店)",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:04",
+                    "cost": 15.07,
+                    "distance": 2.96,
+                    "price": 15.07,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              {
+                "type": "airplane",
+                "start_time": "07:00",
+                "end_time": "09:40",
+                "start": "西安咸阳国际机场",
+                "end": "广州白云国际机场",
+                "price": 580.0,
+                "cost": 1740.0,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "西安咸阳国际机场",
+                    "mode": "taxi",
+                    "start_time": "04:16",
+                    "end_time": "05:00",
+                    "cost": 127.66,
+                    "distance": 29.55,
+                    "price": 127.66,
+                    "cars": 1
+                  }
+                ],
+                "FlightID": "MU2303"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-h05",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 1,
+      "issue_fields": [],
+      "seconds": 11.82,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "深圳",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "09:20",
+                "end_time": "19:27",
+                "start": "深圳北",
+                "end": "西安北",
+                "price": 1048.5,
+                "cost": 2097.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G846"
+              },
+              {
+                "position": "喜螺记螺蛳粉(首创·漫香郡店)",
+                "type": "dinner",
+                "price": 17.0,
+                "cost": 34.0,
+                "start_time": "19:29",
+                "end_time": "20:29",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "喜螺记螺蛳粉(首创·漫香郡店)",
+                    "mode": "taxi",
+                    "start_time": "19:27",
+                    "end_time": "19:29",
+                    "cost": 11.0,
+                    "distance": 1.68,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "吉祥宾馆(西安北站长乐西苑店)",
+                "type": "accommodation",
+                "price": 39.0,
+                "cost": 39.0,
+                "rooms": 1,
+                "start_time": "20:33",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "喜螺记螺蛳粉(首创·漫香郡店)",
+                    "end": "吉祥宾馆(西安北站长乐西苑店)",
+                    "mode": "taxi",
+                    "start_time": "20:29",
+                    "end_time": "20:33",
+                    "cost": 14.48,
+                    "distance": 2.79,
+                    "price": 14.48,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "凤城广场",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:00",
+                "end_time": "09:00",
+                "transports": [
+                  {
+                    "start": "吉祥宾馆(西安北站长乐西苑店)",
+                    "end": "凤城广场",
+                    "mode": "taxi",
+                    "start_time": "07:57",
+                    "end_time": "08:00",
+                    "cost": 12.23,
+                    "distance": 2.15,
+                    "price": 12.23,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "type": "train",
+                "start_time": "10:15",
+                "end_time": "19:52",
+                "start": "西安北",
+                "end": "深圳北",
+                "price": 1048.5,
+                "cost": 2097.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "凤城广场",
+                    "end": "西安北",
+                    "mode": "taxi",
+                    "start_time": "09:11",
+                    "end_time": "09:15",
+                    "cost": 15.38,
+                    "distance": 3.05,
+                    "price": 15.38,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G837"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-h06",
+      "destination": "西安",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 8.8,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "苏州",
+        "target_city": "西安",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "07:12",
+                "end_time": "13:40",
+                "start": "苏州北",
+                "end": "西安北",
+                "price": 812.0,
+                "cost": 1624.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G464"
+              },
+              {
+                "position": "喜螺记螺蛳粉(首创·漫香郡店)",
+                "type": "lunch",
+                "price": 17.0,
+                "cost": 34.0,
+                "start_time": "13:42",
+                "end_time": "14:42",
+                "transports": [
+                  {
+                    "start": "西安北",
+                    "end": "喜螺记螺蛳粉(首创·漫香郡店)",
+                    "mode": "taxi",
+                    "start_time": "13:40",
+                    "end_time": "13:42",
+                    "cost": 11.0,
+                    "distance": 1.68,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "开元公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:44",
+                "end_time": "15:44",
+                "transports": [
+                  {
+                    "start": "喜螺记螺蛳粉(首创·漫香郡店)",
+                    "end": "开元公园",
+                    "mode": "taxi",
+                    "start_time": "14:42",
+                    "end_time": "14:44",
+                    "cost": 11.0,
+                    "distance": 1.66,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "捞一碗biangbiang面(交大店)",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "开元公园",
+                    "end": "捞一碗biangbiang面(交大店)",
+                    "mode": "taxi",
+                    "start_time": "15:44",
+                    "end_time": "16:02",
+                    "cost": 48.95,
+                    "distance": 12.06,
+                    "price": 48.95,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "兴庆宫公园",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:01",
+                "end_time": "19:01",
+                "transports": [
+                  {
+                    "start": "捞一碗biangbiang面(交大店)",
+                    "end": "兴庆宫公园",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.11,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "19:02",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "兴庆宫公园",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "19:01",
+                    "end_time": "19:02",
+                    "cost": 11.0,
+                    "distance": 0.74,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "陕西历史博物馆",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:35",
+                "end_time": "11:05",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "陕西历史博物馆",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:35",
+                    "cost": 17.38,
+                    "distance": 3.62,
+                    "price": 17.38,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "雷记绿豆馅饼(中贸广场店)",
+                "type": "lunch",
+                "price": 14.0,
+                "cost": 28.0,
+                "start_time": "11:08",
+                "end_time": "12:08",
+                "transports": [
+                  {
+                    "start": "陕西历史博物馆",
+                    "end": "雷记绿豆馅饼(中贸广场店)",
+                    "mode": "taxi",
+                    "start_time": "11:05",
+                    "end_time": "11:08",
+                    "cost": 13.56,
+                    "distance": 2.53,
+                    "price": 13.56,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "大雁塔",
+                "type": "attraction",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "12:13",
+                "end_time": "13:43",
+                "transports": [
+                  {
+                    "start": "雷记绿豆馅饼(中贸广场店)",
+                    "end": "大雁塔",
+                    "mode": "taxi",
+                    "start_time": "12:08",
+                    "end_time": "12:13",
+                    "cost": 16.56,
+                    "distance": 3.39,
+                    "price": 16.56,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "咪咪小面",
+                "type": "dinner",
+                "price": 28.0,
+                "cost": 56.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "大雁塔",
+                    "end": "咪咪小面",
+                    "mode": "taxi",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 13.83,
+                    "distance": 2.61,
+                    "price": 13.83,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "易休太空舱宾馆(西安咸宁店)",
+                "type": "accommodation",
+                "price": 25.0,
+                "cost": 25.0,
+                "rooms": 1,
+                "start_time": "18:01",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "咪咪小面",
+                    "end": "易休太空舱宾馆(西安咸宁店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:01",
+                    "cost": 11.0,
+                    "distance": 1.22,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 1
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "西安钟楼",
+                "type": "attraction",
+                "price": 30.0,
+                "cost": 60.0,
+                "start_time": "08:34",
+                "end_time": "09:34",
+                "transports": [
+                  {
+                    "start": "易休太空舱宾馆(西安咸宁店)",
+                    "end": "西安钟楼",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:34",
+                    "cost": 14.53,
+                    "distance": 2.81,
+                    "price": 14.53,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "樊记腊汁肉夹馍",
+                "type": "lunch",
+                "price": 20.0,
+                "cost": 40.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "西安钟楼",
+                    "end": "樊记腊汁肉夹馍",
+                    "mode": "walk",
+                    "start_time": "10:56",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.38636959996700443,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:10",
+                "end_time": "22:09",
+                "start": "西安北",
+                "end": "苏州北",
+                "price": 822.0,
+                "cost": 1644.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "樊记腊汁肉夹馍",
+                    "end": "西安北",
+                    "mode": "taxi",
+                    "start_time": "13:51",
+                    "end_time": "14:10",
+                    "cost": 53.4,
+                    "distance": 13.04,
+                    "price": 53.4,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G1976"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xi-ct-m01",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。已生成的候选未通过独立核验。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 19.01,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-m02",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。已生成的候选未通过独立核验。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 21.18,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-m03",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。试排的多数组合在车票和住宿阶段已超出金额预算。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 13.18,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-m04",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。试排的多数组合在车票和住宿阶段已超出金额预算。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 13.67,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-m05",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_eligible_intercity_transport",
+      "stage": "world_facts",
+      "reason_code": null,
+      "message": "本地旅行快照中没有符合要求的去程班次。可调整城际交通方式后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 5.18,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xi-ct-m06",
+      "destination": "西安",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。已生成的候选未通过独立核验。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 15.64,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-e01",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "no_verified_candidate",
+      "stage": "world_facts",
+      "reason_code": "same_day_ticket_window",
+      "message": "本地快照中，当日去程最早 20:51 到达，返程最晚 07:56 出发。若可过夜，可延长行程后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 3.65,
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-e02",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 13.75,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "上海",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:52",
+                "end_time": "14:48",
+                "start": "上海南站",
+                "end": "厦门北站",
+                "price": 492.0,
+                "cost": 1476.0,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "D2287"
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "15:20",
+                "end_time": "16:20",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:48",
+                    "end_time": "15:20",
+                    "cost": 93.34,
+                    "distance": 21.92,
+                    "price": 93.34,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "后海小王府",
+                "type": "dinner",
+                "price": 49.0,
+                "cost": 147.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "16:20",
+                    "end_time": "16:20",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "19:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:06",
+                    "cost": 19.54,
+                    "distance": 4.24,
+                    "price": 19.54,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "厦门大学(思明校区)",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "10:30",
+                "end_time": "11:30",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门大学(思明校区)",
+                    "mode": "taxi",
+                    "start_time": "10:25",
+                    "end_time": "10:30",
+                    "cost": 17.68,
+                    "distance": 3.71,
+                    "price": 17.68,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 123.0,
+                "start_time": "11:32",
+                "end_time": "12:32",
+                "transports": [
+                  {
+                    "start": "厦门大学(思明校区)",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "taxi",
+                    "start_time": "11:30",
+                    "end_time": "11:32",
+                    "cost": 11.0,
+                    "distance": 1.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:05",
+                "end_time": "20:16",
+                "start": "厦门北站",
+                "end": "上海南站",
+                "price": 579.0,
+                "cost": 1737.0,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "13:33",
+                    "end_time": "14:05",
+                    "cost": 91.38,
+                    "distance": 21.49,
+                    "price": 91.38,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G260"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-e03",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 9.57,
+      "recommended_itinerary": {
+        "people_number": 4,
+        "start_city": "南京",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:58",
+                "end_time": "13:05",
+                "start": "南京南站",
+                "end": "厦门北站",
+                "price": 546.5,
+                "cost": 2186.0,
+                "tickets": 4,
+                "transports": [],
+                "TrainID": "G3027"
+              },
+              {
+                "position": "后海小王府",
+                "type": "lunch",
+                "price": 49.0,
+                "cost": 196.0,
+                "start_time": "13:37",
+                "end_time": "14:37",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "13:05",
+                    "end_time": "13:37",
+                    "cost": 92.68,
+                    "distance": 21.77,
+                    "price": 92.68,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:37",
+                "end_time": "15:37",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "14:37",
+                    "end_time": "14:37",
+                    "cost": 11.0,
+                    "distance": 0.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "八婆婆烧仙草(大学路店)",
+                "type": "dinner",
+                "price": 13.0,
+                "cost": 52.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "八婆婆烧仙草(大学路店)",
+                    "mode": "walk",
+                    "start_time": "16:59",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.14474498902403177,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:02",
+                "end_time": "19:02",
+                "transports": [
+                  {
+                    "start": "八婆婆烧仙草(大学路店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:02",
+                    "cost": 11.0,
+                    "distance": 1.63,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "19:08",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "19:02",
+                    "end_time": "19:08",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "厦门大学(思明校区)",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "10:30",
+                "end_time": "11:30",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门大学(思明校区)",
+                    "mode": "taxi",
+                    "start_time": "10:25",
+                    "end_time": "10:30",
+                    "cost": 17.68,
+                    "distance": 3.71,
+                    "price": 17.68,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 164.0,
+                "start_time": "11:32",
+                "end_time": "12:32",
+                "transports": [
+                  {
+                    "start": "厦门大学(思明校区)",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "taxi",
+                    "start_time": "11:30",
+                    "end_time": "11:32",
+                    "cost": 11.0,
+                    "distance": 1.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "14:14",
+                "end_time": "20:18",
+                "start": "厦门北站",
+                "end": "南京南站",
+                "price": 546.5,
+                "cost": 2186.0,
+                "tickets": 4,
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "12:42",
+                    "end_time": "13:14",
+                    "cost": 91.38,
+                    "distance": 21.49,
+                    "price": 91.38,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G3332"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-e04",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 9.95,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "广州",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:01",
+                "end_time": "12:09",
+                "start": "广州南站",
+                "end": "厦门北站",
+                "price": 308.5,
+                "cost": 617.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G3809"
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 82.0,
+                "start_time": "13:14",
+                "end_time": "14:14",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "厦门北-地铁站",
+                    "mode": "walk",
+                    "start_time": "12:09",
+                    "end_time": "12:10",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "镇海路-地铁站",
+                    "mode": "metro",
+                    "start_time": "12:10",
+                    "end_time": "13:05",
+                    "cost": 12.0,
+                    "distance": 27.75,
+                    "price": 6.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "walk",
+                    "start_time": "13:05",
+                    "end_time": "13:14",
+                    "cost": 0.0,
+                    "distance": 0.8,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:15",
+                "end_time": "15:15",
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:14",
+                    "end_time": "14:15",
+                    "cost": 11.0,
+                    "distance": 1.28,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "后海小王府",
+                "type": "dinner",
+                "price": 49.0,
+                "cost": 98.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "17:00",
+                    "end_time": "17:00",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾彩虹墙",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾彩虹墙",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.51,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "19:03",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾彩虹墙",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:03",
+                    "cost": 12.06,
+                    "distance": 2.1,
+                    "price": 12.06,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:33",
+                "end_time": "09:33",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:33",
+                    "cost": 12.4,
+                    "distance": 2.2,
+                    "price": 12.4,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "八婆婆烧仙草(大学路店)",
+                "type": "lunch",
+                "price": 13.0,
+                "cost": 26.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "八婆婆烧仙草(大学路店)",
+                    "mode": "walk",
+                    "start_time": "10:59",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.14474498902403177,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:02",
+                "end_time": "13:02",
+                "transports": [
+                  {
+                    "start": "八婆婆烧仙草(大学路店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:02",
+                    "cost": 11.0,
+                    "distance": 1.63,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门大学思明校区芙蓉餐厅",
+                "type": "dinner",
+                "price": 21.0,
+                "cost": 42.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "厦门大学思明校区芙蓉餐厅",
+                    "mode": "walk",
+                    "start_time": "16:55",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.4380906919891224,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "18:04",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "厦门大学思明校区芙蓉餐厅",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:04",
+                    "cost": 15.97,
+                    "distance": 3.22,
+                    "price": 15.97,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:32",
+                "end_time": "09:32",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "中山路步行街",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.17656165235643678,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "大众来小吃(中山路店)",
+                "type": "lunch",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "大众来小吃(中山路店)",
+                    "mode": "walk",
+                    "start_time": "11:00",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.02839806996726263,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "17:44",
+                "end_time": "21:53",
+                "start": "厦门北站",
+                "end": "广州南站",
+                "price": 308.5,
+                "cost": 617.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "大众来小吃(中山路店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "15:11",
+                    "end_time": "15:16",
+                    "cost": 0.0,
+                    "distance": 0.45,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门北-地铁站",
+                    "mode": "metro",
+                    "start_time": "15:16",
+                    "end_time": "16:43",
+                    "cost": 16.0,
+                    "distance": 43.83,
+                    "price": 8.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "厦门北站",
+                    "mode": "walk",
+                    "start_time": "16:43",
+                    "end_time": "16:44",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  }
+                ],
+                "TrainID": "G1625"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-e05",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "no_verified_candidate",
+      "stage": "world_facts",
+      "reason_code": "same_day_ticket_window",
+      "message": "本地快照中，当日去程最早 16:05 到达，返程最晚 14:47 出发。若可过夜，可延长行程后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 3.88,
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-e06",
+      "destination": "厦门",
+      "difficulty": "e",
+      "state": "no_eligible_intercity_transport",
+      "stage": "world_facts",
+      "reason_code": null,
+      "message": "本地旅行快照中没有符合要求的去程、返程班次。可调整城际交通方式后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 5.37,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-h01",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 9.99,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "上海",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:52",
+                "end_time": "14:48",
+                "start": "上海南站",
+                "end": "厦门北站",
+                "price": 492.0,
+                "cost": 984.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "D2287"
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "15:20",
+                "end_time": "16:20",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:48",
+                    "end_time": "15:20",
+                    "cost": 93.34,
+                    "distance": 21.92,
+                    "price": 93.34,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "后海小王府",
+                "type": "dinner",
+                "price": 49.0,
+                "cost": 98.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "16:20",
+                    "end_time": "16:20",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾彩虹墙",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾彩虹墙",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.51,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "19:03",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾彩虹墙",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:03",
+                    "cost": 12.06,
+                    "distance": 2.1,
+                    "price": 12.06,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:33",
+                "end_time": "09:33",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:33",
+                    "cost": 12.4,
+                    "distance": 2.2,
+                    "price": 12.4,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 82.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "taxi",
+                    "start_time": "10:59",
+                    "end_time": "11:00",
+                    "cost": 11.0,
+                    "distance": 0.8,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:03",
+                "end_time": "13:03",
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:03",
+                    "cost": 12.84,
+                    "distance": 2.32,
+                    "price": 12.84,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门大学思明校区芙蓉餐厅",
+                "type": "dinner",
+                "price": 21.0,
+                "cost": 42.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "厦门大学思明校区芙蓉餐厅",
+                    "mode": "walk",
+                    "start_time": "16:55",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.4380906919891224,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "18:04",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "厦门大学思明校区芙蓉餐厅",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:04",
+                    "cost": 15.97,
+                    "distance": 3.22,
+                    "price": 15.97,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:32",
+                "end_time": "09:32",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "中山路步行街",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.17656165235643678,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "大众来小吃(中山路店)",
+                "type": "lunch",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "大众来小吃(中山路店)",
+                    "mode": "walk",
+                    "start_time": "11:00",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.02839806996726263,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "15:58",
+                "end_time": "22:04",
+                "start": "厦门北站",
+                "end": "上海南站",
+                "price": 630.5,
+                "cost": 1261.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "大众来小吃(中山路店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "13:25",
+                    "end_time": "13:30",
+                    "cost": 0.0,
+                    "distance": 0.45,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门北-地铁站",
+                    "mode": "metro",
+                    "start_time": "13:30",
+                    "end_time": "14:57",
+                    "cost": 16.0,
+                    "distance": 43.83,
+                    "price": 8.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "厦门北站",
+                    "mode": "walk",
+                    "start_time": "14:57",
+                    "end_time": "14:58",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  }
+                ],
+                "TrainID": "G1316"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-h02",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 10.07,
+      "recommended_itinerary": {
+        "people_number": 5,
+        "start_city": "北京",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "10:35",
+                "end_time": "21:15",
+                "start": "北京南站",
+                "end": "厦门北站",
+                "price": 1121.0,
+                "cost": 5605.0,
+                "tickets": 5,
+                "transports": [],
+                "TrainID": "G963"
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 120.0,
+                "rooms": 3,
+                "start_time": "21:43",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "21:15",
+                    "end_time": "21:43",
+                    "cost": 162.38,
+                    "distance": 19.22,
+                    "price": 81.19,
+                    "cars": 2
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 38.08,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 2
+                  }
+                ],
+                "tickets": 5
+              },
+              {
+                "position": "后海小王府",
+                "type": "lunch",
+                "price": 49.0,
+                "cost": 245.0,
+                "start_time": "12:00",
+                "end_time": "13:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "11:58",
+                    "end_time": "12:00",
+                    "cost": 22.0,
+                    "distance": 1.64,
+                    "price": 11.0,
+                    "cars": 2
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "13:06",
+                "end_time": "14:06",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾",
+                    "mode": "walk",
+                    "start_time": "13:00",
+                    "end_time": "13:06",
+                    "cost": 0.0,
+                    "distance": 0.5615596866012884,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 5
+              },
+              {
+                "position": "八婆婆烧仙草(大学路店)",
+                "type": "dinner",
+                "price": 13.0,
+                "cost": 65.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "八婆婆烧仙草(大学路店)",
+                    "mode": "walk",
+                    "start_time": "16:59",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.14474498902403177,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 120.0,
+                "rooms": 3,
+                "start_time": "18:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "八婆婆烧仙草(大学路店)",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:06",
+                    "cost": 38.08,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 2
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:46",
+                "end_time": "09:46",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "镇海路-地铁站",
+                    "mode": "metro",
+                    "start_time": "08:32",
+                    "end_time": "08:41",
+                    "cost": 15.0,
+                    "distance": 4.57,
+                    "price": 3.0,
+                    "tickets": 5
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "中山路步行街",
+                    "mode": "walk",
+                    "start_time": "08:41",
+                    "end_time": "08:46",
+                    "cost": 0.0,
+                    "distance": 0.48,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 5
+              },
+              {
+                "position": "大众来小吃(中山路店)",
+                "type": "lunch",
+                "price": 10.0,
+                "cost": 50.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "大众来小吃(中山路店)",
+                    "mode": "walk",
+                    "start_time": "11:00",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.02839806996726263,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "轮渡广场",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:08",
+                "end_time": "13:08",
+                "transports": [
+                  {
+                    "start": "大众来小吃(中山路店)",
+                    "end": "轮渡广场",
+                    "mode": "walk",
+                    "start_time": "12:00",
+                    "end_time": "12:08",
+                    "cost": 0.0,
+                    "distance": 0.6744218506863332,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 5
+              },
+              {
+                "position": "郑姐沙嗲面",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 70.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "轮渡广场",
+                    "end": "郑姐沙嗲面",
+                    "mode": "walk",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.2648250019414503,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 120.0,
+                "rooms": 3,
+                "start_time": "18:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "郑姐沙嗲面",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:06",
+                    "cost": 38.04,
+                    "distance": 4.09,
+                    "price": 19.02,
+                    "cars": 2
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "09:32",
+                "end_time": "21:18",
+                "start": "厦门北站",
+                "end": "北京南站",
+                "price": 1078.5,
+                "cost": 5392.5,
+                "tickets": 5,
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "07:08",
+                    "end_time": "07:10",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "厦门北-地铁站",
+                    "mode": "metro",
+                    "start_time": "07:10",
+                    "end_time": "08:31",
+                    "cost": 40.0,
+                    "distance": 40.61,
+                    "price": 8.0,
+                    "tickets": 5
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "厦门北站",
+                    "mode": "walk",
+                    "start_time": "08:31",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  }
+                ],
+                "TrainID": "G966"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-h03",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 13.42,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "南京",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:58",
+                "end_time": "13:05",
+                "start": "南京南站",
+                "end": "厦门北站",
+                "price": 546.5,
+                "cost": 1639.5,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "G3027"
+              },
+              {
+                "position": "芋头煎包店",
+                "type": "lunch",
+                "price": 7.0,
+                "cost": 21.0,
+                "start_time": "13:22",
+                "end_time": "14:22",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "芋头煎包店",
+                    "mode": "taxi",
+                    "start_time": "13:05",
+                    "end_time": "13:22",
+                    "cost": 47.42,
+                    "distance": 11.72,
+                    "price": 47.42,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "15:12",
+                "end_time": "16:12",
+                "transports": [
+                  {
+                    "start": "芋头煎包店",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:22",
+                    "end_time": "15:12",
+                    "cost": 145.94,
+                    "distance": 33.61,
+                    "price": 145.94,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "亚芬韭菜盒花生汤(大同路店)",
+                "type": "dinner",
+                "price": 7.0,
+                "cost": 21.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "亚芬韭菜盒花生汤(大同路店)",
+                    "mode": "taxi",
+                    "start_time": "16:12",
+                    "end_time": "16:15",
+                    "cost": 13.23,
+                    "distance": 2.44,
+                    "price": 13.23,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:20",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "亚芬韭菜盒花生汤(大同路店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "18:09",
+                    "cost": 0.0,
+                    "distance": 0.78,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "18:09",
+                    "end_time": "18:18",
+                    "cost": 9.0,
+                    "distance": 4.57,
+                    "price": 3.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "18:18",
+                    "end_time": "18:20",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "心里暖古法花生汤(开禾路口店)",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "心里暖古法花生汤(开禾路口店)",
+                    "mode": "taxi",
+                    "start_time": "10:00",
+                    "end_time": "10:06",
+                    "cost": 19.41,
+                    "distance": 4.2,
+                    "price": 19.41,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:04",
+                "end_time": "13:04",
+                "transports": [
+                  {
+                    "start": "心里暖古法花生汤(开禾路口店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:04",
+                    "cost": 14.57,
+                    "distance": 2.82,
+                    "price": 14.57,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "珍巧古早味小吃(大社店)",
+                "type": "dinner",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "15:54",
+                    "end_time": "16:12",
+                    "cost": 0.0,
+                    "distance": 1.58,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "集美学村-地铁站",
+                    "mode": "metro",
+                    "start_time": "16:12",
+                    "end_time": "16:43",
+                    "cost": 15.0,
+                    "distance": 15.95,
+                    "price": 5.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "集美学村-地铁站",
+                    "end": "珍巧古早味小吃(大社店)",
+                    "mode": "walk",
+                    "start_time": "16:43",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 1.42,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:44",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "珍巧古早味小吃(大社店)",
+                    "end": "集美学村-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "18:17",
+                    "cost": 0.0,
+                    "distance": 1.42,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "集美学村-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "18:17",
+                    "end_time": "18:42",
+                    "cost": 12.0,
+                    "distance": 12.73,
+                    "price": 4.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "18:42",
+                    "end_time": "18:44",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:46",
+                "end_time": "09:46",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "镇海路-地铁站",
+                    "mode": "metro",
+                    "start_time": "08:32",
+                    "end_time": "08:41",
+                    "cost": 9.0,
+                    "distance": 4.57,
+                    "price": 3.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "中山路步行街",
+                    "mode": "walk",
+                    "start_time": "08:41",
+                    "end_time": "08:46",
+                    "cost": 0.0,
+                    "distance": 0.48,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "广播站小卖部海蛎饼",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "11:32",
+                "end_time": "12:32",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "09:46",
+                    "end_time": "09:51",
+                    "cost": 0.0,
+                    "distance": 0.48,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "华侨大学-地铁站",
+                    "mode": "metro",
+                    "start_time": "09:51",
+                    "end_time": "10:40",
+                    "cost": 18.0,
+                    "distance": 24.96,
+                    "price": 6.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "华侨大学-地铁站",
+                    "end": "广播站小卖部海蛎饼",
+                    "mode": "walk",
+                    "start_time": "10:40",
+                    "end_time": "11:32",
+                    "cost": 0.0,
+                    "distance": 4.38,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "集美学村海上观景平台",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:37",
+                "end_time": "13:37",
+                "transports": [
+                  {
+                    "start": "广播站小卖部海蛎饼",
+                    "end": "集美学村海上观景平台",
+                    "mode": "taxi",
+                    "start_time": "12:32",
+                    "end_time": "12:37",
+                    "cost": 17.58,
+                    "distance": 3.68,
+                    "price": 17.58,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "阿兰薄饼(较场店)",
+                "type": "dinner",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "集美学村海上观景平台",
+                    "end": "阿兰薄饼(较场店)",
+                    "mode": "taxi",
+                    "start_time": "16:36",
+                    "end_time": "17:00",
+                    "cost": 68.64,
+                    "distance": 16.43,
+                    "price": 68.64,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "20:35",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "阿兰薄饼(较场店)",
+                    "end": "官浔-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "19:28",
+                    "cost": 0.0,
+                    "distance": 7.34,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "官浔-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "19:28",
+                    "end_time": "20:33",
+                    "cost": 21.0,
+                    "distance": 32.84,
+                    "price": 7.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "20:33",
+                    "end_time": "20:35",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              {
+                "position": "白鹭洲公园东公园-亲水平台",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:00",
+                "end_time": "09:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "07:22",
+                    "end_time": "07:24",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "湖滨中路-地铁站",
+                    "mode": "metro",
+                    "start_time": "07:24",
+                    "end_time": "07:30",
+                    "cost": 6.0,
+                    "distance": 3.04,
+                    "price": 2.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "湖滨中路-地铁站",
+                    "end": "白鹭洲公园东公园-亲水平台",
+                    "mode": "walk",
+                    "start_time": "07:30",
+                    "end_time": "07:34",
+                    "cost": 0.0,
+                    "distance": 0.38,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "type": "train",
+                "start_time": "11:22",
+                "end_time": "20:09",
+                "start": "厦门北站",
+                "end": "南京南站",
+                "price": 536.0,
+                "cost": 1608.0,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "白鹭洲公园东公园-亲水平台",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "09:56",
+                    "end_time": "10:22",
+                    "cost": 74.88,
+                    "distance": 17.82,
+                    "price": 74.88,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "D2294"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-h04",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 11.83,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "广州",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:01",
+                "end_time": "12:09",
+                "start": "广州南站",
+                "end": "厦门北站",
+                "price": 308.5,
+                "cost": 925.5,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "G3809"
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 123.0,
+                "start_time": "13:14",
+                "end_time": "14:14",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "厦门北-地铁站",
+                    "mode": "walk",
+                    "start_time": "12:09",
+                    "end_time": "12:10",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "镇海路-地铁站",
+                    "mode": "metro",
+                    "start_time": "12:10",
+                    "end_time": "13:05",
+                    "cost": 18.0,
+                    "distance": 27.75,
+                    "price": 6.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "walk",
+                    "start_time": "13:05",
+                    "end_time": "13:14",
+                    "cost": 0.0,
+                    "distance": 0.8,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:15",
+                "end_time": "15:15",
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:14",
+                    "end_time": "14:15",
+                    "cost": 11.0,
+                    "distance": 1.28,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "后海小王府",
+                "type": "dinner",
+                "price": 49.0,
+                "cost": 147.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "17:00",
+                    "end_time": "17:00",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾彩虹墙",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾彩虹墙",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.51,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "19:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾彩虹墙",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:06",
+                    "cost": 19.37,
+                    "distance": 4.19,
+                    "price": 19.37,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "厦门大学思明校区芙蓉餐厅",
+                "type": "lunch",
+                "price": 21.0,
+                "cost": 63.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "厦门大学思明校区芙蓉餐厅",
+                    "mode": "walk",
+                    "start_time": "10:00",
+                    "end_time": "10:05",
+                    "cost": 0.0,
+                    "distance": 0.4380906919891224,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:02",
+                "end_time": "13:02",
+                "transports": [
+                  {
+                    "start": "厦门大学思明校区芙蓉餐厅",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:02",
+                    "cost": 11.0,
+                    "distance": 1.46,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "八婆婆烧仙草(大学路店)",
+                "type": "dinner",
+                "price": 13.0,
+                "cost": 39.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "八婆婆烧仙草(大学路店)",
+                    "mode": "walk",
+                    "start_time": "16:59",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.14474498902403177,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "八婆婆烧仙草(大学路店)",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:06",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:35",
+                "end_time": "09:35",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "中山路步行街",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:35",
+                    "cost": 17.76,
+                    "distance": 3.73,
+                    "price": 17.76,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "大众来小吃(中山路店)",
+                "type": "lunch",
+                "price": 10.0,
+                "cost": 30.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "大众来小吃(中山路店)",
+                    "mode": "walk",
+                    "start_time": "11:00",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.02839806996726263,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "轮渡广场",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:01",
+                "end_time": "13:01",
+                "transports": [
+                  {
+                    "start": "大众来小吃(中山路店)",
+                    "end": "轮渡广场",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:01",
+                    "cost": 11.0,
+                    "distance": 0.67,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "郑姐沙嗲面",
+                "type": "dinner",
+                "price": 14.0,
+                "cost": 42.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "轮渡广场",
+                    "end": "郑姐沙嗲面",
+                    "mode": "walk",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.2648250019414503,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:06",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "郑姐沙嗲面",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:06",
+                    "cost": 19.02,
+                    "distance": 4.09,
+                    "price": 19.02,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 4,
+            "activities": [
+              {
+                "position": "厦门园林植物园",
+                "type": "attraction",
+                "price": 30.0,
+                "cost": 90.0,
+                "start_time": "08:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门园林植物园",
+                    "mode": "taxi",
+                    "start_time": "07:38",
+                    "end_time": "07:41",
+                    "cost": 13.29,
+                    "distance": 2.46,
+                    "price": 13.29,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "type": "train",
+                "start_time": "11:38",
+                "end_time": "15:47",
+                "start": "厦门北站",
+                "end": "广州新塘站",
+                "price": 292.0,
+                "cost": 876.0,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "厦门园林植物园",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "10:08",
+                    "end_time": "10:38",
+                    "cost": 86.6,
+                    "distance": 20.42,
+                    "price": 86.6,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "D3249"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-h05",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 11.35,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "深圳",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "07:10",
+                "end_time": "10:34",
+                "start": "深圳北站",
+                "end": "厦门北站",
+                "price": 228.0,
+                "cost": 456.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "D2352"
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "11:51",
+                "end_time": "12:51",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "厦门北-地铁站",
+                    "mode": "walk",
+                    "start_time": "10:34",
+                    "end_time": "10:35",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "镇海路-地铁站",
+                    "mode": "metro",
+                    "start_time": "10:35",
+                    "end_time": "11:30",
+                    "cost": 12.0,
+                    "distance": 27.75,
+                    "price": 6.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "南普陀寺",
+                    "mode": "walk",
+                    "start_time": "11:30",
+                    "end_time": "11:51",
+                    "cost": 0.0,
+                    "distance": 1.78,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "后海小王府",
+                "type": "lunch",
+                "price": 49.0,
+                "cost": 98.0,
+                "start_time": "12:51",
+                "end_time": "13:51",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "12:51",
+                    "end_time": "12:51",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "13:51",
+                "end_time": "14:51",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "13:51",
+                    "end_time": "13:51",
+                    "cost": 11.0,
+                    "distance": 0.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "八婆婆烧仙草(大学路店)",
+                "type": "dinner",
+                "price": 13.0,
+                "cost": 26.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "八婆婆烧仙草(大学路店)",
+                    "mode": "walk",
+                    "start_time": "16:59",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.14474498902403177,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "18:03",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "八婆婆烧仙草(大学路店)",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:03",
+                    "cost": 12.18,
+                    "distance": 2.14,
+                    "price": 12.18,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "厦门大学(思明校区)",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "10:30",
+                "end_time": "11:30",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "厦门大学(思明校区)",
+                    "mode": "taxi",
+                    "start_time": "10:26",
+                    "end_time": "10:30",
+                    "cost": 14.46,
+                    "distance": 2.79,
+                    "price": 14.46,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 82.0,
+                "start_time": "11:32",
+                "end_time": "12:32",
+                "transports": [
+                  {
+                    "start": "厦门大学(思明校区)",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "taxi",
+                    "start_time": "11:30",
+                    "end_time": "11:32",
+                    "cost": 11.0,
+                    "distance": 1.56,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "17:54",
+                "end_time": "21:27",
+                "start": "厦门北站",
+                "end": "深圳北站",
+                "price": 228.0,
+                "cost": 456.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "15:17",
+                    "end_time": "15:26",
+                    "cost": 0.0,
+                    "distance": 0.8,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门北-地铁站",
+                    "mode": "metro",
+                    "start_time": "15:26",
+                    "end_time": "16:53",
+                    "cost": 16.0,
+                    "distance": 43.83,
+                    "price": 8.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "厦门北站",
+                    "mode": "walk",
+                    "start_time": "16:53",
+                    "end_time": "16:54",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  }
+                ],
+                "TrainID": "D3107"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-h06",
+      "destination": "厦门",
+      "difficulty": "h",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 10.22,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "苏州",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:55",
+                "end_time": "13:47",
+                "start": "苏州南站",
+                "end": "厦门北站",
+                "price": 582.0,
+                "cost": 1164.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "G3091"
+              },
+              {
+                "position": "双鼎面线糊(集美店)",
+                "type": "lunch",
+                "price": 13.0,
+                "cost": 26.0,
+                "start_time": "13:48",
+                "end_time": "14:48",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "双鼎面线糊(集美店)",
+                    "mode": "taxi",
+                    "start_time": "13:47",
+                    "end_time": "13:48",
+                    "cost": 11.0,
+                    "distance": 1.14,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "15:19",
+                "end_time": "16:19",
+                "transports": [
+                  {
+                    "start": "双鼎面线糊(集美店)",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:48",
+                    "end_time": "15:19",
+                    "cost": 88.85,
+                    "distance": 20.92,
+                    "price": 88.85,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "后海小王府",
+                "type": "dinner",
+                "price": 49.0,
+                "cost": 98.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "后海小王府",
+                    "mode": "taxi",
+                    "start_time": "16:19",
+                    "end_time": "16:19",
+                    "cost": 11.0,
+                    "distance": 0.57,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾彩虹墙",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "18:00",
+                "end_time": "19:00",
+                "transports": [
+                  {
+                    "start": "后海小王府",
+                    "end": "沙坡尾彩虹墙",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:00",
+                    "cost": 11.0,
+                    "distance": 0.51,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "19:03",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾彩虹墙",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "19:00",
+                    "end_time": "19:03",
+                    "cost": 12.06,
+                    "distance": 2.1,
+                    "price": 12.06,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:33",
+                "end_time": "09:33",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:33",
+                    "cost": 12.4,
+                    "distance": 2.2,
+                    "price": 12.4,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "乌糖沙茶面(民族路店)",
+                "type": "lunch",
+                "price": 41.0,
+                "cost": 82.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "乌糖沙茶面(民族路店)",
+                    "mode": "taxi",
+                    "start_time": "10:59",
+                    "end_time": "11:00",
+                    "cost": 11.0,
+                    "distance": 0.8,
+                    "price": 11.0,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:03",
+                "end_time": "13:03",
+                "transports": [
+                  {
+                    "start": "乌糖沙茶面(民族路店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:03",
+                    "cost": 12.84,
+                    "distance": 2.32,
+                    "price": 12.84,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "厦门大学思明校区芙蓉餐厅",
+                "type": "dinner",
+                "price": 21.0,
+                "cost": 42.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "厦门大学思明校区芙蓉餐厅",
+                    "mode": "walk",
+                    "start_time": "16:55",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 0.4380906919891224,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "厦门旅行日记青年旅舍(中山路店)",
+                "type": "accommodation",
+                "price": 48.0,
+                "cost": 48.0,
+                "rooms": 1,
+                "start_time": "18:04",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "厦门大学思明校区芙蓉餐厅",
+                    "end": "厦门旅行日记青年旅舍(中山路店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:04",
+                    "cost": 15.97,
+                    "distance": 3.22,
+                    "price": 15.97,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "中山路步行街",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:32",
+                "end_time": "09:32",
+                "transports": [
+                  {
+                    "start": "厦门旅行日记青年旅舍(中山路店)",
+                    "end": "中山路步行街",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.17656165235643678,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "大众来小吃(中山路店)",
+                "type": "lunch",
+                "price": 10.0,
+                "cost": 20.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "中山路步行街",
+                    "end": "大众来小吃(中山路店)",
+                    "mode": "walk",
+                    "start_time": "11:00",
+                    "end_time": "11:00",
+                    "cost": 0.0,
+                    "distance": 0.02839806996726263,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "13:53",
+                "end_time": "21:19",
+                "start": "厦门北站",
+                "end": "苏州南站",
+                "price": 502.0,
+                "cost": 1004.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "大众来小吃(中山路店)",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "12:23",
+                    "end_time": "12:53",
+                    "cost": 86.3,
+                    "distance": 20.36,
+                    "price": 86.3,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "D378"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": true
+    },
+    {
+      "id": "xm-ct-m01",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 13.83,
+      "recommended_itinerary": {
+        "people_number": 2,
+        "start_city": "上海",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:18",
+                "end_time": "16:43",
+                "start": "上海虹桥站",
+                "end": "厦门北站",
+                "price": 465.0,
+                "cost": 930.0,
+                "tickets": 2,
+                "transports": [],
+                "TrainID": "D3201"
+              },
+              {
+                "position": "芋头煎包店",
+                "type": "dinner",
+                "price": 7.0,
+                "cost": 14.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "芋头煎包店",
+                    "mode": "taxi",
+                    "start_time": "16:43",
+                    "end_time": "17:00",
+                    "cost": 47.42,
+                    "distance": 11.72,
+                    "price": 47.42,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 40.0,
+                "rooms": 1,
+                "start_time": "21:03",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "芋头煎包店",
+                    "end": "岩内-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "20:10",
+                    "cost": 0.0,
+                    "distance": 10.92,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "岩内-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "20:10",
+                    "end_time": "21:01",
+                    "cost": 12.0,
+                    "distance": 25.51,
+                    "price": 6.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "21:01",
+                    "end_time": "21:03",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "亚芬韭菜盒花生汤(大同路店)",
+                "type": "lunch",
+                "price": 7.0,
+                "cost": 14.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "亚芬韭菜盒花生汤(大同路店)",
+                    "mode": "taxi",
+                    "start_time": "10:00",
+                    "end_time": "10:05",
+                    "cost": 17.38,
+                    "distance": 3.62,
+                    "price": 17.38,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:03",
+                "end_time": "13:03",
+                "transports": [
+                  {
+                    "start": "亚芬韭菜盒花生汤(大同路店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:03",
+                    "cost": 12.95,
+                    "distance": 2.36,
+                    "price": 12.95,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "心里暖古法花生汤(开禾路口店)",
+                "type": "dinner",
+                "price": 8.0,
+                "cost": 16.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "心里暖古法花生汤(开禾路口店)",
+                    "mode": "taxi",
+                    "start_time": "16:56",
+                    "end_time": "17:00",
+                    "cost": 14.57,
+                    "distance": 2.82,
+                    "price": 14.57,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 40.0,
+                "rooms": 1,
+                "start_time": "18:26",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "心里暖古法花生汤(开禾路口店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "18:15",
+                    "cost": 0.0,
+                    "distance": 1.27,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "18:15",
+                    "end_time": "18:24",
+                    "cost": 6.0,
+                    "distance": 4.57,
+                    "price": 3.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "18:24",
+                    "end_time": "18:26",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "白鹭洲公园东公园-亲水平台",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:42",
+                "end_time": "09:42",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "湖滨中路-地铁站",
+                    "mode": "metro",
+                    "start_time": "08:32",
+                    "end_time": "08:38",
+                    "cost": 4.0,
+                    "distance": 3.04,
+                    "price": 2.0,
+                    "tickets": 2
+                  },
+                  {
+                    "start": "湖滨中路-地铁站",
+                    "end": "白鹭洲公园东公园-亲水平台",
+                    "mode": "walk",
+                    "start_time": "08:38",
+                    "end_time": "08:42",
+                    "cost": 0.0,
+                    "distance": 0.38,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 2
+              },
+              {
+                "position": "阿兰薄饼(较场店)",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 16.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "白鹭洲公园东公园-亲水平台",
+                    "end": "阿兰薄饼(较场店)",
+                    "mode": "taxi",
+                    "start_time": "09:42",
+                    "end_time": "10:22",
+                    "cost": 117.2,
+                    "distance": 27.22,
+                    "price": 117.2,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "13:29",
+                "end_time": "21:08",
+                "start": "厦门北站",
+                "end": "上海松江站",
+                "price": 451.0,
+                "cost": 902.0,
+                "tickets": 2,
+                "transports": [
+                  {
+                    "start": "阿兰薄饼(较场店)",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "12:12",
+                    "end_time": "12:29",
+                    "cost": 48.39,
+                    "distance": 11.93,
+                    "price": 48.39,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "D3202"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-m02",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 14.2,
+      "recommended_itinerary": {
+        "people_number": 3,
+        "start_city": "南京",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "06:58",
+                "end_time": "13:05",
+                "start": "南京南站",
+                "end": "厦门北站",
+                "price": 546.5,
+                "cost": 1639.5,
+                "tickets": 3,
+                "transports": [],
+                "TrainID": "G3027"
+              },
+              {
+                "position": "芋头煎包店",
+                "type": "lunch",
+                "price": 7.0,
+                "cost": 21.0,
+                "start_time": "13:22",
+                "end_time": "14:22",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "芋头煎包店",
+                    "mode": "taxi",
+                    "start_time": "13:05",
+                    "end_time": "13:22",
+                    "cost": 47.42,
+                    "distance": 11.72,
+                    "price": 47.42,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "15:12",
+                "end_time": "16:12",
+                "transports": [
+                  {
+                    "start": "芋头煎包店",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "14:22",
+                    "end_time": "15:12",
+                    "cost": 145.94,
+                    "distance": 33.61,
+                    "price": 145.94,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "亚芬韭菜盒花生汤(大同路店)",
+                "type": "dinner",
+                "price": 7.0,
+                "cost": 21.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "亚芬韭菜盒花生汤(大同路店)",
+                    "mode": "taxi",
+                    "start_time": "16:12",
+                    "end_time": "16:15",
+                    "cost": 13.23,
+                    "distance": 2.44,
+                    "price": 13.23,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:20",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "亚芬韭菜盒花生汤(大同路店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "18:09",
+                    "cost": 0.0,
+                    "distance": 0.78,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "18:09",
+                    "end_time": "18:18",
+                    "cost": 9.0,
+                    "distance": 4.57,
+                    "price": 3.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "18:18",
+                    "end_time": "18:20",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "环岛路海滩",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "环岛路海滩",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 19.04,
+                    "distance": 4.1,
+                    "price": 19.04,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "心里暖古法花生汤(开禾路口店)",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "环岛路海滩",
+                    "end": "心里暖古法花生汤(开禾路口店)",
+                    "mode": "taxi",
+                    "start_time": "10:00",
+                    "end_time": "10:06",
+                    "cost": 19.41,
+                    "distance": 4.2,
+                    "price": 19.41,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "12:04",
+                "end_time": "13:04",
+                "transports": [
+                  {
+                    "start": "心里暖古法花生汤(开禾路口店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "12:00",
+                    "end_time": "12:04",
+                    "cost": 14.57,
+                    "distance": 2.82,
+                    "price": 14.57,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "珍巧古早味小吃(大社店)",
+                "type": "dinner",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "15:54",
+                    "end_time": "16:12",
+                    "cost": 0.0,
+                    "distance": 1.58,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "集美学村-地铁站",
+                    "mode": "metro",
+                    "start_time": "16:12",
+                    "end_time": "16:43",
+                    "cost": 15.0,
+                    "distance": 15.95,
+                    "price": 5.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "集美学村-地铁站",
+                    "end": "珍巧古早味小吃(大社店)",
+                    "mode": "walk",
+                    "start_time": "16:43",
+                    "end_time": "17:00",
+                    "cost": 0.0,
+                    "distance": 1.42,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:44",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "珍巧古早味小吃(大社店)",
+                    "end": "集美学村-地铁站",
+                    "mode": "walk",
+                    "start_time": "18:00",
+                    "end_time": "18:17",
+                    "cost": 0.0,
+                    "distance": 1.42,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "集美学村-地铁站",
+                    "end": "厦门火车-地铁站",
+                    "mode": "metro",
+                    "start_time": "18:17",
+                    "end_time": "18:42",
+                    "cost": 12.0,
+                    "distance": 12.73,
+                    "price": 4.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "walk",
+                    "start_time": "18:42",
+                    "end_time": "18:44",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "activities": [
+              {
+                "position": "白鹭洲公园东公园-亲水平台",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:42",
+                "end_time": "09:42",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "厦门火车-地铁站",
+                    "mode": "walk",
+                    "start_time": "08:30",
+                    "end_time": "08:32",
+                    "cost": 0.0,
+                    "distance": 0.22,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "厦门火车-地铁站",
+                    "end": "湖滨中路-地铁站",
+                    "mode": "metro",
+                    "start_time": "08:32",
+                    "end_time": "08:38",
+                    "cost": 6.0,
+                    "distance": 3.04,
+                    "price": 2.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "湖滨中路-地铁站",
+                    "end": "白鹭洲公园东公园-亲水平台",
+                    "mode": "walk",
+                    "start_time": "08:38",
+                    "end_time": "08:42",
+                    "cost": 0.0,
+                    "distance": 0.38,
+                    "price": 0.0
+                  }
+                ],
+                "tickets": 3
+              },
+              {
+                "position": "广播站小卖部海蛎饼",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 24.0,
+                "start_time": "11:20",
+                "end_time": "12:20",
+                "transports": [
+                  {
+                    "start": "白鹭洲公园东公园-亲水平台",
+                    "end": "湖滨中路-地铁站",
+                    "mode": "walk",
+                    "start_time": "09:42",
+                    "end_time": "09:46",
+                    "cost": 0.0,
+                    "distance": 0.38,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "湖滨中路-地铁站",
+                    "end": "华侨大学-地铁站",
+                    "mode": "metro",
+                    "start_time": "09:46",
+                    "end_time": "10:28",
+                    "cost": 18.0,
+                    "distance": 21.1,
+                    "price": 6.0,
+                    "tickets": 3
+                  },
+                  {
+                    "start": "华侨大学-地铁站",
+                    "end": "广播站小卖部海蛎饼",
+                    "mode": "walk",
+                    "start_time": "10:28",
+                    "end_time": "11:20",
+                    "cost": 0.0,
+                    "distance": 4.38,
+                    "price": 0.0
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "14:14",
+                "end_time": "20:18",
+                "start": "厦门北站",
+                "end": "南京南站",
+                "price": 546.5,
+                "cost": 1639.5,
+                "tickets": 3,
+                "transports": [
+                  {
+                    "start": "广播站小卖部海蛎饼",
+                    "end": "厦门北站",
+                    "mode": "taxi",
+                    "start_time": "13:04",
+                    "end_time": "13:14",
+                    "cost": 28.62,
+                    "distance": 6.83,
+                    "price": 28.62,
+                    "cars": 1
+                  }
+                ],
+                "TrainID": "G3332"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-m03",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "complete",
+      "stage": "assessment",
+      "reason_code": null,
+      "message": "行程已根据旅行快照核验。",
+      "candidate_count": 2,
+      "issue_fields": [],
+      "seconds": 13.73,
+      "recommended_itinerary": {
+        "people_number": 4,
+        "start_city": "广州",
+        "target_city": "厦门",
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              {
+                "type": "train",
+                "start_time": "08:01",
+                "end_time": "12:09",
+                "start": "广州南站",
+                "end": "厦门北站",
+                "price": 308.5,
+                "cost": 1234.0,
+                "tickets": 4,
+                "transports": [],
+                "TrainID": "G3809"
+              },
+              {
+                "position": "芋头煎包店",
+                "type": "lunch",
+                "price": 7.0,
+                "cost": 28.0,
+                "start_time": "12:26",
+                "end_time": "13:26",
+                "transports": [
+                  {
+                    "start": "厦门北站",
+                    "end": "芋头煎包店",
+                    "mode": "taxi",
+                    "start_time": "12:09",
+                    "end_time": "12:26",
+                    "cost": 47.42,
+                    "distance": 11.72,
+                    "price": 47.42,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "南普陀寺",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "14:16",
+                "end_time": "15:16",
+                "transports": [
+                  {
+                    "start": "芋头煎包店",
+                    "end": "南普陀寺",
+                    "mode": "taxi",
+                    "start_time": "13:26",
+                    "end_time": "14:16",
+                    "cost": 145.94,
+                    "distance": 33.61,
+                    "price": 145.94,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "亚芬韭菜盒花生汤(大同路店)",
+                "type": "dinner",
+                "price": 7.0,
+                "cost": 28.0,
+                "start_time": "17:00",
+                "end_time": "18:00",
+                "transports": [
+                  {
+                    "start": "南普陀寺",
+                    "end": "亚芬韭菜盒花生汤(大同路店)",
+                    "mode": "taxi",
+                    "start_time": "16:57",
+                    "end_time": "17:00",
+                    "cost": 13.23,
+                    "distance": 2.44,
+                    "price": 13.23,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "position": "六便士青年旅舍(厦门火车站地铁口店)",
+                "type": "accommodation",
+                "price": 40.0,
+                "cost": 80.0,
+                "rooms": 2,
+                "start_time": "18:05",
+                "end_time": "24:00",
+                "transports": [
+                  {
+                    "start": "亚芬韭菜盒花生汤(大同路店)",
+                    "end": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "mode": "taxi",
+                    "start_time": "18:00",
+                    "end_time": "18:05",
+                    "cost": 16.7,
+                    "distance": 3.43,
+                    "price": 16.7,
+                    "cars": 1
+                  }
+                ],
+                "room_type": 2
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              {
+                "position": "沙坡尾",
+                "type": "attraction",
+                "price": 0.0,
+                "cost": 0.0,
+                "start_time": "08:36",
+                "end_time": "09:36",
+                "transports": [
+                  {
+                    "start": "六便士青年旅舍(厦门火车站地铁口店)",
+                    "end": "沙坡尾",
+                    "mode": "taxi",
+                    "start_time": "08:30",
+                    "end_time": "08:36",
+                    "cost": 19.54,
+                    "distance": 4.24,
+                    "price": 19.54,
+                    "cars": 1
+                  }
+                ],
+                "tickets": 4
+              },
+              {
+                "position": "心里暖古法花生汤(开禾路口店)",
+                "type": "lunch",
+                "price": 8.0,
+                "cost": 32.0,
+                "start_time": "11:00",
+                "end_time": "12:00",
+                "transports": [
+                  {
+                    "start": "沙坡尾",
+                    "end": "心里暖古法花生汤(开禾路口店)",
+                    "mode": "taxi",
+                    "start_time": "10:56",
+                    "end_time": "11:00",
+                    "cost": 14.57,
+                    "distance": 2.82,
+                    "price": 14.57,
+                    "cars": 1
+                  }
+                ]
+              },
+              {
+                "type": "train",
+                "start_time": "17:44",
+                "end_time": "21:53",
+                "start": "厦门北站",
+                "end": "广州南站",
+                "price": 308.5,
+                "cost": 1234.0,
+                "tickets": 4,
+                "transports": [
+                  {
+                    "start": "心里暖古法花生汤(开禾路口店)",
+                    "end": "镇海路-地铁站",
+                    "mode": "walk",
+                    "start_time": "15:01",
+                    "end_time": "15:16",
+                    "cost": 0.0,
+                    "distance": 1.27,
+                    "price": 0.0
+                  },
+                  {
+                    "start": "镇海路-地铁站",
+                    "end": "厦门北-地铁站",
+                    "mode": "metro",
+                    "start_time": "15:16",
+                    "end_time": "16:43",
+                    "cost": 32.0,
+                    "distance": 43.83,
+                    "price": 8.0,
+                    "tickets": 4
+                  },
+                  {
+                    "start": "厦门北-地铁站",
+                    "end": "厦门北站",
+                    "mode": "walk",
+                    "start_time": "16:43",
+                    "end_time": "16:44",
+                    "cost": 0.0,
+                    "distance": 0.1,
+                    "price": 0.0
+                  }
+                ],
+                "TrainID": "G1625"
+              }
+            ]
+          }
+        ]
+      },
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-m04",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。试排的多数组合在车票和住宿阶段已超出金额预算。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 14.01,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-m05",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "no_eligible_intercity_transport",
+      "stage": "world_facts",
+      "reason_code": null,
+      "message": "本地旅行快照中没有符合要求的去程、返程班次。可调整城际交通方式后重试。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 5.05,
+      "reused_unchanged_run": false
+    },
+    {
+      "id": "xm-ct-m06",
+      "destination": "厦门",
+      "difficulty": "m",
+      "state": "no_verified_candidate",
+      "stage": "search",
+      "reason_code": "search_exhausted",
+      "message": "本轮试排没有得到通过核验的候选。试排的多数组合在车票和住宿阶段已超出金额预算。",
+      "candidate_count": 0,
+      "issue_fields": [],
+      "seconds": 12.03,
+      "reused_unchanged_run": false
+    }
+  ]
+}
